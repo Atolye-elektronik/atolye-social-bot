@@ -1,46 +1,27 @@
 """Shopify ürünlerinden otomatik post taslağı üretir.
 
+Mağazanın herkese açık ürün listesini kullanır (products.json), bu yüzden
+hiçbir API anahtarı ya da token gerekmiyor.
+
 Kullanımı:
     python -m src.shopify_source --count 3
-
-Her çalışmada, daha önce post üretilmemiş ürünlerden seçip
-posts/ klasörüne yeni markdown dosyaları yazar. Dosyaları
-paylaşılmadan önce elden geçirebilirsin — metinleri düzenle,
-tarihini ayarla, sonra commit et.
 """
 
 from __future__ import annotations
 
 import argparse
 import datetime as dt
+import html
 import json
+import os
 import pathlib
 import re
 
 import requests
 
-from . import config
-
+STORE_URL = os.environ.get("STORE_URL", "https://atolyeelektronik.com").rstrip("/")
 STATE_PATH = pathlib.Path("state/shopify_seen.json")
 POSTS_DIR = pathlib.Path("posts")
-
-QUERY = """
-query Products($first: Int!) {
-  products(first: $first, sortKey: CREATED_AT, reverse: true) {
-    edges {
-      node {
-        id
-        title
-        handle
-        onlineStoreUrl
-        description
-        featuredImage { url }
-        priceRangeV2 { minVariantPrice { amount currencyCode } }
-      }
-    }
-  }
-}
-"""
 
 
 def _slugify(text: str) -> str:
@@ -52,6 +33,12 @@ def _slugify(text: str) -> str:
         text = text.replace(src, dst)
     text = re.sub(r"[^a-zA-Z0-9]+", "-", text.lower()).strip("-")
     return text[:60] or "urun"
+
+
+def _strip_html(raw: str) -> str:
+    text = re.sub(r"<[^>]+>", " ", raw or "")
+    text = html.unescape(text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def _load_seen() -> set[str]:
@@ -70,77 +57,63 @@ def _save_seen(seen: set[str]) -> None:
     )
 
 
-def fetch_products(limit: int = 20) -> list[dict]:
-    if not (config.SHOPIFY_STORE and config.SHOPIFY_TOKEN):
-        raise RuntimeError("SHOPIFY_STORE ve SHOPIFY_ADMIN_TOKEN tanımlı değil.")
-
-    url = (
-        f"https://{config.SHOPIFY_STORE}.myshopify.com"
-        f"/admin/api/{config.SHOPIFY_API_VERSION}/graphql.json"
-    )
-    response = requests.post(
-        url,
-        headers={
-            "X-Shopify-Access-Token": config.SHOPIFY_TOKEN,
-            "Content-Type": "application/json",
-        },
-        json={"query": QUERY, "variables": {"first": limit}},
+def fetch_products(limit: int = 250) -> list[dict]:
+    response = requests.get(
+        f"{STORE_URL}/products.json",
+        params={"limit": limit},
+        headers={"User-Agent": "atolye-social-bot"},
         timeout=60,
     )
-    payload = response.json()
-    if "errors" in payload:
-        raise RuntimeError(f"Shopify hatası: {payload['errors']}")
-    return [edge["node"] for edge in payload["data"]["products"]["edges"]]
+    response.raise_for_status()
+    return response.json().get("products", [])
 
 
 def build_caption(product: dict) -> str:
-    title = product["title"]
-    price = (product.get("priceRangeV2") or {}).get("minVariantPrice") or {}
-    amount = price.get("amount")
-    currency = price.get("currencyCode", "TRY")
+    title = product.get("title", "").strip()
+    description = _strip_html(product.get("body_html", ""))[:180]
 
-    description = (product.get("description") or "").strip()
-    description = re.sub(r"\s+", " ", description)[:180]
+    variants = product.get("variants") or []
+    price = variants[0].get("price") if variants else None
 
     lines = [f"⚡ {title}"]
     if description:
-        lines.append("")
-        lines.append(description)
-    if amount:
+        lines += ["", description]
+    if price:
         try:
-            pretty = f"{float(amount):,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+            pretty = f"{float(price):,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
         except (TypeError, ValueError):
-            pretty = str(amount)
-        lines.append("")
-        lines.append(f"Fiyat: {pretty} {currency}")
-    if product.get("onlineStoreUrl"):
-        lines.append(product["onlineStoreUrl"])
-    lines.append("")
-    lines.append("#atolyeelektronik #elektronik #maker #arduino #hobi")
+            pretty = str(price)
+        lines += ["", f"Fiyat: {pretty} TL"]
+    if product.get("handle"):
+        lines.append(f"{STORE_URL}/products/{product['handle']}")
+    lines += ["", "#atolyeelektronik #elektronik #maker #hobi #antalya"]
     return "\n".join(lines)
 
 
 def generate(count: int = 3, start_in_hours: int = 24, spacing_hours: int = 24) -> list[pathlib.Path]:
     seen = _load_seen()
-    products = fetch_products(limit=50)
+    products = fetch_products()
 
-    fresh = [p for p in products if p["id"] not in seen and (p.get("featuredImage") or {}).get("url")]
+    fresh = [
+        p for p in products
+        if str(p.get("id")) not in seen and (p.get("images") or [])
+    ]
     if not fresh:
         print("Yeni post üretilecek ürün bulunamadı.")
         return []
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
-    created = []
-    when = dt.datetime.now(dt.timezone.utc).astimezone() + dt.timedelta(hours=start_in_hours)
+    created: list[pathlib.Path] = []
+    when = dt.datetime.now().astimezone() + dt.timedelta(hours=start_in_hours)
 
     for product in fresh[:count]:
-        slug = f"{when:%Y-%m-%d}-{_slugify(product['handle'] or product['title'])}"
+        slug = f"{when:%Y-%m-%d}-{_slugify(product.get('handle') or product.get('title', ''))}"
         path = POSTS_DIR / f"{slug}.md"
         if path.exists():
             when += dt.timedelta(hours=spacing_hours)
             continue
 
-        image_url = product["featuredImage"]["url"]
+        image_url = product["images"][0]["src"]
         body = (
             "---\n"
             "platforms: [instagram, facebook]\n"
@@ -151,7 +124,7 @@ def generate(count: int = 3, start_in_hours: int = 24, spacing_hours: int = 24) 
         )
         path.write_text(body, encoding="utf-8")
         created.append(path)
-        seen.add(product["id"])
+        seen.add(str(product["id"]))
         when += dt.timedelta(hours=spacing_hours)
         print(f"Oluşturuldu: {path}")
 
@@ -161,7 +134,7 @@ def generate(count: int = 3, start_in_hours: int = 24, spacing_hours: int = 24) 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Shopify ürünlerinden post taslağı üret")
-    parser.add_argument("--count", type=int, default=3, help="Kaç post üretilsin")
+    parser.add_argument("--count", type=int, default=3)
     parser.add_argument("--start-in-hours", type=int, default=24)
     parser.add_argument("--spacing-hours", type=int, default=24)
     args = parser.parse_args()
