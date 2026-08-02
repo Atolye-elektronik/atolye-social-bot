@@ -1,8 +1,10 @@
 name: Sosyal medya paylaşımı
 
 on:
+  # Her saat başı çalışır, zamanı gelmiş postları paylaşır.
   schedule:
     - cron: "5 * * * *"
+  # Actions sekmesinden elle de çalıştırabilirsin.
   workflow_dispatch:
     inputs:
       dry_run:
@@ -46,6 +48,10 @@ jobs:
           TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
           TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
           TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+          TIKTOK_DIRECT_POST: ${{ secrets.TIKTOK_DIRECT_POST }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           DRY_RUN: ${{ inputs.dry_run }}
         run: |
           ARGS=""
