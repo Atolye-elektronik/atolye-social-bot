@@ -69,7 +69,7 @@ def _pick(options, index: int) -> str:
 
 def build_caption(tema: dict, product: dict, index: int) -> str:
     title = (product.get("title") or "").strip()
-    desc = shopify_source._strip_html(product.get("body_html", ""))[:180]
+    desc = shopify_source.ozet(product.get("body_html", ""))
     handle = product.get("handle") or ""
     url = f"{shopify_source.STORE_URL}/products/{handle}" if handle else shopify_source.STORE_URL
 
