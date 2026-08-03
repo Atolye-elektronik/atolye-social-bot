@@ -17,7 +17,7 @@ import json
 import pathlib
 from zoneinfo import ZoneInfo
 
-from . import shopify_source
+from . import gorsel, shopify_source
 
 TZ = ZoneInfo("Europe/Istanbul")
 CALENDAR_PATH = pathlib.Path("content/takvim.json")
@@ -135,10 +135,19 @@ def generate(days: int = 7, dry_run: bool = False) -> list[pathlib.Path]:
             continue
 
         platforms = slot.get("platforms") or ["instagram", "facebook"]
+
+        # Instagram 4:5 kabul ediyor, profil izgarasi 3:4 gosteriyor.
+        # Ham urun fotograflari 3:2 yatay oldugu icin once 1080x1350
+        # kareye TAM SIGDIRIP kaydediyoruz; boylece hicbir yerde kirpilmiyor.
+        gorsel_yolu = pathlib.Path("posts/media") / f"{slug}.jpg"
+        if not dry_run and not gorsel_yolu.exists():
+            gorsel.kare_yap(product["images"][0]["src"],
+                            product.get("title", ""), gorsel_yolu)
+
         body = (
             "---\n"
             f"platforms: [{', '.join(platforms)}]\n"
-            f"media: {product['images'][0]['src']}\n"
+            f"media: {gorsel_yolu.as_posix()}\n"
             f"publish_at: {when:%Y-%m-%d %H:%M}\n"
             f"tema: {tema_adi}\n"
             "---\n"
