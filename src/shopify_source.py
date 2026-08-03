@@ -41,6 +41,24 @@ def _strip_html(raw: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def ozet(raw: str, limit: int = 220) -> str:
+    """Aciklamayi cumle/kelime sinirinda keser; yarim kelime birakmaz."""
+    text = _strip_html(raw)
+    if len(text) <= limit:
+        return text
+    kesit = text[:limit]
+    # once cumle sonu ara
+    for nokta in (". ", "! ", "? "):
+        yer = kesit.rfind(nokta)
+        if yer > limit * 0.5:
+            return kesit[:yer + 1].strip()
+    # yoksa son bosluktan kes
+    yer = kesit.rfind(" ")
+    if yer > 0:
+        kesit = kesit[:yer]
+    return kesit.rstrip(" ,;:-") + "..."
+
+
 def _load_seen() -> set[str]:
     if not STATE_PATH.exists():
         return set()
@@ -70,22 +88,13 @@ def fetch_products(limit: int = 250) -> list[dict]:
 
 def build_caption(product: dict) -> str:
     title = product.get("title", "").strip()
-    description = _strip_html(product.get("body_html", ""))[:180]
+    description = ozet(product.get("body_html", ""))
 
-    variants = product.get("variants") or []
-    price = variants[0].get("price") if variants else None
-
-    lines = [f"⚡ {title}"]
+    lines = [f"\u26a1 {title}"]
     if description:
         lines += ["", description]
-    if price:
-        try:
-            pretty = f"{float(price):,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
-        except (TypeError, ValueError):
-            pretty = str(price)
-        lines += ["", f"Fiyat: {pretty} TL"]
     if product.get("handle"):
-        lines.append(f"{STORE_URL}/products/{product['handle']}")
+        lines += ["", f"Detaylar ve siparis \U0001f449 {STORE_URL}/products/{product['handle']}"]
     lines += ["", "#atolyeelektronik #elektronik #maker #hobi #antalya"]
     return "\n".join(lines)
 
