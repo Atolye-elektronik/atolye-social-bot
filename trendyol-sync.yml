@@ -1,0 +1,42 @@
+name: Trendyol Sipariş Senkronizasyonu
+
+on:
+  schedule:
+    # Her saat başı 13. dakikada (tam saatte GitHub'da yoğunluk oluyor)
+    - cron: "13 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Trendyol sync
+        env:
+          TRENDYOL_SUPPLIER_ID: ${{ secrets.TRENDYOL_SUPPLIER_ID }}
+          TRENDYOL_API_KEY: ${{ secrets.TRENDYOL_API_KEY }}
+          TRENDYOL_API_SECRET: ${{ secrets.TRENDYOL_API_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        working-directory: src/marketplaces
+        run: python trendyol_sync.py
+
+      - name: Commit updated state file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/trendyol_orders.json
+          git diff --staged --quiet || git commit -m "chore: trendyol sipariş durumu güncellendi"
+          git push
