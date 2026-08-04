@@ -1,1 +1,536 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9414844820,
+      "firstName": "Destina",
+      "lastName": "Ongun",
+      "company": "",
+      "address1": "Güzelyalı, 81149. Sk. No:3 Dream Towers, 9/18 Çukurova/Adana",
+      "address2": "",
+      "city": "Adana",
+      "cityCode": 1,
+      "district": "Çukurova",
+      "districtId": 100,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "01000",
+      "countryCode": "TR",
+      "neighborhoodId": 564,
+      "neighborhood": "Güzelyalı Mah",
+      "phone": null,
+      "fullAddress": "Güzelyalı, 81149. Sk. No:3 Dream Towers, 9/18 Çukurova/Adana     Çukurova Adana",
+      "fullName": "Destina Ongun"
+    },
+    "orderNumber": "11476046422",
+    "orderCountryCode": "TR",
+    "grossAmount": 429.0,
+    "packageGrossAmount": 429.0,
+    "totalDiscount": 8.58,
+    "packageSellerDiscount": 8.58,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 8.58,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 8.58
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9414844819,
+      "firstName": "Destina",
+      "lastName": "Ongun",
+      "company": "",
+      "address1": "Güzelyalı, 81149. Sk. No:3 Dream Towers, 9/18 Çukurova/Adana",
+      "address2": "",
+      "city": "Adana",
+      "cityCode": 1,
+      "district": "Çukurova",
+      "districtId": 100,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "01000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 564,
+      "neighborhood": "Güzelyalı Mah",
+      "phone": null,
+      "fullAddress": "Güzelyalı, 81149. Sk. No:3 Dream Towers, 9/18 Çukurova/Adana     Çukurova Adana",
+      "fullName": "Destina Ongun"
+    },
+    "customerFirstName": "Destina",
+    "customerEmail": "pf+xynornel@trendyolmail.com",
+    "customerId": 19827102,
+    "supplierId": 0,
+    "customerLastName": "Ongun",
+    "id": 4051291463,
+    "channelId": 1,
+    "shipmentPackageId": 4051291463,
+    "cargoTrackingNumber": 7270035360716847,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETC162",
+        "sku": "ATELTC1600002",
+        "stockCode": "AETC162",
+        "productName": "16\" Organizerli Takım Çantası AETC162, one size",
+        "productCode": 1590180350,
+        "contentId": 1590180350,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 429.0,
+        "lineGrossAmount": 429.0,
+        "discount": 8.58,
+        "lineTotalDiscount": 8.58,
+        "lineSellerDiscount": 8.58,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 420.42,
+            "lineItemDiscount": 8.58,
+            "lineItemSellerDiscount": 8.58,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5801414397,
+        "lineId": 5801414397,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTC1600002",
+        "orderLineItemStatusName": "Picking",
+        "price": 420.42,
+        "lineUnitPrice": 420.42,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 4,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1785878615565,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1785867848019,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1785867852314,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1785868042512,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1785954215000,
+    "estimatedDeliveryEndDate": 1786127015000,
+    "totalPrice": 420.42,
+    "packageTotalPrice": 420.42,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1785963540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1785867848010,
+    "lastModifiedDate": 1785868042512,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10736690441,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9413408207,
+      "firstName": "Eylem Başak",
+      "lastName": "Erken",
+      "company": "",
+      "address1": "Namdar Sokak Diva Apt. No:5/1",
+      "address2": "",
+      "city": "Ankara",
+      "cityCode": 6,
+      "district": "Çankaya",
+      "districtId": 5,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "06000",
+      "countryCode": "TR",
+      "neighborhoodId": 7690,
+      "neighborhood": "İlkadım Mah",
+      "phone": null,
+      "fullAddress": "Namdar Sokak Diva Apt. No:5/1     Çankaya Ankara",
+      "fullName": "Eylem Başak Erken"
+    },
+    "orderNumber": "11475138030",
+    "orderCountryCode": "TR",
+    "grossAmount": 399.0,
+    "packageGrossAmount": 399.0,
+    "totalDiscount": 7.98,
+    "packageSellerDiscount": 7.98,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 7.98,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 7.98
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9413408206,
+      "firstName": "Eylem Başak",
+      "lastName": "Erken",
+      "company": "",
+      "address1": "Namdar Sokak Diva Apt. No:5/1",
+      "address2": "",
+      "city": "Ankara",
+      "cityCode": 6,
+      "district": "Çankaya",
+      "districtId": 5,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "06000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 7690,
+      "neighborhood": "İlkadım Mah",
+      "phone": null,
+      "fullAddress": "Namdar Sokak Diva Apt. No:5/1     Çankaya Ankara",
+      "fullName": "Eylem Başak Erken"
+    },
+    "customerFirstName": "Eylem Başak",
+    "customerEmail": "pf+eavpjwmo@trendyolmail.com",
+    "customerId": 25571013,
+    "supplierId": 0,
+    "customerLastName": "Erken",
+    "id": 4050628712,
+    "channelId": 1,
+    "shipmentPackageId": 4050628712,
+    "cargoTrackingNumber": 7330035357647766,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE3-6VMTR4",
+        "sku": "ATEL3-6VMTR41",
+        "stockCode": "AE3-6VMTR4",
+        "productName": "3-6V Redüktürlü Arduino Uyumlu DC Sarı Motor ve Tekerlek Seti - 4 Adet Motor+Teker AE3-6VMTR4, one size",
+        "productCode": 1589543352,
+        "contentId": 1589543352,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 399.0,
+        "lineGrossAmount": 399.0,
+        "discount": 7.98,
+        "lineTotalDiscount": 7.98,
+        "lineSellerDiscount": 7.98,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 391.02,
+            "lineItemDiscount": 7.98,
+            "lineItemSellerDiscount": 7.98,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5800476413,
+        "lineId": 5800476413,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATEL3-6VMTR41",
+        "orderLineItemStatusName": "Picking",
+        "price": 391.02,
+        "lineUnitPrice": 391.02,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 4391,
+        "commission": 4,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1785861205872,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1785850408066,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1785850410957,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1785851517129,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1785936805000,
+    "estimatedDeliveryEndDate": 1786109605000,
+    "totalPrice": 391.02,
+    "packageTotalPrice": 391.02,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1785963540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1785850408056,
+    "lastModifiedDate": 1785863402477,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10735932573,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9414436605,
+      "firstName": "Cemal",
+      "lastName": "Kaplan",
+      "company": "",
+      "address1": "Ataköy 2-5-6 kısım- Conkbayırı cad- no:19- K 40 blok- D:4 - kat:1- bakırköy",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Bakırköy",
+      "districtId": 55,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 26768,
+      "neighborhood": "Ataköy 2-5-6. Kısım Mah",
+      "phone": null,
+      "fullAddress": "Ataköy 2-5-6 kısım- Conkbayırı cad- no:19- K 40 blok- D:4 - kat:1- bakırköy     Bakırköy İstanbul",
+      "fullName": "Cemal Kaplan"
+    },
+    "orderNumber": "11475800226",
+    "orderCountryCode": "TR",
+    "grossAmount": 339.0,
+    "packageGrossAmount": 339.0,
+    "totalDiscount": 6.78,
+    "packageSellerDiscount": 6.78,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 6.78,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 6.78
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9414436604,
+      "firstName": "Cemal",
+      "lastName": "Kaplan",
+      "company": "",
+      "address1": "Ataköy 2-5-6 kısım- Conkbayırı cad- no:19- K 40 blok- D:4 - kat:1- bakırköy",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Bakırköy",
+      "districtId": 55,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 26768,
+      "neighborhood": "Ataköy 2-5-6. Kısım Mah",
+      "phone": null,
+      "fullAddress": "Ataköy 2-5-6 kısım- Conkbayırı cad- no:19- K 40 blok- D:4 - kat:1- bakırköy     Bakırköy İstanbul",
+      "fullName": "Cemal Kaplan"
+    },
+    "customerFirstName": "Cemal",
+    "customerEmail": "pf+69np28r8@trendyolmail.com",
+    "customerId": 31025096,
+    "supplierId": 0,
+    "customerLastName": "Kaplan",
+    "id": 4051103581,
+    "channelId": 1,
+    "shipmentPackageId": 4051103581,
+    "cargoTrackingNumber": 7330035357636876,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEUNOR3",
+        "sku": "ATELUNOR30001",
+        "stockCode": "AEUNOR3",
+        "productName": "Arduino Uno R3 Klon USB Kablo Hediyeli - CH340 Chipset AEUNOR3, one size",
+        "productCode": 1586382429,
+        "contentId": 1586382429,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 339.0,
+        "lineGrossAmount": 339.0,
+        "discount": 6.78,
+        "lineTotalDiscount": 6.78,
+        "lineSellerDiscount": 6.78,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 332.22,
+            "lineItemDiscount": 6.78,
+            "lineItemSellerDiscount": 6.78,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5801148721,
+        "lineId": 5801148721,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELUNOR30001",
+        "orderLineItemStatusName": "Picking",
+        "price": 332.22,
+        "lineUnitPrice": 332.22,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 4391,
+        "commission": 4,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1785873853283,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1785863083129,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1785863087301,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1785863374018,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1785949453000,
+    "estimatedDeliveryEndDate": 1786122253000,
+    "totalPrice": 332.22,
+    "packageTotalPrice": 332.22,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1785963540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1785863083119,
+    "lastModifiedDate": 1785863384599,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10736474659,
+    "is4P": false
+  }
+]
