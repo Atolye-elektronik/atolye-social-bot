@@ -1,6 +1,187 @@
 [
   {
     "shipmentAddress": {
+      "id": 9416007652,
+      "firstName": "isa",
+      "lastName": "Bektaş",
+      "company": "",
+      "address1": "istiklal caddesi no 23/A",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Pendik",
+      "districtId": 36,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 28609,
+      "neighborhood": "Güzelyalı Mah",
+      "phone": null,
+      "fullAddress": "istiklal caddesi no 23/A     Pendik İstanbul",
+      "fullName": "isa Bektaş"
+    },
+    "orderNumber": "11476594229",
+    "orderCountryCode": "TR",
+    "grossAmount": 899.0,
+    "packageGrossAmount": 899.0,
+    "totalDiscount": 44.41,
+    "packageSellerDiscount": 44.41,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 44.41,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 17.98
+      },
+      {
+        "displayName": "700 TL'ye %3 İndirim",
+        "discountAmount": 26.43
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9416005401,
+      "firstName": "isa",
+      "lastName": "Bektaş",
+      "company": "",
+      "address1": "istiklal caddesi no 23/A",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Pendik",
+      "districtId": 36,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 28609,
+      "neighborhood": "Güzelyalı Mah",
+      "phone": null,
+      "fullAddress": "istiklal caddesi no 23/A     Pendik İstanbul",
+      "fullName": "isa Bektaş"
+    },
+    "customerFirstName": "isa",
+    "customerEmail": "pf+xyn4p6pz@trendyolmail.com",
+    "customerId": 103758576,
+    "supplierId": 0,
+    "customerLastName": "Bektaş",
+    "id": 4051803739,
+    "channelId": 1,
+    "shipmentPackageId": 4051803739,
+    "cargoTrackingNumber": 7270035369896069,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEUNOR33",
+        "sku": "ATELUNOR30033",
+        "stockCode": "AEUNOR33",
+        "productName": "3 Adet Arduino Uno R3 Klon USB Kablo Hediyeli - CH340 Chipset AEUNOR33, one size",
+        "productCode": 1603711526,
+        "contentId": 1603711526,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 899.0,
+        "lineGrossAmount": 899.0,
+        "discount": 44.41,
+        "lineTotalDiscount": 44.41,
+        "lineSellerDiscount": 44.41,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 854.59,
+            "lineItemDiscount": 44.41,
+            "lineItemSellerDiscount": 44.41,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5802186394,
+        "lineId": 5802186394,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELUNOR30033",
+        "orderLineItemStatusName": "ReadyToShip",
+        "price": 854.59,
+        "lineUnitPrice": 854.59,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 4391,
+        "commission": 4,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1785890428667,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1785879676318,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1785879680538,
+        "status": "Created"
+      }
+    ],
+    "shipmentPackageStatus": "ReadyToShip",
+    "status": "Created",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1785879628000,
+    "estimatedDeliveryEndDate": 1786052428000,
+    "totalPrice": 854.59,
+    "packageTotalPrice": 854.59,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1785963540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1785879676313,
+    "lastModifiedDate": 1785879680538,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10737303761,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9414844820,
       "firstName": "Destina",
       "lastName": "Ongun",
@@ -79,10 +260,10 @@
     "id": 4051291463,
     "channelId": 1,
     "shipmentPackageId": 4051291463,
-    "cargoTrackingNumber": 7270035360716847,
+    "cargoTrackingNumber": 7330035364077341,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 1,
@@ -160,7 +341,7 @@
     "agreedDeliveryDate": 1785963540000,
     "fastDelivery": true,
     "originShipmentDate": 1785867848010,
-    "lastModifiedDate": 1785868042512,
+    "lastModifiedDate": 1785872091007,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
