@@ -1,1 +1,180 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9420926837,
+      "firstName": "Tunahan",
+      "lastName": "Aktaş",
+      "company": "",
+      "address1": "fatih mah. süleyman demirel bulvarı no 209 kat 4apartman",
+      "address2": "",
+      "city": "Burdur",
+      "cityCode": 15,
+      "district": "Bucak",
+      "districtId": 298,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "15000",
+      "countryCode": "TR",
+      "neighborhoodId": 15788,
+      "neighborhood": "Fatih Mah",
+      "phone": null,
+      "fullAddress": "fatih mah. süleyman demirel bulvarı no 209 kat 4apartman     Bucak Burdur",
+      "fullName": "Tunahan Aktaş"
+    },
+    "orderNumber": "11479288810",
+    "orderCountryCode": "TR",
+    "grossAmount": 399.0,
+    "packageGrossAmount": 399.0,
+    "totalDiscount": 7.98,
+    "packageSellerDiscount": 7.98,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 7.98,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 7.98
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9420926836,
+      "firstName": "Tunahan",
+      "lastName": "Aktaş",
+      "company": "",
+      "address1": "fatih mah. süleyman demirel bulvarı no 209 kat 4apartman",
+      "address2": "",
+      "city": "Burdur",
+      "cityCode": 15,
+      "district": "Bucak",
+      "districtId": 298,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "15000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 15788,
+      "neighborhood": "Fatih Mah",
+      "phone": null,
+      "fullAddress": "fatih mah. süleyman demirel bulvarı no 209 kat 4apartman     Bucak Burdur",
+      "fullName": "Tunahan Aktaş"
+    },
+    "customerFirstName": "Tunahan",
+    "customerEmail": "pf+yvqo96xk@trendyolmail.com",
+    "customerId": 203421377,
+    "supplierId": 0,
+    "customerLastName": "Aktaş",
+    "id": 4054074404,
+    "channelId": 1,
+    "shipmentPackageId": 4054074404,
+    "cargoTrackingNumber": 7270035413307411,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE3-6VMTR4",
+        "sku": "ATEL3-6VMTR41",
+        "stockCode": "AE3-6VMTR4",
+        "productName": "3-6V Redüktürlü Arduino Uyumlu DC Sarı Motor ve Tekerlek Seti - 4 Adet Motor+Teker AE3-6VMTR4, one size",
+        "productCode": 1589543352,
+        "contentId": 1589543352,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 399.0,
+        "lineGrossAmount": 399.0,
+        "discount": 7.98,
+        "lineTotalDiscount": 7.98,
+        "lineSellerDiscount": 7.98,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 391.02,
+            "lineItemDiscount": 7.98,
+            "lineItemSellerDiscount": 7.98,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5805447309,
+        "lineId": 5805447309,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATEL3-6VMTR41",
+        "orderLineItemStatusName": "Picking",
+        "price": 391.02,
+        "lineUnitPrice": 391.02,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 4391,
+        "commission": 4,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1785966569298,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1785955770343,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1785955776668,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1785955808301,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1786042169000,
+    "estimatedDeliveryEndDate": 1786214969000,
+    "totalPrice": 391.02,
+    "packageTotalPrice": 391.02,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1786049940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1785955770332,
+    "lastModifiedDate": 1785955808301,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10739908305,
+    "is4P": false
+  }
+]
