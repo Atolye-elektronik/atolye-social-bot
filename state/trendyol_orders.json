@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9431854968,
+      "firstName": "Ferhat",
+      "lastName": "Bağcı",
+      "company": "",
+      "address1": "Selimsultan mah. Müstehap sok. No:14 Daire:02",
+      "address2": "",
+      "city": "Konya",
+      "cityCode": 42,
+      "district": "Karatay",
+      "districtId": 690,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "42000",
+      "countryCode": "TR",
+      "neighborhoodId": 46773,
+      "neighborhood": "Selimsultan Mah",
+      "phone": null,
+      "fullAddress": "Selimsultan mah. Müstehap sok. No:14 Daire:02     Karatay Konya",
+      "fullName": "Ferhat Bağcı"
+    },
+    "orderNumber": "11485180898",
+    "orderCountryCode": "TR",
+    "grossAmount": 254.0,
+    "packageGrossAmount": 254.0,
+    "totalDiscount": 5.08,
+    "packageSellerDiscount": 5.08,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 5.08,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 5.08
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9431854967,
+      "firstName": "Ferhat",
+      "lastName": "Bağcı",
+      "company": "",
+      "address1": "Selimsultan mah. Müstehap sok. No:14 Daire:02",
+      "address2": "",
+      "city": "Konya",
+      "cityCode": 42,
+      "district": "Karatay",
+      "districtId": 690,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "42000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 46773,
+      "neighborhood": "Selimsultan Mah",
+      "phone": null,
+      "fullAddress": "Selimsultan mah. Müstehap sok. No:14 Daire:02     Karatay Konya",
+      "fullName": "Ferhat Bağcı"
+    },
+    "customerFirstName": "Ferhat",
+    "customerEmail": "pf+ao4xvzk3@trendyolmail.com",
+    "customerId": 132450108,
+    "supplierId": 0,
+    "customerLastName": "Bağcı",
+    "id": 4059047030,
+    "channelId": 1,
+    "shipmentPackageId": 4059047030,
+    "cargoTrackingNumber": 7270035507516453,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 2,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEHCSR04",
+        "sku": "TX10FD179278",
+        "stockCode": "AEHCSR04",
+        "productName": "HC-SR04 5V Ultrasonik Mesafe Sensör Modülü RD100103, one size",
+        "productCode": 163937422,
+        "contentId": 163937422,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 127.0,
+        "lineGrossAmount": 127.0,
+        "discount": 2.54,
+        "lineTotalDiscount": 2.54,
+        "lineSellerDiscount": 2.54,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 124.46,
+            "lineItemDiscount": 2.54,
+            "lineItemSellerDiscount": 2.54,
+            "lineItemTyDiscount": 0.0
+          },
+          {
+            "lineItemPrice": 124.46,
+            "lineItemDiscount": 2.54,
+            "lineItemSellerDiscount": 2.54,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5812661094,
+        "lineId": 5812661094,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "TX10FD179278",
+        "orderLineItemStatusName": "ReadyToShip",
+        "price": 124.46,
+        "lineUnitPrice": 124.46,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Computer & Tablet",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1786135389156,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1786124591028,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1786124595087,
+        "status": "Created"
+      }
+    ],
+    "shipmentPackageStatus": "ReadyToShip",
+    "status": "Created",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1786210989000,
+    "estimatedDeliveryEndDate": 1786470189000,
+    "totalPrice": 248.92,
+    "packageTotalPrice": 248.92,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1786222740000,
+    "fastDelivery": true,
+    "originShipmentDate": 1786124591015,
+    "lastModifiedDate": 1786124595087,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10745704125,
+    "is4P": false
+  }
+]
