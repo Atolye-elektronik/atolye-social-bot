@@ -12,4 +12,6 @@ Cevabı carousel'de 👉 kaydır
 
 Sipariş için 👉 https://atolyeelektronik.com/products/usta-isi-el-aletleri-seti-7-parca
 
+🎁 İlk alışverişine özel: ATOLYE10 koduyla sepette %10 indirim!
+
 #atolyeelektronik #elektronik #arduino #maker #hobi #antalya

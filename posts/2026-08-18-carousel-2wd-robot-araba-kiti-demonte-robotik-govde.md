@@ -11,4 +11,6 @@ Kendi akıllı robotunu tasarlamak, engelden kaçan, çizgi izleyen veya Bluetoo
 
 Sipariş için 👉 https://atolyeelektronik.com/products/2wd-robot-araba-kiti-demonte-robotik-govde
 
+🎁 İlk alışverişine özel: ATOLYE10 koduyla sepette %10 indirim!
+
 #atolyeelektronik #elektronik #arduino #maker #hobi #antalya

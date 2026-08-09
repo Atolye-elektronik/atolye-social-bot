@@ -78,6 +78,29 @@ def _aralikli_genislik(d: ImageDraw.ImageDraw, metin: str, f, aralik: int = 6) -
     return toplam + aralik * (len(metin) - 1)
 
 
+def _tam(satirlar: list[str], metin: str) -> bool:
+    return " ".join(satirlar) == " ".join(metin.split())
+
+
+def _sigdir(d: ImageDraw.ImageDraw, metin: str, maxw: int,
+            kademeler: list[tuple[list[int], int]], bold: bool = True):
+    """Metni kirpmadan sigdiran en buyuk fontu secer: (font, satirlar, boyut).
+
+    kademeler: (font boyutlari, izin verilen satir sayisi) ciftleri.
+    Once buyuk font/az satir denenir; hicbiri yetmezse en kucugu kirparak kullanir.
+    """
+    yapici = _bold if bold else _normal
+    for boyutlar, maxsatir in kademeler:
+        for boyut in boyutlar:
+            f = yapici(boyut)
+            satirlar = _sar(d, metin, f, maxw, maxsatir=maxsatir)
+            if _tam(satirlar, metin):
+                return f, satirlar, boyut
+    boyutlar, maxsatir = kademeler[-1]
+    f = yapici(boyutlar[-1])
+    return f, _sar(d, metin, f, maxw, maxsatir=maxsatir), boyutlar[-1]
+
+
 def _sar(d: ImageDraw.ImageDraw, metin: str, f, maxw: int, maxsatir: int = 3) -> list[str]:
     kelimeler, satirlar, cur = metin.split(), [], ""
     for k in kelimeler:
@@ -183,12 +206,14 @@ def kapak(baslik: str, cikti, alt_baslik: str = "ÜRÜN TANITIMI") -> pathlib.Pa
     gen = _aralikli_genislik(d, alt_baslik, fk, aralik=10)
     _aralikli(d, ((W - gen) / 2, 400), alt_baslik, fk, TURUNCU, aralik=10)
 
-    fb = _bold(84)
-    satirlar = _sar(d, baslik, fb, W - 240, maxsatir=3)
-    y = 660 - len(satirlar) * 50
+    fb, satirlar, boyut = _sigdir(
+        d, baslik, W - 240, [([84, 72, 62], 3), ([56, 50, 44], 4), ([40, 36], 5)]
+    )
+    satir_yuksekligi = int(boyut * 1.24)
+    y = 660 - len(satirlar) * satir_yuksekligi // 2
     for s in satirlar:
         d.text(((W - d.textlength(s, font=fb)) / 2, y), s, font=fb, fill=BEYAZ)
-        y += 104
+        y += satir_yuksekligi
 
     d.line([(W / 2 - 120, y + 40), (W / 2 + 120, y + 40)], fill=TURKUAZ, width=4)
 
@@ -223,12 +248,13 @@ def urun(kaynak, baslik: str, sira: int, toplam: int, cikti) -> pathlib.Path:
     sayac = f"{sira}/{toplam}"
     d.text((W - 168 - d.textlength(sayac, font=fs) / 2, ky0 + 32), sayac, font=fs, fill=TURKUAZ)
 
-    fb = _bold(52)
-    satirlar = _sar(d, baslik, fb, W - 200, maxsatir=2)
-    y = 1080
+    fb, satirlar, boyut = _sigdir(
+        d, baslik, W - 200, [([52, 46, 40], 2), ([38, 34, 30], 3)]
+    )
+    y = 1080 if len(satirlar) < 3 else 1056
     for s in satirlar:
         d.text(((W - d.textlength(s, font=fb)) / 2, y), s, font=fb, fill=BEYAZ)
-        y += 64
+        y += int(boyut * 1.24)
 
     fa = _normal(34)
     d.text(((W - d.textlength(SITE, font=fa)) / 2, max(y + 18, 1252)), SITE, font=fa, fill=GRI)
@@ -248,12 +274,13 @@ def metin(etiket: str, baslik: str, satirlar: list[str], cikti,
     gen = _aralikli_genislik(d, etiket, fk, aralik=10)
     _aralikli(d, ((W - gen) / 2, 360), etiket, fk, TURUNCU, aralik=10)
 
-    fb = _bold(72)
-    b_satirlar = _sar(d, baslik, fb, W - 200, maxsatir=3)
+    fb, b_satirlar, boyut = _sigdir(
+        d, baslik, W - 200, [([72, 62, 54], 3), ([48, 42], 4)]
+    )
     y = 470
     for s in b_satirlar:
         d.text(((W - d.textlength(s, font=fb)) / 2, y), s, font=fb, fill=BEYAZ)
-        y += 92
+        y += int(boyut * 1.28)
 
     d.line([(W / 2 - 120, y + 30), (W / 2 + 120, y + 30)], fill=TURKUAZ, width=4)
     y += 80
@@ -293,13 +320,26 @@ def kapanis(cikti, baslik_satirlari: list[str] | None = None,
     d.line([(W / 2 - 120, 760), (W / 2 + 120, 760)], fill=TURKUAZ, width=4)
 
     fo = _normal(38)
-    d.text(((W - d.textlength(alt_yazi, font=fo)) / 2, 810), alt_yazi, font=fo, fill=GRI)
+    d.text(((W - d.textlength(alt_yazi, font=fo)) / 2, 800), alt_yazi, font=fo, fill=GRI)
 
-    _pill(d, SITE, 960)
+    # --- ATOLYE10 kupon kutusu ---
+    kw, kh = 640, 150
+    kx0, ky0 = (W - kw) / 2, 880
+    d.rounded_rectangle([kx0, ky0, kx0 + kw, ky0 + kh], radius=20,
+                        fill=ZEMIN_ACIK, outline=TURKUAZ, width=3)
+    fk2 = _mono(26)
+    etiket = "İLK ALIŞVERİŞE ÖZEL %10 İNDİRİM"
+    gen2 = _aralikli_genislik(d, etiket, fk2, aralik=4)
+    _aralikli(d, ((W - gen2) / 2, ky0 + 22), etiket, fk2, TURUNCU, aralik=4)
+    fkod = _bold(56)
+    kod = "ATOLYE10"
+    d.text(((W - d.textlength(kod, font=fkod)) / 2, ky0 + 66), kod, font=fkod, fill=BEYAZ)
+
+    _pill(d, SITE, 1120)
 
     fw = _normal(34)
     wp = "Hızlı kargo • Güvenli ödeme"
-    d.text(((W - d.textlength(wp, font=fw)) / 2, 1060), wp, font=fw, fill=TURKUAZ)
+    d.text(((W - d.textlength(wp, font=fw)) / 2, 1210), wp, font=fw, fill=TURKUAZ)
     return _kaydet(tuval, cikti)
 
 

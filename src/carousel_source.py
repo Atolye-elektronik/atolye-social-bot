@@ -57,6 +57,7 @@ def build_caption(product: dict) -> str:
         lines += ["", description]
     if product.get("handle"):
         lines += ["", f"Sipariş için \U0001f449 {STORE_URL}/products/{product['handle']}"]
+    lines += ["", "\U0001f381 İlk alışverişine özel: ATOLYE10 koduyla sepette %10 indirim!"]
     lines += ["", "#atolyeelektronik #elektronik #arduino #maker #hobi #antalya"]
     return "\n".join(lines)
 

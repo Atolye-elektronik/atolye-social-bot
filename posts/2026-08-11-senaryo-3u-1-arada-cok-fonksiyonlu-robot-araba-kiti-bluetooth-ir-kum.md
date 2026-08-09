@@ -12,4 +12,6 @@ Cevabı carousel'de 👉 kaydır
 
 Sipariş için 👉 https://atolyeelektronik.com/products/3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-bluetooth-ir-kumanda-engelden-kacan
 
+🎁 İlk alışverişine özel: ATOLYE10 koduyla sepette %10 indirim!
+
 #atolyeelektronik #elektronik #arduino #maker #hobi #antalya

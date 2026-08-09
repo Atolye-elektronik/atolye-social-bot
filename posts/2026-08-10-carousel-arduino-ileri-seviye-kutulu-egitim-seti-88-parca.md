@@ -11,4 +11,6 @@ Elektronik dünyasına adım atmış ve artık kendi projelerini tasarlamak iste
 
 Sipariş için 👉 https://atolyeelektronik.com/products/arduino-ileri-seviye-kutulu-egitim-seti-88-parca
 
+🎁 İlk alışverişine özel: ATOLYE10 koduyla sepette %10 indirim!
+
 #atolyeelektronik #elektronik #arduino #maker #hobi #antalya

@@ -12,4 +12,6 @@ Cevabı carousel'de 👉 kaydır
 
 Sipariş için 👉 https://atolyeelektronik.com/products/hc-sr04-ultrasonik-mesafe-sensoru-arduino-uyumlu-temassiz-olcum-modulu
 
+🎁 İlk alışverişine özel: ATOLYE10 koduyla sepette %10 indirim!
+
 #atolyeelektronik #elektronik #arduino #maker #hobi #antalya

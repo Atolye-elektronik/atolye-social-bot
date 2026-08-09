@@ -11,4 +11,6 @@ Endüstriyel Elektronik dersi müfredatına tam uyumlu olarak hazırlanan bu set
 
 Sipariş için 👉 https://atolyeelektronik.com/products/endustriyel-elektronik-egitim-seti-meslek-lisesi-11-sinif-dersi
 
+🎁 İlk alışverişine özel: ATOLYE10 koduyla sepette %10 indirim!
+
 #atolyeelektronik #elektronik #arduino #maker #hobi #antalya

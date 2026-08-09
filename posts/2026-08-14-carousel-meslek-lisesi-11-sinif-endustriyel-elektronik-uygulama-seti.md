@@ -11,4 +11,6 @@ Tüm detaylar için kaydır ➡️
 
 Sipariş için 👉 https://atolyeelektronik.com/products/meslek-lisesi-11-sinif-endustriyel-elektronik-uygulama-seti
 
+🎁 İlk alışverişine özel: ATOLYE10 koduyla sepette %10 indirim!
+
 #atolyeelektronik #elektronik #arduino #maker #hobi #antalya

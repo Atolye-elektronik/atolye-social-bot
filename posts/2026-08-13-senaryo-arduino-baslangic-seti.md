@@ -12,4 +12,6 @@ Cevabı carousel'de 👉 kaydır
 
 Sipariş için 👉 https://atolyeelektronik.com/products/arduino-baslangic-seti
 
+🎁 İlk alışverişine özel: ATOLYE10 koduyla sepette %10 indirim!
+
 #atolyeelektronik #elektronik #arduino #maker #hobi #antalya
