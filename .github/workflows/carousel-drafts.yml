@@ -14,6 +14,11 @@ on:
         description: "Sadece bu ürün için üret (Shopify handle, boş = otomatik seç)"
         type: string
         default: ""
+      tip:
+        description: "Carousel tipi"
+        type: choice
+        options: [ikisi, klasik, senaryo]
+        default: ikisi
 
 permissions:
   contents: write
@@ -31,11 +36,19 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Carousel taslaklarını üret
+      - name: Klasik carousel taslaklarını üret
+        if: ${{ inputs.tip != 'senaryo' }}
         run: |
-          ARGS="--count ${{ inputs.count || '2' }}"
+          ARGS="--count ${{ inputs.count || '1' }}"
           if [ -n "${{ inputs.handle }}" ]; then ARGS="$ARGS --handle ${{ inputs.handle }}"; fi
           python -m src.carousel_source $ARGS
+
+      - name: Senaryolu carousel taslaklarını üret
+        if: ${{ inputs.tip != 'klasik' }}
+        run: |
+          ARGS="--count ${{ inputs.count || '1' }} --start-in-hours 48"
+          if [ -n "${{ inputs.handle }}" ]; then ARGS="$ARGS --handle ${{ inputs.handle }}"; fi
+          python -m src.senaryo_source $ARGS
 
       - name: Taslakları pull request olarak aç
         uses: peter-evans/create-pull-request@v6

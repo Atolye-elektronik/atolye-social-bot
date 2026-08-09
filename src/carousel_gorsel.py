@@ -235,7 +235,48 @@ def urun(kaynak, baslik: str, sira: int, toplam: int, cikti) -> pathlib.Path:
     return _kaydet(tuval, cikti)
 
 
-def kapanis(cikti, urun_url: str | None = None) -> pathlib.Path:
+def metin(etiket: str, baslik: str, satirlar: list[str], cikti,
+          son: bool = False) -> pathlib.Path:
+    """Senaryo (hikaye) slide'i: kisa etiket + buyuk baslik + aciklama satirlari.
+
+    'son' False ise altta kaydirma ipucu gosterilir.
+    """
+    tuval, d = _zemin(f"metin:{etiket}:{baslik}")
+    _marka_baslik(d)
+
+    fk = _mono(34)
+    gen = _aralikli_genislik(d, etiket, fk, aralik=10)
+    _aralikli(d, ((W - gen) / 2, 360), etiket, fk, TURUNCU, aralik=10)
+
+    fb = _bold(72)
+    b_satirlar = _sar(d, baslik, fb, W - 200, maxsatir=3)
+    y = 470
+    for s in b_satirlar:
+        d.text(((W - d.textlength(s, font=fb)) / 2, y), s, font=fb, fill=BEYAZ)
+        y += 92
+
+    d.line([(W / 2 - 120, y + 30), (W / 2 + 120, y + 30)], fill=TURKUAZ, width=4)
+    y += 80
+
+    fo = _normal(40)
+    for satir in satirlar:
+        for s in _sar(d, satir, fo, W - 260, maxsatir=3):
+            d.text(((W - d.textlength(s, font=fo)) / 2, y), s, font=fo, fill=GRI)
+            y += 56
+        y += 18
+
+    if son:
+        _pill(d, SITE, 1190)
+    else:
+        fo2 = _normal(36)
+        ok = "kaydırmaya devam et"
+        d.text(((W - d.textlength(ok, font=fo2)) / 2, 1180), ok, font=fo2, fill=GRI)
+        d.text((W / 2 + d.textlength(ok, font=fo2) / 2 + 18, 1178), "»", font=_bold(40), fill=TURKUAZ)
+    return _kaydet(tuval, cikti)
+
+
+def kapanis(cikti, baslik_satirlari: list[str] | None = None,
+            alt_yazi: str = "Arduino setleri • Sensörler • El aletleri") -> pathlib.Path:
     """CTA slide'i: siparis cagrisi."""
     tuval, d = _zemin("kapanis")
     _marka_baslik(d)
@@ -246,14 +287,13 @@ def kapanis(cikti, urun_url: str | None = None) -> pathlib.Path:
     _aralikli(d, ((W - gen) / 2, 430), ust, fk, TURUNCU, aralik=10)
 
     fb = _bold(76)
-    for i, s in enumerate(["Online mağazamızı", "ziyaret edin!"]):
+    for i, s in enumerate(baslik_satirlari or ["Online mağazamızı", "ziyaret edin!"]):
         d.text(((W - d.textlength(s, font=fb)) / 2, 520 + i * 96), s, font=fb, fill=BEYAZ)
 
     d.line([(W / 2 - 120, 760), (W / 2 + 120, 760)], fill=TURKUAZ, width=4)
 
     fo = _normal(38)
-    alt = "Arduino setleri • Sensörler • El aletleri"
-    d.text(((W - d.textlength(alt, font=fo)) / 2, 810), alt, font=fo, fill=GRI)
+    d.text(((W - d.textlength(alt_yazi, font=fo)) / 2, 810), alt_yazi, font=fo, fill=GRI)
 
     _pill(d, SITE, 960)
 
