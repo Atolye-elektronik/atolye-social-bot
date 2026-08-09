@@ -43,6 +43,17 @@ Repo → **Settings** → **Secrets and variables** → **Actions** → **New re
 | `TIKTOK_REFRESH_TOKEN` | `tools/tiktok_auth.py` ile üretilir |
 | `SHOPIFY_STORE` | Mağaza adı (`.myshopify.com` olmadan) |
 | `SHOPIFY_ADMIN_TOKEN` | Shopify Admin API token'ı |
+| `TRENDYOL_SUPPLIER_ID` | Trendyol satıcı ID |
+| `TRENDYOL_API_KEY` | Trendyol API key |
+| `TRENDYOL_API_SECRET` | Trendyol API secret |
+| `HEPSIBURADA_MERCHANT_ID` | Hepsiburada Merchant ID (GUID, Basic auth kullanıcı adı) |
+| `HEPSIBURADA_SECRET_KEY` | Hepsiburada secret key (Basic auth şifresi) |
+| `HEPSIBURADA_DEV_USERNAME` | Geliştirici kullanıcı adı (User-Agent header'ı) |
+
+Hepsiburada bilgileri destek kaydı yanıtıyla iletilir (test ortamı bilgileri
+1-187090166767583 numaralı kayıtla geldi). Test ortamında çalışmak için
+repo → Settings → Variables kısmına `HEPSIBURADA_ENV=sit` değişkenini ekle;
+canlı ortam bilgileri gelince bu değişkeni silmen (veya `prod` yapman) yeterli.
 
 TikTok ve Shopify değerlerini şimdilik boş bırakabilirsin; o platformlar
 sadece atlanır, Instagram ve Facebook çalışmaya devam eder.
@@ -98,6 +109,11 @@ python tools/tiktok_auth.py
 ```
 .github/workflows/publish.yml         Saatlik paylaşım akışı
 .github/workflows/shopify-drafts.yml  Haftalık taslak üretimi
+.github/workflows/trendyol-sync.yml   Trendyol sipariş takibi (saatlik)
+.github/workflows/hepsiburada-sync.yml Hepsiburada sipariş takibi (saatlik)
+src/marketplaces/trendyol_client.py   Trendyol API istemcisi
+src/marketplaces/hepsiburada_client.py Hepsiburada API istemcisi
+src/marketplaces/hepsiburada_sync.py  Hepsiburada sipariş senkronu
 posts/                                Paylaşımlar (markdown)
 posts/media/                          Görseller ve videolar
 src/main.py                           Ana akış
