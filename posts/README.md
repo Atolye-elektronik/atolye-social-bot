@@ -27,6 +27,17 @@ internet adresi (`https://cdn.shopify.com/...`). Instagram medyasız paylaşım
 kabul etmiyor; Facebook kabul ediyor, o yüzden sadece Facebook'a atacaksan
 bu satırı silebilirsin.
 
+Birden fazla görseli köşeli parantezle verirsen post **carousel** olur:
+
+```markdown
+media: [posts/media/slide1.jpg, posts/media/slide2.jpg, posts/media/slide3.jpg]
+```
+
+Instagram'da kaydırmalı albüm, Facebook'ta çoklu fotoğraf gönderisi olarak
+paylaşılır. Instagram en fazla 10 görsel kabul eder, hepsi resim olmalı
+(carousel'de video desteklenmiyor). Carousel yalnızca Instagram ve
+Facebook'ta çalışır; TikTok/YouTube bu postları atlar.
+
 **publish_at** — Ne zaman paylaşılacağı, Türkiye saatiyle. Biçim `2026-08-01 10:00`.
 Bu satırı silersen post ilk çalışmada hemen paylaşılır.
 

@@ -22,6 +22,9 @@ PUBLISHERS = {
 }
 
 
+CAROUSEL_PLATFORMS = {"instagram", "facebook"}
+
+
 def _call(publisher, post):
     """Yayıncıyı çağırır; 'extra' parametresi destekliyorsa onu da geçirir."""
     params = inspect.signature(publisher).parameters
@@ -51,6 +54,9 @@ def run(only: str | None = None, force: bool = False) -> int:
             publisher = PUBLISHERS.get(platform)
             if publisher is None:
                 print(f"⚠️  {post.slug} — bilinmeyen platform: {platform}")
+                continue
+            if post.is_carousel and platform not in CAROUSEL_PLATFORMS:
+                print(f"⚠️  {post.slug} — {platform} carousel desteklemiyor, atlandı")
                 continue
             if not force and state.already_published(published_state, post.slug, platform):
                 continue
