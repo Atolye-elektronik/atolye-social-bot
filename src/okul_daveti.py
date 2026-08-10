@@ -26,6 +26,7 @@ import json
 import mimetypes
 import os
 import pathlib
+import re
 import smtplib
 import time
 from email.message import EmailMessage
@@ -68,7 +69,7 @@ Sınıf mevcudunuzu ve ihtiyaç listenizi yazmanız yeterli, aynı gün proforma
 faturayla birlikte dönüş yapayım.
 
 Koşulların tamamı: {sayfa}
-WhatsApp: {telefon}
+WhatsApp: {wa_link}  ({telefon})
 
 İyi çalışmalar dilerim.
 
@@ -138,6 +139,8 @@ def mesaj_kur(okul: dict, gonderen: str, imza: str) -> EmailMessage:
     mesaj["From"] = f"Atölye Elektronik <{gonderen}>"
     mesaj["To"] = okul["eposta"]
     mesaj["Reply-To"] = gonderen
+    telefon = os.environ.get("ILETISIM_TELEFON", "0546 825 32 10")
+
     # IMZA_ADI verilmemişse kendi adını iki kez yazmayalım.
     imza_blok = f"{imza}\nAtölye Elektronik\n" if imza else "Atölye Elektronik\n"
 
@@ -156,7 +159,8 @@ def mesaj_kur(okul: dict, gonderen: str, imza: str) -> EmailMessage:
             sayfa="https://atolyeelektronik.com/pages/okul-siparisi",
             site="atolyeelektronik.com",
             eposta=gonderen,
-            telefon=os.environ.get("ILETISIM_TELEFON", "0546 825 32 10"),
+            telefon=telefon,
+            wa_link="https://wa.me/9" + re.sub(r"\D", "", telefon),
             imza_blok=imza_blok,
             yonlendirme=yonlendirme,
         )
