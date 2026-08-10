@@ -20,6 +20,9 @@ Ayrıca haftalık çalışan ikinci bir akış, Shopify mağazandaki ürünlerde
 otomatik post taslakları üretip pull request olarak açar. Metinleri gözden
 geçirip birleştirdiğinde paylaşım sırasına girerler.
 
+Üçüncü bir akış da her sabah terk edilmiş sepetlere bakar ve toplu alım
+yapmaya çalışıp vazgeçenleri sana e-postayla bildirir. Ayrıntısı aşağıda.
+
 ## Kurulum
 
 ### 1. Repo'yu hazırla
@@ -43,6 +46,12 @@ Repo → **Settings** → **Secrets and variables** → **Actions** → **New re
 | `TIKTOK_REFRESH_TOKEN` | `tools/tiktok_auth.py` ile üretilir |
 | `SHOPIFY_STORE` | Mağaza adı (`.myshopify.com` olmadan) |
 | `SHOPIFY_ADMIN_TOKEN` | Shopify Admin API token'ı |
+| `SMTP_USER` | Bildirim gönderecek Gmail adresin |
+| `SMTP_PASSWORD` | O hesabın **uygulama şifresi** (normal parolan değil) |
+| `ALERT_EMAIL` | Bildirimlerin düşeceği adres (boşsa `SMTP_USER` kullanılır) |
+
+`SMTP_HOST` ve `SMTP_PORT` istersen ayrıca verilebilir; verilmezse Gmail
+(`smtp.gmail.com`, `587`) varsayılır.
 
 TikTok ve Shopify değerlerini şimdilik boş bırakabilirsin; o platformlar
 sadece atlanır, Instagram ve Facebook çalışmaya devam eder.
@@ -93,11 +102,39 @@ export TIKTOK_CLIENT_SECRET=...
 python tools/tiktok_auth.py
 ```
 
+## Terk edilmiş sepet takibi
+
+Shopify'ın kendi "terk edilmiş ödeme" e-postası müşteriye otomatik gider ve
+onu mutlaka açmalısın (Ayarlar → Bildirimler). Ama jenerik bir hatırlatma,
+sınıfına 20 defter almaya çalışıp vazgeçen bir öğretmeni geri getirmez —
+onun ihtiyacı proforma fatura, havale bilgisi ya da telefonla teyittir.
+
+`sepet-takip.yml` her sabah 10:00'da (TR) son 14 günün terk edilmiş
+sepetlerine bakar, daha önce bildirmediklerini ayıklar ve sana tek bir
+e-posta atar. Bir sepette **10 adetten fazla** ürün varsa ya da tutar
+**1.500 ₺'yi** geçiyorsa "toplu alım" sayılıp listenin başına konur ve
+yanına kopyalayıp gönderebileceğin hazır bir mesaj eklenir.
+
+Müşteri adı, e-postası ve telefonu **yalnızca sana giden e-postada** yer alır.
+Repoya, `state/` dosyalarına ve Actions loglarına yazılmaz — repo herkese
+açık olduğu için bu ayrım önemli. State dosyası sadece sepet kimliklerini
+tutar, o da aynı sepeti iki kez bildirmemek için.
+
+Elle çalıştırmak için: Actions → **Terk edilmiş sepet takibi** → *Run workflow*.
+İlk denemede *Sadece dene* kutusunu işaretle; e-posta gitmez, sadece kaç sepet
+bulduğunu yazar.
+
+```bash
+export SHOPIFY_STORE=... SHOPIFY_ADMIN_TOKEN=...
+python -m src.sepet_takip --dry-run
+```
+
 ## Dosya düzeni
 
 ```
 .github/workflows/publish.yml         Saatlik paylaşım akışı
 .github/workflows/shopify-drafts.yml  Haftalık taslak üretimi
+.github/workflows/sepet-takip.yml     Günlük terk edilmiş sepet bildirimi
 posts/                                Paylaşımlar (markdown)
 posts/media/                          Görseller ve videolar
 src/main.py                           Ana akış
@@ -105,8 +142,10 @@ src/instagram.py                      Instagram Graph API
 src/facebook.py                       Facebook Page API
 src/tiktok.py                         TikTok Content Posting API
 src/shopify_source.py                 Shopify'dan taslak üretimi
+src/sepet_takip.py                    Terk edilmiş sepet bildirimi
 src/posts.py                          Post dosyalarını okur
 src/state.py                          Paylaşım kaydı
 tools/tiktok_auth.py                  TikTok bir kerelik yetkilendirme
 state/published.json                  Bot tarafından yönetilir
+state/sepet_bildirilen.json           Bot tarafından yönetilir
 ```

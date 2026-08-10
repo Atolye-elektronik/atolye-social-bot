@@ -1,0 +1,55 @@
+name: Terk edilmiş sepet takibi
+
+on:
+  schedule:
+    # Her gün 07:00 UTC = Türkiye saatiyle 10:00
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Sadece dene (e-posta gönderme)"
+        type: boolean
+        default: false
+      gun:
+        description: "Kaç gün geriye bakılsın"
+        type: string
+        default: "14"
+
+permissions:
+  contents: write
+
+jobs:
+  takip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Sepetleri kontrol et
+        env:
+          SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
+          SHOPIFY_ADMIN_TOKEN: ${{ secrets.SHOPIFY_ADMIN_TOKEN }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
+        run: |
+          python -m src.sepet_takip \
+            ${{ (inputs.dry_run && '--dry-run') || '' }} \
+            --gun "${{ inputs.gun || '14' }}"
+
+      - name: Bildirim kaydını güncelle
+        run: |
+          if [ -n "$(git status --porcelain state/sepet_bildirilen.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add state/sepet_bildirilen.json
+            git commit -m "chore: terk edilmiş sepet bildirimi kaydedildi [skip ci]"
+            git push
+          fi
