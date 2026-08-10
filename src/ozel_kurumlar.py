@@ -33,9 +33,10 @@ BEKLEME = 1.0
 TURLER = {
     "mtal": ("okul", r"mesleki ve teknik anadolu lisesi"),
     "mesem": ("mesem", r"mesleki e[ğg]itim merkezi"),
-    # Robotik/kodlama kursları bu iki türün altında geçiyor.
-    "kurs": ("kurs", r"kurs"),
-    "ogretim": ("ozelogretim", r"kurs"),
+    # Robotik/kodlama kursları "Özel Çeşitli Kurslar" altında kayıtlı ve
+    # tür sütunundan ayırt edilemiyor; kurum adından süzüyoruz.
+    "robotik": ("kurs", r"robot|kodlama|yaz[ıi]l[ıi]m|bili[şs]im|maker|teknoloji|bilim akademi"),
+    "kurs": ("kurs", r"."),
 }
 
 ILLER = [
@@ -51,9 +52,36 @@ ILLER = [
 ]
 
 
-def _hucreler(satir: str) -> list[str]:
-    ham = re.findall(r"<td[^>]*>(.*?)</td>", satir, re.S | re.I)
-    return [re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", h)).strip() for h in ham]
+def _duz(parca: str) -> str:
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", parca)).strip()
+
+
+# Python'da "İ".lower() birleşik noktalı bir 'i' üretiyor ve düz "i" ile
+# eşleşmiyor; başlıkları karşılaştırmadan önce sadeleştiriyoruz.
+_SADE = str.maketrans("ıİşŞğĞüÜöÖçÇ", "iissgguuoocc")
+
+
+def _anahtarla(metin: str) -> str:
+    return re.sub(r"\s+", " ", metin.translate(_SADE)).lower().strip()
+
+
+def _sutun_haritasi(html: str) -> dict[str, int]:
+    """Tablo başlıklarından sütun sırasını çıkarır.
+
+    Dizin, kurum türüne göre farklı tablolar döndürüyor: okul listesinde
+    "Kurum Türü" sütunu varken mesem listesinde yok. Sabit sıra varsaymak
+    yerine başlığı okuyoruz.
+    """
+    basliklar = [_anahtarla(_duz(b)) for b in re.findall(r"<th[^>]*>(.*?)</th>", html, re.S | re.I)]
+    harita = {}
+    for sira, baslik in enumerate(basliklar):
+        for anahtar, kelime in (
+            ("ilce", "ilce"), ("kurum", "kurum adi"), ("tur", "kurum turu"),
+            ("adres", "adres"), ("telefon", "telefon"),
+        ):
+            if kelime in baslik and anahtar not in harita:
+                harita[anahtar] = sira
+    return harita
 
 
 def il_kurumlari(oturum: requests.Session, il: str, ust_tur: str, desen: str) -> list[dict]:
@@ -63,22 +91,37 @@ def il_kurumlari(oturum: requests.Session, il: str, ust_tur: str, desen: str) ->
     )
     yanit.raise_for_status()
 
+    harita = _sutun_haritasi(yanit.text)
+    if "kurum" not in harita:
+        return []
+
+    def al(hucre: list[str], anahtar: str) -> str:
+        yer = harita.get(anahtar)
+        return hucre[yer].strip() if yer is not None and yer < len(hucre) else ""
+
     kurumlar = []
     for satir in re.findall(r"<tr[^>]*>(.*?)</tr>", yanit.text, re.S | re.I):
-        hucre = _hucreler(satir)
-        # Sütunlar: sıra | ilçe | kurum adı | kurum türü | adres | telefon
-        if len(hucre) < 6:
+        hucre = [_duz(h) for h in re.findall(r"<td[^>]*>(.*?)</td>", satir, re.S | re.I)]
+        if len(hucre) <= harita["kurum"]:
             continue
-        _, ilce, ad, tur, adres, telefon = hucre[:6]
-        if not re.search(desen, tur, re.I):
+
+        ad = al(hucre, "kurum")
+        tur = al(hucre, "tur")
+        if not ad:
             continue
+        # Tür sütunu yoksa (mesem listesi) filtreyi kurum adına uyguluyoruz.
+        # Tür sütunu ayırt edici değilse (kurslar) kurum adına bakıyoruz.
+        hedef = ad if desen != r"mesleki ve teknik anadolu lisesi" else (tur or ad)
+        if not re.search(desen, hedef, re.I):
+            continue
+
         kurumlar.append({
             "il": il,
-            "ilce": ilce,
-            "kurum": ad.strip(),
-            "tur": tur.strip(),
-            "adres": adres.strip(),
-            "telefon": telefon.strip(),
+            "ilce": al(hucre, "ilce"),
+            "kurum": ad,
+            "tur": tur or ust_tur,
+            "adres": al(hucre, "adres"),
+            "telefon": al(hucre, "telefon"),
         })
     return kurumlar
 
@@ -112,8 +155,9 @@ def main() -> None:
     print(f"{len(iller)} il taranıyor (özel {args.tur})...")
     kurumlar = topla(args.tur, iller)
 
-    # Aynı kurum aynı ilde iki kez listelenebiliyor.
-    tekil = list({(k["il"], k["kurum"]): k for k in kurumlar}.values())
+    # Dizin bazı türlerde il filtresini uygulamıyor ve aynı kaydı her il için
+    # döndürüyor; bu yüzden kurum adına göre tekilleştiriyoruz.
+    tekil = list({k["kurum"]: k for k in kurumlar}.values())
     tekil.sort(key=lambda k: (k["il"], k["ilce"], k["kurum"]))
 
     args.cikti.parent.mkdir(parents=True, exist_ok=True)
