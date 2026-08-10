@@ -44,6 +44,7 @@ Sayın {hitap},
 Atölye Elektronik olarak meslek liselerinin elektrik-elektronik, mekatronik ve
 bilişim atölyelerine malzeme tedarik ediyoruz. 2026-2027 eğitim yılı fiyat
 listemizi ekte tek sayfa halinde gönderiyorum.
+{yonlendirme}
 
 Öğretmenlerin en çok sorduğu üç konu:
 
@@ -140,6 +141,15 @@ def mesaj_kur(okul: dict, gonderen: str, imza: str) -> EmailMessage:
     # IMZA_ADI verilmemişse kendi adını iki kez yazmayalım.
     imza_blok = f"{imza}\nAtölye Elektronik\n" if imza else "Atölye Elektronik\n"
 
+    # Okul listesi bölüm bilgisi vermiyor; ileti müdürlüğe gidiyor. Doğru kişiye
+    # ulaşması için iletilmesini rica ediyoruz.
+    yonlendirme = (
+        ""
+        if okul["bolum"]
+        else "\nBu iletinin elektrik-elektronik, mekatronik ya da bilişim alan/atölye\n"
+        "şefinize iletilmesini rica ederim."
+    )
+
     mesaj.set_content(
         GOVDE.format(
             hitap=hitap_kur(okul),
@@ -148,6 +158,7 @@ def mesaj_kur(okul: dict, gonderen: str, imza: str) -> EmailMessage:
             eposta=gonderen,
             telefon=os.environ.get("ILETISIM_TELEFON", "0546 825 32 10"),
             imza_blok=imza_blok,
+            yonlendirme=yonlendirme,
         )
     )
 

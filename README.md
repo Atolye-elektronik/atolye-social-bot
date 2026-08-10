@@ -129,6 +129,38 @@ export SHOPIFY_STORE=... SHOPIFY_ADMIN_TOKEN=...
 python -m src.sepet_takip --dry-run
 ```
 
+## Okul listesini çıkarma
+
+`src/okul_listesi.py`, MEB'in herkese açık okul bağlantıları dizininden
+meslek liselerini çeker. Dizin her okul için adını, web sitesini ve
+`il/ilçe/kurum_kodu` biçiminde bir yol veriyor; okulların kurumsal e-postası
+da kurum kodundan türüyor (`{kurum_kodu}@meb.k12.tr`). Yani liste doğrudan
+gönderime hazır çıkıyor.
+
+```bash
+python -m src.okul_listesi --il 7           # sadece Antalya
+python -m src.okul_listesi --il 1,6,7,34    # birkaç il
+python -m src.okul_listesi                  # 81 il (~2.400 okul)
+python -m src.okul_listesi --tur mesem      # meslekî eğitim merkezleri
+```
+
+Çıktı `pazarlama/okullar.csv`. `oncelik` sütunu, adında ticaret/turizm/sağlık
+gibi bir sektör geçen okulları "dar alan" diye işaretler — elektrik-elektronik
+atölyesi olma ihtimalleri düşük olduğu için kampanyaya "genel" olanlardan
+başlamak daha verimli.
+
+`src/okul_iletisim.py` listeye telefon, adres ve varsa Instagram ekler.
+Telefon okulların çoğunda sitede açık duruyor; Instagram'ı ise çok azı
+yayınlıyor, o yüzden o sütun büyük ölçüde boş kalır. Bulunamayan hesap
+tahmin edilmez — yanlış hesaba mesaj atmak hiç atmamaktan kötüdür.
+
+```bash
+python -m src.okul_iletisim --il ANTALYA
+python -m src.okul_iletisim --sadece-genel
+```
+
+Betik durdurulup yeniden çalıştırılabilir; doldurulmuş satırlara tekrar gitmez.
+
 ## Okullara tanıtım e-postası
 
 Meslek liselerinin bölüm şefleri malzeme listesini eylülün ilk iki haftasında
@@ -181,6 +213,8 @@ src/facebook.py                       Facebook Page API
 src/tiktok.py                         TikTok Content Posting API
 src/shopify_source.py                 Shopify'dan taslak üretimi
 src/sepet_takip.py                    Terk edilmiş sepet bildirimi
+src/okul_listesi.py                   MEB dizininden okul listesi
+src/okul_iletisim.py                  Listeye telefon/Instagram ekler
 src/okul_daveti.py                    Okullara tanıtım e-postası
 pazarlama/fiyat-listesi.html          Fiyat listesinin kaynağı
 pazarlama/okullar.ornek.csv           Okul listesi örneği
