@@ -32,6 +32,9 @@ AJAX = "https://www.meb.gov.tr/baglantilar/okullar/okullar_ajax.php"
 TURLER = {
     "mtal": "mesleki ve teknik anadolu lisesi",
     "mesem": "mesleki eğitim merkezi",
+    # BİLSEM'ler üstün yetenekli öğrenciler için robotik/kodlama atölyesi
+    # işletiyor ve bütçeleriyle malzeme alıyorlar.
+    "bilsem": "bilim ve sanat merkezi",
 }
 
 IL_SAYISI = 81
