@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .env
 .venv/
+
+# Okul iletişim listesi repoya girmez
+pazarlama/okullar.csv

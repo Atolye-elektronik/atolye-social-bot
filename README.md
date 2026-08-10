@@ -129,6 +129,44 @@ export SHOPIFY_STORE=... SHOPIFY_ADMIN_TOKEN=...
 python -m src.sepet_takip --dry-run
 ```
 
+## Okullara tanıtım e-postası
+
+Meslek liselerinin bölüm şefleri malzeme listesini eylülün ilk iki haftasında
+kesinleştiriyor. Okul okul dolaşmaya vakit yoksa en hızlı yol, okulun kendi
+sitesinde zaten yayınlanmış kurumsal adrese tek sayfalık fiyat listesini
+göndermek.
+
+`src/okul_daveti.py` bunu yapar. Her e-posta okul ve bölüm adıyla
+kişiselleştirilir, `pazarlama/atolye-elektronik-okul-fiyat-listesi.pdf` ek
+olarak gider, altına listeden çıkma satırı konur ve gönderimler arasında
+varsayılan 8 saniye beklenir.
+
+Liste dosyasını `pazarlama/okullar.csv` olarak hazırla — sütunlar
+`okul,bolum,eposta`, örneği `pazarlama/okullar.ornek.csv` içinde. Bu dosya
+`.gitignore`'da; repoya girmez. Gönderim kaydı da adres değil, adresin
+özetini tutar.
+
+```bash
+export SMTP_USER=... SMTP_PASSWORD=...   # Gmail uygulama şifresi
+export IMZA_ADI="Adın Soyadın"
+
+python -m src.okul_daveti --liste pazarlama/okullar.csv --dry-run
+python -m src.okul_daveti --liste pazarlama/okullar.csv --limit 50
+```
+
+İlk gün 50 okulla başla, gelen dönüşe göre devam et. Gmail'in günlük gönderim
+sınırı var; tek seferde yüzlerce adrese gitmek hem sınıra takılır hem de
+spam'e düşme riskini artırır.
+
+Fiyat listesini güncellemek için `pazarlama/fiyat-listesi.html` dosyasını
+düzenleyip PDF'i yeniden üret:
+
+```bash
+chromium --headless --no-pdf-header-footer \
+  --print-to-pdf=pazarlama/atolye-elektronik-okul-fiyat-listesi.pdf \
+  pazarlama/fiyat-listesi.html
+```
+
 ## Dosya düzeni
 
 ```
@@ -143,6 +181,9 @@ src/facebook.py                       Facebook Page API
 src/tiktok.py                         TikTok Content Posting API
 src/shopify_source.py                 Shopify'dan taslak üretimi
 src/sepet_takip.py                    Terk edilmiş sepet bildirimi
+src/okul_daveti.py                    Okullara tanıtım e-postası
+pazarlama/fiyat-listesi.html          Fiyat listesinin kaynağı
+pazarlama/okullar.ornek.csv           Okul listesi örneği
 src/posts.py                          Post dosyalarını okur
 src/state.py                          Paylaşım kaydı
 tools/tiktok_auth.py                  TikTok bir kerelik yetkilendirme

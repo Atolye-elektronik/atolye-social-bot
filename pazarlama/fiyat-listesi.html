@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Atölye Elektronik — Okul ve Öğretmen Fiyat Listesi</title>
+<style>
+  @page { size: A4 portrait; margin: 11mm 12mm 10mm; }
+
+  :root {
+    --ink:      #14100C;
+    --ink-mid:  #4A423A;
+    --ink-soft: #7A7168;
+    --line:     #D8D0C6;
+    --line-lt:  #EAE4DA;
+    --copper:   #8E4A18;
+    --copper-b: #F4E7DA;
+    --pcb:      #245043;
+    --pcb-b:    #E2ECE7;
+    --paper:    #FFFFFF;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
+    font-size: 8.4pt;
+    line-height: 1.35;
+    color: var(--ink);
+    background: var(--paper);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .mono { font-family: "DejaVu Sans Mono", "Liberation Mono", monospace; font-variant-numeric: tabular-nums; }
+
+  /* ---------- masthead ---------- */
+
+  .masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2.5pt solid var(--ink);
+    padding-bottom: 5pt;
+  }
+  .brand { display: flex; flex-direction: column; gap: 1pt; }
+  .brand .name {
+    font-family: Georgia, "DejaVu Serif", serif;
+    font-size: 17pt;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1;
+  }
+  .brand .name span { color: var(--copper); }
+  .brand .kind {
+    font-size: 6.6pt;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .doc { text-align: right; display: flex; flex-direction: column; gap: 2pt; }
+  .doc .t {
+    font-family: Georgia, "DejaVu Serif", serif;
+    font-size: 12.5pt;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .doc .y {
+    font-size: 7pt;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--copper);
+    font-weight: 700;
+  }
+
+  /* ---------- promise strip ---------- */
+
+  .promise {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 0.8pt solid var(--line);
+    border-radius: 2pt;
+    margin-top: 7pt;
+    overflow: hidden;
+  }
+  .promise div {
+    padding: 5pt 7pt;
+    border-right: 0.8pt solid var(--line-lt);
+    background: var(--pcb-b);
+  }
+  .promise div:last-child { border-right: 0; }
+  .promise b { display: block; font-size: 8.2pt; color: var(--pcb); line-height: 1.2; }
+  .promise small { font-size: 6.8pt; color: var(--ink-mid); }
+
+  /* ---------- section headings ---------- */
+
+  h2 {
+    font-family: Georgia, "DejaVu Serif", serif;
+    font-size: 10.5pt;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 10pt 0 4pt;
+    padding-bottom: 2.5pt;
+    border-bottom: 1pt solid var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  h2 em {
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-style: normal;
+    font-size: 6.8pt;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- tables ---------- */
+
+  table { width: 100%; border-collapse: collapse; }
+  th {
+    font-size: 6.6pt;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 700;
+    text-align: right;
+    padding: 3pt 5pt;
+    border-bottom: 0.8pt solid var(--line);
+  }
+  th.l { text-align: left; }
+  td {
+    padding: 3.4pt 5pt;
+    border-bottom: 0.6pt solid var(--line-lt);
+    vertical-align: baseline;
+  }
+  td.r { text-align: right; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+
+  .item { font-weight: 600; font-size: 8.4pt; line-height: 1.25; }
+  .sub { color: var(--ink-soft); font-size: 6.9pt; }
+  .price { font-weight: 700; font-size: 9pt; }
+  .unit { color: var(--ink-soft); font-size: 6.6pt; }
+
+  /* ---------- class pack table (hero) ---------- */
+
+  .packs { border: 1.2pt solid var(--copper); border-radius: 2pt; overflow: hidden; }
+  .packs th { background: var(--copper-b); color: var(--copper); border-bottom: 1pt solid var(--copper); }
+  .packs th.l { color: var(--copper); }
+  .packs td { padding: 5pt 6pt; }
+  .packs .price { color: var(--copper); font-size: 9.6pt; }
+  .packs tr:nth-child(even) td { background: #FCF8F4; }
+
+  .packnote {
+    display: flex;
+    justify-content: space-between;
+    gap: 8pt;
+    font-size: 6.9pt;
+    color: var(--ink-mid);
+    padding: 3.5pt 6pt;
+    background: var(--copper-b);
+    border-top: 0.8pt solid var(--copper);
+  }
+  .packnote b { color: var(--copper); }
+
+  /* ---------- two-column region ---------- */
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14pt; }
+
+  /* ---------- footer ---------- */
+
+  .cta {
+    margin-top: 9pt;
+    border: 1pt solid var(--pcb);
+    border-radius: 2pt;
+    background: var(--pcb-b);
+    padding: 6pt 9pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12pt;
+  }
+  .cta .msg { font-size: 8.2pt; color: var(--ink); line-height: 1.35; }
+  .cta .msg b { color: var(--pcb); }
+  .cta .contact { text-align: right; white-space: nowrap; line-height: 1.5; }
+  .cta .contact .big { font-size: 11pt; font-weight: 700; color: var(--pcb); letter-spacing: -0.01em; }
+  .cta .contact .sm { font-size: 7.4pt; color: var(--ink-mid); }
+
+  footer {
+    margin-top: 6pt;
+    padding-top: 4pt;
+    border-top: 0.8pt solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    font-size: 6.5pt;
+    color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+  <div class="masthead">
+    <div class="brand">
+      <div class="name">ATÖLYE <span>ELEKTRONİK</span></div>
+      <div class="kind">Meslek Lisesi Atölye Malzemeleri</div>
+    </div>
+    <div class="doc">
+      <div class="t">Okul ve Öğretmen Fiyat Listesi</div>
+      <div class="y">2026 – 2027 Eğitim Yılı</div>
+    </div>
+  </div>
+
+  <div class="promise">
+    <div><b>Proforma fatura</b><small>Okul muhasebesi için sipariş öncesi düzenlenir</small></div>
+    <div><b>Havale / EFT</b><small>Kredi kartı zorunlu değildir</small></div>
+    <div><b>1.200 ₺ üzeri kargo bizden</b><small>Altındaki gönderilerde 127 ₺</small></div>
+    <div><b>Okul adresine teslim</b><small>Sınıfın tamamı tek koli, tek gönderi</small></div>
+  </div>
+
+  <h2>Sınıf Paketleri <em>Öğrenci başına almak yerine sınıfa tek sipariş</em></h2>
+  <div class="packs">
+    <table>
+      <thead>
+        <tr>
+          <th class="l">Ürün</th>
+          <th>10 Adet</th>
+          <th>20 Adet</th>
+          <th>30 Adet</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="item">Temrin Defteri</div>
+            <div class="sub">A4 · 48 yaprak · devre şeması ve temrin sayfa düzeni</div>
+          </td>
+          <td class="r"><span class="price mono">833 ₺</span><br><span class="unit mono">83,30 ₺/adet · %2</span></td>
+          <td class="r"><span class="price mono">1.649 ₺</span><br><span class="unit mono">82,45 ₺/adet · %3</span></td>
+          <td class="r"><span class="price mono">2.473,50 ₺</span><br><span class="unit mono">82,45 ₺/adet · %3</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="item">İşletmelerde Mesleki Eğitim İş Dosyası</div>
+            <div class="sub">Staj defteri · MEB yönetmeliğine uyumlu · MTAL ve MESEM</div>
+          </td>
+          <td class="r"><span class="price mono">833 ₺</span><br><span class="unit mono">83,30 ₺/adet · %2</span></td>
+          <td class="r"><span class="price mono">1.649 ₺</span><br><span class="unit mono">82,45 ₺/adet · %3</span></td>
+          <td class="r"><span class="price mono">2.473,50 ₺</span><br><span class="unit mono">82,45 ₺/adet · %3</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="packnote">
+      <span>Tekli satış fiyatı <b>85 ₺</b>. Paket büyüdükçe birim fiyat düşer.</span>
+      <span><b>20 ve 30'luk paketlerde kargo ücretsizdir.</b></span>
+      <span>Sınıfınız 24 veya 45 kişiyse o adede göre fiyat veririz.</span>
+    </div>
+  </div>
+
+  <div class="cols">
+    <div>
+      <h2>Takım Çantası ve El Aletleri</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><div class="item">Meslek Lisesi Takım Çantası Seti</div><div class="sub">17 parça full set — bölüm standardı</div></td>
+            <td class="r price mono">1.911 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Takım Çantası ve El Aletleri Seti</div><div class="sub">9 parça</div></td>
+            <td class="r price mono">1.076 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Usta İşi El Aletleri Seti</div><div class="sub">7 parça</div></td>
+            <td class="r price mono">839 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Pense · Yankeski · Kargaburun</div><div class="sub">3'lü set — 160 mm</div></td>
+            <td class="r price mono">696 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">16" Organizerli Takım Çantası</div><div class="sub">Boş çanta</div></td>
+            <td class="r price mono">330 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Tornavida Takımı</div><div class="sub">3'lü set</div></td>
+            <td class="r price mono">156 ₺</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Elektronik Eğitim Setleri</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><div class="item">Arduino İleri Seviye Kutulu Eğitim Seti</div><div class="sub">88 parça</div></td>
+            <td class="r price mono">1.588 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Endüstriyel Elektronik Uygulama Seti</div><div class="sub">11. sınıf müfredatına göre</div></td>
+            <td class="r price mono">999 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Arduino Proje ve Uygulama Geliştirme Seti</div><div class="sub">56 parça</div></td>
+            <td class="r price mono">982 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Akıllı Proje ve Sensör Modülleri Seti</div><div class="sub">10 parça</div></td>
+            <td class="r price mono">976 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Temel Seviye Arduino Başlangıç Seti</div><div class="sub">46 parça</div></td>
+            <td class="r price mono">782 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Endüstriyel Elektronik Eğitim Seti</div><div class="sub">11. sınıf dersi</div></td>
+            <td class="r price mono">659 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Temel Elektronik Deney Seti</div><div class="sub">Giriş seviyesi</div></td>
+            <td class="r price mono">199 ₺</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2>Proje ve Yarışma Kitleri <em>Bitirme · TÜBİTAK</em></h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><div class="item">3'ü 1 Arada Robot Araba Kiti</div><div class="sub">Bluetooth + IR kumanda + engelden kaçan · 18650 pilli</div></td>
+            <td class="r price mono">1.379 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Arduino 2WD Servolu Engelden Kaçan Robot</div><div class="sub">18650 pil yuvalı set</div></td>
+            <td class="r price mono">1.019 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Bluetooth Kontrollü Robot Kiti</div><div class="sub">Tam set — Arduino ve motor sürücü dahil</div></td>
+            <td class="r price mono">999 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">IR Kumandalı Robot Araba Kiti</div><div class="sub">2WD + Arduino + motor sürücü + kumanda</div></td>
+            <td class="r price mono">899 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">RFID Kartlı Akıllı Kilit Sistemi Kiti</div><div class="sub">RC522 + Arduino Uno + servo motor</div></td>
+            <td class="r price mono">649 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Sıcaklık-Nem İzleme Ekran Kiti</div><div class="sub">DHT11 + LCD + Arduino</div></td>
+            <td class="r price mono">599 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Dijital Saat ve Takvim Projesi Kiti</div><div class="sub">DS1302 + LCD + Arduino</div></td>
+            <td class="r price mono">599 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Hareket Algılayan Sesli Alarm Kiti</div><div class="sub">PIR + röle + buzzer + Arduino</div></td>
+            <td class="r price mono">532 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">Step Motor Konumlandırma Kiti</div><div class="sub">28BJY-48 + Arduino</div></td>
+            <td class="r price mono">439 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">2WD Robot Araba Kiti</div><div class="sub">18650 pil yuvalı set</div></td>
+            <td class="r price mono">419 ₺</td>
+          </tr>
+          <tr>
+            <td><div class="item">2WD Robot Araba Kiti</div><div class="sub">Demonte robotik gövde</div></td>
+            <td class="r price mono">382 ₺</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:6.9pt; color:var(--ink-soft); margin-top:4pt; line-height:1.4;">
+        Tüm proje kitlerinde jumper kablo hediyedir. Sınıfça alımlarda kit
+        başına ayrıca fiyat veriyoruz — kaç takım gerektiğini yazmanız yeterli.
+      </p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="msg">
+      <b>Sipariş vermek ya da proforma fatura istemek için</b> WhatsApp'tan yazın —
+      sınıf mevcudunuzu ve ihtiyaç listesini gönderin, aynı gün fiyat çıkaralım.<br>
+      Sipariş sitemizden de verilebilir: <b>atolyeelektronik.com</b>
+    </div>
+    <div class="contact">
+      <div class="big mono">0546 825 32 10</div>
+      <div class="sm">atolyeelektronik07@gmail.com</div>
+      <div class="sm">Tomalar Mah. · Döşemealtı / Antalya</div>
+    </div>
+  </div>
+
+  <footer>
+    <span>Fiyatlara KDV dahildir. Liste 30 Eylül 2026 tarihine kadar geçerlidir.</span>
+    <span>Atölye Elektronik · atolyeelektronik.com</span>
+  </footer>
+
+</body>
+</html>
