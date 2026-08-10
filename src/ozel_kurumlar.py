@@ -11,8 +11,10 @@ ulaşmak gerekiyor.
 
 Kullanımı:
     python -m src.ozel_kurumlar --tur mtal --cikti pazarlama/ozel-mtal.csv
-    python -m src.ozel_kurumlar --tur mesem --cikti pazarlama/ozel-mesem.csv
-    python -m src.ozel_kurumlar --tur kurs --cikti pazarlama/ozel-kurs.csv
+    python -m src.ozel_kurumlar --tur robotik --cikti pazarlama/ozel-robotik.csv
+
+Not: özel mesleki eğitim merkezi türünde Türkiye genelinde tek bir kurum
+var, o yüzden o tür pratikte işe yaramıyor.
 """
 
 from __future__ import annotations
@@ -38,6 +40,9 @@ TURLER = {
     "robotik": ("kurs", r"robot|kodlama|yaz[ıi]l[ıi]m|bili[şs]im|maker|teknoloji|bilim akademi"),
     "kurs": ("kurs", r"."),
 }
+
+# Robotik/elektronik malzeme alma ihtimali yüksek olan anahtar kelimeler.
+GUCLU = r"robot|kodlama|maker|yaz[ıi]l[ıi]m|bili[şs]im"
 
 ILLER = [
     "ADANA","ADIYAMAN","AFYONKARAHİSAR","AĞRI","AKSARAY","AMASYA","ANKARA","ANTALYA","ARDAHAN",
@@ -85,25 +90,47 @@ def _sutun_haritasi(html: str) -> dict[str, int]:
 
 
 def il_kurumlari(oturum: requests.Session, il: str, ust_tur: str, desen: str) -> list[dict]:
+    """İlin tüm sayfalarını gezer.
+
+    Dizin sayfa başına 250 kayıt gösteriyor; İstanbul gibi illerde tek sayfa
+    okumak listenin büyük kısmını kaçırıyor.
+    """
+    hepsi: list[dict] = []
+    sayfa = 1
+    while True:
+        bulunan = _sayfa_kurumlari(oturum, il, ust_tur, desen, sayfa)
+        if bulunan is None:  # sayfada hiç veri satırı yok — liste bitti
+            return hepsi
+        hepsi += bulunan
+        sayfa += 1
+        time.sleep(0.4)
+        if sayfa > 60:  # güvenlik freni
+            return hepsi
+
+
+def _sayfa_kurumlari(oturum: requests.Session, il: str, ust_tur: str,
+                     desen: str, sayfa: int) -> list[dict] | None:
     yanit = oturum.get(
-        DIZIN, params={"tur": ust_tur, "il": il, "tur2": "0"}, timeout=60,
+        DIZIN, params={"tur": ust_tur, "il": il, "tur2": "0", "sayfa": str(sayfa)}, timeout=60,
         headers={"User-Agent": "atolye-social-bot"},
     )
     yanit.raise_for_status()
 
     harita = _sutun_haritasi(yanit.text)
     if "kurum" not in harita:
-        return []
+        return None
 
     def al(hucre: list[str], anahtar: str) -> str:
         yer = harita.get(anahtar)
         return hucre[yer].strip() if yer is not None and yer < len(hucre) else ""
 
     kurumlar = []
+    veri_satiri = 0
     for satir in re.findall(r"<tr[^>]*>(.*?)</tr>", yanit.text, re.S | re.I):
         hucre = [_duz(h) for h in re.findall(r"<td[^>]*>(.*?)</td>", satir, re.S | re.I)]
         if len(hucre) <= harita["kurum"]:
             continue
+        veri_satiri += 1
 
         ad = al(hucre, "kurum")
         tur = al(hucre, "tur")
@@ -122,8 +149,14 @@ def il_kurumlari(oturum: requests.Session, il: str, ust_tur: str, desen: str) ->
             "tur": tur or ust_tur,
             "adres": al(hucre, "adres"),
             "telefon": al(hucre, "telefon"),
+            # "teknoloji" gibi geniş kelimeler müzik teknolojisi kursu da
+            # getiriyor; güçlü eşleşmeleri ayırt edilebilir yapalım.
+            "ilgi": "yüksek" if re.search(GUCLU, ad, re.I) else "orta",
         })
-    return kurumlar
+
+    # Hiç veri satırı yoksa bu sayfa listenin sonundadır (süzgeç boş
+    # bırakmışsa değil — o durumda satır var ama eşleşme yok).
+    return kurumlar if veri_satiri else None
 
 
 def topla(tur: str, iller: list[str]) -> list[dict]:
@@ -162,7 +195,8 @@ def main() -> None:
 
     args.cikti.parent.mkdir(parents=True, exist_ok=True)
     with args.cikti.open("w", encoding="utf-8", newline="") as dosya:
-        yazici = csv.DictWriter(dosya, fieldnames=["il", "ilce", "kurum", "tur", "adres", "telefon"])
+        sutunlar = ["il", "ilce", "kurum", "tur", "telefon", "adres", "ilgi"]
+        yazici = csv.DictWriter(dosya, fieldnames=sutunlar, extrasaction="ignore")
         yazici.writeheader()
         yazici.writerows(tekil)
 
