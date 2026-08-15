@@ -48,6 +48,14 @@ paylaşılmamış postları bulur, ilgili platformlara gönderir. Neyin
 paylaşıldığı `state/published.json` dosyasında tutulur — o dosyayı elle
 düzenlemene gerek yok, bot kendisi günceller.
 
+**Tek turda en fazla bir post paylaşılır.** Bot bir süre çalışmazsa (tatil,
+kapalı hesap, bozuk zamanlama) geride birikmiş postlar oluşur; sınır olmasaydı
+bot ilk çalıştığında hepsini arka arkaya gönderir, akış spam'e döner ve Meta'nın
+hız sınırına takılabilirdi. Sınır sayesinde kuyruk saat başı birer birer boşalır.
+Değiştirmek için `MAX_PER_RUN` değişkenini kullan (`0` = sınırsız) ya da elle
+çalıştırırken `--max 3` gibi bir değer ver. `--only` ile tek post gönderirken
+sınır zaten uygulanmaz.
+
 ## Video paylaşımı
 
 Instagram videoları Reels olarak paylaşır. TikTok yalnızca video kabul eder.

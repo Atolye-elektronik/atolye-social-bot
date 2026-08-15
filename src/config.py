@@ -36,6 +36,13 @@ MEDIA_BASE_URL = os.environ.get("MEDIA_BASE_URL", "").strip()
 # Kuru çalışma: API çağrısı yapmadan ne olacağını gösterir.
 DRY_RUN = os.environ.get("DRY_RUN", "false").lower() in ("1", "true", "yes")
 
+# Tek çalışmada en fazla kaç post paylaşılsın. Bot saat başı çalıştığı için
+# birikmiş kuyruk saatlere yayılır; 0 yazarsan sınır kalkar.
+try:
+    MAX_PER_RUN = int(os.environ.get("MAX_PER_RUN", "1"))
+except ValueError:
+    MAX_PER_RUN = 1
+
 
 def media_url(relative_path: str) -> str:
     """posts/media/foo.jpg -> herkese açık https URL."""

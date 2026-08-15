@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook]
-media: posts/media/2026-08-09-magaza-temel-elektronik-deney-seti.jpg
-publish_at: 2026-08-09 13:00
+media: posts/media/2026-08-16-magaza-temel-elektronik-deney-seti.jpg
+publish_at: 2026-08-16 19:10
 tema: magaza
 ---
 🏪 Atölye Elektronik
