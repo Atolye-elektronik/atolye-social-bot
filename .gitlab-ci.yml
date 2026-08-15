@@ -96,6 +96,42 @@ shopify-drafts:
         echo "Yeni taslak üretilmedi."
       fi
 
+# --- Ürünlerden carousel taslağı üret (haftalık) ----------------------------
+# TIP=klasik  → kapak + ürün fotoğrafları + kapanış
+# TIP=senaryo → dert/hayal/çözüm kurgulu hikaye slide'ları
+# TIP boş     → ikisinden de birer tane
+# URUN=<shopify handle> verilirse sadece o ürün için üretir.
+carousel-drafts:
+  stage: run
+  rules:
+    - if: '$JOB == "carousel-drafts"'
+  script:
+    - |
+      if [ "$TIP" != "senaryo" ]; then
+        python -m src.carousel_source --count "${COUNT:-1}" ${URUN:+--handle "$URUN"}
+      fi
+    - |
+      if [ "$TIP" != "klasik" ]; then
+        python -m src.senaryo_source --count "${COUNT:-1}" --start-in-hours 48 ${URUN:+--handle "$URUN"}
+      fi
+    - |
+      if [ -n "$(git status --porcelain posts/ state/)" ]; then
+        git config user.name "atolye-bot"
+        git config user.email "bot@atolyeelektronik.com"
+        git checkout -B carousel-taslaklari
+        git add posts/ state/
+        git commit -m "feat: ürünlerden yeni carousel taslakları"
+        git push -f \
+          -o merge_request.create \
+          -o merge_request.target="${CI_DEFAULT_BRANCH}" \
+          -o merge_request.title="Ürünlerden yeni carousel taslakları" \
+          -o merge_request.description="Her ürün için kapak, ürün fotoğrafları ve sipariş çağrısı slide'ları üretildi. Birleştirmeden önce görselleri ve metinleri gözden geçir, publish_at tarihlerini ayarla." \
+          -o merge_request.remove_source_branch \
+          "https://oauth2:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:carousel-taslaklari
+      else
+        echo "Yeni taslak üretilmedi."
+      fi
+
 # --- İçerik takviminden taslak üret (haftalık) ------------------------------
 takvim:
   stage: run
