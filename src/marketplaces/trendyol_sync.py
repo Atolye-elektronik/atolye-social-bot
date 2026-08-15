@@ -25,20 +25,17 @@ different field names, tweak the `_summarize_package` function below.
 """
 
 import json
-import os
 from pathlib import Path
 
 import requests
 
+from issue_tracker import upsert_issue
 from trendyol_client import get_orders
 
 STATE_DIR = Path(__file__).resolve().parents[2] / "state"
 STATE_FILE = STATE_DIR / "trendyol_orders.json"
 
 ISSUE_TITLE = "Trendyol: Kargoya verilmesi gereken siparişler"
-
-GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
-GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY")  # "owner/repo", auto-set in Actions
 
 
 def _summarize_package(pkg):
@@ -72,17 +69,7 @@ def save_state(packages):
     STATE_FILE.write_text(json.dumps(packages, ensure_ascii=False, indent=2))
 
 
-def upsert_github_issue(packages):
-    if not (GITHUB_TOKEN and GITHUB_REPOSITORY):
-        print("GITHUB_TOKEN / GITHUB_REPOSITORY yok — issue adımı atlanıyor (yerel çalıştırma).")
-        return
-
-    api = f"https://api.github.com/repos/{GITHUB_REPOSITORY}"
-    headers = {
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github+json",
-    }
-
+def report_issue(packages):
     if not packages:
         body = "Şu anda kargoya verilmeyi bekleyen Trendyol siparişi yok. ✅"
     else:
@@ -92,36 +79,19 @@ def upsert_github_issue(packages):
             + "\n\n_Bu issue her çalıştırmada otomatik güncellenir (trendyol_sync.py)._"
         )
 
-    # find existing open issue with this title
-    resp = requests.get(
-        f"{api}/issues", headers=headers, params={"state": "open", "per_page": 100}, timeout=30
+    upsert_issue(
+        ISSUE_TITLE,
+        body,
+        labels=["trendyol", "siparis"],
+        create_if_missing=bool(packages),
     )
-    resp.raise_for_status()
-    existing = next((i for i in resp.json() if i.get("title") == ISSUE_TITLE), None)
-
-    if existing:
-        requests.patch(
-            f"{api}/issues/{existing['number']}", headers=headers, json={"body": body}, timeout=30
-        ).raise_for_status()
-        print(f"Issue #{existing['number']} güncellendi.")
-    elif packages:
-        r = requests.post(
-            f"{api}/issues",
-            headers=headers,
-            json={"title": ISSUE_TITLE, "body": body, "labels": ["trendyol", "siparis"]},
-            timeout=30,
-        )
-        r.raise_for_status()
-        print(f"Yeni issue oluşturuldu: #{r.json()['number']}")
-    else:
-        print("Bekleyen sipariş yok, yeni issue açılmadı.")
 
 
 def main():
     packages = fetch_pending_orders()
     print(f"{len(packages)} bekleyen sipariş paketi bulundu.")
     save_state(packages)
-    upsert_github_issue(packages)
+    report_issue(packages)
 
 
 if __name__ == "__main__":

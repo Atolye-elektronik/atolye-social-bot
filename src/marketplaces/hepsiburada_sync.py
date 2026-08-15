@@ -26,20 +26,17 @@ functions below.
 """
 
 import json
-import os
 from pathlib import Path
 
 import requests
 
 from hepsiburada_client import get_new_order_items, get_packages
+from issue_tracker import upsert_issue
 
 STATE_DIR = Path(__file__).resolve().parents[2] / "state"
 STATE_FILE = STATE_DIR / "hepsiburada_orders.json"
 
 ISSUE_TITLE = "Hepsiburada: Kargoya verilmesi gereken siparişler"
-
-GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
-GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY")  # "owner/repo", auto-set in Actions
 
 
 def _summarize_order_item(item):
@@ -95,17 +92,7 @@ def save_state(new_items, packages):
     )
 
 
-def upsert_github_issue(new_items, packages):
-    if not (GITHUB_TOKEN and GITHUB_REPOSITORY):
-        print("GITHUB_TOKEN / GITHUB_REPOSITORY yok — issue adımı atlanıyor (yerel çalıştırma).")
-        return
-
-    api = f"https://api.github.com/repos/{GITHUB_REPOSITORY}"
-    headers = {
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github+json",
-    }
-
+def report_issue(new_items, packages):
     total = len(new_items) + len(packages)
     if not total:
         body = "Şu anda kargoya verilmeyi bekleyen Hepsiburada siparişi yok. ✅"
@@ -116,36 +103,19 @@ def upsert_github_issue(new_items, packages):
         lines += ["", "_Bu issue her çalıştırmada otomatik güncellenir (hepsiburada_sync.py)._"]
         body = "\n".join(lines)
 
-    # find existing open issue with this title
-    resp = requests.get(
-        f"{api}/issues", headers=headers, params={"state": "open", "per_page": 100}, timeout=30
+    upsert_issue(
+        ISSUE_TITLE,
+        body,
+        labels=["hepsiburada", "siparis"],
+        create_if_missing=bool(total),
     )
-    resp.raise_for_status()
-    existing = next((i for i in resp.json() if i.get("title") == ISSUE_TITLE), None)
-
-    if existing:
-        requests.patch(
-            f"{api}/issues/{existing['number']}", headers=headers, json={"body": body}, timeout=30
-        ).raise_for_status()
-        print(f"Issue #{existing['number']} güncellendi.")
-    elif total:
-        r = requests.post(
-            f"{api}/issues",
-            headers=headers,
-            json={"title": ISSUE_TITLE, "body": body, "labels": ["hepsiburada", "siparis"]},
-            timeout=30,
-        )
-        r.raise_for_status()
-        print(f"Yeni issue oluşturuldu: #{r.json()['number']}")
-    else:
-        print("Bekleyen sipariş yok, yeni issue açılmadı.")
 
 
 def main():
     new_items, packages = fetch_pending()
     print(f"{len(new_items)} paketlenmemiş kalem, {len(packages)} kargo bekleyen paket bulundu.")
     save_state(new_items, packages)
-    upsert_github_issue(new_items, packages)
+    report_issue(new_items, packages)
 
 
 if __name__ == "__main__":
