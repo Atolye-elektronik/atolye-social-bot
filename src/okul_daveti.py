@@ -42,8 +42,8 @@ KONU = "Meslek lisesi atölye malzemeleri — sınıf paketi fiyatları (2026-20
 GOVDE = """\
 Sayın {hitap},
 
-Atölye Elektronik olarak meslek liselerinin elektrik-elektronik, mekatronik ve
-bilişim atölyelerine malzeme tedarik ediyoruz. 2026-2027 eğitim yılı fiyat
+Atölye Elektronik olarak meslek liselerinin elektrik-elektronik ve bilişim
+atölyelerine malzeme tedarik ediyoruz. 2026-2027 eğitim yılı fiyat
 listemizi ekte tek sayfa halinde gönderiyorum.
 {yonlendirme}
 
@@ -149,8 +149,8 @@ def mesaj_kur(okul: dict, gonderen: str, imza: str) -> EmailMessage:
     yonlendirme = (
         ""
         if okul["bolum"]
-        else "\nBu iletinin elektrik-elektronik, mekatronik ya da bilişim alan/atölye\n"
-        "şefinize iletilmesini rica ederim."
+        else "\nBu iletinin elektrik-elektronik ya da bilişim alan/atölye şefinize\n"
+        "iletilmesini rica ederim."
     )
 
     mesaj.set_content(
