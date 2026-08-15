@@ -20,6 +20,7 @@ in CI, or a local .env file for testing on your own machine):
 """
 
 import os
+from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
@@ -105,6 +106,76 @@ def get_shipped_packages(offset=0, limit=100):
     Canlı ortamda test edildi: {"totalCount", "limit", "offset", "pageCount", "items"}."""
     url = f"{OMS_BASE}/packages/merchantid/{MERCHANT_ID}/shipped"
     return _request("GET", url, params={"offset": offset, "limit": limit})
+
+
+def get_unpacked_packages(offset=0, limit=100):
+    """Paketlenmemiş kalemler (OMS /packages/.../status/unpacked)."""
+    url = f"{OMS_BASE}/packages/merchantid/{MERCHANT_ID}/status/unpacked"
+    return _request("GET", url, params={"offset": offset, "limit": limit})
+
+
+def get_order_detail(order_number):
+    """Tek bir siparişin detayı."""
+    url = f"{OMS_BASE}/orders/merchantid/{MERCHANT_ID}/ordernumber/{order_number}"
+    return _request("GET", url)
+
+
+# --- Sipariş işleme (yazma) -------------------------------------------------
+# Gövde şemaları Hepsiburada'nın açık kaynak PHP SDK'sından alındı ve SIT
+# ortamında doğrulandı: geçersiz bir lineItemId ile denendiğinde API artık
+# genel "Line items empty or null" yerine "lineItemId is not valid ..."
+# döndürüyor; yani gövde doğru ayrıştırılıyor.
+
+def create_package(line_items, parcel_quantity=1, deci=1):
+    """Sipariş kalemlerini paketler.
+
+    line_items: [{"id": "<lineItemId GUID>", "quantity": 1}, ...]
+    Döndürdüğü yanıtta oluşan paket numarası bulunur."""
+    url = f"{OMS_BASE}/packages/merchantid/{MERCHANT_ID}"
+    body = {
+        "parcelQuantity": parcel_quantity,
+        "deci": deci,
+        "lineItemRequests": line_items,
+    }
+    return _request("POST", url, json=body)
+
+
+def unpack_package(package_number):
+    """Paketi bozar (kalemleri paketlenmemiş durumuna döndürür)."""
+    url = f"{OMS_BASE}/packages/merchantid/{MERCHANT_ID}/packagenumber/{package_number}/unpack"
+    return _request("POST", url)
+
+
+def send_invoice(package_number, invoice_link):
+    """Pakete fatura bağlantısı iletir (PUT)."""
+    url = f"{OMS_BASE}/packages/merchantid/{MERCHANT_ID}/packagenumber/{package_number}/invoice"
+    return _request("PUT", url, json={"invoiceLink": invoice_link})
+
+
+def get_cargo_label(package_number, fmt="pdf"):
+    """Kargo barkodu/etiketi."""
+    url = f"{OMS_BASE}/packages/merchantid/{MERCHANT_ID}/packagenumber/{package_number}/label"
+    return _request("GET", url, params={"format": fmt})
+
+
+def send_delivered_status(package_number, received_by, received_date=None):
+    """Teslim edildi bilgisini iletir.
+
+    received_date: "2026-08-15T11:30:30.230Z" biçiminde; verilmezse şu an."""
+    if received_date is None:
+        received_date = (
+            datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.") +
+            f"{datetime.now(timezone.utc).microsecond // 1000:03d}Z"
+        )
+    url = f"{OMS_BASE}/packages/merchantid/{MERCHANT_ID}/packagenumber/{package_number}/deliver"
+    body = {"receivedDate": received_date, "receivedBy": received_by}
+    return _request("POST", url, json=body)
+
+
+def cancel_line_item(line_item_id, reason_id):
+    """Satıcı kaynaklı kalem iptali (tedarik edilemedi vb.)."""
+    url = f"{OMS_BASE}/lineitems/merchantid/{MERCHANT_ID}/id/{line_item_id}/cancelbymerchant"
+    return _request("POST", url, json={"reasonId": reason_id})
 
 
 def get_listings(offset=0, limit=100):
