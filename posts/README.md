@@ -27,6 +27,17 @@ internet adresi (`https://cdn.shopify.com/...`). Instagram medyasız paylaşım
 kabul etmiyor; Facebook kabul ediyor, o yüzden sadece Facebook'a atacaksan
 bu satırı silebilirsin.
 
+Birden fazla görseli köşeli parantezle verirsen post **carousel** olur:
+
+```markdown
+media: [posts/media/slide1.jpg, posts/media/slide2.jpg, posts/media/slide3.jpg]
+```
+
+Instagram'da kaydırmalı albüm, Facebook'ta çoklu fotoğraf gönderisi olarak
+paylaşılır. Instagram en fazla 10 görsel kabul eder, hepsi resim olmalı
+(carousel'de video desteklenmiyor). Carousel yalnızca Instagram ve
+Facebook'ta çalışır; TikTok/YouTube bu postları atlar.
+
 **publish_at** — Ne zaman paylaşılacağı, Türkiye saatiyle. Biçim `2026-08-01 10:00`.
 Bu satırı silersen post ilk çalışmada hemen paylaşılır.
 
@@ -36,6 +47,14 @@ Paylaşım akışı her saat başı çalışır, zamanı gelmiş ve daha önce
 paylaşılmamış postları bulur, ilgili platformlara gönderir. Neyin
 paylaşıldığı `state/published.json` dosyasında tutulur — o dosyayı elle
 düzenlemene gerek yok, bot kendisi günceller.
+
+**Tek turda en fazla bir post paylaşılır.** Bot bir süre çalışmazsa (tatil,
+kapalı hesap, bozuk zamanlama) geride birikmiş postlar oluşur; sınır olmasaydı
+bot ilk çalıştığında hepsini arka arkaya gönderir, akış spam'e döner ve Meta'nın
+hız sınırına takılabilirdi. Sınır sayesinde kuyruk saat başı birer birer boşalır.
+Değiştirmek için `MAX_PER_RUN` değişkenini kullan (`0` = sınırsız) ya da elle
+çalıştırırken `--max 3` gibi bir değer ver. `--only` ile tek post gönderirken
+sınır zaten uygulanmaz.
 
 ## Video paylaşımı
 

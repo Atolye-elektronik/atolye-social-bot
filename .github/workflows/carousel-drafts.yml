@@ -1,0 +1,64 @@
+name: Ürünlerden carousel taslağı üret
+
+on:
+  schedule:
+    # Her perşembe 06:00 UTC — hafta sonu paylaşımlarına yetişir
+    - cron: "0 6 * * 4"
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "Kaç carousel üretilsin"
+        type: string
+        default: "2"
+      handle:
+        description: "Sadece bu ürün için üret (Shopify handle, boş = otomatik seç)"
+        type: string
+        default: ""
+      tip:
+        description: "Carousel tipi"
+        type: choice
+        options: [ikisi, klasik, senaryo]
+        default: ikisi
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  drafts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Klasik carousel taslaklarını üret
+        if: ${{ inputs.tip != 'senaryo' }}
+        run: |
+          ARGS="--count ${{ inputs.count || '1' }}"
+          if [ -n "${{ inputs.handle }}" ]; then ARGS="$ARGS --handle ${{ inputs.handle }}"; fi
+          python -m src.carousel_source $ARGS
+
+      - name: Senaryolu carousel taslaklarını üret
+        if: ${{ inputs.tip != 'klasik' }}
+        run: |
+          ARGS="--count ${{ inputs.count || '1' }} --start-in-hours 48"
+          if [ -n "${{ inputs.handle }}" ]; then ARGS="$ARGS --handle ${{ inputs.handle }}"; fi
+          python -m src.senaryo_source $ARGS
+
+      - name: Taslakları pull request olarak aç
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: carousel-taslaklar
+          title: "Ürünlerden yeni carousel taslakları"
+          commit-message: "feat: ürünlerden carousel taslakları"
+          body: |
+            Bu carousel taslakları Shopify mağazandaki ürünlerden otomatik üretildi.
+            Her ürün için kapak + ürün fotoğrafları + kapanış slide'ları oluşturuldu.
+            Birleştirmeden önce slide görsellerini ve metinleri gözden geçir,
+            publish_at tarihlerini ayarla.
+          delete-branch: true

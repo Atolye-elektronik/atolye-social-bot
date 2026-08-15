@@ -22,6 +22,14 @@ Aşağıdaki adımlar toplam 10-15 dakika sürer. Sırayla git.
 > `raw.githubusercontent.com` adresleri işe yarıyordu. GitLab'da proje private
 > kalacaksa `MEDIA_BASE_URL` değişkenini Shopify CDN adresine çevir
 > (Shopify'a yüklediğin görsellerin adresi), ya da projeyi public yap.
+>
+> **Carousel kullanacaksan proje public olmalı.** Carousel slide'ları bot
+> tarafından üretilip repoya yazılıyor (`posts/media/carousel/`), yani
+> Shopify CDN'de bulunmuyorlar — `MEDIA_BASE_URL`'i Shopify'a çevirmek bu
+> görselleri kurtarmaz, carousel paylaşımları hata verir. Proje public
+> olduğunda bot GitLab raw adreslerini kendisi kuruyor, ek ayar gerekmiyor.
+> Projeyi private tutmak zorundaysan slide'ları bir CDN'e yükleyip
+> `MEDIA_BASE_URL`'i oraya çevirmen gerekir.
 
 ## 2. Kodu GitLab'a yükle
 
@@ -78,7 +86,7 @@ olan bir token'a ihtiyaç duyuyor.
 
 **Build → Pipeline schedules → New schedule**
 
-Aşağıdaki beş zamanlamayı ekle. Her birinde *Interval Pattern* kutusuna
+Aşağıdaki altı zamanlamayı ekle. Her birinde *Interval Pattern* kutusuna
 "Custom" seçip cron ifadesini yaz, *Variables* kısmına da `JOB` anahtarını
 ve değerini gir. Timezone: **Istanbul**.
 
@@ -88,7 +96,12 @@ ve değerini gir. Timezone: **Istanbul**.
 | Trendyol sipariş senkronu | `13 * * * *` | `JOB` = `trendyol-sync` |
 | Hepsiburada sipariş senkronu | `27 * * * *` | `JOB` = `hepsiburada-sync` |
 | Shopify taslakları (pazartesi) | `0 6 * * 1` | `JOB` = `shopify-drafts` |
+| Carousel taslakları (perşembe) | `0 6 * * 4` | `JOB` = `carousel-drafts` |
 | İçerik takvimi (pazar) | `0 6 * * 0` | `JOB` = `takvim` |
+
+Carousel işine isteğe bağlı üç değişken daha verebilirsin: `TIP` (`klasik`,
+`senaryo` ya da boş bırakırsan ikisinden birer tane), `URUN` (yalnızca o
+Shopify handle'ı için üret) ve `COUNT` (kaç tane üretilsin).
 
 ## 6. İlk denemeyi yap
 

@@ -34,13 +34,25 @@ class Post:
     path: pathlib.Path
     platforms: list[str]
     caption: str
-    media: str | None = None
+    media: str | list[str] | None = None
     publish_at: dt.datetime | None = None
     extra: dict = field(default_factory=dict)
 
     @property
-    def is_video(self) -> bool:
+    def is_carousel(self) -> bool:
+        return isinstance(self.media, list) and len(self.media) > 1
+
+    @property
+    def media_list(self) -> list[str]:
         if not self.media:
+            return []
+        if isinstance(self.media, list):
+            return self.media
+        return [self.media]
+
+    @property
+    def is_video(self) -> bool:
+        if not self.media or isinstance(self.media, list):
             return False
         return self.media.lower().endswith((".mp4", ".mov", ".m4v"))
 
@@ -102,12 +114,16 @@ def load_post(path: pathlib.Path) -> Post:
         platforms = [platforms]
     platforms = [p.strip().lower() for p in platforms]
 
+    media = meta.get("media") or None
+    if isinstance(media, list) and len(media) == 1:
+        media = media[0]
+
     return Post(
         slug=path.stem,
         path=path,
         platforms=platforms,
         caption=caption,
-        media=meta.get("media") or None,
+        media=media,
         publish_at=_parse_datetime(meta.get("publish_at")),
         extra=meta,
     )

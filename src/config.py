@@ -22,13 +22,26 @@ SHOPIFY_API_VERSION = os.environ.get("SHOPIFY_API_VERSION", "2025-07")
 
 # --- Repo / medya ---
 # Görsellerin herkese açık URL'ini kurmak için kullanılır.
-# GitHub Actions içinde otomatik dolar; yerelde elle verebilirsin.
+# GitHub Actions ve GitLab CI içinde otomatik dolar; yerelde elle verebilirsin.
 GITHUB_REPO = os.environ.get("GITHUB_REPOSITORY", "").strip()  # "kullanici/repo"
 GITHUB_BRANCH = os.environ.get("GITHUB_REF_NAME", "main").strip()
+
+# GitLab CI bu üçünü kendisi tanımlar.
+GITLAB_SERVER = os.environ.get("CI_SERVER_URL", "https://gitlab.com").strip()
+GITLAB_PROJECT = os.environ.get("CI_PROJECT_PATH", "").strip()  # "kullanici/repo"
+GITLAB_BRANCH = os.environ.get("CI_COMMIT_REF_NAME", "main").strip()
+
 MEDIA_BASE_URL = os.environ.get("MEDIA_BASE_URL", "").strip()
 
 # Kuru çalışma: API çağrısı yapmadan ne olacağını gösterir.
 DRY_RUN = os.environ.get("DRY_RUN", "false").lower() in ("1", "true", "yes")
+
+# Tek çalışmada en fazla kaç post paylaşılsın. Bot saat başı çalıştığı için
+# birikmiş kuyruk saatlere yayılır; 0 yazarsan sınır kalkar.
+try:
+    MAX_PER_RUN = int(os.environ.get("MAX_PER_RUN", "1"))
+except ValueError:
+    MAX_PER_RUN = 1
 
 
 def media_url(relative_path: str) -> str:
@@ -44,6 +57,12 @@ def media_url(relative_path: str) -> str:
     if GITHUB_REPO:
         return f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{rel}"
 
+    if GITLAB_PROJECT:
+        # GitLab raw, PUBLIC projelerde görselleri doğru content-type ile sunuyor.
+        # Proje private ise bu adres çalışmaz — o durumda MEDIA_BASE_URL tanımla.
+        return f"{GITLAB_SERVER.rstrip('/')}/{GITLAB_PROJECT}/-/raw/{GITLAB_BRANCH}/{rel}"
+
     raise RuntimeError(
-        "Medya URL'i kurulamadı. MEDIA_BASE_URL ya da GITHUB_REPOSITORY tanımlı olmalı."
+        "Medya URL'i kurulamadı. MEDIA_BASE_URL, GITHUB_REPOSITORY "
+        "ya da CI_PROJECT_PATH tanımlı olmalı."
     )

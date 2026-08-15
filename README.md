@@ -20,6 +20,30 @@ Ayrıca haftalık çalışan ikinci bir akış, Shopify mağazandaki ürünlerde
 otomatik post taslakları üretip pull request olarak açar. Metinleri gözden
 geçirip birleştirdiğinde paylaşım sırasına girerler.
 
+Üçüncü bir akış da ürünlerden **carousel** (kaydırmalı albüm) taslakları
+üretir: ürünün fotoğraflarından marka stilinde kapak + ürün + kapanış
+slide'ları oluşturur, Instagram'da carousel, Facebook'ta çoklu fotoğraf
+gönderisi olarak paylaşılır. Elle çalıştırmak için:
+
+```bash
+python -m src.carousel_source --count 2
+# ya da tek bir ürün için:
+python -m src.carousel_source --handle temel-elektronik-deney-seti
+```
+
+Carousel'lerin iki tipi var:
+
+- **Klasik** (`carousel_source`) — kapak + ürün fotoğrafları + kapanış.
+- **Senaryolu** (`senaryo_source`) — izleyiciyi hikayeye çeken kurgu:
+  tanıdık bir dert → hayal → çözüm olarak ürün → sipariş çağrısı.
+  Senaryo metni ürünün kategorisine göre otomatik seçilir (robot kitleri,
+  başlangıç setleri, el aletleri, sensör/modüller, meslek lisesi setleri).
+
+```bash
+python -m src.senaryo_source --count 2
+python -m src.senaryo_source --handle arduino-baslangic-seti
+```
+
 ## Kurulum
 
 ### 1. Repo'yu hazırla
@@ -107,22 +131,28 @@ python tools/tiktok_auth.py
 ## Dosya düzeni
 
 ```
-.github/workflows/publish.yml         Saatlik paylaşım akışı
-.github/workflows/shopify-drafts.yml  Haftalık taslak üretimi
-.github/workflows/trendyol-sync.yml   Trendyol sipariş takibi (saatlik)
+.github/workflows/publish.yml          Saatlik paylaşım akışı
+.github/workflows/shopify-drafts.yml   Haftalık taslak üretimi
+.github/workflows/carousel-drafts.yml  Haftalık carousel taslak üretimi
+.github/workflows/trendyol-sync.yml    Trendyol sipariş takibi (saatlik)
 .github/workflows/hepsiburada-sync.yml Hepsiburada sipariş takibi (saatlik)
-src/marketplaces/trendyol_client.py   Trendyol API istemcisi
+src/marketplaces/trendyol_client.py    Trendyol API istemcisi
 src/marketplaces/hepsiburada_client.py Hepsiburada API istemcisi
-src/marketplaces/hepsiburada_sync.py  Hepsiburada sipariş senkronu
-posts/                                Paylaşımlar (markdown)
-posts/media/                          Görseller ve videolar
-src/main.py                           Ana akış
-src/instagram.py                      Instagram Graph API
-src/facebook.py                       Facebook Page API
-src/tiktok.py                         TikTok Content Posting API
-src/shopify_source.py                 Shopify'dan taslak üretimi
-src/posts.py                          Post dosyalarını okur
-src/state.py                          Paylaşım kaydı
-tools/tiktok_auth.py                  TikTok bir kerelik yetkilendirme
-state/published.json                  Bot tarafından yönetilir
+src/marketplaces/hepsiburada_sync.py   Hepsiburada sipariş senkronu
+posts/                                 Paylaşımlar (markdown)
+posts/media/                           Görseller ve videolar
+posts/media/carousel/                  Üretilen carousel slide'ları
+src/main.py                            Ana akış
+src/instagram.py                       Instagram Graph API
+src/facebook.py                        Facebook Page API
+src/tiktok.py                          TikTok Content Posting API
+src/shopify_source.py                  Shopify'dan taslak üretimi
+src/carousel_source.py                 Ürünlerden klasik carousel üretimi
+src/senaryo_source.py                  Senaryolu (hikayeli) carousel üretimi
+src/carousel_gorsel.py                 Marka stilinde slide çizimi
+src/posts.py                           Post dosyalarını okur
+src/state.py                           Paylaşım kaydı
+tools/tiktok_auth.py                   TikTok bir kerelik yetkilendirme
+state/published.json                   Bot tarafından yönetilir
+state/carousel_seen.json               Carousel üretilen ürünler
 ```
