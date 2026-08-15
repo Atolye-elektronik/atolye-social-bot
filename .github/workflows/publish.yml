@@ -1,0 +1,73 @@
+name: Sosyal medya paylaşımı
+
+on:
+  # Her saat başı çalışır, zamanı gelmiş postları paylaşır.
+  schedule:
+    - cron: "5 * * * *"
+  # Actions sekmesinden elle de çalıştırabilirsin.
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Sadece dene, gerçekten paylaşma"
+        type: boolean
+        default: false
+      only:
+        description: "Sadece bu postu paylaş (dosya adı, .md olmadan)"
+        type: string
+        default: ""
+      force:
+        description: "Zaman ve tekrar kontrolünü atla"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bağımlılıkları kur
+        run: pip install -r requirements.txt
+
+      - name: Postları paylaş
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+          TIKTOK_DIRECT_POST: ${{ secrets.TIKTOK_DIRECT_POST }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.only }}" ]; then ARGS="$ARGS --only ${{ inputs.only }}"; fi
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          python -m src.main $ARGS
+
+      - name: Paylaşım kaydını commit et
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          if [ -n "$(git status --porcelain state/)" ]; then
+            git config user.name "atolye-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add state/
+            git commit -m "chore: paylaşım kaydı güncellendi [skip ci]"
+            git push
+          else
+            echo "Kayıtta değişiklik yok."
+          fi

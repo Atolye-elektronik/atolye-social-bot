@@ -1,0 +1,44 @@
+name: Shopify ürünlerinden post taslağı üret
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "Kaç taslak üretilsin"
+        type: string
+        default: "3"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  drafts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Taslakları üret
+        env:
+          SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
+          SHOPIFY_ADMIN_TOKEN: ${{ secrets.SHOPIFY_ADMIN_TOKEN }}
+        run: python -m src.shopify_source --count "${{ inputs.count || '3' }}"
+
+      - name: Taslakları pull request olarak aç
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: shopify-taslaklar
+          title: "Shopify ürünlerinden yeni post taslakları"
+          commit-message: "feat: Shopify ürünlerinden post taslakları"
+          body: |
+            Bu taslaklar Shopify mağazandaki ürünlerden otomatik üretildi.
+            Birleştirmeden önce metinleri gözden geçir, publish_at tarihlerini ayarla.
+          delete-branch: true

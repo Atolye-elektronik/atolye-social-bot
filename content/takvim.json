@@ -1,0 +1,64 @@
+{
+  "_aciklama": "Haftalik icerik takvimi. 'slotlar' listesindeki her satir, o gun ve saatte bir post uretilecegi anlamina gelir. 'tema' alani hangi metin sablonunun kullanilacagini secer. Gun adlari: pazartesi, sali, carsamba, persembe, cuma, cumartesi, pazar.",
+
+  "slotlar": [
+    { "gun": "pazartesi", "saat": "11:00", "tema": "urun_tanitim", "platforms": ["instagram", "facebook"] },
+    { "gun": "sali",      "saat": "19:30", "tema": "ipucu",        "platforms": ["instagram", "facebook"] },
+    { "gun": "persembe",  "saat": "11:00", "tema": "urun_tanitim", "platforms": ["instagram", "facebook"] },
+    { "gun": "cuma",      "saat": "18:00", "tema": "hafta_sonu",   "platforms": ["instagram", "facebook"] },
+    { "gun": "pazar",     "saat": "13:00", "tema": "magaza",       "platforms": ["instagram", "facebook"] }
+  ],
+
+  "temalar": {
+    "urun_tanitim": {
+      "basliklar": [
+        "⚡ {title}",
+        "🔧 Rafımızdan: {title}",
+        "🆕 Mağazamızda: {title}"
+      ],
+      "govde": "{desc}",
+      "kapanis": [
+        "Detaylar ve sipariş 👉 {url}",
+        "Hemen incele 👉 {url}"
+      ],
+      "etiketler": "#atolyeelektronik #elektronik #maker #hobi #antalya"
+    },
+
+    "ipucu": {
+      "basliklar": [
+        "💡 Atölye ipucu",
+        "💡 Bunu biliyor muydun?"
+      ],
+      "govde": "Doğru malzeme, işin yarısı. {title} gibi ürünler projeni hem daha güvenli hem daha temiz hale getirir.\n\n{desc}",
+      "kapanis": [
+        "Tüm çeşitler 👉 {url}"
+      ],
+      "etiketler": "#atolyeelektronik #makerturkiye #elektronikhobi #diy #tamir"
+    },
+
+    "hafta_sonu": {
+      "basliklar": [
+        "🛠️ Hafta sonu projesi",
+        "🛠️ Bu hafta sonu ne yapsak?"
+      ],
+      "govde": "Elinin altında {title} varsa, hafta sonuna güzel bir proje sığar.\n\n{desc}",
+      "kapanis": [
+        "Malzeme listesi mağazamızda 👉 {url}"
+      ],
+      "etiketler": "#atolyeelektronik #haftasonuprojesi #maker #arduino #diy"
+    },
+
+    "magaza": {
+      "basliklar": [
+        "🏪 Atölye Elektronik",
+        "📦 Aynı gün kargo"
+      ],
+      "govde": "Elektronik ve hobi malzemelerinde ihtiyacın olan her şey tek adreste. Öne çıkan ürün: {title}.\n\n{desc}",
+      "kapanis": [
+        "Tüm ürünler 👉 {url}",
+        "Mağazayı gez 👉 {url}"
+      ],
+      "etiketler": "#atolyeelektronik #elektronikmalzeme #hobielektronik #antalya"
+    }
+  }
+}
