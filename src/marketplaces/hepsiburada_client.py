@@ -100,6 +100,13 @@ def get_packages(offset=0, limit=100):
     return _request("GET", url, params={"offset": offset, "limit": limit})
 
 
+def get_shipped_packages(offset=0, limit=100):
+    """Kargoya verilmiş paketler (OMS /packages/.../shipped).
+    Canlı ortamda test edildi: {"totalCount", "limit", "offset", "pageCount", "items"}."""
+    url = f"{OMS_BASE}/packages/merchantid/{MERCHANT_ID}/shipped"
+    return _request("GET", url, params={"offset": offset, "limit": limit})
+
+
 def get_listings(offset=0, limit=100):
     """Mağazadaki listing'ler (hepsiburadaSku/merchantSku eşlemesi için)."""
     url = f"{LISTING_BASE}/listings/merchantid/{MERCHANT_ID}"
