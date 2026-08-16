@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook]
+platforms: [instagram, facebook, threads]
 media: [posts/media/carousel/2026-08-18-senaryo-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-bluetooth-ir-kum/01-kanca.jpg, posts/media/carousel/2026-08-18-senaryo-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-bluetooth-ir-kum/02-dert.jpg, posts/media/carousel/2026-08-18-senaryo-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-bluetooth-ir-kum/03-hayal.jpg, posts/media/carousel/2026-08-18-senaryo-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-bluetooth-ir-kum/04-cozum.jpg, posts/media/carousel/2026-08-18-senaryo-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-bluetooth-ir-kum/05-urun.jpg, posts/media/carousel/2026-08-18-senaryo-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-bluetooth-ir-kum/06-urun.jpg, posts/media/carousel/2026-08-18-senaryo-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-bluetooth-ir-kum/07-kapanis.jpg]
 publish_at: 2026-08-18 19:10
 ---
