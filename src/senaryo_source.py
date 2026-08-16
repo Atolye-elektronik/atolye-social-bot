@@ -231,13 +231,64 @@ def senaryo_sec(product: dict) -> dict:
     return VARSAYILAN
 
 
+# Kategori basina birden fazla kanca. Tek cumle oldugunda ayni kategoriden
+# iki urun ust uste ayni satirla aciliyor ve takipcinin gozune tekrar olarak
+# carpiyor (2026-08-16'da 17/19 ve 21/23 Agustos gonderilerinde oldu).
+KANCA_ALTERNATIFLERI = {
+    "Ekran süresi tartışmalarına son 🤖": [
+        "Ekran süresi tartışmalarına son 🤖",
+        "Ekran yerine kendi robotunu kursun 🤖",
+        "\"Bunu ben yaptım\" diyeceği gün 🤖",
+    ],
+    "Elektroniğe başlamanın en kolay yolu ⚡": [
+        "Elektroniğe başlamanın en kolay yolu ⚡",
+        "İlk devreni bu hafta kur ⚡",
+        "Nereden başlayacağını bilmiyorsan buradan ⚡",
+    ],
+    "O projeye başlamanın tam zamanı 🛠️": [
+        "O projeye başlamanın tam zamanı 🛠️",
+        "Fikrin hazır, malzemen eksik 🛠️",
+        "Prototipin bu hafta sonu çalışsın 🛠️",
+    ],
+    "İşini ilk seferde bitiren aletler 🔧": [
+        "İşini ilk seferde bitiren aletler 🔧",
+        "Doğru alet işi ikiye böler 🔧",
+        "Bir kere al, yıllarca kullan 🔧",
+    ],
+    "Projeni tamamlayan parça burada 🔌": [
+        "Projeni tamamlayan parça burada 🔌",
+        "Tek parça yüzünden proje beklemesin 🔌",
+        "Arduino uyumlu, taktığın gibi çalışır 🔌",
+    ],
+    "Atölye dersine tam hazırlık 🎓": [
+        "Atölye dersine tam hazırlık 🎓",
+        "Dönem başı telaşına son 🎓",
+        "Sınıfın malzemesi tek siparişte 🎓",
+    ],
+}
+
+
+def kanca_sec(product: dict, senaryo: dict | None = None) -> str:
+    """Ürüne göre kanca cümlesi seçer.
+
+    Seçim rastgele değil, ürün kimliğinden türeyen sabit bir indeks: aynı
+    ürün her çalıştırmada aynı cümleyle açılır, ama aynı kategorideki farklı
+    ürünler farklı cümleler alır.
+    """
+    senaryo = senaryo or senaryo_sec(product)
+    varsayilan = senaryo["kanca_caption"]
+    secenekler = KANCA_ALTERNATIFLERI.get(varsayilan, [varsayilan])
+    anahtar = str(product.get("id") or product.get("handle") or varsayilan)
+    return secenekler[sum(map(ord, anahtar)) % len(secenekler)]
+
+
 def build_caption(product: dict, senaryo: dict) -> str:
     title = product.get("title", "").strip()
     description = ozet(product.get("body_html", ""), limit=180)
 
     # "kaydır"/"carousel" demiyoruz: aynı metin Facebook'a da gidiyor ve orada
     # gönderi kaydırmalı carousel değil, çoklu fotoğraf albümü olarak çıkıyor.
-    lines = [senaryo["kanca_caption"], "", f"{senaryo['kanca']['baslik']}", "Cevabı fotoğraflarda 👇"]
+    lines = [kanca_sec(product, senaryo), "", f"{senaryo['kanca']['baslik']}", "Cevabı fotoğraflarda 👇"]
     if description:
         lines += ["", f"⚡ {title}: {description}"]
     if product.get("handle"):
