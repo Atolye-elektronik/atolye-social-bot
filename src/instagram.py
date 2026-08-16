@@ -69,6 +69,43 @@ def _publish_container(creation_id: str) -> str:
     raise InstagramError(f"Yayinlanamadi: {last_error}")
 
 
+def publish_carousel(caption: str, media_paths: list[str]) -> str:
+    """Birden fazla görseli tek gönderide (karusel) paylaşır.
+
+    Tek görselden farklı bir akış: önce her görsel için `is_carousel_item`
+    işaretli bir kap açılır, sonra bu kapların kimlikleri `children` olarak
+    CAROUSEL tipinde ikinci bir kaba verilir ve o yayınlanır.
+    """
+    if not config.IG_USER_ID:
+        raise InstagramError("IG_USER_ID tanimli degil.")
+    if not 2 <= len(media_paths) <= 10:
+        raise InstagramError("Karusel 2 ile 10 arasi gorsel ister.")
+
+    urls = [config.media_url(p) for p in media_paths]
+
+    if config.DRY_RUN:
+        for u in urls:
+            print(f"  [DRY RUN] Instagram karusel → {u}")
+        return "dry-run"
+
+    cocuklar = []
+    for sira, url in enumerate(urls, start=1):
+        kap = _post(
+            f"{config.IG_USER_ID}/media",
+            {"image_url": url, "is_carousel_item": "true"},
+        )
+        _wait_until_ready(kap["id"])
+        cocuklar.append(kap["id"])
+        print(f"  karusel gorseli {sira}/{len(urls)} hazir")
+
+    ana = _post(
+        f"{config.IG_USER_ID}/media",
+        {"media_type": "CAROUSEL", "children": ",".join(cocuklar), "caption": caption},
+    )
+    _wait_until_ready(ana["id"])
+    return _publish_container(ana["id"])
+
+
 def publish(caption: str, media_path: str | None, is_video: bool = False) -> str:
     if not config.IG_USER_ID:
         raise InstagramError("IG_USER_ID tanimli degil.")
