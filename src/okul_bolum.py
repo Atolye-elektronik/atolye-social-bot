@@ -79,6 +79,20 @@ def okulu_incele(okul: dict, oturum: requests.Session) -> dict:
     return okul
 
 
+def _yaz(liste: pathlib.Path, okullar: list[dict]) -> None:
+    """Listeyi diske yazar. Ara kayıtta da, bitişte de aynı yol kullanılıyor.
+
+    Önce geçici dosyaya yazıp sonra taşıyoruz: koşu tam yazma anında kesilirse
+    yarım bir CSV kalmasın, elde ya eski ya yeni tam sürüm olsun.
+    """
+    gecici = liste.with_suffix(liste.suffix + ".tmp")
+    with gecici.open("w", encoding="utf-8", newline="") as dosya:
+        yazici = csv.DictWriter(dosya, fieldnames=list(okullar[0].keys()))
+        yazici.writeheader()
+        yazici.writerows(okullar)
+    gecici.replace(liste)
+
+
 def calistir(liste: pathlib.Path, il: str | None = None, isci: int = 10) -> int:
     with liste.open(encoding="utf-8", newline="") as dosya:
         okullar = list(csv.DictReader(dosya))
@@ -111,12 +125,13 @@ def calistir(liste: pathlib.Path, il: str | None = None, isci: int = 10) -> int:
             with _kilit:
                 tamam += 1
                 if tamam % 200 == 0:
-                    print(f"  {tamam}/{len(hedefler)}")
+                    # Ara kayıt: koşu yarıda kesilirse buraya kadarki tespitler
+                    # durur ve sonraki çalıştırma kaldığı yerden devam eder.
+                    # Aksi halde saatlerce süren tarama tek kesintide sıfırlanır.
+                    _yaz(liste, okullar)
+                    print(f"  {tamam}/{len(hedefler)} (kaydedildi)")
 
-    with liste.open("w", encoding="utf-8", newline="") as dosya:
-        yazici = csv.DictWriter(dosya, fieldnames=list(okullar[0].keys()))
-        yazici.writeheader()
-        yazici.writerows(okullar)
+    _yaz(liste, okullar)
 
     ee = sum(1 for o in okullar if o.get("elektrik_elektronik") == "var")
     bt = sum(1 for o in okullar if o.get("bilisim") == "var")
