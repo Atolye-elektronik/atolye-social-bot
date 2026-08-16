@@ -22,6 +22,7 @@ import json
 import pathlib
 
 from . import carousel_gorsel, config
+from .senaryo_source import senaryo_sec
 from .shopify_source import STORE_URL, _slugify, fetch_products, ozet
 
 STATE_PATH = pathlib.Path("state/carousel_seen.json")
@@ -52,9 +53,14 @@ def build_caption(product: dict) -> str:
     title = product.get("title", "").strip()
     description = ozet(product.get("body_html", ""))
 
+    # Instagram akışta ilk ~125 karakteri gösterip gerisini "… daha fazla"
+    # arkasına saklıyor. Ürün adıyla açmak o pencerenin tamamını harcıyordu;
+    # senaryo şablonlarındaki kancayı başa alarak okuyucu önce faydayı görüyor.
+    kanca = senaryo_sec(product)["kanca_caption"]
+
     # "kaydır" demiyoruz: aynı metin Facebook'a da gidiyor ve orada gönderi
     # kaydırmalı carousel değil, çoklu fotoğraf albümü olarak çıkıyor.
-    lines = [f"\U0001f4f8 {title}", "", "Tüm detaylar fotoğraflarda 👇"]
+    lines = [kanca, "", f"\U0001f4f8 {title}", "Tüm detaylar fotoğraflarda 👇"]
     if description:
         lines += ["", description]
     if product.get("handle"):
