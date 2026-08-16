@@ -18,3 +18,10 @@ payload.json
 # içeriyor, depo ise herkese açık. Araçlar bu dosyaları kendileri üretiyor.
 state/tiktok_comments.json
 content/yorum_taslaklari.md
+
+# Pazarlama hedef listeleri — kurum e-postası ve telefonu içeriyorlar, depo
+# public. Betiklerden tek komutla yeniden üretiliyorlar, repoda durmaları
+# gerekmiyor. (Altyazı ve fiyat listesi gibi kişisel veri içermeyen dosyalar
+# bilerek dışarıda bırakıldı, onlar commit'lenebilir.)
+pazarlama/*.csv
+pazarlama/*.xlsx
