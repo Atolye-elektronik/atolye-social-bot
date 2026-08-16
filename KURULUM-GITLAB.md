@@ -9,7 +9,7 @@ Aşağıdaki adımlar toplam 10-15 dakika sürer. Sırayla git.
 ## 1. GitLab hesabı ve proje
 
 1. https://gitlab.com/users/sign_up adresinden ücretsiz hesap aç
-   (aynı e-posta ile: atolyeelektronik07@gmail.com).
+   (aynı e-posta ile: mağazanın e-posta adresi).
 2. Sağ üstteki **+** → **New project/repository** → **Create blank project**
    - Project name: `atolye-social-bot`
    - Visibility: **Private** (GitHub'dakinin aksine burada public olması gerekmiyor;
@@ -53,9 +53,9 @@ Her biri için: *Type: Variable*, **Masked** işaretli, **Protected** işaretsiz
 | Key | Değer |
 |---|---|
 | `GITLAB_TOKEN` | 4. adımda üreteceğin token |
-| `HEPSIBURADA_MERCHANT_ID` | `2c99312b-0dfd-4d3d-9573-df8177140f47` |
+| `HEPSIBURADA_MERCHANT_ID` | Hepsiburada'nın verdiği Merchant ID (GUID) |
 | `HEPSIBURADA_SECRET_KEY` | Hepsiburada secret key |
-| `HEPSIBURADA_DEV_USERNAME` | `atolyeelektronik_dev` |
+| `HEPSIBURADA_DEV_USERNAME` | Hepsiburada'nın verdiği geliştirici kullanıcı adı |
 | `HEPSIBURADA_ENV` | `sit` (canlı bilgiler gelince sil) |
 | `TRENDYOL_SUPPLIER_ID` | Trendyol satıcı ID |
 | `TRENDYOL_API_KEY` | Trendyol API key |
