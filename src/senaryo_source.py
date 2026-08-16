@@ -235,7 +235,9 @@ def build_caption(product: dict, senaryo: dict) -> str:
     title = product.get("title", "").strip()
     description = ozet(product.get("body_html", ""), limit=180)
 
-    lines = [senaryo["kanca_caption"], "", f"{senaryo['kanca']['baslik']}", "Cevabı carousel'de 👉 kaydır"]
+    # "kaydır"/"carousel" demiyoruz: aynı metin Facebook'a da gidiyor ve orada
+    # gönderi kaydırmalı carousel değil, çoklu fotoğraf albümü olarak çıkıyor.
+    lines = [senaryo["kanca_caption"], "", f"{senaryo['kanca']['baslik']}", "Cevabı fotoğraflarda 👇"]
     if description:
         lines += ["", f"⚡ {title}: {description}"]
     if product.get("handle"):

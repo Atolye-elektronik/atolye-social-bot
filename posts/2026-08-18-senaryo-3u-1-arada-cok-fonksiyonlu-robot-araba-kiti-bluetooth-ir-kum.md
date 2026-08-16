@@ -6,7 +6,7 @@ publish_at: 2026-08-18 19:10
 Ekran süresi tartışmalarına son 🤖
 
 Çocuğun ekrandan başını kaldırmıyor mu?
-Cevabı carousel'de 👉 kaydır
+Cevabı fotoğraflarda 👇
 
 ⚡ 3'ü 1 Arada Çok Fonksiyonlu Robot Araba Kiti (Bluetooth + IR Kumanda + Engelden Kaçan): 3 ayrı proje, tek kutuda! Bu kombo set; aynı 2WD robot gövdesini kullanarak üç farklı kontrol yöntemini denemeni sağlar — Bluetooth ile telefon üzerinden kontrol, IR kumanda ile...
 

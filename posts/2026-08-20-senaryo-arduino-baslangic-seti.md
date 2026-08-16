@@ -6,7 +6,7 @@ publish_at: 2026-08-20 19:10
 Elektroniğe başlamanın en kolay yolu ⚡
 
 Elektroniğe başlamak istiyorsun ama...
-Cevabı carousel'de 👉 kaydır
+Cevabı fotoğraflarda 👇
 
 ⚡ Temel Seviye Arduino Başlangıç Seti - 46 Parça: Kodlama dünyasına adım atan her öğrencinin ilk durağı! Bu set, meslek liselerinin "Robotik Kodlama" ve "Mikrodenetleyiciler" ders müfredatındaki temel uygulamaları yapabilmeniz...
 

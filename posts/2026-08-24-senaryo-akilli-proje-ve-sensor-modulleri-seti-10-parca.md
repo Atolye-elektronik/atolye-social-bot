@@ -6,7 +6,7 @@ publish_at: 2026-08-24 19:10
 O projeye başlamanın tam zamanı 🛠️
 
 Kafanda bir proje fikri var, değil mi?
-Cevabı carousel'de 👉 kaydır
+Cevabı fotoğraflarda 👇
 
 ⚡ Akıllı Proje ve Sensör Modülleri Seti - 10 Parça: Elektronik ve yazılım dünyasında projelerini bir üst seviyeye taşımak isteyenler için özenle derlenmiş kapsamlı Sensör ve Modül Geliştirme Seti.
 

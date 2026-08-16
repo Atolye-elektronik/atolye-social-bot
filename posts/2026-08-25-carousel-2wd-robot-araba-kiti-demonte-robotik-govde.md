@@ -5,7 +5,7 @@ publish_at: 2026-08-25 19:10
 ---
 📸 2WD Robot Araba Kiti (Demonte Robotik Gövde)
 
-Tüm detaylar için kaydır ➡️
+Tüm detaylar fotoğraflarda 👇
 
 Kendi akıllı robotunu tasarlamak, engelden kaçan, çizgi izleyen veya Bluetooth kontrollü araç projeleri geliştirmek isteyenler için ideal mekanik platformdur.
 

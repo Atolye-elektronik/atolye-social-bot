@@ -6,7 +6,7 @@ publish_at: 2026-08-26 19:10
 Projeni tamamlayan parça burada 🔌
 
 Tek bir parça yüzünden proje bekliyor.
-Cevabı carousel'de 👉 kaydır
+Cevabı fotoğraflarda 👇
 
 ⚡ HC-SR04 Ultrasonik Mesafe Sensörü - Arduino Uyumlu Temassız Ölçüm Modülü: HC-SR04, ses dalgalarını kullanarak engelleri tespit etmenizi ve 2 cm ile 400 cm arasında yüksek hassasiyetle mesafe ölçümü yapmanızı sağlar.
 

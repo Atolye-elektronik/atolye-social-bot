@@ -5,7 +5,7 @@ publish_at: 2026-08-19 19:10
 ---
 📸 Arduino Proje ve Uygulama Geliştirme Seti - 56 Parça
 
-Tüm detaylar için kaydır ➡️
+Tüm detaylar fotoğraflarda 👇
 
 Elektronik ve yazılım dünyasında kendini geliştirmek, ortam verilerini okumak ve kendi akıllı projelerini tasarlamak isteyenler için özel olarak hazırlanmış kapsamlı geliştirme setidir.
 

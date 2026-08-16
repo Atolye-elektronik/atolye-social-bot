@@ -6,7 +6,7 @@ publish_at: 2026-08-22 19:10
 İşini ilk seferde bitiren aletler 🔧
 
 Tam iş bitecekken alet seni yarı yolda bıraktı.
-Cevabı carousel'de 👉 kaydır
+Cevabı fotoğraflarda 👇
 
 ⚡ Usta İşi El Aletleri Seti - 7 Parça: Atölyede, evde veya sahada; teknik bir müdahale gerektiğinde elinizin altında olması gereken en temel 7 parça tek bir pakette!
 
