@@ -1,4 +1,4 @@
-﻿# Atölye Elektronik botu — GitLab CI karşılığı (.github/workflows/* ile aynı işler)
+# Atölye Elektronik botu — GitLab CI karşılığı (.github/workflows/* ile aynı işler)
 #
 # GitLab'da zamanlama, GitHub'daki gibi dosya içinde değil; proje ayarlarında
 # "Pipeline schedules" ekranından tanımlanır. Her zamanlamaya bir değişken
@@ -146,8 +146,13 @@ carousel-drafts:
 # Görseller Shopify CDN'inde; repodan medya okumuyor, o yüzden MEDIA_BASE_URL
 # gerekmiyor. Zamanlamaya bağlanmadı — kampanya döneminde elle tetikleniyor.
 #
-# Önce kuru çalıştır (DRY_RUN=true ile hiçbir şey yayınlanmaz, sadece
-# adresler listelenir), çıktı doğruysa DRY_RUN vermeden tekrar çalıştır.
+# META_ACCESS_TOKEN ve IG_USER_ID "Protected" işaretli, yani yalnızca korumalı
+# dallarda görünüyorlar. Bu yüzden iş main'de duruyor; korumasız bir özellik
+# dalından çalıştırılırsa değişkenler boş gelir ve iş
+# "IG_USER_ID tanimli degil" hatasıyla düşer.
+#
+# Önce DRY_RUN=true ile çalıştır (hiçbir şey yayınlanmaz, sadece adresler
+# listelenir), çıktı doğruysa DRY_RUN vermeden tekrar çalıştır.
 ig-karusel:
   stage: run
   rules:
