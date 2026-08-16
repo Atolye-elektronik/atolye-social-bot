@@ -67,6 +67,68 @@ gorsel-onizleme:
       - onizleme/
     expire_in: 1 week
 
+# --- Meta bağlantı kontrolü (elle çalıştırılır) -----------------------------
+# Hiçbir şey paylaşmaz. Yalnızca token'ların ve ID'lerin gerçekten çalıştığını
+# doğrular: Facebook sayfa jetonu alınabiliyor mu, sayfa ve Instagram hesabı
+# çözülüyor mu. Paylaşım hatasını canlı gönderiyle keşfetmek yerine burada gör.
+meta-saglik:
+  stage: run
+  rules:
+    - if: '$JOB == "meta-saglik"'
+  script:
+    - |
+      python - <<'PY'
+      import sys
+      import requests
+      from src import config, facebook
+
+      hatalar = []
+
+      def sor(etiket, url, params):
+          try:
+              veri = requests.get(url, params=params, timeout=60).json()
+          except Exception as exc:
+              hatalar.append(f"{etiket}: istek başarısız ({exc})")
+              return None
+          if "error" in veri:
+              hatalar.append(f"{etiket}: {veri['error'].get('message', veri['error'])}")
+              return None
+          return veri
+
+      print("FB_PAGE_ID :", config.FB_PAGE_ID or "(tanımsız)")
+      print("IG_USER_ID :", config.IG_USER_ID or "(tanımsız)")
+      print("Token      :", "var" if config.META_TOKEN else "(tanımsız)")
+
+      sayfa = sor("Facebook sayfası", f"{config.GRAPH_BASE}/{config.FB_PAGE_ID}",
+                  {"fields": "name", "access_token": config.META_TOKEN})
+      if sayfa:
+          print("✅ Sayfa çözüldü:", sayfa.get("name"))
+
+      try:
+          jeton = facebook._sayfa_token()
+          if jeton and jeton != config.META_TOKEN:
+              print("✅ Sayfa erişim jetonu alındı (yayın bununla yapılacak)")
+          else:
+              hatalar.append(
+                  "Sayfa erişim jetonu alınamadı; yayın sistem kullanıcısı "
+                  "jetonuna düşer ve '(#200) publish_actions' hatası verir."
+              )
+      except Exception as exc:
+          hatalar.append(f"Sayfa erişim jetonu: {exc}")
+
+      ig = sor("Instagram hesabı", f"{config.GRAPH_BASE}/{config.IG_USER_ID}",
+               {"fields": "username", "access_token": config.META_TOKEN})
+      if ig:
+          print("✅ Instagram çözüldü: @" + str(ig.get("username")))
+
+      if hatalar:
+          print("\nSORUNLAR:")
+          for h in hatalar:
+              print(" ❌", h)
+          sys.exit(1)
+      print("\nHepsi yolunda — paylaşım yapılmadı.")
+      PY
+
 # --- Sosyal medya paylaşımı (saatlik) ---------------------------------------
 publish:
   stage: run
