@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook, threads]
+platforms: [instagram]
 media: [posts/media/kanca/2026-08-17-kanca-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/01-kanca.png, posts/media/kanca/2026-08-17-kanca-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/02-urun.png, posts/media/kanca/2026-08-17-kanca-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/03-fiyat.png, posts/media/kanca/2026-08-17-kanca-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/04-kapanis.png]
 publish_at: 2026-08-17 15:46
 ---
