@@ -96,7 +96,12 @@ def il_okullari(oturum: requests.Session, il: int, arama: str) -> list[dict]:
         satirlar = govde.get("data", [])
         toplanan += satirlar
 
-        toplam = govde.get("recordsFiltered", 0)
+        # Dizin bu sayacı metin olarak döndürüyor ("64"); sayıya çevirmeden
+        # karşılaştırma TypeError veriyor.
+        try:
+            toplam = int(govde.get("recordsFiltered", 0) or 0)
+        except (TypeError, ValueError):
+            toplam = len(toplanan)
         start += length
         if start >= toplam or not satirlar:
             return toplanan
