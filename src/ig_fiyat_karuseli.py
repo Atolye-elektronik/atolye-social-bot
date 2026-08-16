@@ -50,7 +50,9 @@ def main() -> int:
     altyazi = ALTYAZI_DOSYA.read_text(encoding="utf-8").strip()
     print(f"{len(GORSELLER)} slayt, altyazi {len(altyazi)} karakter.")
 
-    gonderi_id = instagram.publish_carousel(altyazi, GORSELLER)
+    # publish() liste alınca karusele kendisi yönlendiriyor; ayrı bir karusel
+    # fonksiyonu çağrılmıyor (o iç kullanıma ayrılmış `_publish_carousel`).
+    gonderi_id = instagram.publish(altyazi, GORSELLER)
     print(f"Yayinlandi: {gonderi_id}")
     return 0
 
