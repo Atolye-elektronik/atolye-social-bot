@@ -1,0 +1,115 @@
+name: Hepsiburada Ürün Ekleme
+
+# Bilerek SADECE elle çalıştırılır — bu akış Hepsiburada'da gerçek ürün açar.
+# Zamanlanmış bir tetikleyici eklenmemeli.
+on:
+  workflow_dispatch:
+    inputs:
+      islem:
+        description: "Ne yapılsın?"
+        type: choice
+        required: true
+        default: "kuru-calistir"
+        options:
+          - kategori-ara
+          - kuru-calistir
+          - gonder
+      count:
+        description: "Son kaç Shopify ürünü"
+        type: string
+        required: false
+        default: "7"
+      kelime:
+        description: "kategori-ara için aranacak kelime (ör. robot)"
+        type: string
+        required: false
+        default: ""
+      barkod_uret:
+        description: "Barkodu olmayan ürünler için EAN-13 üret (GS1 mağaza içi öneki)"
+        type: boolean
+        required: false
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  urun-ekle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Kategori ara
+        if: inputs.islem == 'kategori-ara'
+        env:
+          HEPSIBURADA_MERCHANT_ID: ${{ secrets.HEPSIBURADA_MERCHANT_ID }}
+          HEPSIBURADA_SECRET_KEY: ${{ secrets.HEPSIBURADA_SECRET_KEY }}
+          HEPSIBURADA_DEV_USERNAME: ${{ secrets.HEPSIBURADA_DEV_USERNAME }}
+          HEPSIBURADA_MPOP_USERNAME: ${{ secrets.HEPSIBURADA_MPOP_USERNAME }}
+          HEPSIBURADA_MPOP_PASSWORD: ${{ secrets.HEPSIBURADA_MPOP_PASSWORD }}
+          HEPSIBURADA_ENV: ${{ vars.HEPSIBURADA_ENV || 'prod' }}
+          SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
+          SHOPIFY_ADMIN_TOKEN: ${{ secrets.SHOPIFY_ADMIN_TOKEN }}
+        working-directory: src/marketplaces
+        run: python hepsiburada_urun_ekle.py --kategori-ara "${{ inputs.kelime }}"
+
+      - name: Kuru çalıştır
+        if: inputs.islem == 'kuru-calistir'
+        env:
+          HEPSIBURADA_MERCHANT_ID: ${{ secrets.HEPSIBURADA_MERCHANT_ID }}
+          HEPSIBURADA_SECRET_KEY: ${{ secrets.HEPSIBURADA_SECRET_KEY }}
+          HEPSIBURADA_DEV_USERNAME: ${{ secrets.HEPSIBURADA_DEV_USERNAME }}
+          HEPSIBURADA_MPOP_USERNAME: ${{ secrets.HEPSIBURADA_MPOP_USERNAME }}
+          HEPSIBURADA_MPOP_PASSWORD: ${{ secrets.HEPSIBURADA_MPOP_PASSWORD }}
+          HEPSIBURADA_ENV: ${{ vars.HEPSIBURADA_ENV || 'prod' }}
+          SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
+          SHOPIFY_ADMIN_TOKEN: ${{ secrets.SHOPIFY_ADMIN_TOKEN }}
+        working-directory: src/marketplaces
+        run: |
+          python hepsiburada_urun_ekle.py \
+            --count "${{ inputs.count }}" \
+            ${{ inputs.barkod_uret && '--barkod-uret' || '' }} \
+            --cikti "$RUNNER_TEMP/payload.json"
+
+      - name: Payload'ı artifact olarak yükle
+        if: inputs.islem == 'kuru-calistir'
+        uses: actions/upload-artifact@v4
+        with:
+          name: hepsiburada-payload
+          path: ${{ runner.temp }}/payload.json
+          if-no-files-found: ignore
+
+      - name: Gönder
+        if: inputs.islem == 'gonder'
+        env:
+          HEPSIBURADA_MERCHANT_ID: ${{ secrets.HEPSIBURADA_MERCHANT_ID }}
+          HEPSIBURADA_SECRET_KEY: ${{ secrets.HEPSIBURADA_SECRET_KEY }}
+          HEPSIBURADA_DEV_USERNAME: ${{ secrets.HEPSIBURADA_DEV_USERNAME }}
+          HEPSIBURADA_MPOP_USERNAME: ${{ secrets.HEPSIBURADA_MPOP_USERNAME }}
+          HEPSIBURADA_MPOP_PASSWORD: ${{ secrets.HEPSIBURADA_MPOP_PASSWORD }}
+          HEPSIBURADA_ENV: ${{ vars.HEPSIBURADA_ENV || 'prod' }}
+          SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
+          SHOPIFY_ADMIN_TOKEN: ${{ secrets.SHOPIFY_ADMIN_TOKEN }}
+        working-directory: src/marketplaces
+        run: |
+          python hepsiburada_urun_ekle.py \
+            --count "${{ inputs.count }}" \
+            ${{ inputs.barkod_uret && '--barkod-uret' || '' }} \
+            --gonder
+
+      - name: Gönderilen ürün kaydını commit'le
+        if: inputs.islem == 'gonder'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/hepsiburada_urunler.json
+          git diff --staged --quiet || git commit -m "chore: hepsiburada'ya gönderilen ürünler kaydedildi"
+          git pull --rebase origin main || true
+          git push

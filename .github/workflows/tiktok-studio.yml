@@ -1,0 +1,106 @@
+name: TikTok Studio
+
+# TikTok Studio otomasyonu — yükleme/zamanlama, analitik, yorumlar.
+#
+# Diğer işlerden farkı: burada resmî bir API değil, gerçek bir tarayıcı var.
+# Bu yüzden üç önlem alınmış durumda:
+#   1. "zamanla" işi videoyu önceden TikTok'un kendi zamanlayıcısına bırakır;
+#      paylaşım anında bu workflow'un çalışmasına gerek kalmaz.
+#   2. Her hata ekran görüntüsü + HTML dökümüyle artifact olarak yüklenir.
+#   3. "saglik" işi çerez düşmeden bir hafta önce uyarır.
+
+on:
+  schedule:
+    - cron: "0 3 * * *"    # 06:00 TR — oturum sağlık kontrolü
+    - cron: "20 3 * * *"   # 06:20 TR — yaklaşan postları TikTok'a zamanla
+    - cron: "0 5 * * *"    # 08:00 TR — analitiği kaydet
+    - cron: "30 5 * * 1"   # Pazartesi 08:30 TR — yorumları topla
+  workflow_dispatch:
+    inputs:
+      gorev:
+        description: "Hangi iş çalışsın"
+        type: choice
+        default: saglik
+        options: [saglik, zamanla, analitik, yorumlar]
+      gun:
+        description: "zamanla: kaç gün ilerisi (en fazla 10)"
+        type: string
+        default: "7"
+      dry_run:
+        description: "Hiçbir şey yayınlama, sadece dene"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# Aynı anda iki tarayıcı oturumu açmak TikTok tarafında şüphe uyandırır.
+concurrency:
+  group: tiktok-studio
+  cancel-in-progress: false
+
+jobs:
+  studio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bağımlılıkları kur
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Hangi iş çalışacak
+        id: sec
+        run: |
+          case "${{ github.event.schedule }}" in
+            "0 3 * * *")   echo "gorev=saglik"   >> "$GITHUB_OUTPUT" ;;
+            "20 3 * * *")  echo "gorev=zamanla"  >> "$GITHUB_OUTPUT" ;;
+            "0 5 * * *")   echo "gorev=analitik" >> "$GITHUB_OUTPUT" ;;
+            "30 5 * * 1")  echo "gorev=yorumlar" >> "$GITHUB_OUTPUT" ;;
+            *)             echo "gorev=${{ inputs.gorev || 'saglik' }}" >> "$GITHUB_OUTPUT" ;;
+          esac
+
+      - name: TikTok Studio — ${{ steps.sec.outputs.gorev }}
+        env:
+          TIKTOK_STUDIO_COOKIES: ${{ secrets.TIKTOK_STUDIO_COOKIES }}
+          # Studio başarısız olursa resmî API'nin taslak moduna düşülür.
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+          # CI makineleri yavaş; bekleme sürelerini biraz uzat.
+          TIKTOK_STUDIO_YAVASLIK: "1.5"
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          GOREV="${{ steps.sec.outputs.gorev }}"
+          if [ "$GOREV" = "zamanla" ]; then
+            python -m src.tiktok_studio zamanla --gun "${{ inputs.gun || 7 }}"
+          else
+            python -m src.tiktok_studio "$GOREV"
+          fi
+
+      - name: Hata dökümlerini yükle
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tiktok-studio-dokum-${{ github.run_id }}
+          path: logs/tiktok-studio/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Kayıtları commit et
+        if: ${{ always() && inputs.dry_run != true }}
+        run: |
+          if [ -n "$(git status --porcelain state/ content/)" ]; then
+            git config user.name "atolye-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add state/ content/
+            git commit -m "chore: tiktok studio kaydı güncellendi [skip ci]"
+            git push
+          else
+            echo "Kayıtta değişiklik yok."
+          fi

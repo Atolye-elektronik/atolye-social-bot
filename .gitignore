@@ -3,6 +3,22 @@ __pycache__/
 .env
 .venv/
 
+# TikTok Studio oturum çerezleri — hesabına tam erişim demek, asla commit etme.
+.tiktok_studio_state.json
+cerez.b64
+
+# Hata ayıklama dökümleri (ekran görüntüsü + HTML)
+logs/
+
+# Hepsiburada toplu yükleme çıktıları — betikten yeniden üretilebilir
+hepsiburada-toplu-yukleme.xlsx
+payload.json
+
+# TikTok yorumları — izleyicilerin kullanıcı adlarını ve yorum metinlerini
+# içeriyor, depo ise herkese açık. Araçlar bu dosyaları kendileri üretiyor.
+state/tiktok_comments.json
+content/yorum_taslaklari.md
+
 # Pazarlama hedef listeleri — kurum e-postası ve telefonu içeriyorlar, depo
 # public. Betiklerden tek komutla yeniden üretiliyorlar, repoda durmaları
 # gerekmiyor. (Altyazı ve fiyat listesi gibi kişisel veri içermeyen dosyalar

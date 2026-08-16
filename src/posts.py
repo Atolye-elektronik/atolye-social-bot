@@ -84,7 +84,7 @@ def _parse_front_matter(text: str) -> dict:
     return data
 
 
-def _parse_datetime(raw) -> dt.datetime | None:
+def parse_datetime(raw) -> dt.datetime | None:
     if not raw or not isinstance(raw, str):
         return None
     raw = raw.strip()
@@ -124,7 +124,7 @@ def load_post(path: pathlib.Path) -> Post:
         platforms=platforms,
         caption=caption,
         media=media,
-        publish_at=_parse_datetime(meta.get("publish_at")),
+        publish_at=parse_datetime(meta.get("publish_at")),
         extra=meta,
     )
 

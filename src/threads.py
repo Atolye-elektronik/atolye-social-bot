@@ -75,17 +75,46 @@ def user_id() -> str:
     return found
 
 
+def _link_ya_da_etiket(blok: str) -> bool:
+    """Blok sipariş bağlantısı ya da etiket satırı mı?"""
+    return "http://" in blok or "https://" in blok or blok.lstrip().startswith("#")
+
+
 def _kisalt(text: str, limit: int = MAX_TEXT) -> str:
-    """Metni Threads sınırına sığdırır, kelimenin ortasından kesmez."""
+    """Metni Threads sınırına sığdırır, kelimenin ortasından kesmez.
+
+    Sondaki sipariş bağlantısı ve etiket blokları korunur; yer açmak
+    gerekirse gövde kısaltılır. Düz kesmede 500 karakter sınırı tam da
+    satın alma çağrısını götürüyordu.
+    """
     text = text.strip()
     if len(text) <= limit:
         return text
-    kesik = text[: limit - 1]
+
+    bloklar = text.split("\n\n")
+    kuyruk: list[str] = []
+    while len(bloklar) > 1 and _link_ya_da_etiket(bloklar[-1]):
+        kuyruk.insert(0, bloklar.pop())
+
+    sonek = "\n\n".join(kuyruk)
+    govde = "\n\n".join(bloklar).strip()
+
+    # Korunacak kuyruk tek başına sınırı dolduruyorsa kurtaracak bir şey yok.
+    pay = limit - len(sonek) - 2 if sonek else limit
+    if pay < 40:
+        sonek = ""
+        govde = text
+        pay = limit
+
+    kesik = govde[: pay - 1]
     bosluk = kesik.rfind(" ")
-    if bosluk > limit * 0.6:
+    if bosluk > pay * 0.6:
         kesik = kesik[:bosluk]
-    print(f"  (metin {len(text)} karakterdi, Threads icin {limit} karaktere kisaltildi)")
-    return kesik.rstrip(" ,;:-") + "…"
+    kesik = kesik.rstrip(" ,;:-") + "…"
+
+    sonuc = f"{kesik}\n\n{sonek}" if sonek else kesik
+    print(f"  (metin {len(text)} karakterdi, Threads icin {len(sonuc)} karaktere kisaltildi)")
+    return sonuc
 
 
 def _wait_until_ready(container_id: str, timeout_seconds: int = 300) -> None:

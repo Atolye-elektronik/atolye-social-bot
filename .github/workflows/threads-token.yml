@@ -1,0 +1,70 @@
+name: Threads token yenile
+
+on:
+  # Ayın 1'i 04:00 UTC — Threads token'ı 60 gün geçerli, ayda bir yenilenince
+  # sayaç hep başa sarar ve elle yetkilendirme gerekmez.
+  schedule:
+    - cron: "0 4 1 * *"
+  workflow_dispatch:
+    inputs:
+      check_only:
+        description: "Yenileme, sadece token geçerli mi bak"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: threads-token
+  cancel-in-progress: false
+
+jobs:
+  yenile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bağımlılıkları kur
+        run: pip install -r requirements.txt
+
+      - name: Token'ı yenile
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: |
+          if [ "${{ inputs.check_only }}" = "true" ]; then
+            python -m src.threads_token --check
+          else
+            python -m src.threads_token --out "$RUNNER_TEMP/threads_token.txt"
+          fi
+
+      # GitHub secret'ları şifreli yazıldığı için güncellemeyi gh CLI yapıyor.
+      # Bunun için secret'lara yazma yetkisi olan bir PAT gerekiyor:
+      #   Settings → Secrets → GH_SECRETS_TOKEN
+      #   (fine-grained token, bu repo için "Secrets: Read and write")
+      - name: Yeni token'ı secret'a yaz
+        if: ${{ inputs.check_only != true }}
+        env:
+          GH_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+        run: |
+          FILE="$RUNNER_TEMP/threads_token.txt"
+          if [ ! -s "$FILE" ]; then
+            echo "Yenilenmiş token bulunamadı, adım atlanıyor."
+            exit 0
+          fi
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::GH_SECRETS_TOKEN tanımlı değil — yeni token kaydedilemedi."
+            echo "::warning::THREADS_ACCESS_TOKEN secret'ını elle yenilemen gerekecek."
+            exit 0
+          fi
+          echo "::add-mask::$(cat "$FILE")"
+          gh secret set THREADS_ACCESS_TOKEN --body "$(cat "$FILE")"
+          echo "THREADS_ACCESS_TOKEN güncellendi."
+
+      - name: Geçici dosyayı sil
+        if: always()
+        run: rm -f "$RUNNER_TEMP/threads_token.txt"

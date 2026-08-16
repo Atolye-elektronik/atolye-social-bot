@@ -101,6 +101,83 @@ def get_orders(status=None, start_date_ms=None, end_date_ms=None, page=0, size=5
     return resp.json()
 
 
+def get_approved_products(page=0, size=100, status=None, next_page_token=None):
+    """V2 approved-product listing.
+
+    Docs: GET /integration/product/sellers/{sellerId}/products/approved
+    (Product V1 filtering was retired on 2026-08-10; V2 is content-based —
+    `images` and `title` sit at content level, `barcode`/`stockCode` and the
+    nested price/stock objects sit on each entry of `variants`.)
+
+    status: archived, blacklisted, locked, onSale, notOnSale
+    """
+    params = {"page": page, "size": min(size, 100)}
+    if status:
+        params["status"] = status
+    if next_page_token:
+        params["nextPageToken"] = next_page_token
+
+    url = f"{BASE_URL}/product/sellers/{SUPPLIER_ID}/products/approved"
+    resp = requests.get(url, headers=_auth_header(), params=params, timeout=30)
+    resp.raise_for_status()
+    return resp.json()
+
+
+def get_products_v1(page=0, size=100, approved=None, archived=None, on_sale=None):
+    """Legacy V1 filterProducts — kept only as a fallback for sellers whose
+    accounts still answer on the old path.
+
+    Docs: GET /integration/product/sellers/{sellerId}/products
+    Flat response: each content item carries barcode, title, stockCode,
+    quantity, salePrice and an `images` list of {"url": ...} entries.
+    """
+    params = {"page": page, "size": size}
+    if approved is not None:
+        params["approved"] = str(approved).lower()
+    if archived is not None:
+        params["archived"] = str(archived).lower()
+    if on_sale is not None:
+        params["onSale"] = str(on_sale).lower()
+
+    url = f"{BASE_URL}/product/sellers/{SUPPLIER_ID}/products"
+    resp = requests.get(url, headers=_auth_header(), params=params, timeout=30)
+    resp.raise_for_status()
+    return resp.json()
+
+
+def iter_all_products(size=100, status=None):
+    """Yield (api_version, product) for every product, paging all the way
+    through. Tries V2 first and falls back to V1 if this seller's account
+    still only answers on the old endpoint."""
+    use_v1 = False
+    try:
+        first = get_approved_products(page=0, size=size, status=status)
+    except requests.HTTPError as e:
+        if e.response is not None and e.response.status_code in (400, 404, 410):
+            use_v1 = True
+            first = get_products_v1(page=0, size=size)
+        else:
+            raise
+
+    version = "v1" if use_v1 else "v2"
+    fetch = (lambda p: get_products_v1(page=p, size=size)) if use_v1 else (
+        lambda p: get_approved_products(page=p, size=size, status=status)
+    )
+
+    data = first
+    page = 0
+    while True:
+        content = data.get("content") or []
+        for item in content:
+            yield version, item
+
+        total_pages = data.get("totalPages", 0)
+        page += 1
+        if page >= total_pages or not content:
+            break
+        data = fetch(page)
+
+
 def update_price_and_inventory(items):
     """items: list of {"barcode": str, "quantity": int, "salePrice": float, "listPrice": float}
     Returns the batchRequestId to check via get_batch_request_result()."""

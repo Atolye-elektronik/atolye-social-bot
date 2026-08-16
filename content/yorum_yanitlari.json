@@ -1,0 +1,47 @@
+{
+  "_aciklama": [
+    "TikTok yorumlarına hazır yanıt taslakları. src/tiktok_studio/comments.py",
+    "yorumun içinde 'anahtarlar' listesindeki kelimelerden birini görürse",
+    "ilgili 'yanit' metnini taslak dosyasına yazar.",
+    "",
+    "Yanıtlar OTOMATİK GÖNDERİLMEZ — content/yorum_taslaklari.md dosyasına",
+    "yazılır, göndermeye sen karar verirsin.",
+    "",
+    "Kurallar sırayla denenir, ilk tutan kazanır: özel durumları yukarı,",
+    "genel olanları aşağı koy."
+  ],
+  "kurallar": [
+    {
+      "anahtarlar": ["fiyat", "kaç para", "kac para", "ne kadar", "ücret", "ucret"],
+      "yanit": "Güncel fiyatı atolyeelektronik.com üzerinden görebilirsin, kampanyalarda değişebiliyor. 🙌"
+    },
+    {
+      "anahtarlar": ["kargo", "gönderim", "gonderim", "ne zaman gelir", "teslimat"],
+      "yanit": "Siparişler aynı gün kargoya veriliyor, Türkiye geneli 1-3 iş gününde teslim ediliyor. 📦"
+    },
+    {
+      "anahtarlar": ["stok", "var mı", "var mi", "mevcut", "tükendi", "tukendi"],
+      "yanit": "Stok durumunu atolyeelektronik.com'daki ürün sayfasından anlık görebilirsin."
+    },
+    {
+      "anahtarlar": ["link", "nereden", "nerden", "nasıl alırım", "nasil alirim", "sipariş", "siparis"],
+      "yanit": "Profildeki bağlantıdan ya da atolyeelektronik.com üzerinden sipariş verebilirsin. 🔗"
+    },
+    {
+      "anahtarlar": ["arduino", "uyumlu mu", "çalışır mı", "calisir mi"],
+      "yanit": "Evet, Arduino ile uyumlu. Kutudan çıkan örnek kodlarla ilk projeni kısa sürede kurabilirsin."
+    },
+    {
+      "anahtarlar": ["kaç yaş", "kac yas", "çocuk", "cocuk", "yaş grubu", "yas grubu"],
+      "yanit": "Set 12 yaş ve üzeri için uygun; küçük yaşlarda bir yetişkin eşliğinde kullanılmasını öneririz."
+    },
+    {
+      "anahtarlar": ["fatura", "garanti", "iade"],
+      "yanit": "Tüm siparişlerde fatura kesiliyor, 14 gün içinde koşulsuz iade hakkın var."
+    },
+    {
+      "anahtarlar": ["okul", "toplu", "kurumsal", "bayilik"],
+      "yanit": "Okul ve kurumsal toplu alımlar için bize atolyeelektronik07@gmail.com adresinden yazabilirsin. 🏫"
+    }
+  ]
+}

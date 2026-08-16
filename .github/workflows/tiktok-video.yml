@@ -1,0 +1,63 @@
+name: TikTok videosu üret
+
+# Bir postun ürün görsellerinden dikey (1080x1920) video üretir ve pull
+# request olarak açar. Zamanlanmış değil, elle çalıştırılır — mp4 dosyaları
+# repoyu hızla şişirir, her videoyu görerek eklemek daha iyi.
+
+on:
+  workflow_dispatch:
+    inputs:
+      post:
+        description: "Post dosya adı (.md olmadan)"
+        type: string
+        required: true
+      sure:
+        description: "Kare başına saniye"
+        type: string
+        default: "3"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bağımlılıkları kur
+        run: pip install -r requirements.txt
+
+      # ubuntu-latest imajında ffmpeg hazır geliyor; yine de doğrula.
+      - name: ffmpeg kontrolü
+        run: ffmpeg -version | head -1
+
+      - name: Videoyu üret
+        run: python -m src.video_uretim --post "${{ inputs.post }}" --sure "${{ inputs.sure }}"
+
+      - name: Pull request aç
+        run: |
+          if [ -z "$(git status --porcelain posts/)" ]; then
+            echo "Video üretilmedi."
+            exit 0
+          fi
+          DAL="video/${{ inputs.post }}"
+          git config user.name "atolye-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git checkout -B "$DAL"
+          git add posts/
+          git commit -m "feat: ${{ inputs.post }} için dikey video"
+          git push -f origin "$DAL"
+          gh pr create \
+            --base "${{ github.ref_name }}" \
+            --head "$DAL" \
+            --title "TikTok videosu: ${{ inputs.post }}" \
+            --body "Ürün görsellerinden dikey video üretildi. Videoyu izleyip beğenirsen postun front matter'ında \`media\` alanını mp4'e çevir ve \`platforms\` listesine \`tiktok_studio\` ekle." \
+            || echo "PR zaten açık olabilir."
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
