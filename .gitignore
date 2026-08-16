@@ -25,3 +25,6 @@ content/yorum_taslaklari.md
 # bilerek dışarıda bırakıldı, onlar commit'lenebilir.)
 pazarlama/*.csv
 pazarlama/*.xlsx
+
+# Gorsel onizleme isinin ciktisi — artifact olarak veriliyor, repoda durmasin
+onizleme/

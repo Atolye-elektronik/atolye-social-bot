@@ -33,16 +33,34 @@ GRI = (108, 122, 137)
 FONT_DIRS = [
     "/usr/share/fonts/truetype/dejavu",
     "/usr/share/fonts/dejavu",
+    # Windows'ta DejaVu yok; gorseli yerelde uretebilmek icin sistem yazi
+    # tiplerine dusuyoruz. carousel_gorsel.py ile ayni davranis.
+    r"C:\Windows\Fonts",
 ]
+
+# DejaVu bulunamazsa hangi sistem yazi tipi yerine gecsin.
+FONT_KARSILIK = {
+    "DejaVuSans-Bold.ttf": ("arialbd.ttf", "segoeuib.ttf", "calibrib.ttf"),
+    "DejaVuSans.ttf": ("arial.ttf", "segoeui.ttf", "calibri.ttf"),
+}
 
 
 def _font(bold: bool, size: int) -> ImageFont.FreeTypeFont:
     ad = "DejaVuSans-Bold.ttf" if bold else "DejaVuSans.ttf"
+    adaylar = (ad,) + FONT_KARSILIK.get(ad, ())
     for d in FONT_DIRS:
-        yol = os.path.join(d, ad)
-        if os.path.exists(yol):
-            return ImageFont.truetype(yol, size)
-    return ImageFont.load_default()
+        for aday in adaylar:
+            yol = os.path.join(d, aday)
+            if os.path.exists(yol):
+                return ImageFont.truetype(yol, size)
+    # Eskiden burada ImageFont.load_default() vardi. O font olceklenmiyor
+    # (istenen punto yok sayiliyor) ve Turkce harfleri kutu ciziyor; sonucta
+    # okunmaz bir gorsel sessizce paylasiliyordu. Artik gurultulu basariszlik:
+    # bozuk gorsel yayinlamaktansa is dursun.
+    raise RuntimeError(
+        f"Yazi tipi bulunamadi ({ad}). Aranan yerler: {', '.join(FONT_DIRS)}. "
+        "CI'da 'fonts-dejavu-core' paketinin kurulu oldugundan emin ol."
+    )
 
 
 def _sar(d: ImageDraw.ImageDraw, metin: str, f, maxw: int, maxsatir: int = 2) -> list[str]:
