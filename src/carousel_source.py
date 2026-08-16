@@ -21,7 +21,7 @@ import datetime as dt
 import json
 import pathlib
 
-from . import carousel_gorsel
+from . import carousel_gorsel, config
 from .shopify_source import STORE_URL, _slugify, fetch_products, ozet
 
 STATE_PATH = pathlib.Path("state/carousel_seen.json")
@@ -92,7 +92,7 @@ def write_post(product: dict, slug: str, slides: list[str], when: dt.datetime) -
     media = "[" + ", ".join(slides) + "]"
     body = (
         "---\n"
-        "platforms: [instagram, facebook]\n"
+        f"platforms: [{', '.join(config.DEFAULT_PLATFORMS)}]\n"
         f"media: {media}\n"
         f"publish_at: {when:%Y-%m-%d %H:%M}\n"
         "---\n"

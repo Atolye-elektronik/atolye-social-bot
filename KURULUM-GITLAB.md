@@ -63,6 +63,8 @@ Her biri için: *Type: Variable*, **Masked** işaretli, **Protected** işaretsiz
 | `META_ACCESS_TOKEN` | Meta System User token |
 | `FB_PAGE_ID` | Facebook Page ID |
 | `IG_USER_ID` | Instagram Business hesap ID |
+| `THREADS_ACCESS_TOKEN` | Threads token (Meta panelindeki User Token Generator üretir) |
+| `THREADS_USER_ID` | Threads hesap ID |
 | `SHOPIFY_STORE` | Mağaza adı (`.myshopify.com` olmadan) |
 | `SHOPIFY_ADMIN_TOKEN` | Shopify Admin API token |
 | `MEDIA_BASE_URL` | Görsellerin bulunduğu adres |
@@ -86,7 +88,7 @@ olan bir token'a ihtiyaç duyuyor.
 
 **Build → Pipeline schedules → New schedule**
 
-Aşağıdaki altı zamanlamayı ekle. Her birinde *Interval Pattern* kutusuna
+Aşağıdaki yedi zamanlamayı ekle. Her birinde *Interval Pattern* kutusuna
 "Custom" seçip cron ifadesini yaz, *Variables* kısmına da `JOB` anahtarını
 ve değerini gir. Timezone: **Istanbul**.
 
@@ -98,6 +100,12 @@ ve değerini gir. Timezone: **Istanbul**.
 | Shopify taslakları (pazartesi) | `0 6 * * 1` | `JOB` = `shopify-drafts` |
 | Carousel taslakları (perşembe) | `0 6 * * 4` | `JOB` = `carousel-drafts` |
 | İçerik takvimi (pazar) | `0 6 * * 0` | `JOB` = `takvim` |
+| Threads token yenileme (ayda bir) | `0 4 1 * *` | `JOB` = `threads-token` |
+
+Threads token'ı 60 gün geçerli. Aylık iş onu süresi dolmadan yeniler ve yeni
+değeri `THREADS_ACCESS_TOKEN` değişkenine kendisi yazar — bunun için
+`GITLAB_TOKEN`'ın **api** yetkisi olması yeterli. Bu zamanlamayı kurmazsan
+60 gün sonra Threads paylaşımları durur.
 
 Carousel işine isteğe bağlı üç değişken daha verebilirsin: `TIP` (`klasik`,
 `senaryo` ya da boş bırakırsan ikisinden birer tane), `URUN` (yalnızca o

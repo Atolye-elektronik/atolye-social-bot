@@ -2,11 +2,11 @@
   "_aciklama": "Haftalik icerik takvimi. 'slotlar' listesindeki her satir, o gun ve saatte bir post uretilecegi anlamina gelir. 'tema' alani hangi metin sablonunun kullanilacagini secer. Gun adlari: pazartesi, sali, carsamba, persembe, cuma, cumartesi, pazar.",
 
   "slotlar": [
-    { "gun": "pazartesi", "saat": "11:00", "tema": "urun_tanitim", "platforms": ["instagram", "facebook"] },
-    { "gun": "sali",      "saat": "19:30", "tema": "ipucu",        "platforms": ["instagram", "facebook"] },
-    { "gun": "persembe",  "saat": "11:00", "tema": "urun_tanitim", "platforms": ["instagram", "facebook"] },
-    { "gun": "cuma",      "saat": "18:00", "tema": "hafta_sonu",   "platforms": ["instagram", "facebook"] },
-    { "gun": "pazar",     "saat": "13:00", "tema": "magaza",       "platforms": ["instagram", "facebook"] }
+    { "gun": "pazartesi", "saat": "11:00", "tema": "urun_tanitim", "platforms": ["instagram", "facebook", "threads"] },
+    { "gun": "sali",      "saat": "19:30", "tema": "ipucu",        "platforms": ["instagram", "facebook", "threads"] },
+    { "gun": "persembe",  "saat": "11:00", "tema": "urun_tanitim", "platforms": ["instagram", "facebook", "threads"] },
+    { "gun": "cuma",      "saat": "18:00", "tema": "hafta_sonu",   "platforms": ["instagram", "facebook", "threads"] },
+    { "gun": "pazar",     "saat": "13:00", "tema": "magaza",       "platforms": ["instagram", "facebook", "threads"] }
   ],
 
   "temalar": {

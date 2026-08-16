@@ -18,8 +18,11 @@ Birden fazla satır olabilir. #atolyeelektronik
 
 ## Alanlar
 
-**platforms** — Nerelere paylaşılacak. Seçenekler: `instagram`, `facebook`, `tiktok`.
-Birden fazlasını yazabilirsin. Boş bırakırsan Instagram ve Facebook varsayılır.
+**platforms** — Nerelere paylaşılacak. Seçenekler: `instagram`, `facebook`,
+`threads`, `tiktok`, `youtube`. Birden fazlasını yazabilirsin. Boş bırakırsan
+Instagram ve Facebook varsayılır. Otomatik üretilen taslaklara Threads de
+ekleniyor; bunu değiştirmek için `POST_PLATFORMS` değişkenini kullan
+(örn. `POST_PLATFORMS=instagram,facebook`).
 
 **media** — Paylaşılacak görsel veya video. İki şekilde verilebilir:
 repo içindeki bir dosya yolu (`posts/media/urun1.jpg`) ya da doğrudan bir
@@ -35,8 +38,20 @@ media: [posts/media/slide1.jpg, posts/media/slide2.jpg, posts/media/slide3.jpg]
 
 Instagram'da kaydırmalı albüm, Facebook'ta çoklu fotoğraf gönderisi olarak
 paylaşılır. Instagram en fazla 10 görsel kabul eder, hepsi resim olmalı
-(carousel'de video desteklenmiyor). Carousel yalnızca Instagram ve
-Facebook'ta çalışır; TikTok/YouTube bu postları atlar.
+(carousel'de video desteklenmiyor). Carousel Instagram, Facebook ve
+Threads'te çalışır; TikTok/YouTube bu postları atlar. Threads 20 görsele
+kadar izin verir.
+
+## Threads'e özel alanlar
+
+**threads_text** — Threads'e giden metni ayrı yazmak istersen. Threads
+sınırı 500 karakter; bu satırı yazmazsan post metni kullanılır ve gerekirse
+kelime sonunda kısaltılır.
+
+**threads_reply_control** — Gönderiye kimler yanıt verebilir:
+`everyone` (varsayılan), `accounts_you_follow`, `mentioned_only`.
+
+Threads, Instagram'ın aksine görselsiz (sadece metin) paylaşıma da izin verir.
 
 **publish_at** — Ne zaman paylaşılacağı, Türkiye saatiyle. Biçim `2026-08-01 10:00`.
 Bu satırı silersen post ilk çalışmada hemen paylaşılır.

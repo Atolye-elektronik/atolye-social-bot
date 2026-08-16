@@ -12,17 +12,18 @@ import inspect
 import os
 import sys
 
-from . import config, facebook, instagram, posts, state, tiktok, youtube
+from . import config, facebook, instagram, posts, state, threads, tiktok, youtube
 
 PUBLISHERS = {
     "instagram": instagram.publish,
     "facebook": facebook.publish,
+    "threads": threads.publish,
     "tiktok": tiktok.publish,
     "youtube": youtube.publish,
 }
 
 
-CAROUSEL_PLATFORMS = {"instagram", "facebook"}
+CAROUSEL_PLATFORMS = {"instagram", "facebook", "threads"}
 
 
 def _call(publisher, post):

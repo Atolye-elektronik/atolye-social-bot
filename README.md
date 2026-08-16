@@ -1,6 +1,6 @@
 # Atölye Elektronik — Sosyal Medya Botu
 
-Instagram, Facebook Page ve TikTok'a zamanlanmış paylaşım yapan bir GitHub Actions botu.
+Instagram, Facebook Page, Threads ve TikTok'a zamanlanmış paylaşım yapan bir bot.
 Sunucu kiralamana gerek yok, her şey GitHub üzerinde ücretsiz çalışır.
 
 ## Nasıl çalışır
@@ -62,6 +62,8 @@ Repo → **Settings** → **Secrets and variables** → **Actions** → **New re
 | `META_ACCESS_TOKEN` | Meta System User token'ın |
 | `FB_PAGE_ID` | Facebook Page ID'n |
 | `IG_USER_ID` | Instagram Business hesap ID'n |
+| `THREADS_ACCESS_TOKEN` | Threads token (Meta panelindeki User Token Generator) |
+| `THREADS_USER_ID` | Threads hesap ID |
 | `TIKTOK_CLIENT_KEY` | TikTok Client Key |
 | `TIKTOK_CLIENT_SECRET` | TikTok Client Secret |
 | `TIKTOK_REFRESH_TOKEN` | `tools/tiktok_auth.py` ile üretilir |
@@ -111,6 +113,37 @@ export MEDIA_BASE_URL=https://raw.githubusercontent.com/KULLANICI/REPO/main
 python -m src.main --dry-run
 ```
 
+## Threads hakkında
+
+Threads, Instagram ile aynı şirkette olmasına rağmen ayrı bir API kullanıyor:
+adres `graph.threads.net`, token da Meta token'ından farklı. Bu yüzden bir
+kerelik ayrı bir yetkilendirme gerekiyor.
+
+Meta App Dashboard → uygulama → **Add use cases** → *Access the Threads API*.
+Sonra **Settings** sekmesinin altındaki **User Token Generator** bölümünden
+Threads hesabını "Threads Tester" olarak ekle, davet Threads hesabında
+(Ayarlar → İnternet sitesi izinleri → Davetler) kabul edilsin ve
+**Generate Access Token** ile 60 gün geçerli token'ı al. Token'ı
+`THREADS_ACCESS_TOKEN`, hesap ID'sini `THREADS_USER_ID` olarak kaydet.
+
+Alternatif olarak OAuth akışı için `tools/threads_auth.py` kullanılabilir
+(`THREADS_APP_ID` + `THREADS_APP_SECRET` ister).
+
+Bir postu Threads'e göndermek için `platforms` satırına `threads` yazman
+yeterli — bot metin, tek görsel, video ve carousel (2-20 görsel) paylaşımını
+destekliyor. Threads metin sınırı 500 karakter; uzun metinler kelime sonunda
+kesilir.
+
+### Token yenileme
+
+Threads token'ı **60 gün** geçerli. `threads-token` işi ayda bir çalışıp
+token'ı süresi dolmadan yeniler ve yeni değeri CI değişkenine kendisi yazar.
+Durumu istediğin an kontrol edebilirsin:
+
+```bash
+python -m src.threads_token --check
+```
+
 ## TikTok hakkında
 
 TikTok'un Content Posting API'si, uygulaman TikTok denetiminden geçene kadar
@@ -145,6 +178,8 @@ posts/media/carousel/                  Üretilen carousel slide'ları
 src/main.py                            Ana akış
 src/instagram.py                       Instagram Graph API
 src/facebook.py                        Facebook Page API
+src/threads.py                         Threads API
+src/threads_token.py                   Threads token yenileme
 src/tiktok.py                          TikTok Content Posting API
 src/shopify_source.py                  Shopify'dan taslak üretimi
 src/carousel_source.py                 Ürünlerden klasik carousel üretimi
@@ -153,6 +188,7 @@ src/carousel_gorsel.py                 Marka stilinde slide çizimi
 src/posts.py                           Post dosyalarını okur
 src/state.py                           Paylaşım kaydı
 tools/tiktok_auth.py                   TikTok bir kerelik yetkilendirme
+tools/threads_auth.py                  Threads OAuth yetkilendirmesi
 state/published.json                   Bot tarafından yönetilir
 state/carousel_seen.json               Carousel üretilen ürünler
 ```
