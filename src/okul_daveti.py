@@ -82,6 +82,36 @@ bir daha yazmayız.
 """
 
 
+ENV_DOSYA = pathlib.Path(".env")
+
+
+def _env_dosyasini_yukle() -> None:
+    """Varsa `.env` dosyasındaki değerleri ortama alır.
+
+    Gmail uygulama şifresini terminalde ortam değişkeni olarak vermek herkes
+    için pratik değil (PowerShell'de tırnak/kaçış hataları, `setx`in kayıt
+    defterine düz metin yazması). Bunun yerine şifre `.env` dosyasına
+    yazılabiliyor; dosya `.gitignore` içinde, repoya girmiyor.
+
+    Ortamda zaten tanımlı olan değişkenler ezilmez — CI'da CI değişkenleri
+    geçerli kalsın diye.
+    """
+    if not ENV_DOSYA.exists():
+        return
+
+    for satir in ENV_DOSYA.read_text(encoding="utf-8-sig").splitlines():
+        satir = satir.strip()
+        if not satir or satir.startswith("#") or "=" not in satir:
+            continue
+        anahtar, _, deger = satir.partition("=")
+        anahtar = anahtar.strip()
+        # Değeri tırnak içinde yazanlar için; Not Defteri'nden yapıştırırken
+        # tırnak koymak yaygın bir alışkanlık.
+        deger = deger.strip().strip('"').strip("'")
+        if anahtar and anahtar not in os.environ:
+            os.environ[anahtar] = deger
+
+
 def _gonderilenleri_oku() -> set[str]:
     if not STATE_PATH.exists():
         return set()
@@ -185,6 +215,8 @@ def calistir(
     limit: int | None = None,
     bekleme: int = BEKLEME,
 ) -> int:
+    _env_dosyasini_yukle()
+
     gonderen = os.environ.get("SMTP_USER", "").strip()
     parola = os.environ.get("SMTP_PASSWORD", "").strip()
     imza = os.environ.get("IMZA_ADI", "").strip()
