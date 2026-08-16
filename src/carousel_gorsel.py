@@ -61,7 +61,12 @@ def _font(ad: str, size: int) -> ImageFont.FreeTypeFont:
             yol = os.path.join(d, aday)
             if os.path.exists(yol):
                 return ImageFont.truetype(yol, size)
-    return ImageFont.load_default()
+    # gorsel.py ile ayni gerekce: load_default() olceklenmiyor ve Turkce
+    # harfleri kutu ciziyor. Bozuk slide uretmektense is dursun.
+    raise RuntimeError(
+        f"Yazi tipi bulunamadi ({ad}). Aranan yerler: {', '.join(FONT_DIRS)}. "
+        "CI'da 'fonts-dejavu-core' paketinin kurulu oldugundan emin ol."
+    )
 
 
 def _bold(size: int) -> ImageFont.FreeTypeFont:

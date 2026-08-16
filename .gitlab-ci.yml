@@ -11,8 +11,10 @@
 default:
   image: python:3.12-slim
   before_script:
-    # slim imajda git yok — state/ commit'i ve MR açma adımları için gerekli
-    - apt-get update -qq && apt-get install -y -qq --no-install-recommends git
+    # slim imajda git yok — state/ commit'i ve MR açma adımları için gerekli.
+    # fonts-dejavu-core da şart: yoksa gorsel.py yazı tipini bulamıyor, başlıklar
+    # okunmayacak kadar küçük çıkıyor ve Türkçe harfler kutu olarak çiziliyor.
+    - apt-get update -qq && apt-get install -y -qq --no-install-recommends git fonts-dejavu-core
     - pip install --quiet --root-user-action=ignore -r requirements.txt
 
 variables:
@@ -35,6 +37,35 @@ stages:
     else
       echo "Kayıtta değişiklik yok."
     fi
+
+# --- Görsel şablonunu gözle kontrol (elle çalıştırılır) ---------------------
+# Hiçbir şey paylaşmaz, hiçbir şey commit'lemez. Ürettiği örneği "artifacts"
+# altından indirip bakabilirsin. Şablona ya da yazı tipine dokunduğunda
+# paylaşımı beklemeden burada doğrula.
+gorsel-onizleme:
+  stage: run
+  rules:
+    - if: '$JOB == "gorsel-onizleme"'
+  script:
+    - |
+      python - <<'PY'
+      from src import gorsel
+      gorsel.kare_yap(
+          "posts/media/2026-08-16-magaza-3-6v-reduktorlu-arduino-uyumlu-dc-sari-motor-ve-tekerlek.jpg",
+          "3-6V Redüktörlü Arduino Uyumlu DC Sarı Motor ve Tekerlek",
+          "onizleme/uzun-baslik.jpg",
+      )
+      gorsel.kare_yap(
+          "posts/media/2026-08-16-magaza-temel-elektronik-deney-seti.jpg",
+          "Temel Elektronik Deney Seti",
+          "onizleme/kisa-baslik.jpg",
+      )
+      print("Önizleme görselleri onizleme/ altına yazıldı.")
+      PY
+  artifacts:
+    paths:
+      - onizleme/
+    expire_in: 1 week
 
 # --- Sosyal medya paylaşımı (saatlik) ---------------------------------------
 publish:
