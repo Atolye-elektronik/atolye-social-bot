@@ -12,13 +12,26 @@ import inspect
 import os
 import sys
 
-from . import config, facebook, instagram, posts, state, threads, tiktok, youtube
+from . import (
+    config,
+    facebook,
+    instagram,
+    posts,
+    state,
+    threads,
+    tiktok,
+    tiktok_studio,
+    youtube,
+)
 
 PUBLISHERS = {
     "instagram": instagram.publish,
     "facebook": facebook.publish,
     "threads": threads.publish,
+    # tiktok        → resmî API; denetimden geçmemiş uygulamada taslak bırakır
+    # tiktok_studio → Studio arayüzü; doğrudan yayınlar, ileri tarihe zamanlar
     "tiktok": tiktok.publish,
+    "tiktok_studio": tiktok_studio.publish,
     "youtube": youtube.publish,
 }
 

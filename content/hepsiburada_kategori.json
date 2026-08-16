@@ -1,0 +1,62 @@
+{
+  "_aciklama": [
+    "Shopify product_type -> Hepsiburada categoryId eşlemesi.",
+    "categoryId'leri bulmak için:  python hepsiburada_urun_ekle.py --kategori-ara \"robot\"",
+    "Bir kategorinin zorunlu alanlarını görmek için:",
+    "  python -c \"import hepsiburada_catalog as k; print(k.zorunlu_ozellikler(<categoryId>))\"",
+    "Zorunlu çıkan alanları o kategorinin sabit_ozellikler bloğuna ekle.",
+    "categoryId null olan türdeki ürünler gönderilmez, atlanır.",
+    "ad_override: SKU -> ürün adı. Otomatik kısaltmanın beğenilmediği ürünler için.",
+    "NOT: kg alanının Hepsiburada'daki adı 'Desi' — kilogram değil, hacimsel ağırlık.",
+    "Paket Görseli (00000MU) zorunlu; betik ürünün ilk görselini oraya yazıyor."
+  ],
+  "varsayilan": {
+    "categoryId": null,
+    "varsayilan_kg": 1,
+    "sabit_ozellikler": {}
+  },
+  "Robot Kiti": {
+    "_yol": "Anne / Bebek / Oyuncak > Oyuncak > Eğitici ve Öğretici Oyun > Bilim Seti",
+    "categoryId": 23024292,
+    "varsayilan_kg": 3,
+    "desi": 3,
+    "_desi_notu": "Robot kitleri 3 desi (2026-08-16). Kargo faturaları sapma gösterirse gözden geçir.",
+    "sabit_ozellikler": {
+      "yas_araligi": "12+ Yaş"
+    },
+    "desi_override": {},
+    "ad_override": {},
+    "stok_override": {
+      "AE3IN1ROBOT-LI": 20,
+      "AEIRRAK-LI": 20,
+      "AEHC06RAK-LI": 20,
+      "AE2WDEKRBT-LI": 20,
+      "AET2WDRBT-LI": 20
+    }
+  },
+  "Kırtasiye": {
+    "_yol": "Kırtasiye / Ofis > Ofis ve Okul Kırtasiye > Defter, Ajanda > Ciltli Defterler",
+    "categoryId": 15064,
+    "varsayilan_kg": 2,
+    "desi": 2,
+    "_desi_notu": "Ölçüm: 80 defter = 5 desi, yani defter başına 0,0625. Paket desileri buradan oranlandı ve yukarı yuvarlandı (10'luk 0,63->1 · 20'lik 1,25->2 · 30'luk 1,88->2). Listede olmayan yeni defter SKU'ları için varsayılan 2.",
+    "sabit_ozellikler": {},
+    "ad_override": {},
+    "stok_override": {
+      "AESTJDFTR-10": 0,
+      "AESTJDFTR-20": 0,
+      "AESTJDFTR-30": 0,
+      "AETEMDEF-10": 0,
+      "AETEMDEF-20": 0,
+      "AETEMDEF-30": 0
+    },
+    "desi_override": {
+      "AESTJDFTR-10": 1,
+      "AESTJDFTR-20": 2,
+      "AESTJDFTR-30": 2,
+      "AETEMDEF-10": 1,
+      "AETEMDEF-20": 2,
+      "AETEMDEF-30": 2
+    }
+  }
+}
