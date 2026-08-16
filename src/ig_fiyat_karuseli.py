@@ -21,17 +21,15 @@ from . import config, instagram
 
 ALTYAZI_DOSYA = pathlib.Path("pazarlama/ig-altyazi.txt")
 
-_TABAN = "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ig-karusel-{}.png?v={}"
+# Görseller depoda; proje public olduğu için raw adresleri dışarıdan açılıyor.
+# Shopify CDN'e ayrıca yüklemeye gerek yok: Instagram görseli yayın anında bir
+# kez indirip kendi kopyasını saklıyor, adresin kalıcı olması gerekmiyor.
+_TABAN = (
+    "https://gitlab.com/atolye-elektronik-group/atolye-social-bot"
+    "/-/raw/main/pazarlama/karusel/karusel-{}.png"
+)
 
-# Slayt 3 CDN'e bir saniye sonra düştüğü için sürüm damgası diğerlerinden farklı.
-# Yanlış damga 404 veriyor, o yüzden tek tek yazılı.
-GORSELLER = [
-    _TABAN.format(1, "1786875177"),
-    _TABAN.format(2, "1786875177"),
-    _TABAN.format(3, "1786875178"),
-    _TABAN.format(4, "1786875177"),
-    _TABAN.format(5, "1786875177"),
-]
+GORSELLER = [_TABAN.format(i) for i in range(1, 6)]
 
 
 def main() -> int:
