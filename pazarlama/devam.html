@@ -26,20 +26,43 @@ hr { border:0; border-top:1pt solid #D8D0C6; margin:16pt 0; }
 blockquote { margin:6pt 0; padding:5pt 11pt; border-left:3pt solid #8E4A18;
   background:#F7F2EC; color:#4A423A; }
 a { color:#245043; word-break: break-all; }
-</style><h1>Nerede kaldık — devam notu</h1>
-<p>Son güncelleme: 16 Ağustos 2026. Bu belge, çalışmayı başka bir makinede
-kaldığı yerden sürdürebilmek için yazıldı.</p>
+</style>
+<h1>Nerede kaldık — devam notu</h1>
+<p>Son güncelleme: 16 Ağustos 2026 (ikinci oturum). Bu belge, çalışmayı başka
+bir makinede kaldığı yerden sürdürebilmek için yazıldı.</p>
+<p><strong>Bu oturumda değişenler:</strong> taslak temanın zaten yayında olduğu görüldü
+(bölüm 3a düştü) · <code>okul_listesi</code> bozuktu, düzeltildi (bölüm 7) · üç liste
+yeniden üretildi · kampanyaya devam planı sayılarla yazıldı (bölüm 8).</p>
 <p>Okul açılışına yaklaşık 3 hafta var. Kampanyanın kritik penceresi eylülün
 ilk iki haftası: malzeme listeleri o zaman kesinleşiyor.</p>
 <hr />
 <h2>1. Depoyu kur</h2>
-<p>GitHub erişimi kapalı (aşağıda anlatılıyor), çalışan uzak sunucu GitLab:</p>
-<pre><code class="language-bash">git clone https://gitlab.com/atolye-elektronik-group/atolye-social-bot.git
+<p>GitHub erişimi kapalı (aşağıda anlatılıyor), çalışan uzak sunucu GitLab.
+Proje <strong>public</strong> — klonlamak için kimlik doğrulaması gerekmiyor:</p>
+<pre><code class="language-bash">git clone -b claude/atolyeelektronik-marketing-51t98q \
+  https://gitlab.com/atolye-elektronik-group/atolye-social-bot.git
 cd atolye-social-bot
-git checkout claude/atolyeelektronik-marketing-51t98q
 pip install -r requirements.txt
-pip install openpyxl playwright   # rapor ve görsel üretimi için
+pip install openpyxl playwright markdown   # rapor, görsel ve devam notu için
+python -m playwright install chromium      # karusel + PDF için, ayrı adım
 </code></pre>
+<p>Windows'ta (PowerShell) sanal ortamla:</p>
+<pre><code class="language-powershell">python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt openpyxl playwright markdown
+.\.venv\Scripts\python.exe -m playwright install chromium
+</code></pre>
+<p><code>requirements.txt</code> bilerek yalın tutuldu (yalnızca çalışma zamanı bağımlılığı);
+<code>openpyxl</code>, <code>playwright</code> ve <code>markdown</code> sadece rapor/görsel/belge üretiminde
+gerekiyor.</p>
+<p><strong>Bu belgenin PDF ve HTML sürümleri artık elle yazılmıyor.</strong> DEVAM.md'yi
+değiştirdikten sonra çalıştır, <code>pazarlama/devam.html</code> ve
+<code>pazarlama/devam-notu.pdf</code> yeniden üretilsin:</p>
+<pre><code class="language-bash">python tools/devam_pdf.py
+</code></pre>
+<p><strong>Windows tuzağı:</strong> <code>python</code> komutu Microsoft Store kısayoluna düşüp
+"Python bulunamadı" diyebilir; gerçek kurulum
+<code>%LOCALAPPDATA%\Programs\Python\Python312\python.exe</code> altındadır. PATH ile
+uğraşmak yerine doğrudan bu yolu çağır.</p>
 <p><strong>Önemli:</strong> hedef listeleri (<code>pazarlama/*.csv</code>, <code>*.xlsx</code>) <code>.gitignore</code> içinde,
 yani klonda gelmezler. Kurum e-postası ve telefonu içerdikleri için bilerek
 böyle. Tek komutla yeniden üretiliyorlar — bölüm 5'e bak.</p>
@@ -86,18 +109,19 @@ tekrar yazmazsın.</p>
 çıkıyor, ayrı stok tutmak yanlış sayı gösterirdi. Eylül öncesi fiziksel stok
 tazelemeyi unutma.</p>
 <hr />
-<h2>3. Senin yapman gereken üç iş</h2>
-<p><strong>a) Taslak temayı yayınla</strong></p>
-<p>Shopify'da <code>Atölye — kargo 1200 + tam başlık (taslak)</code> adlı tema hazır ve
-önizlenmeyi bekliyor. İçinde:</p>
+<h2>3. Senin yapman gereken işler</h2>
+<p><strong>a) Taslak temayı yayınla — ✅ YAPILDI</strong></p>
+<p><code>Atölye — kargo 1200 + tam başlık (taslak)</code> teması artık <code>MAIN</code> rolünde,
+yani canlı. Adında hâlâ "(taslak)" yazıyor, yanıltıcı — istersen Shopify'dan
+yeniden adlandır. İçindekilerin hepsi canlıda doğrulandı (16 Ağustos 2026):</p>
 <ul>
-<li>Duyuru barı 1.500 → <strong>1.200 TL</strong></li>
-<li>Kampanyalar sayfası 1.500 → <strong>1.200 TL</strong> (iki yerde)</li>
-<li>Sepet ilerleme çubuğu eşiği <code>150000</code> → <strong><code>120000</code></strong> kuruş</li>
-<li>Ürün başlıklarının iki satırda kesilmesini engelleyen CSS</li>
+<li>Duyuru barı: "<strong>1.200 TL</strong> üzeri kargo bedava" ✓</li>
+<li>Kampanyalar sayfası: "1.200 TL Üzeri Ücretsiz Kargo" ✓, hiçbir yerde 1.500 kalmamış</li>
+<li><code>templates/cart.liquid</code> → <code>shipping_threshold = 120000</code> kuruş ✓</li>
+<li>Teslimat tarifesi: 0–1.199,99 ₺ → 127 ₺ · 1.200 ₺ ve üzeri → 0 ₺ ✓</li>
+<li>"ÜCRETSİZ KARGO" otomatik indirimi: ACTIVE, alt sınır 1.200 ₺ ✓</li>
+<li>Sınıf paketi varyantları: <code>tracked: false</code> — stok 0 görünse de satılabilir ✓</li>
 </ul>
-<p>Canlı temaya yazmak güvenlik gereği engelli olduğu için taslak üzerinden
-gidildi. Önizle, iyiyse yayınla.</p>
 <p><strong>b) Terk edilmiş ödeme e-postasını aç</strong></p>
 <p>Shopify → Ayarlar → Bildirimler → Terk edilmiş ödeme. API'de karşılığı yok,
 elle açılması gerekiyor. 30 saniyelik iş ama önemli: 60 günde 14.100 ₺'lik
@@ -111,9 +135,14 @@ kurulmalı: https://claude.ai/admin-settings/claude-in-slack</p>
 </blockquote>
 <hr />
 <h2>4. E-posta kampanyası — 24 okul gönderildi</h2>
-<p>Gönderilen: Antalya 13 (ilin tamamı), Mersin 7, Burdur 3, Isparta 1.
+<p>Gönderilen: Antalya 13, Mersin 7, Burdur 3, Isparta 1.
 <strong>Sıfır geri dönüş.</strong> Bu önemli, çünkü adresleri kurum kodundan türettik
 (<code>124137@meb.k12.tr</code> biçiminde) ve bu bir varsayımdı — tuttuğu doğrulandı.</p>
+<p><strong>Düzeltme:</strong> notun önceki hâlinde "Antalya 13 (ilin tamamı)" yazıyordu; bu
+yanlış. Tam liste yeniden üretilince Antalya'da <strong>22 genel MTAL daha</strong>
+gönderilmemiş çıktı (Mersin 26, Isparta 13, Burdur 6). O rakam muhtemelen
+<code>okullar-1parti.csv</code> içindeki Antalya satırlarını sayıyordu, ilin tamamını
+değil. Yani "bitmiş" saydığın iller bitmemiş — bölüm 8'e bak.</p>
 <p>Gönderim Gmail üzerinden yapıldı (atolyeelektronik07@gmail.com). Yerelde
 betikle sürdürmek için Gmail <strong>uygulama şifresi</strong> gerekiyor:</p>
 <pre><code class="language-bash">export SMTP_USER=&quot;atolyeelektronik07@gmail.com&quot;
@@ -132,9 +161,9 @@ teslim edilebilirliği düşürür ve sonraki yüzlerce e-posta spam'e düşer.<
 <code>src/okul_daveti.py</code> içinde <code>GOVDE</code> sabitinde.</p>
 <hr />
 <h2>5. Listeler nasıl yeniden üretilir</h2>
-<pre><code class="language-bash"># Devlet okulları (MEB kurum dizininden)
-python -m src.okul_listesi                       # 2.413 MTAL, 81 il
-python -m src.okul_listesi --tur mesem --cikti pazarlama/mesem.csv    # 455
+<pre><code class="language-bash"># Devlet okulları (MEB kurum dizininden) — üçü de 16.08.2026'da yeniden üretildi
+python -m src.okul_listesi                       # 2.414 MTAL, 81 il (~6 dk)
+python -m src.okul_listesi --tur mesem --cikti pazarlama/mesem.csv    # 457
 python -m src.okul_listesi --tur bilsem --cikti pazarlama/bilsem.csv  # 371
 
 # Telefon, adres, varsa Instagram ekle
@@ -153,9 +182,14 @@ python -m src.rapor
 <p>Tam tarama yaklaşık 1–1,5 saat sürüyor (dizinlere yük bindirmemek için
 aralarında bekleme var). <code>okul_iletisim</code> ve <code>okul_bolum</code> kesilirse kaldığı
 yerden devam eder.</p>
-<p><strong>Elde edilen sayılar:</strong> 2.413 MTAL (447'sinde elektrik-elektronik, 663'ünde
-bilişim, 794'ünde ikisinden biri) · 455 MESEM · 371 BİLSEM · 291 özel MTAL ·
-78 özel robotik kursu · 223 Instagram hesabı.</p>
+<p><strong>Elde edilen sayılar (16.08.2026 taraması):</strong> 2.414 MTAL — 1.511'i genel,
+903'ü dar alan (ticaret/turizm/sağlık/imam hatip…) · 457 MESEM · 371 BİLSEM.
+Önceki taramadan devreden bölüm sayıları: 447 elektrik-elektronik, 663
+bilişim, 794 ikisinden biri. Ayrıca 291 özel MTAL · 78 özel robotik kursu ·
+223 Instagram hesabı.</p>
+<p><code>okul_listesi</code> çıktısındaki <strong><code>oncelik</code> sütunu</strong> kampanyanın sıralama anahtarı:
+<code>genel</code> olanlarda elektrik-elektronik atölyesi olma ihtimali yüksek, <code>dar alan</code>
+olanlarda düşük. Önce <code>genel</code> olanlara git.</p>
 <hr />
 <h2>6. Instagram — karusel hazır, anahtar eksik</h2>
 <p>5 slaytlık fiyat listesi karuseli üretildi ve CDN'e yüklendi:</p>
@@ -183,7 +217,17 @@ with sync_playwright() as p:
 EOF
 </code></pre>
 <p><strong>Gönderim için gereken:</strong> <code>META_ACCESS_TOKEN</code> ve <code>IG_USER_ID</code>. Meta panelinde
-uygulamaya izin vermek yeterli değil, anahtarın kendisi lazım. Kod hazır:</p>
+uygulamaya izin vermek yeterli değil, anahtarın kendisi lazım. <code>IG_USER_ID</code>
+sabit ve elimizde; eksik olan tek şey token.</p>
+<p>Token'ın yeri: Meta Business Suite → Ayarlar → Kullanıcılar → <strong>Sistem
+kullanıcıları</strong> → <em>Jeton oluştur</em>. Türkçe arayüzde "access token" değil
+<strong>"jeton"</strong> yazıyor — bir kez bu yüzden bulunamadı. Süre "Süresi dolmaz"
+seçilecek. Gereken izinler: <code>pages_manage_posts</code>, <code>pages_read_engagement</code>,
+<code>pages_show_list</code>, <code>instagram_basic</code>, <code>instagram_content_publish</code>.
+Token'ı sohbete yapıştırma, doğrudan GitLab CI değişkenine gir.</p>
+<p>Karusel üretim zinciri 16.08.2026'da uçtan uca çalıştırılıp doğrulandı
+(5 slayt, altbilgi kırpılmadan, fiyatlar Shopify varyantlarıyla birebir).
+CDN'deki 5 görselin ve fiyat listesi PDF'inin hepsi 200 dönüyor. Kod hazır:</p>
 <pre><code class="language-bash">export META_ACCESS_TOKEN=...
 export IG_USER_ID=...
 python -c &quot;
@@ -214,16 +258,123 @@ robotik kursları (50).</p>
 <li><strong>Chromium'un <code>--screenshot</code> bayrağı</strong> yerleşim oturmadan yakalayabiliyor;
   altbilgi kırpılıyordu. Playwright ile alınca düzeldi.</li>
 <li><strong>Özel MESEM diye bir segment yok</strong> — Türkiye genelinde tek kurum var.</li>
+<li><strong>MEB dizini sayaçları metin döndürüyor.</strong> <code>recordsFiltered</code> artık <code>"64"</code>
+  gibi geliyor, sayı değil. <code>okul_listesi</code> bunu <code>int</code> ile karşılaştırdığı için
+  ilk ilde <code>TypeError</code> verip 81 ilin tamamını düşürüyordu (16.08.2026'da
+  düzeltildi). <code>topla()</code> içindeki il bazlı <code>except</code> bilerek genişletilmedi:
+  bu hata sessizce yutulsaydı çıktı boş bir CSV olacak, taramanın koptuğu
+  fark edilmeyecekti.</li>
+<li><strong>Playwright'ın tarayıcısı ayrı kuruluyor.</strong> <code>pip install playwright</code>
+  yetmiyor; <code>python -m playwright install chromium</code> da çalıştırılmalı, yoksa
+  karusel üretimi çalışma anında patlıyor.</li>
 </ul>
 <hr />
-<h2>8. Açık kalan kararlar</h2>
+<h2>8. E-posta kampanyası — devam planı</h2>
+<h3>Sıkışan aritmetik</h3>
+<p>Bunu önce görmek gerekiyor, çünkü planın tamamını belirliyor:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gönderilmemiş genel MTAL</td>
+<td><strong>1.490</strong></td>
+</tr>
+<tr>
+<td>Günlük üst sınır (teslim edilebilirlik)</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Pencerenin kapanışı</td>
+<td>~8 Eylül (malzeme listeleri kesinleşiyor)</td>
+</tr>
+<tr>
+<td>Kalan gün</td>
+<td>23</td>
+</tr>
+<tr>
+<td><strong>Gönderilebilecek toplam</strong></td>
+<td><strong>~575</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Havuz 1.490, bütçe 575. <strong>Hepsine yetişmiyor.</strong> Dolayısıyla asıl kaldıraç
+tempoyu artırmak değil, doğru %40'ı seçmek.</p>
+<h3>Bu yüzden önce bölüm taraması</h3>
+<p><code>python -m src.okul_bolum --liste pazarlama/okullar.csv</code> (~1–1,5 saat)
+1.490'ı, elektrik-elektronik veya bilişim bölümü <strong>teyitli</strong> ~794'e indiriyor.
+575 e-postalık bütçeyi 794 kişilik bir havuzda harcamak, 1.490'lık havuzda
+harcamaktan belirgin biçimde iyi. Gönderime başlamadan bunu çalıştır.</p>
+<h3>Haftalık sıra</h3>
+<p>Sıra, ilin okul yoğunluğuna ve lojistik yakınlığa göre. Büyük iller <strong>öne</strong>
+alındı, çünkü eylülün ilk haftasına kalırlarsa liste zaten kesinleşmiş olur.</p>
+<table>
+<thead>
+<tr>
+<th>Hafta</th>
+<th>Tarih</th>
+<th>Adet</th>
+<th>İller</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>17–23 Ağu</td>
+<td>175</td>
+<td>Antalya 22 · Mersin 26 · Isparta 13 · Burdur 6 (başlanan iller bitsin) + Adana 28 · Hatay 27 · Konya 46</td>
+</tr>
+<tr>
+<td>2</td>
+<td>24–30 Ağu</td>
+<td>175</td>
+<td>İstanbul 172</td>
+</tr>
+<tr>
+<td>3</td>
+<td>31 Ağu–6 Eyl</td>
+<td>175</td>
+<td>Ankara 93 · İzmir 82</td>
+</tr>
+<tr>
+<td>4</td>
+<td>7–8 Eyl</td>
+<td>50</td>
+<td>İzmir kalanı 9 · Bursa 41</td>
+</tr>
+</tbody>
+</table>
+<p>Kalan büyük iller (Kocaeli 40, Manisa 32, Şanlıurfa 30, Balıkesir 29,
+Gaziantep 28, Diyarbakır 27, Kayseri 27, Samsun 27, Tekirdağ 23, Trabzon 23…)
+pencereye yetişmiyor. Bunlar <strong>ikinci dalga</strong>: ekim–kasımda "ikinci dönem
+malzeme planlaması" temasıyla yazılır. Sezon dışı temas kaybedilmiş temas
+değil, sadece farklı bir mesaj gerektiriyor.</p>
+<p>Komut (ilk 25'i denemek için):</p>
+<pre><code class="language-bash">python -m src.okul_daveti --liste pazarlama/okullar.csv --dry-run
+python -m src.okul_daveti --liste pazarlama/okullar.csv --limit 25
+</code></pre>
+<p><code>state/okul_gonderilen.json</code> tekrarı kendisi engelliyor; il sırasını tutturmak
+için listeyi ile göre süzüp <code>--liste</code> olarak vermen yeterli.</p>
+<h3>Karar gerektiren tek şey</h3>
+<p>Tempoyu 25'te tutup ~575'te mi kalınacak, yoksa ikinci bir gönderen adres
+(<code>info@atolyeelektronik.com</code>, ayrı itibar havuzu) açılıp günlük 50'ye mi
+çıkılacak? İkincisi kapsamı iki katına çıkarır ama yeni bir alan adının
+ilk soğuk kampanyası ısıtılmadan başlarsa spam'e düşme riski taşır. Riski
+almadan yapılacak hâli: yeni adresi 1–2 hafta düşük hacimle ısıtmak — ki bu
+da tam olarak elimizde olmayan süre.</p>
+<hr />
+<h2>9. Diğer açık kararlar</h2>
 <ul>
-<li>E-posta kampanyasında hangi illere, hangi tempoda devam edilecek?
-  (Bölge listesi <code>pazarlama/okullar-1parti.csv</code>, 57 okul — 24'ü gitti.)</li>
-<li>Instagram karuseli anahtarla mı atılacak, elle mi?</li>
-<li>Instagram hesap listesi 223'te duruyor; 2.413 okulun küçük bir kısmı.
+<li>Instagram karuseli anahtarla mı atılacak, elle mi? (Görseller ve altyazı
+  hazır, CDN'de erişilebilir; eksik olan tek şey <code>META_ACCESS_TOKEN</code>.)</li>
+<li>Instagram hesap listesi 223'te duruyor; 2.414 okulun küçük bir kısmı.
   Genişletmenin en verimli sırası: BİLSEM → robotik kursları → MYO → MTAL.</li>
 <li>Robotik kursları segmenti (78 özel kurs + 50 Instagram hesabı) henüz hiç
   temas edilmedi. Sezon dışı satışın asıl kaynağı burası: okul eylülde alıp
-  susuyor, kurs yıl boyu malzeme tüketiyor.</li>
+  susuyor, kurs yıl boyu malzeme tüketiyor. Yukarıdaki "ikinci dalga" ile
+  aynı takvime denk geliyor — ekimde birlikte ele alınabilir.</li>
 </ul>

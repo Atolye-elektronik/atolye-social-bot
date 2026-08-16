@@ -22,16 +22,28 @@ git clone -b claude/atolyeelektronik-marketing-51t98q \
   https://gitlab.com/atolye-elektronik-group/atolye-social-bot.git
 cd atolye-social-bot
 pip install -r requirements.txt
-pip install openpyxl playwright   # rapor ve görsel üretimi için
-python -m playwright install chromium   # karusel için, ayrı adım
+pip install openpyxl playwright markdown   # rapor, görsel ve devam notu için
+python -m playwright install chromium      # karusel + PDF için, ayrı adım
 ```
 
 Windows'ta (PowerShell) sanal ortamla:
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt openpyxl playwright
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt openpyxl playwright markdown
 .\.venv\Scripts\python.exe -m playwright install chromium
+```
+
+`requirements.txt` bilerek yalın tutuldu (yalnızca çalışma zamanı bağımlılığı);
+`openpyxl`, `playwright` ve `markdown` sadece rapor/görsel/belge üretiminde
+gerekiyor.
+
+**Bu belgenin PDF ve HTML sürümleri artık elle yazılmıyor.** DEVAM.md'yi
+değiştirdikten sonra çalıştır, `pazarlama/devam.html` ve
+`pazarlama/devam-notu.pdf` yeniden üretilsin:
+
+```bash
+python tools/devam_pdf.py
 ```
 
 **Windows tuzağı:** `python` komutu Microsoft Store kısayoluna düşüp
