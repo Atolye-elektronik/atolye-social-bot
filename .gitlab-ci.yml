@@ -1,0 +1,181 @@
+﻿# Atölye Elektronik botu — GitLab CI karşılığı (.github/workflows/* ile aynı işler)
+#
+# GitLab'da zamanlama, GitHub'daki gibi dosya içinde değil; proje ayarlarında
+# "Pipeline schedules" ekranından tanımlanır. Her zamanlamaya bir değişken
+# veriyoruz (JOB=publish gibi) ve aşağıdaki işler sadece kendi adları
+# geldiğinde çalışıyor. Hangi zamanlamanın kurulacağı KURULUM-GITLAB.md'de.
+#
+# Elle çalıştırmak için: CI/CD > Pipelines > Run pipeline > değişken ekle
+# (örn. JOB = hepsiburada-sync) > Run.
+
+default:
+  image: python:3.12-slim
+  before_script:
+    # slim imajda git yok — state/ commit'i ve MR açma adımları için gerekli
+    - apt-get update -qq && apt-get install -y -qq --no-install-recommends git
+    - pip install --quiet --root-user-action=ignore -r requirements.txt
+
+variables:
+  GIT_DEPTH: "20"
+
+stages:
+  - run
+
+# --- Ortak yardımcılar -------------------------------------------------------
+# state/ altındaki değişiklikleri repoya geri yazmak için. GitLab'da CI_JOB_TOKEN
+# push edemediği için GITLAB_TOKEN (Project Access Token, write_repository) gerekir.
+.commit_state: &commit_state
+  - |
+    if [ -n "$(git status --porcelain state/)" ]; then
+      git config user.name "atolye-bot"
+      git config user.email "bot@atolyeelektronik.com"
+      git add state/
+      git commit -m "chore: ${COMMIT_MSG:-durum güncellendi} [skip ci]"
+      git push "https://oauth2:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:${CI_DEFAULT_BRANCH}"
+    else
+      echo "Kayıtta değişiklik yok."
+    fi
+
+# --- Sosyal medya paylaşımı (saatlik) ---------------------------------------
+publish:
+  stage: run
+  rules:
+    - if: '$JOB == "publish"'
+  variables:
+    COMMIT_MSG: "paylaşım kaydı güncellendi"
+  script:
+    - python -m src.main ${EXTRA_ARGS}
+    - *commit_state
+
+# --- Threads token yenileme (aylık) -----------------------------------------
+# Threads token'ı 60 gün geçerli; ayda bir yenilenince sayaç başa sarar.
+# Yeni token'ı CI değişkenine script kendisi yazar (GITLAB_TOKEN api yetkili olmalı).
+threads-token:
+  stage: run
+  rules:
+    - if: '$JOB == "threads-token"'
+  script:
+    - python -m src.threads_token ${EXTRA_ARGS}
+
+# --- Trendyol sipariş senkronu (saatlik) ------------------------------------
+trendyol-sync:
+  stage: run
+  rules:
+    - if: '$JOB == "trendyol-sync"'
+  variables:
+    COMMIT_MSG: "trendyol sipariş durumu güncellendi"
+  script:
+    - cd src/marketplaces && python trendyol_sync.py && cd -
+    - *commit_state
+
+# --- Hepsiburada sipariş senkronu (saatlik) ---------------------------------
+hepsiburada-sync:
+  stage: run
+  rules:
+    - if: '$JOB == "hepsiburada-sync"'
+  variables:
+    COMMIT_MSG: "hepsiburada sipariş durumu güncellendi"
+  script:
+    - cd src/marketplaces && python hepsiburada_sync.py && cd -
+    - *commit_state
+
+# --- Shopify ürünlerinden taslak üret (haftalık) ----------------------------
+# GitHub'daki "pull request aç" adımının GitLab karşılığı: push seçenekleriyle
+# doğrudan merge request açıyoruz.
+shopify-drafts:
+  stage: run
+  rules:
+    - if: '$JOB == "shopify-drafts"'
+  script:
+    - python -m src.shopify_source --count "${COUNT:-3}"
+    - |
+      if [ -n "$(git status --porcelain posts/ state/)" ]; then
+        git config user.name "atolye-bot"
+        git config user.email "bot@atolyeelektronik.com"
+        git checkout -B shopify-taslaklar
+        git add posts/ state/
+        git commit -m "feat: Shopify ürünlerinden post taslakları"
+        git push -f \
+          -o merge_request.create \
+          -o merge_request.target="${CI_DEFAULT_BRANCH}" \
+          -o merge_request.title="Shopify ürünlerinden yeni post taslakları" \
+          -o merge_request.description="Bu taslaklar Shopify mağazandaki ürünlerden otomatik üretildi. Birleştirmeden önce metinleri gözden geçir, publish_at tarihlerini ayarla." \
+          -o merge_request.remove_source_branch \
+          "https://oauth2:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:shopify-taslaklar
+      else
+        echo "Yeni taslak üretilmedi."
+      fi
+
+# --- Ürünlerden carousel taslağı üret (haftalık) ----------------------------
+# TIP=klasik  → kapak + ürün fotoğrafları + kapanış
+# TIP=senaryo → dert/hayal/çözüm kurgulu hikaye slide'ları
+# TIP boş     → ikisinden de birer tane
+# URUN=<shopify handle> verilirse sadece o ürün için üretir.
+carousel-drafts:
+  stage: run
+  rules:
+    - if: '$JOB == "carousel-drafts"'
+  script:
+    - |
+      if [ "$TIP" != "senaryo" ]; then
+        python -m src.carousel_source --count "${COUNT:-1}" ${URUN:+--handle "$URUN"}
+      fi
+    - |
+      if [ "$TIP" != "klasik" ]; then
+        python -m src.senaryo_source --count "${COUNT:-1}" --start-in-hours 48 ${URUN:+--handle "$URUN"}
+      fi
+    - |
+      if [ -n "$(git status --porcelain posts/ state/)" ]; then
+        git config user.name "atolye-bot"
+        git config user.email "bot@atolyeelektronik.com"
+        git checkout -B carousel-taslaklari
+        git add posts/ state/
+        git commit -m "feat: ürünlerden yeni carousel taslakları"
+        git push -f \
+          -o merge_request.create \
+          -o merge_request.target="${CI_DEFAULT_BRANCH}" \
+          -o merge_request.title="Ürünlerden yeni carousel taslakları" \
+          -o merge_request.description="Her ürün için kapak, ürün fotoğrafları ve sipariş çağrısı slide'ları üretildi. Birleştirmeden önce görselleri ve metinleri gözden geçir, publish_at tarihlerini ayarla." \
+          -o merge_request.remove_source_branch \
+          "https://oauth2:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:carousel-taslaklari
+      else
+        echo "Yeni taslak üretilmedi."
+      fi
+
+# --- Okul fiyat listesi karuseli (elle, tek seferlik) -----------------------
+# Görseller Shopify CDN'inde; repodan medya okumuyor, o yüzden MEDIA_BASE_URL
+# gerekmiyor. Zamanlamaya bağlanmadı — kampanya döneminde elle tetikleniyor.
+#
+# Önce kuru çalıştır (DRY_RUN=true ile hiçbir şey yayınlanmaz, sadece
+# adresler listelenir), çıktı doğruysa DRY_RUN vermeden tekrar çalıştır.
+ig-karusel:
+  stage: run
+  rules:
+    - if: '$JOB == "ig-karusel"'
+  script:
+    - python -m src.ig_fiyat_karuseli
+
+# --- İçerik takviminden taslak üret (haftalık) ------------------------------
+takvim:
+  stage: run
+  rules:
+    - if: '$JOB == "takvim"'
+  script:
+    - python -m src.calendar_source --days "${DAYS:-7}"
+    - |
+      if [ -n "$(git status --porcelain posts/ state/)" ]; then
+        git config user.name "atolye-bot"
+        git config user.email "bot@atolyeelektronik.com"
+        git checkout -B takvim-taslaklari
+        git add posts/ state/
+        git commit -m "feat: içerik takviminden yeni post taslakları"
+        git push -f \
+          -o merge_request.create \
+          -o merge_request.target="${CI_DEFAULT_BRANCH}" \
+          -o merge_request.title="İçerik takvimi — yeni post taslakları" \
+          -o merge_request.description="content/takvim.json dosyasındaki haftalık plana göre üretildi. Metinleri ve tarihleri düzenleyip birleştirebilirsin." \
+          -o merge_request.remove_source_branch \
+          "https://oauth2:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:takvim-taslaklari
+      else
+        echo "Yeni taslak üretilmedi."
+      fi
