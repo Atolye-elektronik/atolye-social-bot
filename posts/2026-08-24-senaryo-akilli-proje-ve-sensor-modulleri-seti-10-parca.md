@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook]
+platforms: [instagram, facebook, threads]
 media: [posts/media/carousel/2026-08-24-senaryo-akilli-proje-ve-sensor-modulleri-seti-10-parca/01-kanca.jpg, posts/media/carousel/2026-08-24-senaryo-akilli-proje-ve-sensor-modulleri-seti-10-parca/02-dert.jpg, posts/media/carousel/2026-08-24-senaryo-akilli-proje-ve-sensor-modulleri-seti-10-parca/03-hayal.jpg, posts/media/carousel/2026-08-24-senaryo-akilli-proje-ve-sensor-modulleri-seti-10-parca/04-cozum.jpg, posts/media/carousel/2026-08-24-senaryo-akilli-proje-ve-sensor-modulleri-seti-10-parca/05-urun.jpg, posts/media/carousel/2026-08-24-senaryo-akilli-proje-ve-sensor-modulleri-seti-10-parca/06-urun.jpg, posts/media/carousel/2026-08-24-senaryo-akilli-proje-ve-sensor-modulleri-seti-10-parca/07-kapanis.jpg]
 publish_at: 2026-08-24 19:10
 ---

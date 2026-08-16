@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook]
+platforms: [instagram, facebook, threads]
 media: [posts/media/carousel/2026-08-27-senaryo-takim-cantasi-seti-ogrenci-dostu/01-kanca.jpg, posts/media/carousel/2026-08-27-senaryo-takim-cantasi-seti-ogrenci-dostu/02-dert.jpg, posts/media/carousel/2026-08-27-senaryo-takim-cantasi-seti-ogrenci-dostu/03-hayal.jpg, posts/media/carousel/2026-08-27-senaryo-takim-cantasi-seti-ogrenci-dostu/04-cozum.jpg, posts/media/carousel/2026-08-27-senaryo-takim-cantasi-seti-ogrenci-dostu/05-urun.jpg, posts/media/carousel/2026-08-27-senaryo-takim-cantasi-seti-ogrenci-dostu/06-urun.jpg, posts/media/carousel/2026-08-27-senaryo-takim-cantasi-seti-ogrenci-dostu/07-kapanis.jpg]
 publish_at: 2026-08-27 19:10
 ---

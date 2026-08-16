@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook]
+platforms: [instagram, facebook, threads]
 media: [posts/media/carousel/2026-08-20-senaryo-arduino-baslangic-seti/01-kanca.jpg, posts/media/carousel/2026-08-20-senaryo-arduino-baslangic-seti/02-dert.jpg, posts/media/carousel/2026-08-20-senaryo-arduino-baslangic-seti/03-hayal.jpg, posts/media/carousel/2026-08-20-senaryo-arduino-baslangic-seti/04-cozum.jpg, posts/media/carousel/2026-08-20-senaryo-arduino-baslangic-seti/05-urun.jpg, posts/media/carousel/2026-08-20-senaryo-arduino-baslangic-seti/06-urun.jpg, posts/media/carousel/2026-08-20-senaryo-arduino-baslangic-seti/07-kapanis.jpg]
 publish_at: 2026-08-20 19:10
 ---

@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook]
+platforms: [instagram, facebook, threads]
 media: posts/media/2026-08-16-magaza-temel-elektronik-deney-seti.jpg
 publish_at: 2026-08-16 19:10
 tema: magaza

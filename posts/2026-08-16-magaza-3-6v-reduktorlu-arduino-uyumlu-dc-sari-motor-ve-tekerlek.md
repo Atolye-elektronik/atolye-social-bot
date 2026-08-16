@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook]
+platforms: [instagram, facebook, threads]
 media: posts/media/2026-08-16-magaza-3-6v-reduktorlu-arduino-uyumlu-dc-sari-motor-ve-tekerlek.jpg
 publish_at: 2026-08-16 13:00
 tema: magaza
