@@ -236,7 +236,9 @@ def kapak(baslik: str, cikti, alt_baslik: str = "ÜRÜN TANITIMI") -> pathlib.Pa
     d.line([(W / 2 - 120, y + 40), (W / 2 + 120, y + 40)], fill=TURKUAZ, width=4)
 
     fo = _normal(36)
-    ok = "Detaylar için kaydırın"
+    # "kaydırın" demiyoruz: bu slaytlar Facebook'a da gidiyor ve orada gönderi
+    # kaydırmalı carousel değil, çoklu fotoğraf albümü olarak çıkıyor.
+    ok = "Detaylar fotoğraflarda"
     d.text(((W - d.textlength(ok, font=fo)) / 2, y + 90), ok, font=fo, fill=GRI)
     d.text((W / 2 + d.textlength(ok, font=fo) / 2 + 18, y + 88), "»", font=_bold(40), fill=TURKUAZ)
 
@@ -314,7 +316,7 @@ def metin(etiket: str, baslik: str, satirlar: list[str], cikti,
         _pill(d, SITE, 1190)
     else:
         fo2 = _normal(36)
-        ok = "kaydırmaya devam et"
+        ok = "devamı var"
         d.text(((W - d.textlength(ok, font=fo2)) / 2, 1180), ok, font=fo2, fill=GRI)
         d.text((W / 2 + d.textlength(ok, font=fo2) / 2 + 18, 1178), "»", font=_bold(40), fill=TURKUAZ)
     return _kaydet(tuval, cikti)
