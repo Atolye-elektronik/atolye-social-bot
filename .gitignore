@@ -2,3 +2,10 @@ __pycache__/
 *.pyc
 .env
 .venv/
+
+# Pazarlama hedef listeleri — kurum e-postası ve telefonu içeriyorlar, depo
+# public. Betiklerden tek komutla yeniden üretiliyorlar, repoda durmaları
+# gerekmiyor. (Altyazı ve fiyat listesi gibi kişisel veri içermeyen dosyalar
+# bilerek dışarıda bırakıldı, onlar commit'lenebilir.)
+pazarlama/*.csv
+pazarlama/*.xlsx

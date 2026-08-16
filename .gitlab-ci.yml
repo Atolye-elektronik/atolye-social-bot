@@ -142,6 +142,24 @@ carousel-drafts:
         echo "Yeni taslak üretilmedi."
       fi
 
+# --- Okul fiyat listesi karuseli (elle, tek seferlik) -----------------------
+# Görseller Shopify CDN'inde; repodan medya okumuyor, o yüzden MEDIA_BASE_URL
+# gerekmiyor. Zamanlamaya bağlanmadı — kampanya döneminde elle tetikleniyor.
+#
+# META_ACCESS_TOKEN ve IG_USER_ID "Protected" işaretli, yani yalnızca korumalı
+# dallarda görünüyorlar. Bu yüzden iş main'de duruyor; korumasız bir özellik
+# dalından çalıştırılırsa değişkenler boş gelir ve iş
+# "IG_USER_ID tanimli degil" hatasıyla düşer.
+#
+# Önce DRY_RUN=true ile çalıştır (hiçbir şey yayınlanmaz, sadece adresler
+# listelenir), çıktı doğruysa DRY_RUN vermeden tekrar çalıştır.
+ig-karusel:
+  stage: run
+  rules:
+    - if: '$JOB == "ig-karusel"'
+  script:
+    - python -m src.ig_fiyat_karuseli
+
 # --- İçerik takviminden taslak üret (haftalık) ------------------------------
 takvim:
   stage: run
