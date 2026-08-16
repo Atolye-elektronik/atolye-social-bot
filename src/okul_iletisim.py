@@ -92,6 +92,20 @@ def okulu_zenginlestir(okul: dict, oturum: requests.Session) -> dict:
     return okul
 
 
+def _yaz(liste: pathlib.Path, okullar: list[dict]) -> None:
+    """Listeyi diske yazar. Ara kayıtta da, bitişte de aynı yol kullanılıyor.
+
+    Önce geçici dosyaya yazıp sonra taşıyoruz: koşu tam yazma anında kesilirse
+    yarım bir CSV kalmasın, elde ya eski ya yeni tam sürüm olsun.
+    """
+    gecici = liste.with_suffix(liste.suffix + ".tmp")
+    with gecici.open("w", encoding="utf-8", newline="") as dosya:
+        yazici = csv.DictWriter(dosya, fieldnames=list(okullar[0].keys()))
+        yazici.writeheader()
+        yazici.writerows(okullar)
+    gecici.replace(liste)
+
+
 def calistir(
     liste: pathlib.Path,
     sadece_genel: bool = False,
@@ -133,13 +147,12 @@ def calistir(
             with _kilit:
                 tamam += 1
                 if tamam % 100 == 0:
-                    print(f"  {tamam}/{len(hedefler)}")
+                    # Ara kayıt: koşu yarıda kesilirse buraya kadarki veriler
+                    # durur ve sonraki çalıştırma kaldığı yerden devam eder.
+                    _yaz(liste, okullar)
+                    print(f"  {tamam}/{len(hedefler)} (kaydedildi)")
 
-    sutunlar = list(okullar[0].keys())
-    with liste.open("w", encoding="utf-8", newline="") as dosya:
-        yazici = csv.DictWriter(dosya, fieldnames=sutunlar)
-        yazici.writeheader()
-        yazici.writerows(okullar)
+    _yaz(liste, okullar)
 
     tel = sum(1 for o in okullar if o.get("telefon"))
     ig = sum(1 for o in okullar if o.get("instagram"))
