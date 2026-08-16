@@ -1,0 +1,80 @@
+{
+  "_aciklama": [
+    "Carousel'in ilk slaydında kullanılan kanca kalıpları. Kanca, kaydırmayı",
+    "durdurmak için var: ürün adını tekrar etmez, bir soru sorar ya da bir",
+    "iddia atar. Ürün adı ikinci slaytta zaten görünüyor.",
+    "",
+    "Alanlar:",
+    "  etiket  — üstteki küçük büyük harfli satır",
+    "  kanca   — büyük serif başlık. {urun} ve {fiyat} yerleşimleri kullanılabilir.",
+    "  alt     — kancanın altındaki açıklama satırı",
+    "  anahtar — ürün adında bu kelimelerden biri geçiyorsa bu kanca uygun sayılır.",
+    "            Boş liste: her ürüne uygun.",
+    "",
+    "Ürün başına kanca seçimi ürün kimliğinden türetiliyor, yani aynı ürün her",
+    "zaman aynı kancayı alıyor ama ürünler arasında dağılım değişiyor."
+  ],
+
+  "kancalar": [
+    {
+      "etiket": "ATÖLYE GERÇEĞİ",
+      "kanca": "Lehim yapmayı bilmeyen öğrenciye ne verilir?",
+      "alt": "Cevap, ilk denemede sonuç veren bir set. Yarısı sökük gelen değil.",
+      "anahtar": ["lehim", "havya", "set"]
+    },
+    {
+      "etiket": "BİTİRME PROJESİ",
+      "kanca": "Proje teslimine iki hafta kaldı.",
+      "alt": "Malzeme listesi hâlâ belli değilse, hazır kitle başlamak en hızlısı.",
+      "anahtar": ["kit", "robot", "proje"]
+    },
+    {
+      "etiket": "SINIF MEVCUDU",
+      "kanca": "30 öğrenci, tek koli, tek fatura.",
+      "alt": "Sınıf paketlerinde birim fiyat düşüyor, kargo bizden.",
+      "anahtar": ["defter", "dosya", "paket"]
+    },
+    {
+      "etiket": "ÖĞRETMEN SORUSU",
+      "kanca": "Bu kutunun içinde ne var, hangisi ne işe yarar?",
+      "alt": "Parça listesi değil, hangi konuyu hangi parçayla anlatacağın önemli.",
+      "anahtar": ["seti", "kutulu", "deney"]
+    },
+    {
+      "etiket": "ATÖLYE MALZEMESİ",
+      "kanca": "Ucuz alet iki kere alınır.",
+      "alt": "Atölyede yılda yüzlerce kez kullanılan parçada kalite pazarlık konusu değil.",
+      "anahtar": ["pense", "tornavida", "çanta", "el aleti", "takım"]
+    },
+    {
+      "etiket": "MÜFREDAT",
+      "kanca": "Müfredattaki konuyu hangi malzemeyle anlatıyorsun?",
+      "alt": "Setler 10, 11 ve 12. sınıf kazanımlarına göre toplandı.",
+      "anahtar": ["arduino", "sensör", "elektronik"]
+    },
+    {
+      "etiket": "STOK PLANI",
+      "kanca": "Eylülde biten şey zaman, malzeme değil.",
+      "alt": "Dönem başlamadan listeyi çıkar, tek seferde gelsin.",
+      "anahtar": []
+    },
+    {
+      "etiket": "ÖĞRENCİ GERÇEĞİ",
+      "kanca": "Çalışmayan devreyi öğrenci değil, eksik parça bozar.",
+      "alt": "Setlerde yedek parça var — bir direnç yüzünden ders durmasın.",
+      "anahtar": []
+    },
+    {
+      "etiket": "ATÖLYE KURULUMU",
+      "kanca": "Yeni atölye kuruyorsan sıralama önemli.",
+      "alt": "Önce ölçü aleti ve el aletleri, sonra sarf, en son kitler.",
+      "anahtar": []
+    },
+    {
+      "etiket": "FİYAT",
+      "kanca": "{fiyat} bir sınıfa ne kadar yeter?",
+      "alt": "Öğrenci başına maliyeti hesaplayınca tablo değişiyor.",
+      "anahtar": []
+    }
+  ]
+}

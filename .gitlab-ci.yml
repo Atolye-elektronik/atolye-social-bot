@@ -408,6 +408,52 @@ tiktok-video:
         echo "Video üretilmedi."
       fi
 
+# --- Kanca kurgulu carousel taslağı (günlük) --------------------------------
+# carousel-drafts'tan farkı kurguda: orada açılış slaydı ürün adını yazıp
+# fotoğrafları sıralıyor. Burada açılış bir kanca — kaydırmayı durduran soru
+# ya da iddia — ve slaytlar HTML'den, okul fiyat listesi karuselindeki
+# editoryal düzenle üretiliyor.
+#
+# Playwright imajı gerekiyor (slaytlar tarayıcıda çiziliyor). Serif başlıklar
+# DejaVu Serif ile geliyor; imajda yoksa yerleşim korunur ama yazı tipi değişir,
+# o yüzden fonts-dejavu-core açıkça kuruluyor.
+kanca-carousel:
+  stage: run
+  image: mcr.microsoft.com/playwright/python:v1.47.0-jammy
+  rules:
+    - if: '$JOB == "kanca-carousel"'
+  before_script:
+    - apt-get update -qq && apt-get install -y -qq --no-install-recommends git fonts-dejavu-core
+    - pip install --quiet --root-user-action=ignore -r requirements.txt
+    # Imajdaki hazir tarayici imajin kendi Playwright surumune ait; requirements
+    # daha yenisini kurarsa eslesen tarayiciyi indiriyoruz.
+    - python -m playwright install chromium
+  script:
+    - python -m src.kanca_carousel --count "${COUNT:-1}" ${URUN:+--handle "$URUN"}
+    - |
+      if [ -n "$(git status --porcelain posts/ state/)" ]; then
+        git config user.name "atolye-bot"
+        git config user.email "bot@atolyeelektronik.com"
+        git checkout -B kanca-taslaklari
+        git add posts/ state/
+        git commit -m "feat: kanca kurgulu carousel taslağı"
+        git push -f \
+          -o merge_request.create \
+          -o merge_request.target="${CI_DEFAULT_BRANCH}" \
+          -o merge_request.title="Kanca carousel taslağı" \
+          -o merge_request.description="İlk slayt kanca, ikinci slayt ürün, son slayt sipariş çağrısı. Birleştirmeden önce kancayı ve publish_at tarihini gözden geçir." \
+          -o merge_request.remove_source_branch \
+          "https://oauth2:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:kanca-taslaklari
+      else
+        echo "Yeni taslak üretilmedi."
+      fi
+  artifacts:
+    # Slaytlari birlestirmeden once gozle gormek icin.
+    paths:
+      - posts/media/kanca/
+    expire_in: 1 week
+    when: always
+
 # --- İçerik takviminden taslak üret (haftalık) ------------------------------
 takvim:
   stage: run
