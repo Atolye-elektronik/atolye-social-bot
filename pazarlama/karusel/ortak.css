@@ -1,33 +1,37 @@
 *{box-sizing:border-box;margin:0;padding:0}
 /* 1080x1350 = 4:5. Kare (1:1) üretilince Instagram profil ızgarası görseli
    4:5'e ortalayıp kırpıyor, sağ ve sol kenarlar gidiyor — başlıklar kesiliyordu.
-   4:5 hem ızgarada tam görünüyor hem akışta daha çok yer kaplıyor. */
+   4:5 hem ızgarada tam görünüyor hem akışta daha çok yer kaplıyor.
+
+   Punto ölçeği tuvalle birlikte ~1,25 kat büyütüldü. Kare için ayarlanmış
+   puntolar daha uzun tuvalde orantısal olarak küçük kalıyor ve ızgara
+   küçük resminde metin okunmuyordu. */
 html,body{width:1080px;height:1350px;overflow:hidden}
 body{font-family:"DejaVu Sans","Liberation Sans",Arial,sans-serif;background:#F1F4F3;color:#14100C;
  -webkit-print-color-adjust:exact;display:flex;flex-direction:column}
 .mono{font-family:"DejaVu Sans Mono","Liberation Mono",monospace;font-variant-numeric:tabular-nums}
-.bar{height:14px;background:linear-gradient(90deg,#8E4A18 0 33%,#245043 33% 66%,#C8912F 66% 100%)}
-/* Üstteki 14px renk şeridi düşülüyor: 1350 - 14 = 1336 */
-.pad{height:1336px;padding:64px 68px 56px;display:flex;flex-direction:column}
-.kicker{font-size:22px;letter-spacing:.22em;text-transform:uppercase;color:#8E4A18;font-weight:700}
-h1{font-family:Georgia,"DejaVu Serif",serif;font-size:72px;line-height:1.04;letter-spacing:-.02em;margin-top:18px}
-h2{font-family:Georgia,"DejaVu Serif",serif;font-size:50px;line-height:1.1;margin-top:14px}
-.sub{font-size:27px;line-height:1.4;color:#4A423A;margin-top:22px}
-.foot{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;font-size:23px;line-height:1.3;color:#7A7168;flex:0 0 auto;margin-top:auto;padding-top:22px;border-top:2px solid #D8D0C6}
-.foot b{color:#245043;font-size:27px}
+.bar{height:16px;background:linear-gradient(90deg,#8E4A18 0 33%,#245043 33% 66%,#C8912F 66% 100%)}
+/* Üstteki renk şeridi düşülüyor: 1350 - 16 = 1334 */
+.pad{height:1334px;padding:66px 72px 58px;display:flex;flex-direction:column}
+.kicker{font-size:27px;letter-spacing:.22em;text-transform:uppercase;color:#8E4A18;font-weight:700}
+h1{font-family:Georgia,"DejaVu Serif",serif;font-size:90px;line-height:1.04;letter-spacing:-.02em;margin-top:22px}
+h2{font-family:Georgia,"DejaVu Serif",serif;font-size:62px;line-height:1.1;margin-top:18px}
+.sub{font-size:34px;line-height:1.4;color:#4A423A;margin-top:26px}
+.foot{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;font-size:28px;line-height:1.3;color:#7A7168;flex:0 0 auto;margin-top:auto;padding-top:26px;border-top:2px solid #D8D0C6}
+.foot b{color:#245043;font-size:33px}
 .rows-fill{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}
-.row{display:flex;justify-content:space-between;align-items:baseline;padding:22px 28px;background:#fff;
- border:2px solid #D8D0C6;border-radius:6px;margin-top:16px}
-.row .n{font-size:34px;font-weight:700}
-.row .d{font-size:21px;color:#7A7168;margin-top:6px}
-.row .p{font-size:42px;font-weight:700;color:#8E4A18;white-space:nowrap}
-.row .u{font-size:20px;color:#7A7168;text-align:right;margin-top:6px}
+.row{display:flex;justify-content:space-between;align-items:baseline;padding:28px 34px;background:#fff;
+ border:2px solid #D8D0C6;border-radius:7px;margin-top:20px}
+.row .n{font-size:42px;font-weight:700}
+.row .d{font-size:26px;color:#7A7168;margin-top:7px}
+.row .p{font-size:52px;font-weight:700;color:#8E4A18;white-space:nowrap}
+.row .u{font-size:25px;color:#7A7168;text-align:right;margin-top:7px}
 .hi{background:#F4E7DA;border-color:#8E4A18}
-.badge{align-self:flex-start;display:inline-block;background:#245043;color:#fff;font-size:20px;font-weight:700;
- padding:8px 16px;border-radius:4px;margin-top:22px;letter-spacing:.04em}
-ul{list-style:none;margin-top:30px}
-li{font-size:29px;line-height:1.45;padding-left:44px;position:relative;margin-bottom:22px;color:#14100C}
-li::before{content:"";position:absolute;left:0;top:14px;width:20px;height:20px;background:#245043;border-radius:3px}
+.badge{align-self:flex-start;display:inline-block;background:#245043;color:#fff;font-size:25px;font-weight:700;
+ padding:10px 20px;border-radius:5px;margin-top:26px;letter-spacing:.04em}
+ul{list-style:none;margin-top:36px}
+li{font-size:36px;line-height:1.45;padding-left:54px;position:relative;margin-bottom:28px;color:#14100C}
+li::before{content:"";position:absolute;left:0;top:17px;width:25px;height:25px;background:#245043;border-radius:4px}
 li b{color:#8E4A18}
 
 .orta{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}
