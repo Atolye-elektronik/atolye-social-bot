@@ -5,7 +5,7 @@ publish_at: 2026-08-23 19:10
 ---
 📸 Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi
 
-Tüm detaylar için kaydır ➡️
+Tüm detaylar fotoğraflarda 👇
 
 Endüstriyel Elektronik dersi müfredatına tam uyumlu olarak hazırlanan bu set, öğrencilerin ve elektronik meraklılarının güç elektroniği, sensör teknolojileri ve analog sinyal işleme konularında profesyonel uygulamalar...
 

@@ -5,7 +5,7 @@ publish_at: 2026-08-17 19:10
 ---
 📸 Arduino İleri Seviye Kutulu Eğitim Seti - 88 Parça
 
-Tüm detaylar için kaydır ➡️
+Tüm detaylar fotoğraflarda 👇
 
 Elektronik dünyasına adım atmış ve artık kendi projelerini tasarlamak isteyen öğrenciler, mühendis adayları ve hobi tutkunları için özel olarak hazırlanmış kapsamlı bir "İleri Seviye" eğitim setidir.
 

@@ -52,7 +52,9 @@ def build_caption(product: dict) -> str:
     title = product.get("title", "").strip()
     description = ozet(product.get("body_html", ""))
 
-    lines = [f"\U0001f4f8 {title}", "", "Tüm detaylar için kaydır ➡️"]
+    # "kaydır" demiyoruz: aynı metin Facebook'a da gidiyor ve orada gönderi
+    # kaydırmalı carousel değil, çoklu fotoğraf albümü olarak çıkıyor.
+    lines = [f"\U0001f4f8 {title}", "", "Tüm detaylar fotoğraflarda 👇"]
     if description:
         lines += ["", description]
     if product.get("handle"):

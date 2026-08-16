@@ -5,7 +5,7 @@ publish_at: 2026-08-21 19:10
 ---
 📸 Endüstriyel Elektronik Uygulama Seti - Meslek Lisesi 11. Sınıf
 
-Tüm detaylar için kaydır ➡️
+Tüm detaylar fotoğraflarda 👇
 
 Ürün Açıklaması: Meslek liselerinin Elektrik-Elektronik Teknolojisi alanı 11. sınıf müfredatında yer alan Endüstriyel Elektronik dersi uygulamaları, laboratuvar deneyleri ve proje geliştirme çalışmalarınız için özel...
 

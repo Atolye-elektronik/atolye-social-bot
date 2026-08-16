@@ -6,7 +6,7 @@ publish_at: 2026-08-27 19:10
 Atölye dersine tam hazırlık 🎓
 
 Malzeme listesi elinde, kafan karışık mı?
-Cevabı carousel'de 👉 kaydır
+Cevabı fotoğraflarda 👇
 
 ⚡ Meslek Lisesi Takım Çantası Seti - 17 Parça Full Set: Geleceğin teknisyenleri için tasarlanan bu set, bir öğrencinin eğitim hayatı boyunca ihtiyaç duyacağı tüm temel ekipmanları tek bir çantada topluyor.
 
