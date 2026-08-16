@@ -10,6 +10,17 @@ META_TOKEN = os.environ.get("META_ACCESS_TOKEN", "").strip()
 FB_PAGE_ID = os.environ.get("FB_PAGE_ID", "").strip()
 IG_USER_ID = os.environ.get("IG_USER_ID", "").strip()
 
+# --- Threads ---
+# Threads kendi API'sini kullanıyor (graph.threads.net), Facebook Graph'tan
+# ayrı bir token ister. tools/threads_auth.py ile üretilir.
+THREADS_VERSION = os.environ.get("THREADS_API_VERSION", "v1.0")
+THREADS_BASE = f"https://graph.threads.net/{THREADS_VERSION}"
+
+THREADS_TOKEN = os.environ.get("THREADS_ACCESS_TOKEN", "").strip()
+THREADS_USER_ID = os.environ.get("THREADS_USER_ID", "").strip()
+THREADS_APP_ID = os.environ.get("THREADS_APP_ID", "").strip()
+THREADS_APP_SECRET = os.environ.get("THREADS_APP_SECRET", "").strip()
+
 # --- TikTok ---
 TIKTOK_CLIENT_KEY = os.environ.get("TIKTOK_CLIENT_KEY", "").strip()
 TIKTOK_CLIENT_SECRET = os.environ.get("TIKTOK_CLIENT_SECRET", "").strip()
@@ -32,6 +43,15 @@ GITLAB_PROJECT = os.environ.get("CI_PROJECT_PATH", "").strip()  # "kullanici/rep
 GITLAB_BRANCH = os.environ.get("CI_COMMIT_REF_NAME", "main").strip()
 
 MEDIA_BASE_URL = os.environ.get("MEDIA_BASE_URL", "").strip()
+
+# Otomatik üretilen taslakların varsayılan platformları. Bir platformu
+# taslaklardan çıkarmak için ortam değişkenini değiştirmen yeter, örn.
+# POST_PLATFORMS="instagram,facebook"
+DEFAULT_PLATFORMS = [
+    p.strip().lower()
+    for p in os.environ.get("POST_PLATFORMS", "instagram,facebook,threads").split(",")
+    if p.strip()
+]
 
 # Kuru çalışma: API çağrısı yapmadan ne olacağını gösterir.
 DRY_RUN = os.environ.get("DRY_RUN", "false").lower() in ("1", "true", "yes")

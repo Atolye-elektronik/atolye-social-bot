@@ -19,6 +19,8 @@ import re
 
 import requests
 
+from . import config
+
 STORE_URL = os.environ.get("STORE_URL", "https://atolyeelektronik.com").rstrip("/")
 STATE_PATH = pathlib.Path("state/shopify_seen.json")
 POSTS_DIR = pathlib.Path("posts")
@@ -125,7 +127,7 @@ def generate(count: int = 3, start_in_hours: int = 24, spacing_hours: int = 24) 
         image_url = product["images"][0]["src"]
         body = (
             "---\n"
-            "platforms: [instagram, facebook]\n"
+            f"platforms: [{', '.join(config.DEFAULT_PLATFORMS)}]\n"
             f"media: {image_url}\n"
             f"publish_at: {when:%Y-%m-%d %H:%M}\n"
             "---\n"

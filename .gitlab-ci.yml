@@ -47,6 +47,16 @@ publish:
     - python -m src.main ${EXTRA_ARGS}
     - *commit_state
 
+# --- Threads token yenileme (aylık) -----------------------------------------
+# Threads token'ı 60 gün geçerli; ayda bir yenilenince sayaç başa sarar.
+# Yeni token'ı CI değişkenine script kendisi yazar (GITLAB_TOKEN api yetkili olmalı).
+threads-token:
+  stage: run
+  rules:
+    - if: '$JOB == "threads-token"'
+  script:
+    - python -m src.threads_token ${EXTRA_ARGS}
+
 # --- Trendyol sipariş senkronu (saatlik) ------------------------------------
 trendyol-sync:
   stage: run

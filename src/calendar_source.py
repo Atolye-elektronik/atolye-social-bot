@@ -17,7 +17,7 @@ import json
 import pathlib
 from zoneinfo import ZoneInfo
 
-from . import gorsel, shopify_source
+from . import config, gorsel, shopify_source
 
 TZ = ZoneInfo("Europe/Istanbul")
 CALENDAR_PATH = pathlib.Path("content/takvim.json")
@@ -134,7 +134,7 @@ def generate(days: int = 7, dry_run: bool = False) -> list[pathlib.Path]:
         if path.exists():
             continue
 
-        platforms = slot.get("platforms") or ["instagram", "facebook"]
+        platforms = slot.get("platforms") or config.DEFAULT_PLATFORMS
 
         # Instagram 4:5 kabul ediyor, profil izgarasi 3:4 gosteriyor.
         # Ham urun fotograflari 3:2 yatay oldugu icin once 1080x1350
