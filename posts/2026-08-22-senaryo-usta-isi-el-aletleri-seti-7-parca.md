@@ -3,7 +3,7 @@ platforms: [instagram, facebook, threads]
 media: [posts/media/carousel/2026-08-22-senaryo-usta-isi-el-aletleri-seti-7-parca/01-kanca.jpg, posts/media/carousel/2026-08-22-senaryo-usta-isi-el-aletleri-seti-7-parca/02-dert.jpg, posts/media/carousel/2026-08-22-senaryo-usta-isi-el-aletleri-seti-7-parca/03-hayal.jpg, posts/media/carousel/2026-08-22-senaryo-usta-isi-el-aletleri-seti-7-parca/04-cozum.jpg, posts/media/carousel/2026-08-22-senaryo-usta-isi-el-aletleri-seti-7-parca/05-urun.jpg, posts/media/carousel/2026-08-22-senaryo-usta-isi-el-aletleri-seti-7-parca/06-urun.jpg, posts/media/carousel/2026-08-22-senaryo-usta-isi-el-aletleri-seti-7-parca/07-kapanis.jpg]
 publish_at: 2026-08-22 19:10
 ---
-İşini ilk seferde bitiren aletler 🔧
+Bir kere al, yıllarca kullan 🔧
 
 Tam iş bitecekken alet seni yarı yolda bıraktı.
 Cevabı fotoğraflarda 👇
