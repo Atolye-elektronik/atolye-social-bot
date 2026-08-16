@@ -25,8 +25,14 @@ import json
 import pathlib
 import re
 
-from . import config, karusel_gorsel
+from . import karusel_gorsel
 from .shopify_source import STORE_URL, _slugify, fetch_products, ozet
+
+# Bilerek yalnizca Instagram. Kanca slaydinin altbilgisindeki "Kaydir →"
+# ibaresi gorselin icine gomulu ve kaydirma jesti Instagram carousel'ine ait;
+# Facebook'ta ayni ibare anlamsiz kaliyor. Ayrica 4:5 oran Instagram profil
+# izgarasi icin secildi. Facebook/Threads'e gidecek icerik ayri uretilmeli.
+PLATFORMLAR = ["instagram"]
 
 STATE_PATH = pathlib.Path("state/kanca_carousel_seen.json")
 KANCA_YOLU = pathlib.Path("content/kancalar.json")
@@ -206,7 +212,7 @@ def post_yaz(urun: dict, slug: str, slaytlar: list[str], ne_zaman: dt.datetime) 
     yol = POSTS_DIR / f"{slug}.md"
     govde = (
         "---\n"
-        f"platforms: [{', '.join(config.DEFAULT_PLATFORMS)}]\n"
+        f"platforms: [{', '.join(PLATFORMLAR)}]\n"
         f"media: [{', '.join(slaytlar)}]\n"
         f"publish_at: {ne_zaman:%Y-%m-%d %H:%M}\n"
         "---\n"
