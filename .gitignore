@@ -13,3 +13,8 @@ logs/
 # Hepsiburada toplu yükleme çıktıları — betikten yeniden üretilebilir
 hepsiburada-toplu-yukleme.xlsx
 payload.json
+
+# TikTok yorumları — izleyicilerin kullanıcı adlarını ve yorum metinlerini
+# içeriyor, depo ise herkese açık. Araçlar bu dosyaları kendileri üretiyor.
+state/tiktok_comments.json
+content/yorum_taslaklari.md
