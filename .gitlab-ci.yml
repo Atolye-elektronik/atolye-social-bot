@@ -79,6 +79,46 @@ hepsiburada-sync:
     - cd src/marketplaces && python hepsiburada_sync.py && cd -
     - *commit_state
 
+# --- Hepsiburada'ya ürün açma (elle) ----------------------------------------
+# Bilerek zamanlanmıyor — bu iş Hepsiburada'da gerçek ürün açar.
+#
+# Değişkenler:
+#   KATEGORI_ARA=<kelime>  sadece kategori arar, categoryId listeler
+#   GONDER=1               gerçekten gönderir (verilmezse kuru çalıştırma)
+#   COUNT=<n>              son kaç Shopify ürünü (varsayılan 7)
+#   BARKOD_URET=0          barkod üretimini kapatır (varsayılan açık)
+#
+# Sıra: önce KATEGORI_ARA ile ID'leri bul, content/hepsiburada_kategori.json
+# dosyasını doldur, sonra kuru çalıştır (payload artifact olarak iner),
+# çıktı doğruysa GONDER=1 ile tekrar çalıştır.
+hepsiburada-urun-ekle:
+  stage: run
+  rules:
+    - if: '$JOB == "hepsiburada-urun-ekle"'
+  variables:
+    COMMIT_MSG: "hepsiburada'ya gönderilen ürünler kaydedildi"
+  script:
+    - |
+      BARKOD_ARG="--barkod-uret"
+      [ "$BARKOD_URET" = "0" ] && BARKOD_ARG=""
+      cd src/marketplaces
+      if [ -n "$KATEGORI_ARA" ]; then
+        python hepsiburada_urun_ekle.py --kategori-ara "$KATEGORI_ARA"
+      elif [ "$GONDER" = "1" ]; then
+        python hepsiburada_urun_ekle.py --count "${COUNT:-7}" $BARKOD_ARG --gonder
+      else
+        python hepsiburada_urun_ekle.py --count "${COUNT:-7}" $BARKOD_ARG \
+          --cikti "${CI_PROJECT_DIR}/payload.json"
+      fi
+      cd -
+    - *commit_state
+  artifacts:
+    # Kuru çalıştırmada gönderilecek payload'ı indirip gözden geçirebilesin diye.
+    paths:
+      - payload.json
+    expire_in: 1 week
+    when: always
+
 # --- Shopify ürünlerinden taslak üret (haftalık) ----------------------------
 # GitHub'daki "pull request aç" adımının GitLab karşılığı: push seçenekleriyle
 # doğrudan merge request açıyoruz.
@@ -140,6 +180,116 @@ carousel-drafts:
           "https://oauth2:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:carousel-taslaklari
       else
         echo "Yeni taslak üretilmedi."
+      fi
+
+# --- TikTok Studio otomasyonu -----------------------------------------------
+# Diğer işlerden farkı: burada resmî API değil, gerçek bir tarayıcı çalışıyor.
+# Bu yüzden Playwright'ın kendi imajını kullanıyoruz — python:3.12-slim'de
+# Chromium'un sistem bağımlılıkları yok.
+#
+# Zamanlamalar (Pipeline schedules):
+#   JOB=tiktok-saglik    her gün 06:00  → oturum ayakta mı, çerez ne zaman düşecek
+#   JOB=tiktok-zamanla   her gün 06:20  → yaklaşan postları TikTok'a planla
+#   JOB=tiktok-analitik  her gün 08:00  → analitiği state/ altına yaz
+#   JOB=tiktok-yorumlar  pazartesi 08:30 → yorumları topla, taslak üret
+#
+# TIKTOK_STUDIO_COOKIES değişkenini Settings > CI/CD > Variables altında
+# "Masked" ve "Protected" işaretli olarak tanımla.
+.tiktok_studio: &tiktok_studio
+  stage: run
+  image: mcr.microsoft.com/playwright/python:v1.47.0-jammy
+  before_script:
+    - pip install --quiet --root-user-action=ignore -r requirements.txt
+    # İmajdaki hazır tarayıcı, imajın kendi Playwright sürümüne (1.47) ait.
+    # requirements.txt daha yeni bir Playwright kurunca o tarayıcıyı
+    # tanımıyor ("Executable doesn't exist"), o yüzden eşleşen sürümü
+    # indiriyoruz. Sistem bağımlılıkları imajda zaten var, --with-deps gerekmez.
+    - python -m playwright install chromium
+  variables:
+    # CI makineleri yavaş olabiliyor; bekleme sürelerini uzat.
+    TIKTOK_STUDIO_YAVASLIK: "1.5"
+  artifacts:
+    # Hata anında ekran görüntüsü + HTML dökümü; körlemesine hata aramazsın.
+    when: on_failure
+    paths:
+      - logs/tiktok-studio/
+    expire_in: 1 week
+
+tiktok-saglik:
+  <<: *tiktok_studio
+  rules:
+    - if: '$JOB == "tiktok-saglik"'
+  script:
+    - python -m src.tiktok_studio saglik
+
+tiktok-zamanla:
+  <<: *tiktok_studio
+  rules:
+    - if: '$JOB == "tiktok-zamanla"'
+  variables:
+    # YAML birleştirmesi sığ: variables'ı ezdiğimiz için şablondakini tekrar yaz.
+    TIKTOK_STUDIO_YAVASLIK: "1.5"
+    COMMIT_MSG: "tiktok zamanlama kaydı güncellendi"
+  script:
+    - python -m src.tiktok_studio zamanla --gun "${GUN:-7}"
+    - *commit_state
+
+tiktok-analitik:
+  <<: *tiktok_studio
+  rules:
+    - if: '$JOB == "tiktok-analitik"'
+  variables:
+    TIKTOK_STUDIO_YAVASLIK: "1.5"
+    COMMIT_MSG: "tiktok analitiği güncellendi"
+  script:
+    - python -m src.tiktok_studio analitik
+    - *commit_state
+
+tiktok-yorumlar:
+  <<: *tiktok_studio
+  rules:
+    - if: '$JOB == "tiktok-yorumlar"'
+  script:
+    - python -m src.tiktok_studio yorumlar
+    - |
+      if [ -n "$(git status --porcelain state/ content/)" ]; then
+        git config user.name "atolye-bot"
+        git config user.email "bot@atolyeelektronik.com"
+        git add state/ content/
+        git commit -m "chore: tiktok yorumları ve yanıt taslakları [skip ci]"
+        git push "https://oauth2:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:${CI_DEFAULT_BRANCH}"
+      else
+        echo "Yeni yorum yok."
+      fi
+
+# --- Görsellerden dikey video üret (elle) -----------------------------------
+# POST=<post dosya adı> vererek çalıştır. Üretilen mp4 merge request olarak gelir.
+tiktok-video:
+  stage: run
+  rules:
+    - if: '$JOB == "tiktok-video"'
+  before_script:
+    - apt-get update -qq && apt-get install -y -qq --no-install-recommends git ffmpeg fonts-dejavu
+    - pip install --quiet --root-user-action=ignore -r requirements.txt
+  script:
+    - test -n "$POST" || (echo "POST değişkeni gerekli (post dosya adı, .md olmadan)" && exit 1)
+    - python -m src.video_uretim --post "$POST"
+    - |
+      if [ -n "$(git status --porcelain posts/)" ]; then
+        git config user.name "atolye-bot"
+        git config user.email "bot@atolyeelektronik.com"
+        git checkout -B "video-${POST}"
+        git add posts/
+        git commit -m "feat: ${POST} için dikey video"
+        git push -f \
+          -o merge_request.create \
+          -o merge_request.target="${CI_DEFAULT_BRANCH}" \
+          -o merge_request.title="TikTok videosu: ${POST}" \
+          -o merge_request.description="Ürün görsellerinden dikey video üretildi. Videoyu izleyip beğenirsen postun front matter'ında media alanını mp4'e çevir ve platforms listesine tiktok_studio ekle." \
+          -o merge_request.remove_source_branch \
+          "https://oauth2:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:video-${POST}"
+      else
+        echo "Video üretilmedi."
       fi
 
 # --- İçerik takviminden taslak üret (haftalık) ------------------------------

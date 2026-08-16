@@ -2,3 +2,14 @@ __pycache__/
 *.pyc
 .env
 .venv/
+
+# TikTok Studio oturum çerezleri — hesabına tam erişim demek, asla commit etme.
+.tiktok_studio_state.json
+cerez.b64
+
+# Hata ayıklama dökümleri (ekran görüntüsü + HTML)
+logs/
+
+# Hepsiburada toplu yükleme çıktıları — betikten yeniden üretilebilir
+hepsiburada-toplu-yukleme.xlsx
+payload.json

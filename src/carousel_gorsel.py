@@ -40,14 +40,27 @@ MARKA = "ATÖLYE ELEKTRONİK"
 FONT_DIRS = [
     "/usr/share/fonts/truetype/dejavu",
     "/usr/share/fonts/dejavu",
+    # Windows'ta DejaVu yok; slide'lari yerelde uretebilmek icin sistem
+    # yazi tiplerine dusuyoruz. Bu olmadan PIL minik bir bitmap fontu
+    # kullaniyor ve Turkce karakterler kutu olarak ciziliyor.
+    r"C:\Windows\Fonts",
 ]
+
+# DejaVu bulunamazsa hangi sistem yazi tipi yerine gecsin.
+FONT_KARSILIK = {
+    "DejaVuSans-Bold.ttf": ("arialbd.ttf", "segoeuib.ttf", "calibrib.ttf"),
+    "DejaVuSans.ttf": ("arial.ttf", "segoeui.ttf", "calibri.ttf"),
+    "DejaVuSansMono-Bold.ttf": ("consolab.ttf", "cour.ttf", "arialbd.ttf"),
+}
 
 
 def _font(ad: str, size: int) -> ImageFont.FreeTypeFont:
+    adaylar = (ad,) + FONT_KARSILIK.get(ad, ())
     for d in FONT_DIRS:
-        yol = os.path.join(d, ad)
-        if os.path.exists(yol):
-            return ImageFont.truetype(yol, size)
+        for aday in adaylar:
+            yol = os.path.join(d, aday)
+            if os.path.exists(yol):
+                return ImageFont.truetype(yol, size)
     return ImageFont.load_default()
 
 

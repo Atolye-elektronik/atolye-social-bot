@@ -1,2 +1,8 @@
 requests>=2.32,<3
 pillow>=10.0
+# Windows'ta saat dilimi veritabanı işletim sisteminde yok; Europe/Istanbul
+# hesapları (posts.py, tiktok_studio) bu paket olmadan yerelde çalışmıyor.
+tzdata>=2024.1
+# TikTok Studio otomasyonu (src/tiktok_studio). Tarayıcı ayrıca kurulmalı:
+#   python -m playwright install chromium
+playwright>=1.45

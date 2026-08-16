@@ -19,7 +19,7 @@ Birden fazla satır olabilir. #atolyeelektronik
 ## Alanlar
 
 **platforms** — Nerelere paylaşılacak. Seçenekler: `instagram`, `facebook`,
-`threads`, `tiktok`, `youtube`. Birden fazlasını yazabilirsin. Boş bırakırsan
+`threads`, `tiktok`, `tiktok_studio`, `youtube`. Birden fazlasını yazabilirsin. Boş bırakırsan
 Instagram ve Facebook varsayılır. Otomatik üretilen taslaklara Threads de
 ekleniyor; bunu değiştirmek için `POST_PLATFORMS` değişkenini kullan
 (örn. `POST_PLATFORMS=instagram,facebook`).
@@ -52,6 +52,38 @@ kelime sonunda kısaltılır.
 `everyone` (varsayılan), `accounts_you_follow`, `mentioned_only`.
 
 Threads, Instagram'ın aksine görselsiz (sadece metin) paylaşıma da izin verir.
+
+## TikTok'a özel alanlar
+
+`tiktok` ile `tiktok_studio` iki ayrı yol — ikisini birden yazarsan video iki
+kez gider.
+
+- **`tiktok`** resmî API'yi kullanır. Uygulama TikTok denetiminden geçene kadar
+  videoyu yayınlamaz, TikTok uygulamandaki gelen kutusuna bırakır.
+- **`tiktok_studio`** gerçek Studio arayüzünü sürer: doğrudan yayınlar ya da
+  TikTok'un kendi zamanlayıcısına bırakır. Ayrıntı:
+  [KURULUM-TIKTOK-STUDIO.md](../KURULUM-TIKTOK-STUDIO.md)
+
+**tiktok_schedule_at** — `tiktok_studio` için özel yayın zamanı. Yazmazsan
+`publish_at` kullanılır. TikTok en erken 15 dakika, en geç 10 gün sonrasına
+zamanlamaya izin veriyor.
+
+**tiktok_kanca** — Videonun ilk karesinde çıkacak açılış cümlesi. TikTok'ta
+ilk saniye kaydırılıp geçilmeyi belirlediği için video düz kapakla değil,
+izleyiciyi durduran bir soruyla açılmalı:
+
+```yaml
+tiktok_kanca: Kafandaki projeye aylardır başlayamadın mı?
+```
+
+Senaryolu carousel'lerin ilk slide'ı (`01-kanca.jpg`) zaten bu işi görüyor,
+onlarda bu satıra gerek yok. Klasik carousel'ler düz kapakla açıldığı için
+bu satır yazılmazsa video üretimi uyarı verir.
+
+**tiktok_kanca_etiket** — Kanca karesinin üstündeki küçük turuncu etiket.
+Yazmazsan cümlenin tipine göre seçilir: soru cümlesine "TANIDIK GELDİ Mİ?"
+gibi, "...olsaydı?" cümlesine "PEKİ YA ŞÖYLE OLSA?", düz cümleye "DURUM ŞU"
+gibi. Sadece beğenmediğinde elle yaz.
 
 **publish_at** — Ne zaman paylaşılacağı, Türkiye saatiyle. Biçim `2026-08-01 10:00`.
 Bu satırı silersen post ilk çalışmada hemen paylaşılır.
