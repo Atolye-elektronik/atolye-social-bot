@@ -44,8 +44,13 @@ publish:
   variables:
     COMMIT_MSG: "paylaşım kaydı güncellendi"
   script:
-    - python -m src.main ${EXTRA_ARGS}
+    # Bir platform hata verse bile (ör. Facebook token'ı bozuk) paylaşım kaydı
+    # mutlaka commit edilmeli. Yoksa başarılı giden platformlar bir sonraki
+    # turda aynı postu tekrar paylaşır. Hata kodu en sonda geri veriliyor,
+    # böylece iş yine kırmızı görünür.
+    - RC=0; python -m src.main ${EXTRA_ARGS} || RC=$?
     - *commit_state
+    - exit $RC
 
 # --- Threads token yenileme (aylık) -----------------------------------------
 # Threads token'ı 60 gün geçerli; ayda bir yenilenince sayaç başa sarar.
