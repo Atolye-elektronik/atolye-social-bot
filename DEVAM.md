@@ -281,64 +281,80 @@ robotik kursları (50).
 
 ## 8. E-posta kampanyası — devam planı
 
-### Sıkışan aritmetik
+### Bölüm taraması yapıldı — tablo değişti
 
-Bunu önce görmek gerekiyor, çünkü planın tamamını belirliyor:
+`okul_bolum` 16.08.2026'da 2.414 okulun tamamında koşturuldu:
 
 | | |
 |---|---|
-| Gönderilmemiş genel MTAL | **1.490** |
+| Elektrik-elektronik teyitli | 447 |
+| Bilişim teyitli | 661 |
+| İkisinden biri | **793** (315'inde ikisi birden) |
+| Bölümü var ama ikisi de yok | 746 |
+| Site haritasından tespit edilemeyen | 875 |
+
+Bu, gönderim havuzunu **1.490 → 769**'a indiriyor (793'ten 24'ü zaten
+gönderilmiş). Aritmetik artık sıkışık değil:
+
+| | |
+|---|---|
+| Havuz (gönderilmemiş + bölümü teyitli) | **769** |
 | Günlük üst sınır (teslim edilebilirlik) | 25 |
 | Pencerenin kapanışı | ~8 Eylül (malzeme listeleri kesinleşiyor) |
-| Kalan gün | 23 |
 | **Gönderilebilecek toplam** | **~575** |
+| Kapsam | **%75** — ve elektrik-elektronik teyitli **427'nin tamamı** |
 
-Havuz 1.490, bütçe 575. **Hepsine yetişmiyor.** Dolayısıyla asıl kaldıraç
-tempoyu artırmak değil, doğru %40'ı seçmek.
+Yani daralttıktan sonra bütçe, en değerli segmentin **hepsine** yetiyor.
+Tarama öncesi kapsam %39'du; tek bir tarama bunu %75'e çıkardı.
 
-### Bu yüzden önce bölüm taraması
+### Sıralanmış hedef listesi hazır
 
-`python -m src.okul_bolum --liste pazarlama/okullar.csv` (~1–1,5 saat)
-1.490'ı, elektrik-elektronik veya bilişim bölümü **teyitli** ~794'e indiriyor.
-575 e-postalık bütçeyi 794 kişilik bir havuzda harcamak, 1.490'lık havuzda
-harcamaktan belirgin biçimde iyi. Gönderime başlamadan bunu çalıştır.
+`pazarlama/okullar-hedef.csv` (769 satır, `.gitignore` içinde) şu önceliğe
+göre **sıralı** üretildi:
 
-### Haftalık sıra
+1. Elektrik-elektronik teyitli okullar (427) — en güçlü sinyal
+2. Sonra yalnızca bilişim teyitli olanlar (342)
+3. Her grubun içinde: önce başlanmış iller (Antalya, Mersin, Isparta, Burdur),
+   sonra okul yoğunluğu en yüksek iller
 
-Sıra, ilin okul yoğunluğuna ve lojistik yakınlığa göre. Büyük iller **öne**
-alındı, çünkü eylülün ilk haftasına kalırlarsa liste zaten kesinleşmiş olur.
+Yeniden üretmek için: `okul_bolum` çalıştıktan sonra listeyi bu ölçütle süz.
 
-| Hafta | Tarih | Adet | İller |
-|---|---|---|---|
-| 1 | 17–23 Ağu | 175 | Antalya 22 · Mersin 26 · Isparta 13 · Burdur 6 (başlanan iller bitsin) + Adana 28 · Hatay 27 · Konya 46 |
-| 2 | 24–30 Ağu | 175 | İstanbul 172 |
-| 3 | 31 Ağu–6 Eyl | 175 | Ankara 93 · İzmir 82 |
-| 4 | 7–8 Eyl | 50 | İzmir kalanı 9 · Bursa 41 |
-
-Kalan büyük iller (Kocaeli 40, Manisa 32, Şanlıurfa 30, Balıkesir 29,
-Gaziantep 28, Diyarbakır 27, Kayseri 27, Samsun 27, Tekirdağ 23, Trabzon 23…)
-pencereye yetişmiyor. Bunlar **ikinci dalga**: ekim–kasımda "ikinci dönem
-malzeme planlaması" temasıyla yazılır. Sezon dışı temas kaybedilmiş temas
-değil, sadece farklı bir mesaj gerektiriyor.
-
-Komut (ilk 25'i denemek için):
+Dosya sıralı olduğu için **plan basit: baştan itibaren günde 25.** İl seçmekle
+uğraşmaya gerek yok, sıra zaten doğru.
 
 ```bash
-python -m src.okul_daveti --liste pazarlama/okullar.csv --dry-run
-python -m src.okul_daveti --liste pazarlama/okullar.csv --limit 25
+python -m src.okul_daveti --liste pazarlama/okullar-hedef.csv --dry-run
+python -m src.okul_daveti --liste pazarlama/okullar-hedef.csv --limit 25
 ```
 
-`state/okul_gonderilen.json` tekrarı kendisi engelliyor; il sırasını tutturmak
-için listeyi ile göre süzüp `--liste` olarak vermen yeterli.
+İlk 575'in dağılımı: İstanbul 101 · Ankara 64 · İzmir 37 · Konya 25 ·
+Kocaeli 23 · Bursa 21 · Manisa 14 · Adana 12 · Mersin 11 — toplam 75 il.
+
+`state/okul_gonderilen.json` tekrarı kendisi engelliyor, aynı komutu her gün
+çalıştırman yeterli; kaldığı yerden devam eder.
+
+### Kapsam dışı kalanlar
+
+- **194 okul** (769'un kalanı) pencereye yetişmiyor — hepsi yalnızca bilişim
+  teyitli, yani zaten daha zayıf sinyal.
+- **875 okul** site haritasından tespit edilemedi. Bunlar "bölümü yok" değil,
+  "bilinmiyor" — sitesi olmayan ya da site haritasını doldurmamış okullar.
+  İkinci dalgada telefonla (`okul_iletisim` çıktısı) elenebilirler.
+- Bu ikisi + 746 "ilgisiz bölüm" okulu **ikinci dalga**: ekim–kasımda "ikinci
+  dönem malzeme planlaması" temasıyla. Sezon dışı temas kaybedilmiş temas
+  değil, farklı bir mesaj gerektiriyor.
 
 ### Karar gerektiren tek şey
 
-Tempoyu 25'te tutup ~575'te mi kalınacak, yoksa ikinci bir gönderen adres
-(`info@atolyeelektronik.com`, ayrı itibar havuzu) açılıp günlük 50'ye mi
-çıkılacak? İkincisi kapsamı iki katına çıkarır ama yeni bir alan adının
-ilk soğuk kampanyası ısıtılmadan başlarsa spam'e düşme riski taşır. Riski
-almadan yapılacak hâli: yeni adresi 1–2 hafta düşük hacimle ısıtmak — ki bu
-da tam olarak elimizde olmayan süre.
+Artık ikinci bir gönderen adres açmaya **gerek yok**. Bölüm taraması havuzu
+769'a indirdiği için günde 25 tempo, elektrik-elektronik teyitli okulların
+tamamını penceresinde yakalıyor. İkinci adres fikri (yeni alan adı ısıtılmadan
+soğuk kampanyaya sokulursa spam riski) masadan kalktı — kapsamı artırmak için
+gereken şey daha çok e-posta değil, daha iyi hedeflemeydi ve o yapıldı.
+
+Geriye kalan tek gerçek karar: **gönderime ne zaman başlanacak.** SMTP
+uygulama şifresi girildiği gün başlayabilir; her gecikilen gün pencerenin
+sonundan 25 okul siliyor.
 
 ---
 
