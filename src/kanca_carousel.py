@@ -25,7 +25,7 @@ import json
 import pathlib
 import re
 
-from . import karusel_gorsel
+from . import karusel_gorsel, posts
 from .shopify_source import STORE_URL, _slugify, fetch_products, ozet
 
 # Bilerek yalnizca Instagram. Kanca slaydinin altbilgisindeki "Kaydir →"
@@ -222,6 +222,30 @@ def post_yaz(urun: dict, slug: str, slaytlar: list[str], ne_zaman: dt.datetime) 
     return yol
 
 
+# Kanca carousel'i icin sabit yayin saati. Uretim saatine +24 saat eklemek
+# 03:10 gibi olu saatlere denk geliyordu (is sabah erken calisiyor).
+YAYIN_SAATI = 12
+
+
+def _bos_gun(bugun: dt.date) -> dt.date:
+    """Hicbir postun planlanmadigi ilk gunu bulur (yarindan itibaren).
+
+    Once kosulsuz "yarin" deniyordu, takvimde ne oldugu umursanmiyordu. Sonuc
+    18 Agustos'ta dort post oldu ve ikisi ayni urundu. Dolu gunler atlanarak
+    gunde bir gonderi korunuyor.
+    """
+    dolu = {p.publish_at.date() for p in posts.load_all(POSTS_DIR) if p.publish_at}
+
+    gun = bugun + dt.timedelta(days=1)
+    # 400 gun: sonsuz donguye karsi emniyet. Takvim bu kadar doluysa zaten
+    # uretmeye devam etmenin anlami yok.
+    for _ in range(400):
+        if gun not in dolu:
+            return gun
+        gun += dt.timedelta(days=1)
+    return gun
+
+
 def uret(count: int = 1, start_in_hours: int = 24, spacing_hours: int = 24,
          handle: str | None = None, onizleme: bool = False) -> list[pathlib.Path]:
     seen = _seen_oku()
@@ -243,7 +267,10 @@ def uret(count: int = 1, start_in_hours: int = 24, spacing_hours: int = 24,
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
     uretilen: list[pathlib.Path] = []
-    ne_zaman = dt.datetime.now().astimezone() + dt.timedelta(hours=start_in_hours)
+    simdi = dt.datetime.now().astimezone()
+    ne_zaman = dt.datetime.combine(
+        _bos_gun(simdi.date()), dt.time(YAYIN_SAATI, 0), tzinfo=simdi.tzinfo
+    )
 
     for urun in secilen[:count]:
         slug = f"{ne_zaman:%Y-%m-%d}-kanca-{_slugify(urun.get('handle') or urun.get('title', ''))}"
