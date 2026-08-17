@@ -401,7 +401,7 @@ tiktok-video:
           -o merge_request.create \
           -o merge_request.target="${CI_DEFAULT_BRANCH}" \
           -o merge_request.title="TikTok videosu: ${POST}" \
-          -o merge_request.description="Ürün görsellerinden dikey video üretildi. Videoyu izleyip beğenirsen postun front matter'ında media alanını mp4'e çevir ve platforms listesine tiktok_studio ekle." \
+          -o merge_request.description="Ürün görsellerinden 1080x1920 (9:16) dikey video üretildi. Videoyu izleyip beğenirsen postun front matter'ında media alanını tek başına bu mp4'e çevir (liste değil — posts.is_video buna bakıyor) ve platforms listesini \`[instagram, tiktok_studio]\` yap. Aynı dosya Instagram'da Reels, TikTok'ta normal video olarak yayınlanır; ayrı üretim gerekmiyor. Sadece TikTok istiyorsan instagram'ı çıkar." \
           -o merge_request.remove_source_branch \
           "https://oauth2:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:video-${POST}"
       else
