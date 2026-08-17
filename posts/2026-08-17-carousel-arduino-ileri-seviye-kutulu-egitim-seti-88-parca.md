@@ -1,6 +1,6 @@
 ---
 platforms: [instagram, facebook, threads]
-media: [posts/media/carousel/2026-08-17-carousel-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/01-kapak.jpg, posts/media/carousel/2026-08-17-carousel-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/02-urun.jpg, posts/media/carousel/2026-08-17-carousel-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/03-urun.jpg, posts/media/carousel/2026-08-17-carousel-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/04-urun.jpg, posts/media/carousel/2026-08-17-carousel-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/05-urun.jpg, posts/media/carousel/2026-08-17-carousel-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/06-urun.jpg, posts/media/carousel/2026-08-17-carousel-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/07-urun.jpg, posts/media/carousel/2026-08-17-carousel-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/08-urun.jpg, posts/media/carousel/2026-08-17-carousel-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/09-urun.jpg, posts/media/carousel/2026-08-17-carousel-arduino-ileri-seviye-kutulu-egitim-seti-88-parca/10-kapanis.jpg]
+media: posts/media/2026-08-17-carousel-arduino-ileri-seviye-kutulu-egitim-seti-88-parca.mp4
 publish_at: 2026-08-17 19:10
 ---
 Fikrin hazır, malzemen eksik 🛠️

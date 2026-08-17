@@ -1,6 +1,6 @@
 ---
 platforms: [instagram, facebook, threads]
-media: [posts/media/carousel/2026-08-19-carousel-arduino-proje-ve-uygulama-gelistirme-seti-56-parca/01-kapak.jpg, posts/media/carousel/2026-08-19-carousel-arduino-proje-ve-uygulama-gelistirme-seti-56-parca/02-urun.jpg, posts/media/carousel/2026-08-19-carousel-arduino-proje-ve-uygulama-gelistirme-seti-56-parca/03-urun.jpg, posts/media/carousel/2026-08-19-carousel-arduino-proje-ve-uygulama-gelistirme-seti-56-parca/04-urun.jpg, posts/media/carousel/2026-08-19-carousel-arduino-proje-ve-uygulama-gelistirme-seti-56-parca/05-urun.jpg, posts/media/carousel/2026-08-19-carousel-arduino-proje-ve-uygulama-gelistirme-seti-56-parca/06-urun.jpg, posts/media/carousel/2026-08-19-carousel-arduino-proje-ve-uygulama-gelistirme-seti-56-parca/07-urun.jpg, posts/media/carousel/2026-08-19-carousel-arduino-proje-ve-uygulama-gelistirme-seti-56-parca/08-urun.jpg, posts/media/carousel/2026-08-19-carousel-arduino-proje-ve-uygulama-gelistirme-seti-56-parca/09-urun.jpg, posts/media/carousel/2026-08-19-carousel-arduino-proje-ve-uygulama-gelistirme-seti-56-parca/10-kapanis.jpg]
+media: posts/media/2026-08-19-carousel-arduino-proje-ve-uygulama-gelistirme-seti-56-parca.mp4
 publish_at: 2026-08-19 19:10
 ---
 Prototipin bu hafta sonu çalışsın 🛠️
