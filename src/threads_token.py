@@ -23,7 +23,9 @@ Token asla ekrana basılmaz — sadece dosyaya ve secret'a yazılır.
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import os
+import pathlib
 import sys
 
 import requests
@@ -110,6 +112,46 @@ def gitlab_degiskenini_guncelle(token: str) -> bool:
     return True
 
 
+def _alarm_ver(hata: str) -> None:
+    """Yenileme başarısız olursa issue açar.
+
+    Bu iş ayda bir çalıştığı için hatası kolayca gözden kaçar; fark edilmezse
+    60. günde Threads paylaşımları sessizce durur. Issue, kaydı okumaya gerek
+    kalmadan haber verir. Issue açılamaması yenilemeyi daha da kötü yapmasın
+    diye burada hiçbir istisna yukarı taşınmıyor.
+    """
+    # src/marketplaces bir paket değil (__init__.py yok); diğer scriptler oraya
+    # cd edip düz import ediyor. Buradan aynısını yapamayacağımız için modülü
+    # doğrudan dosya yolundan yüklüyoruz.
+    try:
+        yol = pathlib.Path(__file__).with_name("marketplaces") / "issue_tracker.py"
+        spec = importlib.util.spec_from_file_location("issue_tracker", yol)
+        if spec is None or spec.loader is None:
+            return
+        issue_tracker = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(issue_tracker)
+    except Exception as exc:  # noqa: BLE001
+        print(f"   (issue modülü yüklenemedi: {exc})")
+        return
+
+    govde = (
+        "Threads token yenileme işi başarısız oldu.\n\n"
+        f"**Hata:** {hata}\n\n"
+        "Token 60 gün geçerli; yenilenemezse süre dolduğunda Threads "
+        "paylaşımları durur ve `tools/threads_auth.py` ile elle yeniden "
+        "yetkilendirme gerekir.\n\n"
+        "Kontrol için: `JOB=threads-token`, `EXTRA_ARGS=--check` ile bir "
+        "pipeline çalıştır.\n\n"
+        "_Bu issue `src/threads_token.py` tarafından açıldı._"
+    )
+    try:
+        issue_tracker.upsert_issue(
+            "Threads token yenilenemedi", govde, ["threads", "token"]
+        )
+    except Exception as exc:  # noqa: BLE001
+        print(f"   (issue açılamadı: {exc})")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Threads token yenileme")
     parser.add_argument("--check", action="store_true", help="Yenileme, sadece kontrol et")
@@ -146,6 +188,7 @@ def main() -> None:
     except TokenError as exc:
         print(f"❌ {exc}")
         print("   Token süresi dolmuşsa: python tools/threads_auth.py ile yeniden üret.")
+        _alarm_ver(str(exc))
         sys.exit(1)
 
 
