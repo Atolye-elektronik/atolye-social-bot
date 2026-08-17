@@ -87,10 +87,10 @@
     "id": 4081551700,
     "channelId": 1,
     "shipmentPackageId": 4081551700,
-    "cargoTrackingNumber": 7270035934663829,
+    "cargoTrackingNumber": 7330035946677167,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 1,
@@ -169,7 +169,7 @@
     "agreedDeliveryDate": 1787000340000,
     "fastDelivery": true,
     "originShipmentDate": 1786905659607,
-    "lastModifiedDate": 1786905753155,
+    "lastModifiedDate": 1786923850560,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
