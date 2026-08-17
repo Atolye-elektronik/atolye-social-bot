@@ -483,10 +483,18 @@ def _posttan(
     # olduğu gibi basmak "2026-08-20 19:10:00+03:00" üretiyor ve o ayrıştırılamıyor.
     zaman = hedef.publish_at.strftime("%Y-%m-%d %H:%M") if hedef.publish_at else "YYYY-MM-DD HH:MM"
 
-    print("\nPostun front matter'ına şunları ekleyip TikTok'a gönderebilirsin:")
+    # Video 1080x1920 (9:16) uretiliyor, yani Instagram Reels olcusunde de.
+    # instagram platformu eklenince src.instagram tek dosyayi REELS olarak
+    # gonderiyor — ayri bir is ya da ayri bir uretim gerekmiyor.
+    print("\nPostun front matter'ına şunları ekleyip gönderebilirsin:")
     print(f"  media: {cikti.as_posix()}")
-    print("  platforms: [tiktok_studio]")
+    print("  platforms: [instagram, tiktok_studio]")
     print(f"  tiktok_schedule_at: {zaman}")
+    print(
+        "\n  media tek dosya olmalı (liste değil) — posts.is_video buna bakıyor.\n"
+        "  Instagram'da Reels, TikTok'ta normal video olarak yayınlanır.\n"
+        "  Sadece TikTok istiyorsan platforms listesinden instagram'ı çıkar."
+    )
     return 0
 
 
