@@ -1,6 +1,6 @@
 ---
 platforms: [instagram, facebook, threads]
-media: [posts/media/carousel/2026-08-25-carousel-2wd-robot-araba-kiti-demonte-robotik-govde/01-kapak.jpg, posts/media/carousel/2026-08-25-carousel-2wd-robot-araba-kiti-demonte-robotik-govde/02-urun.jpg, posts/media/carousel/2026-08-25-carousel-2wd-robot-araba-kiti-demonte-robotik-govde/03-urun.jpg, posts/media/carousel/2026-08-25-carousel-2wd-robot-araba-kiti-demonte-robotik-govde/04-urun.jpg, posts/media/carousel/2026-08-25-carousel-2wd-robot-araba-kiti-demonte-robotik-govde/05-urun.jpg, posts/media/carousel/2026-08-25-carousel-2wd-robot-araba-kiti-demonte-robotik-govde/06-urun.jpg, posts/media/carousel/2026-08-25-carousel-2wd-robot-araba-kiti-demonte-robotik-govde/07-urun.jpg, posts/media/carousel/2026-08-25-carousel-2wd-robot-araba-kiti-demonte-robotik-govde/08-urun.jpg, posts/media/carousel/2026-08-25-carousel-2wd-robot-araba-kiti-demonte-robotik-govde/09-urun.jpg, posts/media/carousel/2026-08-25-carousel-2wd-robot-araba-kiti-demonte-robotik-govde/10-kapanis.jpg]
+media: posts/media/2026-08-25-carousel-2wd-robot-araba-kiti-demonte-robotik-govde.mp4
 publish_at: 2026-08-25 19:10
 ---
 Ekran süresi tartışmalarına son 🤖
