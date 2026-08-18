@@ -366,6 +366,19 @@ ig-karusel:
     # tanımıyor ("Executable doesn't exist"), o yüzden eşleşen sürümü
     # indiriyoruz. Sistem bağımlılıkları imajda zaten var, --with-deps gerekmez.
     - python -m playwright install chromium
+    # Oturum cerezi 409k karakter — CI degiskeni sinirina (10k) sigmiyor.
+    # O yuzden Settings > CI/CD > Secure Files icindeki cerez.b64 dosyasindan
+    # indirilip session.py'nin bekledigi yerel dosyaya aciliyor.
+    - |
+      if [ -z "$TIKTOK_STUDIO_COOKIES" ] && [ ! -f .tiktok_studio_state.json ]; then
+        SF_ID=$(curl -s --header "JOB-TOKEN: $CI_JOB_TOKEN" "$CI_API_V4_URL/projects/$CI_PROJECT_ID/secure_files" | python -c "import sys,json;d=json.load(sys.stdin);print(next((x['id'] for x in d if x['name']=='cerez.b64'), ''))")
+        if [ -n "$SF_ID" ]; then
+          curl -s --header "JOB-TOKEN: $CI_JOB_TOKEN" "$CI_API_V4_URL/projects/$CI_PROJECT_ID/secure_files/$SF_ID/download" | base64 -d > .tiktok_studio_state.json
+          echo "TikTok cerezi Secure Files'tan yuklendi."
+        else
+          echo "Uyari: Secure Files icinde cerez.b64 yok."
+        fi
+      fi
   variables:
     # CI makineleri yavaş olabiliyor; bekleme sürelerini uzat.
     TIKTOK_STUDIO_YAVASLIK: "1.5"
