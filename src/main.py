@@ -38,6 +38,15 @@ PUBLISHERS = {
 
 CAROUSEL_PLATFORMS = {"instagram", "facebook", "threads"}
 
+# publish isinin denemeyecegi platformlar (virgullu liste). tiktok_studio
+# Playwright imaji isteyen tiktok-zamanla isinde yayinlanir; slim imajdaki
+# publish denemesin diye CI'da SKIP_PLATFORMS=tiktok_studio veriliyor.
+SKIP_PLATFORMS = {
+    x.strip().lower()
+    for x in os.environ.get("SKIP_PLATFORMS", "").split(",")
+    if x.strip()
+}
+
 
 def _call(publisher, post):
     """Yayıncıyı çağırır; 'extra' parametresi destekliyorsa onu da geçirir."""
@@ -76,6 +85,10 @@ def run(only: str | None = None, force: bool = False, max_per_run: int | None = 
 
         gonderildi = False
         for platform in post.platforms:
+            # Bazi platformlar bu isin imajinda calisamaz (tiktok_studio
+            # Playwright tarayicisi ister); onlari kendi isleri yayinlar.
+            if platform in SKIP_PLATFORMS:
+                continue
             publisher = PUBLISHERS.get(platform)
             if publisher is None:
                 print(f"⚠️  {post.slug} — bilinmeyen platform: {platform}")

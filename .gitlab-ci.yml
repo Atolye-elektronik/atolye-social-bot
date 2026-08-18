@@ -181,6 +181,8 @@ publish:
     - if: '$JOB == "publish"'
   variables:
     COMMIT_MSG: "paylaşım kaydı güncellendi"
+    # tiktok_studio Playwright ister; onu tiktok-zamanla isi yayinlar.
+    SKIP_PLATFORMS: "tiktok_studio"
   script:
     # Bir platform hata verse bile (ör. Facebook token'ı bozuk) paylaşım kaydı
     # mutlaka commit edilmeli. Yoksa başarılı giden platformlar bir sonraki
