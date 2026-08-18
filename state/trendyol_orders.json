@@ -1,1 +1,185 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9491308759,
+      "firstName": "cuma",
+      "lastName": "ari",
+      "company": "",
+      "address1": "çelebi kaptan çad ahmet eser evleri no 4 a2",
+      "address2": "",
+      "city": "Muğla",
+      "cityCode": 48,
+      "district": "Bodrum",
+      "districtId": 756,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "48000",
+      "countryCode": "TR",
+      "neighborhoodId": 68034,
+      "neighborhood": "Çırkan Mah",
+      "phone": null,
+      "fullAddress": "çelebi kaptan çad ahmet eser evleri no 4 a2     Bodrum Muğla",
+      "fullName": "cuma ari"
+    },
+    "orderNumber": "11517440824",
+    "orderCountryCode": "TR",
+    "grossAmount": 999.0,
+    "packageGrossAmount": 999.0,
+    "totalDiscount": 49.35,
+    "packageSellerDiscount": 49.35,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 49.35,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 19.98
+      },
+      {
+        "displayName": "700 TL'ye %3 İndirim",
+        "discountAmount": 29.37
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9491308758,
+      "firstName": "cuma",
+      "lastName": "ari",
+      "company": "",
+      "address1": "çelebi kaptan çad ahmet eser evleri no 4 a2",
+      "address2": "",
+      "city": "Muğla",
+      "cityCode": 48,
+      "district": "Bodrum",
+      "districtId": 756,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "48000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 68034,
+      "neighborhood": "Çırkan Mah",
+      "phone": null,
+      "fullAddress": "çelebi kaptan çad ahmet eser evleri no 4 a2     Bodrum Muğla",
+      "fullName": "cuma ari"
+    },
+    "customerFirstName": "cuma",
+    "customerEmail": "pf+jrbprkvn@trendyolmail.com",
+    "customerId": 243622946,
+    "supplierId": 0,
+    "customerLastName": "ari",
+    "id": 4086444086,
+    "channelId": 1,
+    "shipmentPackageId": 4086444086,
+    "cargoTrackingNumber": 7270036031473243,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE2WDEKRBT-LI",
+        "sku": "AE2WDEKRBT-LI",
+        "stockCode": "AE2WDEKRBT-LI",
+        "productName": "2WD Servolu Engelden Kaçan Robot Araba Kiti (Demonte Robot Araba Kiti) AE2WDEKRBT, one size",
+        "productCode": 1617156276,
+        "contentId": 1617156276,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 999.0,
+        "lineGrossAmount": 999.0,
+        "discount": 49.35,
+        "lineTotalDiscount": 49.35,
+        "lineSellerDiscount": 49.35,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 949.65,
+            "lineItemDiscount": 49.35,
+            "lineItemSellerDiscount": 49.35,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5851812659,
+        "lineId": 5851812659,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "AE2WDEKRBT-LI",
+        "orderLineItemStatusName": "Picking",
+        "price": 949.65,
+        "lineUnitPrice": 949.65,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1787075509761,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1787064731617,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1787064735208,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1787065079502,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1787173140000,
+    "estimatedDeliveryEndDate": 1787345940000,
+    "totalPrice": 949.65,
+    "packageTotalPrice": 949.65,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1787173140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1787064731605,
+    "lastModifiedDate": 1787065079502,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10777517501,
+    "is4P": false
+  }
+]
