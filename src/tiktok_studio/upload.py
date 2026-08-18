@@ -228,7 +228,21 @@ def _zaman_dogrula(ne_zaman: dt.datetime) -> dt.datetime:
 
 
 def _video_yukle(kok, sayfa, yol: pathlib.Path) -> None:
-    giris = gorunmesini_bekle(kok, selectors.DOSYA_GIRISI, "dosya seçici", sayfa=sayfa)
+    # Dosya girişi TikTok'ta tasarım geregi gizli (display:none) — gorunurluk
+    # beklersek asla bulamayiz (2026-08-18'de ilk CI kosusu boyle dustu).
+    # set_input_files gizli girise de calisir; DOM'a eklenmis olmasi yeter.
+    giris = None
+    for secici in selectors.DOSYA_GIRISI:
+        aday = kok.locator(secici).first
+        try:
+            aday.wait_for(state="attached", timeout=10000)
+            giris = aday
+            break
+        except Exception:  # noqa: BLE001
+            continue
+    if giris is None:
+        # Ekran goruntusu + HTML dokumuyle birlikte hata versin.
+        giris = gorunmesini_bekle(kok, selectors.DOSYA_GIRISI, "dosya seçici", sayfa=sayfa)
     giris.set_input_files(str(yol))
     print(f"  ⬆️  yükleniyor: {yol.name} ({yol.stat().st_size // 1024} KB)")
 
