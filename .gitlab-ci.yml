@@ -174,6 +174,27 @@ youtube-saglik:
       print("Hepsi yolunda — hiçbir şey yüklenmedi.")
       PY
 
+# --- Instagram hikayeleri (elle çalıştırılır) --------------------------------
+# posts/media/hikaye/ altındaki görselleri hikaye olarak yayınlar.
+# HIKAYELER değişkeniyle virgüllü alt küme verilebilir; verilmezse dördü.
+ig-hikaye:
+  stage: run
+  rules:
+    - if: '$JOB == "ig-hikaye"'
+  script:
+    - |
+      python - <<'PY'
+      import os
+      from src import instagram
+      adlar = [a.strip() for a in os.environ.get(
+          "HIKAYELER", "okul-siparisi,sinif-paketleri,projeler,kargo"
+      ).split(",") if a.strip()]
+      for ad in adlar:
+          yol = f"posts/media/hikaye/hikaye-{ad}.png"
+          kimlik = instagram.hikaye_yayinla(yol)
+          print(f"✅ hikaye yayinlandi: {ad} (id: {kimlik})")
+      PY
+
 # --- Sosyal medya paylaşımı (saatlik) ---------------------------------------
 publish:
   stage: run

@@ -128,6 +128,27 @@ def _publish_carousel(caption: str, media_paths: list[str]) -> str:
     return _publish_container(creation_id)
 
 
+def hikaye_yayinla(media_path: str) -> str:
+    """Tek gorseli hikaye (story) olarak yayinlar.
+
+    Business hesaplarda Graph API STORIES tipini destekliyor. Hikayeler
+    24 saat sonra kaybolur; kalici olmasi istenenler uygulamadan
+    "one cikan"a eklenir (o adim API'de yok).
+    """
+    if not config.IG_USER_ID:
+        raise InstagramError("IG_USER_ID tanimli degil.")
+    url = config.media_url(media_path)
+    if config.DRY_RUN:
+        print(f"  [DRY RUN] Instagram hikaye → {url}")
+        return "dry-run"
+    container = _post(
+        f"{config.IG_USER_ID}/media",
+        {"media_type": "STORIES", "image_url": url},
+    )
+    _wait_until_ready(container["id"])
+    return _publish_container(container["id"])
+
+
 def publish(caption: str, media_path: str | list[str] | None, is_video: bool = False) -> str:
     if not config.IG_USER_ID:
         raise InstagramError("IG_USER_ID tanimli degil.")
