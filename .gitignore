@@ -28,3 +28,9 @@ pazarlama/*.xlsx
 
 # Gorsel onizleme isinin ciktisi — artifact olarak veriliyor, repoda durmasin
 onizleme/
+
+# Muzik dosyalari — YouTube Ses Kitapligi lisansi mp3 dagitimina izin vermiyor
+# (video icinde kullanmak serbest). Depo public; ham parcalar repoya giremez.
+content/muzik/*.mp3
+content/muzik/*.m4a
+content/muzik/*.wav

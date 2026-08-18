@@ -16,6 +16,7 @@ GitLab'ın python:3.12-slim imajına `apt-get install ffmpeg` gerekiyor
 from __future__ import annotations
 
 import argparse
+import os
 import pathlib
 import random
 import shutil
@@ -64,6 +65,30 @@ SLIDE_SURELERI = {
 
 # İlk saniyeler her şeyi belirlediği için kanca karesi ayrı tutuluyor.
 KANCA_SURESI = 2.6
+
+# Arka plan müziği. Buraya .mp3/.m4a koyarsan video üretimi kendiliğinden
+# birini seçer; klasör boşsa video sessiz kalır (hata vermez).
+MUZIK_DIR = pathlib.Path("content/muzik")
+MUZIK_SES_DUZEYI = float(os.environ.get("VIDEO_MUZIK_SES", "0.25"))
+
+
+def muzik_sec(slug: str = "") -> pathlib.Path | None:
+    """content/muzik içinden bir parça seçer.
+
+    Seçim slug'a göre sabit: aynı post her üretimde aynı müziği alır, ama
+    farklı postlar farklı parça kullanır — hepsinde aynı melodi olmasın.
+    """
+    if not MUZIK_DIR.exists():
+        return None
+    parcalar = sorted(
+        p for p in MUZIK_DIR.iterdir()
+        if p.suffix.lower() in (".mp3", ".m4a", ".aac", ".wav")
+    )
+    if not parcalar:
+        return None
+    if not slug:
+        return parcalar[0]
+    return parcalar[sum(ord(h) for h in slug) % len(parcalar)]
 
 # Kanca karesinin üstündeki küçük etiket. Hepsinde aynısını kullanmak, arka
 # arkaya birkaç videoyu gören izleyiciye tekrar hissi veriyor. Etiket cümlenin
@@ -301,6 +326,7 @@ def birlestir(
     segmentler: list[pathlib.Path],
     cikti: pathlib.Path,
     muzik: pathlib.Path | None = None,
+    toplam_sure: float | None = None,
 ) -> pathlib.Path:
     # Liste dosyası segmentlerin yanında dursun; çıktı klasörü (posts/media)
     # ffmpeg yarıda kalırsa artık dosyayla kirlenmesin.
@@ -315,23 +341,21 @@ def birlestir(
         "-f", "concat", "-safe", "0", "-i", str(liste),
     ]
     if muzik and muzik.exists():
+        # Müzik konuşmayı bastırmasın diye kısılıyor; sonda da yumuşak biterek
+        # aniden kesilmiyor.
+        ses = [f"volume={MUZIK_SES_DUZEYI}"]
+        if toplam_sure and toplam_sure > 2.5:
+            ses.append(f"afade=t=out:st={toplam_sure - 2:.2f}:d=2")
         komut += [
             "-i", str(muzik),
             "-map", "0:v", "-map", "1:a",
+            "-af", ",".join(ses),
             "-c:v", "copy", "-c:a", "aac", "-b:a", "128k",
             "-shortest",
         ]
+        print(f"  🎵 müzik: {muzik.name} (ses {MUZIK_SES_DUZEYI})")
     else:
-        # Muzik yoksa bile sessiz bir ses izi ekleniyor. Instagram Reels ses
-        # izi olmayan videoyu "2207077 Media upload has failed" ile reddediyor;
-        # Facebook ve Threads kabul ettigi icin hata ancak Instagram'da
-        # goruluyordu. Sessiz iz iceriği degistirmiyor, dosyayi ~10 KB buyutuyor.
-        komut += [
-            "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
-            "-map", "0:v", "-map", "1:a",
-            "-c:v", "copy", "-c:a", "aac", "-b:a", "64k",
-            "-shortest",
-        ]
+        komut += ["-c", "copy"]
     komut.append(str(cikti))
 
     _calistir(komut)
@@ -423,11 +447,92 @@ def uret(
             segmentler.append(segment)
             print(f"  🎞️  kare {i}/{len(kareler)} ({kare_suresi:.1f} sn)")
 
-        birlestir(segmentler, cikti, muzik)
+        birlestir(segmentler, cikti, muzik, toplam)
 
     boyut = cikti.stat().st_size // 1024
     print(f"✅ video hazır: {cikti} ({boyut} KB, ~{toplam:.0f} sn)")
     return cikti
+
+
+# --- Slaytları video diline çevirme ------------------------------------------
+
+
+def _senaryoyu_bul(caption: str):
+    """Postun metninden hangi senaryodan üretildiğini bulur.
+
+    Senaryo şablonlarının `kanca_caption` satırı postun ilk satırı oluyor ve
+    şablonlar arasında benzersiz; eşleştirme buradan yapılıyor.
+    """
+    from . import senaryo_source
+
+    ilk = next((s.strip() for s in caption.splitlines() if s.strip()), "")
+    for senaryo in senaryo_source.SENARYOLAR:
+        if senaryo.get("kanca_caption", "").strip() == ilk:
+            return senaryo
+    return None
+
+
+def _urun_adi(caption: str) -> str:
+    """Post metninden ürün adını çıkarır.
+
+    Senaryolu postlarda ad '⚡ Ürün Adı: açıklama' satırında, klasik
+    carousel'lerde ise ilk satırda ('📸 Ürün Adı') duruyor.
+    """
+    for satir in caption.splitlines():
+        satir = satir.strip()
+        if satir.startswith("⚡") and ":" in satir:
+            return satir.lstrip("⚡ ").split(":", 1)[0].strip()
+
+    ilk = next((s.strip() for s in caption.splitlines() if s.strip()), "")
+    return ilk.lstrip("📸 ").strip()
+
+
+def video_slaytlari(gorseller: list[str], caption: str, hedef_klasor: pathlib.Path) -> list[str]:
+    """Metin slaytlarını video diliyle yeniden üretir.
+
+    Carousel slaytlarında "kaydırmaya devam et" / "Detaylar için kaydırın"
+    yazıyor; videoda kaydırılacak bir şey yok. Bu yüzden metin slaytları
+    (kanca, dert, hayal, çözüm) video ipuçlarıyla yeniden çiziliyor. Ürün
+    fotoğrafı içeren slaytlarda böyle bir ifade geçmediği için onlara
+    dokunulmuyor — Shopify'a gitmeye de gerek kalmıyor.
+    """
+    senaryo = _senaryoyu_bul(caption)
+
+    from . import carousel_gorsel
+
+    hedef_klasor.mkdir(parents=True, exist_ok=True)
+    onceki = carousel_gorsel.BICIM
+    carousel_gorsel.BICIM = "video"
+    try:
+        yeni: list[str] = []
+        for yol in gorseller:
+            ad = pathlib.Path(yol).stem.lower()
+            cikti = hedef_klasor / pathlib.Path(yol).name
+
+            if senaryo and any(k in ad for k in ("kanca", "dert", "hayal")):
+                anahtar = next(k for k in ("kanca", "dert", "hayal") if k in ad)
+                spec = senaryo[anahtar]
+                carousel_gorsel.metin(
+                    spec["etiket"], spec["baslik"], spec["metin"], cikti
+                )
+                yeni.append(str(cikti))
+            elif "cozum" in ad or "kapak" in ad:
+                # Çözüm (senaryolu) ve kapak (klasik) slaytları aynı çiziciden
+                # geliyor ve ikisinde de "Detaylar için kaydırın" yazıyor.
+                carousel_gorsel.kapak(
+                    _urun_adi(caption) or "Atölye Elektronik",
+                    cikti,
+                    alt_baslik=(
+                        senaryo["cozum_etiket"] if senaryo else "ÜRÜN TANITIMI"
+                    ),
+                )
+                yeni.append(str(cikti))
+            else:
+                # Ürün ve kapanış slaytlarında kaydırma ifadesi yok.
+                yeni.append(yol)
+        return yeni
+    finally:
+        carousel_gorsel.BICIM = onceki
 
 
 # --- CLI ---------------------------------------------------------------------
@@ -441,6 +546,8 @@ def _posttan(
     sade: bool,
     kanca: str | None,
     kanca_etiket: str | None,
+    oneri: bool = True,
+    sessiz: bool = False,
 ) -> int:
     hedef = next((p for p in posts.load_all() if p.slug == slug), None)
     if hedef is None:
@@ -475,6 +582,28 @@ def _posttan(
             "    ya da komuta --kanca \"...\" ver."
         )
 
+    # Carousel slaytlarındaki "kaydırmaya devam et" ifadeleri videoda anlamsız;
+    # metin slaytlarını video diliyle yeniden üret.
+    if sade:
+        oncesi = list(gorseller)
+        gorseller = video_slaytlari(
+            gorseller, hedef.caption, pathlib.Path(f"posts/media/video-slayt/{slug}")
+        )
+        degisen = sum(1 for a, b in zip(oncesi, gorseller) if a != b)
+        if degisen:
+            print(f"ℹ️  {degisen} metin slaydı video diliyle yeniden üretildi")
+
+    # Müzik verilmediyse content/muzik içinden seç.
+    if sessiz:
+        print("🔇 sessiz üretim — sesi platformda yükleme sonrası seçeceksin")
+    elif muzik is None:
+        muzik = muzik_sec(slug)
+        if muzik is None:
+            print(
+                f"ℹ️  Video sessiz olacak — {MUZIK_DIR}/ klasörüne .mp3 koyarsan\n"
+                "    otomatik olarak arka plan müziği eklenir."
+            )
+
     basliklar = [ln.strip() for ln in hedef.caption.splitlines() if ln.strip()]
     cikti = cikti or pathlib.Path(f"posts/media/{slug}.mp4")
     uret(
@@ -488,22 +617,18 @@ def _posttan(
         kanca_etiket or hedef.extra.get("tiktok_kanca_etiket"),
     )
 
+    # Otomasyon içinden çağrıldığında bu öneri gereksiz gürültü.
+    if not oneri:
+        return 0
+
     # Biçim posts.parse_datetime'in kabul ettiği biçim olmalı; datetime'ı
     # olduğu gibi basmak "2026-08-20 19:10:00+03:00" üretiyor ve o ayrıştırılamıyor.
     zaman = hedef.publish_at.strftime("%Y-%m-%d %H:%M") if hedef.publish_at else "YYYY-MM-DD HH:MM"
 
-    # Video 1080x1920 (9:16) uretiliyor, yani Instagram Reels olcusunde de.
-    # instagram platformu eklenince src.instagram tek dosyayi REELS olarak
-    # gonderiyor — ayri bir is ya da ayri bir uretim gerekmiyor.
-    print("\nPostun front matter'ına şunları ekleyip gönderebilirsin:")
+    print("\nPostun front matter'ına şunları ekleyip TikTok'a gönderebilirsin:")
     print(f"  media: {cikti.as_posix()}")
-    print("  platforms: [instagram, tiktok_studio]")
+    print("  platforms: [tiktok_studio]")
     print(f"  tiktok_schedule_at: {zaman}")
-    print(
-        "\n  media tek dosya olmalı (liste değil) — posts.is_video buna bakıyor.\n"
-        "  Instagram'da Reels, TikTok'ta normal video olarak yayınlanır.\n"
-        "  Sadece TikTok istiyorsan platforms listesinden instagram'ı çıkar."
-    )
     return 0
 
 
@@ -529,6 +654,18 @@ def main(argv: list[str] | None = None) -> int:
         dest="kanca_etiket",
         help="Kanca karesindeki küçük üst etiket (verilmezse cümle tipine göre seçilir)",
     )
+    parser.add_argument(
+        "--oneri-yok",
+        dest="oneri",
+        action="store_false",
+        help="Sonda front matter önerisi yazma (otomasyon içinden çağrılırken)",
+    )
+    parser.add_argument(
+        "--sessiz",
+        action="store_true",
+        help="content/muzik dolu olsa bile müzik ekleme — sesi platformda "
+             "yükleme sonrası seçeceksen bunu kullan",
+    )
     args = parser.parse_args(argv)
 
     try:
@@ -541,6 +678,8 @@ def main(argv: list[str] | None = None) -> int:
                 args.sade,
                 args.kanca,
                 args.kanca_etiket,
+                args.oneri,
+                args.sessiz,
             )
         if args.gorsel:
             cikti = args.cikti or pathlib.Path("posts/media/video.mp4")
@@ -549,7 +688,7 @@ def main(argv: list[str] | None = None) -> int:
                 cikti,
                 args.baslik,
                 args.sure,
-                args.muzik,
+                None if args.sessiz else args.muzik,
                 args.sade,
                 args.kanca,
                 args.kanca_etiket,
