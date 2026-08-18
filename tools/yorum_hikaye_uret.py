@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Trendyol/Hepsiburada yorumlarindan 1080x1920 hikaye gorselleri uretir.
 
+Aydinlik, satis odakli tema: acik zemin, koyu metin, turuncu CTA butonu.
+
 Kullanim: python tools/yorum_hikaye_uret.py
 Cikti: posts/media/hikaye/hikaye-yorum-*.png
 """
@@ -9,17 +11,26 @@ import random
 import sys
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 sys.path.insert(0, REPO)
 
 from PIL import Image, ImageDraw
 from src.carousel_gorsel import (
-    ZEMIN, ZEMIN_ACIK, TURKUAZ, TURUNCU, BEYAZ, GRI, ALTIN,
-    SITE, MARKA, _bold, _normal, _sar, _devre_izi, _aralikli, _aralikli_genislik,
+    ALTIN, SITE, MARKA, _bold, _normal, _sar, _devre_izi,
+    _aralikli, _aralikli_genislik,
 )
 
 W, H = 1080, 1920
 CIKTI = os.path.join(REPO, "posts", "media", "hikaye")
+
+# Acik tema renkleri
+GRADYAN_UST = (208, 238, 243)          # acik turkuaz
+GRADYAN_ALT = (250, 252, 254)          # beyaza yakin
+KOYU = (11, 20, 32)                    # metin — koyu lacivert
+TEAL = (0, 150, 136)                   # acik zeminde okunur turkuaz
+TURUNCU = (255, 106, 40)
+GRI = (96, 112, 128)
+KART = (255, 255, 255)
+KART_KENAR = (0, 150, 136, 90)
 
 YORUMLAR = [
     {
@@ -58,12 +69,20 @@ YORUMLAR = [
 
 
 def _zemin(slug: str) -> tuple[Image.Image, ImageDraw.ImageDraw]:
-    img = Image.new("RGB", (W, H), ZEMIN)
+    img = Image.new("RGB", (W, H), GRADYAN_ALT)
     d = ImageDraw.Draw(img, "RGBA")
-    # ust ve alt seritlerde soluk devre izleri
+    # dikey gradyan: ustte acik turkuaz, asagida beyaz
+    for y in range(H):
+        t = min(1.0, y / (H * 0.62))
+        renk = tuple(int(GRADYAN_UST[i] + (GRADYAN_ALT[i] - GRADYAN_UST[i]) * t)
+                     for i in range(3))
+        d.line([(0, y), (W, y)], fill=renk)
+    # soluk devre izleri: canli zemini bozmasinlar diye sadece ust/alt seritte
     rnd = random.Random(sum(map(ord, slug)))
-    _devre_izi(d, rnd, (60, 40, W - 60, 165), adet=6)
-    _devre_izi(d, rnd, (60, H - 380, W - 60, H - 120), adet=7)
+    _devre_izi(d, rnd, (60, 40, W - 60, 165), adet=5)
+    # altta yalnizca kenarlara iz koy — marka yazisiyla cakismasin
+    _devre_izi(d, rnd, (50, H - 200, 280, H - 50), adet=2)
+    _devre_izi(d, rnd, (W - 280, H - 200, W - 50, H - 50), adet=2)
     return img, d
 
 
@@ -71,11 +90,10 @@ def _ust_baslik(d: ImageDraw.ImageDraw) -> None:
     f = _bold(38)
     metin = "MÜŞTERİLERİMİZ NE DİYOR?"
     gw = _aralikli_genislik(d, metin, f, aralik=6)
-    _aralikli(d, ((W - gw) / 2, 210), metin, f, TURKUAZ, aralik=6)
+    _aralikli(d, ((W - gw) / 2, 210), metin, f, TEAL, aralik=6)
 
 
 def _yildizlar(d: ImageDraw.ImageDraw, cx: int, y: int, adet: int = 5, boy: int = 52) -> None:
-    """Basit besgen yildizlar, altin renkte."""
     import math
     toplam = adet * boy + (adet - 1) * 28
     x = cx - toplam // 2 + boy // 2
@@ -87,6 +105,8 @@ def _yildizlar(d: ImageDraw.ImageDraw, cx: int, y: int, adet: int = 5, boy: int 
             pts.append((x + r * math.cos(aci), y + r * math.sin(aci)))
         d.polygon(pts, fill=ALTIN)
         x += boy + 28
+
+
 def _rozet(d: ImageDraw.ImageDraw, cy: int, platform: str) -> None:
     f = _bold(34)
     metin = platform.replace("i", "İ").upper()  # Turkce buyuk I
@@ -94,18 +114,29 @@ def _rozet(d: ImageDraw.ImageDraw, cy: int, platform: str) -> None:
     pad = 34
     x0 = (W - tw) / 2 - pad
     x1 = (W + tw) / 2 + pad
-    d.rounded_rectangle([x0, cy - 38, x1, cy + 38], radius=38,
+    d.rounded_rectangle([x0, cy - 38, x1, cy + 38], radius=38, fill=KART,
                         outline=TURUNCU, width=3)
     d.text(((W - tw) / 2, cy - 24), metin, font=f, fill=TURUNCU)
 
 
-def _alt_bilgi(d: ImageDraw.ImageDraw) -> None:
-    f1 = _bold(40)
+def _cta(d: ImageDraw.ImageDraw, cy: int, metin: str = "Sen de sipariş ver") -> None:
+    """Turuncu dolu CTA butonu + altinda site adresi."""
+    f = _bold(44)
+    tw = d.textlength(metin, font=f)
+    pad_x = 56
+    x0 = (W - tw) / 2 - pad_x
+    x1 = (W + tw) / 2 + pad_x
+    d.rounded_rectangle([x0, cy - 52, x1, cy + 52], radius=52, fill=TURUNCU)
+    d.text(((W - tw) / 2, cy - 22), metin, font=f, fill=(255, 255, 255))
+    f2 = _bold(40)
+    tw2 = d.textlength(SITE, font=f2)
+    d.text(((W - tw2) / 2, cy + 78), SITE, font=f2, fill=KOYU)
+
+
+def _alt_marka(d: ImageDraw.ImageDraw) -> None:
+    f1 = _bold(36)
     tw = d.textlength(MARKA, font=f1)
-    d.text(((W - tw) / 2, H - 250), MARKA, font=f1, fill=BEYAZ)
-    f2 = _normal(34)
-    tw = d.textlength(SITE, font=f2)
-    d.text(((W - tw) / 2, H - 190), SITE, font=f2, fill=TURKUAZ)
+    d.text(((W - tw) / 2, H - 130), MARKA, font=f1, fill=GRI)
 
 
 def yorum_gorseli(y: dict) -> str:
@@ -115,39 +146,39 @@ def yorum_gorseli(y: dict) -> str:
     _yildizlar(d, W // 2, 480)
 
     # buyuk tirnak isareti
-    d.text((90, 540), "\u201C", font=_bold(220), fill=(46, 224, 208, 70))
+    d.text((90, 540), "“", font=_bold(220), fill=(0, 150, 136, 60))
 
-    # yorum metni
-    f = _bold(58)
-    satirlar = _sar(d, y["metin"], f, W - 220, maxsatir=6)
+    # yorum karti
+    f = _bold(56)
+    satirlar = _sar(d, y["metin"], f, W - 300, maxsatir=6)
     if len(satirlar) <= 2:
-        f = _bold(66)
-        satirlar = _sar(d, y["metin"], f, W - 220, maxsatir=6)
-    yy = 760
+        f = _bold(64)
+        satirlar = _sar(d, y["metin"], f, W - 300, maxsatir=6)
+    sat_h = int(f.size * 1.35)
+    kart_h = len(satirlar) * sat_h + 170
+    ky = 700
+    d.rounded_rectangle([90, ky, W - 90, ky + kart_h], radius=36, fill=KART,
+                        outline=KART_KENAR, width=2)
+    yy = ky + 60
     for s in satirlar:
         tw = d.textlength(s, font=f)
-        d.text(((W - tw) / 2, yy), s, font=f, fill=BEYAZ)
-        yy += int(f.size * 1.35)
-
-    # kaynak
-    f2 = _normal(36)
+        d.text(((W - tw) / 2, yy), s, font=f, fill=KOYU)
+        yy += sat_h
+    f2 = _normal(34)
     tw = d.textlength(y["kaynak"], font=f2)
-    d.text(((W - tw) / 2, yy + 40), y["kaynak"], font=f2, fill=GRI)
+    d.text(((W - tw) / 2, yy + 26), y["kaynak"], font=f2, fill=GRI)
 
-    # urun kutusu
+    # urun adi
     f3 = _bold(40)
-    satir2 = _sar(d, y["urun"], f3, W - 320, maxsatir=2)
-    kut_h = 90 + (len(satir2) - 1) * 54
-    ky = H - 480
-    d.rounded_rectangle([120, ky, W - 120, ky + kut_h], radius=24, fill=ZEMIN_ACIK,
-                        outline=(46, 224, 208, 120), width=2)
-    ty = ky + 24
+    satir2 = _sar(d, y["urun"], f3, W - 240, maxsatir=2)
+    ty = ky + kart_h + 56
     for s in satir2:
         tw = d.textlength(s, font=f3)
-        d.text(((W - tw) / 2, ty), s, font=f3, fill=TURKUAZ)
+        d.text(((W - tw) / 2, ty), s, font=f3, fill=TEAL)
         ty += 54
 
-    _alt_bilgi(d)
+    _cta(d, H - 400)
+    _alt_marka(d)
 
     yol = os.path.join(CIKTI, f"hikaye-{y['slug']}.png")
     img.save(yol)
@@ -159,33 +190,33 @@ def kapak_gorseli() -> str:
     _ust_baslik(d)
     _yildizlar(d, W // 2, 420, adet=5, boy=64)
 
-    f = _bold(72)
+    f = _bold(76)
     for i, satir in enumerate(["Gerçek müşteri", "yorumlarımız"]):
         tw = d.textlength(satir, font=f)
-        d.text(((W - tw) / 2, 560 + i * 100), satir, font=f, fill=BEYAZ)
+        d.text(((W - tw) / 2, 540 + i * 104), satir, font=f, fill=KOYU)
 
-    # puan kartlari
     kartlar = [("TRENDYOL", "9.3", "Satıcı Puanı"),
                ("HEPSİBURADA", "9.9", "Mağaza Puanı")]
-    ky = 880
+    ky = 860
     for ad, puan, etiket in kartlar:
-        d.rounded_rectangle([120, ky, W - 120, ky + 220], radius=28, fill=ZEMIN_ACIK,
-                            outline=(46, 224, 208, 120), width=2)
+        d.rounded_rectangle([120, ky, W - 120, ky + 210], radius=28, fill=KART,
+                            outline=KART_KENAR, width=2)
         f1 = _bold(40)
-        d.text((170, ky + 45), ad, font=f1, fill=TURUNCU)
+        d.text((170, ky + 42), ad, font=f1, fill=TURUNCU)
         f2 = _normal(32)
-        d.text((170, ky + 115), etiket, font=f2, fill=GRI)
+        d.text((170, ky + 110), etiket, font=f2, fill=GRI)
         f3 = _bold(96)
         tw = d.textlength(puan, font=f3)
-        d.text((W - 170 - tw, ky + 55), puan, font=f3, fill=TURKUAZ)
-        ky += 270
+        d.text((W - 170 - tw, ky + 50), puan, font=f3, fill=TEAL)
+        ky += 260
 
     f4 = _normal(36)
     metin = "Kaydır, yorumları gör →"
     tw = d.textlength(metin, font=f4)
-    d.text(((W - tw) / 2, ky + 30), metin, font=f4, fill=GRI)
+    d.text(((W - tw) / 2, ky + 20), metin, font=f4, fill=GRI)
 
-    _alt_bilgi(d)
+    _cta(d, H - 400)
+    _alt_marka(d)
     yol = os.path.join(CIKTI, "hikaye-yorum-kapak.png")
     img.save(yol)
     return yol
