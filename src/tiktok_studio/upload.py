@@ -227,6 +227,42 @@ def _zaman_dogrula(ne_zaman: dt.datetime) -> dt.datetime:
 # --- Yükleme akışı -----------------------------------------------------------
 
 
+def _tur_katmanini_kapat(sayfa) -> None:
+    """TikTok'un tanıtım turu (react-joyride) katmanını kapatır.
+
+    Studio bazen yükleme ekranında "yenilikleri gezdiren" bir tur açıyor;
+    katman tüm tıklamaları yuttuğu için sonraki adımlar zaman aşımına
+    düşüyordu (2026-08-18 CI koşusu). Katman yoksa hiçbir şey yapmaz.
+    """
+    try:
+        katman = sayfa.locator("#react-joyride-portal, .react-joyride__overlay").first
+        if not katman.is_visible(timeout=2000):
+            return
+    except Exception:  # noqa: BLE001
+        return
+    # Önce "Atla/Kapat" düğmesini dene, olmazsa Escape.
+    for secici in (
+        "button[data-test-id='button-skip']",
+        "[data-action='skip']",
+        "button:has-text('Atla')",
+        "button:has-text('Skip')",
+        "[aria-label='Close']",
+    ):
+        try:
+            dugme = sayfa.locator(secici).first
+            if dugme.is_visible(timeout=1000):
+                dugme.click()
+                print("  (tanıtım turu kapatıldı)")
+                return
+        except Exception:  # noqa: BLE001
+            continue
+    try:
+        sayfa.keyboard.press("Escape")
+        print("  (tanıtım turu Escape ile kapatıldı)")
+    except Exception:  # noqa: BLE001
+        pass
+
+
 def _video_yukle(kok, sayfa, yol: pathlib.Path) -> None:
     # Dosya girişi TikTok'ta tasarım geregi gizli (display:none) — gorunurluk
     # beklersek asla bulamayiz (2026-08-18'de ilk CI kosusu boyle dustu).
@@ -245,6 +281,7 @@ def _video_yukle(kok, sayfa, yol: pathlib.Path) -> None:
         giris = gorunmesini_bekle(kok, selectors.DOSYA_GIRISI, "dosya seçici", sayfa=sayfa)
     giris.set_input_files(str(yol))
     print(f"  ⬆️  yükleniyor: {yol.name} ({yol.stat().st_size // 1024} KB)")
+    _tur_katmanini_kapat(sayfa)
 
     # Büyük dosyalar dakikalar sürebiliyor; ilerleme göstergesi kaybolana kadar bekle.
     kaybolma_suresi = int(os.environ.get("TIKTOK_STUDIO_YUKLEME_TIMEOUT", "900000"))
