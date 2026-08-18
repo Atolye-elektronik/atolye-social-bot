@@ -322,7 +322,16 @@ def birlestir(
             "-shortest",
         ]
     else:
-        komut += ["-c", "copy"]
+        # Muzik yoksa bile sessiz bir ses izi ekleniyor. Instagram Reels ses
+        # izi olmayan videoyu "2207077 Media upload has failed" ile reddediyor;
+        # Facebook ve Threads kabul ettigi icin hata ancak Instagram'da
+        # goruluyordu. Sessiz iz iceriği degistirmiyor, dosyayi ~10 KB buyutuyor.
+        komut += [
+            "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
+            "-map", "0:v", "-map", "1:a",
+            "-c:v", "copy", "-c:a", "aac", "-b:a", "64k",
+            "-shortest",
+        ]
     komut.append(str(cikti))
 
     _calistir(komut)
