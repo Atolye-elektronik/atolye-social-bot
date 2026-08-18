@@ -207,6 +207,21 @@ def studio(hedef: str | None = None, kaydet: bool = True) -> Iterator:
             viewport={"width": 1440, "height": 900},
         )
         context.set_default_timeout(int(30000 * YAVASLIK))
+        # TikTok'un tanitim turu (react-joyride) katmani rastgele anlarda
+        # aciliyor ve tum tiklamalari yutuyor; kapatma dugmesini kovalamak
+        # yerine katman DOM'a eklendigi anda silinir. Sayfa yuklenmeden
+        # kurulan gozlemci tum gezinmelerde gecerli kalir.
+        context.add_init_script(
+            """
+            new MutationObserver(() => {
+              for (const id of ['react-joyride-portal']) {
+                const el = document.getElementById(id);
+                if (el) el.remove();
+              }
+              document.querySelectorAll('.react-joyride__overlay').forEach(e => e.remove());
+            }).observe(document.documentElement, {childList: true, subtree: true});
+            """
+        )
         page = context.new_page()
 
         try:
