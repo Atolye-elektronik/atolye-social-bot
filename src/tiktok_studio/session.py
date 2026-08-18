@@ -207,19 +207,27 @@ def studio(hedef: str | None = None, kaydet: bool = True) -> Iterator:
             viewport={"width": 1440, "height": 900},
         )
         context.set_default_timeout(int(30000 * YAVASLIK))
-        # TikTok'un tanitim turu (react-joyride) katmani rastgele anlarda
-        # aciliyor ve tum tiklamalari yutuyor; kapatma dugmesini kovalamak
-        # yerine katman DOM'a eklendigi anda silinir. Sayfa yuklenmeden
-        # kurulan gozlemci tum gezinmelerde gecerli kalir.
+        # TikTok'un tanitim turu (react-joyride) katmani tum tiklamalari
+        # yutuyor. Elementi silmek ise yaramadi — React ayni karede geri
+        # ekliyor (2026-08-18, 4. kosu). CSS ile hem gizleniyor hem
+        # pointer-events kapatiliyor: React elementini korur, savas cikmaz,
+        # katman tiklama yutamaz.
         context.add_init_script(
             """
-            new MutationObserver(() => {
-              for (const id of ['react-joyride-portal']) {
-                const el = document.getElementById(id);
-                if (el) el.remove();
-              }
-              document.querySelectorAll('.react-joyride__overlay').forEach(e => e.remove());
-            }).observe(document.documentElement, {childList: true, subtree: true});
+            (() => {
+              const stilEkle = () => {
+                if (document.getElementById('joyride-kapatici')) return;
+                const s = document.createElement('style');
+                s.id = 'joyride-kapatici';
+                s.textContent = '#react-joyride-portal, .react-joyride__overlay, ' +
+                  '.__floater, [data-test-id="overlay"] ' +
+                  '{ display: none !important; pointer-events: none !important; }';
+                (document.head || document.documentElement).appendChild(s);
+              };
+              stilEkle();
+              new MutationObserver(stilEkle).observe(
+                document.documentElement, {childList: true, subtree: true});
+            })();
             """
         )
         page = context.new_page()
