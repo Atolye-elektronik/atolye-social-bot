@@ -86,16 +86,34 @@ def _publish_carousel(caption: str, media_paths: list[str]) -> str:
             print(f"  [DRY RUN] Instagram carousel ← {url}")
         return "dry-run"
 
+    # Her slayt ayri ayri olusturulup beklenir. 2207077 gibi kodlarla dusen
+    # bir alt kapsayici yeniden kullanilamiyor; o yuzden hata aninda ayni URL
+    # icin yeni kapsayici acip tekrar deniyoruz. Boylece gecici indirme
+    # hatalari turu dusurmuyor ve log hangi slaytin patladigini soyluyor.
     children: list[str] = []
-    for url in urls:
-        child = _post(
-            f"{config.IG_USER_ID}/media",
-            {"image_url": url, "is_carousel_item": "true"},
-        )
-        children.append(child["id"])
-
-    for child_id in children:
-        _wait_until_ready(child_id)
+    for sira, url in enumerate(urls, start=1):
+        son_hata: Exception | None = None
+        for deneme in range(1, 4):
+            child = _post(
+                f"{config.IG_USER_ID}/media",
+                {"image_url": url, "is_carousel_item": "true"},
+            )
+            try:
+                _wait_until_ready(child["id"], timeout_seconds=120)
+                children.append(child["id"])
+                son_hata = None
+                break
+            except InstagramError as exc:
+                son_hata = exc
+                print(
+                    f"  ({sira}/{len(urls)}. slayt {deneme}. denemede islenemedi: "
+                    f"{exc} — url: {url})"
+                )
+                time.sleep(8 * deneme)
+        if son_hata is not None:
+            raise InstagramError(
+                f"{sira}. slayt 3 denemede de islenemedi ({url}): {son_hata}"
+            )
 
     container = _post(
         f"{config.IG_USER_ID}/media",
