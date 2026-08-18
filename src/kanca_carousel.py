@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import json
 import pathlib
 import re
@@ -77,6 +78,12 @@ def kanca_sec(urun: dict) -> dict:
     Seçim ürün kimliğinden türüyor: aynı ürün her çalıştırmada aynı kancayı
     alıyor (taslak yeniden üretilince görsel değişmesin), ürünler arasında ise
     dağılıyor.
+
+    Kimlik doğrudan modülo'ya sokulmuyor: Shopify ürün kimliklerinin **hepsi
+    tek sayı** (77 üründe `id % 4` her seferinde 1 çıkıyor). Havuz boyutu çift
+    olduğunda modülo tek bir değere çöküyor ve tüm ürünler aynı kancayı alıyordu
+    — 27 ürün tek bir kancaya yığılmıştı. Kimliğin özetini almak dağılımı
+    düzeltiyor, belirliliği bozmuyor.
     """
     veri = json.loads(KANCA_YOLU.read_text(encoding="utf-8"))
     kancalar = veri["kancalar"]
@@ -86,7 +93,8 @@ def kanca_sec(urun: dict) -> dict:
     if not uygun:
         uygun = [k for k in kancalar if not k["anahtar"]]
 
-    return uygun[int(urun.get("id", 0)) % len(uygun)]
+    ozet = hashlib.sha256(str(urun.get("id", "")).encode()).hexdigest()
+    return uygun[int(ozet, 16) % len(uygun)]
 
 
 def maddeler_cikar(urun: dict) -> list[str]:
