@@ -75,6 +75,13 @@ def build_slides(product: dict, slug: str) -> list[str]:
     klasor = MEDIA_DIR / slug
     title = product.get("title", "").strip()
     images = [img["src"] for img in product.get("images", [])]
+    # Paket içeriğini adetleriyle gösteren "-icerik" panel görseli varsa her
+    # zaman carousel'e girsin: ana fotoğraftan hemen sonra öne alınır ki
+    # MAX_SLIDE kesmesine takılmasın (kullanıcı isteği, 19.08).
+    icerik = [s for s in images if "icerik" in s.rsplit("/", 1)[-1].lower()]
+    if icerik:
+        kalan = [s for s in images if s not in icerik]
+        images = ([kalan[0]] + icerik + kalan[1:]) if kalan else icerik
     images = images[: MAX_SLIDE - 2]  # kapak ve kapanışa yer kalsın
 
     yollar: list[str] = []
