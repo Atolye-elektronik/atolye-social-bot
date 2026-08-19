@@ -61,8 +61,12 @@ def afis(cizer, kicker, baslik, alt, fotolar, kademeler, maddeler, foot_sol, dos
         + (f'<div class="sub">{K(alt)}</div>' if alt else "")
         + (f'<div class="fotolar">{f_html}</div>' if f_html else "")
         + k_html + m_html
-        + '<div class="kampanya"><span class="kod">ATOLYE10</span>'
-          '<span class="aciklama">İlk siparişinize özel<br>sepette %10 indirim</span></div>'
+        # ATOLYE10 bilerek yok: o kod online sepette calisiyor, okul siparisleri
+        # ise proforma + havale ile geliyor ve indirim elle uygulanmayacak.
+        # Karsilanamayacak vaat ilk temasta guven kaybi olur. Onun yerine her
+        # kanalda gecerli olan kargo esigi yaziliyor.
+        + '<div class="kampanya"><span class="kod">KARGO BİZDEN</span>'
+          '<span class="aciklama">1.200 ₺ ve üzeri<br>tüm okul siparişlerinde</span></div>'
         + f'<div class="foot"><span>{K(foot_sol)}</span><b>0546 825 32 10</b></div>'
     )
     return cizer._uret(govde, CIKTI / dosya)
