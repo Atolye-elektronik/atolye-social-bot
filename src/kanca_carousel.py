@@ -127,6 +127,30 @@ def fiyat_satirlari(urun: dict) -> list[dict]:
     return satirlar
 
 
+def _koyu_panel_bul(adaylar: list[str]) -> str | None:
+    """Adında 'icerik' geçmeyen eski panel görsellerini renginden tanır.
+
+    Panel görselleri koyu lacivert zeminli, ürün fotoğrafları beyaz zeminli.
+    Küçültülmüş kopyanın ortalama parlaklığı 100'ün altındaysa panel sayılır.
+    """
+    import io as _io
+    import urllib.request
+
+    from PIL import Image
+
+    for src in adaylar:
+        try:
+            veri = urllib.request.urlopen(src, timeout=20).read()
+            im = Image.open(_io.BytesIO(veri)).convert("L")
+            im.thumbnail((64, 64))
+            ort = sum(im.getdata()) / (im.width * im.height)
+            if ort < 100:
+                return src
+        except Exception:  # noqa: BLE001
+            continue
+    return None
+
+
 def slaytlari_uret(urun: dict, slug: str) -> list[str]:
     klasor = MEDIA_DIR / slug
     baslik = (urun.get("title") or "").strip()
@@ -144,6 +168,9 @@ def slaytlari_uret(urun: dict, slug: str) -> list[str]:
     icerik_gorsel = next(
         (g for g in gorseller if "icerik" in g.rsplit("/", 1)[-1].lower()), None
     )
+    if icerik_gorsel is None:
+        # Eski yuklemelerde panelin adi "02_...jpg" gibi; renginden tani.
+        icerik_gorsel = _koyu_panel_bul(gorseller[1:4])
     var_icerik = bool(icerik_gorsel)
     toplam = 2 + int(var_foto) + int(var_icerik) + int(var_madde) + int(var_fiyat)
 
