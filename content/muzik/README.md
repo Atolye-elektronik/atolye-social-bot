@@ -8,7 +8,7 @@ Nasıl seçiliyor: post adına göre sabit bir seçim yapılır. Yani aynı post
 üretimde aynı parçayı alır, ama farklı postlar farklı parçalara denk gelir;
 tüm videolarda aynı melodi çalmaz.
 
-Ses seviyesi varsayılan olarak %25'e kısılır ve videonun son 2 saniyesinde
+Ses seviyesi varsayılan olarak %75 düzeyindedir ve videonun son 2 saniyesinde
 yumuşakça biter. Değiştirmek için:
 
 ```bash

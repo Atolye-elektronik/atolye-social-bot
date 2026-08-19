@@ -69,7 +69,7 @@ KANCA_SURESI = 2.6
 # Arka plan müziği. Buraya .mp3/.m4a koyarsan video üretimi kendiliğinden
 # birini seçer; klasör boşsa video sessiz kalır (hata vermez).
 MUZIK_DIR = pathlib.Path("content/muzik")
-MUZIK_SES_DUZEYI = float(os.environ.get("VIDEO_MUZIK_SES", "0.25"))
+MUZIK_SES_DUZEYI = float(os.environ.get("VIDEO_MUZIK_SES", "0.75"))
 
 
 def muzik_sec(slug: str = "") -> pathlib.Path | None:
