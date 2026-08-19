@@ -77,6 +77,10 @@ def run(only: str | None = None, force: bool = False, max_per_run: int | None = 
     failures = 0
     did_anything = False
     yayinlanan = 0
+    # Ayni calismada ayni platforma birden fazla gonderi gitmesin: birikmis
+    # kuyruk bosalirken FB/Threads'e dakika arayla iki post dusuyordu.
+    # Platformu dolu olan post o platformu sonraki tura birakir.
+    turda_kullanilan: set[str] = set()
 
     for post in all_posts:
         if only and post.slug != only:
@@ -106,6 +110,9 @@ def run(only: str | None = None, force: bool = False, max_per_run: int | None = 
                 continue
             if not force and state.already_published(published_state, post.slug, platform):
                 continue
+            if not only and platform in turda_kullanilan:
+                print(f"⏸️  {post.slug} → {platform} — bu turda bu platforma gönderildi, sonraki tura kaldı")
+                continue
 
             print(f"→ {post.slug} → {platform}")
             did_anything = True
@@ -114,6 +121,7 @@ def run(only: str | None = None, force: bool = False, max_per_run: int | None = 
                 state.mark_published(published_state, post.slug, platform, str(result_id))
                 print(f"  ✅ paylaşıldı (id: {result_id})")
                 gonderildi = True
+                turda_kullanilan.add(platform)
             except Exception as exc:  # noqa: BLE001
                 failures += 1
                 print(f"  ❌ hata: {exc}")

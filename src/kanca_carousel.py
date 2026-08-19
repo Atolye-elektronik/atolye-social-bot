@@ -139,7 +139,13 @@ def slaytlari_uret(urun: dict, slug: str) -> list[str]:
     var_madde = bool(maddeler)
     var_fiyat = bool(fiyatlar)
     var_foto = bool(gorseller)
-    toplam = 2 + int(var_foto) + int(var_madde) + int(var_fiyat)
+    # Magaza gorsellerinde paket icerigini adetleriyle gosteren panel
+    # "-icerik" adiyla yukleniyor; varsa carousel'e ayri slayt olarak girer.
+    icerik_gorsel = next(
+        (g for g in gorseller if "icerik" in g.rsplit("/", 1)[-1].lower()), None
+    )
+    var_icerik = bool(icerik_gorsel)
+    toplam = 2 + int(var_foto) + int(var_icerik) + int(var_madde) + int(var_fiyat)
 
     yollar: list[str] = []
     sira = 1
@@ -158,6 +164,13 @@ def slaytlari_uret(urun: dict, slug: str) -> list[str]:
         if var_foto:
             yol = klasor / f"{sira:02d}-urun.png"
             cizer.foto("ÜRÜN", baslik, gorseller[0], cikti=yol, sayfa=(sira, toplam))
+            yollar.append(str(yol))
+            sira += 1
+
+        if var_icerik:
+            yol = klasor / f"{sira:02d}-icerik.png"
+            cizer.foto("İÇİNDEKİLER", "Paket içeriği ve adetler", icerik_gorsel,
+                       cikti=yol, sayfa=(sira, toplam))
             yollar.append(str(yol))
             sira += 1
 
