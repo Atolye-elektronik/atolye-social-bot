@@ -53,6 +53,19 @@ DEFAULT_PLATFORMS = [
     if p.strip()
 ]
 
+# --- Pinterest ---
+# Resmî v5 API (src/pinterest.py) işletme hesabı + onaylı app ister; kullanıcı
+# işletme hesabı olmayacağını söyledi, o yüzden fiilen pinterest_studio
+# (arayüz otomasyonu, çerezle) kullanılıyor. API alanları ileride gerekirse diye
+# duruyor — boş kalmaları sorun değil.
+PINTEREST_BASE = os.environ.get("PINTEREST_API_BASE", "https://api.pinterest.com/v5").rstrip("/")
+PINTEREST_APP_ID = os.environ.get("PINTEREST_APP_ID", "").strip()
+PINTEREST_APP_SECRET = os.environ.get("PINTEREST_APP_SECRET", "").strip()
+PINTEREST_REFRESH_TOKEN = os.environ.get("PINTEREST_REFRESH_TOKEN", "").strip()
+PINTEREST_ACCESS_TOKEN = os.environ.get("PINTEREST_ACCESS_TOKEN", "").strip()
+# Pin'lerin gideceği varsayılan pano: ID ya da pano adı olabilir.
+PINTEREST_BOARD_ID = os.environ.get("PINTEREST_BOARD_ID", "").strip()
+
 # Kuru çalışma: API çağrısı yapmadan ne olacağını gösterir.
 DRY_RUN = os.environ.get("DRY_RUN", "false").lower() in ("1", "true", "yes")
 
