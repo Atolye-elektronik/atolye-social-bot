@@ -95,7 +95,7 @@ KADEME = [("10 Adet", "833 ₺", "83,30/adet"),
 def katalog_afis(cizer, dosya):
     """MTAL katalog afisi: dort urun grubu tek gorselde, 2x2."""
     urunler = [
-        (TEMRIN,  "Temrin Defteri + İş Dosyası", "85 ₺", " — sınıf paketi 30'lu 2.473,50 ₺"),
+        (TEMRIN,  "Temrin Defteri · İş Dosyası", "adedi 85 ₺", " — 30'lu sınıf paketi 2.473,50 ₺"),
         (CANTA,   "Takım Çantası Setleri", "1.076 ₺", "'den — 17 parça full set 1.911 ₺"),
         (ARDUINO, "Arduino Eğitim Setleri", "782 ₺", "'den — ileri seviye 1.588 ₺"),
         (ENDUSTRI,"Endüstriyel Elektronik Seti", "659 ₺", "'den — 11. sınıf müfredatına göre"),
@@ -120,7 +120,7 @@ def katalog_afis(cizer, dosya):
 
 with Cizer() as c:
     afis(c, "2026 – 2027 EĞİTİM YILI", "Okullara ve öğretmenlere özel fiyat",
-         "Temrin defteri ve iş dosyası — sınıf paketinde birim fiyat düşüyor.",
+         "Temrin defteri ve iş dosyası — adedi 85 ₺, sınıf paketinde birim fiyat düşüyor.",
          [TEMRIN, ISDOSYA], KADEME, [],
          "atolyeelektronik.com/pages/okul-siparisi", "01-okul.png")
 
