@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook, threads]
+platforms: [instagram, facebook, threads, pinterest_studio]
 media: posts/media/2026-08-19-carousel-arduino-proje-ve-uygulama-gelistirme-seti-56-parca.mp4
 publish_at: 2026-08-19 19:10
 ---
