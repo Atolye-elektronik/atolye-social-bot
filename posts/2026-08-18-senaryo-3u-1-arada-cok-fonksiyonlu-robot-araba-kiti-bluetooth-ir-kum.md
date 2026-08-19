@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook, threads]
+platforms: [facebook, threads]
 media: posts/media/2026-08-18-senaryo-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-bluetooth-ir-kum.mp4
 publish_at: 2026-08-18 19:10
 ---

@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook, threads]
+platforms: [facebook, threads]
 media: posts/media/2026-08-17-urun_tanitim-lehimleme-ve-proje-calismalari-icin-6li-havya-seti.jpg
 publish_at: 2026-08-17 11:00
 tema: urun_tanitim

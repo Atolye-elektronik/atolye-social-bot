@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook, threads]
+platforms: [facebook, threads]
 media: posts/media/2026-08-21-hafta_sonu-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-3-7v-li-ion-sarj.jpg
 publish_at: 2026-08-21 18:00
 tema: hafta_sonu

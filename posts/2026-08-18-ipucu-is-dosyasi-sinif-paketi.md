@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook, threads]
+platforms: [facebook, threads]
 media: posts/media/2026-08-18-ipucu-is-dosyasi-sinif-paketi.jpg
 publish_at: 2026-08-18 19:30
 tema: ipucu
