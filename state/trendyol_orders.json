@@ -1,1 +1,178 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9499320253,
+      "firstName": "Baran",
+      "lastName": "tunç",
+      "company": "",
+      "address1": "Mihatpaşa Mah, küçük Orman Cad No:13, Naturalist verde site daire C4 (Site yolu inşaat nedeniyle toprak yoldur. Adres doğrudur, Naturalist verde site)",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Eyüpsultan",
+      "districtId": 101108,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 22591,
+      "neighborhood": "Mithatpaşa Mah",
+      "phone": null,
+      "fullAddress": "Mihatpaşa Mah, küçük Orman Cad No:13, Naturalist verde site daire C4 (Site yolu inşaat nedeniyle toprak yoldur. Adres doğrudur, Naturalist verde site)     Eyüpsultan İstanbul",
+      "fullName": "Baran tunç"
+    },
+    "orderNumber": "11521737608",
+    "orderCountryCode": "TR",
+    "grossAmount": 332.22,
+    "packageGrossAmount": 332.22,
+    "totalDiscount": 6.64,
+    "packageSellerDiscount": 6.64,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 6.64,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 6.64
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9499319401,
+      "firstName": "Baran",
+      "lastName": "tunç",
+      "company": "",
+      "address1": "Mihatpaşa Mah, küçük Orman Cad No:13, Naturalist verde site daire C4 (Site yolu inşaat nedeniyle toprak yoldur. Adres doğrudur, Naturalist verde site)",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Eyüpsultan",
+      "districtId": 101108,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 22591,
+      "neighborhood": "Mithatpaşa Mah",
+      "phone": null,
+      "fullAddress": "Mihatpaşa Mah, küçük Orman Cad No:13, Naturalist verde site daire C4 (Site yolu inşaat nedeniyle toprak yoldur. Adres doğrudur, Naturalist verde site)     Eyüpsultan İstanbul",
+      "fullName": "Baran tunç"
+    },
+    "customerFirstName": "Baran",
+    "customerEmail": "pf+xyjbr4pl@trendyolmail.com",
+    "customerId": 243112992,
+    "supplierId": 0,
+    "customerLastName": "tunç",
+    "id": 4090118687,
+    "channelId": 1,
+    "shipmentPackageId": 4090118687,
+    "cargoTrackingNumber": 7270036100314873,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "merchantSku": "AEUNOR3",
+        "sku": "ATELUNOR30001",
+        "stockCode": "AEUNOR3",
+        "productName": "Arduino Uno R3 Klon USB Kablo Hediyeli - CH340 Chipset, AEUNOR3, ",
+        "productCode": 1586382429,
+        "contentId": 1586382429,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 332.22,
+        "lineGrossAmount": 332.22,
+        "discount": 6.64,
+        "lineTotalDiscount": 6.64,
+        "lineSellerDiscount": 6.64,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 325.58,
+            "lineItemDiscount": 6.64,
+            "lineItemSellerDiscount": 6.64,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5857089146,
+        "lineId": 5857089146,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELUNOR30001",
+        "orderLineItemStatusName": "ReadyToShip",
+        "price": 325.58,
+        "lineUnitPrice": 325.58,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1787185581821,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1787174799147,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1787174804144,
+        "status": "Created"
+      }
+    ],
+    "shipmentPackageStatus": "ReadyToShip",
+    "status": "Created",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1787259540000,
+    "estimatedDeliveryEndDate": 1787432340000,
+    "totalPrice": 325.58,
+    "packageTotalPrice": 325.58,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1787259540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1787174799142,
+    "lastModifiedDate": 1787174804144,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10781744021,
+    "is4P": false
+  }
+]
