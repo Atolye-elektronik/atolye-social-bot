@@ -234,31 +234,22 @@ def _tur_katmanini_kapat(sayfa) -> None:
     katman tüm tıklamaları yuttuğu için sonraki adımlar zaman aşımına
     düşüyordu (2026-08-18 CI koşusu). Katman yoksa hiçbir şey yapmaz.
     """
+    # Atla düğmesi her sürümde bulunamıyor ve katman sonraki adımlarda
+    # yeniden açılabiliyor (2026-08-18 ve 19 CI koşuları böyle düştü).
+    # Bu yüzden katman DOM'dan sökülüyor ve tekrar belirirse diye saniyelik
+    # bir süpürücü kuruluyor.
     try:
-        katman = sayfa.locator("#react-joyride-portal, .react-joyride__overlay").first
-        if not katman.is_visible(timeout=2000):
-            return
-    except Exception:  # noqa: BLE001
-        return
-    # Önce "Atla/Kapat" düğmesini dene, olmazsa Escape.
-    for secici in (
-        "button[data-test-id='button-skip']",
-        "[data-action='skip']",
-        "button:has-text('Atla')",
-        "button:has-text('Skip')",
-        "[aria-label='Close']",
-    ):
-        try:
-            dugme = sayfa.locator(secici).first
-            if dugme.is_visible(timeout=1000):
-                dugme.click()
-                print("  (tanıtım turu kapatıldı)")
-                return
-        except Exception:  # noqa: BLE001
-            continue
-    try:
-        sayfa.keyboard.press("Escape")
-        print("  (tanıtım turu Escape ile kapatıldı)")
+        sayfa.evaluate(
+            """() => {
+                const sil = () => document
+                    .querySelectorAll('#react-joyride-portal, .react-joyride__overlay')
+                    .forEach(e => e.remove());
+                sil();
+                if (!window.__joyrideSupurucu) {
+                    window.__joyrideSupurucu = setInterval(sil, 1000);
+                }
+            }"""
+        )
     except Exception:  # noqa: BLE001
         pass
 
@@ -344,6 +335,7 @@ def studio_paylas(
         return "dry-run"
 
     with studio(selectors.YUKLEME) as page:
+        _tur_katmanini_kapat(page)
         kok = yukleme_koku(page)
         _video_yukle(kok, page, yol)
         _aciklama_yaz(kok, page, caption)
