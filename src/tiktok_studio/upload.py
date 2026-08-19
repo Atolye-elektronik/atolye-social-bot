@@ -73,19 +73,25 @@ def _aciklama_yaz(kok, sayfa, metin: str) -> None:
     alan.click()
     bekle(0.5)
 
+    # Editör (Draft.js) yazarken DOM düğümünü yenileyebiliyor; locator
+    # üzerinden press/type actionability beklemesine takılıp 45 sn'de
+    # düşüyordu (19.08 koşusu). Alan bir kez tıklanıp odaklandıktan sonra
+    # tüm girdi sayfa klavyesiyle veriliyor — odaklı öğeye gider, bekleme yok.
+    klavye = sayfa.keyboard
+
     # Studio alana otomatik olarak dosya adını yazıyor — önce onu sil.
-    alan.press("Control+A")
-    alan.press("Delete")
+    klavye.press("Control+A")
+    klavye.press("Delete")
     bekle(0.5)
 
     satirlar = metin[:MAKS_ACIKLAMA].splitlines() or [""]
     for i, satir in enumerate(satirlar):
         if satir:
-            alan.type(satir, delay=25)
+            klavye.type(satir, delay=25)
         # Öneri kutusu açıksa kapat, yoksa Escape zararsız.
-        alan.press("Escape")
+        klavye.press("Escape")
         if i < len(satirlar) - 1:
-            alan.press("Enter")
+            klavye.press("Enter")
     bekle(1)
 
 
