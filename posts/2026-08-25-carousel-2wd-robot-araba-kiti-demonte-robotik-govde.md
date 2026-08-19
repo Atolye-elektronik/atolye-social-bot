@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook, threads]
+platforms: [instagram, facebook, threads, pinterest_studio]
 media: posts/media/2026-08-25-carousel-2wd-robot-araba-kiti-demonte-robotik-govde.mp4
 publish_at: 2026-08-25 19:10
 ---

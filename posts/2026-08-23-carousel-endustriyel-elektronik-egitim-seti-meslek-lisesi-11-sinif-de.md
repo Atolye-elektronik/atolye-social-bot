@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook, threads]
+platforms: [instagram, facebook, threads, pinterest_studio]
 media: posts/media/2026-08-23-carousel-endustriyel-elektronik-egitim-seti-meslek-lisesi-11-sinif-de.mp4
 publish_at: 2026-08-23 19:10
 ---
