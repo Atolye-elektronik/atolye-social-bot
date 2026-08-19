@@ -16,6 +16,8 @@ from . import (
     config,
     facebook,
     instagram,
+    pinterest,
+    pinterest_studio,
     posts,
     state,
     threads,
@@ -33,10 +35,16 @@ PUBLISHERS = {
     "tiktok": tiktok.publish,
     "tiktok_studio": tiktok_studio.publish,
     "youtube": youtube.publish,
+    # pinterest        → resmî API; işletme hesabı + onaylı app ister
+    # pinterest_studio → arayüz otomasyonu; kişisel hesapla çerezle pin atar
+    "pinterest": pinterest.publish,
+    "pinterest_studio": pinterest_studio.publish,
 }
 
 
-CAROUSEL_PLATFORMS = {"instagram", "facebook", "threads"}
+# pinterest_studio carousel postu kabul eder ama arayüzde karusel pin yok —
+# ilk görseli tek pin olarak atar.
+CAROUSEL_PLATFORMS = {"instagram", "facebook", "threads", "pinterest", "pinterest_studio"}
 
 # publish isinin denemeyecegi platformlar (virgullu liste). tiktok_studio
 # Playwright imaji isteyen tiktok-zamanla isinde yayinlanir; slim imajdaki
