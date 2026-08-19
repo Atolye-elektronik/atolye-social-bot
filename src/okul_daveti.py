@@ -270,6 +270,7 @@ def calistir(
     limit: int | None = None,
     bekleme: int = BEKLEME,
     sablon: str = "mtal",
+    force: bool = False,
 ) -> int:
     _env_dosyasini_yukle()
 
@@ -290,7 +291,14 @@ def calistir(
         print(f"Uyarı: {EK_DOSYA} bulunamadı, e-postalar eksiz gidecek.")
 
     gonderilmis = _gonderilenleri_oku()
-    okullar = [o for o in okullari_oku(liste) if _ozet(o["eposta"]) not in gonderilmis]
+    if force:
+        # Yeniden gonderim: gmail.com doneminden gidenlerin spam'e dustugu
+        # suphesiyle ayni okullara info@ uzerinden tekrar gidiliyor. Kayit
+        # filtresi atlanir; okullar zaten kayitli oldugundan sonda tekrar
+        # yazilmaz (mukerrer hash birikmesin).
+        okullar = okullari_oku(liste)
+    else:
+        okullar = [o for o in okullari_oku(liste) if _ozet(o["eposta"]) not in gonderilmis]
 
     if limit:
         okullar = okullar[:limit]
@@ -309,8 +317,15 @@ def calistir(
     yeni_kayitlar: list[dict] = []
     basarili = 0
 
-    with smtplib.SMTP(host, port, timeout=60) as sunucu:
-        sunucu.starttls()
+    # 465 dogrudan SSL ister (starttls degil). Guzel Hosting'in 587'si art arda
+    # baglantida selamlama gondermeyip zaman asimina dusebiliyor; 465 stabil.
+    if port == 465:
+        sunucu_baglanti = smtplib.SMTP_SSL(host, port, timeout=60)
+    else:
+        sunucu_baglanti = smtplib.SMTP(host, port, timeout=60)
+    with sunucu_baglanti as sunucu:
+        if port != 465:
+            sunucu.starttls()
         sunucu.login(gonderen, parola)
 
         for sira, okul in enumerate(okullar, start=1):
@@ -339,10 +354,12 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true", help="Göndermeden dene")
     parser.add_argument("--limit", type=int, help="En fazla kaç okula gönderilsin")
     parser.add_argument("--bekleme", type=int, default=BEKLEME, help="Gönderimler arası saniye")
+    parser.add_argument("--force", action="store_true",
+                        help="Kayıt filtresini atla (yeniden gönderim); kayda da yazmaz")
     parser.add_argument("--sablon", choices=sorted(SABLONLAR), default="mtal",
                         help="mesem: yalnızca iş dosyası anlatan metin")
     args = parser.parse_args()
-    calistir(args.liste, args.dry_run, args.limit, args.bekleme, args.sablon)
+    calistir(args.liste, args.dry_run, args.limit, args.bekleme, args.sablon, args.force)
 
 
 if __name__ == "__main__":
