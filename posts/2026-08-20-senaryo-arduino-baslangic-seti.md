@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook, threads]
+platforms: [facebook, threads]
 media: posts/media/2026-08-20-senaryo-arduino-baslangic-seti.mp4
 publish_at: 2026-08-20 19:10
 ---

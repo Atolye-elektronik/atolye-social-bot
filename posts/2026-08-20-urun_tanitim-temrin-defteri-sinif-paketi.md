@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook, threads]
+platforms: [facebook, threads]
 media: posts/media/2026-08-20-urun_tanitim-temrin-defteri-sinif-paketi.jpg
 publish_at: 2026-08-20 11:00
 tema: urun_tanitim

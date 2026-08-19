@@ -184,11 +184,20 @@ ig-hikaye:
   script:
     - |
       python - <<'PY'
+      import datetime
       import os
       from src import instagram
-      adlar = [a.strip() for a in os.environ.get(
-          "HIKAYELER", "okul-siparisi,sinif-paketleri,projeler,kargo"
-      ).split(",") if a.strip()]
+      # HIKAYELER verilmemisse gune gore havuz dondur: 2 gunde bir calisan
+      # zamanlama her seferinde farkli seti atar (tanitim <-> sosyal kanit).
+      HAVUZLAR = [
+          "okul-siparisi,sinif-paketleri,projeler,kargo",
+          "yorum-kapak,yorum-arduino-seti,yorum-pense,yorum-lcd,yorum-pil-yuvasi",
+      ]
+      secili = os.environ.get("HIKAYELER")
+      if not secili:
+          secili = HAVUZLAR[(datetime.date.today().toordinal() // 2) % len(HAVUZLAR)]
+          print(f"HIKAYELER verilmedi, gunun havuzu: {secili}")
+      adlar = [a.strip() for a in secili.split(",") if a.strip()]
       for ad in adlar:
           yol = f"posts/media/hikaye/hikaye-{ad}.png"
           kimlik = instagram.hikaye_yayinla(yol)
