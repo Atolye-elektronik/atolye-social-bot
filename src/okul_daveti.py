@@ -39,6 +39,10 @@ BEKLEME = 8
 
 KONU = "Meslek lisesi atölye malzemeleri — sınıf paketi fiyatları (2026-2027)"
 
+# MESEM ogrencisi atolyede degil isletmede egitim goruyor; temrin defteri,
+# takim cantasi ve Arduino seti onlara uymuyor. Tek ilgili urun is dosyasi.
+KONU_MESEM = "İşletmelerde Mesleki Eğitim İş Dosyası — sınıf paketi fiyatları (2026-2027)"
+
 GOVDE = """\
 Sayın {hitap},
 
@@ -112,6 +116,49 @@ def _env_dosyasini_yukle() -> None:
             os.environ[anahtar] = deger
 
 
+
+GOVDE_MESEM = """Sayın {hitap},
+
+Atölye Elektronik olarak mesleki eğitim merkezlerine İşletmelerde Mesleki
+Eğitim İş Dosyası (staj defteri) tedarik ediyoruz. Milli Eğitim Bakanlığı
+müfredatına ve güncel staj yönetmeliğine uyumlu, A4, tel dikişli.
+{yonlendirme}
+
+Sınıf paketi fiyatlarımız:
+
+  10 adet     833,00 ₺     (83,30 ₺/adet)
+  20 adet   1.649,00 ₺     (82,45 ₺/adet, kargo bizden)
+  30 adet   2.473,50 ₺     (82,45 ₺/adet, kargo bizden)
+
+Tekli fiyat 85 ₺; 1.200 ₺ üzeri tüm gönderilerde kargo ücretsiz. Öğrenci
+sayınız farklıysa (24, 32, 45 kişi) o adede göre de fiyat çıkarıyoruz.
+
+  • Proforma fatura düzenliyoruz — kurum muhasebesi için sipariş öncesi hazırlanır.
+  • Havale/EFT ile ödeme alıyoruz, kredi kartı zorunlu değil.
+  • Tamamı tek koli halinde doğrudan kurum adresine gidiyor.
+
+Öğrenci sayınızı yazmanız yeterli, aynı gün proforma faturayla birlikte
+dönüş yapayım.
+
+Koşulların tamamı: {sayfa}
+WhatsApp: {wa_link}  ({telefon})
+
+İyi çalışmalar dilerim.
+
+--
+{imza_blok}{site} · {eposta} · {telefon}
+
+Bu ileti, kurumunuzun kurumsal adresine bir defaya mahsus tanıtım amacıyla
+gönderilmiştir. Liste dışı kalmak için "çıkar" yazıp yanıtlamanız yeterlidir;
+bir daha yazmayız.
+"""
+
+# Sablon adi -> (konu, govde). Varsayilan MTAL'e gore yazilmis metin.
+SABLONLAR = {
+    "mtal": (KONU, GOVDE),
+    "mesem": (KONU_MESEM, GOVDE_MESEM),
+}
+
 def _gonderilenleri_oku() -> set[str]:
     if not STATE_PATH.exists():
         return set()
@@ -163,9 +210,10 @@ def hitap_kur(okul: dict) -> str:
     return f"{okul['okul']} Müdürlüğü"
 
 
-def mesaj_kur(okul: dict, gonderen: str, imza: str) -> EmailMessage:
+def mesaj_kur(okul: dict, gonderen: str, imza: str, sablon: str = "mtal") -> EmailMessage:
+    konu, govde = SABLONLAR[sablon]
     mesaj = EmailMessage()
-    mesaj["Subject"] = KONU
+    mesaj["Subject"] = konu
     mesaj["From"] = f"Atölye Elektronik <{gonderen}>"
     mesaj["To"] = okul["eposta"]
     mesaj["Reply-To"] = gonderen
@@ -174,17 +222,24 @@ def mesaj_kur(okul: dict, gonderen: str, imza: str) -> EmailMessage:
     # IMZA_ADI verilmemişse kendi adını iki kez yazmayalım.
     imza_blok = f"{imza}\nAtölye Elektronik\n" if imza else "Atölye Elektronik\n"
 
-    # Okul listesi bölüm bilgisi vermiyor; ileti müdürlüğe gidiyor. Doğru kişiye
-    # ulaşması için iletilmesini rica ediyoruz.
-    yonlendirme = (
-        ""
-        if okul["bolum"]
-        else "\nBu iletinin elektrik-elektronik ya da bilişim alan/atölye şefinize\n"
-        "iletilmesini rica ederim."
-    )
+    # Liste bölüm bilgisi vermiyor; ileti müdürlüğe gidiyor. Doğru kişiye
+    # ulaşması için iletilmesini rica ediyoruz. MESEM'de alan/atölye şefi
+    # kadrosu yok — orada muhatap koordinatör.
+    if okul["bolum"]:
+        yonlendirme = ""
+    elif sablon == "mesem":
+        yonlendirme = (
+            "\nBu iletinin işletmelerde mesleki eğitimden sorumlu\n"
+            "koordinatörünüze iletilmesini rica ederim."
+        )
+    else:
+        yonlendirme = (
+            "\nBu iletinin elektrik-elektronik ya da bilişim alan/atölye şefinize\n"
+            "iletilmesini rica ederim."
+        )
 
     mesaj.set_content(
-        GOVDE.format(
+        govde.format(
             hitap=hitap_kur(okul),
             sayfa="https://atolyeelektronik.com/pages/okul-siparisi",
             site="atolyeelektronik.com",
@@ -214,6 +269,7 @@ def calistir(
     dry_run: bool = False,
     limit: int | None = None,
     bekleme: int = BEKLEME,
+    sablon: str = "mtal",
 ) -> int:
     _env_dosyasini_yukle()
 
@@ -246,8 +302,8 @@ def calistir(
     if dry_run:
         print(f"[kuru] {len(okullar)} okula gidecekti. Örnek ilk mesaj:\n")
         print(f"Kime  : {okullar[0]['eposta']}")
-        print(f"Konu  : {KONU}\n")
-        print(mesaj_kur(okullar[0], gonderen, imza).get_body().get_content())
+        print(f"Konu  : {SABLONLAR[sablon][0]}\n")
+        print(mesaj_kur(okullar[0], gonderen, imza, sablon).get_body().get_content())
         return len(okullar)
 
     yeni_kayitlar: list[dict] = []
@@ -259,7 +315,7 @@ def calistir(
 
         for sira, okul in enumerate(okullar, start=1):
             try:
-                sunucu.send_message(mesaj_kur(okul, gonderen, imza))
+                sunucu.send_message(mesaj_kur(okul, gonderen, imza, sablon))
             except smtplib.SMTPException as hata:
                 # Tek bir adres patlarsa kampanyayı durdurma; sonrakine geç.
                 print(f"  {sira}/{len(okullar)} atlandı ({okul['okul']}): {hata}")
@@ -283,8 +339,10 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true", help="Göndermeden dene")
     parser.add_argument("--limit", type=int, help="En fazla kaç okula gönderilsin")
     parser.add_argument("--bekleme", type=int, default=BEKLEME, help="Gönderimler arası saniye")
+    parser.add_argument("--sablon", choices=sorted(SABLONLAR), default="mtal",
+                        help="mesem: yalnızca iş dosyası anlatan metin")
     args = parser.parse_args()
-    calistir(args.liste, args.dry_run, args.limit, args.bekleme)
+    calistir(args.liste, args.dry_run, args.limit, args.bekleme, args.sablon)
 
 
 if __name__ == "__main__":
