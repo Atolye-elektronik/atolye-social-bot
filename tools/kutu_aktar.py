@@ -58,7 +58,7 @@ with smtplib.SMTP_SSL(HOST, 465, timeout=60) as S:
         y.set_content(f"Orijinal gonderen : {kimden}\nOrijinal tarih    : {coz(org,'Date')}\n"
                       + "-"*50 + f"\n\n{gvd.strip() or '(metin govdesi yok)'}\n")
         S.send_message(y)
-        M.store(i, "+FLAGS", "\Seen")
+        M.store(i, "+FLAGS", "\\Seen")
         print(f"  aktarildi: {kimden[:34]} | {konu[:38]}")
 M.logout()
 print("bitti")
