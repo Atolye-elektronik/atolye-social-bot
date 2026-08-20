@@ -2,7 +2,7 @@ name: Sosyal medya paylasimi
 
 on:
   schedule:
-    - cron: "5 17 * * *"   # 20:05 TR — postlar 19:10'da vadesi dolmus olur
+    - cron: "47 16 * * *"   # 19:47 TR - kalabalik dakikalardan kacinmak icin tuhaf dakika
   workflow_dispatch:
     inputs:
       only:

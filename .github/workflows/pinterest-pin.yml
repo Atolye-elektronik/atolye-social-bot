@@ -2,7 +2,7 @@ name: Pinterest gunluk pin
 
 on:
   schedule:
-    - cron: "0 19 * * *"   # 22:00 TR
+    - cron: "37 18 * * *"   # 22:00 TR
   workflow_dispatch: {}
 
 permissions:
