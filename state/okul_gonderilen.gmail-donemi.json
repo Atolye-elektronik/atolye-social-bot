@@ -1,0 +1,658 @@
+[
+  {
+    "okul": "Alanya Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "3fba1e7716d5e9b2"
+  },
+  {
+    "okul": "Demre Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "4f66440083ac60e8"
+  },
+  {
+    "okul": "Finike Cumhuriyet Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "bb4dc178fc6ee7ad"
+  },
+  {
+    "okul": "Kepez Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "bde311536f208248"
+  },
+  {
+    "okul": "Muratpaşa Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "d7cbd20e492b4ca0"
+  },
+  {
+    "okul": "Atatürk Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "41c762750af8666a"
+  },
+  {
+    "okul": "Düden Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "2a0243df82e5b414"
+  },
+  {
+    "okul": "Konyaaltı Bahtılı Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a3740e3cae145cda"
+  },
+  {
+    "okul": "Manavgat Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "8fe5384a5560ce37"
+  },
+  {
+    "okul": "Alanya Nezihe Soydan Ticaret Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "405c1f0422d452bf"
+  },
+  {
+    "okul": "İrfan Bileydi Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "f9e8076d9bdcb1d1"
+  },
+  {
+    "okul": "Mustafa Kocakaya Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "b1cf6113e48c8e5a"
+  },
+  {
+    "okul": "Korkuteli Nene Hatun Kız Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "7f17eb3beda35903"
+  },
+  {
+    "okul": "Gazi Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "2a2032a0f01db26c"
+  },
+  {
+    "okul": "Erdemli Ertuğrul Gazi Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "66ab06cebaf5b143"
+  },
+  {
+    "okul": "Mezitli Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "4f63bcd9f0d50b6e"
+  },
+  {
+    "okul": "Mut Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "51a862e6bfeace4f"
+  },
+  {
+    "okul": "Tarsus Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "2eb2ce45b84fc488"
+  },
+  {
+    "okul": "Ticaret ve Sanayi Odası Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "55b76347eb34669b"
+  },
+  {
+    "okul": "Ömer-Ümmügülsüm Cirık Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "b9da33bbc6e8a8f8"
+  },
+  {
+    "okul": "Bucak Organize Sanayi Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "d9d129e741fac622"
+  },
+  {
+    "okul": "Aliya İzzetbegoviç Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "cad61fc5a004030d"
+  },
+  {
+    "okul": "Burdur Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "6ffd748839de562e"
+  },
+  {
+    "okul": "Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "ea2a54284115d84d"
+  },
+  {
+    "okul": "Atatürk Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "33a518046462c0af"
+  },
+  {
+    "okul": "Cemile Hamdi Ongun Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "e4882eb02225f889"
+  },
+  {
+    "okul": "Kadri Şaman MTSO Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "4490ebcab72cfb7a"
+  },
+  {
+    "okul": "Toroslar Mimar Sinan Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "cd74f33b1e801365"
+  },
+  {
+    "okul": "Yahya Günsür Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "c28a31e363b364f6"
+  },
+  {
+    "okul": "Eğirdir Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "19e4789e0c603f29"
+  },
+  {
+    "okul": "Keçiborlu Süleyman Demirel Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "bba5babbfaf24dbf"
+  },
+  {
+    "okul": "TOBB Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a9b8c20470c69439"
+  },
+  {
+    "okul": "Uluborlu Atatürk Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a2e644311eba5359"
+  },
+  {
+    "okul": "Şehit Muhammed Ceylan Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "9433c29db701f723"
+  },
+  {
+    "okul": "Karamanlı Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "ba7563c60c3e9cc1"
+  },
+  {
+    "okul": "Arnavutköy Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "93dd4ad96daeae5b"
+  },
+  {
+    "okul": "Dr. Nureddin Erk-Perihan Erk Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "7f84406bdb9055c4"
+  },
+  {
+    "okul": "Nuri Cıngıllıoğlu Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "3516ef7da5de68f2"
+  },
+  {
+    "okul": "Haydar Akın Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a1e3b1586969374a"
+  },
+  {
+    "okul": "Bahçelievler Türk Telekom Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "6f3177a56daa0f15"
+  },
+  {
+    "okul": "Kocasinan Şehit Samet Kırbaş Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "96b1ac9685b34b24"
+  },
+  {
+    "okul": "Necip Fazıl Kısakürek Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "4886dbffcfae43f3"
+  },
+  {
+    "okul": "İMMİB Erkan Avcı Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "2156a659322be4da"
+  },
+  {
+    "okul": "Şehit Erol Olçok Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "41e1c144d995b6bb"
+  },
+  {
+    "okul": "Bağcılar Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "3ab18bc1f093cfa7"
+  },
+  {
+    "okul": "TOKİ Kayaşehir Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "320d83baa143c7a8"
+  },
+  {
+    "okul": "Beykoz Barbaros Hayrettin Paşa Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "80bfe43ea615327b"
+  },
+  {
+    "okul": "Şehit Ömer Halisdemir Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a51dc44efadd5dbe"
+  },
+  {
+    "okul": "Galata Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "ca146b72638eef97"
+  },
+  {
+    "okul": "İSOV Dinçkök YTÜ Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "eb285e17ddf61d92"
+  },
+  {
+    "okul": "İstanbul Teknik Üniversitesi Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a5d441ff29f1e8a2"
+  },
+  {
+    "okul": "Esenler Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "4cb308613a054899"
+  },
+  {
+    "okul": "Ali Kul Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "1139589edfdd049d"
+  },
+  {
+    "okul": "Borusan Asım Kocabıyık Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "83c994841ff22839"
+  },
+  {
+    "okul": "Kıraç Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "018d3b3adbe91563"
+  },
+  {
+    "okul": "Alibeyköy Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "84f41a7b27af5cb2"
+  },
+  {
+    "okul": "Gültepe Şehit Cihan Erat Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "6ae16496e43d132a"
+  },
+  {
+    "okul": "Halkalı Mehmet Akif Ersoy Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "966b7252dc69904b"
+  },
+  {
+    "okul": "Nahit Menteşe Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "2eb0c1629ab97e4b"
+  },
+  {
+    "okul": "Handan Hayrettin Yelkikanat Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "f6ef061a601fa98c"
+  },
+  {
+    "okul": "Küçükyalı Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "6722832d7f32b452"
+  },
+  {
+    "okul": "Hezarfen Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "957818a1cd7cfcc2"
+  },
+  {
+    "okul": "Nuri Demirağ Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "0215c38cf376deb8"
+  },
+  {
+    "okul": "Pendik Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "f08544cb202cb734"
+  },
+  {
+    "okul": "Fehmi Yılmaz Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "45ba106029ad991f"
+  },
+  {
+    "okul": "Samandıra Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "aa8e64ca4567fb2e"
+  },
+  {
+    "okul": "Sancaktepe Eyüp Sultan Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "01ffcd35b59c21a9"
+  },
+  {
+    "okul": "Mehmet Rıfat Evyap Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "70df573c9a44c5d7"
+  },
+  {
+    "okul": "Sultanbeyli Sabiha Gökçen Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "bd15841e635cafa1"
+  },
+  {
+    "okul": "Sultangazi Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "973373af90302aec"
+  },
+  {
+    "okul": "Silivri Necip Sarıbekir Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "54b1e2b3bff6088d"
+  },
+  {
+    "okul": "Tuzla Cezeri Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "7c384b6560438690"
+  },
+  {
+    "okul": "Çatalca Arif Nihat Asya Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "ff386da0829a0f8a"
+  },
+  {
+    "okul": "Şehit Öğretmen Fatma Nur Çelik Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "89ed1963738135b3"
+  },
+  {
+    "okul": "TEV Uğuz Tarık Demirağ Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "6c5b2e2fc28c2e82"
+  },
+  {
+    "okul": "TÜRKÇİMENTO Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "1c12ba260d8f5550"
+  },
+  {
+    "okul": "Halil Rıfat Paşa Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "7c6bcace20901314"
+  },
+  {
+    "okul": "Yıldız Teknik Üniversitesi Maçka Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "98b50a702fe1ce8f"
+  },
+  {
+    "okul": "Şişli Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "e8397a0cf861bb5b"
+  },
+  {
+    "okul": "Nevzat Hüseyin Tiryaki Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "0cf4e25bf0134e81"
+  },
+  {
+    "okul": "Ahmet Haluk Dursun Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "12d05e2637a56f22"
+  },
+  {
+    "okul": "Aktaş Atatürk Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "e37a8c63f396b653"
+  },
+  {
+    "okul": "Süleyman Şah Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "3c61278fe6cadd02"
+  },
+  {
+    "okul": "İskitler Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "77070d38ec41b252"
+  },
+  {
+    "okul": "Naime-Ali Karataş Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "911a8d928882e77c"
+  },
+  {
+    "okul": "Beypazarı Fatih Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "970fb996546cf7c4"
+  },
+  {
+    "okul": "Şehit Sertaç Uzun Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a7a9566cb2fe004f"
+  },
+  {
+    "okul": "Cezeri Yeşil Teknoloji Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "601a40caa862db53"
+  },
+  {
+    "okul": "Elvanköy Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "c67f62e50e2e9470"
+  },
+  {
+    "okul": "Güvercinlik Şehit Hasan Gülhan Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "9d12b066c092e72c"
+  },
+  {
+    "okul": "Gölbaşı Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "496a64695d123f02"
+  },
+  {
+    "okul": "Kahramankazan Efes Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "ca8f207f1c039c94"
+  },
+  {
+    "okul": "Kanuni Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "d94861d88e165d9f"
+  },
+  {
+    "okul": "Keçiören Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "04911f4e7c6bd9a0"
+  },
+  {
+    "okul": "Şehit Mehmet Karakaşoğlu Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "1960eb058c9840c0"
+  },
+  {
+    "okul": "Battalgazi Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "64632a7142233915"
+  },
+  {
+    "okul": "Türközü Oğuzhan Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a9676e505f13e27f"
+  },
+  {
+    "okul": "Pursaklar Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "9e7c19efd7673d14"
+  },
+  {
+    "okul": "Şehit Büyükelçi Daniş Tunalıgil Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "d82a17673440171f"
+  },
+  {
+    "okul": "Ertuğrul Gazi Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "5a05ed8616a278f1"
+  },
+  {
+    "okul": "Fatih Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "6b630ce105ac4374"
+  },
+  {
+    "okul": "Yenikent Ahmet Çiçek Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "523c3bf4476a5d66"
+  },
+  {
+    "okul": "Şehit Özgür Can İnce Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "10fb7b7b96f94f4f"
+  },
+  {
+    "okul": "ASELSAN Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "7ca313dc00859e47"
+  },
+  {
+    "okul": "Gazi Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "bd0eb9b242072eb8"
+  },
+  {
+    "okul": "Ostim Şehit Alper Zor Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "265cbc0442ef15ae"
+  },
+  {
+    "okul": "Teknopark Ankara İvedik OSB Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "d1fcac96fbffe8a3"
+  },
+  {
+    "okul": "Çiğdemtepe Şehit Mehmet Coşkun Kılıç Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "924fc84b6a3a4a20"
+  },
+  {
+    "okul": "Borsa İstanbul Mehmet Akif Ersoy Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "886a85bb47e59e28"
+  },
+  {
+    "okul": "Dikmen Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "656dcf90c81d47d3"
+  },
+  {
+    "okul": "Şehit Murat Alkan Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "cdb3530b9ac86ac3"
+  },
+  {
+    "okul": "Habaş Hamdi Başaran Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "765fc15ff6d15742"
+  },
+  {
+    "okul": "Şehit Ömer Yiğit Ulus Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "c83f0e4eddd29c14"
+  },
+  {
+    "okul": "Süleyman Demirel Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "578d21b7cac2821a"
+  },
+  {
+    "okul": "Buca Necla-Tevfik Karadavut Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "8481514bc639acf1"
+  },
+  {
+    "okul": "Güzelbahçe Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "0d1ff610c11a8982"
+  },
+  {
+    "okul": "Karabağlar Atatürk Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a8ab7464800660b0"
+  },
+  {
+    "okul": "Karabağlar İTO Vakfı Süleyman Taştekin Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "cced2005e693ae68"
+  },
+  {
+    "okul": "Karşıyaka Zeki Şairoğlu Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "f351e1c013f9440d"
+  },
+  {
+    "okul": "Kemalpaşa Mopak Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "6b8ffab3e03779d9"
+  },
+  {
+    "okul": "Kemalpaşa Yamantürk Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "95f05260e450f4d2"
+  },
+  {
+    "okul": "Konak Mersinli Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "cb06ac798b73f07f"
+  },
+  {
+    "okul": "Konak Mithatpaşa Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "0045153a6b6ce4a2"
+  },
+  {
+    "okul": "Konak Çınarlı Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "fade54a910d61496"
+  },
+  {
+    "okul": "Alanya Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "3fba1e7716d5e9b2"
+  },
+  {
+    "okul": "Demre Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "4f66440083ac60e8"
+  },
+  {
+    "okul": "Finike Cumhuriyet Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "bb4dc178fc6ee7ad"
+  },
+  {
+    "okul": "Kepez Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "bde311536f208248"
+  },
+  {
+    "okul": "Muratpaşa Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "d7cbd20e492b4ca0"
+  },
+  {
+    "okul": "Atatürk Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "41c762750af8666a"
+  },
+  {
+    "okul": "Düden Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "2a0243df82e5b414"
+  },
+  {
+    "okul": "Konyaaltı Bahtılı Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a3740e3cae145cda"
+  },
+  {
+    "okul": "Manavgat Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "8fe5384a5560ce37"
+  },
+  {
+    "okul": "Alanya Nezihe Soydan Ticaret Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "405c1f0422d452bf"
+  },
+  {
+    "okul": "İrfan Bileydi Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "f9e8076d9bdcb1d1"
+  },
+  {
+    "okul": "Mustafa Kocakaya Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "b1cf6113e48c8e5a"
+  },
+  {
+    "okul": "Korkuteli Nene Hatun Kız Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "7f17eb3beda35903"
+  },
+  {
+    "okul": "Gazi Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "2a2032a0f01db26c"
+  },
+  {
+    "okul": "Erdemli Ertuğrul Gazi Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "66ab06cebaf5b143"
+  },
+  {
+    "okul": "Mezitli Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "4f63bcd9f0d50b6e"
+  },
+  {
+    "okul": "Mut Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "51a862e6bfeace4f"
+  },
+  {
+    "okul": "Tarsus Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "2eb2ce45b84fc488"
+  },
+  {
+    "okul": "Ticaret ve Sanayi Odası Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "55b76347eb34669b"
+  },
+  {
+    "okul": "Ömer-Ümmügülsüm Cirık Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "b9da33bbc6e8a8f8"
+  },
+  {
+    "okul": "Bucak Organize Sanayi Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "d9d129e741fac622"
+  },
+  {
+    "okul": "Aliya İzzetbegoviç Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "cad61fc5a004030d"
+  },
+  {
+    "okul": "Burdur Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "6ffd748839de562e"
+  },
+  {
+    "okul": "Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "ea2a54284115d84d"
+  },
+  {
+    "okul": "Atatürk Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "33a518046462c0af"
+  },
+  {
+    "okul": "Cemile Hamdi Ongun Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "e4882eb02225f889"
+  },
+  {
+    "okul": "Kadri Şaman MTSO Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "4490ebcab72cfb7a"
+  },
+  {
+    "okul": "Toroslar Mimar Sinan Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "cd74f33b1e801365"
+  },
+  {
+    "okul": "Yahya Günsür Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "c28a31e363b364f6"
+  },
+  {
+    "okul": "Eğirdir Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "19e4789e0c603f29"
+  },
+  {
+    "okul": "Keçiborlu Süleyman Demirel Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "bba5babbfaf24dbf"
+  },
+  {
+    "okul": "TOBB Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a9b8c20470c69439"
+  },
+  {
+    "okul": "Uluborlu Atatürk Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a2e644311eba5359"
+  },
+  {
+    "okul": "Şehit Muhammed Ceylan Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "9433c29db701f723"
+  },
+  {
+    "okul": "Karamanlı Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "ba7563c60c3e9cc1"
+  },
+  {
+    "okul": "Arnavutköy Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "93dd4ad96daeae5b"
+  },
+  {
+    "okul": "Dr. Nureddin Erk-Perihan Erk Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "7f84406bdb9055c4"
+  },
+  {
+    "okul": "Nuri Cıngıllıoğlu Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "3516ef7da5de68f2"
+  },
+  {
+    "okul": "Haydar Akın Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "a1e3b1586969374a"
+  },
+  {
+    "okul": "Bahçelievler Türk Telekom Mesleki ve Teknik Anadolu Lisesi",
+    "ozet": "6f3177a56daa0f15"
+  }
+]

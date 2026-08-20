@@ -27,6 +27,7 @@ import mimetypes
 import os
 import pathlib
 import re
+import imaplib
 import smtplib
 import time
 from email.message import EmailMessage
@@ -317,6 +318,17 @@ def calistir(
     yeni_kayitlar: list[dict] = []
     basarili = 0
 
+    # Gonderilen her iletinin kopyasi sunucunun Sent klasorune yazilir.
+    # SMTP gonderimi Gmail'den gecmedigi icin hicbir "Gonderilmis" klasorunde
+    # iz birakmiyordu; kullanici gonderimin yapildigini goremiyordu.
+    imap_baglanti = None
+    try:
+        imap_baglanti = imaplib.IMAP4_SSL(host, 993)
+        imap_baglanti.login(gonderen, parola)
+    except Exception as hata:
+        print(f"Uyari: Sent kopyasi icin IMAP acilamadi ({hata}); gonderime devam.")
+        imap_baglanti = None
+
     # 465 dogrudan SSL ister (starttls degil). Guzel Hosting'in 587'si art arda
     # baglantida selamlama gondermeyip zaman asimina dusebiliyor; 465 stabil.
     if port == 465:
@@ -336,6 +348,14 @@ def calistir(
                 print(f"  {sira}/{len(okullar)} atlandı ({okul['okul']}): {hata}")
                 continue
 
+            if imap_baglanti is not None:
+                try:
+                    imap_baglanti.append(
+                        "INBOX.Sent", r"\Seen",
+                        imaplib.Time2Internaldate(time.time()), mesaj.as_bytes()
+                    )
+                except Exception:
+                    pass  # kopya dusmezse gonderim yine gecerli
             basarili += 1
             yeni_kayitlar.append({"okul": okul["okul"], "ozet": _ozet(okul["eposta"])})
             print(f"  {sira}/{len(okullar)} gönderildi: {okul['okul']}")
