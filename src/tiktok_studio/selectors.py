@@ -84,7 +84,15 @@ ONERI_KUTUSU = [
 
 # --- Zamanlama ---------------------------------------------------------------
 
+# 20.08.2026: TikTok anahtardan (switch) RADIO'ya gecti ve etiketi
+# "Zamanla" degil "Planla" oldu. Yeni yapi:
+#   <label class="Radio__root"><input type="radio"> ... Planla</label>
 ZAMANLA_ANAHTARI = [
+    "label.Radio__root:has-text('Planla')",
+    "label:has(input[type='radio']):has-text('Planla')",
+    "label.Radio__root:has-text('Schedule')",
+    "label:has(input[type='radio']):has-text('Schedule')",
+    "label.Radio__root:has-text('Zamanla')",
     "text=/^Schedule$/i",
     "text=/^Zamanla$/i",
     "[data-e2e='schedule_switch']",
