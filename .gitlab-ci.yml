@@ -181,35 +181,25 @@ ig-hikaye:
   stage: run
   rules:
     - if: '$JOB == "ig-hikaye"'
+  variables:
+    COMMIT_MSG: "hikaye kaydı güncellendi"
   script:
     - |
-      python - <<'PY'
-      import datetime
+      if [ -n "$HIKAYELER" ]; then
+        # Elle verilen hazir gorselleri yayinla (posts/media/hikaye/hikaye-<ad>.png)
+        python - <<'PY'
       import os
       from src import instagram
-      # HIKAYELER verilmemisse her gun havuzdan FARKLI IKI hikaye sec.
-      # Liste kategorileri donusumlu dizildi; indeks gunle 2'ser kayar,
-      # 19 eleman tek sayi oldugu icin 19 gunluk tam turda her gun farkli
-      # ikili cikar. Kullanici yayinlanan hikayeleri one cikarilanlara ekliyor.
-      HAVUZ = [
-          "set-88-parca", "yorum-arduino-seti", "robot-2wd",
-          "defter-is-dosyasi", "kampanya-atolye10", "set-56-parca",
-          "yorum-pense", "robot-3u1", "defter-temrin", "okul-siparisi",
-          "set-endustriyel", "yorum-lcd", "robot-engelden",
-          "defter-sinif-paketi", "kargo", "yorum-pil-yuvasi", "projeler",
-          "sinif-paketleri", "yorum-kapak",
-      ]
-      secili = os.environ.get("HIKAYELER")
-      if not secili:
-          i = (datetime.date.today().toordinal() * 2) % len(HAVUZ)
-          secili = ",".join([HAVUZ[i], HAVUZ[(i + 1) % len(HAVUZ)]])
-          print(f"HIKAYELER verilmedi, gunun ikilisi: {secili}")
-      adlar = [a.strip() for a in secili.split(",") if a.strip()]
-      for ad in adlar:
-          yol = f"posts/media/hikaye/hikaye-{ad}.png"
-          kimlik = instagram.hikaye_yayinla(yol)
+      for ad in [a.strip() for a in os.environ["HIKAYELER"].split(",") if a.strip()]:
+          kimlik = instagram.hikaye_yayinla(f"posts/media/hikaye/hikaye-{ad}.png")
           print(f"✅ hikaye yayinlandi: {ad} (id: {kimlik})")
       PY
+      else
+        # Her gun katalogdan TAZE 2 hikaye uret ve yayinla; islenen urunler
+        # state/hikaye_seen.json'da tutulur, tekrar yok.
+        python -m src.hikaye_uret --adet "${HIKAYE_ADET:-2}"
+      fi
+    - *commit_state
 
 # --- Sosyal medya paylaşımı (saatlik) ---------------------------------------
 publish:
