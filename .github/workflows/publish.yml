@@ -2,7 +2,11 @@ name: Sosyal medya paylasimi
 
 on:
   schedule:
-    - cron: "47 16 * * *"   # 19:47 TR - kalabalik dakikalardan kacinmak icin tuhaf dakika
+    # Iki tur: ogle turu videolari (publish_at 12:00), aksam turu carousel/
+    # senaryoyu (19:10) alir. Tek turda ayni platforma 1 gonderi kurali
+    # yuzunden video ile carousel yarisip biri ertesi gune kayiyordu.
+    - cron: "13 9 * * *"    # 12:13 TR - video turu
+    - cron: "47 16 * * *"   # 19:47 TR - carousel/senaryo turu
   workflow_dispatch:
     inputs:
       only:
