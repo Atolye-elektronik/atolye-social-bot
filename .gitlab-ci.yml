@@ -432,10 +432,15 @@ tiktok-zamanla:
   <<: *tiktok_studio
   rules:
     - if: '$JOB == "tiktok-zamanla"'
+  # 3 video yüklemesi yavaş çalışan runner'da 1 saati aşabiliyor
+  # (19.08 koşusu böyle düştü).
+  timeout: 2h
   variables:
     # YAML birleştirmesi sığ: variables'ı ezdiğimiz için şablondakini tekrar yaz.
     TIKTOK_STUDIO_YAVASLIK: "1.5"
     COMMIT_MSG: "tiktok zamanlama kaydı güncellendi"
+    # Log anlık aksın; zaman aşımında hangi adımda kaldığı görünür olsun.
+    PYTHONUNBUFFERED: "1"
   script:
     - python -m src.tiktok_studio zamanla --gun "${GUN:-7}"
     - *commit_state
