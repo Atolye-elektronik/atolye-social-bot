@@ -126,7 +126,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "AE2WDEKRBT-LI",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 929.65,
         "lineUnitPrice": 929.65,
         "fastDeliveryOptions": [
@@ -151,10 +151,14 @@
       {
         "createdDate": 1787234917362,
         "status": "Created"
+      },
+      {
+        "createdDate": 1787236134838,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1787345940000,
@@ -165,7 +169,7 @@
     "agreedDeliveryDate": 1787345940000,
     "fastDelivery": true,
     "originShipmentDate": 1787234912604,
-    "lastModifiedDate": 1787234917362,
+    "lastModifiedDate": 1787236134838,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
