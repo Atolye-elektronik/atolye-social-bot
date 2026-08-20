@@ -53,11 +53,16 @@ with smtplib.SMTP_SSL(HOST, 465, timeout=60) as S:
                 break
         y = EmailMessage()
         y["Subject"] = f"[info@ kutusu] {konu}"
-        y["From"] = f"info@ kutu aktarimi <{KUL}>"
+        # Gonderen basligi bilerek info@ DEGIL: Gmail'de info@ "send as"
+        # adresi olarak kayitli ve Gmail kendi adresinden gelen postayi
+        # gelen kutusuna koymuyor (sessizce yutuyor). Zarf info@ kaliyor
+        # (SPF), baslik farkli — eslesme kirilinca teslim normallesiyor.
+        y["From"] = "info@ kutusu <kutu-aktarimi@atolyeelektronik.com>"
+        y["Reply-To"] = coz(org, "From") or KUL
         y["To"] = "atolyeelektronik07@gmail.com"
         y.set_content(f"Orijinal gonderen : {kimden}\nOrijinal tarih    : {coz(org,'Date')}\n"
                       + "-"*50 + f"\n\n{gvd.strip() or '(metin govdesi yok)'}\n")
-        S.send_message(y)
+        S.send_message(y, from_addr=KUL)
         M.store(i, "+FLAGS", "\\Seen")
         print(f"  aktarildi: {kimden[:34]} | {konu[:38]}")
 M.logout()
