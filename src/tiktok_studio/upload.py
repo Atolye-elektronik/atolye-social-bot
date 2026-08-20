@@ -241,19 +241,21 @@ def _tur_katmanini_kapat(sayfa) -> None:
     düşüyordu (2026-08-18 CI koşusu). Katman yoksa hiçbir şey yapmaz.
     """
     # Atla düğmesi her sürümde bulunamıyor ve katman sonraki adımlarda
-    # yeniden açılabiliyor (2026-08-18 ve 19 CI koşuları böyle düştü).
-    # Bu yüzden katman DOM'dan sökülüyor ve tekrar belirirse diye saniyelik
-    # bir süpürücü kuruluyor.
+    # yeniden açılabiliyor (18-19.08 koşuları böyle düştü). Düğümleri DOM'dan
+    # sökmek React'i "Bir şeyler ters gitti" ekranına düşürdü (20.08 koşusu,
+    # döküm ekranında görüldü) — bu yüzden katman yalnızca CSS ile
+    # etkisizleştiriliyor: görünmez ve tıklama geçirir, React'e dokunulmaz.
     try:
         sayfa.evaluate(
             """() => {
-                const sil = () => document
-                    .querySelectorAll('#react-joyride-portal, .react-joyride__overlay')
-                    .forEach(e => e.remove());
-                sil();
-                if (!window.__joyrideSupurucu) {
-                    window.__joyrideSupurucu = setInterval(sil, 1000);
-                }
+                if (document.getElementById('joyride-notr')) return;
+                const st = document.createElement('style');
+                st.id = 'joyride-notr';
+                st.textContent = '#react-joyride-portal, .react-joyride__overlay,' +
+                    ' [data-test-id="overlay"] {' +
+                    ' pointer-events: none !important;' +
+                    ' visibility: hidden !important; }';
+                document.head.appendChild(st);
             }"""
         )
     except Exception:  # noqa: BLE001
