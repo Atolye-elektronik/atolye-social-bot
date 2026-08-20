@@ -32,6 +32,7 @@ from .shopify_source import fetch_products, ozet
 W, H = 1080, 1920
 STATE_PATH = pathlib.Path("state/hikaye_seen.json")
 CIKTI_DIR = pathlib.Path("posts/media/hikaye/gunluk")
+MANIFEST_PATH = CIKTI_DIR / "manifest.json"
 
 GRADYAN_UST = (208, 238, 243)
 GRADYAN_ALT = (250, 252, 254)
@@ -203,35 +204,68 @@ def uret(adet: int = 2, onizleme: bool = False) -> int:
             secilen.append(u)
 
     CIKTI_DIR.mkdir(parents=True, exist_ok=True)
+    # 7 gunden eski gorselleri temizle (repo sismesin)
+    esik = dt.date.today() - dt.timedelta(days=7)
+    for eski in CIKTI_DIR.glob("hikaye-*.png"):
+        try:
+            tarih = dt.datetime.strptime(eski.stem.split("-")[1], "%Y%m%d").date()
+            if tarih < esik:
+                eski.unlink()
+        except (ValueError, IndexError):
+            continue
+
     gun = dt.date.today().toordinal()
-    hata = 0
+    manifest = []
     for i, u in enumerate(secilen):
         yol = CIKTI_DIR / f"hikaye-{dt.date.today():%Y%m%d}-{i+1}.png"
         sablon = hikaye_tanitim if (gun + i) % 2 == 0 else hikaye_fiyat
         sablon(u, yol)
         print(f"🖼️  {yol} ← {u['title'][:60]} [{_etiket(u)}]")
-        if not onizleme:
-            from . import instagram
-            try:
-                kimlik = instagram.hikaye_yayinla(str(yol))
-                print(f"✅ hikaye yayınlandı (id: {kimlik})")
-                seen.append(str(u["id"]))
-            except Exception as exc:  # noqa: BLE001
-                hata += 1
-                print(f"❌ hikaye yayınlanamadı: {exc}")
-        else:
-            seen.append(str(u["id"]))
-    if not onizleme:
-        _seen_yaz(seen)
+        manifest.append({"dosya": str(yol).replace("\\", "/"),
+                         "urun_id": str(u["id"]), "urun": u["title"]})
+    MANIFEST_PATH.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8")
+    return 0
+
+
+def yayinla() -> int:
+    """Manifestteki (repoya itilmis) gorselleri hikaye olarak yayinlar.
+
+    Iki evre gerekli cunku Instagram Graph API gorseli herkese acik URL'den
+    ceker; dosya once commit'lenip raw URL kazanmali (20.08 dersi).
+    """
+    from . import instagram
+
+    if not MANIFEST_PATH.exists():
+        print("Manifest yok — once --evre uret calistir.")
+        return 1
+    manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    seen = _seen_oku()
+    hata = 0
+    for kayit in manifest:
+        try:
+            kimlik = instagram.hikaye_yayinla(kayit["dosya"])
+            print(f"✅ hikaye yayınlandı: {kayit['urun'][:50]} (id: {kimlik})")
+            if kayit["urun_id"] not in seen:
+                seen.append(kayit["urun_id"])
+        except Exception as exc:  # noqa: BLE001
+            hata += 1
+            print(f"❌ hikaye yayınlanamadı: {exc}")
+    _seen_yaz(seen)
     return 1 if hata else 0
 
 
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--adet", type=int, default=2)
+    p.add_argument("--evre", choices=["uret", "yayinla"], default=None,
+                   help="CI iki evrede kosar: uret (dosya+manifest) sonra yayinla")
     p.add_argument("--onizleme", action="store_true",
-                   help="Yayınlama, sadece görselleri üret")
+                   help="uret ile ayni: yayinlamadan gorselleri uret")
     a = p.parse_args()
+    if a.evre == "yayinla":
+        raise SystemExit(yayinla())
     raise SystemExit(uret(a.adet, a.onizleme))
 
 

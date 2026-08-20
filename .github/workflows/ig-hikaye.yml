@@ -23,7 +23,20 @@ jobs:
           python-version: "3.12"
       - name: Bagimliliklari kur
         run: pip install --quiet -r requirements.txt
-      - name: Hikayeleri uret ve yayinla
+      # Instagram gorseli herkese acik URL'den ceker; bu yuzden once uret,
+      # commit'le (raw URL dogsun), SONRA yayinla (20.08 dersi).
+      - name: Gorselleri uret
+        if: ${{ inputs.hikayeler == '' }}
+        run: python -m src.hikaye_uret --evre uret --adet 2
+      - name: Gorselleri depoya it
+        if: ${{ inputs.hikayeler == '' }}
+        run: |
+          git config user.name "atolye-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add posts/media/hikaye/gunluk
+          git diff --staged --quiet || git commit -m "chore: gunun hikaye gorselleri [skip ci]"
+          git pull --rebase origin main && git push
+      - name: Yayinla
         env:
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
@@ -35,7 +48,7 @@ jobs:
               python -c "from src import instagram; print('yayinlandi:', instagram.hikaye_yayinla('posts/media/hikaye/hikaye-${ad}.png'))"
             done
           else
-            python -m src.hikaye_uret --adet 2
+            python -m src.hikaye_uret --evre yayinla
           fi
       - name: Hikaye kaydini commit et
         run: |

@@ -35,5 +35,3 @@ content/muzik/*.mp3
 content/muzik/*.m4a
 content/muzik/*.wav
 
-# gunluk uretilen hikaye gorselleri CI icinde gecici
-posts/media/hikaye/gunluk/
