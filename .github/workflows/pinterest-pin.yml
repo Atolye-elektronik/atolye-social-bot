@@ -1,0 +1,56 @@
+name: Pinterest gunluk pin
+
+on:
+  schedule:
+    - cron: "0 19 * * *"   # 22:00 TR
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  pin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Bagimliliklari kur
+        run: |
+          pip install --quiet -r requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Cerezi coz
+        env:
+          CEREZ_PAROLASI: ${{ secrets.CEREZ_PAROLASI }}
+        run: |
+          openssl enc -d -aes-256-cbc -pbkdf2 -pass env:CEREZ_PAROLASI \
+            -in ci/pinterest-cerez.enc -out .pinterest_studio_state.json
+      - name: Pin at
+        env:
+          PYTHONUNBUFFERED: "1"
+          PINTEREST_BOARD_ID: "Ürünlerimiz"
+          SKIP_PLATFORMS: "instagram,facebook,threads,tiktok,tiktok_studio,youtube,pinterest"
+          MAX_PER_RUN: "3"
+        run: |
+          RC=0; python -m src.main || RC=$?
+          echo "RC=$RC" >> "$GITHUB_ENV"
+      - name: Kaydi commit et
+        run: |
+          if [ -n "$(git status --porcelain state/)" ]; then
+            git config user.name "atolye-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add state/
+            git commit -m "chore: pinterest kaydi guncellendi [skip ci]"
+            git pull --rebase origin main && git push
+          fi
+      - name: Hata dokumlerini yukle
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pinterest-studio-dokum
+          path: logs/pinterest-studio/
+          retention-days: 7
+      - name: Sonuc
+        run: exit ${RC:-0}

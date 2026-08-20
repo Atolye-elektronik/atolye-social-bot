@@ -1,0 +1,60 @@
+name: TikTok kuyruk zamanlama
+
+on:
+  schedule:
+    - cron: "30 17 * * 1,4"   # Pzt+Per 20:30 TR — her kosu 7 gunu zamanlar
+  workflow_dispatch:
+    inputs:
+      gun:
+        description: "Kac gun ilerisi zamanlansin"
+        type: string
+        default: "7"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tiktok
+  cancel-in-progress: false
+
+jobs:
+  zamanla:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Bagimliliklari kur
+        run: |
+          pip install --quiet -r requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Cerezi coz
+        env:
+          CEREZ_PAROLASI: ${{ secrets.CEREZ_PAROLASI }}
+        run: |
+          openssl enc -d -aes-256-cbc -pbkdf2 -pass env:CEREZ_PAROLASI \
+            -in ci/tiktok-cerez.enc -out .tiktok_studio_state.json
+      - name: Kuyrugu zamanla
+        env:
+          PYTHONUNBUFFERED: "1"
+          TIKTOK_STUDIO_YAVASLIK: "1.5"
+        run: python -m src.tiktok_studio zamanla --gun "${{ inputs.gun || '7' }}"
+      - name: Zamanlama kaydini commit et
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain state/)" ]; then
+            git config user.name "atolye-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add state/
+            git commit -m "chore: tiktok zamanlama kaydi guncellendi [skip ci]"
+            git pull --rebase origin main && git push
+          fi
+      - name: Hata dokumlerini yukle
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tiktok-studio-dokum
+          path: logs/tiktok-studio/
+          retention-days: 7
