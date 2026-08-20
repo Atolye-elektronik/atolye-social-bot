@@ -135,6 +135,26 @@ def _marka(d) -> None:
     d.text(((W - tw) / 2, H - 130), MARKA, font=f, fill=GRI)
 
 
+def _aciklama_hazirla(d, metin: str, f, genislik: int, maxsatir: int) -> list[str]:
+    """Açıklamayı emoji'siz ve TAM CÜMLELERLE maxsatir'a sığdırır.
+
+    Kes-at yaklaşımı "2'li 18650 Li-..." gibi yarım metin bırakıyordu;
+    fontta karşılığı olmayan emojiler de kutu (tofu) çiziyordu (20.08).
+    """
+    metin = "".join(ch for ch in metin if ord(ch) < 0x2500).strip()
+    cumleler = [c.strip() for c in metin.replace("!", ".").split(".") if c.strip()]
+    secili = ""
+    for c in cumleler:
+        aday = (secili + " " + c).strip() + "."
+        if len(_sar(d, aday, f, genislik, maxsatir=maxsatir + 1)) > maxsatir:
+            break
+        secili = aday
+    if not secili and cumleler:
+        secili = _sar(d, cumleler[0] + ".", f, genislik, maxsatir=maxsatir)[-1]
+        return _sar(d, cumleler[0] + ".", f, genislik, maxsatir=maxsatir)
+    return _sar(d, secili, f, genislik, maxsatir=maxsatir)
+
+
 def hikaye_tanitim(urun: dict, cikti: pathlib.Path) -> None:
     """Şablon A: ürün fotoğrafı + kısa açıklama."""
     img, d = _zemin(urun["handle"])
@@ -143,7 +163,7 @@ def hikaye_tanitim(urun: dict, cikti: pathlib.Path) -> None:
     y = _baslik(d, urun["title"], alt + 60)
     f = _normal(44)
     metin = ozet(urun.get("body_html", ""))
-    for s in _sar(d, metin, f, W - 260, maxsatir=3):
+    for s in _aciklama_hazirla(d, metin, f, W - 260, maxsatir=3):
         tw = d.textlength(s, font=f)
         d.text(((W - tw) / 2, y + 20), s, font=f, fill=GRI)
         y += 62

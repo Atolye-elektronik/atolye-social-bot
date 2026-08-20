@@ -6,7 +6,7 @@ youtube_title: Atolye Temrin Defteri - 48 Yaprak
 ---
 Atölye dersi başlamadan temrin defterini al 📓
 
-48 yaprak, tel dikişli — bir eğitim dönemi boyunca tüm uygulamalar için yeter. Tek tek de alırsın, sınıf paketi de var.
+96 sayfa, tel dikişli — bir yıl boyunca tüm uygulamalar için yeter. Tek tek de alırsın, sınıf paketi de var.
 
 Sipariş 👉 https://atolyeelektronik.com/products/temrin-defteri
 
