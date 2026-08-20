@@ -37,14 +37,7 @@ jobs:
           RC=0; python -m src.main || RC=$?
           echo "RC=$RC" >> "$GITHUB_ENV"
       - name: Kaydi commit et
-        run: |
-          if [ -n "$(git status --porcelain state/)" ]; then
-            git config user.name "atolye-bot"
-            git config user.email "bot@users.noreply.github.com"
-            git add state/
-            git commit -m "chore: pinterest kaydi guncellendi [skip ci]"
-            git pull --rebase origin main && git push
-          fi
+        run: bash tools/state_it.sh "pinterest kaydi guncellendi"
       - name: Hata dokumlerini yukle
         if: failure()
         uses: actions/upload-artifact@v4
