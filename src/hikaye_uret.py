@@ -51,8 +51,12 @@ def _etiket(urun: dict) -> str:
         return "OKUL DEFTERLERİ"
     if "robot" in ad:
         return "ROBOTİK KİTLER"
-    if "set" in ad or "kit" in ad or "arduino" in ad:
+    if "arduino" in ad:
         return "ARDUINO SETLERİ"
+    if any(k in ad for k in ("havya", "pense", "tornavida", "alet", "lehim")):
+        return "EL ALETLERİ"
+    if "set" in ad or "kit" in ad:
+        return "SETLER"
     return "GÜNÜN ÜRÜNÜ"
 
 
@@ -100,6 +104,13 @@ def _foto_kart(img, d, url: str, y: int, yukseklik: int = 560) -> int:
 
 def _baslik(d, metin: str, y: int, maxsatir: int = 2) -> int:
     f = _bold(62)
+    # 2 satira sigmayan basligi kesmek yerine " - " / "(" ayracinda kisalt;
+    # "Endustriyel ... Seti - Meslek" gibi yarim kalmis metin cikmasin.
+    if len(_sar(d, metin, f, W - 200, maxsatir=maxsatir + 1)) > maxsatir:
+        for ayrac in (" - ", " — ", " ("):
+            if ayrac in metin:
+                metin = metin.split(ayrac)[0].strip()
+                break
     for s in _sar(d, metin, f, W - 200, maxsatir=maxsatir):
         tw = d.textlength(s, font=f)
         d.text(((W - tw) / 2, y), s, font=f, fill=KOYU)
