@@ -102,19 +102,27 @@ def _foto_kart(img, d, url: str, y: int, yukseklik: int = 560) -> int:
     return y + yukseklik
 
 
-def _baslik(d, metin: str, y: int, maxsatir: int = 2) -> int:
-    f = _bold(62)
-    # 2 satira sigmayan basligi kesmek yerine " - " / "(" ayracinda kisalt;
-    # "Endustriyel ... Seti - Meslek" gibi yarim kalmis metin cikmasin.
-    if len(_sar(d, metin, f, W - 200, maxsatir=maxsatir + 1)) > maxsatir:
-        for ayrac in (" - ", " — ", " ("):
-            if ayrac in metin:
-                metin = metin.split(ayrac)[0].strip()
-                break
-    for s in _sar(d, metin, f, W - 200, maxsatir=maxsatir):
-        tw = d.textlength(s, font=f)
-        d.text(((W - tw) / 2, y), s, font=f, fill=KOYU)
-        y += 84
+def _baslik(d, metin: str, y: int, maxsatir: int = 3) -> int:
+    """Başlığı ASLA kesmez: sığana kadar puntoyu küçültür.
+
+    Kes-at yaklaşımı "...Robot Ar..." gibi yarım ürün adı bırakıyordu
+    (20.08 geri bildirimi). Uzun adlarda önce " - " / "(" ayracından
+    sadeleştirir, sonra 62'den 40'a kadar punto düşürür.
+    """
+    kisa = metin
+    for ayrac in (" - ", " — ", " ("):
+        if len(kisa) > 42 and ayrac in kisa:
+            kisa = kisa.split(ayrac)[0].strip()
+            break
+    for boyut in (62, 56, 50, 44, 40):
+        f = _bold(boyut)
+        satirlar = _sar(d, kisa, f, W - 180, maxsatir=maxsatir + 2)
+        if len(satirlar) <= maxsatir and not any(s.endswith("...") for s in satirlar):
+            break
+    for satir in satirlar[:maxsatir]:
+        tw = d.textlength(satir, font=f)
+        d.text(((W - tw) / 2, y), satir, font=f, fill=KOYU)
+        y += int(boyut * 1.35)
     return y
 
 
@@ -135,24 +143,30 @@ def _marka(d) -> None:
     d.text(((W - tw) / 2, H - 130), MARKA, font=f, fill=GRI)
 
 
-def _aciklama_hazirla(d, metin: str, f, genislik: int, maxsatir: int) -> list[str]:
-    """Açıklamayı emoji'siz ve TAM CÜMLELERLE maxsatir'a sığdırır.
+def _aciklama_hazirla(d, metin: str, genislik: int, maxsatir: int):
+    """Açıklamayı emoji'siz, TAM CÜMLE ve kesintisiz döndürür.
 
-    Kes-at yaklaşımı "2'li 18650 Li-..." gibi yarım metin bırakıyordu;
-    fontta karşılığı olmayan emojiler de kutu (tofu) çiziyordu (20.08).
+    Sığmıyorsa önce cümle atar, yetmezse puntoyu düşürür — "2'li 18650
+    Li-..." gibi yarım metin çıkmaz (20.08 geri bildirimi).
     """
     metin = "".join(ch for ch in metin if ord(ch) < 0x2500).strip()
     cumleler = [c.strip() for c in metin.replace("!", ".").split(".") if c.strip()]
-    secili = ""
-    for c in cumleler:
-        aday = (secili + " " + c).strip() + "."
-        if len(_sar(d, aday, f, genislik, maxsatir=maxsatir + 1)) > maxsatir:
-            break
-        secili = aday
-    if not secili and cumleler:
-        secili = _sar(d, cumleler[0] + ".", f, genislik, maxsatir=maxsatir)[-1]
-        return _sar(d, cumleler[0] + ".", f, genislik, maxsatir=maxsatir)
-    return _sar(d, secili, f, genislik, maxsatir=maxsatir)
+    if not cumleler:
+        return _normal(44), []
+    for boyut in (44, 40, 36):
+        f = _normal(boyut)
+        secili = ""
+        for c in cumleler:
+            aday = (secili + " " + c).strip() + "."
+            satirlar = _sar(d, aday, f, genislik, maxsatir=maxsatir + 2)
+            if len(satirlar) > maxsatir or any(x.endswith("...") for x in satirlar):
+                break
+            secili = aday
+        if secili:
+            return f, _sar(d, secili, f, genislik, maxsatir=maxsatir)
+    # tek cumle bile sigmadi: en kucuk puntoyla ilk cumleyi ver
+    f = _normal(36)
+    return f, _sar(d, cumleler[0] + ".", f, genislik, maxsatir=maxsatir)
 
 
 def hikaye_tanitim(urun: dict, cikti: pathlib.Path) -> None:
@@ -161,12 +175,12 @@ def hikaye_tanitim(urun: dict, cikti: pathlib.Path) -> None:
     _kategori(d, _etiket(urun))
     alt = _foto_kart(img, d, urun["images"][0]["src"], 300)
     y = _baslik(d, urun["title"], alt + 60)
-    f = _normal(44)
     metin = ozet(urun.get("body_html", ""))
-    for s in _aciklama_hazirla(d, metin, f, W - 260, maxsatir=3):
-        tw = d.textlength(s, font=f)
-        d.text(((W - tw) / 2, y + 20), s, font=f, fill=GRI)
-        y += 62
+    f, satirlar = _aciklama_hazirla(d, metin, W - 260, maxsatir=3)
+    for satir in satirlar:
+        tw = d.textlength(satir, font=f)
+        d.text(((W - tw) / 2, y + 20), satir, font=f, fill=GRI)
+        y += int(f.size * 1.4)
     _cta(d, H - 380)
     _marka(d)
     img.save(cikti)
