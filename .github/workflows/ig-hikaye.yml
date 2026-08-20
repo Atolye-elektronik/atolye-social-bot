@@ -2,7 +2,7 @@ name: IG gunluk hikayeler
 
 on:
   schedule:
-    - cron: "41 17 * * *"   # 21:00 TR
+    - cron: "41 17 * * *"   # 20:41 TR
   workflow_dispatch:
     inputs:
       hikayeler:

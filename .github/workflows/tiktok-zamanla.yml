@@ -2,7 +2,7 @@ name: TikTok kuyruk zamanlama
 
 on:
   schedule:
-    - cron: "23 17 * * 1,4"   # Pzt+Per 20:30 TR — her kosu 7 gunu zamanlar
+    - cron: "23 17 * * 1,4"   # Pzt+Per 20:23 TR — her kosu 7 gunu zamanlar
   workflow_dispatch:
     inputs:
       gun:
