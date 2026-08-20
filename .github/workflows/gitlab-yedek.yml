@@ -1,0 +1,26 @@
+name: GitLab yedek aynasi
+
+on:
+  schedule:
+    - cron: "0 1 * * *"   # her gece 04:00 TR — gunun tum commitlerini aynala
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  ayna:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: GitLab'a itele
+        env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: |
+          # GitLab isleri $JOB degiskeniyle kapili; push pipeline'i is
+          # uretmez, CI dakikasi harcamaz.
+          git push --force \
+            "https://oauth2:${GITLAB_TOKEN}@gitlab.com/atolye-elektronik-group/atolye-social-bot.git" \
+            HEAD:main
