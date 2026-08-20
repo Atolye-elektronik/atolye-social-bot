@@ -22,7 +22,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 110
     steps:
+      # ref: main sart — schedule/dispatch olaylari SHA'yi tetiklenme
+      # aninda sabitliyor; pespese kosular birbirinin state commit'ini
+      # goremeyip ayni postu iki kez paylasabiliyor (20.08 IG cift reel).
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
