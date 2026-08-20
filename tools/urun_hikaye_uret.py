@@ -96,12 +96,12 @@ HIKAYELER = [
 
 # Öne çıkarılan kapak görselleri (telefon galerisinden kapak seçmek için)
 KAPAKLAR = [
-    ("kapak-setler", "SET"),
-    ("kapak-robotik", "ROBOT"),
-    ("kapak-defterler", "DEFTER"),
-    ("kapak-yorumlar", "YORUM"),
-    ("kapak-kampanya", "%10"),
-    ("kapak-siparis", "SİPARİŞ"),
+    ("kapak-setler", "SET", (0, 150, 136), (0, 200, 178)),
+    ("kapak-robotik", "ROBOT", (255, 106, 40), (255, 160, 70)),
+    ("kapak-defterler", "DEFTER", (40, 160, 75), (90, 205, 125)),
+    ("kapak-yorumlar", "YORUM", (235, 160, 15), (255, 205, 70)),
+    ("kapak-kampanya", "%10", (226, 55, 68), (255, 115, 65)),
+    ("kapak-siparis", "SİPARİŞ", (23, 110, 200), (70, 165, 245)),
 ]
 
 
@@ -193,19 +193,40 @@ def hikaye(h):
     print("✅", yol)
 
 
-def kapak(slug, etiket):
-    """Koyu lacivert daireli kapak — IG öne çıkarılan kapağı ortadan kırpar."""
-    img = Image.new("RGB", (W, H), (243, 248, 250))
+def kapak(slug, etiket, renk1, renk2):
+    """Canlı, kategori renkli kapak — IG öne çıkarılan kapağı ortadan kırpar."""
+    img = Image.new("RGB", (W, H), GRADYAN_ALT)
     d = ImageDraw.Draw(img, "RGBA")
-    r = 330
+    # zemin: acik turkuaz gradyan (hikayelerle ayni aile)
+    for y in range(H):
+        t = min(1.0, y / (H * 0.7))
+        renk = tuple(int(GRADYAN_UST[i] + (GRADYAN_ALT[i] - GRADYAN_UST[i]) * t)
+                     for i in range(3))
+        d.line([(0, y), (W, y)], fill=renk)
+    # ortada dikey gradyanli dolu renk dairesi
+    r = 340
     cx, cy = W // 2, H // 2
-    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(13, 27, 53))
-    d.ellipse([cx - r + 18, cy - r + 18, cx + r - 18, cy + r - 18],
-              outline=(255, 200, 60), width=6)
-    boy = 96 if len(etiket) <= 5 else 72
+    daire = Image.new("RGB", (2 * r, 2 * r))
+    dd = ImageDraw.Draw(daire)
+    for yy in range(2 * r):
+        t = yy / (2 * r)
+        dd.line([(0, yy), (2 * r, yy)],
+                fill=tuple(int(renk1[i] + (renk2[i] - renk1[i]) * t) for i in range(3)))
+    maske = Image.new("L", (2 * r, 2 * r), 0)
+    ImageDraw.Draw(maske).ellipse([0, 0, 2 * r, 2 * r], fill=255)
+    # yumusak golge
+    d.ellipse([cx - r + 14, cy - r + 26, cx + r + 14, cy + r + 26],
+              fill=(11, 20, 32, 45))
+    img.paste(daire, (cx - r, cy - r), maske)
+    # ince beyaz halka
+    d.ellipse([cx - r + 16, cy - r + 16, cx + r - 16, cy + r - 16],
+              outline=(255, 255, 255, 230), width=8)
+    boy = 104 if len(etiket) <= 5 else 76
     f = _bold(boy)
     tw = d.textlength(etiket, font=f)
-    d.text((cx - tw / 2, cy - boy * 0.62), etiket, font=f, fill=(255, 200, 60))
+    d.text((cx - tw / 2 + 3, cy - boy * 0.62 + 3), etiket, font=f,
+           fill=(0, 0, 0, 60))
+    d.text((cx - tw / 2, cy - boy * 0.62), etiket, font=f, fill=(255, 255, 255))
     yol = os.path.join(CIKTI, f"hikaye-{slug}.png")
     img.save(yol)
     print("✅", yol)
@@ -215,5 +236,5 @@ if __name__ == "__main__":
     os.makedirs(CIKTI, exist_ok=True)
     for h in HIKAYELER:
         hikaye(h)
-    for slug, etiket in KAPAKLAR:
-        kapak(slug, etiket)
+    for slug, etiket, r1, r2 in KAPAKLAR:
+        kapak(slug, etiket, r1, r2)
