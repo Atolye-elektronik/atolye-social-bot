@@ -1,1 +1,186 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9508155889,
+      "firstName": "Anıl",
+      "lastName": "gündoğdu",
+      "company": "",
+      "address1": "1728 sokak no:47 d:5 ",
+      "address2": "",
+      "city": "İzmir",
+      "cityCode": 35,
+      "district": "Karşıyaka",
+      "districtId": 78,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "35000",
+      "countryCode": "TR",
+      "neighborhoodId": 39821,
+      "neighborhood": "Donanmacı Mah",
+      "phone": null,
+      "fullAddress": "1728 sokak no:47 d:5     Karşıyaka İzmir",
+      "fullName": "Anıl gündoğdu"
+    },
+    "orderNumber": "11526634240",
+    "orderCountryCode": "TR",
+    "grossAmount": 258.0,
+    "packageGrossAmount": 258.0,
+    "totalDiscount": 5.16,
+    "packageSellerDiscount": 5.16,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 5.16,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 5.16
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9508155888,
+      "firstName": "Anıl",
+      "lastName": "gündoğdu",
+      "company": "",
+      "address1": "1728 sokak no:47 d:5 ",
+      "address2": "",
+      "city": "İzmir",
+      "cityCode": 35,
+      "district": "Karşıyaka",
+      "districtId": 78,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "35000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 39821,
+      "neighborhood": "Donanmacı Mah",
+      "phone": null,
+      "fullAddress": "1728 sokak no:47 d:5     Karşıyaka İzmir",
+      "fullName": "Anıl gündoğdu"
+    },
+    "customerFirstName": "Anıl",
+    "customerEmail": "pf+nxjb23m2@trendyolmail.com",
+    "customerId": 218330833,
+    "supplierId": 0,
+    "customerLastName": "gündoğdu",
+    "id": 4094235968,
+    "channelId": 1,
+    "shipmentPackageId": 4094235968,
+    "cargoTrackingNumber": 7270036178784783,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 2,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEJK2040DE",
+        "sku": "ATELJKDE20401",
+        "stockCode": "AEJK2040DE",
+        "productName": "Jumper Kablo Seti 20 cm 40'lı - Dişi/Erkek AEJKDE2040DE, one size",
+        "productCode": 1587804019,
+        "contentId": 1587804019,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 129.0,
+        "lineGrossAmount": 129.0,
+        "discount": 2.58,
+        "lineTotalDiscount": 2.58,
+        "lineSellerDiscount": 2.58,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 126.42,
+            "lineItemDiscount": 2.58,
+            "lineItemSellerDiscount": 2.58,
+            "lineItemTyDiscount": 0.0
+          },
+          {
+            "lineItemPrice": 126.42,
+            "lineItemDiscount": 2.58,
+            "lineItemSellerDiscount": 2.58,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5862899695,
+        "lineId": 5862899695,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELJKDE20401",
+        "orderLineItemStatusName": "Picking",
+        "price": 126.42,
+        "lineUnitPrice": 126.42,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 4391,
+        "commission": 4,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1787337636008,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1787326850598,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1787326855190,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1787327643062,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1787432340000,
+    "estimatedDeliveryEndDate": 1787691540000,
+    "totalPrice": 252.84,
+    "packageTotalPrice": 252.84,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1787432340000,
+    "fastDelivery": true,
+    "originShipmentDate": 1787326850588,
+    "lastModifiedDate": 1787327643062,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10786403388,
+    "is4P": false
+  }
+]
