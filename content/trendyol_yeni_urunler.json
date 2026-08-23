@@ -1,8 +1,21 @@
 {
   "marka": "ATOLYE ELEKTRONİK",
   "kategori": "Robotik Malzeme",
-  "kargoId": null,
-  "ozellikler": [],
+  "kargoId": 9,
+  "ozellikler": [
+    {
+      "attributeId": 1192,
+      "attributeValueId": 10617300
+    },
+    {
+      "attributeId": 1210,
+      "attributeValueId": 24145333
+    },
+    {
+      "attributeId": 1201,
+      "attributeValueId": 10621829
+    }
+  ],
   "urunler": [
     {
       "stokKodu": "AETEMELSET",
@@ -240,5 +253,7 @@
         "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-10lu.jpg?v=1787487390"
       ]
     }
-  ]
+  ],
+  "markaId": 2967081,
+  "kategoriId": 4391
 }
