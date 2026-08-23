@@ -165,12 +165,16 @@ def onaysizlar():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--onaysiz", action="store_true")
+    ap.add_argument("--sku", help="virgullu stok kodu listesi: sadece bunlari gonder")
     ap.add_argument("--kesfet", action="store_true")
     ap.add_argument("--kuru", action="store_true")
     ap.add_argument("--gonder", action="store_true")
     ap.add_argument("--batch")
     a = ap.parse_args()
     cfg = json.loads(URUN_DOSYASI.read_text(encoding="utf-8"))
+    if a.sku:
+        secim = {x.strip() for x in a.sku.split(",")}
+        cfg["urunler"] = [u for u in cfg["urunler"] if u["stokKodu"] in secim]
     if a.kesfet:
         kesfet(cfg)
     if a.kuru:
