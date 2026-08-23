@@ -279,5 +279,22 @@
       "AEDUY-1",
       "AEAMP-1"
     ]
+  },
+  "_hb_sku_eslemesi": {
+    "_not": "23.08.2026 panelden elle eklenen urunler; HB SKU -> satici stok kodu. AETEMELSET-J HB'de yanlis barkodla (2901970047140, dogrusu 2909170442635) acildi, HB'de bu barkod gecerli sayilir.",
+    "AEMOTPRV-1": "HBCV0000HXL0XI",
+    "AEMOTPRV-5": "HBCV0000HXL0XO",
+    "AEVANTSET": "HBCV0000HXKZHC",
+    "AEFENSET": "HBCV0000HXKZ1E",
+    "AETEMELSET-J": "HBCV0000HXKZ18",
+    "AEDUY-10": "HBCV0000HXL67P",
+    "AEDCM3V-5": "HBCV0000HXL576",
+    "AEDUYAMP-10": "HBCV0000HXL2KX",
+    "AEDUYAMP-5": "HBCV0000HXL1R1",
+    "AEPRV-10": "HBCV0000HXL0N0",
+    "AEDUYAMP-1": "HBCV0000HXKXR9",
+    "AEMOTPRV-10": "HBCV0000HXKWT2",
+    "AETEMELSET": "HBCV0000HXKRVJ",
+    "AEDCM3V-1": "HBCV0000HXKHJZ"
   }
 }
