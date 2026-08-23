@@ -123,9 +123,17 @@ DAKIKA_SUTUNU = ".tiktok-timepicker-option-text.tiktok-timepicker-right"
 
 # Takvim/saat açılır kutularındaki seçilebilir hücreler ({deger} doldurulur).
 TAKVIM_GUNU = [
+    ".calendar-wrapper span.day.valid:text-is('{deger}')",
+    ".calendar-wrapper span.day:text-is('{deger}')",
     "[class*='calendar'] span:text-is('{deger}')",
     "[class*='day']:text-is('{deger}')",
 ]
+
+# Takvim paneli ve ay gezinme (23.08.2026 arayuzu)
+TAKVIM_PANELI = ".calendar-wrapper"
+TAKVIM_AY_BASLIK = ".calendar-wrapper .month-title"
+TAKVIM_YIL_BASLIK = ".calendar-wrapper .year-title"
+TAKVIM_ILERI_OK = ".calendar-wrapper .month-header-wrapper .arrow >> nth=1"
 
 SAAT_SECENEGI = [
     "[class*='time-picker'] div:text-is('{deger}')",

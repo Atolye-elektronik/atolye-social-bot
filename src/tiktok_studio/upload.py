@@ -162,6 +162,49 @@ def _saat_sec(kok, sayfa, ne_zaman) -> bool:
     return True
 
 
+AYLAR_TR = (
+    "ocak", "şubat", "mart", "nisan", "mayıs", "haziran",
+    "temmuz", "ağustos", "eylül", "ekim", "kasım", "aralık",
+)
+
+
+def _tarih_sec(kok, sayfa, ne_zaman) -> bool:
+    """Tarihi takvimden seçer (23.08.2026 arayüzü).
+
+    Alan salt-okunur; tıklayınca `.calendar-wrapper` açılıyor. Gün hücreleri
+    `span.day.valid`, seçili olan `.selected`. Hedef ay görünmüyorsa ileri
+    okla ilerliyoruz (ör. 27 Ağustos'tan 4 Eylül'e).
+    """
+    alan = gorunmesini_bekle(kok, selectors.TARIH_ALANI, "tarih alanı", sayfa=sayfa)
+    alan.click()
+    bekle(1.5)
+
+    hedef_ay = AYLAR_TR[ne_zaman.month - 1]
+    for _ in range(12):
+        try:
+            baslik = kok.locator(selectors.TAKVIM_AY_BASLIK).first.inner_text(timeout=3000)
+            yil = kok.locator(selectors.TAKVIM_YIL_BASLIK).first.inner_text(timeout=3000)
+        except Exception:  # noqa: BLE001 - takvim acilmadi
+            break
+        if hedef_ay in baslik.strip().lower() and str(ne_zaman.year) in yil:
+            break
+        try:
+            kok.locator(selectors.TAKVIM_ILERI_OK).first.click(timeout=3000)
+            bekle(0.8)
+        except Exception:  # noqa: BLE001
+            break
+
+    for kalip in selectors.TAKVIM_GUNU:
+        try:
+            hucre = kok.locator(kalip.format(deger=ne_zaman.day)).first
+            hucre.click(timeout=4000)
+            bekle(0.8)
+            return True
+        except Exception:  # noqa: BLE001
+            continue
+    return False
+
+
 def _zamanla(kok, sayfa, ne_zaman: dt.datetime) -> None:
     """Zamanlama anahtarını açar, tarih ve saati kurar, sonucu DOĞRULAR.
 
@@ -177,22 +220,13 @@ def _zamanla(kok, sayfa, ne_zaman: dt.datetime) -> None:
 
     _saat_sec(kok, sayfa, ne_zaman)
 
-    tarih_alani = gorunmesini_bekle(
-        kok, selectors.TARIH_ALANI, "tarih alanı", sayfa=sayfa
-    )
-    tarih_metni = ne_zaman.strftime("%Y-%m-%d")
-    _alan_doldur(
-        kok, tarih_alani, tarih_metni, selectors.TAKVIM_GUNU, str(ne_zaman.day)
-    )
+    _tarih_sec(kok, sayfa, ne_zaman)
     bekle(1)
 
     _zamanlama_dogrula(kok, sayfa, ne_zaman)
 
 
-AYLAR_TR = (
-    "ocak", "şubat", "mart", "nisan", "mayıs", "haziran",
-    "temmuz", "ağustos", "eylül", "ekim", "kasım", "aralık",
-)
+
 
 
 def _tarih_uyuyor(okunan: str, ne_zaman: dt.datetime) -> bool:
