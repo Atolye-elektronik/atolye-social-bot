@@ -171,6 +171,7 @@ def main():
     ap.add_argument("--guncelle", action="store_true", help="onaysiz urunleri guncelle (unapproved-bulk-update)")
     ap.add_argument("--stok", action="store_true", help="config'teki stok/fiyati price-and-inventory ile gonder")
     ap.add_argument("--not-ekle", help="virgullu stokCode listesi: onayli urun aciklamasinin basina sema notu ekle")
+    ap.add_argument("--fiyat-dok", action="store_true", help="onayli urunlerin stokKodu|barkod|fiyat|stok dokumu")
     ap.add_argument("--kesfet", action="store_true")
     ap.add_argument("--kuru", action="store_true")
     ap.add_argument("--gonder", action="store_true")
@@ -195,6 +196,15 @@ def main():
         print("batchRequestId:", sonuc.get("batchRequestId"))
     if a.batch:
         batch_sonuc(a.batch)
+    if a.fiyat_dok:
+        for _, p in tc.iter_all_products(size=100):
+            for v in p.get("variants", [p]) or [p]:
+                sp = v.get("salePrice")
+                if isinstance(sp, dict): sp = sp.get("value")
+                q = v.get("quantity")
+                if isinstance(q, dict): q = q.get("quantity")
+                print("FD|", v.get("stockCode") or p.get("stockCode"), "|", v.get("barcode") or p.get("barcode"),
+                      "|", sp, "|", q, "|", (p.get("title") or "")[:55])
     if a.onaysiz:
         onaysizlar()
     if a.stok:
