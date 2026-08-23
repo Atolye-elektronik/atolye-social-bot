@@ -39,15 +39,14 @@ except ImportError:  # paket olarak import edildiğinde
 
 _load_dotenv()
 
-MERCHANT_ID = os.environ.get("HEPSIBURADA_MERCHANT_ID")
-DEV_USERNAME = os.environ.get("HEPSIBURADA_DEV_USERNAME")
+MERCHANT_ID = (os.environ.get("HEPSIBURADA_MERCHANT_ID") or "").strip() or None
+DEV_USERNAME = (os.environ.get("HEPSIBURADA_DEV_USERNAME") or "").strip() or None
 # Basic auth kullanıcı adı MerchantId'nin kendisi (entegrasyon ekibinin
 # ilettiği bilgiye göre) — geliştirici kullanıcı adı değil, o User-Agent'a
 # giriyor. Farklı bir MPOP kullanıcısı verilirse o öne geçer.
-USERNAME = os.environ.get("HEPSIBURADA_MPOP_USERNAME") or MERCHANT_ID
-PASSWORD = os.environ.get("HEPSIBURADA_MPOP_PASSWORD") or os.environ.get(
-    "HEPSIBURADA_SECRET_KEY"
-)
+USERNAME = (os.environ.get("HEPSIBURADA_MPOP_USERNAME") or "").strip() or MERCHANT_ID
+PASSWORD = (os.environ.get("HEPSIBURADA_MPOP_PASSWORD") or "").strip() or (os.environ.get(
+    "HEPSIBURADA_SECRET_KEY") or "").strip() or None
 ENV = os.environ.get("HEPSIBURADA_ENV", "prod").lower()
 
 MPOP_BASE = (
@@ -89,6 +88,8 @@ def _request(method, path, **kwargs):
         timeout=60,
         **kwargs,
     )
+    if resp.status_code in (401, 403):
+        print("HB MPOP yetki hatasi", resp.status_code, "| user uzunluk", len(USERNAME or ""), "| sifre uzunluk", len(PASSWORD or ""), "| UA uzunluk", len(DEV_USERNAME or ""), "| govde:", resp.text[:300])
     resp.raise_for_status()
     return resp.json() if resp.content else {}
 
