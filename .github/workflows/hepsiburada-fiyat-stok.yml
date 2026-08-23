@@ -1,0 +1,29 @@
+name: Hepsiburada fiyat-stok uygula
+
+on:
+  workflow_dispatch:
+    inputs:
+      skus:
+        description: "Virgülle ayrılmış SKU listesi (boş = override tablosundaki hepsi)"
+        required: false
+        default: ""
+
+jobs:
+  uygula:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet requests
+      - name: Fiyat ve stok yükle
+        env:
+          HEPSIBURADA_MERCHANT_ID: ${{ secrets.HEPSIBURADA_MERCHANT_ID }}
+          HEPSIBURADA_SECRET_KEY: ${{ secrets.HEPSIBURADA_SECRET_KEY }}
+          HEPSIBURADA_DEV_USERNAME: ${{ secrets.HEPSIBURADA_DEV_USERNAME }}
+          HEPSIBURADA_ENV: ${{ secrets.HEPSIBURADA_ENV }}
+        working-directory: src/marketplaces
+        run: python hepsiburada_fiyat_stok_uygula.py "${{ inputs.skus }}"
