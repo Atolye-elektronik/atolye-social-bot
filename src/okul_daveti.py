@@ -31,6 +31,7 @@ import imaplib
 import smtplib
 import time
 from email.message import EmailMessage
+from email.utils import formatdate, make_msgid
 
 STATE_PATH = pathlib.Path("state/okul_gonderilen.json")
 EK_DOSYA = pathlib.Path("pazarlama/atolye-elektronik-okul-fiyat-listesi.pdf")
@@ -215,6 +216,8 @@ def mesaj_kur(okul: dict, gonderen: str, imza: str, sablon: str = "mtal") -> Ema
     konu, govde = SABLONLAR[sablon]
     mesaj = EmailMessage()
     mesaj["Subject"] = konu
+    mesaj["Date"] = formatdate(localtime=True)
+    mesaj["Message-ID"] = make_msgid(domain="atolyeelektronik.com")
     mesaj["From"] = f"Atölye Elektronik <{gonderen}>"
     mesaj["To"] = okul["eposta"]
     mesaj["Reply-To"] = gonderen
