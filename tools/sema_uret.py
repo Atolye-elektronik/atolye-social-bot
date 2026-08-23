@@ -119,6 +119,7 @@ class Sema:
         return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="Segoe UI, Arial, sans-serif">
 <defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.3" fill="#d6dde8"/></pattern></defs>
 <rect width="{W}" height="{H}" fill="{RENK["bg"]}"/><rect width="{W}" height="{H}" fill="url(#dots)"/>
+{filigran()}
 <text x="50" y="58" font-size="40" font-weight="800" fill="{RENK["baslik"]}">{esc(self.baslik)} — Bağlantı Şeması</text>
 <text x="50" y="92" font-size="21" fill="{RENK["gri"]}">{esc(self.altbaslik)}</text>
 <text x="{W - 50}" y="52" text-anchor="end" font-size="22" font-weight="800" fill="{RENK["marka"]}">ATÖLYE ELEKTRONİK</text>
@@ -128,7 +129,18 @@ class Sema:
 <rect x="1090" y="680" width="490" height="42" rx="12" fill="{RENK["baslik"]}"/><rect x="1090" y="700" width="490" height="22" fill="{RENK["baslik"]}"/>
 <text x="1108" y="709" font-size="22" font-weight="700" fill="#fff">Önemli Notlar</text>
 {notlar}
+<text x="50" y="{H - 20}" font-size="14" fill="{RENK["gri"]}">© 2026 Atölye Elektronik · Şema No {esc(self.model)} — 5846 sayılı FSEK ile korunur; izinsiz kopyalanamaz, çoğaltılamaz, başka ürün sayfalarında kullanılamaz.</text>
 </svg>'''
+
+
+def filigran():
+    """Kırpılması zor, yarı saydam çapraz marka deseni."""
+    out = ['<g opacity="0.045" font-weight="800" font-size="40" fill="#003360">']
+    for i, y in enumerate(range(160, H + 200, 230)):
+        for x in range(-300 + (i % 2) * 300, W + 300, 640):
+            out.append(f'<text x="{x}" y="{y}" transform="rotate(-22 {x} {y})">ATÖLYE ELEKTRONİK</text>')
+    out.append('</g>')
+    return "".join(out)
 
 
 # ============================ ŞEMALAR =====================================
@@ -450,8 +462,34 @@ async def render(adlar):
             await pg.screenshot(path=str(OUT / f"{ad}.jpg"), type="jpeg", quality=92, clip={"x": 0, "y": 0, "width": W, "height": H})
             await pg.pdf(path=str(OUT / f"{ad}.pdf"), format="A4", landscape=True, print_background=True,
                          margin={"top": "8mm", "bottom": "8mm", "left": "8mm", "right": "8mm"}, scale=0.62)
+            meta_yaz(OUT / f"{ad}.jpg", OUT / f"{ad}.pdf", ad)
             print("OK", ad)
         await b.close()
+
+
+def meta_yaz(jpg, pdf, ad):
+    """Telif bilgisini dosyanın içine göm (EXIF + XMP + PDF info)."""
+    from PIL import Image
+    telif = "Copyright (c) 2026 Atolye Elektronik. All rights reserved. Izinsiz kullanilamaz."
+    im = Image.open(jpg)
+    ex = im.getexif()
+    ex[0x013B] = "Atolye Elektronik"        # Artist
+    ex[0x8298] = telif                       # Copyright
+    ex[0x010E] = f"Atolye Elektronik baglanti semasi - {ad}"  # ImageDescription
+    ex[0x0131] = "atolyeelektronik.com sema_uret"             # Software
+    xmp = (f'<?xpacket begin="" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/">'
+           f'<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description '
+           f'xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/">'
+           f'<dc:creator><rdf:Seq><rdf:li>Atolye Elektronik</rdf:li></rdf:Seq></dc:creator>'
+           f'<dc:rights><rdf:Alt><rdf:li xml:lang="x-default">{telif}</rdf:li></rdf:Alt></dc:rights>'
+           f'<xmpRights:Marked>True</xmpRights:Marked><xmpRights:WebStatement>https://atolyeelektronik.com</xmpRights:WebStatement>'
+           f'</rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="w"?>').encode("utf-8")
+    im.save(jpg, "JPEG", quality=92, exif=ex.tobytes(), xmp=xmp)
+    from pypdf import PdfReader, PdfWriter
+    r = PdfReader(pdf); w = PdfWriter(); w.append(r)
+    w.add_metadata({"/Author": "Atolye Elektronik", "/Title": f"Baglanti Semasi - {ad}", "/Subject": telif,
+                    "/Creator": "atolyeelektronik.com", "/Producer": "Atolye Elektronik"})
+    with open(pdf, "wb") as f: w.write(f)
 
 
 if __name__ == "__main__":
