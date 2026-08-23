@@ -166,6 +166,7 @@ def onaysizlar():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--onaysiz", action="store_true")
+    ap.add_argument("--kategori", help="kesfet icin kategori adi (config yerine)")
     ap.add_argument("--sku", help="virgullu stok kodu listesi: sadece bunlari gonder")
     ap.add_argument("--guncelle", action="store_true", help="onaysiz urunleri guncelle (unapproved-bulk-update)")
     ap.add_argument("--stok", action="store_true", help="config'teki stok/fiyati price-and-inventory ile gonder")
@@ -180,6 +181,7 @@ def main():
         secim = {x.strip() for x in a.sku.split(",")}
         cfg["urunler"] = [u for u in cfg["urunler"] if u["stokKodu"] in secim]
     if a.kesfet:
+        if a.kategori: cfg["kategori"] = a.kategori
         kesfet(cfg)
     if a.kuru:
         print(json.dumps(payload_kur(cfg), ensure_ascii=False, indent=2)[:8000])

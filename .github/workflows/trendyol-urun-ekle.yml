@@ -41,7 +41,7 @@ jobs:
           PYTHONIOENCODING: utf-8
         run: |
           case "${{ inputs.islem }}" in
-            kesfet) python src/marketplaces/trendyol_urun_ekle.py --kesfet ;;
+            kesfet) python src/marketplaces/trendyol_urun_ekle.py --kesfet ${{ inputs.sku && format('--kategori "{0}"', inputs.sku) || '' }} ;;
             kuru)   python src/marketplaces/trendyol_urun_ekle.py --kuru ;;
             gonder) python src/marketplaces/trendyol_urun_ekle.py --gonder ${{ inputs.sku && format('--sku "{0}"', inputs.sku) || '' }} ;;
             batch)  python src/marketplaces/trendyol_urun_ekle.py --batch "${{ inputs.batch_id }}" ;;
