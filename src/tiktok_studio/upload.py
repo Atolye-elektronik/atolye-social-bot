@@ -123,6 +123,45 @@ def _alan_doldur(kok, alan, deger: str, kaliplar: list[str], secenek: str) -> bo
     return True
 
 
+def _saat_sec(kok, sayfa, ne_zaman) -> bool:
+    """Saati kaydırmalı panelden seçer (20.08.2026 arayüzü).
+
+    Alan artık salt-okunur; tıklayınca iki sütunlu bir liste açılıyor
+    (solda saat, sağda dakika). Yazmak yerine ilgili seçeneğe tıklıyoruz.
+    """
+    alan = gorunmesini_bekle(kok, selectors.SAAT_ALANI, "saat alanı", sayfa=sayfa)
+    alan.click()
+    bekle(1.5)
+
+    for sutun, deger in ((selectors.SAAT_SUTUNU, ne_zaman.strftime("%H")),
+                         (selectors.DAKIKA_SUTUNU, ne_zaman.strftime("%M"))):
+        secenek = kok.locator(f"{sutun}:text-is('{deger}')").first
+        try:
+            secenek.scroll_into_view_if_needed(timeout=5000)
+            secenek.click(timeout=5000)
+        except Exception:  # noqa: BLE001 - JS ile zorla (liste sanal kaydirmali)
+            try:
+                kok.evaluate(
+                    """([sec, dgr]) => {
+                        const hedef = [...document.querySelectorAll(sec)]
+                            .find(e => e.textContent.trim() === dgr);
+                        if (hedef) hedef.click();
+                    }""",
+                    [sutun, deger],
+                )
+            except Exception:  # noqa: BLE001
+                return False
+        bekle(0.6)
+
+    # paneli kapat ki sonraki alan tiklanabilsin
+    try:
+        sayfa.keyboard.press("Escape")
+    except Exception:  # noqa: BLE001
+        pass
+    bekle(0.5)
+    return True
+
+
 def _zamanla(kok, sayfa, ne_zaman: dt.datetime) -> None:
     """Zamanlama anahtarını açar, tarih ve saati kurar, sonucu DOĞRULAR.
 
@@ -136,9 +175,7 @@ def _zamanla(kok, sayfa, ne_zaman: dt.datetime) -> None:
     anahtar.click()
     bekle(2)
 
-    saat_alani = gorunmesini_bekle(kok, selectors.SAAT_ALANI, "saat alanı", sayfa=sayfa)
-    saat_metni = ne_zaman.strftime("%H:%M")
-    _alan_doldur(kok, saat_alani, saat_metni, selectors.SAAT_SECENEGI, saat_metni)
+    _saat_sec(kok, sayfa, ne_zaman)
 
     tarih_alani = gorunmesini_bekle(
         kok, selectors.TARIH_ALANI, "tarih alanı", sayfa=sayfa

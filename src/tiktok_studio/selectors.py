@@ -99,17 +99,27 @@ ZAMANLA_ANAHTARI = [
     "input[type='checkbox'][class*='switch']",
 ]
 
+# 20.08.2026: alanlar salt-okunur oldu; tiklayinca panel aciliyor.
+# Sirali: .scheduled-picker icindeki 1. input saat, 2. input tarih.
 TARIH_ALANI = [
+    ".scheduled-picker input.TUXTextInputCore-input >> nth=1",
+    ".scheduled-picker input >> nth=1",
     "[class*='date-picker'] input",
     "input[placeholder*='YYYY']",
     "[class*='TUXDatePicker'] input",
 ]
 
 SAAT_ALANI = [
+    ".scheduled-picker input.TUXTextInputCore-input >> nth=0",
+    ".scheduled-picker input >> nth=0",
     "[class*='time-picker'] input",
     "input[placeholder*='HH']",
-    "[class*='TUXTimePicker'] input",
 ]
+
+# Yeni kaydirmali saat secici: sol sutun saat, sag sutun dakika.
+SAAT_PANELI = ".tiktok-timepicker-time-picker-container"
+SAAT_SUTUNU = ".tiktok-timepicker-option-text.tiktok-timepicker-left"
+DAKIKA_SUTUNU = ".tiktok-timepicker-option-text.tiktok-timepicker-right"
 
 # Takvim/saat açılır kutularındaki seçilebilir hücreler ({deger} doldurulur).
 TAKVIM_GUNU = [
