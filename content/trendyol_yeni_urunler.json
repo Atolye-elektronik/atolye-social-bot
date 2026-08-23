@@ -259,12 +259,13 @@
       "barkod": "2901880000617",
       "fiyat": 109,
       "stok": 30,
-      "baslik": "5V Aktif Buzzer - 6'lı Paket - Arduino Uyumlu Sesli Uyarı Elemanı",
       "gorseller": [
         "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/buzzer-1.jpg",
         "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/buzzer-2.jpg"
       ],
-      "aciklama": "<p><strong>6 adet</strong> 5V aktif buzzer. Arduino, PIC ve tüm mikrodenetleyici projelerinde sesli uyarı için; devrede doğrudan çalışır, ek sürücü gerektirmez.</p><ul><li>Çalışma gerilimi: 3-5V (aktif tip, dahili osilatörlü)</li><li>2 pin, lehimlemeye uygun bacaklı</li><li>Sınıf ve atölye kullanımı için 6'lı ekonomik paket</li></ul>"
+      "aciklama": "<p><strong>6 adet</strong> 5V aktif buzzer. Arduino, PIC ve tüm mikrodenetleyici projelerinde sesli uyarı için; devrede doğrudan çalışır, ek sürücü gerektirmez.</p><ul><li>Çalışma gerilimi: 3-5V (aktif tip, dahili osilatörlü)</li><li>2 pin, lehimlemeye uygun bacaklı</li><li>Sınıf ve atölye kullanımı için 6'lı ekonomik paket</li></ul>",
+      "ad": "5V Aktif Buzzer - 6'lı Paket - Arduino Uyumlu Sesli Uyarı Elemanı",
+      "desi": 1
     },
     {
       "stokKodu": "AEPOT10K-6",
@@ -272,11 +273,12 @@
       "barkod": "2901880000624",
       "fiyat": 149,
       "stok": 30,
-      "baslik": "10K Potansiyometre - 6'lı Paket - B10K Arduino Uyumlu",
       "gorseller": [
         "https://cdn.dsmcdn.com/ty1419/product/media/images/prod/QC/20240714/01/bf66bc1b-abc8-3c80-99ce-9efb50c0ca36/1_org_zoom.jpg"
       ],
-      "aciklama": "<p><strong>6 adet</strong> B10K (10K ohm) potansiyometre. Arduino analog giriş uygulamaları, ses/ışık seviye ayarı ve deney setleri için.</p><ul><li>Direnç: 10K ohm, lineer (B tipi)</li><li>3 bacaklı, breadboard ve PCB uyumlu</li><li>Sınıf ve atölye kullanımı için 6'lı ekonomik paket</li></ul>"
+      "aciklama": "<p><strong>6 adet</strong> B10K (10K ohm) potansiyometre. Arduino analog giriş uygulamaları, ses/ışık seviye ayarı ve deney setleri için.</p><ul><li>Direnç: 10K ohm, lineer (B tipi)</li><li>3 bacaklı, breadboard ve PCB uyumlu</li><li>Sınıf ve atölye kullanımı için 6'lı ekonomik paket</li></ul>",
+      "ad": "10K Potansiyometre - 6'lı Paket - B10K Arduino Uyumlu",
+      "desi": 1
     },
     {
       "stokKodu": "AEPY18650-2",
@@ -284,11 +286,12 @@
       "barkod": "2901880000631",
       "fiyat": 147,
       "stok": 30,
-      "baslik": "18650 Li-Ion Pil Yuvası 2'li Seri Kablolu - 2 Adet Paket",
       "gorseller": [
         "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-1.jpg"
       ],
-      "aciklama": "<p><strong>2 adet</strong> 2'li seri 18650 Li-Ion pil yuvası (kablolu). Robot projeleri, Arduino beslemesi ve taşınabilir güç uygulamaları için 7.4V çıkış sağlar.</p><ul><li>2 x 18650 seri bağlantı (piller dahil değildir)</li><li>Kablolu, lehimlemeye hazır uçlar</li><li>Yaylı sağlam kontak yapısı</li></ul>"
+      "aciklama": "<p><strong>2 adet</strong> 2'li seri 18650 Li-Ion pil yuvası (kablolu). Robot projeleri, Arduino beslemesi ve taşınabilir güç uygulamaları için 7.4V çıkış sağlar.</p><ul><li>2 x 18650 seri bağlantı (piller dahil değildir)</li><li>Kablolu, lehimlemeye hazır uçlar</li><li>Yaylı sağlam kontak yapısı</li></ul>",
+      "ad": "18650 Li-Ion Pil Yuvası 2'li Seri Kablolu - 2 Adet Paket",
+      "desi": 1
     },
     {
       "stokKodu": "AETP4056-2",
@@ -296,12 +299,13 @@
       "barkod": "2901880000648",
       "fiyat": 137,
       "stok": 30,
-      "baslik": "TP4056 Type-C Li-Ion Pil Şarj Modülü Korumalı - 2 Adet Paket",
       "gorseller": [
         "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/tp4056-1.jpg",
         "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/tp4056-2.jpg"
       ],
-      "aciklama": "<p><strong>2 adet</strong> TP4056 Type-C korumalı Li-Ion/Li-Po şarj devresi. 18650 ve tek hücreli 3.7V pillerin güvenli şarjı için; aşırı şarj/deşarj koruması dahildir.</p><ul><li>Giriş: Type-C 5V · Şarj akımı: 1A</li><li>Koruma entegreli (DW01A + FS8205A)</li><li>Projelerde kalıcı kullanım için 2'li paket</li></ul>"
+      "aciklama": "<p><strong>2 adet</strong> TP4056 Type-C korumalı Li-Ion/Li-Po şarj devresi. 18650 ve tek hücreli 3.7V pillerin güvenli şarjı için; aşırı şarj/deşarj koruması dahildir.</p><ul><li>Giriş: Type-C 5V · Şarj akımı: 1A</li><li>Koruma entegreli (DW01A + FS8205A)</li><li>Projelerde kalıcı kullanım için 2'li paket</li></ul>",
+      "ad": "TP4056 Type-C Li-Ion Pil Şarj Modülü Korumalı - 2 Adet Paket",
+      "desi": 1
     }
   ],
   "markaId": 2967081,
