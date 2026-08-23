@@ -7,6 +7,10 @@ on:
         description: "Virgülle ayrılmış SKU listesi (boş = override tablosundaki hepsi)"
         required: false
         default: ""
+      ortam:
+        description: "prod | sit"
+        required: false
+        default: "prod"
 
 jobs:
   uygula:
@@ -24,6 +28,6 @@ jobs:
           HEPSIBURADA_MERCHANT_ID: ${{ secrets.HEPSIBURADA_MERCHANT_ID }}
           HEPSIBURADA_SECRET_KEY: ${{ secrets.HEPSIBURADA_SECRET_KEY }}
           HEPSIBURADA_DEV_USERNAME: ${{ secrets.HEPSIBURADA_DEV_USERNAME }}
-          HEPSIBURADA_ENV: ${{ secrets.HEPSIBURADA_ENV }}
+          HEPSIBURADA_ENV: ${{ inputs.ortam }}
         working-directory: src/marketplaces
         run: python hepsiburada_fiyat_stok_uygula.py "${{ inputs.skus }}"
