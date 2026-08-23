@@ -62,5 +62,21 @@
   "AEDCM3V-10": {
     "barkod": "2908486849664",
     "batchRequestId": "20750f2e-70fe-4e4b-ab55-1ba6c76d85bf-1788099433"
+  },
+  "AEBZZR5V-6": {
+    "barkod": "2901880000617",
+    "batchRequestId": "a70c28d8-57fe-4401-befc-d1b486305dea-1788127192"
+  },
+  "AEPOT10K-6": {
+    "barkod": "2901880000624",
+    "batchRequestId": "a70c28d8-57fe-4401-befc-d1b486305dea-1788127192"
+  },
+  "AEPY18650-2": {
+    "barkod": "2901880000631",
+    "batchRequestId": "a70c28d8-57fe-4401-befc-d1b486305dea-1788127192"
+  },
+  "AETP4056-2": {
+    "barkod": "2901880000648",
+    "batchRequestId": "a70c28d8-57fe-4401-befc-d1b486305dea-1788127192"
   }
 }
