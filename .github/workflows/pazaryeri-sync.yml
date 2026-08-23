@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: pazaryeri-sync
@@ -43,6 +44,16 @@ jobs:
           HEPSIBURADA_ENV: ${{ secrets.HEPSIBURADA_ENV }}
         working-directory: src/marketplaces
         run: python hepsiburada_sync.py
+      - name: Trendyol musteri sorulari
+        if: always()
+        env:
+          TRENDYOL_SUPPLIER_ID: ${{ secrets.TRENDYOL_SUPPLIER_ID }}
+          TRENDYOL_API_KEY: ${{ secrets.TRENDYOL_API_KEY }}
+          TRENDYOL_API_SECRET: ${{ secrets.TRENDYOL_API_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        working-directory: src/marketplaces
+        run: python trendyol_sorular.py
       - name: Kaydi commit et
         if: always()
         run: bash tools/state_it.sh "siparis durumu guncellendi"
