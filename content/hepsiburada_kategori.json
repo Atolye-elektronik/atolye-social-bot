@@ -8,7 +8,8 @@
     "categoryId null olan türdeki ürünler gönderilmez, atlanır.",
     "ad_override: SKU -> ürün adı. Otomatik kısaltmanın beğenilmediği ürünler için.",
     "NOT: kg alanının Hepsiburada'daki adı 'Desi' — kilogram değil, hacimsel ağırlık.",
-    "Paket Görseli (00000MU) zorunlu; betik ürünün ilk görselini oraya yazıyor."
+    "Paket Görseli (00000MU) zorunlu; betik ürünün ilk görselini oraya yazıyor.",
+    "fiyat_override: SKU -> pazar yeri fiyatı (web fiyatından farklıysa). sku_atla: pazar yerine konmayacak SKU'lar."
   ],
   "varsayilan": {
     "categoryId": null,
@@ -58,5 +59,145 @@
       "AETEMDEF-20": 2,
       "AETEMDEF-30": 2
     }
+  },
+  "Motor": {
+    "_yol": "Anne / Bebek / Oyuncak > Oyuncak > Eğitici ve Öğretici Oyun > Bilim Seti",
+    "categoryId": 23024292,
+    "varsayilan_kg": 1,
+    "desi": 1,
+    "sabit_ozellikler": {
+      "yas_araligi": "8+ Yaş"
+    },
+    "desi_override": {},
+    "ad_override": {},
+    "stok_override": {},
+    "fiyat_override": {
+      "AEDCM3V-1": 99,
+      "AEDCM3V-5": 179,
+      "AEDCM3V-10": 319,
+      "AEPRV-5": 129,
+      "AEPRV-10": 169,
+      "AEDUYAMP-1": 99,
+      "AEDUYAMP-5": 249,
+      "AEDUY-10": 279,
+      "AEDUYAMP-10": 349,
+      "AEMOTPRV-1": 109,
+      "AEMOTPRV-5": 269,
+      "AEMOTPRV-10": 399,
+      "AEVANTSET": 159,
+      "AEFENSET": 259,
+      "AETEMELSET": 319,
+      "AETEMELSET-J": 369
+    },
+    "sku_atla": [
+      "AEPRV-1",
+      "AEDUY-1",
+      "AEAMP-1"
+    ]
+  },
+  "Motor Aksesuarı": {
+    "_yol": "Anne / Bebek / Oyuncak > Oyuncak > Eğitici ve Öğretici Oyun > Bilim Seti",
+    "categoryId": 23024292,
+    "varsayilan_kg": 1,
+    "desi": 1,
+    "sabit_ozellikler": {
+      "yas_araligi": "8+ Yaş"
+    },
+    "desi_override": {},
+    "ad_override": {},
+    "stok_override": {},
+    "fiyat_override": {
+      "AEDCM3V-1": 99,
+      "AEDCM3V-5": 179,
+      "AEDCM3V-10": 319,
+      "AEPRV-5": 129,
+      "AEPRV-10": 169,
+      "AEDUYAMP-1": 99,
+      "AEDUYAMP-5": 249,
+      "AEDUY-10": 279,
+      "AEDUYAMP-10": 349,
+      "AEMOTPRV-1": 109,
+      "AEMOTPRV-5": 269,
+      "AEMOTPRV-10": 399,
+      "AEVANTSET": 159,
+      "AEFENSET": 259,
+      "AETEMELSET": 319,
+      "AETEMELSET-J": 369
+    },
+    "sku_atla": [
+      "AEPRV-1",
+      "AEDUY-1",
+      "AEAMP-1"
+    ]
+  },
+  "Fen Deney Malzemesi": {
+    "_yol": "Anne / Bebek / Oyuncak > Oyuncak > Eğitici ve Öğretici Oyun > Bilim Seti",
+    "categoryId": 23024292,
+    "varsayilan_kg": 1,
+    "desi": 1,
+    "sabit_ozellikler": {
+      "yas_araligi": "8+ Yaş"
+    },
+    "desi_override": {},
+    "ad_override": {},
+    "stok_override": {},
+    "fiyat_override": {
+      "AEDCM3V-1": 99,
+      "AEDCM3V-5": 179,
+      "AEDCM3V-10": 319,
+      "AEPRV-5": 129,
+      "AEPRV-10": 169,
+      "AEDUYAMP-1": 99,
+      "AEDUYAMP-5": 249,
+      "AEDUY-10": 279,
+      "AEDUYAMP-10": 349,
+      "AEMOTPRV-1": 109,
+      "AEMOTPRV-5": 269,
+      "AEMOTPRV-10": 399,
+      "AEVANTSET": 159,
+      "AEFENSET": 259,
+      "AETEMELSET": 319,
+      "AETEMELSET-J": 369
+    },
+    "sku_atla": [
+      "AEPRV-1",
+      "AEDUY-1",
+      "AEAMP-1"
+    ]
+  },
+  "Fen Deney Seti": {
+    "_yol": "Anne / Bebek / Oyuncak > Oyuncak > Eğitici ve Öğretici Oyun > Bilim Seti",
+    "categoryId": 23024292,
+    "varsayilan_kg": 1,
+    "desi": 1,
+    "sabit_ozellikler": {
+      "yas_araligi": "8+ Yaş"
+    },
+    "desi_override": {},
+    "ad_override": {},
+    "stok_override": {},
+    "fiyat_override": {
+      "AEDCM3V-1": 99,
+      "AEDCM3V-5": 179,
+      "AEDCM3V-10": 319,
+      "AEPRV-5": 129,
+      "AEPRV-10": 169,
+      "AEDUYAMP-1": 99,
+      "AEDUYAMP-5": 249,
+      "AEDUY-10": 279,
+      "AEDUYAMP-10": 349,
+      "AEMOTPRV-1": 109,
+      "AEMOTPRV-5": 269,
+      "AEMOTPRV-10": 399,
+      "AEVANTSET": 159,
+      "AEFENSET": 259,
+      "AETEMELSET": 319,
+      "AETEMELSET-J": 369
+    },
+    "sku_atla": [
+      "AEPRV-1",
+      "AEDUY-1",
+      "AEAMP-1"
+    ]
   }
 }

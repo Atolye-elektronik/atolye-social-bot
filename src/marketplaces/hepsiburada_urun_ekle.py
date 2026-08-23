@@ -277,7 +277,9 @@ def hb_urunu_kur(urun: dict, varyant: dict, kategori: dict, barkod_prefix: str |
     # Katalog ucu fiyat ve stoğu da kabul ediyor (kategori şemasında opsiyonel
     # alanlar olarak duruyorlar), böylece onay sonrası ayrıca listeleme
     # yapmaya gerek kalmıyor.
-    fiyat = varyant.get("price")
+    # Pazar yeri fiyatı web fiyatından farklıysa eşleme dosyasındaki
+    # fiyat_override (SKU -> fiyat) önceliklidir (komisyon+kargo farkı).
+    fiyat = (kategori.get("fiyat_override") or {}).get(sku) or varyant.get("price")
     if fiyat:
         ozellikler["price"] = str(fiyat)
     # Stok: herkese açık Shopify listesi bu alanı vermiyor, o yüzden eşleme
@@ -327,6 +329,9 @@ def payload_kur(count: int, barkod_prefix: str | None, tekrar: bool,
 
         for varyant in urun.get("variants", []):
             sku = (varyant.get("sku") or "").strip()
+            if sku in (kategori.get("sku_atla") or []):
+                atlanan.append(f"{sku}: sku_atla listesinde, pazar yerine konmuyor")
+                continue
             if sku and sku in onceki and not tekrar:
                 atlanan.append(f"{sku}: daha önce gönderilmiş, atlandı (--tekrar ile zorla)")
                 continue
