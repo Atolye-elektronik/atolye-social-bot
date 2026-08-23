@@ -148,8 +148,23 @@ def batch_sonuc(bid):
     return r
 
 
+def onaysizlar():
+    for st in ("rejected", "pendingApproval"):
+        try:
+            d = _get(f"/product/sellers/{tc.SUPPLIER_ID}/products/unapproved", status=st, page=0, size=100)
+        except Exception as e:  # noqa: BLE001
+            print(st, "okunamadi:", str(e)[:120]); continue
+        items = d.get("content", d if isinstance(d, list) else [])
+        print(f"== {st}: {len(items)}")
+        for it in items:
+            print(" ", it.get("stockCode") or it.get("productMainId"), "|", (it.get("title") or "")[:50])
+            for r in it.get("rejectReasonDetails") or []:
+                print("     -", r.get("rejectReason"), ":", (r.get("rejectReasonDetail") or "")[:160])
+
+
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--onaysiz", action="store_true")
     ap.add_argument("--kesfet", action="store_true")
     ap.add_argument("--kuru", action="store_true")
     ap.add_argument("--gonder", action="store_true")
@@ -170,6 +185,8 @@ def main():
         print("batchRequestId:", sonuc.get("batchRequestId"))
     if a.batch:
         batch_sonuc(a.batch)
+    if a.onaysiz:
+        onaysizlar()
 
 
 if __name__ == "__main__":

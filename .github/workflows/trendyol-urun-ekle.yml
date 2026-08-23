@@ -9,7 +9,7 @@ on:
         type: choice
         required: true
         default: "kesfet"
-        options: [kesfet, kuru, gonder, batch]
+        options: [kesfet, kuru, gonder, batch, onaysiz]
       batch_id:
         description: "batch icin batchRequestId"
         type: string
@@ -41,6 +41,7 @@ jobs:
             kuru)   python src/marketplaces/trendyol_urun_ekle.py --kuru ;;
             gonder) python src/marketplaces/trendyol_urun_ekle.py --gonder ;;
             batch)  python src/marketplaces/trendyol_urun_ekle.py --batch "${{ inputs.batch_id }}" ;;
+            onaysiz) python src/marketplaces/trendyol_urun_ekle.py --onaysiz ;;
           esac
       - name: Kaydi commit et
         if: inputs.islem == 'gonder'
