@@ -1,4 +1,4 @@
-name: IG gunluk hikayeler
+name: IG gunluk hikaye gorselleri (uretim)
 
 on:
   schedule:
@@ -28,11 +28,12 @@ jobs:
           python-version: "3.12"
       - name: Bagimliliklari kur
         run: pip install --quiet -r requirements.txt
-      # Instagram gorseli herkese acik URL'den ceker; bu yuzden once uret,
-      # commit'le (raw URL dogsun), SONRA yayinla (20.08 dersi).
+      # 21.08: hikayeleri kullanici kendisi paylasiyor (link etiketi API ile
+      # eklenemiyor). Is yalnizca gorselleri uretip repoya koyar.
       - name: Gorselleri uret
         if: ${{ inputs.hikayeler == '' }}
         run: python -m src.hikaye_uret --evre uret --adet 2
+      # Not: yayin adimi yok — gorseller kullaniciya gonderiliyor (link etiketi icin)
       - name: Gorselleri depoya it
         if: ${{ inputs.hikayeler == '' }}
         run: |
@@ -41,19 +42,5 @@ jobs:
           git add posts/media/hikaye/gunluk
           git diff --staged --quiet || git commit -m "chore: gunun hikaye gorselleri [skip ci]"
           git pull --rebase origin main && git push
-      - name: Yayinla
-        env:
-          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
-          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
-          HIKAYELER: ${{ inputs.hikayeler }}
-        run: |
-          if [ -n "$HIKAYELER" ]; then
-            for ad in $(echo "$HIKAYELER" | tr ',' ' '); do
-              python -c "from src import instagram; print('yayinlandi:', instagram.hikaye_yayinla('posts/media/hikaye/hikaye-${ad}.png'))"
-            done
-          else
-            python -m src.hikaye_uret --evre yayinla
-          fi
       - name: Hikaye kaydini commit et
         run: bash tools/state_it.sh "hikaye kaydi guncellendi"
