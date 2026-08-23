@@ -1,0 +1,47 @@
+name: Trendyol Urun Ekleme
+
+# Bilerek SADECE elle calistirilir — gonder secenegi Trendyol'da gercek urun acar.
+on:
+  workflow_dispatch:
+    inputs:
+      islem:
+        description: "Ne yapilsin?"
+        type: choice
+        required: true
+        default: "kesfet"
+        options: [kesfet, kuru, gonder, batch]
+      batch_id:
+        description: "batch icin batchRequestId"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  urun:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Calistir
+        env:
+          TRENDYOL_SUPPLIER_ID: ${{ secrets.TRENDYOL_SUPPLIER_ID }}
+          TRENDYOL_API_KEY: ${{ secrets.TRENDYOL_API_KEY }}
+          TRENDYOL_API_SECRET: ${{ secrets.TRENDYOL_API_SECRET }}
+          PYTHONIOENCODING: utf-8
+        run: |
+          case "${{ inputs.islem }}" in
+            kesfet) python src/marketplaces/trendyol_urun_ekle.py --kesfet ;;
+            kuru)   python src/marketplaces/trendyol_urun_ekle.py --kuru ;;
+            gonder) python src/marketplaces/trendyol_urun_ekle.py --gonder ;;
+            batch)  python src/marketplaces/trendyol_urun_ekle.py --batch "${{ inputs.batch_id }}" ;;
+          esac
+      - name: Kaydi commit et
+        if: inputs.islem == 'gonder'
+        run: bash tools/state_it.sh "trendyol yeni urun kaydi"
