@@ -200,7 +200,9 @@ def main():
         print(tc.update_price_and_inventory(items))
     if a.not_ekle:
         NOT = ('<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması bulunur; '
-               'kod ve adım adım anlatım atolyeelektronik.com blogumuzdadır.</p>')
+               'kod ve adım adım kurulum anlatımı paketle birlikte verilir.</p>')
+        ESKI_NOT = ('<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması bulunur; '
+                    'kod ve adım adım anlatım atolyeelektronik.com blogumuzdadır.</p>')
         istenen = {x.strip() for x in a.not_ekle.split(",")}
         guncel = []
         for _, p in tc.iter_all_products(size=100):
@@ -210,9 +212,15 @@ def main():
                     print("  mevcut:", sc, "|", (p.get("title") or "")[:50], "| contentId", p.get("contentId") or p.get("id"))
                 if sc in istenen:
                     desc = p.get("description") or ""
-                    if "Bağlantı şeması" in desc:
+                    if ESKI_NOT in desc:
+                        desc = desc.replace(ESKI_NOT, "")
+                    elif NOT in desc:
                         print("zaten var:", sc); continue
-                    guncel.append({"contentId": p.get("contentId") or p.get("id"), "description": NOT + desc})
+                    desc = NOT + desc
+                    if "atolyeelektronik" in desc.lower():
+                        print("UYARI site adi var, temizleniyor:", sc)
+                        desc = re.sub(r"(?i)atolyeelektronik\.com", "", desc)
+                    guncel.append({"contentId": p.get("contentId") or p.get("id"), "description": desc})
                     print("guncellenecek:", sc, v.get("barcode") or p.get("barcode"))
         if guncel:
             r = requests.post(f"{tc.BASE_URL}/product/sellers/{tc.SUPPLIER_ID}/products/content-bulk-update",

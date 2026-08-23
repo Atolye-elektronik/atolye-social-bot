@@ -106,6 +106,13 @@ def shopify_urunleri(count: int) -> tuple[list[dict], list[str]]:
 # --- Yardımcılar -----------------------------------------------------------
 
 def temiz_aciklama(raw: str, limit: int = 4000) -> str:
+    # Pazar yeri kurali: site adi / dis link yasak. Web sitesindeki sema not kutusunu
+    # site adsiz duz metinle degistir, kalan site adlarini sil.
+    import re as _re
+    raw = _re.sub(r'<div style="border:2px solid #108474[^>]*>.*?</div>',
+                  '<p><strong>Bağlantı şeması ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması bulunur.</p>', raw, flags=_re.S)
+    raw = _re.sub(r'(?i)https?://(www\.)?atolyeelektronik\.com\S*', '', raw)
+    raw = _re.sub(r'(?i)atolyeelektronik\.com', '', raw)
     """Hepsiburada açıklamada basit HTML kabul ediyor ama script/style ve
     boş satır yığınlarını istemiyor. Fazlasını da kırpıyoruz."""
     metin = re.sub(r"<(script|style)[^>]*>.*?</\1>", "", raw or "", flags=re.S | re.I)
