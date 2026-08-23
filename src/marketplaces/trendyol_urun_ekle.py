@@ -131,8 +131,9 @@ def payload_kur(cfg):
     return {"items": items}
 
 
-def gonder(payload):
-    r = requests.post(f"{tc.BASE_URL}/product/sellers/{tc.SUPPLIER_ID}/v2/products",
+def gonder(payload, guncelle=False):
+    yol = "/products/unapproved-bulk-update" if guncelle else "/v2/products"
+    r = requests.post(f"{tc.BASE_URL}/product/sellers/{tc.SUPPLIER_ID}{yol}",
                       headers=tc._auth_header(), json=payload, timeout=60)
     print(r.status_code, r.text[:1000])
     r.raise_for_status()
@@ -166,6 +167,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--onaysiz", action="store_true")
     ap.add_argument("--sku", help="virgullu stok kodu listesi: sadece bunlari gonder")
+    ap.add_argument("--guncelle", action="store_true", help="onaysiz urunleri guncelle (unapproved-bulk-update)")
     ap.add_argument("--kesfet", action="store_true")
     ap.add_argument("--kuru", action="store_true")
     ap.add_argument("--gonder", action="store_true")
@@ -180,7 +182,7 @@ def main():
     if a.kuru:
         print(json.dumps(payload_kur(cfg), ensure_ascii=False, indent=2)[:8000])
     if a.gonder:
-        sonuc = gonder(payload_kur(cfg))
+        sonuc = gonder(payload_kur(cfg), guncelle=a.guncelle)
         KAYIT.parent.mkdir(exist_ok=True)
         eski = json.loads(KAYIT.read_text(encoding="utf-8")) if KAYIT.exists() else {}
         for u in cfg["urunler"]:
