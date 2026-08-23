@@ -21,7 +21,7 @@ RENK = {
     "teal": "#1a9e9a", "kirmizi": "#c62828", "lacivert": "#1f2a44", "koyu": "#2b2f36",
     "sari": "#fff3c4", "sari_k": "#e0b100",
     "red": "#e53935", "blk": "#1a1a1a", "org": "#f39c35", "grn": "#2e9e8f", "blu": "#3b6fc4",
-    "pur": "#8e5ad4", "ylw": "#d8a800", "cyan": "#0aa6c9",
+    "pur": "#8e5ad4", "ylw": "#d8a800", "cyan": "#0aa6c9", "pnk": "#e0459b", "brn": "#8d5524",
 }
 
 
@@ -157,13 +157,15 @@ def motorlar(s, x=1190):
 
 
 AA = False  # True: 4xAA (6V) pil kutusu
+ARD_X = 300   # robot semalarinda Arduino sol kenari
+L298_X = 800
 
 
 def robot_govde(s, ek_l=()):
     """IR/BT/engel ortak iskelet: Arduino + L298N + motorlar + pil"""
-    arduino(s, pins_r=(("D5", 0.2), ("D6", 0.31), ("D9", 0.42), ("D10", 0.53)) + tuple(ek_l))
-    l298n(s)
-    motorlar(s)
+    arduino(s, x=ARD_X, pins_r=(("D5", 0.2), ("D6", 0.31), ("D9", 0.42), ("D10", 0.53)) + tuple(ek_l))
+    l298n(s, x=L298_X)
+    motorlar(s, x=L298_X + 430)
     if AA:
         s.pil("pil", 540, 745, 280, 125, "4'lü AA Pil Kutusu (seri) = 6V", hucre=("AA", "AA", "AA", "AA"), alt="Kırmızı kablo +, siyah kablo −")
     else:
@@ -175,12 +177,12 @@ def robot_govde(s, ek_l=()):
     s.bagla("red", ("l298", "OUT3"), ("mB", ""), via=[]); s.bagla("blk", ("l298", "OUT4"), ("mB", " "), via=[])
     # güç
     px, py, _ = s.pins[("pil", "+")]
-    s.tel("red", [(px, py), (px, 720), (810, 720), (810, 590)]); s.dugum(810, 590, "red")
-    s.tel("red", [(810, 720), (1585, 720), (1585, 130), (406, 130), (406, 280)], w=5); s.dugum(406, 280, "red")
+    s.tel("red", [(px, py), (px, 720), (L298_X + 50, 720), (L298_X + 50, 590)]); s.dugum(L298_X + 50, 590, "red")
+    s.tel("red", [(L298_X + 50, 720), (1585, 720), (1585, 130), (ARD_X + 156, 130), (ARD_X + 156, 280)], w=5); s.dugum(ARD_X + 156, 280, "red")
     s.yazi(900, 112, ("Pil + (6V) → Arduino VIN" if AA else "Pil + (7.4V) → Arduino VIN"), RENK["red"], 19, True, "middle")
     nx, ny, _ = s.pins[("pil", "-")]
-    s.tel("blk", [(nx, ny), (nx, 905), (100, 905)]); s.tel("blk", [(nx, 905), (900, 905), (900, 590)]); s.dugum(900, 590, "blk")
-    s.tel("blk", [(400, 660), (400, 905)]); s.dugum(400, 905, "blk"); s.dugum(900, 905, "blk")
+    s.tel("blk", [(nx, ny), (nx, 905), (100, 905)]); s.tel("blk", [(nx, 905), (L298_X + 140, 905), (L298_X + 140, 590)]); s.dugum(L298_X + 140, 590, "blk")
+    s.tel("blk", [(ARD_X + 150, 660), (ARD_X + 150, 905)]); s.dugum(ARD_X + 150, 905, "blk"); s.dugum(L298_X + 140, 905, "blk")
     s.yazi(60, 913, "GND", RENK["baslik"], 22, True); s.yazi(850, 945, "ORTAK GND HATTI", RENK["baslik"], 19, True, "middle")
 
 
@@ -196,10 +198,10 @@ def sema_ir():
     robot_govde(s)
     s.kutu("ir", 40, 320, 170, 130, RENK["lacivert"], "", "", pins=(("VCC", "t", 0.5), ("GND", "b", 0.5), ("OUT", "r", 0.75)), font=26)
     s.yazi(125, 360, "IR ALICI", "#fff", 26, True, "middle"); s.yazi(125, 385, "VS1838B", "#cfd8e3", 17, anchor="middle")
-    s.pins[("ard", "D11")] = (250, 280 + 380 * 0.72, "l"); s.parts.append('<text x="264" y="560" font-size="21" font-weight="700" fill="#fff">D11</text>'); s.parts.append('<circle cx="250" cy="553.6" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
-    s.bagla("ylw", ("ir", "OUT"), ("ard", "D11"), via=[(230, 417.5), (230, 553.6)])
-    s.tel("red", [(125, 320), (125, 170), (340, 170), (340, 280)]); s.dugum(340, 280, "red"); s.dugum(125, 320, "red")
-    s.yazi(40, 150, "+5V", RENK["red"], 22, True); s.yazi(380, 176, "Arduino 5V çıkışı → IR alıcı beslemesi", RENK["red"], 17)
+    s.pins[("ard", "D11")] = (ARD_X, 280 + 380 * 0.72, "l"); s.parts.append(f'<text x="{ARD_X + 14}" y="560" font-size="21" font-weight="700" fill="#fff">D11</text>'); s.parts.append(f'<circle cx="{ARD_X}" cy="553.6" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
+    s.bagla("ylw", ("ir", "OUT"), ("ard", "D11"), via=[(238, 417.5), (238, 553.6)])
+    s.tel("red", [(125, 320), (125, 170), (ARD_X + 90, 170), (ARD_X + 90, 280)]); s.dugum(ARD_X + 90, 280, "red"); s.dugum(125, 320, "red")
+    s.yazi(40, 150, "+5V", RENK["red"], 22, True); s.yazi(ARD_X + 130, 176, "Arduino 5V çıkışı → IR alıcı beslemesi", RENK["red"], 17)
     s.tel("blk", [(125, 450), (125, 905)]); s.dugum(125, 450, "blk")
     return s
 
@@ -217,14 +219,14 @@ def sema_bt():
     s.kutu("bt", 40, 300, 170, 150, RENK["lacivert"], "", "", pins=(("VCC", "t", 0.5), ("GND", "b", 0.5), ("TXD", "r", 0.6), ("RXD", "r", 0.82)), font=26)
     s.yazi(125, 335, "HC-06", "#fff", 26, True, "middle"); s.yazi(125, 360, "Bluetooth", "#cfd8e3", 18, anchor="middle")
     # ekstra arduino pinleri
-    s.pins[("ard", "D0")] = (250, 280 + 380 * 0.72, "l"); s.parts.append('<text x="264" y="560" font-size="21" font-weight="700" fill="#fff">D0 RX</text>'); s.parts.append('<circle cx="250" cy="553.6" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
-    s.pins[("ard", "D1")] = (250, 280 + 380 * 0.85, "l"); s.parts.append('<text x="264" y="610" font-size="21" font-weight="700" fill="#fff">D1 TX</text>'); s.parts.append('<circle cx="250" cy="603" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
-    s.bagla("ylw", ("bt", "TXD"), ("ard", "D0"), via=[(230, 390), (230, 553.6)])
-    s.bagla("cyan", ("bt", "RXD"), ("ard", "D1"), via=[(222, 423), (222, 603)])
+    s.pins[("ard", "D0")] = (ARD_X, 280 + 380 * 0.72, "l"); s.parts.append(f'<text x="{ARD_X + 14}" y="560" font-size="21" font-weight="700" fill="#fff">D0 RX</text>'); s.parts.append(f'<circle cx="{ARD_X}" cy="553.6" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
+    s.pins[("ard", "D1")] = (ARD_X, 280 + 380 * 0.85, "l"); s.parts.append(f'<text x="{ARD_X + 14}" y="610" font-size="21" font-weight="700" fill="#fff">D1 TX</text>'); s.parts.append(f'<circle cx="{ARD_X}" cy="603" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
+    s.bagla("ylw", ("bt", "TXD"), ("ard", "D0"), via=[(238, 390), (238, 553.6)])
+    s.bagla("cyan", ("bt", "RXD"), ("ard", "D1"), via=[(224, 423), (224, 603)])
     s.etiket(150, 470, "1kΩ+2kΩ bölücü", 150)
     # 5V
-    s.tel("red", [(125, 300), (125, 170), (340, 170), (340, 280)]); s.dugum(340, 280, "red"); s.dugum(125, 300, "red")
-    s.yazi(60, 150, "+5V", RENK["red"], 22, True); s.yazi(380, 176, "Arduino 5V çıkışı → HC-06 VCC", RENK["red"], 17)
+    s.tel("red", [(125, 300), (125, 170), (ARD_X + 90, 170), (ARD_X + 90, 280)]); s.dugum(ARD_X + 90, 280, "red"); s.dugum(125, 300, "red")
+    s.yazi(60, 150, "+5V", RENK["red"], 22, True); s.yazi(ARD_X + 130, 176, "Arduino 5V çıkışı → HC-06 VCC", RENK["red"], 17)
     s.tel("blk", [(125, 450), (125, 905)]); s.dugum(125, 450, "blk")
     return s
 
@@ -241,13 +243,13 @@ def sema_engel():
     s.kutu("sr", 30, 290, 190, 140, RENK["lacivert"], "HC-SR04", "Ultrasonik", pins=(("VCC", "t", 0.25), ("TRIG", "r", 0.45), ("ECHO", "r", 0.7), ("GND", "t", 0.75)), font=22, hiza="sol")
     s.kutu("sv", 30, 520, 190, 120, RENK["lacivert"], "SG90", "Servo", pins=(("SIG", "r", 0.3), ("5V", "r", 0.55), ("GND", "r", 0.8)), font=24, hiza="sol")
     for n, o in (("A0", 0.62), ("A1", 0.72), ("D3", 0.85)):
-        s.pins[("ard", n)] = (250, 280 + 380 * o, "l"); s.parts.append(f'<text x="264" y="{280 + 380 * o + 7}" font-size="21" font-weight="700" fill="#fff">{n}</text>'); s.parts.append(f'<circle cx="250" cy="{280 + 380 * o}" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
-    s.bagla("ylw", ("sr", "TRIG"), ("ard", "A0"), via=[(234, 353), (234, 515.6)])
-    s.bagla("cyan", ("sr", "ECHO"), ("ard", "A1"), via=[(226, 388), (226, 553.6)])
-    s.bagla("org", ("sv", "SIG"), ("ard", "D3"), via=[(238, 556), (238, 603)])
-    s.tel("red", [(77, 290), (77, 170), (340, 170), (340, 280)]); s.dugum(340, 280, "red"); s.dugum(77, 290, "red")
-    s.tel("red", [(220, 586), (242, 586), (242, 170)]); s.dugum(242, 170, "red")
-    s.yazi(40, 150, "+5V", RENK["red"], 22, True); s.yazi(380, 176, "Arduino 5V çıkışı → sensör ve servo beslemesi", RENK["red"], 17)
+        s.pins[("ard", n)] = (ARD_X, 280 + 380 * o, "l"); s.parts.append(f'<text x="{ARD_X + 14}" y="{280 + 380 * o + 7}" font-size="21" font-weight="700" fill="#fff">{n}</text>'); s.parts.append(f'<circle cx="{ARD_X}" cy="{280 + 380 * o}" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
+    s.bagla("ylw", ("sr", "TRIG"), ("ard", "A0"), via=[(252, 353), (252, 515.6)])
+    s.bagla("cyan", ("sr", "ECHO"), ("ard", "A1"), via=[(238, 388), (238, 553.6)])
+    s.bagla("pur", ("sv", "SIG"), ("ard", "D3"), via=[(224, 556), (224, 603)])
+    s.tel("red", [(77, 290), (77, 170), (ARD_X + 90, 170), (ARD_X + 90, 280)]); s.dugum(ARD_X + 90, 280, "red"); s.dugum(77, 290, "red")
+    s.tel("red", [(220, 586), (266, 586), (266, 170)]); s.dugum(266, 170, "red")
+    s.yazi(40, 150, "+5V", RENK["red"], 22, True); s.yazi(ARD_X + 130, 176, "Arduino 5V çıkışı → sensör ve servo beslemesi", RENK["red"], 17)
     s.tel("blk", [(172, 290), (172, 230), (15, 230), (15, 905), (100, 905)]); s.dugum(172, 290, "blk")
     s.tel("blk", [(220, 616), (230, 616), (230, 905)]); s.dugum(230, 905, "blk")
     return s
@@ -268,14 +270,14 @@ def sema_3u1():
     s.kutu("sv", 40, 640, 170, 90, RENK["lacivert"], "SG90 Servo", "SIG D3", pins=(("", "r", 0.5),), font=22)
     for n, o in (("A0", 0.62), ("A1", 0.69), ("D0", 0.76), ("D1", 0.83), ("D11", 0.9), ("D3", 0.97)):
         y = 280 + 380 * o
-        s.pins[("ard", n)] = (250, y, "l"); s.parts.append(f'<text x="264" y="{y + 7}" font-size="19" font-weight="700" fill="#fff">{n}</text>'); s.parts.append(f'<circle cx="250" cy="{y}" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
-    s.bagla("ylw", ("sr", ""), ("ard", "A0"), via=[(226, 274), (226, 515.6)])
-    s.bagla("cyan", ("sr", " "), ("ard", "A1"), via=[(232, 307), (232, 542.2)])
-    s.bagla("grn", ("bt", ""), ("ard", "D0"), via=[(238, 414), (238, 568.8)])
-    s.bagla("blu", ("bt", " "), ("ard", "D1"), via=[(244, 447), (244, 595.4)])
-    s.bagla("org", ("ir", ""), ("ard", "D11"), via=[(222, 560), (222, 622)])
-    s.bagla("pur", ("sv", ""), ("ard", "D3"), via=[(216, 685), (216, 648.6)])
-    s.tel("red", [(125, 230), (125, 170), (340, 170), (340, 280)]); s.dugum(340, 280, "red")
+        s.pins[("ard", n)] = (250, y, "l"); s.parts.append(f'<text x="{ARD_X + 14}" y="{y + 7}" font-size="19" font-weight="700" fill="#fff">{n}</text>'); s.parts.append(f'<circle cx="{ARD_X}" cy="{y}" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
+    s.bagla("ylw", ("sr", ""), ("ard", "A0"), via=[(294, 274), (294, 515.6)])
+    s.bagla("cyan", ("sr", " "), ("ard", "A1"), via=[(280, 307), (280, 542.2)])
+    s.bagla("grn", ("bt", ""), ("ard", "D0"), via=[(266, 414), (266, 568.8)])
+    s.bagla("blu", ("bt", " "), ("ard", "D1"), via=[(252, 447), (252, 595.4)])
+    s.bagla("org", ("ir", ""), ("ard", "D11"), via=[(238, 560), (238, 622)])
+    s.bagla("pnk", ("sv", ""), ("ard", "D3"), via=[(224, 685), (224, 648.6)])
+    s.tel("red", [(125, 230), (125, 170), (ARD_X + 90, 170), (ARD_X + 90, 280)]); s.dugum(ARD_X + 90, 280, "red")
     s.yazi(40, 150, "+5V (tüm modüller)", RENK["red"], 20, True)
     s.tel("blk", [(20, 905), (100, 905)]); s.yazi(40, 770, "GND: tüm modüllerin GND'si ortak hatta", RENK["gri"], 16)
     return s
@@ -308,7 +310,7 @@ def sema_rtc():
                    ["DS1302: DAT→D4, CLK→D5, RST→D2 (ThreeWire(4,5,2)).", "LCD SDA→A4, SCL→A5. Modüller 5V'tan beslenir; GND ortak.",
                     "Kütüphaneler: Rtc by Makuna, LiquidCrystal I2C.", "İlk yüklemede kod bilgisayar saatini RTC'ye aktarır.", "RTC üzerindeki CR2032 pil takılı olmalı."],
                    [("rtc", "DS1302", "RTC Modülü", 270, ["VCC", "GND", "CLK", "DAT", "RST"]), ("lcd", "16x2 LCD", "I2C Modüllü", 560, ["GND", "VCC", "SDA", "SCL"])],
-                   [("pur", ("D2", 0.25), ("rtc", "RST")), ("org", ("D4", 0.35), ("rtc", "DAT")), ("ylw", ("D5", 0.45), ("rtc", "CLK")), ("blu", ("A4", 0.65), ("lcd", "SDA")), ("grn", ("A5", 0.75), ("lcd", "SCL"))])
+                   [("pnk", ("D2", 0.25), ("rtc", "RST")), ("org", ("D4", 0.35), ("rtc", "DAT")), ("cyan", ("D5", 0.45), ("rtc", "CLK")), ("blu", ("A4", 0.65), ("lcd", "SDA")), ("grn", ("A5", 0.75), ("lcd", "SCL"))])
     guc_hatti(s, [("rtc", "VCC"), ("lcd", "VCC")], [("rtc", "GND"), ("lcd", "GND")])
     return s
 
@@ -328,7 +330,7 @@ def sema_rfid():
                    ["RC522: SDA(SS)→D10, SCK→D13, MOSI→D11, MISO→D12, RST→D9.", "RC522 3.3V ile beslenir (5V'a bağlamayın!). GND ortak.",
                     "Servo sinyal→D6, kırmızı→5V, kahverengi→GND.", "Kütüphaneler: MFRC522, Servo. Kart UID'sini Seri Monitör'den okuyup koda yazın.", "IRQ pini boş kalır."],
                    [("rc", "RC522", "RFID Okuyucu 13,56 MHz", 250, ["3.3V", "RST", "GND", "MISO", "MOSI", "SCK", "SDA"]), ("sv", "SG90 Servo", "Kilit Kolu", 600, ["SIG", "5V", "GND"])],
-                   [("pur", ("D9", 0.2), ("rc", "RST")), ("org", ("D10", 0.3), ("rc", "SDA")), ("ylw", ("D11", 0.4), ("rc", "MOSI")), ("grn", ("D12", 0.5), ("rc", "MISO")), ("blu", ("D13", 0.6), ("rc", "SCK")), ("cyan", ("D6", 0.72), ("sv", "SIG"))])
+                   [("pur", ("D9", 0.2), ("rc", "RST")), ("org", ("D10", 0.3), ("rc", "SDA")), ("pnk", ("D11", 0.4), ("rc", "MOSI")), ("grn", ("D12", 0.5), ("rc", "MISO")), ("blu", ("D13", 0.6), ("rc", "SCK")), ("cyan", ("D6", 0.72), ("sv", "SIG"))])
     guc_hatti(s, [("sv", "5V")], [("rc", "GND"), ("sv", "GND")], v33=[("rc", "3.3V")])
     return s
 
@@ -338,7 +340,7 @@ def sema_step():
                    ["ULN2003: IN1→D8, IN2→D9, IN3→D10, IN4→D11.", "Kodda Stepper(2048, 8, 10, 9, 11) sırası ULN2003 için doğrudur.",
                     "Sürücü 5V ve GND Arduino'dan; motor 5 pinli soketle sürücüye takılır.", "Uzun süreli kullanımda sürücüyü harici 5V adaptörle besleyin (GND ortak).", "Stepper kütüphanesi IDE ile gelir."],
                    [("uln", "ULN2003", "Step Motor Sürücü", 270, ["IN1", "IN2", "IN3", "IN4", "5V", "GND"]), ("mot", "28BYJ-48", "Step Motor (5 pin soket)", 620, ["  "])],
-                   [("org", ("D8", 0.25), ("uln", "IN1")), ("ylw", ("D9", 0.35), ("uln", "IN2")), ("grn", ("D10", 0.45), ("uln", "IN3")), ("blu", ("D11", 0.55), ("uln", "IN4"))])
+                   [("org", ("D8", 0.25), ("uln", "IN1")), ("pnk", ("D9", 0.35), ("uln", "IN2")), ("grn", ("D10", 0.45), ("uln", "IN3")), ("blu", ("D11", 0.55), ("uln", "IN4"))])
     guc_hatti(s, [("uln", "5V")], [("uln", "GND")])
     s.tel("blk", [(930, 554), (930, 620)], w=10); s.yazi(945, 595, "5 pinli soket", RENK["gri"], 16)
     return s
