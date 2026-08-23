@@ -1,1 +1,184 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9518298392,
+      "firstName": "İshak reis",
+      "lastName": "karal",
+      "company": "",
+      "address1": "fatih mahallesi Cumhuriyet caddesi no 102",
+      "address2": "",
+      "city": "Kocaeli",
+      "cityCode": 41,
+      "district": "Başiskele",
+      "districtId": 1043,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "41000",
+      "countryCode": "TR",
+      "neighborhoodId": 40328,
+      "neighborhood": "Fatih Mah",
+      "phone": null,
+      "fullAddress": "fatih mahallesi Cumhuriyet caddesi no 102     Başiskele Kocaeli",
+      "fullName": "İshak reis karal"
+    },
+    "orderNumber": "11532648382",
+    "orderCountryCode": "TR",
+    "grossAmount": 525.0,
+    "packageGrossAmount": 525.0,
+    "totalDiscount": 60.5,
+    "packageSellerDiscount": 60.5,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 60.5,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 10.5
+      },
+      {
+        "displayName": "Atölye Elektronik - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 50
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9518298391,
+      "firstName": "İshak reis",
+      "lastName": "karal",
+      "company": "",
+      "address1": "fatih mahallesi Cumhuriyet caddesi no 102",
+      "address2": "",
+      "city": "Kocaeli",
+      "cityCode": 41,
+      "district": "Başiskele",
+      "districtId": 1043,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "41000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 40328,
+      "neighborhood": "Fatih Mah",
+      "phone": null,
+      "fullAddress": "fatih mahallesi Cumhuriyet caddesi no 102     Başiskele Kocaeli",
+      "fullName": "İshak reis karal"
+    },
+    "customerFirstName": "İshak reis",
+    "customerEmail": "pf+b2y4zj6y@trendyolmail.com",
+    "customerId": 97238998,
+    "supplierId": 0,
+    "customerLastName": "karal",
+    "id": 4098841642,
+    "channelId": 1,
+    "shipmentPackageId": 4098841642,
+    "cargoTrackingNumber": 7330036264491039,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEUT12D",
+        "sku": "TYBI4USEB2DIY02J13",
+        "stockCode": "AEUT12D",
+        "productName": "Ut12d Temassız Ac Voltaj Gerilim Dedektörü UT12D-UNIT, one size",
+        "productCode": 264480205,
+        "contentId": 264480205,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 525.0,
+        "lineGrossAmount": 525.0,
+        "discount": 60.5,
+        "lineTotalDiscount": 60.5,
+        "lineSellerDiscount": 60.5,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 464.5,
+            "lineItemDiscount": 60.5,
+            "lineItemSellerDiscount": 60.5,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5869549248,
+        "lineId": 5869549248,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "TYBI4USEB2DIY02J13",
+        "orderLineItemStatusName": "Picking",
+        "price": 464.5,
+        "lineUnitPrice": 464.5,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2471,
+        "commission": 3.3,
+        "businessUnit": "Garden & Power Tools",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1787521436626,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1787510637717,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1787510641164,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1787510670485,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1787605140000,
+    "estimatedDeliveryEndDate": 1787777940000,
+    "totalPrice": 464.5,
+    "packageTotalPrice": 464.5,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1787605140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1787510637705,
+    "lastModifiedDate": 1787510987891,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10791814739,
+    "is4P": false
+  }
+]
