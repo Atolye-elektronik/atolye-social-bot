@@ -156,12 +156,18 @@ def motorlar(s, x=1190):
     s.motor("mB", x, 440, "SAĞ MOTOR", "(Motor B)")
 
 
+AA = False  # True: 4xAA (6V) pil kutusu
+
+
 def robot_govde(s, ek_l=()):
     """IR/BT/engel ortak iskelet: Arduino + L298N + motorlar + pil"""
     arduino(s, pins_r=(("D5", 0.2), ("D6", 0.31), ("D9", 0.42), ("D10", 0.53)) + tuple(ek_l))
     l298n(s)
     motorlar(s)
-    s.pil("pil", 540, 760, 280, 110, "18650 Pil Yuvası (2'li seri) = 7.4V", alt="AA'lı sette: 4xAA = 6V")
+    if AA:
+        s.pil("pil", 540, 745, 280, 125, "4'lü AA Pil Kutusu (seri) = 6V", hucre=("AA", "AA", "AA", "AA"), alt="Kırmızı kablo +, siyah kablo −")
+    else:
+        s.pil("pil", 540, 760, 280, 110, "18650 Pil Yuvası (2'li seri) = 7.4V", alt="2 x 18650 Li-Ion (pil dahil değildir)")
     for i, (pin, inn, renk) in enumerate((("D5", "IN1", "org"), ("D6", "IN2", "grn"), ("D9", "IN3", "blu"), ("D10", "IN4", "pur"))):
         s.bagla(renk, ("ard", pin), ("l298", inn), via=[])
     # motorlar
@@ -171,19 +177,39 @@ def robot_govde(s, ek_l=()):
     px, py, _ = s.pins[("pil", "+")]
     s.tel("red", [(px, py), (px, 720), (810, 720), (810, 590)]); s.dugum(810, 590, "red")
     s.tel("red", [(810, 720), (1585, 720), (1585, 130), (406, 130), (406, 280)], w=5); s.dugum(406, 280, "red")
-    s.yazi(900, 112, "Pil + (7.4V) → Arduino VIN", RENK["red"], 19, True, "middle")
+    s.yazi(900, 112, ("Pil + (6V) → Arduino VIN" if AA else "Pil + (7.4V) → Arduino VIN"), RENK["red"], 19, True, "middle")
     nx, ny, _ = s.pins[("pil", "-")]
     s.tel("blk", [(nx, ny), (nx, 905), (100, 905)]); s.tel("blk", [(nx, 905), (900, 905), (900, 590)]); s.dugum(900, 590, "blk")
     s.tel("blk", [(400, 660), (400, 905)]); s.dugum(400, 905, "blk"); s.dugum(900, 905, "blk")
     s.yazi(60, 913, "GND", RENK["baslik"], 22, True); s.yazi(850, 945, "ORTAK GND HATTI", RENK["baslik"], 19, True, "middle")
 
 
+def sema_ir():
+    s = Sema("IR Kumandalı Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + IR Alıcı + " + ("4'lü AA Pil Kutusu (6V)" if AA else "18650 Pil Yuvası (7.4V)") + " — blogdaki hazır kodla birebir uyumludur", "AEIRRAK" if AA else "AEIRRAK-LI",
+             ["Kod pinleri: IN1→D5, IN2→D6, IN3→D9, IN4→D10, IR alıcı OUT→D11.",
+              ("Arduino, pilden VIN ile beslenir (6V: VIN için alt sınır, yeni piller kullanın). 5V pinine güç verilmez." if AA else "Arduino, pilden VIN pini ile beslenir (7.4V; VIN 7-12V kabul eder). 5V pinine güç verilmez."),
+              "ENA, ENB ve 5V jumper'ları takılı kalmalı.",
+              "Arduino ile L298N'in GND'leri mutlaka ortak olmalı.",
+              "Kod yüklerken pil şalterini kapatın.",
+              "Motor ters dönerse OUT uçlarını yer değiştirin.",
+              "Arduino IDE'de IRremote kütüphanesi kurulmalıdır."])
+    robot_govde(s)
+    s.kutu("ir", 40, 320, 170, 130, RENK["lacivert"], "", "", pins=(("VCC", "t", 0.5), ("GND", "b", 0.5), ("OUT", "r", 0.75)), font=26)
+    s.yazi(125, 360, "IR ALICI", "#fff", 26, True, "middle"); s.yazi(125, 385, "VS1838B", "#cfd8e3", 17, anchor="middle")
+    s.pins[("ard", "D11")] = (250, 280 + 380 * 0.72, "l"); s.parts.append('<text x="264" y="560" font-size="21" font-weight="700" fill="#fff">D11</text>'); s.parts.append('<circle cx="250" cy="553.6" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
+    s.bagla("ylw", ("ir", "OUT"), ("ard", "D11"), via=[(230, 417.5), (230, 553.6)])
+    s.tel("red", [(125, 320), (125, 170), (340, 170), (340, 280)]); s.dugum(340, 280, "red"); s.dugum(125, 320, "red")
+    s.yazi(40, 150, "+5V", RENK["red"], 22, True); s.yazi(380, 176, "Arduino 5V çıkışı → IR alıcı beslemesi", RENK["red"], 17)
+    s.tel("blk", [(125, 450), (125, 905)]); s.dugum(125, 450, "blk")
+    return s
+
+
 def sema_bt():
-    s = Sema("Bluetooth Kontrollü Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + HC-06 Bluetooth + 18650 Pil Yuvası (7.4V) — blogdaki hazır kodla birebir uyumludur", "AEHC06RAK-LI",
+    s = Sema("Bluetooth Kontrollü Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + HC-06 Bluetooth + " + ("4'lü AA Pil Kutusu (6V)" if AA else "18650 Pil Yuvası (7.4V)") + " — blogdaki hazır kodla birebir uyumludur", "AEHC06RAK" if AA else "AEHC06RAK-LI",
              ["Kod pinleri: IN1→D5, IN2→D6, IN3→D9, IN4→D10; HC-06 TXD→D0 (RX), RXD→D1 (TX).",
               "KOD YÜKLERKEN HC-06'nın TX/RX kablolarını çıkarın (USB ile çakışır).",
               "HC-06 RXD 3.3V'tur: D1→RXD hattına 1kΩ + 2kΩ gerilim bölücü önerilir.",
-              "Arduino pilden VIN ile beslenir (7.4V); 5V pinine güç verilmez.",
+              "Arduino pilden VIN ile beslenir (" + ("6V" if AA else "7.4V") + "); 5V pinine güç verilmez.",
               "ENA, ENB ve L298N 5V jumper'ları takılı kalmalı; GND'ler ortak olmalı.",
               "Telefonda 'Arduino Bluetooth Controller' ile F/B/L/R/S komutları gönderin.",
               "Eşleştirme şifresi genelde 1234."])
@@ -204,11 +230,11 @@ def sema_bt():
 
 
 def sema_engel():
-    s = Sema("Engelden Kaçan Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + HC-SR04 Ultrasonik + SG90 Servo + 18650 Pil Yuvası — blogdaki kodla uyumludur", "AE2WDEKRBT-LI",
+    s = Sema("Engelden Kaçan Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + HC-SR04 + SG90 Servo + " + ("4'lü AA Pil Kutusu (6V)" if AA else "18650 Pil Yuvası (7.4V)") + " — blogdaki kodla uyumludur", "AE2WDEKRBT" if AA else "AE2WDEKRBT-LI",
              ["Kod pinleri: IN1→D5, IN2→D6, IN3→D9, IN4→D10; TRIG→A0, ECHO→A1; Servo→D3.",
               "HC-SR04 ve servo Arduino 5V çıkışından beslenir; GND ortak.",
               "Servo sinyal kablosu (turuncu) D3'e, kırmızı 5V'a, kahverengi GND'ye.",
-              "Arduino pilden VIN ile beslenir (7.4V). 5V pinine güç verilmez.",
+              "Arduino pilden VIN ile beslenir (" + ("6V" if AA else "7.4V") + "). 5V pinine güç verilmez.",
               "ENA, ENB ve L298N 5V jumper'ları takılı kalmalı.",
               "Kod yüklerken pil şalterini kapatın; motor ters dönerse OUT uçlarını değiştirin."])
     robot_govde(s)
@@ -228,11 +254,11 @@ def sema_engel():
 
 
 def sema_3u1():
-    s = Sema("3'ü 1 Arada Robot Araba Kiti", "Bluetooth + IR Kumanda + Engelden Kaçan — tek şasi, tek kod; mod kumandadan veya telefondan seçilir", "AE3IN1ROBOT-LI",
+    s = Sema("3'ü 1 Arada Robot Araba Kiti", "Bluetooth + IR Kumanda + Engelden Kaçan — " + ("4'lü AA Pil Kutusu (6V)" if AA else "18650 Pil Yuvası (7.4V)") + "; tek şasi, tek kod", "AE3IN1ROBOT" if AA else "AE3IN1ROBOT-LI",
              ["L298N: IN1→D5, IN2→D6, IN3→D9, IN4→D10 (ENA/ENB jumper takılı).",
               "HC-06: TXD→D0, RXD→D1 (kod yüklerken çıkarın). IR alıcı OUT→D11.",
               "HC-SR04: TRIG→A0, ECHO→A1. SG90 servo sinyal→D3.",
-              "Tüm modüller Arduino 5V çıkışından beslenir; Arduino VIN pilden (7.4V).",
+              "Tüm modüller Arduino 5V çıkışından beslenir; Arduino VIN pilden (" + ("6V" if AA else "7.4V") + ").",
               "Tüm GND'ler ortak olmalı. Kod yüklerken pil şalteri kapalı.",
               "Blogdaki 3'ü 1 arada kod: IR tuşuyla ya da telefondan 'A' ile otonom mod."])
     robot_govde(s)
@@ -395,6 +421,7 @@ def sema_temel():
 
 
 SEMALAR = {
+    "ir-robot": sema_ir,
     "bluetooth-robot": sema_bt, "engelden-kacan-robot": sema_engel, "3u1-robot": sema_3u1,
     "dht11-lcd-kiti": sema_dht, "rtc-lcd-kiti": sema_rtc, "pir-alarm-kiti": sema_alarm,
     "rfid-kilit-kiti": sema_rfid, "step-motor-kiti": sema_step,
@@ -407,8 +434,10 @@ async def render(adlar):
     async with async_playwright() as p:
         b = await p.chromium.launch()
         pg = await b.new_page(viewport={"width": W, "height": H}, device_scale_factor=1)
+        global AA
         for ad in adlar:
-            svg = SEMALAR[ad]().svg()
+            AA = ad.endswith("-aa")
+            svg = SEMALAR[ad[:-3] if AA else ad]().svg()
             (OUT / f"{ad}.svg").write_text(svg, encoding="utf-8")
             html = f'<html><body style="margin:0">{svg}</body></html>'
             await pg.set_content(html)
@@ -420,5 +449,5 @@ async def render(adlar):
 
 
 if __name__ == "__main__":
-    secim = sys.argv[1:] or list(SEMALAR)
+    secim = sys.argv[1:] or (list(SEMALAR) + ["ir-robot-aa", "bluetooth-robot-aa", "engelden-kacan-robot-aa", "3u1-robot-aa"])
     asyncio.run(render(secim))
