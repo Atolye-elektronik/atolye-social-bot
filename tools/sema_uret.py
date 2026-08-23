@@ -138,7 +138,7 @@ def arduino(s, x=250, y=280, pins_r=(), pins_l=(), pins_t=(("5V", 0.3), ("VIN", 
     s.parts.append(f'<rect x="{x + 20}" y="{y + 20}" width="56" height="40" rx="6" fill="#cfd8e3"/>')
 
 
-def l298n(s, x=760, y=270, ins=("IN1", "IN2", "IN3", "IN4")):
+def l298n(s, x=760, y=270, ins=("IN1", "IN2", "IN3", "IN4"), bes_kullan=False):
     pins = [("ENA", "l", 0.13)] + [(n, "l", 0.28 + i * 0.13) for i, n in enumerate(ins)] + [("ENB", "l", 0.82),
             ("OUT1", "r", 0.12), ("OUT2", "r", 0.24), ("OUT3", "r", 0.62), ("OUT4", "r", 0.74),
             ("+12V", "b", 0.18), ("GND", "b", 0.5), ("+5V", "b", 0.82)]
@@ -148,7 +148,7 @@ def l298n(s, x=760, y=270, ins=("IN1", "IN2", "IN3", "IN4")):
     s.etiket(x - 190, y + 28, "JUMPER TAKILI", 170)
     s.etiket(x - 190, y + 248, "JUMPER TAKILI", 170)
     s.etiket(x + 300, y + 280, "5V jumper takılı olmalı", 200)
-    s.yazi(x + 230, y + 352, "(kullanılmıyor)", boyut=15, anchor="middle")
+    s.yazi(x + 230, y + 352, "(sensör beslemesi)" if bes_kullan else "(kullanılmıyor)", boyut=15, anchor="middle")
 
 
 def motorlar(s, x=1190):
@@ -161,10 +161,10 @@ ARD_X = 300   # robot semalarinda Arduino sol kenari
 L298_X = 800
 
 
-def robot_govde(s, ek_l=()):
+def robot_govde(s, ek_l=(), bes_kullan=False):
     """IR/BT/engel ortak iskelet: Arduino + L298N + motorlar + pil"""
     arduino(s, x=ARD_X, pins_r=(("D5", 0.2), ("D6", 0.31), ("D9", 0.42), ("D10", 0.53)) + tuple(ek_l))
-    l298n(s, x=L298_X)
+    l298n(s, x=L298_X, bes_kullan=bes_kullan)
     motorlar(s, x=L298_X + 430)
     if AA:
         s.pil("pil", 540, 745, 280, 125, "4'lü AA Pil Kutusu (seri) = 6V", hucre=("AA", "AA", "AA", "AA"), alt="Kırmızı kablo +, siyah kablo −")
@@ -234,22 +234,22 @@ def sema_bt():
 def sema_engel():
     s = Sema("Engelden Kaçan Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + HC-SR04 + SG90 Servo + " + ("4'lü AA Pil Kutusu (6V)" if AA else "18650 Pil Yuvası (7.4V)") + " — blogdaki kodla uyumludur", "AE2WDEKRBT" if AA else "AE2WDEKRBT-LI",
              ["Kod pinleri: IN1→D5, IN2→D6, IN3→D9, IN4→D10; TRIG→A0, ECHO→A1; Servo→D3.",
-              "HC-SR04 ve servo Arduino 5V çıkışından beslenir; GND ortak.",
+              "HC-SR04 ve servo, L298N'in 5V çıkışından beslenir (Arduino regülatörü yorulmaz); GND ortak.",
               "Servo sinyal kablosu (turuncu) D3'e, kırmızı 5V'a, kahverengi GND'ye.",
               "Arduino pilden VIN ile beslenir (" + ("6V" if AA else "7.4V") + "). 5V pinine güç verilmez.",
               "ENA, ENB ve L298N 5V jumper'ları takılı kalmalı.",
               "Kod yüklerken pil şalterini kapatın; motor ters dönerse OUT uçlarını değiştirin."])
-    robot_govde(s)
-    s.kutu("sr", 30, 290, 190, 140, RENK["lacivert"], "HC-SR04", "Ultrasonik", pins=(("VCC", "t", 0.25), ("TRIG", "r", 0.45), ("ECHO", "r", 0.7), ("GND", "t", 0.75)), font=22, hiza="sol")
+    robot_govde(s, bes_kullan=True)
+    s.kutu("sr", 30, 290, 190, 140, RENK["lacivert"], "HC-SR04", "Ultrasonik", pins=(("VCC", "r", 0.2), ("TRIG", "r", 0.45), ("ECHO", "r", 0.7), ("GND", "t", 0.75)), font=22, hiza="sol")
     s.kutu("sv", 30, 520, 190, 120, RENK["lacivert"], "SG90", "Servo", pins=(("SIG", "r", 0.3), ("5V", "r", 0.55), ("GND", "r", 0.8)), font=24, hiza="sol")
     for n, o in (("A0", 0.62), ("A1", 0.72), ("D3", 0.85)):
         s.pins[("ard", n)] = (ARD_X, 280 + 380 * o, "l"); s.parts.append(f'<text x="{ARD_X + 14}" y="{280 + 380 * o + 7}" font-size="21" font-weight="700" fill="#fff">{n}</text>'); s.parts.append(f'<circle cx="{ARD_X}" cy="{280 + 380 * o}" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
     s.bagla("ylw", ("sr", "TRIG"), ("ard", "A0"), via=[(252, 353), (252, 515.6)])
     s.bagla("cyan", ("sr", "ECHO"), ("ard", "A1"), via=[(238, 388), (238, 553.6)])
     s.bagla("pur", ("sv", "SIG"), ("ard", "D3"), via=[(224, 556), (224, 603)])
-    s.tel("red", [(77, 290), (77, 170), (ARD_X + 90, 170), (ARD_X + 90, 280)]); s.dugum(ARD_X + 90, 280, "red"); s.dugum(77, 290, "red")
-    s.tel("red", [(220, 586), (266, 586), (266, 170)]); s.dugum(266, 170, "red")
-    s.yazi(40, 150, "+5V", RENK["red"], 22, True); s.yazi(ARD_X + 130, 176, "Arduino 5V çıkışı → sensör ve servo beslemesi", RENK["red"], 17)
+    s.tel("red", [(220, 318), (280, 318), (280, 690), (L298_X + 229.6, 690), (L298_X + 229.6, 590)]); s.dugum(220, 318, "red"); s.dugum(L298_X + 229.6, 590, "red")
+    s.tel("red", [(220, 586), (280, 586)]); s.dugum(280, 586, "red"); s.dugum(220, 586, "red")
+    s.yazi(640, 682, "L298N 5V çıkışı → HC-SR04 ve servo beslemesi", RENK["red"], 17)
     s.tel("blk", [(172, 290), (172, 230), (15, 230), (15, 905), (100, 905)]); s.dugum(172, 290, "blk")
     s.tel("blk", [(220, 616), (230, 616), (230, 905)]); s.dugum(230, 905, "blk")
     return s
@@ -260,25 +260,29 @@ def sema_3u1():
              ["L298N: IN1→D5, IN2→D6, IN3→D9, IN4→D10 (ENA/ENB jumper takılı).",
               "HC-06: TXD→D0, RXD→D1 (kod yüklerken çıkarın). IR alıcı OUT→D11.",
               "HC-SR04: TRIG→A0, ECHO→A1. SG90 servo sinyal→D3.",
-              "Tüm modüller Arduino 5V çıkışından beslenir; Arduino VIN pilden (" + ("6V" if AA else "7.4V") + ").",
+              "HC-06 ve IR alıcı Arduino 5V'tan; HC-SR04 ve servo L298N 5V çıkışından beslenir. Arduino VIN pilden (" + ("6V" if AA else "7.4V") + ").",
               "Tüm GND'ler ortak olmalı. Kod yüklerken pil şalteri kapalı.",
               "Blogdaki 3'ü 1 arada kod: IR tuşuyla ya da telefondan 'A' ile otonom mod."])
-    robot_govde(s)
-    s.kutu("sr", 40, 230, 170, 110, RENK["lacivert"], "HC-SR04", "TRIG A0 · ECHO A1", pins=(("", "r", 0.4), (" ", "r", 0.7)), font=22)
-    s.kutu("bt", 40, 370, 170, 110, RENK["lacivert"], "HC-06", "TXD D0 · RXD D1", pins=(("", "r", 0.4), (" ", "r", 0.7)), font=22)
-    s.kutu("ir", 40, 510, 170, 100, RENK["lacivert"], "IR ALICI", "OUT D11", pins=(("", "r", 0.5),), font=22)
-    s.kutu("sv", 40, 640, 170, 90, RENK["lacivert"], "SG90 Servo", "SIG D3", pins=(("", "r", 0.5),), font=22)
+    robot_govde(s, bes_kullan=True)
+    s.kutu("sr", 40, 215, 170, 95, RENK["lacivert"], "HC-SR04", "TRIG A0 · ECHO A1", pins=(("", "r", 0.35), (" ", "r", 0.65), ("5V", "l", 0.5)), font=22)
+    s.kutu("bt", 40, 345, 170, 95, RENK["lacivert"], "HC-06", "TXD D0 · RXD D1", pins=(("", "r", 0.35), (" ", "r", 0.65)), font=22)
+    s.kutu("ir", 40, 475, 170, 90, RENK["lacivert"], "IR ALICI", "OUT D11", pins=(("", "r", 0.5),), font=22)
+    s.kutu("sv", 40, 600, 170, 90, RENK["lacivert"], "SG90 Servo", "SIG D3", pins=(("", "r", 0.5), ("5V", "l", 0.85)), font=22)
     for n, o in (("A0", 0.62), ("A1", 0.69), ("D0", 0.76), ("D1", 0.83), ("D11", 0.9), ("D3", 0.97)):
         y = 280 + 380 * o
-        s.pins[("ard", n)] = (250, y, "l"); s.parts.append(f'<text x="{ARD_X + 14}" y="{y + 7}" font-size="19" font-weight="700" fill="#fff">{n}</text>'); s.parts.append(f'<circle cx="{ARD_X}" cy="{y}" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
-    s.bagla("ylw", ("sr", ""), ("ard", "A0"), via=[(294, 274), (294, 515.6)])
-    s.bagla("cyan", ("sr", " "), ("ard", "A1"), via=[(280, 307), (280, 542.2)])
-    s.bagla("grn", ("bt", ""), ("ard", "D0"), via=[(266, 414), (266, 568.8)])
-    s.bagla("blu", ("bt", " "), ("ard", "D1"), via=[(252, 447), (252, 595.4)])
-    s.bagla("org", ("ir", ""), ("ard", "D11"), via=[(238, 560), (238, 622)])
-    s.bagla("pnk", ("sv", ""), ("ard", "D3"), via=[(224, 685), (224, 648.6)])
-    s.tel("red", [(125, 230), (125, 170), (ARD_X + 90, 170), (ARD_X + 90, 280)]); s.dugum(ARD_X + 90, 280, "red")
-    s.yazi(40, 150, "+5V (tüm modüller)", RENK["red"], 20, True)
+        s.pins[("ard", n)] = (ARD_X, y, "l"); s.parts.append(f'<text x="{ARD_X + 14}" y="{y + 7}" font-size="19" font-weight="700" fill="#fff">{n}</text>'); s.parts.append(f'<circle cx="{ARD_X}" cy="{y}" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
+    s.bagla("ylw", ("sr", ""), ("ard", "A0"), via=[(294, 248.25), (294, 515.6)])
+    s.bagla("cyan", ("sr", " "), ("ard", "A1"), via=[(280, 276.75), (280, 542.2)])
+    s.bagla("grn", ("bt", ""), ("ard", "D0"), via=[(266, 378.25), (266, 568.8)])
+    s.bagla("blu", ("bt", " "), ("ard", "D1"), via=[(252, 406.75), (252, 595.4)])
+    s.bagla("org", ("ir", ""), ("ard", "D11"), via=[(238, 520), (238, 622)])
+    s.bagla("pnk", ("sv", ""), ("ard", "D3"), via=[(224, 645), (224, 648.6)])
+    s.tel("red", [(125, 345), (125, 330), (20, 330), (20, 170), (ARD_X + 90, 170), (ARD_X + 90, 280)]); s.dugum(ARD_X + 90, 280, "red"); s.dugum(125, 345, "red")
+    s.tel("red", [(125, 475), (125, 458), (20, 458)]); s.dugum(125, 475, "red"); s.dugum(20, 458, "red")
+    s.yazi(40, 150, "+5V Arduino → HC-06, IR alıcı", RENK["red"], 19, True)
+    s.tel("red", [(40, 262.5), (28, 262.5), (28, 300), (8, 300), (8, 705), (230, 705), (230, 676.5), (40, 676.5)]); s.dugum(40, 262.5, "red"); s.dugum(40, 676.5, "red")
+    s.tel("red", [(230, 705), (L298_X + 229.6, 705), (L298_X + 229.6, 590)]); s.dugum(230, 705, "red"); s.dugum(L298_X + 229.6, 590, "red")
+    s.yazi(640, 697, "L298N 5V çıkışı → HC-SR04 ve servo beslemesi", RENK["red"], 17)
     s.tel("blk", [(20, 905), (100, 905)]); s.yazi(40, 770, "GND: tüm modüllerin GND'si ortak hatta", RENK["gri"], 16)
     return s
 
