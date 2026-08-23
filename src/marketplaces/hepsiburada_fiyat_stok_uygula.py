@@ -58,7 +58,8 @@ def main():
     fiyat, stok = overrides()
     skus = secim or sorted(set(fiyat) | set(stok))
     listings = {l.get("merchantSku"): l for l in all_listings()}
-    print(f"{len(listings)} listing çekildi")
+    import hepsiburada_client as hc
+    print(f"{len(listings)} listing çekildi — base={hc.LISTING_BASE} env={hc.ENV}; örnek: {list(listings)[:40]}")
     p_items, s_items = [], []
     for sku in skus:
         l = listings.get(sku)
