@@ -53,7 +53,27 @@ def poll(get_status, upload_id, label):
             return
 
 
+def sit_testi():
+    """SIT (test) ortaminda tam dongu: listing cek, ilk listing'in stok ve fiyatini
+    kendi degerleriyle yeniden yukle. Canliya gecis oncesi 'surecleri tamamladik'
+    kaniti olarak calistirilir."""
+    ls = all_listings()
+    print(f"SIT: {len(ls)} listing")
+    l = next((x for x in ls if x.get("hepsiburadaSku") and x.get("price")), ls[0])
+    base = {"hepsiburadaSku": l["hepsiburadaSku"], "merchantSku": l.get("merchantSku")}
+    r = update_stock([{**base, "availableStock": int(l.get("availableStock") or 5)}])
+    print("SIT stok upload:", r)
+    uid = r.get("id") or r.get("uploadId")
+    if uid: poll(get_stock_upload_status, uid, "SIT stok")
+    r = update_price([{**base, "price": float(l.get("price") or 100)}])
+    print("SIT fiyat upload:", r)
+    uid = r.get("id") or r.get("uploadId")
+    if uid: poll(get_price_upload_status, uid, "SIT fiyat")
+
+
 def main():
+    if len(sys.argv) > 1 and sys.argv[1].strip() == "--sit-testi":
+        sit_testi(); return
     secim = [s.strip() for s in sys.argv[1].split(",")] if len(sys.argv) > 1 and sys.argv[1].strip() else None
     fiyat, stok = overrides()
     skus = secim or sorted(set(fiyat) | set(stok))
