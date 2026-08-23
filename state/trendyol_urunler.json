@@ -1,7 +1,7 @@
 {
   "AETEMELSET": {
     "barkod": "2901970047133",
-    "batchRequestId": "89902a38-26f8-42b3-b581-c552dd07ab78-1788096144"
+    "batchRequestId": "20750f2e-70fe-4e4b-ab55-1ba6c76d85bf-1788099433"
   },
   "AETEMELSET-J": {
     "barkod": "2909170442635",
@@ -17,7 +17,7 @@
   },
   "AEMOTPRV-1": {
     "barkod": "2901193165614",
-    "batchRequestId": "89902a38-26f8-42b3-b581-c552dd07ab78-1788096144"
+    "batchRequestId": "20750f2e-70fe-4e4b-ab55-1ba6c76d85bf-1788099433"
   },
   "AEMOTPRV-5": {
     "barkod": "2901463317217",
@@ -25,15 +25,15 @@
   },
   "AEMOTPRV-10": {
     "barkod": "2902223452209",
-    "batchRequestId": "89902a38-26f8-42b3-b581-c552dd07ab78-1788096144"
+    "batchRequestId": "20750f2e-70fe-4e4b-ab55-1ba6c76d85bf-1788099433"
   },
   "AEDUYAMP-1": {
     "barkod": "2901238096255",
-    "batchRequestId": "89902a38-26f8-42b3-b581-c552dd07ab78-1788096144"
+    "batchRequestId": "20750f2e-70fe-4e4b-ab55-1ba6c76d85bf-1788099433"
   },
   "AEDUYAMP-5": {
     "barkod": "2902547758018",
-    "batchRequestId": "89902a38-26f8-42b3-b581-c552dd07ab78-1788096144"
+    "batchRequestId": "20750f2e-70fe-4e4b-ab55-1ba6c76d85bf-1788099433"
   },
   "AEDUY-10": {
     "barkod": "2907418862238",
@@ -45,7 +45,7 @@
   },
   "AEPRV-5": {
     "barkod": "2901639901745",
-    "batchRequestId": "89902a38-26f8-42b3-b581-c552dd07ab78-1788096144"
+    "batchRequestId": "20750f2e-70fe-4e4b-ab55-1ba6c76d85bf-1788099433"
   },
   "AEPRV-10": {
     "barkod": "2901654561016",
@@ -57,10 +57,10 @@
   },
   "AEDCM3V-5": {
     "barkod": "2902635605668",
-    "batchRequestId": "89902a38-26f8-42b3-b581-c552dd07ab78-1788096144"
+    "batchRequestId": "20750f2e-70fe-4e4b-ab55-1ba6c76d85bf-1788099433"
   },
   "AEDCM3V-10": {
     "barkod": "2908486849664",
-    "batchRequestId": "89902a38-26f8-42b3-b581-c552dd07ab78-1788096144"
+    "batchRequestId": "20750f2e-70fe-4e4b-ab55-1ba6c76d85bf-1788099433"
   }
 }
