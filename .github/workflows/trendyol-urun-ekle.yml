@@ -9,7 +9,7 @@ on:
         type: choice
         required: true
         default: "kesfet"
-        options: [kesfet, kuru, gonder, guncelle, batch, onaysiz]
+        options: [kesfet, kuru, gonder, guncelle, batch, onaysiz, stok, not-ekle]
       batch_id:
         description: "batch icin batchRequestId"
         type: string
@@ -46,6 +46,8 @@ jobs:
             gonder) python src/marketplaces/trendyol_urun_ekle.py --gonder ${{ inputs.sku && format('--sku "{0}"', inputs.sku) || '' }} ;;
             batch)  python src/marketplaces/trendyol_urun_ekle.py --batch "${{ inputs.batch_id }}" ;;
             onaysiz) python src/marketplaces/trendyol_urun_ekle.py --onaysiz ;;
+            stok) python src/marketplaces/trendyol_urun_ekle.py --stok ;;
+            not-ekle) python src/marketplaces/trendyol_urun_ekle.py --not-ekle "${{ inputs.sku }}" ;;
             guncelle) python src/marketplaces/trendyol_urun_ekle.py --gonder --guncelle ${{ inputs.sku && format('--sku "{0}"', inputs.sku) || '' }} ;;
           esac
       - name: Kaydi commit et

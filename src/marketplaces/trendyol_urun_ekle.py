@@ -168,6 +168,8 @@ def main():
     ap.add_argument("--onaysiz", action="store_true")
     ap.add_argument("--sku", help="virgullu stok kodu listesi: sadece bunlari gonder")
     ap.add_argument("--guncelle", action="store_true", help="onaysiz urunleri guncelle (unapproved-bulk-update)")
+    ap.add_argument("--stok", action="store_true", help="config'teki stok/fiyati price-and-inventory ile gonder")
+    ap.add_argument("--not-ekle", help="virgullu stokCode listesi: onayli urun aciklamasinin basina sema notu ekle")
     ap.add_argument("--kesfet", action="store_true")
     ap.add_argument("--kuru", action="store_true")
     ap.add_argument("--gonder", action="store_true")
@@ -193,6 +195,27 @@ def main():
         batch_sonuc(a.batch)
     if a.onaysiz:
         onaysizlar()
+    if a.stok:
+        items = [{"barcode": u["barkod"], "quantity": int(u["stok"]), "salePrice": float(u["fiyat"]), "listPrice": float(u["fiyat"])} for u in cfg["urunler"]]
+        print(tc.update_price_and_inventory(items))
+    if a.not_ekle:
+        NOT = ('<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması bulunur; '
+               'kod ve adım adım anlatım atolyeelektronik.com blogumuzdadır.</p>')
+        istenen = {x.strip() for x in a.not_ekle.split(",")}
+        guncel = []
+        for _, p in tc.iter_all_products(size=100):
+            for v in p.get("variants", [p]):
+                sc = v.get("stockCode") or p.get("stockCode")
+                if sc in istenen:
+                    desc = p.get("description") or ""
+                    if "Bağlantı şeması" in desc:
+                        print("zaten var:", sc); continue
+                    guncel.append({"barcode": v.get("barcode") or p.get("barcode"), "description": NOT + desc})
+                    print("guncellenecek:", sc, v.get("barcode") or p.get("barcode"))
+        if guncel:
+            r = requests.post(f"{tc.BASE_URL}/product/sellers/{tc.SUPPLIER_ID}/products/content-bulk-update",
+                              headers=tc._auth_header(), json={"items": guncel}, timeout=60)
+            print(r.status_code, r.text[:500])
 
 
 if __name__ == "__main__":
