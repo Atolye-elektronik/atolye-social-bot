@@ -86,6 +86,17 @@ def kesfet(cfg):
             print("Mevcut urun kargo:", c.get("title", "")[:40], c.get("cargoCompanyId"), "| desi", c.get("dimensionalWeight"))
     except Exception as e:  # noqa: BLE001
         print("Mevcut urun okunamadi:", e)
+    try:
+        d = tc.get_products_v1(page=0, size=3)
+        for c in d.get("content", [])[:3]:
+            print("V1 urun kargo:", c.get("title", "")[:40], c.get("cargoCompanyId"), "| desi", c.get("dimensionalWeight"))
+    except Exception as e:  # noqa: BLE001
+        print("V1 okunamadi:", e)
+    for yol in ("/sellers/%s/cargo-providers" % tc.SUPPLIER_ID, "/product/cargo-providers", "/order/sellers/%s/cargo-providers" % tc.SUPPLIER_ID):
+        try:
+            print("Kargo", yol, str(_get(yol))[:600])
+        except Exception as e:  # noqa: BLE001
+            print("Kargo", yol, "->", str(e)[:80])
 
 
 def payload_kur(cfg):
