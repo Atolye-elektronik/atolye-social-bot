@@ -117,11 +117,11 @@ def payload_kur(cfg):
             "stockCode": u["stokKodu"],
             "dimensionalWeight": u.get("desi", 1),
             "description": u["aciklama"],
-            "currencyType": "TRY",
+            "origin": cfg.get("mensei", "CN"),
             "listPrice": float(u["fiyat"]),
             "salePrice": float(u["fiyat"]),
             "vatRate": 20,
-            "cargoCompanyId": cfg["kargoId"],
+            "cargoProviders": [cfg.get("kargoKodu", "SURATMP")],
             "images": [{"url": g} for g in u["gorseller"][:8]],
             "attributes": [
                 {"attributeId": a["attributeId"], **({"attributeValueId": a["attributeValueId"]} if "attributeValueId" in a else {"customAttributeValue": a["customAttributeValue"]})}
@@ -132,7 +132,7 @@ def payload_kur(cfg):
 
 
 def gonder(payload):
-    r = requests.post(f"{tc.BASE_URL}/product/sellers/{tc.SUPPLIER_ID}/products",
+    r = requests.post(f"{tc.BASE_URL}/product/sellers/{tc.SUPPLIER_ID}/v2/products",
                       headers=tc._auth_header(), json=payload, timeout=60)
     print(r.status_code, r.text[:1000])
     r.raise_for_status()
