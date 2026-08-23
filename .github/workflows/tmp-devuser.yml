@@ -1,0 +1,10 @@
+name: tmp devuser goster
+on: { workflow_dispatch: {} }
+jobs:
+  g:
+    runs-on: ubuntu-latest
+    steps:
+      - name: kullanici adi (harf arali)
+        env:
+          U: ${{ secrets.HEPSIBURADA_DEV_USERNAME }}
+        run: python3 -c "import os;print('DEVUSER:', ' '.join(os.environ['U']))"
