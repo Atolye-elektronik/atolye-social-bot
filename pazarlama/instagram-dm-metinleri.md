@@ -31,6 +31,8 @@ Hesabı doğrudan atölye şefi yönetiyor. Meslektaş diliyle yaz, satış dili
 > alıyoruz. Sınıf mevcudunuza göre fiyat çıkarabiliyoruz.
 >
 > İhtiyaç listenizi atarsanız aynı gün dönerim.
+>
+> E-posta: info@atolyeelektronik.com
 
 Köşeli parantezli satır **zorunlu** — o cümle mesajı şablon olmaktan çıkarıyor.
 
@@ -50,6 +52,8 @@ Hesabı genelde okul yönetimi tutuyor, o yüzden yönlendirme isteği ekli.
 >
 > Bu mesajı [elektrik-elektronik / bilişim] alan şefinize iletebilirseniz
 > sevinirim. Proforma fatura ve havale/EFT ile çalışıyoruz.
+>
+> E-posta: info@atolyeelektronik.com
 
 ---
 
@@ -68,6 +72,8 @@ olalım" demek gerekiyor. Yıl boyu alım yapan tek segment bu.
 > malzeme bekleme derdi olmuyor. 1.200 TL üzeri kargo bizden.
 >
 > Kullandığınız malzeme listesini atarsanız fiyat çıkarayım, kıyaslarsınız.
+>
+> E-posta: info@atolyeelektronik.com
 
 **Şubeli olanlara** (`@teknolojiatolyesikurumsal`, `@robovillageturkiye`,
 `@forfutureturkiye`) şu cümleyi ekle:
@@ -102,6 +108,8 @@ mesaj boşa gider.
 > Arduino • eğitim setleri • takım çantası • temrin defteri
 > Okullara proforma faturalı toplu satış
 > 1.200 TL üzeri kargo bedava
+>
+> E-posta: info@atolyeelektronik.com
 
 **Bio bağlantısı:** `atolyeelektronik.com/pages/okul-siparisi`
 (ana sayfa değil — okul siparişi sayfası, çünkü gelen trafik öğretmen)
