@@ -74,11 +74,18 @@ def kesfet(cfg):
             at = a["attribute"]
             print(f"  attr {at['id']:>6} {at['name']:<25} zorunlu={a.get('required')} varyant={a.get('varianter')} "
                   f"serbest={a.get('allowCustom')} degerler={[ (v['id'], v['name']) for v in (a.get('attributeValues') or [])[:12] ]}")
+        for a in oz.get("categoryAttributes", []):
+            if a["attribute"]["name"] == "Menşei":
+                for v in a.get("attributeValues") or []:
+                    if v["name"] in ("CN", "TR", "Çin", "Türkiye"):
+                        print("  MENSEI", v["id"], v["name"])
+    # kargo id: mevcut bir ürünün cargoCompanyId'si
     try:
-        for s in kargo_firmalari():
-            print("Kargo:", s)
+        d = tc.get_approved_products(page=0, size=5)
+        for c in d.get("content", [])[:5]:
+            print("Mevcut urun kargo:", c.get("title", "")[:40], c.get("cargoCompanyId"), "| desi", c.get("dimensionalWeight"))
     except Exception as e:  # noqa: BLE001
-        print("Kargo listesi alınamadı:", e)
+        print("Mevcut urun okunamadi:", e)
 
 
 def payload_kur(cfg):
