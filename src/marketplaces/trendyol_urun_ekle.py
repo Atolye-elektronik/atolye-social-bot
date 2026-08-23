@@ -141,7 +141,10 @@ def gonder(payload):
 
 def batch_sonuc(bid):
     r = _get(f"/product/sellers/{tc.SUPPLIER_ID}/products/batch-requests/{bid}")
-    print(json.dumps(r, ensure_ascii=False, indent=2)[:6000])
+    print("batch status:", r.get("status"), "| item:", r.get("itemCount"), "| fail:", r.get("failedItemCount"))
+    for it in r.get("items", []):
+        p = it.get("requestItem", {}).get("product", {})
+        print(" ", it.get("status"), p.get("stockCode"), p.get("barcode"), it.get("failureReasons"))
     return r
 
 
