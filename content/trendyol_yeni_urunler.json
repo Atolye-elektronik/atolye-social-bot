@@ -1,6 +1,6 @@
 {
   "marka": "ATOLYE ELEKTRONİK",
-  "kategori": "Robotik Malzeme",
+  "kategori": "Elektronik Devre Elemanı",
   "kargoId": 9,
   "ozellikler": [
     {
@@ -255,5 +255,5 @@
     }
   ],
   "markaId": 2967081,
-  "kategoriId": 4391
+  "kategoriId": 3094
 }
