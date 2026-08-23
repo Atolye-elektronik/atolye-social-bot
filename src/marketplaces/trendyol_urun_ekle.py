@@ -206,11 +206,13 @@ def main():
         for _, p in tc.iter_all_products(size=100):
             for v in p.get("variants", [p]):
                 sc = v.get("stockCode") or p.get("stockCode")
+                if any(k in (p.get("title") or "") for k in ("Kiti", "Seti")):
+                    print("  mevcut:", sc, "|", (p.get("title") or "")[:50], "| contentId", p.get("contentId") or p.get("id"))
                 if sc in istenen:
                     desc = p.get("description") or ""
                     if "Bağlantı şeması" in desc:
                         print("zaten var:", sc); continue
-                    guncel.append({"barcode": v.get("barcode") or p.get("barcode"), "description": NOT + desc})
+                    guncel.append({"contentId": p.get("contentId") or p.get("id"), "description": NOT + desc})
                     print("guncellenecek:", sc, v.get("barcode") or p.get("barcode"))
         if guncel:
             r = requests.post(f"{tc.BASE_URL}/product/sellers/{tc.SUPPLIER_ID}/products/content-bulk-update",
