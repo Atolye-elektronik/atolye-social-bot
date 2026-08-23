@@ -52,7 +52,11 @@ with smtplib.SMTP_SSL(HOST, 465, timeout=60) as S:
                 gvd = p.get_payload(decode=True).decode(p.get_content_charset() or "utf-8", "replace")
                 break
         y = EmailMessage()
-        y["Subject"] = f"[info@ kutusu] {konu}"
+        # Okul cevaplari hep @meb.k12.tr'den gelir; Gmail'de bir bakista
+        # ayrilsin diye konu onekine [OKUL] ekleniyor. Digerleri cogunlukla
+        # magaza adresine gelen soguk-satis spam'i.
+        etiket = "[OKUL CEVABI]" if "meb.k12.tr" in kimden.lower() else "[info@ kutusu]"
+        y["Subject"] = f"{etiket} {konu}"
         # Gonderen basligi bilerek info@ DEGIL: Gmail'de info@ "send as"
         # adresi olarak kayitli ve Gmail kendi adresinden gelen postayi
         # gelen kutusuna koymuyor (sessizce yutuyor). Zarf info@ kaliyor
