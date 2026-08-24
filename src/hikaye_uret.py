@@ -271,6 +271,13 @@ def uret(adet: int = 2, onizleme: bool = False) -> int:
     MANIFEST_PATH.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8")
+    # 21.08 sonrasi hikayeleri kullanici elle paylasiyor, yayinla evresi
+    # kosmuyor; kaydi burada tutmazsak her gun ayni urunler secilir.
+    if not onizleme:
+        for kayit in manifest:
+            if kayit["urun_id"] not in seen:
+                seen.append(kayit["urun_id"])
+        _seen_yaz(seen)
     return 0
 
 
