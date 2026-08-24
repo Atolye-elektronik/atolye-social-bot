@@ -172,6 +172,8 @@ def main():
     ap.add_argument("--stok", action="store_true", help="config'teki stok/fiyati price-and-inventory ile gonder")
     ap.add_argument("--not-ekle", help="virgullu stokCode listesi: onayli urun aciklamasinin basina sema notu ekle")
     ap.add_argument("--fiyat-dok", action="store_true", help="onayli urunlerin stokKodu|barkod|fiyat|stok dokumu")
+    ap.add_argument("--zam", help="tum onayli urunlere yuzde zam, orn: 5")
+    ap.add_argument("--zam-tl", help="istisna: STOKKODU=TL sabit zam, virgullu, orn: AETCS18P=100")
     ap.add_argument("--kesfet", action="store_true")
     ap.add_argument("--kuru", action="store_true")
     ap.add_argument("--gonder", action="store_true")
@@ -196,19 +198,35 @@ def main():
         print("batchRequestId:", sonuc.get("batchRequestId"))
     if a.batch:
         batch_sonuc(a.batch)
-    if a.fiyat_dok:
-        ilk = True
+    if a.zam:
+        yuzde = float(a.zam)
+        tl_istisna = {}
+        for cift in (a.zam_tl or "").split(","):
+            if "=" in cift:
+                k, vdeg = cift.split("="); tl_istisna[k.strip()] = float(vdeg)
+        items = []
         for _, p in tc.iter_all_products(size=100):
-            if ilk:
-                print("RAWKEYS|", sorted(p.keys()))
-                v0 = (p.get("variants") or [p])[0]
-                print("RAWVAR|", json.dumps(v0, ensure_ascii=False)[:900])
-                ilk = False
             for v in p.get("variants", [p]) or [p]:
-                sp = v.get("salePrice")
-                if isinstance(sp, dict): sp = sp.get("value")
-                q = v.get("quantity")
-                if isinstance(q, dict): q = q.get("quantity")
+                fiyat = (v.get("price") or {}).get("salePrice")
+                stok = (v.get("stock") or {}).get("quantity")
+                sk = v.get("stockCode"); bar = v.get("barcode")
+                if not bar or not fiyat or fiyat <= 0:
+                    print("ATLA|", sk, bar, fiyat); continue
+                if sk in tl_istisna:
+                    yeni = round(fiyat + tl_istisna[sk], 2)
+                else:
+                    yeni = round(fiyat * (1 + yuzde / 100))
+                items.append({"barcode": bar, "quantity": int(stok or 0), "salePrice": float(yeni), "listPrice": float(yeni)})
+                print("ZAM|", sk, "|", bar, "|", fiyat, "->", yeni)
+        print("toplam kalem:", len(items))
+        for i in range(0, len(items), 100):
+            print(tc.update_price_and_inventory(items[i:i+100]))
+        return
+    if a.fiyat_dok:
+        for _, p in tc.iter_all_products(size=100):
+            for v in p.get("variants", [p]) or [p]:
+                sp = (v.get("price") or {}).get("salePrice") if isinstance(v.get("price"), dict) else v.get("salePrice")
+                q = (v.get("stock") or {}).get("quantity") if isinstance(v.get("stock"), dict) else v.get("quantity")
                 print("FD|", v.get("stockCode") or p.get("stockCode"), "|", v.get("barcode") or p.get("barcode"),
                       "|", sp, "|", q, "|", (p.get("title") or "")[:55])
     if a.onaysiz:
