@@ -212,6 +212,8 @@ def main():
                 sk = v.get("stockCode"); bar = v.get("barcode")
                 if not bar or not fiyat or fiyat <= 0:
                     print("ATLA|", sk, bar, fiyat); continue
+                if a.sku and sk not in {x.strip() for x in a.sku.split(",")}:
+                    continue
                 if sk in tl_istisna:
                     yeni = round(fiyat + tl_istisna[sk], 2)
                 else:
