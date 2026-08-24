@@ -197,7 +197,13 @@ def main():
     if a.batch:
         batch_sonuc(a.batch)
     if a.fiyat_dok:
+        ilk = True
         for _, p in tc.iter_all_products(size=100):
+            if ilk:
+                print("RAWKEYS|", sorted(p.keys()))
+                v0 = (p.get("variants") or [p])[0]
+                print("RAWVAR|", json.dumps(v0, ensure_ascii=False)[:900])
+                ilk = False
             for v in p.get("variants", [p]) or [p]:
                 sp = v.get("salePrice")
                 if isinstance(sp, dict): sp = sp.get("value")
