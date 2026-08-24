@@ -1,8 +1,8 @@
 name: IG gunluk hikaye gorselleri (uretim)
 
 on:
-  schedule:
-    - cron: "41 17 * * *"   # 20:41 TR
+  # 25.08: gunluk otomatik uretim KAPATILDI - kullanici istedikce elle calisir.
+  # (Serdar masaustundeki hikaye arsivinden gunde 1-2 elle paylasiyor.)
   workflow_dispatch:
     inputs:
       hikayeler:

@@ -5,8 +5,8 @@ on:
     # Iki tur: ogle turu videolari (publish_at 12:00), aksam turu carousel/
     # senaryoyu (19:10) alir. Tek turda ayni platforma 1 gonderi kurali
     # yuzunden video ile carousel yarisip biri ertesi gune kayiyordu.
-    - cron: "13 9 * * *"    # 12:13 TR - video turu
-    - cron: "47 16 * * *"   # 19:47 TR - carousel/senaryo turu
+    - cron: "0 9 * * *"     # 12:00 TR - video turu (ogle zirvesi)
+    - cron: "30 17 * * *"   # 20:30 TR - carousel/senaryo turu (aksam zirvesi)
   workflow_dispatch:
     inputs:
       only:
