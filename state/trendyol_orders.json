@@ -1,6 +1,188 @@
 [
   {
     "shipmentAddress": {
+      "id": 9520851036,
+      "firstName": "Tugay",
+      "lastName": "KILIÇ",
+      "company": "",
+      "address1": "Süvari Mah. Ahi Mesud Bulvarı Türkoğlu Apt. No:19 İç kapı No: 1 Etimesgut/Ankara",
+      "address2": "",
+      "city": "Ankara",
+      "cityCode": 6,
+      "district": "Etimesgut",
+      "districtId": 22,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "06000",
+      "countryCode": "TR",
+      "neighborhoodId": 7125,
+      "neighborhood": "Süvari Mah",
+      "phone": null,
+      "fullAddress": "Süvari Mah. Ahi Mesud Bulvarı Türkoğlu Apt. No:19 İç kapı No: 1 Etimesgut/Ankara     Etimesgut Ankara",
+      "fullName": "Tugay KILIÇ"
+    },
+    "orderNumber": "11533897956",
+    "orderCountryCode": "TR",
+    "grossAmount": 495.01,
+    "packageGrossAmount": 495.01,
+    "totalDiscount": 19.9,
+    "packageSellerDiscount": 19.9,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 19.9,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik - Sepetine Özel Kupon! 🛍️",
+        "discountAmount": 10
+      },
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 9.9
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9520851035,
+      "firstName": "Tugay",
+      "lastName": "KILIÇ",
+      "company": "",
+      "address1": "Süvari Mah. Ahi Mesud Bulvarı Türkoğlu Apt. No:19 İç kapı No: 1 Etimesgut/Ankara",
+      "address2": "",
+      "city": "Ankara",
+      "cityCode": 6,
+      "district": "Etimesgut",
+      "districtId": 22,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "06000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 7125,
+      "neighborhood": "Süvari Mah",
+      "phone": null,
+      "fullAddress": "Süvari Mah. Ahi Mesud Bulvarı Türkoğlu Apt. No:19 İç kapı No: 1 Etimesgut/Ankara     Etimesgut Ankara",
+      "fullName": "Tugay KILIÇ"
+    },
+    "customerFirstName": "Tugay",
+    "customerEmail": "pf+zapab5ex@trendyolmail.com",
+    "customerId": 20834779,
+    "supplierId": 0,
+    "customerLastName": "KILIÇ",
+    "id": 4100037446,
+    "channelId": 1,
+    "shipmentPackageId": 4100037446,
+    "cargoTrackingNumber": 7330036294173998,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEUT12D",
+        "sku": "TYBI4USEB2DIY02J13",
+        "stockCode": "AEUT12D",
+        "productName": "Ut12d Temassız Ac Voltaj Gerilim Dedektörü UT12D-UNIT, one size",
+        "productCode": 264480205,
+        "contentId": 264480205,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 495.01,
+        "lineGrossAmount": 495.01,
+        "discount": 19.9,
+        "lineTotalDiscount": 19.9,
+        "lineSellerDiscount": 19.9,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 475.11,
+            "lineItemDiscount": 19.9,
+            "lineItemSellerDiscount": 19.9,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5871236477,
+        "lineId": 5871236477,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "TYBI4USEB2DIY02J13",
+        "orderLineItemStatusName": "Picking",
+        "price": 475.11,
+        "lineUnitPrice": 475.11,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2471,
+        "commission": 3.3,
+        "businessUnit": "Garden & Power Tools",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1787575187153,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1787564421422,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1787564425171,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1787564473758,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1787691540000,
+    "estimatedDeliveryEndDate": 1787864340000,
+    "totalPrice": 475.11,
+    "packageTotalPrice": 475.11,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1787691540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1787564421412,
+    "lastModifiedDate": 1787568006857,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10793196390,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9519632448,
       "firstName": "cumali",
       "lastName": "şimşek",
