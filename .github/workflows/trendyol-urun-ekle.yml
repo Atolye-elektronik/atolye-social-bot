@@ -9,7 +9,7 @@ on:
         type: choice
         required: true
         default: "kesfet"
-        options: [kesfet, kuru, gonder, guncelle, batch, onaysiz, stok, not-ekle, fiyatdok, zam, zamduzelt]
+        options: [kesfet, kuru, gonder, guncelle, batch, onaysiz, stok, not-ekle, fiyatdok, zam, zamduzelt, test70]
       batch_id:
         description: "batch icin batchRequestId"
         type: string
@@ -49,6 +49,7 @@ jobs:
             fiyatdok) python src/marketplaces/trendyol_urun_ekle.py --fiyat-dok ;;
             zam) python src/marketplaces/trendyol_urun_ekle.py --zam "5" --zam-tl "AETCS18P=100" ;;
             zamduzelt) python src/marketplaces/trendyol_urun_ekle.py --zam "0" --zam-tl "AETC162=79" --sku "AETC162" ;;
+            test70) python src/marketplaces/trendyol_urun_ekle.py --zam "0" --zam-tl "AETP4056=70,AEBZZR5V=70,AEPYAA2=70,AEPY18650=70,AEPOT10K=70" --sku "AETP4056,AEBZZR5V,AEPYAA2,AEPY18650,AEPOT10K" ;;
             stok) python src/marketplaces/trendyol_urun_ekle.py --stok ;;
             not-ekle) python src/marketplaces/trendyol_urun_ekle.py --not-ekle "${{ inputs.sku }}" ;;
             guncelle) python src/marketplaces/trendyol_urun_ekle.py --gonder --guncelle ${{ inputs.sku && format('--sku "{0}"', inputs.sku) || '' }} ;;
