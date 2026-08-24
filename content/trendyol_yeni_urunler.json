@@ -64,7 +64,7 @@
       "stokKodu": "AEVANTSET",
       "modelKodu": "AEVANTSET",
       "barkod": "2901720999712",
-      "ad": "Mini Vantilatör Seti - Pil Kutusu + DC Motor + Anahtar + Pervane",
+      "ad": "Fen Deney Seti - Mini Vantilatör Yapımı - Pil Kutusu + DC Motor + Anahtar + Pervane",
       "aciklama": "<p><strong>Bağlantı şeması ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve deney anlatımı bulunur.</p><p>Fen dersinin klasiği: 4 parçayla çalışan mini vantilatör. Pili tak, anahtarı aç, pervane dönsün. İlkokul-ortaokul fen deneyleri ve proje ödevleri için hazır set.</p><ul>\n<li>2'li AA pil kutusu (kablolu)</li>\n<li>3V yassı DC motor</li>\n<li>On-off (rocker) anahtar</li>\n<li>3 kanat plastik pervane</li>\n</ul><p>Piller dahil değildir (2 adet AA). Lehim gerektirmez; kablolar anahtar ve motora sarılarak ya da bantlanarak bağlanabilir.</p>",
       "fiyat": 159,
       "stok": 30,
@@ -72,13 +72,6 @@
       "gorseller": [
         "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/vantilator-seti.jpg?v=1787487525",
         "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-pervane-takili_c560d5bb-af58-497c-9e42-667f341b30b4.jpg?v=1787487525"
-      ],
-      "kategoriId": 4391,
-      "ozellikler": [
-        {
-          "attributeId": 1192,
-          "attributeValueId": 10617300
-        }
       ]
     },
     {
