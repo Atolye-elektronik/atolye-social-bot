@@ -72,6 +72,13 @@
       "gorseller": [
         "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/vantilator-seti.jpg?v=1787487525",
         "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-pervane-takili_c560d5bb-af58-497c-9e42-667f341b30b4.jpg?v=1787487525"
+      ],
+      "kategoriId": 4391,
+      "ozellikler": [
+        {
+          "attributeId": 1192,
+          "attributeValueId": 10617300
+        }
       ]
     },
     {
@@ -188,6 +195,13 @@
         "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pervane-5li.jpg?v=1787487428",
         "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pervane-10lu.jpg?v=1787487428",
         "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-pervane-takili.jpg?v=1787487428"
+      ],
+      "kategoriId": 4391,
+      "ozellikler": [
+        {
+          "attributeId": 1192,
+          "attributeValueId": 10617300
+        }
       ]
     },
     {

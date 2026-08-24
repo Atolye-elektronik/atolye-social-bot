@@ -112,7 +112,7 @@ def payload_kur(cfg):
             "title": u["ad"][:100],
             "productMainId": u["modelKodu"],
             "brandId": marka_id,
-            "categoryId": cid,
+            "categoryId": u.get("kategoriId", cid),
             "quantity": int(u["stok"]),
             "stockCode": u["stokKodu"],
             "dimensionalWeight": u.get("desi", 1),
@@ -125,7 +125,7 @@ def payload_kur(cfg):
             "images": [{"url": g} for g in u["gorseller"][:8]],
             "attributes": [
                 {"attributeId": a["attributeId"], **({"attributeValueId": a["attributeValueId"]} if "attributeValueId" in a else {"customAttributeValue": a["customAttributeValue"]})}
-                for a in cfg.get("ozellikler", [])
+                for a in u.get("ozellikler", cfg.get("ozellikler", []))
             ],
         })
     return {"items": items}
