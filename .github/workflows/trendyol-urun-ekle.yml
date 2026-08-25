@@ -50,7 +50,7 @@ jobs:
             zam) python src/marketplaces/trendyol_urun_ekle.py --zam "5" --zam-tl "AETCS18P=100" ;;
             zamduzelt) python src/marketplaces/trendyol_urun_ekle.py --zam "0" --zam-tl "AETC162=79" --sku "AETC162" ;;
             test70) python src/marketplaces/trendyol_urun_ekle.py --zam "0" --zam-tl "AETP4056=70,AEBZZR5V=70,AEPYAA2=70,AEPY18650=70,AEPOT10K=70" --sku "AETP4056,AEBZZR5V,AEPYAA2,AEPY18650,AEPOT10K" ;;
-            test70geri) python src/marketplaces/trendyol_urun_ekle.py --zam "0" --zam-tl "AETP4056=-70,AEBZZR5V=-70,AEPYAA2=-70,AEPY18650=-70,AEPOT10K=-70" --sku "AETP4056,AEBZZR5V,AEPYAA2,AEPY18650,AEPOT10K" ;;
+            test70geri) python src/marketplaces/trendyol_urun_ekle.py --fiyat-set "TYB1FWMHAXR7W1GI43=77,TYBPT2Q0O7Y1KGYG90=20,TYBW805DFS3U8DIC36=21,TYBRAWXK3UZY5HUP72=45,AB0281=78,9999880000034=21,9999880000047=25" ;;
             buzzerunlock) python src/marketplaces/trendyol_urun_ekle.py --fiyat-set "${{ inputs.sku }}" ;;
             stok) python src/marketplaces/trendyol_urun_ekle.py --stok ;;
             not-ekle) python src/marketplaces/trendyol_urun_ekle.py --not-ekle "${{ inputs.sku }}" ;;
