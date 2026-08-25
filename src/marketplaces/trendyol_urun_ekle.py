@@ -229,8 +229,9 @@ def main():
             for v in p.get("variants", [p]) or [p]:
                 sp = (v.get("price") or {}).get("salePrice") if isinstance(v.get("price"), dict) else v.get("salePrice")
                 q = (v.get("stock") or {}).get("quantity") if isinstance(v.get("stock"), dict) else v.get("quantity")
+                vat = p.get("vatRate", v.get("vatRate", "?"))
                 print("FD|", v.get("stockCode") or p.get("stockCode"), "|", v.get("barcode") or p.get("barcode"),
-                      "|", sp, "|", q, "|", (p.get("title") or "")[:55])
+                      "|", sp, "|", q, "| KDV", vat, "|", (p.get("title") or "")[:55])
     if a.onaysiz:
         onaysizlar()
     if a.stok:
