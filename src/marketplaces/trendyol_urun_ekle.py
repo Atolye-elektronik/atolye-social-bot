@@ -172,6 +172,7 @@ def main():
     ap.add_argument("--stok", action="store_true", help="config'teki stok/fiyati price-and-inventory ile gonder")
     ap.add_argument("--not-ekle", help="virgullu stokCode listesi: onayli urun aciklamasinin basina sema notu ekle")
     ap.add_argument("--fiyat-dok", action="store_true", help="onayli urunlerin stokKodu|barkod|fiyat|stok dokumu")
+    ap.add_argument("--fiyat-set", help="barkod-hedefli tam fiyat: BARKOD=FIYAT,virgullu (stok korunur)")
     ap.add_argument("--zam", help="tum onayli urunlere yuzde zam, orn: 5")
     ap.add_argument("--zam-tl", help="istisna: STOKKODU=TL sabit zam, virgullu, orn: AETCS18P=100")
     ap.add_argument("--kesfet", action="store_true")
@@ -222,6 +223,22 @@ def main():
                 print("ZAM|", sk, "|", bar, "|", fiyat, "->", yeni)
         print("toplam kalem:", len(items))
         for i in range(0, len(items), 100):
+            print(tc.update_price_and_inventory(items[i:i+100]))
+        return
+    if a.fiyat_set:
+        hedef={}
+        for par in a.fiyat_set.split(","):
+            bar,_,fi=par.partition("="); hedef[bar.strip()]=float(fi)
+        items=[]
+        for _, p in tc.iter_all_products(size=100):
+            for v in p.get("variants",[p]) or [p]:
+                bar=v.get("barcode") or p.get("barcode")
+                if bar in hedef:
+                    q=(v.get("stock") or {}).get("quantity") if isinstance(v.get("stock"),dict) else v.get("quantity")
+                    fy=hedef[bar]
+                    items.append({"barcode":bar,"quantity":int(q or 0),"salePrice":fy,"listPrice":fy})
+                    print("SET|",v.get("stockCode"),"|",bar,"|",fy,"| stok",q)
+        for i in range(0,len(items),100):
             print(tc.update_price_and_inventory(items[i:i+100]))
         return
     if a.fiyat_dok:
