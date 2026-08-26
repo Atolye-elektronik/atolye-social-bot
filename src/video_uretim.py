@@ -536,8 +536,18 @@ def _senaryoyu_bul(caption: str):
 
 
 # Slayt fontunda emoji glifi yok; temizlenmezse kare kutu (tofu) basılıyor.
+# Aralık geniş tutuldu: ⏰ (U+23F0) gibi "Miscellaneous Technical" bloğundaki
+# işaretler ilk denemede dışarıda kalmıştı. Fazla temizlemek, tofu basmaktan
+# iyi — metin slaytlarında zaten emoji istemiyoruz.
 EMOJI_RE = re.compile(
-    "[\U0001F000-\U0001FAFF☀-➿️⬀-⯿←-⇿]+"
+    "["
+    "←-⇿"        # oklar
+    "⌀-⏿"        # ⏰ ⌚ ⏳ - misc technical
+    "①-➿"        # ☀ ➿ - misc symbols + dingbats
+    "⬀-⯿"        # ⬀ ⯿
+    "️‍"         # varyasyon seçici + ZWJ
+    "\U0001F000-\U0001FAFF"
+    "]+"
 )
 
 # Ürün adını taşıyan satırın başındaki işaretler: senaryolu postlarda ⚡,
