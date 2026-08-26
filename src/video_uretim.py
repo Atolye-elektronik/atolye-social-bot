@@ -167,6 +167,7 @@ def kanca_kare(
     cikti: pathlib.Path,
     etiket: str | None = None,
     arka_plan=None,
+    kart: bool = True,
 ) -> pathlib.Path:
     """Videonun ilk karesi: izleyiciyi durduran soru/iddia.
 
@@ -218,23 +219,27 @@ def kanca_kare(
     d.line([(W / 2 - 90, y + 60), (W / 2 + 90, y + 60)], fill=TURKUAZ, width=6)
 
     if urun_karti is not None:
-        # Ürün, yazının altında beyaz kart içinde — kadranın alt yarısı.
+        # Ürün, yazının altında — kadranın alt yarısı.
         kart_boy = 780
         kart_x = (W - kart_boy) // 2
         kart_y = min(int(y + 150), H - kart_boy - 120)
-        d.rounded_rectangle(
-            [kart_x, kart_y, kart_x + kart_boy, kart_y + kart_boy],
-            radius=48,
-            fill=(255, 255, 255),
-        )
-        urun_karti.thumbnail((kart_boy - 70, kart_boy - 70), Image.LANCZOS)
-        tuval.paste(
-            urun_karti,
-            (
-                kart_x + (kart_boy - urun_karti.width) // 2,
-                kart_y + (kart_boy - urun_karti.height) // 2,
-            ),
-        )
+        if kart:
+            # Çıplak ürün fotoğrafı: beyaz kart içinde dursun.
+            d.rounded_rectangle(
+                [kart_x, kart_y, kart_x + kart_boy, kart_y + kart_boy],
+                radius=48,
+                fill=(255, 255, 255),
+            )
+            urun_karti.thumbnail((kart_boy - 70, kart_boy - 70), Image.LANCZOS)
+            yapistir_x = kart_x + (kart_boy - urun_karti.width) // 2
+            yapistir_y = kart_y + (kart_boy - urun_karti.height) // 2
+        else:
+            # Kaynak zaten tasarlanmış bir slide; beyaz kart eklemek "kart
+            # içinde kart" görüntüsü yaratıyor — olduğu gibi, büyükçe koy.
+            urun_karti.thumbnail((kart_boy + 120, kart_boy + 60), Image.LANCZOS)
+            yapistir_x = (W - urun_karti.width) // 2
+            yapistir_y = min(int(y + 130), H - urun_karti.height - 90)
+        tuval.paste(urun_karti, (yapistir_x, yapistir_y))
     else:
         f_alt = _normal(40)
         alt = "izlemeye devam et"
@@ -460,12 +465,24 @@ def uret(
         kareler: list[pathlib.Path] = []
 
         if kanca:
+            # Kanca karesinde gösterilecek görsel: ilk slayt çoğu zaman kapak
+            # (yazı kartı) oluyor — kartın içine yazı koymak anlamsız. Adında
+            # "urun" geçen ilk slaydı tercih et, yoksa ilk slayda düş.
+            kanca_gorseli = next(
+                (
+                    g
+                    for g in gorseller
+                    if "urun" in pathlib.Path(str(g)).stem.lower()
+                ),
+                gorseller[0],
+            )
             kareler.append(
                 kanca_kare(
                     kanca,
                     gecici_yol / "kare-00.png",
                     kanca_etiket,
-                    arka_plan=gorseller[0],
+                    arka_plan=kanca_gorseli,
+                    kart=not sade,
                 )
             )
 
