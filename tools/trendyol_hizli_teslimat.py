@@ -30,6 +30,23 @@ KARGO_ID = 9          # SURATMP - content/trendyol_yeni_urunler.json ile ayni
 KESIM_SAATI = "14:00"  # mevcut 79 urunde kullanilan kesim saati
 TIP = "SAME_DAY_SHIPPING"   # panelde "Bugun Kargoda"
 
+# Desi'si TY'de 0/None kalmis urunler. Desi kargo ucretini belirledigi icin
+# degerler uydurulmadi - kullanicidan alindi (26.08: "kitler 2 desi, 2-3 desi
+# gir urunlere"). Buyuk kutulu robot kitleri ve endustriyel set 3, digerleri 2.
+DESI = {
+    "AESTEPPS": 2,      # Step motor proje kiti
+    "AEDHT11PS": 2,     # DHT11 sicaklik-nem kiti
+    "AERTCPS": 2,       # DS1302 saat/takvim kiti
+    "AEHSPS": 2,        # PIR hareket kiti
+    "AE150LED": 2,      # 150 adet LED
+    "AEHCSR04E": 2,     # HC-SR04 sensor
+    "AEUT12D": 2,       # temassiz voltaj dedektoru
+    "AEIRRAK": 3,       # IR kumandali robot araba kiti (buyuk kutu)
+    "AE3IN1ROBOT": 3,   # 3'u 1 arada robot araba kiti
+    "AEHC06RAK": 3,     # Bluetooth robot kiti tam set
+    "AEENDELKSET": 3,   # Endustriyel elektronik uygulama seti
+}
+
 
 def uygun_degil(varyant: dict) -> bool:
     return not (varyant.get("deliveryOptions") or {}).get("isRushDelivery")
@@ -44,7 +61,8 @@ def payload_kur(urun: dict, varyant: dict) -> dict:
         "brandId": (urun.get("brand") or {}).get("id"),
         "categoryId": (urun.get("category") or {}).get("id"),
         "stockCode": varyant.get("stockCode"),
-        "dimensionalWeight": varyant.get("dimensionalWeight"),
+        # TY'de desi 0/None kalmissa DESI tablosundan tamamla.
+        "dimensionalWeight": varyant.get("dimensionalWeight") or DESI.get(varyant.get("stockCode")),
         "description": urun.get("description"),
         "currencyType": "TRY",
         "vatRate": varyant.get("vatRate"),
