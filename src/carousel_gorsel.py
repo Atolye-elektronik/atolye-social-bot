@@ -37,6 +37,32 @@ ALTIN = (183, 142, 84)
 SITE = "atolyeelektronik.com"
 MARKA = "ATÖLYE ELEKTRONİK"
 
+# Ayni slaytlar hem carousel hem video icin uretiliyor: carousel'de izleyici
+# fotograflara bakar, videoda izler — alttaki ipucu metni buna gore degisiyor.
+# video_uretim.video_slaytlari metin slaytlarini bicim="video" ile yeniden
+# ciziyor.
+IPUCU_METINLERI = {
+    "carousel": {
+        # "kaydırın" demiyoruz: bu slaytlar Facebook'a da gidiyor ve orada
+        # gönderi kaydırmalı carousel değil, çoklu fotoğraf albümü oluyor.
+        "kapak": "Detaylar fotoğraflarda",
+        "devam": "devamı var",
+    },
+    "video": {
+        "kapak": "İzlemeye devam et",
+        "devam": "sonunu kaçırma",
+    },
+}
+
+# Ok isareti sistem yazi tipinde bulunmali; "▸" Arial'de yok ve bos kutu
+# olarak ciziliyor.
+IPUCU_ISARETI = "»"
+
+
+def _ipucu(bicim: str, ad: str) -> str:
+    return IPUCU_METINLERI.get(bicim, IPUCU_METINLERI["carousel"])[ad]
+
+
 FONT_DIRS = [
     "/usr/share/fonts/truetype/dejavu",
     "/usr/share/fonts/dejavu",
@@ -215,8 +241,12 @@ def _kaydet(tuval: Image.Image, cikti) -> pathlib.Path:
     return cikti
 
 
-def kapak(baslik: str, cikti, alt_baslik: str = "ÜRÜN TANITIMI") -> pathlib.Path:
-    """Acilis slide'i: marka + buyuk urun adi + site pill'i."""
+def kapak(baslik: str, cikti, alt_baslik: str = "ÜRÜN TANITIMI",
+          bicim: str = "carousel") -> pathlib.Path:
+    """Acilis slide'i: marka + buyuk urun adi + site pill'i.
+
+    'bicim' alttaki ipucu metnini secer (carousel | video).
+    """
     tuval, d = _zemin(f"kapak:{baslik}")
     _marka_baslik(d)
 
@@ -236,11 +266,12 @@ def kapak(baslik: str, cikti, alt_baslik: str = "ÜRÜN TANITIMI") -> pathlib.Pa
     d.line([(W / 2 - 120, y + 40), (W / 2 + 120, y + 40)], fill=TURKUAZ, width=4)
 
     fo = _normal(36)
-    # "kaydırın" demiyoruz: bu slaytlar Facebook'a da gidiyor ve orada gönderi
-    # kaydırmalı carousel değil, çoklu fotoğraf albümü olarak çıkıyor.
-    ok = "Detaylar fotoğraflarda"
+    ok = _ipucu(bicim, "kapak")
     d.text(((W - d.textlength(ok, font=fo)) / 2, y + 90), ok, font=fo, fill=GRI)
-    d.text((W / 2 + d.textlength(ok, font=fo) / 2 + 18, y + 88), "»", font=_bold(40), fill=TURKUAZ)
+    d.text(
+        (W / 2 + d.textlength(ok, font=fo) / 2 + 18, y + 88),
+        IPUCU_ISARETI, font=_bold(40), fill=TURKUAZ,
+    )
 
     _pill(d, SITE, 1190)
     return _kaydet(tuval, cikti)
@@ -282,10 +313,11 @@ def urun(kaynak, baslik: str, sira: int, toplam: int, cikti) -> pathlib.Path:
 
 
 def metin(etiket: str, baslik: str, satirlar: list[str], cikti,
-          son: bool = False) -> pathlib.Path:
+          son: bool = False, bicim: str = "carousel") -> pathlib.Path:
     """Senaryo (hikaye) slide'i: kisa etiket + buyuk baslik + aciklama satirlari.
 
-    'son' False ise altta kaydirma ipucu gosterilir.
+    'son' False ise altta devam ipucu gosterilir; 'bicim' (carousel | video)
+    o ipucunun metnini secer.
     """
     tuval, d = _zemin(f"metin:{etiket}:{baslik}")
     _marka_baslik(d)
@@ -316,9 +348,12 @@ def metin(etiket: str, baslik: str, satirlar: list[str], cikti,
         _pill(d, SITE, 1190)
     else:
         fo2 = _normal(36)
-        ok = "devamı var"
+        ok = _ipucu(bicim, "devam")
         d.text(((W - d.textlength(ok, font=fo2)) / 2, 1180), ok, font=fo2, fill=GRI)
-        d.text((W / 2 + d.textlength(ok, font=fo2) / 2 + 18, 1178), "»", font=_bold(40), fill=TURKUAZ)
+        d.text(
+            (W / 2 + d.textlength(ok, font=fo2) / 2 + 18, 1178),
+            IPUCU_ISARETI, font=_bold(40), fill=TURKUAZ,
+        )
     return _kaydet(tuval, cikti)
 
 

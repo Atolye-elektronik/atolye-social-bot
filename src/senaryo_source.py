@@ -268,6 +268,26 @@ KANCA_ALTERNATIFLERI = {
 }
 
 
+def senaryo_bul(kanca_cumlesi: str) -> dict | None:
+    """Bir kanca cümlesinin hangi senaryodan geldiğini bulur.
+
+    Senaryolu postun ilk satırı bu cümle oluyor. kanca_sec() her senaryo için
+    üç alternatiften birini seçtiğinden eşleştirmeyi yalnızca 'kanca_caption'
+    üzerinden yapmak yetmiyor; alternatifler de aranıyor.
+    """
+    cumle = kanca_cumlesi.strip()
+    if not cumle:
+        return None
+    for senaryo in SENARYOLAR:
+        varsayilan = senaryo.get("kanca_caption", "").strip()
+        if not varsayilan:
+            continue
+        adaylar = KANCA_ALTERNATIFLERI.get(senaryo.get("kanca_caption", ""), ())
+        if cumle == varsayilan or any(cumle == a.strip() for a in adaylar):
+            return senaryo
+    return None
+
+
 def kanca_sec(product: dict, senaryo: dict | None = None) -> str:
     """Ürüne göre kanca cümlesi seçer.
 

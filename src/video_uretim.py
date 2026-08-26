@@ -524,16 +524,14 @@ def uret(
 def _senaryoyu_bul(caption: str):
     """Postun metninden hangi senaryodan üretildiğini bulur.
 
-    Senaryo şablonlarının `kanca_caption` satırı postun ilk satırı oluyor ve
-    şablonlar arasında benzersiz; eşleştirme buradan yapılıyor.
+    Senaryonun kanca cümlesi postun ilk satırı oluyor. Eşleştirmeyi
+    senaryo_source yapıyor: her senaryonun bir `kanca_caption`'ı ve ürüne göre
+    seçilen alternatifleri var, ilk satır bunlardan herhangi biri olabiliyor.
     """
     from . import senaryo_source
 
     ilk = next((s.strip() for s in caption.splitlines() if s.strip()), "")
-    for senaryo in senaryo_source.SENARYOLAR:
-        if senaryo.get("kanca_caption", "").strip() == ilk:
-            return senaryo
-    return None
+    return senaryo_source.senaryo_bul(ilk)
 
 
 def _urun_adi(caption: str) -> str:
@@ -554,49 +552,47 @@ def _urun_adi(caption: str) -> str:
 def video_slaytlari(gorseller: list[str], caption: str, hedef_klasor: pathlib.Path) -> list[str]:
     """Metin slaytlarını video diliyle yeniden üretir.
 
-    Carousel slaytlarında "kaydırmaya devam et" / "Detaylar için kaydırın"
-    yazıyor; videoda kaydırılacak bir şey yok. Bu yüzden metin slaytları
-    (kanca, dert, hayal, çözüm) video ipuçlarıyla yeniden çiziliyor. Ürün
-    fotoğrafı içeren slaytlarda böyle bir ifade geçmediği için onlara
-    dokunulmuyor — Shopify'a gitmeye de gerek kalmıyor.
+    Carousel slaytlarının altında "devamı var" / "Detaylar fotoğraflarda"
+    yazıyor; videoda kaydırılacak fotoğraf yok. Bu yüzden metin slaytları
+    (kanca, dert, hayal, çözüm) carousel_gorsel'in video biçimiyle
+    (bicim="video") yeniden çiziliyor. Ürün fotoğrafı içeren slaytlarda böyle
+    bir ifade geçmediği için onlara dokunulmuyor — Shopify'a gitmeye de gerek
+    kalmıyor.
     """
     senaryo = _senaryoyu_bul(caption)
 
     from . import carousel_gorsel
 
     hedef_klasor.mkdir(parents=True, exist_ok=True)
-    onceki = carousel_gorsel.BICIM
-    carousel_gorsel.BICIM = "video"
-    try:
-        yeni: list[str] = []
-        for yol in gorseller:
-            ad = pathlib.Path(yol).stem.lower()
-            cikti = hedef_klasor / pathlib.Path(yol).name
+    yeni: list[str] = []
+    for yol in gorseller:
+        ad = pathlib.Path(yol).stem.lower()
+        cikti = hedef_klasor / pathlib.Path(yol).name
 
-            if senaryo and any(k in ad for k in ("kanca", "dert", "hayal")):
-                anahtar = next(k for k in ("kanca", "dert", "hayal") if k in ad)
-                spec = senaryo[anahtar]
-                carousel_gorsel.metin(
-                    spec["etiket"], spec["baslik"], spec["metin"], cikti
-                )
-                yeni.append(str(cikti))
-            elif "cozum" in ad or "kapak" in ad:
-                # Çözüm (senaryolu) ve kapak (klasik) slaytları aynı çiziciden
-                # geliyor ve ikisinde de "Detaylar için kaydırın" yazıyor.
-                carousel_gorsel.kapak(
-                    _urun_adi(caption) or "Atölye Elektronik",
-                    cikti,
-                    alt_baslik=(
-                        senaryo["cozum_etiket"] if senaryo else "ÜRÜN TANITIMI"
-                    ),
-                )
-                yeni.append(str(cikti))
-            else:
-                # Ürün ve kapanış slaytlarında kaydırma ifadesi yok.
-                yeni.append(yol)
-        return yeni
-    finally:
-        carousel_gorsel.BICIM = onceki
+        if senaryo and any(k in ad for k in ("kanca", "dert", "hayal")):
+            anahtar = next(k for k in ("kanca", "dert", "hayal") if k in ad)
+            spec = senaryo[anahtar]
+            carousel_gorsel.metin(
+                spec["etiket"], spec["baslik"], spec["metin"], cikti,
+                bicim="video",
+            )
+            yeni.append(str(cikti))
+        elif "cozum" in ad or "kapak" in ad:
+            # Çözüm (senaryolu) ve kapak (klasik) slaytları aynı çiziciden
+            # geliyor ve ikisinde de "Detaylar fotoğraflarda" yazıyor.
+            carousel_gorsel.kapak(
+                _urun_adi(caption) or "Atölye Elektronik",
+                cikti,
+                alt_baslik=(
+                    senaryo["cozum_etiket"] if senaryo else "ÜRÜN TANITIMI"
+                ),
+                bicim="video",
+            )
+            yeni.append(str(cikti))
+        else:
+            # Ürün ve kapanış slaytlarında devam ipucu yok.
+            yeni.append(yol)
+    return yeni
 
 
 # --- CLI ---------------------------------------------------------------------
@@ -646,8 +642,8 @@ def _posttan(
             "    ya da komuta --kanca \"...\" ver."
         )
 
-    # Carousel slaytlarındaki "kaydırmaya devam et" ifadeleri videoda anlamsız;
-    # metin slaytlarını video diliyle yeniden üret.
+    # Carousel slaytlarındaki "devamı var" / "Detaylar fotoğraflarda" ifadeleri
+    # videoda anlamsız; metin slaytlarını video diliyle yeniden üret.
     if sade:
         oncesi = list(gorseller)
         gorseller = video_slaytlari(
