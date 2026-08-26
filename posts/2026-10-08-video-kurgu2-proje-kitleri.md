@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu2-proje-kitleri.mp4
-publish_at: 2026-10-08 12:00
+publish_at: 2026-10-08 20:00
 youtube_title: Arduino Proje Kitleri - Saat Nem Alarm
 ---
 Ödev projesi mi lazım? Hazır kitler ⏰🌡️🚨

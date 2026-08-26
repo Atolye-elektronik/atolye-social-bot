@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu2-lehim-seti.mp4
-publish_at: 2026-09-18 12:00
+publish_at: 2026-09-18 20:00
 youtube_title: 6 Parca Havya Seti - Ilk Lehim
 ---
 İlk lehimini yapacaksan bu set yeter 🔥

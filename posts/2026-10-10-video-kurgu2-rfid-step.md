@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu2-rfid-step.mp4
-publish_at: 2026-10-10 12:00
+publish_at: 2026-10-10 20:00
 youtube_title: RFID Kilit ve Step Motor Kitleri
 ---
 Kartlı kilit, step motor — bitirme projesi hazır 🔐

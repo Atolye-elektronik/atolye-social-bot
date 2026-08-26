@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu2-arduino-88.mp4
-publish_at: 2026-09-22 12:00
+publish_at: 2026-09-22 20:00
 youtube_title: Arduino Ileri Seviye Seti - 88 Parca
 ---
 88 parça tek kutuda, proje fikrin bitmesin 🧰

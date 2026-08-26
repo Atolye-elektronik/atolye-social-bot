@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/slayt3-robot-engel.mp4
-publish_at: 2026-11-13 12:00
+publish_at: 2026-11-13 20:00
 youtube_title: Engelden Kacan Robot Kiti Icindekiler
 ---
 Engeli görür, döner: içindekiler 🚗

@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/slayt3-robot-ir.mp4
-publish_at: 2026-11-17 12:00
+publish_at: 2026-11-17 20:00
 youtube_title: IR Kumandali Robot Kiti Icindekiler
 ---
 Kumandalı robot: kutuda ne var? 🎮

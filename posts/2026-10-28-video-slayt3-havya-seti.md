@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/slayt3-havya-seti.mp4
-publish_at: 2026-10-28 12:00
+publish_at: 2026-10-28 20:00
 youtube_title: 6 Parca Havya Seti Icindekiler
 ---
 6 parça havya seti: içindekiler 🔥

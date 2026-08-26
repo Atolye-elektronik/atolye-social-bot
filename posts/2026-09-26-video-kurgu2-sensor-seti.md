@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu2-sensor-seti.mp4
-publish_at: 2026-09-26 12:00
+publish_at: 2026-09-26 20:00
 youtube_title: Akilli Proje Sensor Seti - 10 Parca
 ---
 10 sensör, 10 proje — tek pakette 📡

@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu3-proje-fikirleri.mp4
-publish_at: 2026-10-30 12:00
+publish_at: 2026-10-30 20:00
 youtube_title: Proje Odevi Icin 4 Fikir
 ---
 Proje ödevi için 4 fikir 💡

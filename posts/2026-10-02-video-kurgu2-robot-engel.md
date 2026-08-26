@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu2-robot-engel.mp4
-publish_at: 2026-10-02 12:00
+publish_at: 2026-10-02 20:00
 youtube_title: Engelden Kacan Robot Kiti
 ---
 Engeli görür, kendi kendine döner 🚗

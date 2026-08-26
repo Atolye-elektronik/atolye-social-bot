@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu-okula-donus-satis.mp4
-publish_at: 2026-09-14 12:00
+publish_at: 2026-09-14 20:00
 youtube_title: Okul Listesi Kabarik mi? Hepsi Tek Adreste
 ---
 Okul listesi kabarık mı? Hepsi tek adreste 🎒

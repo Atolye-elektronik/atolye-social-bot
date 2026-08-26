@@ -62,6 +62,18 @@ class Post:
         now = now or dt.datetime.now(TZ)
         return self.publish_at <= now
 
+    @property
+    def tiktok_caption(self) -> str:
+        """TikTok'a gidecek metin.
+
+        26.08 analizi: 23-25 Agustos videolari 2 ve 0 izlenmede kaldi. Ayni
+        metin uc platforma birden gidiyordu; icinde YouTube'un #Shorts etiketi
+        ve siteye giden link vardi. TikTok rakip platform etiketini ve disari
+        trafik goturen linki dagitimda asagi cekiyor. Bu yuzden TikTok metni
+        artik ayri uretiliyor: link yok, #Shorts yok, kanca en uste.
+        """
+        return tiktok_metni(self.caption)
+
 
 def _parse_scalar(raw: str):
     raw = raw.strip()
@@ -138,3 +150,45 @@ def load_all(directory: pathlib.Path = POSTS_DIR) -> list[Post]:
             continue
         found.append(load_post(path))
     return found
+
+
+# --- TikTok metni ------------------------------------------------------------
+# TikTok'ta dagitimi dusuren iki sey vardi (26.08 analizi):
+#   * #Shorts  -> YouTube'un etiketi; rakip platform sinyali
+#   * site linki -> platform disina trafik
+# Ayrica ilk satir kanca olmali; katalog adiyla baslayan videolar 1. saniyede
+# terk ediliyordu (ort. izlenme 1.4 sn, tamamlanma %0).
+
+LINK_RE = re.compile(r"https?://\S+")
+YASAKLI_ETIKET = {"shorts", "short", "youtube", "youtubeshorts", "reels", "reel"}
+# "Siparis 👉" gibi linke goturen cagri satirlari linksiz anlamsiz kaliyor.
+CTA_SATIR_RE = re.compile(r"^\s*(sipari[sş]|link|detay|incele)\b.*", re.IGNORECASE)
+
+
+def tiktok_metni(caption: str) -> str:
+    """Ortak post metnini TikTok'a uygun hale getirir."""
+    satirlar = []
+    for ham in caption.splitlines():
+        linkli = LINK_RE.search(ham) is not None
+        satir = LINK_RE.sub("", ham).rstrip()
+        # Linki cikinca geriye sadece "Siparis 👉" gibi bir cagri kaliyorsa
+        # satirin tamamini at.
+        if linkli and CTA_SATIR_RE.match(satir):
+            continue
+        if satir.strip() in {"", "👉", "->"}:
+            satirlar.append("")
+            continue
+        satirlar.append(satir)
+
+    metin = "\n".join(satirlar)
+
+    # Rakip platform etiketlerini ele.
+    def _etiket_ele(m: re.Match) -> str:
+        return "" if m.group(1).lower() in YASAKLI_ETIKET else m.group(0)
+
+    metin = re.sub(r"#(\w+)", _etiket_ele, metin)
+
+    # Fazla bosluklari topla.
+    metin = re.sub(r"[ \t]{2,}", " ", metin)
+    metin = re.sub(r"\n{3,}", "\n\n", metin).strip()
+    return metin

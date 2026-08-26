@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu3-hangi-robot.mp4
-publish_at: 2026-10-18 12:00
+publish_at: 2026-10-18 20:00
 youtube_title: Hangi Robot Kiti Sana Gore
 ---
 Hangi robot kiti sana göre? 4 seçenek 🤖

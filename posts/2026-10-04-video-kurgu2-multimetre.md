@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu2-multimetre.mp4
-publish_at: 2026-10-04 12:00
+publish_at: 2026-10-04 20:00
 youtube_title: DT830D Dijital Multimetre
 ---
 Devre çalışmıyor mu? Önce ölç 🔍

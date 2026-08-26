@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/slayt3-arduino-56.mp4
-publish_at: 2026-10-16 12:00
+publish_at: 2026-10-16 20:00
 youtube_title: Arduino 56 Parca Proje Seti Icindekiler
 ---
 Orta seviye Arduino: 56 parça 🧰

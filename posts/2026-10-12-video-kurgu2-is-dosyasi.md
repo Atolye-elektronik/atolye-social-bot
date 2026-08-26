@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu2-is-dosyasi.mp4
-publish_at: 2026-10-12 12:00
+publish_at: 2026-10-12 20:00
 youtube_title: Isletmelerde Meslek Egitimi Is Dosyasi - 64 Sayfa
 ---
 Meslek liseli, dur! Staj dosyası derdi bitiyor 📘

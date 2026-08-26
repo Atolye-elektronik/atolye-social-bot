@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu3-atolye-temelleri.mp4
-publish_at: 2026-10-26 12:00
+publish_at: 2026-10-26 20:00
 youtube_title: Atolyeye Ilk Adim - 3 Temel Arac
 ---
 Atölyeye ilk adım: 3 temel araç 🔧

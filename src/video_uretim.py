@@ -64,7 +64,8 @@ SLIDE_SURELERI = {
 }
 
 # İlk saniyeler her şeyi belirlediği için kanca karesi ayrı tutuluyor.
-KANCA_SURESI = 2.6
+# 26.08: 2.6 sn cok uzundu, izleyici kanca karesinde kaciyordu.
+KANCA_SURESI = 1.8
 
 # Arka plan müziği. Buraya .mp3/.m4a koyarsan video üretimi kendiliğinden
 # birini seçer; klasör boşsa video sessiz kalır (hata vermez).
@@ -161,21 +162,40 @@ def _slide_suresi(kaynak, varsayilan: float) -> float:
     return varsayilan
 
 
-def kanca_kare(metin: str, cikti: pathlib.Path, etiket: str | None = None) -> pathlib.Path:
+def kanca_kare(
+    metin: str,
+    cikti: pathlib.Path,
+    etiket: str | None = None,
+    arka_plan=None,
+) -> pathlib.Path:
     """Videonun ilk karesi: izleyiciyi durduran soru/iddia.
 
-    TikTok'ta ilk saniye kaydırılıp geçilmeyi belirliyor, o yüzden bu karede
-    ürün yok — sadece büyük bir cümle. Ürün ikinci kareden itibaren geliyor.
+    26.08 TikTok analizi: bu kare eskiden ürünsüz, düz zemin üzerine yazıdan
+    ibaretti ve 2.6 saniye ekranda kalıyordu. Sonuç: izleyicilerin çoğu daha
+    1. saniyede kaydırıp geçiyordu (ort. izlenme 1.4-2.1 sn, tamamlanma %0)
+    ve videolar 2-0 izlenmede kaldı. Artık kanca cümlesi ürün fotoğrafının
+    üstüne biniyor — ilk karede hem merak hem "bu ne ürünü" cevabı var.
     """
     tuval, d = _dikey_zemin(f"kanca:{metin}")
     etiket = etiket or _kanca_etiketi(metin)
 
+    # Ürün fotoğrafı varsa kare ikiye bölünür: üstte kanca cümlesi, altta
+    # ürün. Fotoğrafı tam ekran arkaya yaymak denendi ama ürünün kendi
+    # üstündeki yazılar kanca cümlesiyle çakışıyordu — kart içinde duruyor.
+    urun_karti = None
+    if arka_plan is not None:
+        try:
+            urun_karti = _ac(arka_plan)
+        except Exception:
+            urun_karti = None  # açılamazsa kare yine üretilsin
+
     # Metin alanı kenar dekorunun (soldan/sağdan 120 px) içine girmesin.
     metin_genisligi = W - 300
 
+    etiket_y = 300 if urun_karti is not None else 540
     f_etiket = _bold(46)
     gen = d.textlength(etiket, font=f_etiket)
-    d.text(((W - gen) / 2, 540), etiket, font=f_etiket, fill=TURUNCU)
+    d.text(((W - gen) / 2, etiket_y), etiket, font=f_etiket, fill=TURUNCU)
 
     # Kanca cümlesinin uzunluğu değişken; kırpmak yerine sığana kadar küçült.
     f_metin, satirlar, boyut = _sigdir(
@@ -186,7 +206,10 @@ def kanca_kare(metin: str, cikti: pathlib.Path, etiket: str | None = None) -> pa
     )
 
     satir_yuksekligi = boyut + 20
-    y = (H - len(satirlar) * satir_yuksekligi) / 2 - 60
+    if urun_karti is not None:
+        y = etiket_y + 130
+    else:
+        y = (H - len(satirlar) * satir_yuksekligi) / 2 - 60
     for satir in satirlar:
         gen = d.textlength(satir, font=f_metin)
         d.text(((W - gen) / 2, y), satir, font=f_metin, fill=BEYAZ)
@@ -194,10 +217,29 @@ def kanca_kare(metin: str, cikti: pathlib.Path, etiket: str | None = None) -> pa
 
     d.line([(W / 2 - 90, y + 60), (W / 2 + 90, y + 60)], fill=TURKUAZ, width=6)
 
-    f_alt = _normal(40)
-    alt = "izlemeye devam et"
-    gen = d.textlength(alt, font=f_alt)
-    d.text(((W - gen) / 2, y + 110), alt, font=f_alt, fill=GRI)
+    if urun_karti is not None:
+        # Ürün, yazının altında beyaz kart içinde — kadranın alt yarısı.
+        kart_boy = 780
+        kart_x = (W - kart_boy) // 2
+        kart_y = min(int(y + 150), H - kart_boy - 120)
+        d.rounded_rectangle(
+            [kart_x, kart_y, kart_x + kart_boy, kart_y + kart_boy],
+            radius=48,
+            fill=(255, 255, 255),
+        )
+        urun_karti.thumbnail((kart_boy - 70, kart_boy - 70), Image.LANCZOS)
+        tuval.paste(
+            urun_karti,
+            (
+                kart_x + (kart_boy - urun_karti.width) // 2,
+                kart_y + (kart_boy - urun_karti.height) // 2,
+            ),
+        )
+    else:
+        f_alt = _normal(40)
+        alt = "izlemeye devam et"
+        gen = d.textlength(alt, font=f_alt)
+        d.text(((W - gen) / 2, y + 110), alt, font=f_alt, fill=GRI)
 
     cikti.parent.mkdir(parents=True, exist_ok=True)
     tuval.save(cikti, "PNG")
@@ -419,7 +461,12 @@ def uret(
 
         if kanca:
             kareler.append(
-                kanca_kare(kanca, gecici_yol / "kare-00.png", kanca_etiket)
+                kanca_kare(
+                    kanca,
+                    gecici_yol / "kare-00.png",
+                    kanca_etiket,
+                    arka_plan=gorseller[0],
+                )
             )
 
         for i, gorsel in enumerate(gorseller, start=1):

@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu3-sensor-uno.mp4
-publish_at: 2026-11-03 12:00
+publish_at: 2026-11-03 20:00
 youtube_title: Uno Aldin Sirada Ne Var - Sensor Seti
 ---
 Uno aldın, sırada ne var? 10 sensör 📡

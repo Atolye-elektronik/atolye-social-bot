@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu2-robot-ir.mp4
-publish_at: 2026-09-28 12:00
+publish_at: 2026-09-28 20:00
 youtube_title: IR Kumandali Robot Araba Kiti
 ---
 Kumandayla sür — kendin yaptığın robotu 🎮

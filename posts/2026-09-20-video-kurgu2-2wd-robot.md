@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu2-2wd-robot.mp4
-publish_at: 2026-09-20 12:00
+publish_at: 2026-09-20 20:00
 youtube_title: 2WD Robot Araba Kiti - Demonte
 ---
 İlk robotunu bu hafta sonu yap 🤖

@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu-is-dosyasi.mp4
-publish_at: 2026-09-06 12:00
+publish_at: 2026-09-06 20:00
 youtube_title: Meslek Liseli Staj Dosyasi Derdine Son!
 ---
 Meslek liseli, staj dosyası derdine son! 📓

@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu2-robot-bt.mp4
-publish_at: 2026-09-30 12:00
+publish_at: 2026-09-30 20:00
 youtube_title: Bluetooth Kontrollu Robot Kiti
 ---
 Telefonundan sür: Bluetooth robot 📱🤖

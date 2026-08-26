@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/slayt3-arduino-88.mp4
-publish_at: 2026-10-20 12:00
+publish_at: 2026-10-20 20:00
 youtube_title: Arduino 88 Parca Ileri Seviye Seti Icindekiler
 ---
 88 parça, 1 kutu — içinde ne var? 📦
