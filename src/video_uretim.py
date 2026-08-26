@@ -19,6 +19,7 @@ import argparse
 import os
 import pathlib
 import random
+import re
 import shutil
 import subprocess
 import sys
@@ -534,19 +535,39 @@ def _senaryoyu_bul(caption: str):
     return senaryo_source.senaryo_bul(ilk)
 
 
+# Slayt fontunda emoji glifi yok; temizlenmezse kare kutu (tofu) basılıyor.
+EMOJI_RE = re.compile(
+    "[\U0001F000-\U0001FAFF☀-➿️⬀-⯿←-⇿]+"
+)
+
+# Ürün adını taşıyan satırın başındaki işaretler: senaryolu postlarda ⚡,
+# klasik carousel'lerde 📸, video postlarında 🎬.
+URUN_ISARETLERI = ("⚡", "📸", "🎬")
+
+
+def _emojisiz(metin: str) -> str:
+    return EMOJI_RE.sub("", metin).strip(" -–—:").strip()
+
+
 def _urun_adi(caption: str) -> str:
     """Post metninden ürün adını çıkarır.
 
-    Senaryolu postlarda ad '⚡ Ürün Adı: açıklama' satırında, klasik
-    carousel'lerde ise ilk satırda ('📸 Ürün Adı') duruyor.
+    Ad, işaretle başlayan satırda duruyor: '⚡ Ürün Adı: açıklama',
+    '📸 Ürün Adı' ya da '🎬 Ürün Adı'. İlk satır kanca cümlesi olabildiği
+    için (video postlarında öyle) önce işaretli satır aranır.
     """
     for satir in caption.splitlines():
         satir = satir.strip()
-        if satir.startswith("⚡") and ":" in satir:
-            return satir.lstrip("⚡ ").split(":", 1)[0].strip()
+        if satir.startswith(URUN_ISARETLERI):
+            ad = _emojisiz(satir)
+            # '⚡ Ürün Adı: açıklama' biçiminde ad iki noktadan önce.
+            if satir.startswith("⚡") and ":" in ad:
+                ad = ad.split(":", 1)[0].strip()
+            if ad:
+                return ad
 
     ilk = next((s.strip() for s in caption.splitlines() if s.strip()), "")
-    return ilk.lstrip("📸 ").strip()
+    return _emojisiz(ilk)
 
 
 def video_slaytlari(gorseller: list[str], caption: str, hedef_klasor: pathlib.Path) -> list[str]:
@@ -630,9 +651,14 @@ def _posttan(
     # ürün adını kanca diye göstermek izleyiciyi durdurmaz.
     kanca = kanca or hedef.extra.get("tiktok_kanca")
     kanca_slaydi_var = any("kanca" in g.lower() for g in gorseller)
-    if kanca_slaydi_var:
-        if kanca:
-            print("ℹ️  Görsellerde zaten kanca slide'ı var — verilen kanca metni kullanılmadı.")
+    if kanca_slaydi_var and kanca:
+        # Carousel'in kendi kanca slaydı sadece metin taşıyor ve "kaydırmaya
+        # devam et" diyor — carousel dili. Video için ürünü ilk karede
+        # göstermek gerekiyor, o yüzden açıkça verilen kanca üstün gelir ve
+        # carousel'in kanca slaydı atılır.
+        gorseller = [g for g in gorseller if "kanca" not in g.lower()]
+        print("ℹ️  Carousel'in kanca slaydı atlandı — verilen kanca metni kullanılıyor.")
+    elif kanca_slaydi_var:
         kanca = None
     elif not kanca:
         print(
