@@ -134,16 +134,22 @@ def main() -> int:
     rapor, gecikenler = [], []
 
     for akis in akislari_oku():
+        tolerans = TOLERANS_DK.get(akis["dosya"], VARSAYILAN_TOLERANS_DK)
+        # Toleransi "en son beklenen an"a gore olcmek yanlisti: 2 saatte bir
+        # donen bir iste tolerans dolmadan bir sonraki beklenen an geliyor ve
+        # kacan tur asla yakalanmiyordu. Dogrusu, su ana kadar BITMIS OLMASI
+        # GEREKEN son atesleme -- yani (simdi - tolerans) aninden onceki son
+        # atesleme -- ile gercek kosuyu karsilastirmak.
+        kesim = simdi - dt.timedelta(minutes=tolerans)
         beklenen = max(
-            (b for b in (son_beklenen(c, simdi) for c in akis["cronlar"]) if b),
+            (b for b in (son_beklenen(c, kesim) for c in akis["cronlar"]) if b),
             default=None,
         )
         if beklenen is None:
             continue
-        tolerans = TOLERANS_DK.get(akis["dosya"], VARSAYILAN_TOLERANS_DK)
         son = son_calisma(akis["dosya"])
         gecikme_dk = int((simdi - beklenen).total_seconds() // 60)
-        kacti = (son is None or son < beklenen) and gecikme_dk > tolerans
+        kacti = son is None or son < beklenen
 
         rapor.append({
             "dosya": akis["dosya"], "ad": akis["ad"],

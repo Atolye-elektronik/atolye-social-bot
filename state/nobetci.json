@@ -1,12 +1,12 @@
 {
-  "kontrol": "2026-08-27T12:25:01.770411+00:00",
+  "kontrol": "2026-08-27T12:36:06.213746+00:00",
   "akislar": [
     {
       "dosya": "gitlab-yedek.yml",
       "ad": "GitLab yedek aynasi",
       "beklenen": "2026-08-27T01:00:00+00:00",
       "son_calisma": "2026-08-27T12:03:56+00:00",
-      "gecikme_dk": 685,
+      "gecikme_dk": 696,
       "kacti": false
     },
     {
@@ -14,15 +14,15 @@
       "ad": "Haftalik satis raporu",
       "beklenen": "2026-08-24T04:30:00+00:00",
       "son_calisma": "2026-08-24T06:06:44+00:00",
-      "gecikme_dk": 4795,
+      "gecikme_dk": 4806,
       "kacti": false
     },
     {
       "dosya": "pazaryeri-sync.yml",
       "ad": "Pazaryeri siparis senkronu",
-      "beklenen": "2026-08-27T12:13:00+00:00",
+      "beklenen": "2026-08-27T10:13:00+00:00",
       "son_calisma": "2026-08-27T12:04:00+00:00",
-      "gecikme_dk": 12,
+      "gecikme_dk": 143,
       "kacti": false
     },
     {
@@ -30,7 +30,7 @@
       "ad": "Pinterest gunluk pin",
       "beklenen": "2026-08-26T18:37:00+00:00",
       "son_calisma": "2026-08-27T12:04:04+00:00",
-      "gecikme_dk": 1068,
+      "gecikme_dk": 1079,
       "kacti": false
     },
     {
@@ -38,7 +38,7 @@
       "ad": "Sosyal medya paylasimi",
       "beklenen": "2026-08-27T09:00:00+00:00",
       "son_calisma": "2026-08-27T12:04:06+00:00",
-      "gecikme_dk": 205,
+      "gecikme_dk": 216,
       "kacti": false
     },
     {
@@ -46,7 +46,7 @@
       "ad": "Threads token yenile",
       "beklenen": "2026-08-01T04:00:00+00:00",
       "son_calisma": "2026-08-27T12:04:08+00:00",
-      "gecikme_dk": 37945,
+      "gecikme_dk": 37956,
       "kacti": false
     },
     {
@@ -54,7 +54,7 @@
       "ad": "TikTok kuyruk zamanlama",
       "beklenen": "2026-08-24T17:23:00+00:00",
       "son_calisma": "2026-08-26T09:01:44+00:00",
-      "gecikme_dk": 4022,
+      "gecikme_dk": 4033,
       "kacti": false
     }
   ]
