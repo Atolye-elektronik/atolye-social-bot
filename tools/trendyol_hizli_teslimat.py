@@ -45,6 +45,10 @@ DESI = {
     "AE3IN1ROBOT": 3,   # 3'u 1 arada robot araba kiti
     "AEHC06RAK": 3,     # Bluetooth robot kiti tam set
     "AEENDELKSET": 3,   # Endustriyel elektronik uygulama seti
+    # 27.08 kullanici: "arduino 56 parca 3 desi. digerleri 2 desi"
+    "AEAROSES": 3,      # Arduino Proje Gelistirme Seti 56 Parca
+    "AEACDMMR": 2,      # AC 220V 2000W dimmer karti
+    "AEPY18650": 2,     # 18650 pil yuvasi ikili seri
 }
 
 

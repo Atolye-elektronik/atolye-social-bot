@@ -1,0 +1,61 @@
+{
+  "kontrol": "2026-08-27T12:03:37.285364+00:00",
+  "akislar": [
+    {
+      "dosya": "gitlab-yedek.yml",
+      "ad": "GitLab yedek aynasi",
+      "beklenen": "2026-08-27T01:00:00+00:00",
+      "son_calisma": "2026-08-26T04:00:31+00:00",
+      "gecikme_dk": 663,
+      "kacti": true
+    },
+    {
+      "dosya": "haftalik-rapor.yml",
+      "ad": "Haftalik satis raporu",
+      "beklenen": "2026-08-24T04:30:00+00:00",
+      "son_calisma": "2026-08-24T06:06:44+00:00",
+      "gecikme_dk": 4773,
+      "kacti": false
+    },
+    {
+      "dosya": "pazaryeri-sync.yml",
+      "ad": "Pazaryeri siparis senkronu",
+      "beklenen": "2026-08-27T10:13:00+00:00",
+      "son_calisma": "2026-08-26T14:29:39+00:00",
+      "gecikme_dk": 110,
+      "kacti": true
+    },
+    {
+      "dosya": "pinterest-pin.yml",
+      "ad": "Pinterest gunluk pin",
+      "beklenen": "2026-08-26T18:37:00+00:00",
+      "son_calisma": "2026-08-25T19:56:32+00:00",
+      "gecikme_dk": 1046,
+      "kacti": true
+    },
+    {
+      "dosya": "publish.yml",
+      "ad": "Sosyal medya paylasimi",
+      "beklenen": "2026-08-27T09:00:00+00:00",
+      "son_calisma": "2026-08-26T10:54:43+00:00",
+      "gecikme_dk": 183,
+      "kacti": true
+    },
+    {
+      "dosya": "threads-token.yml",
+      "ad": "Threads token yenile",
+      "beklenen": "2026-08-01T04:00:00+00:00",
+      "son_calisma": null,
+      "gecikme_dk": 37923,
+      "kacti": true
+    },
+    {
+      "dosya": "tiktok-zamanla.yml",
+      "ad": "TikTok kuyruk zamanlama",
+      "beklenen": "2026-08-24T17:23:00+00:00",
+      "son_calisma": "2026-08-26T09:01:44+00:00",
+      "gecikme_dk": 4000,
+      "kacti": false
+    }
+  ]
+}
