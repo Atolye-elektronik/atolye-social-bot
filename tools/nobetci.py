@@ -26,6 +26,7 @@ import json
 import pathlib
 import re
 import subprocess
+import time
 import sys
 
 DEPO = "Atolye-elektronik/atolye-social-bot"
@@ -47,11 +48,27 @@ TOLERANS_DK = {
 HARIC = {"nobetci.yml"}
 
 
-def gh(*args: str) -> str:
-    r = subprocess.run(["gh", *args], capture_output=True, text=True, encoding="utf-8")
-    if r.returncode != 0:
-        raise RuntimeError(f"gh {' '.join(args)} basarisiz: {r.stderr.strip()[:300]}")
-    return r.stdout
+# Gecici ag hatasi tum nobeti dusurmesin diye yeniden deneme. 27.08'de
+# "error connecting to api.github.com" yuzunden nobetci cokmus, o turda
+# kacan is yakalanmamisti - nobetcinin kendisi tek bir ag takilmasina
+# dayanamiyorsa nobetci degildir.
+GECICI_HATA = ("error connecting", "timeout", "timed out", "connection reset",
+               "temporary failure", "TLS handshake", "502", "503", "504")
+
+
+def gh(*args: str, deneme: int = 3) -> str:
+    son_hata = ""
+    for tur in range(deneme):
+        r = subprocess.run(["gh", *args], capture_output=True, text=True,
+                           encoding="utf-8")
+        if r.returncode == 0:
+            return r.stdout
+        son_hata = r.stderr.strip()
+        if not any(k.lower() in son_hata.lower() for k in GECICI_HATA):
+            break  # kalici hata - tekrar denemenin anlami yok
+        if tur < deneme - 1:
+            time.sleep(5 * (tur + 1))
+    raise RuntimeError(f"gh {' '.join(args)} basarisiz: {son_hata[:300]}")
 
 
 def cron_alanlari(ifade: str):
@@ -141,7 +158,7 @@ def main() -> int:
     a = ap.parse_args()
 
     simdi = dt.datetime.now(dt.timezone.utc)
-    rapor, gecikenler, hatalilar = [], [], []
+    rapor, gecikenler, hatalilar, okunamayan = [], [], [], []
 
     for akis in akislari_oku():
         tolerans = TOLERANS_DK.get(akis["dosya"], VARSAYILAN_TOLERANS_DK)
@@ -157,7 +174,13 @@ def main() -> int:
         )
         if beklenen is None:
             continue
-        son, son_herhangi = son_calismalar(akis["dosya"])
+        try:
+            son, son_herhangi = son_calismalar(akis["dosya"])
+        except RuntimeError as e:
+            # Bu is akisi okunamadi; digerlerini kontrol etmeye devam et.
+            print(f"?????  {akis['ad'][:34]:34s} okunamadi: {str(e)[-90:]}")
+            okunamayan.append(akis["ad"])
+            continue
         gecikme_dk = int((simdi - beklenen).total_seconds() // 60)
         # Hic calismadi mi, yoksa calisip hata mi verdi?
         hic_calismadi = son_herhangi is None or son_herhangi < beklenen
@@ -184,6 +207,10 @@ def main() -> int:
     KAYIT.write_text(json.dumps(
         {"kontrol": simdi.isoformat(), "akislar": rapor}, ensure_ascii=False, indent=2
     ), encoding="utf-8")
+
+    if okunamayan:
+        print(f"\n!! {len(okunamayan)} is akisi okunamadi (ag/GitHub sorunu):",
+              ", ".join(okunamayan))
 
     if hatalilar:
         print(f"\n!! {len(hatalilar)} is calisti ama HATA verdi - tetiklenmiyor, elle bakilmali:")
