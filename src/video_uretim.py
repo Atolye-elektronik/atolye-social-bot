@@ -76,6 +76,9 @@ KANCA_SURESI = 1.8
 DEPO_KOKU = pathlib.Path(__file__).resolve().parents[1]
 MUZIK_DIR = DEPO_KOKU / "content" / "muzik"
 MUZIK_SES_DUZEYI = float(os.environ.get("VIDEO_MUZIK_SES", "0.75"))
+# Cikis ses seviyesi hedefi (LUFS). Sosyal platformlarin normalizasyon
+# hedefi -14 LUFS; bu seviyede gonderilen ses olduğu gibi kalir.
+MUZIK_LUFS = float(os.environ.get("VIDEO_MUZIK_LUFS", "-14"))
 
 
 def muzik_sec(slug: str = "") -> pathlib.Path | None:
@@ -398,6 +401,12 @@ def birlestir(
         ses = [f"volume={MUZIK_SES_DUZEYI}"]
         if toplam_sure and toplam_sure > 2.5:
             ses.append(f"afade=t=out:st={toplam_sure - 2:.2f}:d=2")
+        # 27.08: elle kurgulanan videolarda ses -25..-36 dB'ye kadar dusmustu,
+        # yani telefonda duyulmuyordu ("YouTube'da sessiz videolar"). Artik
+        # cikis sabit bir yuksekluge oturtuluyor. -14 LUFS sosyal platformlarin
+        # (YouTube/TikTok/IG) kendi normalizasyon hedefi; bu seviyede gonderince
+        # platform ayrica kisip yukseltmiyor.
+        ses.append(f"loudnorm=I={MUZIK_LUFS}:TP=-1.5:LRA=11")
         komut += [
             "-i", str(muzik),
             "-map", "0:v", "-map", "1:a",
@@ -405,7 +414,7 @@ def birlestir(
             "-c:v", "copy", "-c:a", "aac", "-b:a", "128k",
             "-shortest",
         ]
-        print(f"  🎵 müzik: {muzik.name} (ses {MUZIK_SES_DUZEYI})")
+        print(f"  🎵 müzik: {muzik.name} (ses {MUZIK_SES_DUZEYI}, hedef {MUZIK_LUFS} LUFS)")
     else:
         komut += ["-c", "copy"]
     komut.append(str(cikti))
