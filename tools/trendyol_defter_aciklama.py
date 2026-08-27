@@ -101,6 +101,10 @@ def main() -> int:
         return 1
     ap = argparse.ArgumentParser()
     ap.add_argument("--uygula", action="store_true")
+    # Saglam urunleri bos yere guncellememek icin: TY urun guncellemesi
+    # onay surecini yeniden tetikleyebiliyor, gereksiz risk alinmaz.
+    ap.add_argument("--stok", nargs="*", default=None,
+                    help="sadece bu stok kodlarini guncelle")
     a = ap.parse_args()
 
     items, atlanan = [], []
@@ -108,6 +112,8 @@ def main() -> int:
         for v in (urun.get("variants") or []):
             sc = v.get("stockCode")
             if v.get("archived") or sc not in AILE:
+                continue
+            if a.stok and sc not in a.stok:
                 continue
             yeni = metin(sc, TEKLI[AILE[sc]])
             p = payload_kur(urun, v, yeni)
