@@ -1,1 +1,363 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9535589375,
+      "firstName": "GÖKHAN",
+      "lastName": "YİĞİTTÜRK",
+      "company": "",
+      "address1": "MUKADDES YAZICILAR CAD. NO:63 B BLOK DAİRE:3 ALKOÇLAR LOFT SİTESİ",
+      "address2": "",
+      "city": "Bursa",
+      "cityCode": 16,
+      "district": "Osmangazi",
+      "districtId": 327,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "16000",
+      "countryCode": "TR",
+      "neighborhoodId": 33962,
+      "neighborhood": "Nilüferköy Mah",
+      "phone": null,
+      "fullAddress": "MUKADDES YAZICILAR CAD. NO:63 B BLOK DAİRE:3 ALKOÇLAR LOFT SİTESİ     Osmangazi Bursa",
+      "fullName": "GÖKHAN YİĞİTTÜRK"
+    },
+    "orderNumber": "11542156970",
+    "orderCountryCode": "TR",
+    "grossAmount": 1049.0,
+    "packageGrossAmount": 1049.0,
+    "totalDiscount": 56.65,
+    "packageSellerDiscount": 56.65,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 56.65,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 19.93
+      },
+      {
+        "displayName": "Net %5 İndirim",
+        "discountAmount": 36.72
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9535589374,
+      "firstName": "GÖKHAN",
+      "lastName": "YİĞİTTÜRK",
+      "company": "",
+      "address1": "MUKADDES YAZICILAR CAD. NO:63 B BLOK DAİRE:3 ALKOÇLAR LOFT SİTESİ",
+      "address2": "",
+      "city": "Bursa",
+      "cityCode": 16,
+      "district": "Osmangazi",
+      "districtId": 327,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "16000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 33962,
+      "neighborhood": "Nilüferköy Mah",
+      "phone": null,
+      "fullAddress": "MUKADDES YAZICILAR CAD. NO:63 B BLOK DAİRE:3 ALKOÇLAR LOFT SİTESİ     Osmangazi Bursa",
+      "fullName": "GÖKHAN YİĞİTTÜRK"
+    },
+    "customerFirstName": "GÖKHAN",
+    "customerEmail": "pf+82blpyjz@trendyolmail.com",
+    "customerId": 71010165,
+    "supplierId": 0,
+    "customerLastName": "YİĞİTTÜRK",
+    "id": 4106927871,
+    "channelId": 1,
+    "shipmentPackageId": 4106927871,
+    "cargoTrackingNumber": 7330036439108618,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE2WDEKRBT-LI",
+        "sku": "AE2WDEKRBT-LI",
+        "stockCode": "AE2WDEKRBT-LI",
+        "productName": "2WD Servolu Engelden Kaçan Robot Araba Kiti (Demonte Robot Araba Kiti) AE2WDEKRBT, one size",
+        "productCode": 1617156276,
+        "contentId": 1617156276,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 1049.0,
+        "lineGrossAmount": 1049.0,
+        "discount": 56.65,
+        "lineTotalDiscount": 56.65,
+        "lineSellerDiscount": 56.65,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 992.35,
+            "lineItemDiscount": 56.65,
+            "lineItemSellerDiscount": 56.65,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5880883413,
+        "lineId": 5880883413,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "AE2WDEKRBT-LI",
+        "orderLineItemStatusName": "Picking",
+        "price": 992.35,
+        "lineUnitPrice": 992.35,
+        "fastDeliveryOptions": [],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1787790043418,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1787779245707,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1787779251017,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1787780264105,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1787952043000,
+    "estimatedDeliveryEndDate": 1788211243000,
+    "totalPrice": 992.35,
+    "packageTotalPrice": 992.35,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1787952051012,
+    "fastDelivery": false,
+    "originShipmentDate": 1787779245696,
+    "lastModifiedDate": 1787825149083,
+    "commercial": false,
+    "fastDeliveryType": "",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10801090006,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9535215442,
+      "firstName": "Kübra",
+      "lastName": "Kurtgöz",
+      "company": "",
+      "address1": "Dilmenler Cad. no: 30, Double Park Residence B Blok no: 66B",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Bağcılar",
+      "districtId": 47,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 28804,
+      "neighborhood": "Mahmutbey Mah",
+      "phone": null,
+      "fullAddress": "Dilmenler Cad. no: 30, Double Park Residence B Blok no: 66B     Bağcılar İstanbul",
+      "fullName": "Kübra Kurtgöz"
+    },
+    "orderNumber": "11541993559",
+    "orderCountryCode": "TR",
+    "grossAmount": 314.0,
+    "packageGrossAmount": 314.0,
+    "totalDiscount": 20.99,
+    "packageSellerDiscount": 20.99,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 20.99,
+    "discountDisplays": [
+      {
+        "displayName": "Net %5 İndirim",
+        "discountAmount": 10.99
+      },
+      {
+        "displayName": "Atölye Elektronik - Sepetine Özel Kupon! 🛍️",
+        "discountAmount": 10
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9535215440,
+      "firstName": "Kübra",
+      "lastName": "Kurtgöz",
+      "company": "",
+      "address1": "Dilmenler Cad. no: 30, Double Park Residence B Blok no: 66B",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Bağcılar",
+      "districtId": 47,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 28804,
+      "neighborhood": "Mahmutbey Mah",
+      "phone": null,
+      "fullAddress": "Dilmenler Cad. no: 30, Double Park Residence B Blok no: 66B     Bağcılar İstanbul",
+      "fullName": "Kübra Kurtgöz"
+    },
+    "customerFirstName": "Kübra",
+    "customerEmail": "pf+p8meb2rp@trendyolmail.com",
+    "customerId": 28352672,
+    "supplierId": 0,
+    "customerLastName": "Kurtgöz",
+    "id": 4106763956,
+    "channelId": 1,
+    "shipmentPackageId": 4106763956,
+    "cargoTrackingNumber": 7330036433399647,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEJK2040EE3",
+        "sku": "ATELJKEE20403",
+        "stockCode": "AEJK2040EE3",
+        "productName": "Jumper Kablo Seti - 20cm - 40'lı - 3'lü Kablo Seti (1x Dişi Erkek / 1x Dişi Dişi / 1x Erkek Erkek) AEJK2040EE3, one size",
+        "productCode": 1605300026,
+        "contentId": 1605300026,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 314.0,
+        "lineGrossAmount": 314.0,
+        "discount": 20.99,
+        "lineTotalDiscount": 20.99,
+        "lineSellerDiscount": 20.99,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 293.01,
+            "lineItemDiscount": 20.99,
+            "lineItemSellerDiscount": 20.99,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5880634287,
+        "lineId": 5880634287,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELJKEE20403",
+        "orderLineItemStatusName": "Picking",
+        "price": 293.01,
+        "lineUnitPrice": 293.01,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1787785935209,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1787775137951,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1787775142424,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1787775183076,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1787864340000,
+    "estimatedDeliveryEndDate": 1788037140000,
+    "totalPrice": 293.01,
+    "packageTotalPrice": 293.01,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1787864340000,
+    "fastDelivery": true,
+    "originShipmentDate": 1787775137942,
+    "lastModifiedDate": 1787817970761,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10800889143,
+    "is4P": false
+  }
+]
