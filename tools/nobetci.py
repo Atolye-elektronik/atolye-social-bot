@@ -114,15 +114,25 @@ def akislari_oku():
     return cikti
 
 
-def son_calisma(dosya: str) -> dt.datetime | None:
+def son_calismalar(dosya: str) -> tuple[dt.datetime | None, dt.datetime | None]:
+    """(son basarili kosu, son kosu) dondurur.
+
+    Ikisini ayirmak sart: bir is calisip HATA verdiyse bu "kacirilmis" degil,
+    "bozuk" demektir. Kacirilmis isi tetiklemek dogru, bozuk isi saat basi
+    yeniden tetiklemek ise gurultu uretir ve sorunu cozmez.
+    """
     ham = gh("run", "list", "--repo", DEPO, "--workflow", dosya,
              "--limit", "20", "--json", "createdAt,conclusion,status")
+    basarili = herhangi = None
     for k in json.loads(ham or "[]"):
-        # Devam eden veya basarili kosu "calisti" sayilir; basarisiz kosuyu
-        # nobetci tekrar tetiklemez - o ayri bir sorun, ayri raporlanir.
+        an = dt.datetime.fromisoformat(k["createdAt"].replace("Z", "+00:00"))
+        if herhangi is None:
+            herhangi = an
+        # Devam eden kosu da "calisti" sayilir; sonucunu beklemek gerekir.
         if k.get("status") != "completed" or k.get("conclusion") == "success":
-            return dt.datetime.fromisoformat(k["createdAt"].replace("Z", "+00:00"))
-    return None
+            basarili = an
+            break
+    return basarili, herhangi
 
 
 def main() -> int:
@@ -131,7 +141,7 @@ def main() -> int:
     a = ap.parse_args()
 
     simdi = dt.datetime.now(dt.timezone.utc)
-    rapor, gecikenler = [], []
+    rapor, gecikenler, hatalilar = [], [], []
 
     for akis in akislari_oku():
         tolerans = TOLERANS_DK.get(akis["dosya"], VARSAYILAN_TOLERANS_DK)
@@ -147,30 +157,43 @@ def main() -> int:
         )
         if beklenen is None:
             continue
-        son = son_calisma(akis["dosya"])
+        son, son_herhangi = son_calismalar(akis["dosya"])
         gecikme_dk = int((simdi - beklenen).total_seconds() // 60)
-        kacti = son is None or son < beklenen
+        # Hic calismadi mi, yoksa calisip hata mi verdi?
+        hic_calismadi = son_herhangi is None or son_herhangi < beklenen
+        basarisiz = son is None or son < beklenen
+        kacti = basarisiz and hic_calismadi
+        hatali = basarisiz and not hic_calismadi
 
         rapor.append({
             "dosya": akis["dosya"], "ad": akis["ad"],
             "beklenen": beklenen.isoformat(),
-            "son_calisma": son.isoformat() if son else None,
-            "gecikme_dk": gecikme_dk, "kacti": kacti,
+            "son_basarili": son.isoformat() if son else None,
+            "son_kosu": son_herhangi.isoformat() if son_herhangi else None,
+            "gecikme_dk": gecikme_dk, "kacti": kacti, "hatali": hatali,
         })
-        durum = "KACTI" if kacti else "tamam"
+        durum = "KACTI" if kacti else ("HATALI" if hatali else "tamam")
         son_s = son.strftime("%d.%m %H:%M") if son else "hic"
-        print(f"{durum:6s} {akis['ad'][:34]:34s} beklenen {beklenen.strftime('%d.%m %H:%M')} UTC | son {son_s}")
+        print(f"{durum:6s} {akis['ad'][:34]:34s} beklenen {beklenen.strftime('%d.%m %H:%M')} UTC | son basarili {son_s}")
         if kacti:
             gecikenler.append(akis)
+        elif hatali:
+            hatalilar.append(akis)
 
     KAYIT.parent.mkdir(parents=True, exist_ok=True)
     KAYIT.write_text(json.dumps(
         {"kontrol": simdi.isoformat(), "akislar": rapor}, ensure_ascii=False, indent=2
     ), encoding="utf-8")
 
+    if hatalilar:
+        print(f"\n!! {len(hatalilar)} is calisti ama HATA verdi - tetiklenmiyor, elle bakilmali:")
+        for a in hatalilar:
+            print(f"   {a['ad']}  ({a['dosya']})")
+
     if not gecikenler:
-        print("\nHepsi zamaninda calismis.")
-        return 0
+        if not hatalilar:
+            print("\nHepsi zamaninda calismis.")
+        return 1 if hatalilar else 0
 
     print(f"\n!! {len(gecikenler)} is zamaninda calismamis.")
     if not a.tetikle:

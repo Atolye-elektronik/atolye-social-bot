@@ -57,9 +57,15 @@ jobs:
             exit 0
           fi
           if [ -z "$GH_TOKEN" ]; then
-            echo "::warning::GH_SECRETS_TOKEN tanımlı değil — yeni token kaydedilemedi."
-            echo "::warning::THREADS_ACCESS_TOKEN secret'ını elle yenilemen gerekecek."
-            exit 0
+            # 27.08: burada exit 0 vardi. Is "basarili" bitiyordu ama token
+            # KAYDEDILMIYORDU -- yani sessiz basarisizlik. Threads token'i 60
+            # gunde bir yenilenmezse paylasimlar sessizce durur, o yuzden bu
+            # durum artik isi dusuruyor.
+            echo "::error::GH_SECRETS_TOKEN tanimli degil - yenilenen token KAYDEDILEMEDI."
+            echo "::error::Ayarlar > Secrets > Actions icine, bu depo icin"
+            echo "::error::'Secrets: Read and write' yetkili bir PAT'i GH_SECRETS_TOKEN"
+            echo "::error::adiyla ekle. Aksi halde token suresi dolunca Threads durur."
+            exit 1
           fi
           echo "::add-mask::$(cat "$FILE")"
           gh secret set THREADS_ACCESS_TOKEN --body "$(cat "$FILE")"
