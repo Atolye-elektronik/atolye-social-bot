@@ -46,36 +46,51 @@ GRI = (104, 120, 136)
 
 CDN = "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/"
 
+# Fiyatlar Shopify'dan 28.08'de alındı. Fiyat rozeti bilerek var: satış
+# görselinde rakam görmeyen kullanıcı tıklamıyor, fiyatı merak edip kaydırıyor.
+# Defterde birim "öğrenci başına" — öğretmenin karar verdiği birim bu, 2.473 TL
+# yerine 82 TL görmek kararı kolaylaştırıyor.
 REKLAMLAR = [
     {
         "dosya": "meta-ogretmen-defter.png",
-        "foto": CDN + "isdosyasi1_377200c3-0c47-452a-9bde-8c9dcd1ac333.webp?v=1784792291",
-        "baslik": "Sınıfın tamamı, tek sipariş",
-        "destek": "10, 20 ve 30'lu sınıf paketleri · tek fatura · aynı gün kargo",
-        "rozet": "STAJ VE TEMRİN DEFTERİ",
+        # Shopify'daki kapak fotografinda MEB amblemi var; Trendyol defterleri
+        # tam da bu yuzden reddetmisti (bkz. trendyol-defter-urunleri-red).
+        # Bu kare TY onayindan gecen, amblemsiz surum.
+        "foto": "https://cdn.dsmcdn.com/ty1905/prod/QC_PREP/20260817/16/"
+                "933fe5df-927d-3c53-a0e2-770fbd910a0e/1_org_zoom.jpg",
+        "rozet_fiyat": "öğrenci başına 82 TL",
+        "baslik": "Sınıfın defteri tek siparişte",
+        "destek": "30'lu paket 2.473 TL · tek fatura · aynı gün kargo",
+        "kategori": "STAJ VE TEMRİN DEFTERİ",
     },
     {
         "dosya": "meta-ogretmen-takim-cantasi.png",
         "foto": CDN + "Takimcantasi.png?v=1785258195",
+        "rozet_fiyat": "1.911 TL",
         "baslik": "Atölye dersine hazır sınıf",
         "destek": "17 parça tam set · sınıf adedi kadar tek seferde",
-        "rozet": "MESLEK LİSESİ TAKIM ÇANTASI",
+        "kategori": "MESLEK LİSESİ TAKIM ÇANTASI",
     },
     {
         "dosya": "meta-ogretmen-endustriyel.png",
         "foto": CDN + "EndElkhepsi.webp?v=1782335968",
+        "rozet_fiyat": "659 TL",
         "baslik": "11. sınıf müfredatına birebir",
-        "destek": "Her öğrenci aynı setle çalışır, ders tek elden yürür",
-        "rozet": "ENDÜSTRİYEL ELEKTRONİK SETİ",
+        "destek": "Her öğrenci aynı setle çalışır · aynı gün kargo",
+        "kategori": "ENDÜSTRİYEL ELEKTRONİK SETİ",
     },
     {
         "dosya": "meta-ogretmen-arduino.png",
         "foto": CDN + "Baslangicseti.png?v=1785260927",
+        "rozet_fiyat": "782 TL",
         "baslik": "Proje dersine hazır set",
-        "destek": "Kutulu setler · Türkçe kaynak ve devre örnekleri",
-        "rozet": "ARDUINO EĞİTİM SETLERİ",
+        "destek": "46 parça · Türkçe kaynak ve devre örnekleri",
+        "kategori": "ARDUINO BAŞLANGIÇ SETİ",
     },
 ]
+
+ACELE = "OKULLAR 15 EYLÜL'DE AÇILIYOR"
+CTA = "Hemen Sipariş Ver"
 
 CIKTI_DIZIN = pathlib.Path(__file__).resolve().parents[1] / "posts" / "media" / "meta-ogretmen"
 
@@ -100,13 +115,34 @@ def _zemin_ac(seed: str) -> tuple[Image.Image, ImageDraw.ImageDraw]:
     return tuval, ImageDraw.Draw(tuval)
 
 
+def _kirp_beyaz(foto: Image.Image, esik: int = 244) -> Image.Image:
+    """Ürün fotoğrafının beyaz kenar boşluklarını kırpar.
+
+    Pazaryeri fotoğrafları beyaz zeminde bol boşlukla geliyor; olduğu gibi
+    yerleştirilince ürün kartın içinde küçücük kalıyor. Kırpınca ürün kartı
+    dolduruyor ve akışta görünür oluyor.
+    """
+    gri = foto.convert("L")
+    maske = gri.point(lambda p: 255 if p < esik else 0)
+    kutu = maske.getbbox()
+    if not kutu:
+        return foto
+    # Birkaç piksel pay bırak ki ürün kenarları kesilmesin
+    pay = 8
+    x0 = max(0, kutu[0] - pay)
+    y0 = max(0, kutu[1] - pay)
+    x1 = min(foto.width, kutu[2] + pay)
+    y1 = min(foto.height, kutu[3] + pay)
+    return foto.crop((x0, y0, x1, y1))
+
+
 def _foto_kart(tuval: Image.Image, d: ImageDraw.ImageDraw, url: str) -> None:
     """Ürün fotoğrafını beyaz yuvarlak kartın içine oranını bozmadan yerleştirir."""
     x0, y0, x1, y1 = KART
     d.rounded_rectangle([x0, y0, x1, y1], radius=28, fill=BEYAZ,
                         outline=(226, 233, 239), width=2)
 
-    foto = _indir(url).convert("RGB")
+    foto = _kirp_beyaz(_indir(url).convert("RGB"))
     ic_w, ic_h = (x1 - x0) - 56, (y1 - y0) - 56
     olcek = min(ic_w / foto.width, ic_h / foto.height)
     yeni = foto.resize((max(1, int(foto.width * olcek)), max(1, int(foto.height * olcek))),
@@ -114,6 +150,21 @@ def _foto_kart(tuval: Image.Image, d: ImageDraw.ImageDraw, url: str) -> None:
     px = x0 + ((x1 - x0) - yeni.width) // 2
     py = y0 + ((y1 - y0) - yeni.height) // 2
     tuval.paste(yeni, (px, py))
+
+
+def _fiyat_rozeti(d: ImageDraw.ImageDraw, metin: str) -> None:
+    """Fotoğraf kartının sağ üst köşesine oturan turuncu fiyat rozeti.
+
+    Satış görselinde rakam görmeyen kullanıcı tıklamıyor, fiyatı merak edip
+    kaydırıyor. Rozet fotoğrafın üstüne biniyor ki gözden kaçmasın.
+    """
+    f = _bold(34)
+    gen = d.textlength(metin, font=f)
+    ph, pw = 66, gen + 56
+    x1, y0 = KART[2] - 18, KART[1] - 22
+    x0 = x1 - pw
+    d.rounded_rectangle([x0, y0, x1, y0 + ph], radius=ph / 2, fill=TURUNCU)
+    d.text((x0 + 28, y0 + ph / 2 - 22), metin, font=f, fill=BEYAZ)
 
 
 def uret(reklam: dict) -> pathlib.Path:
@@ -133,36 +184,40 @@ def uret(reklam: dict) -> pathlib.Path:
     _foto_kart(tuval, d, reklam["foto"])
     d = ImageDraw.Draw(tuval)
 
+    # Fiyat rozeti — fotografin sag ust kosesine oturuyor
+    _fiyat_rozeti(d, reklam["rozet_fiyat"])
+
     # Asıl vaat
     fb, satirlar, boyut = _sigdir(
-        d, reklam["baslik"], W - 160, [([72, 64], 2), ([56], 3)]
+        d, reklam["baslik"], W - 160, [([70, 62], 2), ([54], 3)]
     )
-    y = 880
+    y = 872
     for s in satirlar:
         d.text(((W - d.textlength(s, font=fb)) / 2, y), s, font=fb, fill=LACIVERT)
         y += int(boyut * 1.2)
 
-    d.line([(W / 2 - 110, y + 26), (W / 2 + 110, y + 26)], fill=TEAL, width=4)
-
     # Destek cümlesi — gerekirse küçülterek tek satırda tut
-    fd = _normal(34)
-    while d.textlength(reklam["destek"], font=fd) > W - 140 and fd.size > 24:
+    fd = _normal(32)
+    while d.textlength(reklam["destek"], font=fd) > W - 140 and fd.size > 22:
         fd = _normal(fd.size - 2)
-    d.text(((W - d.textlength(reklam["destek"], font=fd)) / 2, y + 76),
+    d.text(((W - d.textlength(reklam["destek"], font=fd)) / 2, y + 16),
            reklam["destek"], font=fd, fill=GRI)
 
-    # Rozet
-    fr = _mono(24)
-    gen = _aralikli_genislik(d, reklam["rozet"], fr, aralik=6)
-    _aralikli(d, ((W - gen) / 2, y + 146), reklam["rozet"], fr, TEAL, aralik=6)
+    # Aciliyet — sezon penceresi dar, karari bugune cekiyor
+    fa = _mono(24)
+    gen = _aralikli_genislik(d, ACELE, fa, aralik=5)
+    _aralikli(d, ((W - gen) / 2, y + 78), ACELE, fa, TURUNCU, aralik=5)
 
-    # CTA
-    fp = _bold(38)
-    gen = d.textlength(SITE, font=fp)
-    ph, pw = 84, gen + 120
-    x0, y0 = (W - pw) / 2, 1230 - ph / 2
+    # CTA: alan adi degil EYLEM. Alan adi altta kucuk kaliyor.
+    fp = _bold(40)
+    gen = d.textlength(CTA, font=fp)
+    ph, pw = 92, gen + 130
+    x0, y0 = (W - pw) / 2, 1218 - ph / 2
     d.rounded_rectangle([x0, y0, x0 + pw, y0 + ph], radius=ph / 2, fill=TURUNCU)
-    d.text(((W - gen) / 2, 1230 - 26), SITE, font=fp, fill=BEYAZ)
+    d.text(((W - gen) / 2, 1218 - 27), CTA, font=fp, fill=BEYAZ)
+
+    fs2 = _normal(28)
+    d.text(((W - d.textlength(SITE, font=fs2)) / 2, 1288), SITE, font=fs2, fill=GRI)
 
     CIKTI_DIZIN.mkdir(parents=True, exist_ok=True)
     return _kaydet(tuval, CIKTI_DIZIN / reklam["dosya"])
