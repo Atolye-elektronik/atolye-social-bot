@@ -69,8 +69,12 @@ SLIDE_SURELERI = {
 KANCA_SURESI = 1.8
 
 # Arka plan müziği. Buraya .mp3/.m4a koyarsan video üretimi kendiliğinden
-# birini seçer; klasör boşsa video sessiz kalır (hata vermez).
-MUZIK_DIR = pathlib.Path("content/muzik")
+# birini secer.
+#
+# 27.08: bu yol GORELI idi; uretim depo koku disindan calistirilinca
+# klasor bulunamiyor ve video sessizce sessiz cikiyordu. Artik koke sabitli.
+DEPO_KOKU = pathlib.Path(__file__).resolve().parents[1]
+MUZIK_DIR = DEPO_KOKU / "content" / "muzik"
 MUZIK_SES_DUZEYI = float(os.environ.get("VIDEO_MUZIK_SES", "0.75"))
 
 
@@ -695,9 +699,13 @@ def _posttan(
     elif muzik is None:
         muzik = muzik_sec(slug)
         if muzik is None:
-            print(
-                f"ℹ️  Video sessiz olacak — {MUZIK_DIR}/ klasörüne .mp3 koyarsan\n"
-                "    otomatik olarak arka plan müziği eklenir."
+            # Gurultulu basarisizlik: sessiz video TikTok/Shorts'ta olu
+            # dogar. Sessiz istiyorsan bunu ACIKCA --sessiz ile soyle.
+            raise SystemExit(
+                f"HATA: arka plan muzigi bulunamadi -> {MUZIK_DIR}\n"
+                "   Sessiz video TikTok ve Shorts'ta izlenmiyor, bu yuzden\n"
+                "   kazara sessiz uretime izin verilmiyor.\n"
+                "   Ya klasore .mp3 koy, ya da bilerek --sessiz ver."
             )
 
     basliklar = [ln.strip() for ln in hedef.caption.splitlines() if ln.strip()]

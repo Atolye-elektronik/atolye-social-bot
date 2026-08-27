@@ -26,6 +26,10 @@ jobs:
         run: |
           pip install --quiet -r requirements.txt
           python -m playwright install --with-deps chromium
+      # Pinterest'e SESSIZ kopya gidiyor (27.08 ses telifi). Sesi sokmek
+      # icin ffmpeg sart; yoksa is bilerek hata verir, sesli pin atmaz.
+      - name: ffmpeg kur
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Pin at
         env:
           PYTHONUNBUFFERED: "1"

@@ -16,6 +16,8 @@ import contextlib
 import os
 import pathlib
 import re
+import shutil
+import subprocess
 import tempfile
 import urllib.parse
 
@@ -48,6 +50,37 @@ VARSAYILAN_PANO = (
     os.environ.get("PINTEREST_BOARD", "").strip()
     or (config.PINTEREST_BOARD_ID if not config.PINTEREST_BOARD_ID.isdigit() else "")
 )
+
+
+def _sessizlestir(dosya: pathlib.Path, gecici: list[pathlib.Path]) -> pathlib.Path:
+    """Videonun ses izini söker; Pinterest'e sessiz kopya gider.
+
+    27.08.2026: Pinterest videolarımıza SES TELİFİ ihlali verdi. Videolara
+    gömdüğümüz parçalar YouTube Ses Kitaplığı'ndan geliyor; o lisans YouTube
+    için net ama Pinterest kendi tarayıcısıyla çalışıyor ve eşleşme buluyor.
+
+    Pinterest akışında videolar zaten sessiz oynadığı için ses orada hiçbir
+    şey kazandırmıyor — sadece risk getiriyordu. TikTok/Reels/Shorts'ta ses
+    şart olduğu için kaynak mp4'e dokunulmuyor, yalnız Pinterest kopyası
+    sessizleştiriliyor.
+
+    Ses izi kopyalama ile atılıyor (yeniden kodlama yok), görüntü birebir aynı.
+    """
+    if shutil.which("ffmpeg") is None:
+        # Gurultulu basarisizlik: sesli yuklemektense pin atmamak yeglenir.
+        raise StudioError(
+            "ffmpeg bulunamadı — Pinterest'e sesli video yüklenemez (ses telifi). "
+            "İş akışına ffmpeg kurulumu ekle ya da postu elle at."
+        )
+    hedef = pathlib.Path(tempfile.mkdtemp(prefix="pinterest-sessiz-")) / dosya.name
+    subprocess.run(
+        ["ffmpeg", "-y", "-loglevel", "error", "-i", str(dosya),
+         "-c", "copy", "-an", str(hedef)],
+        check=True,
+    )
+    gecici.append(hedef)
+    print(f"  🔇 Pinterest kopyası sessizleştirildi: {hedef.name}")
+    return hedef
 
 
 def _yerel_dosya(yol: str, gecici: list[pathlib.Path]) -> pathlib.Path:
@@ -176,6 +209,8 @@ def studio_paylas(
     gecici: list[pathlib.Path] = []
     try:
         dosya = _yerel_dosya(kaynak, gecici)
+        if is_video or dosya.suffix.lower() in (".mp4", ".mov", ".m4v"):
+            dosya = _sessizlestir(dosya, gecici)
 
         with pinterest_oturumu(selectors.PIN_OLUSTUR) as page:
             # Yeni adres açılmazsa eski pin-builder'a düş.
