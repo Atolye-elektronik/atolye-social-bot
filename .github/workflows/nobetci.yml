@@ -1,0 +1,38 @@
+name: Nobetci - kacan isleri yakala
+
+# Iki bagimsiz tetik var, kasitli:
+#  1) Bu cron  -> tek tek basarisiz/atlanan isleri yakalar.
+#  2) Masaustundeki Windows zamanlanmis gorevi -> Actions cron'unun TAMAMEN
+#     takildigi durumu yakalar (26.08.2026 arizasinda 24 saat boyle kaldi).
+# Ikisi de ayni araci calistirir; arac mukerrer tetikleme yapmaz.
+
+on:
+  schedule:
+    - cron: "40 * * * *"   # her saat basi 40'ta
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: nobetci
+  cancel-in-progress: false
+
+jobs:
+  nobet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Kacan isleri bul ve tetikle
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/nobetci.py --tetikle || true
+
+      - name: Nobet kaydini isle
+        run: bash tools/state_it.sh "nobetci kaydi guncellendi"
