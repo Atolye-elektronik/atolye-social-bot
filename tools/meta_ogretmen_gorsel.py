@@ -50,7 +50,9 @@ CDN = "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/"
 # kuponunu nötrleyen oran). Fiyat rozeti bilerek var: satış
 # görselinde rakam görmeyen kullanıcı tıklamıyor, fiyatı merak edip kaydırıyor.
 # Defterde birim "öğrenci başına" — öğretmenin karar verdiği birim bu, 2.751 TL
-# yerine 92 TL görmek kararı kolaylaştırıyor.
+# yerine 84 TL görmek kararı kolaylaştırıyor. Sınıf paketlerinde kademeli
+# toplu indirim var (%6/%9/%12); paketi olmayan ürünlerde 10 adet ve üzeri
+# otomatik %10.
 REKLAMLAR = [
     {
         "dosya": "meta-ogretmen-defter.png",
@@ -59,9 +61,9 @@ REKLAMLAR = [
         # Bu kare TY onayindan gecen, amblemsiz surum.
         "foto": "https://cdn.dsmcdn.com/ty1905/prod/QC_PREP/20260817/16/"
                 "933fe5df-927d-3c53-a0e2-770fbd910a0e/1_org_zoom.jpg",
-        "rozet_fiyat": "öğrenci başına 92 TL",
+        "rozet_fiyat": "öğrenci başına 84 TL",
         "baslik": "Sınıfın defteri tek siparişte",
-        "destek": "30'lu paket 2.751 TL · tek fatura · aynı gün kargo",
+        "destek": "30'lu paket 2.508 TL · tek fatura · aynı gün kargo",
         "kategori": "STAJ VE TEMRİN DEFTERİ",
     },
     {
@@ -69,7 +71,7 @@ REKLAMLAR = [
         "foto": CDN + "Takimcantasi.png?v=1785258195",
         "rozet_fiyat": "2.125 TL",
         "baslik": "Atölye dersine hazır sınıf",
-        "destek": "17 parça tam set · sınıf adedi kadar tek seferde",
+        "destek": "17 parça tam set · 10 adet ve üzeri %10 indirim",
         "kategori": "MESLEK LİSESİ TAKIM ÇANTASI",
     },
     {
@@ -77,7 +79,7 @@ REKLAMLAR = [
         "foto": CDN + "EndElkhepsi.webp?v=1782335968",
         "rozet_fiyat": "733 TL",
         "baslik": "11. sınıf müfredatına birebir",
-        "destek": "Her öğrenci aynı setle çalışır · aynı gün kargo",
+        "destek": "Her öğrenci aynı setle · 10 adet ve üzeri %10 indirim",
         "kategori": "ENDÜSTRİYEL ELEKTRONİK SETİ",
     },
     {
@@ -85,7 +87,7 @@ REKLAMLAR = [
         "foto": CDN + "Baslangicseti.png?v=1785260927",
         "rozet_fiyat": "870 TL",
         "baslik": "Proje dersine hazır set",
-        "destek": "46 parça · Türkçe kaynak ve devre örnekleri",
+        "destek": "46 parça · 10 adet ve üzeri %10 indirim",
         "kategori": "ARDUINO BAŞLANGIÇ SETİ",
     },
 ]
