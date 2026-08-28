@@ -49,7 +49,12 @@ FOTO_ONBELLEK = CIKTI / "kaynak"
 CDN = "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/"
 
 W, H = 1080, 1920
-KART = (70, 250, 1010, 1230)          # klip kartı
+# Kart iki taraftan da kisaldi. Reels/Hikaye'de Meta kendi arayuzunu
+# videonun ustune bindiriyor: ust ~%14 (profil satiri) ve alt ~%20
+# (aciklama + kendi siparis dugmesi). Kitleyi eleyen serit ustte, fiyat
+# kademeleri altta o bantlarin DISINDA kalmali; kaybedilen kart
+# yuksekligi bunun bedeli.
+KART = (70, 340, 1010, 1100)          # klip kartı
 KLIP_SN = 3.0                          # klip başına süre
 
 ZEMIN = (245, 248, 250)
@@ -178,15 +183,15 @@ def zemin_uret(reklam: dict, hedef: pathlib.Path) -> pathlib.Path:
     # Marka
     f = _mono(28)
     gen = _aralikli_genislik(d, MARKA, f, aralik=8)
-    _aralikli(d, ((W - gen) / 2, 92), MARKA, f, TEAL, aralik=8)
-    d.line([(W / 2 - 60, 66), (W / 2 + 60, 66)], fill=ALTIN, width=4)
+    _aralikli(d, ((W - gen) / 2, 200), MARKA, f, TEAL, aralik=8)
+    d.line([(W / 2 - 60, 174), (W / 2 + 60, 174)], fill=ALTIN, width=4)
 
     # Kitleyi eleyen şerit
     fs = _mono(30)
     while _aralikli_genislik(d, SERIT, fs, aralik=8) > W - 60 and fs.size > 22:
         fs = _mono(fs.size - 2)
     gen = _aralikli_genislik(d, SERIT, fs, aralik=8)
-    _aralikli(d, ((W - gen) / 2, 168), SERIT, fs, TURUNCU, aralik=8)
+    _aralikli(d, ((W - gen) / 2, 276), SERIT, fs, TURUNCU, aralik=8)
 
     # Klip kartı — video bunun üstüne biniyor, burada yalnız çerçevesi var
     d.rounded_rectangle(list(KART), radius=28, fill=BEYAZ,
@@ -195,7 +200,7 @@ def zemin_uret(reklam: dict, hedef: pathlib.Path) -> pathlib.Path:
     # Başlık
     fb, satirlar, boyut = _sigdir(d, reklam["baslik"], W - 160,
                                   [([62, 56], 2), ([48], 3)])
-    y = 1282
+    y = 1140
     for s in satirlar:
         d.text(((W - d.textlength(s, font=fb)) / 2, y), s, font=fb, fill=LACIVERT)
         y += int(boyut * 1.16)
@@ -229,12 +234,18 @@ def zemin_uret(reklam: dict, hedef: pathlib.Path) -> pathlib.Path:
                reklam["toptan"], font=fto, fill=TEAL)
         y += 4 + fto.size
 
-    # Aciliyet — CTA düğmesinin üst kenarı 1724, metin oraya taşmamalı
+    # Aciliyet — Reels/Hikaye guvenli alaninin alt siniri ~1535px. Fiyat
+    # kademeleri ve aciliyet bunun USTUNDE kalmali; CTA dugmesi ile site
+    # adresi bilerek altta, onlar Feed'de gorunuyor, Reels'te zaten Meta
+    # kendi siparis dugmesini koyuyor.
+    GUVENLI_TABAN = 1535
     fa = _mono(24)
     gen = _aralikli_genislik(d, ACELE, fa, aralik=5)
-    if y + 20 > 1676:
-        print(f"  UYARI: {reklam['dosya']} metin tabani {y:.0f}px — CTA'ya tasiyor")
-    _aralikli(d, ((W - gen) / 2, min(max(y + 30, 1640), 1676)), ACELE, fa,
+    ya = y + 16
+    if ya + fa.size > GUVENLI_TABAN:
+        print(f"  UYARI: {reklam['dosya']} metin tabani {ya + fa.size:.0f}px — "
+              f"Reels guvenli alanini asiyor")
+    _aralikli(d, ((W - gen) / 2, min(ya, GUVENLI_TABAN - fa.size)), ACELE, fa,
               TURUNCU, aralik=5)
 
     # CTA
