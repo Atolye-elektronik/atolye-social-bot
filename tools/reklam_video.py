@@ -1,24 +1,27 @@
 # -*- coding: utf-8 -*-
-"""Mevcut kurgu videolarını ücretli reklama uygun hale getirir.
+"""Meta reklamları için video üretir — yazı hiçbir zaman ürünün üstüne gelmez.
 
-Organik paylaşımda sorun olmayan üç şey ücretli reklamda sorun:
+Neden yeniden kuruldu: elimizdeki kurgu videolarında yazılar doğrudan ürünün
+üstünde duruyor ve ürünü kapatıyordu (kullanıcı 28.08). O yazılar videoya
+gömülü olduğu için yerleri değiştirilemiyordu; bu yüzden reklam videoları ham
+Kling kliplerinden yeniden kuruluyor.
 
-  1. **Kling filigranı.** Videoların sağ altında "KlingAI 3.0" duruyor. Organik
-     akışta gözden kaçıyor ama para verdiğimiz bir reklamda başka bir markanın
-     adı görünüyor; Meta üçüncü taraf markasını da inceliyor. Bulanıklaştırmak
-     yerine kendi köşe etiketimizi koyuyoruz — silme değil, kapatma; sonuç
-     lekeli değil kasıtlı görünüyor.
+Yerleşim sabit ve statik görsellerle aynı dili konuşuyor:
 
-  2. **ATOLYE10 kuponu.** Videoların kapanışında "ATOLYE10 ile %10" yazıyor.
-     Fiyatlara ATOLYE10'u nötrlemek için %11,2 zam yapıldı; kuponu reklamda
-     duyurmak indirimi her alıcıya dağıtmak demek. O satır "aynı gün kargo"
-     ile değiştiriliyor.
+    üst    → marka + "MESLEKİ VE TEKNİK ANADOLU LİSELERİ İÇİN" şeridi
+    orta   → klip kartı (940x980) — SADECE görüntü, hiç yazı yok
+    alt    → başlık, fiyat kademeleri, aciliyet, CTA
 
-  3. **Müzik telifi.** Pinterest bu videolardan ses telifi verdi. Reklamda
-     telifli müzik reddedilme ya da sessize alınma sebebi; 1 Eylül lansmanının
-     hemen öncesinde reklam hesabını riske atmaya değmez. Reklam kopyaları
-     sessiz üretiliyor — Meta akışı zaten büyük ölçüde sessiz izleniyor,
-     anlatım ekrandaki yazılarla yürüyor.
+Böylece ürün hiçbir karede kapanmıyor; okunacak her şey kendi şeridinde.
+
+İki teknik ayrıntı:
+
+  * **Kling filigranı** ham klibin sağ alt köşesinde. Üstünü kapatmak yerine
+    klibin alt %7'si kırpılıyor — leke kalmıyor, kayıp da karenin en altındaki
+    boşluktan gidiyor.
+  * **Ses yok.** Pinterest bu müziklerden telif verdi; ücretli reklamda telifli
+    müzik reddedilme ya da sessize alınma sebebi. Anlatım zaten alttaki yazı
+    şeridinde, sessizde kaybolan bilgi yok.
 
     python tools/reklam_video.py
 """
@@ -34,34 +37,84 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
 from PIL import Image, ImageDraw  # noqa: E402
 
-from src.carousel_gorsel import _bold, _mono  # noqa: E402
+from src.carousel_gorsel import (  # noqa: E402
+    ALTIN, BEYAZ, TURUNCU,
+    _aralikli, _aralikli_genislik, _bold, _mono, _normal, _sigdir,
+)
 
 KOK = pathlib.Path(__file__).resolve().parents[1]
-KAYNAK = KOK / "posts" / "media"
-CIKTI = KAYNAK / "meta-reklam"
+KLIPLER = pathlib.Path.home() / "Desktop" / "kling-videolar"
+CIKTI = KOK / "posts" / "media" / "meta-reklam"
 
 W, H = 1080, 1920
+KART = (70, 250, 1010, 1230)          # klip kartı
+KLIP_SN = 3.0                          # klip başına süre
 
+ZEMIN = (245, 248, 250)
 LACIVERT = (11, 20, 32)
 TEAL = (13, 132, 124)
-BEYAZ = (255, 255, 255)
+GRI = (104, 120, 136)
 
-# Kupon satırının yeri tüm kurgu videolarında aynı (ölçüldü 28.08). Şerit
-# bilerek neredeyse tam genişlikte: bazı videolarda özgün kupon yazısı daha
-# geniş ve dar bir kutu kenarlardan sızıyor.
-KUPON_KUTU = (16, 1180, 1064, 1292)
-KUPON_METIN = "Aynı gün kargo · atolyeelektronik.com"
+SERIT = "MESLEKİ VE TEKNİK ANADOLU LİSELERİ İÇİN"
+MARKA = "ATÖLYE ELEKTRONİK"
+SITE = "atolyeelektronik.com"
+ACELE = "OKULLAR 14 EYLÜL'DE AÇILIYOR"
+CTA = "Hemen Sipariş Ver"
+TOPTAN = "Toplu alımda özel fiyat · bize yazın"
 
-# Kling filigranı sağ altta, yine sabit yerde.
-KOSE_KUTU = (798, 1588, 1062, 1662)
-KOSE_METIN = "ATÖLYE ELEKTRONİK"
+DEFTER_FIYAT = [("1 adet", "90 TL"), ("10 adet", "850 TL"),
+                ("20 adet", "1.700 TL"), ("30 adet", "2.550 TL")]
 
-VIDEOLAR = [
-    ("kurgu-is-dosyasi.mp4", "reklam-staj-defteri.mp4"),
-    ("kurgu-temrin-defteri.mp4", "reklam-temrin-defteri.mp4"),
-    ("kurgu-takim-cantasi.mp4", "reklam-takim-cantasi.mp4"),
-    ("kurgu2-endustriyel.mp4", "reklam-endustriyel.mp4"),
-    ("kurgu-arduino-seti.mp4", "reklam-arduino.mp4"),
+REKLAMLAR = [
+    {
+        "dosya": "reklam-staj-defteri.mp4",
+        "klipler": ["kling_20260819_VIDEO_Front_faci_5256_0.mp4",
+                    "kling_20260823_is-dosyasi-pushin_4756.mp4",
+                    "kling_20260819_VIDEO__4134_0.mp4"],
+        "baslik": "Staj defteri, tek siparişte",
+        "destek": "Tek fatura · tek kargo · aynı gün gönderim",
+        "fiyatlar": DEFTER_FIYAT,
+        "toptan": None,
+    },
+    {
+        "dosya": "reklam-temrin-defteri.mp4",
+        "klipler": ["kling_20260823_temrin-defteri-v2_4758.mp4",
+                    "kling_20260823_temrin-spotlight_4868b.mp4"],
+        "baslik": "Temrin defteri, tek siparişte",
+        "destek": "48 yaprak 96 sayfa · aynı gün kargo",
+        "fiyatlar": DEFTER_FIYAT,
+        "toptan": None,
+    },
+    {
+        "dosya": "reklam-takim-cantasi.mp4",
+        "klipler": ["kling_20260819_VIDEO__4201_0.mp4",
+                    "kling_20260625_VIDEO_I_ve_attac_101_0.mp4"],
+        "baslik": "Atölye dersine hazır sınıf",
+        "destek": "Pense, havya, multimetre, lehim takımı",
+        "fiyatlar": [("17 parça tam set", "1.990 TL")],
+        "toptan": TOPTAN,
+    },
+    {
+        "dosya": "reklam-endustriyel.mp4",
+        "klipler": ["kling_20260707_VIDEO_Continue_s_6109_0.mp4",
+                    "kling_20260707_VIDEO_Continue_s_6126_0.mp4",
+                    "kling_20260708_VIDEO_image7imag_77_0.mp4"],
+        "baslik": "Endüstriyel Elektronik dersi, 11. sınıf",
+        "destek": "Müfredattaki uygulamalar birebir, tek sette",
+        "fiyatlar": [("Tam set", "699 TL")],
+        "toptan": TOPTAN,
+    },
+    {
+        "dosya": "reklam-arduino.mp4",
+        "klipler": ["kling_20260625_VIDEO_I_ve_inclu_8_0.mp4",
+                    "kling_20260702_VIDEO_Flat_lay_p_1137_0.mp4",
+                    "kling_20260823_dht-kiti-turntable_4713.mp4"],
+        "baslik": "Mikrodenetleyiciler ve Robotik Kodlama",
+        "destek": "Türkçe kaynak ve devre örnekleriyle",
+        "fiyatlar": [("46 parça", "769 TL"), ("56 parça", "1.092 TL"),
+                     ("88 parça", "1.766 TL")],
+        "toptan": TOPTAN,
+    },
 ]
 
 
@@ -72,64 +125,134 @@ def _ffmpeg() -> str:
     return yol
 
 
-def kapak_uret(hedef: pathlib.Path) -> pathlib.Path:
-    """İki kapatma şeridini saydam bir PNG olarak çizer."""
-    kat = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    d = ImageDraw.Draw(kat)
+def zemin_uret(reklam: dict, hedef: pathlib.Path) -> pathlib.Path:
+    """Klip kartının dışındaki her şeyi çizer; kartın içi videoya kalıyor."""
+    tuval = Image.new("RGB", (W, H), ZEMIN)
+    d = ImageDraw.Draw(tuval)
 
-    # Kupon satırının üstüne aynı görsel dilde koyu şerit
-    x0, y0, x1, y1 = KUPON_KUTU
-    d.rounded_rectangle([x0, y0, x1, y1], radius=10, fill=LACIVERT + (255,))  # tam opak: yari saydamda eski kupon yazisi altindan okunuyor
-    f = _bold(38)
-    while d.textlength(KUPON_METIN, font=f) > (x1 - x0) - 48 and f.size > 22:
-        f = _bold(f.size - 2)
-    d.text((x0 + ((x1 - x0) - d.textlength(KUPON_METIN, font=f)) / 2,
-            y0 + ((y1 - y0) - f.size) / 2 - 4),
-           KUPON_METIN, font=f, fill=BEYAZ)
+    # Marka
+    f = _mono(28)
+    gen = _aralikli_genislik(d, MARKA, f, aralik=8)
+    _aralikli(d, ((W - gen) / 2, 92), MARKA, f, TEAL, aralik=8)
+    d.line([(W / 2 - 60, 66), (W / 2 + 60, 66)], fill=ALTIN, width=4)
 
-    # Filigranın üstüne kendi köşe etiketimiz
-    x0, y0, x1, y1 = KOSE_KUTU
-    d.rounded_rectangle([x0, y0, x1, y1], radius=(y1 - y0) / 2, fill=TEAL + (255,))
-    f = _mono(24)
-    while d.textlength(KOSE_METIN, font=f) > (x1 - x0) - 36 and f.size > 14:
-        f = _mono(f.size - 1)
-    d.text((x0 + ((x1 - x0) - d.textlength(KOSE_METIN, font=f)) / 2,
-            y0 + ((y1 - y0) - f.size) / 2 - 3),
-           KOSE_METIN, font=f, fill=BEYAZ)
+    # Kitleyi eleyen şerit
+    fs = _mono(30)
+    while _aralikli_genislik(d, SERIT, fs, aralik=8) > W - 60 and fs.size > 22:
+        fs = _mono(fs.size - 2)
+    gen = _aralikli_genislik(d, SERIT, fs, aralik=8)
+    _aralikli(d, ((W - gen) / 2, 168), SERIT, fs, TURUNCU, aralik=8)
 
-    kat.save(hedef)
+    # Klip kartı — video bunun üstüne biniyor, burada yalnız çerçevesi var
+    d.rounded_rectangle(list(KART), radius=28, fill=BEYAZ,
+                        outline=(226, 233, 239), width=2)
+
+    # Başlık
+    fb, satirlar, boyut = _sigdir(d, reklam["baslik"], W - 160,
+                                  [([62, 56], 2), ([48], 3)])
+    y = 1282
+    for s in satirlar:
+        d.text(((W - d.textlength(s, font=fb)) / 2, y), s, font=fb, fill=LACIVERT)
+        y += int(boyut * 1.16)
+
+    # Destek cümlesi
+    fd = _normal(28)
+    while d.textlength(reklam["destek"], font=fd) > W - 140 and fd.size > 20:
+        fd = _normal(fd.size - 2)
+    y += 6
+    d.text(((W - d.textlength(reklam["destek"], font=fd)) / 2, y),
+           reklam["destek"], font=fd, fill=GRI)
+    y += fd.size + 16
+
+    # Fiyat kademeleri: adet ve tutar ayrı sütunda, alt alta
+    fe = _normal(30)
+    ft = _bold(34)
+    kademeler = reklam["fiyatlar"]
+    eg = max(d.textlength(a, font=fe) for a, _ in kademeler)
+    tg = max(d.textlength(b, font=ft) for _, b in kademeler)
+    ara = 36
+    x0 = (W - (eg + ara + tg)) / 2
+    for etiket, tutar in kademeler:
+        d.text((x0 + eg - d.textlength(etiket, font=fe), y + 4), etiket,
+               font=fe, fill=GRI)
+        d.text((x0 + eg + ara, y), tutar, font=ft, fill=LACIVERT)
+        y += 44
+
+    if reklam["toptan"]:
+        fto = _bold(26)
+        d.text(((W - d.textlength(reklam["toptan"], font=fto)) / 2, y + 4),
+               reklam["toptan"], font=fto, fill=TEAL)
+        y += 4 + fto.size
+
+    # Aciliyet — CTA düğmesinin üst kenarı 1724, metin oraya taşmamalı
+    fa = _mono(24)
+    gen = _aralikli_genislik(d, ACELE, fa, aralik=5)
+    if y + 20 > 1676:
+        print(f"  UYARI: {reklam['dosya']} metin tabani {y:.0f}px — CTA'ya tasiyor")
+    _aralikli(d, ((W - gen) / 2, min(max(y + 30, 1640), 1676)), ACELE, fa,
+              TURUNCU, aralik=5)
+
+    # CTA
+    fp = _bold(40)
+    gen = d.textlength(CTA, font=fp)
+    ph, pw = 92, gen + 130
+    cx, cy = (W - pw) / 2, 1770 - ph / 2
+    d.rounded_rectangle([cx, cy, cx + pw, cy + ph], radius=ph / 2, fill=TURUNCU)
+    d.text(((W - gen) / 2, 1770 - 27), CTA, font=fp, fill=BEYAZ)
+
+    fs2 = _normal(28)
+    d.text(((W - d.textlength(SITE, font=fs2)) / 2, 1848), SITE, font=fs2, fill=GRI)
+
+    tuval.save(hedef)
     return hedef
 
 
-def uret(ffmpeg: str, kapak: pathlib.Path, kaynak: str, cikti: str) -> pathlib.Path:
-    girdi = KAYNAK / kaynak
-    if not girdi.exists():
-        raise SystemExit(f"HATA: kaynak video yok -> {girdi}")
-    hedef = CIKTI / cikti
-    komut = [
-        ffmpeg, "-v", "error", "-y",
-        "-i", str(girdi),
-        "-i", str(kapak),
-        "-filter_complex", "[0:v][1:v]overlay=0:0:format=auto[v]",
-        "-map", "[v]",
-        "-an",                       # ses telifi: reklam kopyaları sessiz
-        "-c:v", "libx264", "-preset", "medium", "-crf", "20",
-        "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-        str(hedef),
-    ]
-    subprocess.run(komut, check=True)
+def uret(ffmpeg: str, reklam: dict) -> pathlib.Path:
+    kart_w = KART[2] - KART[0]
+    kart_h = KART[3] - KART[1]
+    zemin = zemin_uret(reklam, CIKTI / "_zemin.png")
+
+    girdiler: list[str] = ["-loop", "1", "-i", str(zemin)]
+    for ad in reklam["klipler"]:
+        yol = KLIPLER / ad
+        if not yol.exists():
+            raise SystemExit(f"HATA: klip yok -> {yol}")
+        girdiler += ["-i", str(yol)]
+
+    # Alt %7 kırpılıyor: Kling filigranı orada duruyor.
+    parcalar = []
+    for i in range(len(reklam["klipler"])):
+        parcalar.append(
+            f"[{i+1}:v]trim=0:{KLIP_SN},setpts=PTS-STARTPTS,"
+            f"crop=iw:trunc(ih*0.93/2)*2:0:0,"
+            f"scale={kart_w}:{kart_h}:force_original_aspect_ratio=increase,"
+            f"crop={kart_w}:{kart_h},fps=30,setsar=1[c{i}]"
+        )
+    zincir = "".join(f"[c{i}]" for i in range(len(reklam["klipler"])))
+    parcalar.append(f"{zincir}concat=n={len(reklam['klipler'])}:v=1[kl]")
+    parcalar.append(f"[0:v][kl]overlay={KART[0]}:{KART[1]}:shortest=1[v]")
+
+    hedef = CIKTI / reklam["dosya"]
+    subprocess.run(
+        [ffmpeg, "-v", "error", "-y", *girdiler,
+         "-filter_complex", ";".join(parcalar),
+         "-map", "[v]", "-an",
+         "-t", str(KLIP_SN * len(reklam["klipler"])),
+         "-c:v", "libx264", "-preset", "medium", "-crf", "20",
+         "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(hedef)],
+        check=True)
+    zemin.unlink()
     return hedef
 
 
 def main() -> int:
     ffmpeg = _ffmpeg()
     CIKTI.mkdir(parents=True, exist_ok=True)
-    kapak = kapak_uret(CIKTI / "_kapak.png")
-    for kaynak, cikti in VIDEOLAR:
-        yol = uret(ffmpeg, kapak, kaynak, cikti)
-        print(f"  uretildi: {yol.name}  ({yol.stat().st_size // 1024} KB)")
-    kapak.unlink()
-    print(f"\n{len(VIDEOLAR)} reklam videosu -> {CIKTI}")
+    for r in REKLAMLAR:
+        yol = uret(ffmpeg, r)
+        sn = KLIP_SN * len(r["klipler"])
+        print(f"  uretildi: {yol.name}  ({yol.stat().st_size // 1024} KB, {sn:.0f} sn)")
+    print(f"\n{len(REKLAMLAR)} reklam videosu -> {CIKTI}")
     return 0
 
 
