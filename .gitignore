@@ -36,4 +36,12 @@ content/muzik/*.m4a
 content/muzik/*.wav
 
 state/nobetci.log
-posts/media/sessiz/
+
+# TikTok'a giden kopyalar — uretilebilir, depoda tutulmuyor
+posts/media/tiktok/
+
+# TikTok telifsiz ses kutuphanesinden indirilen parcalar. Lisansi TikTok ici
+# kullanim icin; depo public oldugu icin dosyalar PAYLASILMIYOR, yalnizca
+# README'de nereden alinacagi yaziyor.
+content/muzik-tiktok/*.m4a
+content/muzik-tiktok/*.mp3

@@ -65,20 +65,16 @@ class Post:
 
     @property
     def tiktok_media(self) -> str:
-        """TikTok'a gidecek video dosyasi — **sessiz kopya**.
+        """TikTok'a gidecek video dosyasi — TikTok'un kendi sesiyle.
 
-        28.08: Pinterest, bu videolardaki arka plan muziginden telif verdi.
-        TikTok yuklemede ayni denetimi yapiyor; takilan video sessize
-        aliniyor ve sessize alinan video dagitim da alamiyor. Muzigin
-        katkisi, dagitimi kaybetme riskine degmiyor.
-
-        Sessiz kopya `posts/media/sessiz/` altinda tutuluyor ve yalnizca bir
-        kez uretiliyor; video akisi kopyalandigi icin yeniden kodlama yok.
-        Instagram ve YouTube kopyalari sesli kalmaya devam ediyor.
+        Kendi muzigimiz cikariliyor, yerine TikTok'un kendi telifsiz
+        kutuphanesinden bir parca konuyor. Ayrintili gerekce icin
+        `tiktok_kopya`. Kopyalar `posts/media/tiktok/` altinda; video akisi
+        kopyalandigi icin goruntu yeniden kodlanmiyor.
         """
         if not self.is_video:
             return self.media
-        return str(sessiz_kopya(pathlib.Path(self.media)))
+        return str(tiktok_kopya(pathlib.Path(self.media), self.slug))
 
     @property
     def tiktok_caption(self) -> str:
@@ -184,31 +180,86 @@ CTA_SATIR_RE = re.compile(r"^\s*(sipari[sş]|link|detay|incele)\b.*", re.IGNOREC
 
 
 
-def sessiz_kopya(video: pathlib.Path) -> pathlib.Path:
-    """Videonun sesi alinmis kopyasini dondurur, yoksa uretir.
+TIKTOK_MUZIK = ROOT / "content" / "muzik-tiktok" if "ROOT" in dir() else pathlib.Path(__file__).resolve().parents[1] / "content" / "muzik-tiktok"
 
-    ffmpeg yoksa ya da uretim basarisiz olursa **sessizce orijinali
-    donduruyor**: ses yuzunden bir paylasimi hic yapmamak, sesli paylasmaktan
-    daha kotu.
+# TikTok'un kendi telifsiz kutuphanesinden. Varsayilan "Canyons"; defter ve
+# okula donus iceriginde "Suns" — orada Canyons fazla kulup havasinda kaliyor.
+TIKTOK_VARSAYILAN = "Canyons.m4a"
+TIKTOK_YUMUSAK = "Suns.m4a"
+YUMUSAK_ANAHTARLAR = ("defter", "dosya", "okul", "kirtasiye", "temrin", "staj")
+
+
+def _tiktok_parca(slug: str) -> pathlib.Path | None:
+    duz = slug.lower()
+    ad = TIKTOK_YUMUSAK if any(a in duz for a in YUMUSAK_ANAHTARLAR) else TIKTOK_VARSAYILAN
+    yol = TIKTOK_MUZIK / ad
+    return yol if yol.exists() else None
+
+
+def tiktok_kopya(video: pathlib.Path, slug: str = "") -> pathlib.Path:
+    """TikTok'a gidecek kopya: kendi sesimiz cikar, TikTok'un sesi girer.
+
+    Iki ayri sorunu birden cozuyor:
+
+    * **Telif.** Pinterest, `content/muzik` altindaki parcalardan telif verdi.
+      TikTok da yuklemede ayni denetimi yapiyor; takilan video sessize
+      aliniyor ve sessize alinan video dagitim almiyor.
+    * **Sessizlik.** Tamamen sessiz video da TikTok'ta zayif duruyor.
+
+    Cozum: orijinal ses atiliyor, yerine TikTok'un kendi telifsiz
+    kutuphanesinden bir parca konuyor (`content/muzik-tiktok`). Lisansi
+    TikTok ici kullanim icin oldugundan bu kopya baska platforma gitmiyor.
+
+    Uretim basarisiz olursa **orijinal donduruluyor**: ses yuzunden bir
+    paylasimi hic yapmamak, sesli paylasmaktan daha kotu.
     """
     import shutil
     import subprocess
 
     if not video.exists():
         return video
-    hedef = video.parent / "sessiz" / video.name
+    hedef = video.parent / "tiktok" / video.name
     if hedef.exists() and hedef.stat().st_mtime >= video.stat().st_mtime:
         return hedef
 
     ffmpeg = shutil.which("ffmpeg")
-    if not ffmpeg:
+    ffprobe = shutil.which("ffprobe")
+    if not ffmpeg or not ffprobe:
         return video
+
+    parca = _tiktok_parca(slug or video.stem)
     hedef.parent.mkdir(parents=True, exist_ok=True)
+
+    if parca is None:
+        # Kutuphane yoksa hic olmazsa sessiz git — telifli ses gonderme.
+        try:
+            subprocess.run([ffmpeg, "-v", "error", "-y", "-i", str(video),
+                            "-c:v", "copy", "-an", "-movflags", "+faststart",
+                            str(hedef)], check=True)
+            return hedef
+        except Exception:
+            return video
+
     try:
-        subprocess.run([ffmpeg, "-v", "error", "-y", "-i", str(video),
-                        "-c:v", "copy", "-an", "-movflags", "+faststart",
-                        str(hedef)], check=True)
+        sure = float(subprocess.run(
+            [ffprobe, "-v", "error", "-show_entries", "format=duration",
+             "-of", "csv=p=0", str(video)],
+            capture_output=True, text=True, check=True).stdout.strip())
     except Exception:
+        return video
+
+    kis = max(0.6, min(1.0, sure / 6))          # kisa videoda kisa kapanis
+    sonuc = subprocess.run(
+        [ffmpeg, "-v", "error", "-y", "-i", str(video), "-i", str(parca),
+         "-filter_complex",
+         f"[1:a]atrim=0:{sure:.3f},asetpts=N/SR/TB,"
+         f"afade=t=in:st=0:d=0.4,afade=t=out:st={max(0.0, sure - kis):.3f}:d={kis:.2f},"
+         f"loudnorm=I=-14:TP=-1.5:LRA=11[a]",
+         "-map", "0:v", "-map", "[a]",
+         "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-shortest",
+         "-movflags", "+faststart", str(hedef)],
+        capture_output=True, text=True)
+    if sonuc.returncode != 0 or not hedef.exists():
         return video
     return hedef
 
