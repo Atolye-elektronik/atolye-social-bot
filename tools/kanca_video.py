@@ -4,15 +4,16 @@
 Kullanıcı 28.08: *"instagram ve facebookta yeterince carousel'li video
 paylaştık, şu 3D videolardan yapalım artık kancalı, onları öne al."*
 
-Reklam videolarından farkı: burada fiyat tablosu ve sipariş düğmesi yok.
-Organik akışta satan şey **ilk saniye** — soru ya da iddia. Fiyat en altta,
-tek satır, kararı kolaylaştırmak için.
+Reklam videolarından farkı: burada **fiyat hiç yazmıyor** (kullanıcı 28.08).
+Organik akışta satan şey ilk saniye — soru ya da iddia. Rakam akışta merakı
+bitiriyor; fiyat ürün sayfasında, karar anında görülüyor. Aynı kural hikâye
+arşivinde de geçerli.
 
 Yerleşim TikTok/Reels arayüzüne göre:
 
     y 200-420   → kanca (koyu panel, beyaz yazı)
     y 460-1410  → ürün, 3D dönüş klibi (üstüne HİÇBİR yazı gelmiyor)
-    y 1440-1530 → ürün adı + fiyat
+    y 1440-1530 → ürün adı + tek satır özellik
 
 Zemini klibin kendi bulanık kopyası dolduruyor; yazılar hep o bulanık alanda
 kalıyor, ürünün üstüne binmiyor. Sağ kenarda TikTok'un simge sütunu var, ürün
@@ -60,21 +61,21 @@ VIDEOLAR = [
                     "kling_20260823_arduino46-spotlight_4846.mp4"],
         "kanca": "Arduino'ya nereden başlanır?",
         "urun": "Arduino Başlangıç Seti · 46 parça",
-        "fiyat": "769 TL",
+        "alt": "Türkçe kaynak ve devre örnekleriyle",
     },
     {
         "dosya": "kanca3d-arduino-56.mp4",
         "klipler": ["kling_20260823_arduino56-dolly_4652.mp4"],
         "kanca": "Sensörlü projeye geçme vakti",
         "urun": "Arduino Proje Geliştirme Seti · 56 parça",
-        "fiyat": "1.092 TL",
+        "alt": "Modüller, sürücüler ve sensörler dahil",
     },
     {
         "dosya": "kanca3d-arduino-88.mp4",
         "klipler": ["kling_20260823_arduino88-dolly_4781.mp4"],
         "kanca": "Bir yıl yetecek tek kutu",
         "urun": "Arduino İleri Seviye Seti · 88 parça",
-        "fiyat": "1.766 TL",
+        "alt": "Dönem boyunca tek kutu yeter",
     },
     {
         "dosya": "kanca3d-sensor-seti.mp4",
@@ -82,7 +83,7 @@ VIDEOLAR = [
                     "kling_20260823_sensor-seti-dolly_4867.mp4"],
         "kanca": "10 modül, 10 ayrı proje",
         "urun": "Akıllı Proje ve Sensör Modülleri Seti",
-        "fiyat": "976 TL",
+        "alt": "Röle · LCD · RFID · servo · mesafe",
     },
     {
         "dosya": "kanca3d-multimetre.mp4",
@@ -90,7 +91,7 @@ VIDEOLAR = [
                     "kling_20260823_multimetre-orbit_4885b.mp4"],
         "kanca": "Atölyenin ilk aleti",
         "urun": "DT830D Buzzerlı Dijital Multimetre",
-        "fiyat": "210 TL",
+        "alt": "Buzzerlı — kopuk devreyi duyuyorsun",
     },
     {
         "dosya": "kanca3d-temrin-defteri.mp4",
@@ -98,7 +99,7 @@ VIDEOLAR = [
                     "kling_20260823_temrin-defteri-v2_4758.mp4"],
         "kanca": "Temrin defterin hazır mı?",
         "urun": "Atölye Temrin Defteri · 96 sayfa",
-        "fiyat": "90 TL",
+        "alt": "Tekli ve sınıf paketi stokta",
     },
 ]
 
@@ -129,18 +130,23 @@ def katman_uret(video: dict, hedef: pathlib.Path) -> pathlib.Path:
         d.text(((W - d.textlength(s, font=fk)) / 2, y), s, font=fk, fill=BEYAZ)
         y += int(boyut * 1.2)
 
-    # --- Ürün adı + fiyat ---
-    fa = _normal(38)
-    while d.textlength(video["urun"], font=fa) > W - 220 and fa.size > 26:
+    # --- Ürün adı + tek satır özellik ---
+    # Organik paylaşımda FİYAT YAZILMIYOR (kullanıcı 28.08). Fiyat, ürün
+    # sayfasında karar anında görülüyor; akışta rakam görmek merakı bitiriyor
+    # ve tıklamayı düşürüyor. Aynı kural hikâye arşivinde de geçerli.
+    fu = _bold(44)
+    while d.textlength(video["urun"], font=fu) > W - 220 and fu.size > 30:
+        fu = _bold(fu.size - 2)
+    fa = _normal(34)
+    while d.textlength(video["alt"], font=fa) > W - 220 and fa.size > 24:
         fa = _normal(fa.size - 2)
-    ff = _bold(58)
     alt = 1440
     d.rounded_rectangle([70, alt - 24, W - 70, alt + 108], radius=26,
                         fill=LACIVERT + (225,))
-    d.text(((W - d.textlength(video["urun"], font=fa)) / 2, alt),
-           video["urun"], font=fa, fill=(196, 208, 220))
-    d.text(((W - d.textlength(video["fiyat"], font=ff)) / 2, alt + 42),
-           video["fiyat"], font=ff, fill=ALTIN)
+    d.text(((W - d.textlength(video["urun"], font=fu)) / 2, alt),
+           video["urun"], font=fu, fill=BEYAZ)
+    d.text(((W - d.textlength(video["alt"], font=fa)) / 2, alt + 56),
+           video["alt"], font=fa, fill=ALTIN)
 
     # --- Marka: sol altta küçük, TikTok'un kendi yazıları sağda ---
     logo = Image.open(LOGO).convert("RGBA")

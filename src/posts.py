@@ -62,6 +62,24 @@ class Post:
         now = now or dt.datetime.now(TZ)
         return self.publish_at <= now
 
+
+    @property
+    def tiktok_media(self) -> str:
+        """TikTok'a gidecek video dosyasi — **sessiz kopya**.
+
+        28.08: Pinterest, bu videolardaki arka plan muziginden telif verdi.
+        TikTok yuklemede ayni denetimi yapiyor; takilan video sessize
+        aliniyor ve sessize alinan video dagitim da alamiyor. Muzigin
+        katkisi, dagitimi kaybetme riskine degmiyor.
+
+        Sessiz kopya `posts/media/sessiz/` altinda tutuluyor ve yalnizca bir
+        kez uretiliyor; video akisi kopyalandigi icin yeniden kodlama yok.
+        Instagram ve YouTube kopyalari sesli kalmaya devam ediyor.
+        """
+        if not self.is_video:
+            return self.media
+        return str(sessiz_kopya(pathlib.Path(self.media)))
+
     @property
     def tiktok_caption(self) -> str:
         """TikTok'a gidecek metin.
@@ -163,6 +181,36 @@ LINK_RE = re.compile(r"https?://\S+")
 YASAKLI_ETIKET = {"shorts", "short", "youtube", "youtubeshorts", "reels", "reel"}
 # "Siparis 👉" gibi linke goturen cagri satirlari linksiz anlamsiz kaliyor.
 CTA_SATIR_RE = re.compile(r"^\s*(sipari[sş]|link|detay|incele)\b.*", re.IGNORECASE)
+
+
+
+def sessiz_kopya(video: pathlib.Path) -> pathlib.Path:
+    """Videonun sesi alinmis kopyasini dondurur, yoksa uretir.
+
+    ffmpeg yoksa ya da uretim basarisiz olursa **sessizce orijinali
+    donduruyor**: ses yuzunden bir paylasimi hic yapmamak, sesli paylasmaktan
+    daha kotu.
+    """
+    import shutil
+    import subprocess
+
+    if not video.exists():
+        return video
+    hedef = video.parent / "sessiz" / video.name
+    if hedef.exists() and hedef.stat().st_mtime >= video.stat().st_mtime:
+        return hedef
+
+    ffmpeg = shutil.which("ffmpeg")
+    if not ffmpeg:
+        return video
+    hedef.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        subprocess.run([ffmpeg, "-v", "error", "-y", "-i", str(video),
+                        "-c:v", "copy", "-an", "-movflags", "+faststart",
+                        str(hedef)], check=True)
+    except Exception:
+        return video
+    return hedef
 
 
 def tiktok_metni(caption: str) -> str:

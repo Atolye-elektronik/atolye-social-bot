@@ -57,7 +57,7 @@ def zamanla(gun: int, maks: int) -> int:
     for post in aday[:maks]:
         print(f"→ {post.slug} → {post.publish_at:%Y-%m-%d %H:%M}")
         try:
-            sonuc = upload.studio_paylas(post.tiktok_caption, post.media, post.publish_at)
+            sonuc = upload.studio_paylas(post.tiktok_caption, post.tiktok_media, post.publish_at)
             state.mark_published(durum, post.slug, PLATFORM, str(sonuc))
             print(f"  ✅ {sonuc}")
         except (OturumDustu, StudioError) as exc:
@@ -83,7 +83,7 @@ def tek_post(slug: str, hemen: bool) -> int:
 
     ne_zaman = None if hemen else hedef.publish_at
     try:
-        sonuc = upload.studio_paylas(hedef.tiktok_caption, hedef.media, ne_zaman)
+        sonuc = upload.studio_paylas(hedef.tiktok_caption, hedef.tiktok_media, ne_zaman)
     except (OturumDustu, StudioError) as exc:
         print(f"❌ {exc}")
         return 1
