@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: [posts\media\carousel\2026-08-24-carousel-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-3-7v-li-ion-sarj\01-kapak.jpg, posts\media\carousel\2026-08-24-carousel-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-3-7v-li-ion-sarj\02-urun.jpg, posts\media\carousel\2026-08-24-carousel-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-3-7v-li-ion-sarj\03-urun.jpg, posts\media\carousel\2026-08-24-carousel-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-3-7v-li-ion-sarj\04-urun.jpg, posts\media\carousel\2026-08-24-carousel-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-3-7v-li-ion-sarj\05-urun.jpg, posts\media\carousel\2026-08-24-carousel-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-3-7v-li-ion-sarj\06-urun.jpg, posts\media\carousel\2026-08-24-carousel-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-3-7v-li-ion-sarj\07-urun.jpg, posts\media\carousel\2026-08-24-carousel-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-3-7v-li-ion-sarj\08-urun.jpg, posts\media\carousel\2026-08-24-carousel-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-3-7v-li-ion-sarj\09-urun.jpg, posts\media\carousel\2026-08-24-carousel-3u-1-arada-cok-fonksiyonlu-robot-araba-kiti-3-7v-li-ion-sarj\10-kapanis.jpg]
-publish_at: 2026-09-05 19:10
+publish_at: 2026-09-24 19:10
 ---
 "Bunu ben yaptım" diyeceği gün 🤖
 
