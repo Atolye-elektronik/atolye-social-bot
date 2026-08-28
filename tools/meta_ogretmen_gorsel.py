@@ -110,6 +110,21 @@ REKLAMLAR = [
                      ("88 parça", "1.766 TL")],
         "toptan": TOPTAN,
     },
+    # MESEM ayrı kurum türü, ayrı reklam seti. Staj defteri MTAL'de de
+    # satılıyor (kullanıcı 28.08) — bu onun yerine değil, yanına geliyor.
+    # MESEM'de işletmede mesleki eğitim modelin kendisi olduğu için iş
+    # dosyası ihtiyacı öğrencilerin tamamını kapsıyor.
+    {
+        "dosya": "meta-mesem-staj-defteri.png",
+        "serit": "MESLEKİ EĞİTİM MERKEZİ · MESEM İÇİN",
+        "foto": "kaynak/staj-defteri.jpg",
+        "rozet_fiyat": "öğrenci başına 85 TL",
+        "baslik": "MESEM staj defteri",
+        "destek": "İşletmelerde mesleki eğitim iş dosyası",
+        "fiyatlar": [("1 adet", "90 TL"), ("10 adet", "850 TL"),
+                     ("20 adet", "1.700 TL"), ("30 adet", "2.550 TL")],
+        "toptan": None,
+    },
 ]
 
 ACELE = "OKULLAR 14 EYLÜL'DE AÇILIYOR"
@@ -210,9 +225,12 @@ def uret(reklam: dict) -> pathlib.Path:
     d.line([(W / 2 - 60, 66), (W / 2 + 60, 66)], fill=ALTIN, width=4)
 
     # Kitleyi eleyen şerit
+    serit = reklam.get("serit", SERIT)
     fs = _mono(30)
-    gen = _aralikli_genislik(d, SERIT, fs, aralik=8)
-    _aralikli(d, ((W - gen) / 2, 168), SERIT, fs, TURUNCU, aralik=8)
+    while _aralikli_genislik(d, serit, fs, aralik=8) > W - 60 and fs.size > 22:
+        fs = _mono(fs.size - 2)
+    gen = _aralikli_genislik(d, serit, fs, aralik=8)
+    _aralikli(d, ((W - gen) / 2, 168), serit, fs, TURUNCU, aralik=8)
 
     _foto_kart(tuval, d, reklam["foto"])
     d = ImageDraw.Draw(tuval)
