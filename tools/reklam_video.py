@@ -45,6 +45,8 @@ from src.carousel_gorsel import (  # noqa: E402
 KOK = pathlib.Path(__file__).resolve().parents[1]
 KLIPLER = pathlib.Path.home() / "Desktop" / "kling-videolar"
 CIKTI = KOK / "posts" / "media" / "meta-reklam"
+FOTO_ONBELLEK = CIKTI / "kaynak"
+CDN = "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/"
 
 W, H = 1080, 1920
 KART = (70, 250, 1010, 1230)          # klip kartı
@@ -68,9 +70,11 @@ DEFTER_FIYAT = [("1 adet", "90 TL"), ("10 adet", "850 TL"),
 REKLAMLAR = [
     {
         "dosya": "reklam-staj-defteri.mp4",
+        # 3. sahne degisti: onceki klipte cildin kalinligi olduğundan
+        # buyuk gorunuyordu (kullanici 28.08).
         "klipler": ["kling_20260819_VIDEO_Front_faci_5256_0.mp4",
                     "kling_20260823_is-dosyasi-pushin_4756.mp4",
-                    "kling_20260819_VIDEO__4134_0.mp4"],
+                    "kling_20260823_is-dosyasi-orbit_4868.mp4"],
         "baslik": "Staj defteri, tek siparişte",
         "destek": "Tek fatura · tek kargo · aynı gün gönderim",
         "fiyatlar": DEFTER_FIYAT,
@@ -87,6 +91,8 @@ REKLAMLAR = [
     },
     {
         "dosya": "reklam-takim-cantasi.mp4",
+        # takimcantasisetibeyazdonus.mp4 denendi ama o baska bir organizer
+        # kutusu, bizim SUPER-BAG cantamiz degil.
         "klipler": ["kling_20260819_VIDEO__4201_0.mp4",
                     "kling_20260625_VIDEO_I_ve_attac_101_0.mp4"],
         "baslik": "Atölye dersine hazır sınıf",
@@ -96,9 +102,12 @@ REKLAMLAR = [
     },
     {
         "dosya": "reklam-endustriyel.mp4",
-        "klipler": ["kling_20260707_VIDEO_Continue_s_6109_0.mp4",
-                    "kling_20260707_VIDEO_Continue_s_6126_0.mp4",
-                    "kling_20260708_VIDEO_image7imag_77_0.mp4"],
+        # Bu urune ait Kling klibi YOK. Elimizdeki "endustriyel-set-dolly"
+        # aslinda breadboard/LED seti; yanlis urunu gostermektense urunun
+        # kendi fotograflarindan yavas yaklasma yapiliyor (kullanici 28.08).
+        "fotograflar": ["EndElkhepsi.webp?v=1782335968",
+                        "entegretransistor.webp?v=1782335968",
+                        "roleanahtar.webp?v=1782335969"],
         "baslik": "Endüstriyel Elektronik dersi, 11. sınıf",
         "destek": "Müfredattaki uygulamalar birebir, tek sette",
         "fiyatlar": [("Tam set", "699 TL")],
@@ -106,9 +115,11 @@ REKLAMLAR = [
     },
     {
         "dosya": "reklam-arduino.mp4",
-        "klipler": ["kling_20260625_VIDEO_I_ve_inclu_8_0.mp4",
-                    "kling_20260702_VIDEO_Flat_lay_p_1137_0.mp4",
-                    "kling_20260823_dht-kiti-turntable_4713.mp4"],
+        # Uc Arduino setimizin kendi 3D videolari. Onceki secimde 2WD robot
+        # kiti vardi; o ayri bir urun, bu reklamda isi yok (kullanici 28.08).
+        "klipler": ["kling_20260823_arduino46-turntable_4667.mp4",
+                    "kling_20260823_arduino56-dolly_4652.mp4",
+                    "kling_20260823_arduino88-dolly_4781.mp4"],
         "baslik": "Mikrodenetleyiciler ve Robotik Kodlama",
         "destek": "Türkçe kaynak ve devre örnekleriyle",
         "fiyatlar": [("46 parça", "769 TL"), ("56 parça", "1.092 TL"),
@@ -116,6 +127,40 @@ REKLAMLAR = [
         "toptan": TOPTAN,
     },
 ]
+
+
+def _foto_indir(ad: str) -> pathlib.Path:
+    """Ürün fotoğrafını depoda tutar.
+
+    Üretim uzak bir CDN'e bağlı olmamalı: 28.08'de bir CDN zaman aşımı tüm
+    görsel üretimini düşürmüştü.
+    """
+    FOTO_ONBELLEK.mkdir(parents=True, exist_ok=True)
+    hedef = FOTO_ONBELLEK / ad.split("?")[0]
+    if not hedef.exists():
+        import requests
+        r = requests.get(CDN + ad, timeout=60)
+        r.raise_for_status()
+        hedef.write_bytes(r.content)
+    return hedef
+
+
+def _foto_kare(ad: str, kart_w: int, kart_h: int) -> pathlib.Path:
+    """Fotoğrafı kart oranında beyaz zemine oturtur, iki katı çözünürlükte.
+
+    Yavaş yaklaşma (zoompan) kırpa kırpa ilerlediği için kaynak büyük
+    olmalı; iki kat, %15 yaklaşmada bile netliği koruyor.
+    """
+    ham = Image.open(_foto_indir(ad)).convert("RGB")
+    tw, th = kart_w * 2, kart_h * 2
+    olcek = min((tw - 80) / ham.width, (th - 80) / ham.height)
+    yeni = ham.resize((max(1, int(ham.width * olcek)),
+                       max(1, int(ham.height * olcek))), Image.LANCZOS)
+    tuval = Image.new("RGB", (tw, th), BEYAZ)
+    tuval.paste(yeni, ((tw - yeni.width) // 2, (th - yeni.height) // 2))
+    yol = FOTO_ONBELLEK / f"_kare-{ad.split('?')[0]}.png"
+    tuval.save(yol)
+    return yol
 
 
 def _ffmpeg() -> str:
@@ -212,24 +257,46 @@ def uret(ffmpeg: str, reklam: dict) -> pathlib.Path:
     kart_h = KART[3] - KART[1]
     zemin = zemin_uret(reklam, CIKTI / "_zemin.png")
 
-    girdiler: list[str] = ["-loop", "1", "-i", str(zemin)]
-    for ad in reklam["klipler"]:
-        yol = KLIPLER / ad
-        if not yol.exists():
-            raise SystemExit(f"HATA: klip yok -> {yol}")
-        girdiler += ["-i", str(yol)]
+    fotograf_modu = "fotograflar" in reklam
+    sahneler = reklam.get("fotograflar") or reklam["klipler"]
 
-    # Alt %7 kırpılıyor: Kling filigranı orada duruyor.
+    girdiler: list[str] = ["-loop", "1", "-i", str(zemin)]
+    for ad in sahneler:
+        if fotograf_modu:
+            girdiler += ["-loop", "1", "-t", str(KLIP_SN),
+                         "-i", str(_foto_kare(ad, kart_w, kart_h))]
+        else:
+            yol = KLIPLER / ad
+            if not yol.exists():
+                raise SystemExit(f"HATA: klip yok -> {yol}")
+            girdiler += ["-i", str(yol)]
+
     parcalar = []
-    for i in range(len(reklam["klipler"])):
-        parcalar.append(
-            f"[{i+1}:v]trim=0:{KLIP_SN},setpts=PTS-STARTPTS,"
-            f"crop=iw:trunc(ih*0.93/2)*2:0:0,"
-            f"scale={kart_w}:{kart_h}:force_original_aspect_ratio=increase,"
-            f"crop={kart_w}:{kart_h},fps=30,setsar=1[c{i}]"
-        )
-    zincir = "".join(f"[c{i}]" for i in range(len(reklam["klipler"])))
-    parcalar.append(f"{zincir}concat=n={len(reklam['klipler'])}:v=1[kl]")
+    for i in range(len(sahneler)):
+        if fotograf_modu:
+            # Yavaş yaklaşma: duran fotoğraf akışta ölü duruyor, hafif
+            # hareket bakışı tutuyor.
+            #
+            # zoompan KULLANILMIYOR: onun `d` parametresi HER girdi karesi
+            # için o kadar kare üretiyor. -loop ile beslenen fotoğraf 90 kare
+            # olduğu için ilk fotoğraf tüm videoyu dolduruyor, 2. ve 3. sahne
+            # hiç görünmüyordu. Zamana bağlı ölçekleme aynı etkiyi verirken
+            # süreyi girdinin kendi uzunluğu belirliyor.
+            parcalar.append(
+                f"[{i+1}:v]fps=30,"
+                f"scale=w=\'{kart_w}*(1+0.14*t/{KLIP_SN})\':h=-2:eval=frame,"
+                f"crop={kart_w}:{kart_h},setsar=1[c{i}]"
+            )
+        else:
+            # Alt %7 kırpılıyor: Kling filigranı orada duruyor.
+            parcalar.append(
+                f"[{i+1}:v]trim=0:{KLIP_SN},setpts=PTS-STARTPTS,"
+                f"crop=iw:trunc(ih*0.93/2)*2:0:0,"
+                f"scale={kart_w}:{kart_h}:force_original_aspect_ratio=increase,"
+                f"crop={kart_w}:{kart_h},fps=30,setsar=1[c{i}]"
+            )
+    zincir = "".join(f"[c{i}]" for i in range(len(sahneler)))
+    parcalar.append(f"{zincir}concat=n={len(sahneler)}:v=1[kl]")
     parcalar.append(f"[0:v][kl]overlay={KART[0]}:{KART[1]}:shortest=1[v]")
 
     hedef = CIKTI / reklam["dosya"]
@@ -237,7 +304,7 @@ def uret(ffmpeg: str, reklam: dict) -> pathlib.Path:
         [ffmpeg, "-v", "error", "-y", *girdiler,
          "-filter_complex", ";".join(parcalar),
          "-map", "[v]", "-an",
-         "-t", str(KLIP_SN * len(reklam["klipler"])),
+         "-t", str(KLIP_SN * len(sahneler)),
          "-c:v", "libx264", "-preset", "medium", "-crf", "20",
          "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(hedef)],
         check=True)
@@ -250,7 +317,7 @@ def main() -> int:
     CIKTI.mkdir(parents=True, exist_ok=True)
     for r in REKLAMLAR:
         yol = uret(ffmpeg, r)
-        sn = KLIP_SN * len(r["klipler"])
+        sn = KLIP_SN * len(r.get("fotograflar") or r["klipler"])
         print(f"  uretildi: {yol.name}  ({yol.stat().st_size // 1024} KB, {sn:.0f} sn)")
     print(f"\n{len(REKLAMLAR)} reklam videosu -> {CIKTI}")
     return 0
