@@ -1,16 +1,18 @@
 # -*- coding: utf-8 -*-
-"""Defter kapağı üretir — MTAL ve MESEM varyantları, MEB amblemi olmadan.
+"""Staj defteri kapağı üretir — tek kapak, üç kurum türü, MEB amblemi yok.
 
-Neden gerekti: staj defterinin kapağında "MESLEKİ VE TEKNİK ANADOLU LİSESİ"
-yazıyor, ama ürünü MESEM'e de satıyoruz (Shopify'daki adı bile "Meslek Lisesi
-ve MESEM Öğrencileri için"). MESEM reklamında MTAL yazan bir kapak göstermek
-alıcıya "bu benim için değil" dedirtiyor.
+Neden gerekti: eski kapakta yalnız "MESLEKİ VE TEKNİK ANADOLU LİSESİ" yazıyor,
+ama aynı iş dosyasını MESEM ve çıraklık eğitimi öğrencileri de tutuyor.
+Kapağında kendini görmeyen alıcı "bu benim için değil" diyor.
 
-İki kural:
+Üç kural:
   * **MEB amblemi yok.** Trendyol defterleri amblem yüzünden reddetmişti;
     reklamda da resmî onay izlenimi vermek istemiyoruz.
-  * **Kurum satırı hitap, ad değil.** "…LİSELERİ İÇİN" / "…MERKEZLERİ İÇİN" —
-    tekil yazılınca kapak okulun kendi adıymış gibi okunuyor.
+  * **Kurum satırı hitap, ad değil.** Tekil yazılınca kapak okulun kendi
+    adıymış gibi okunuyor.
+  * **Tek baskı.** Ayrı MESEM kapağı hem maliyet hem stok yükü; kurum satırı
+    genişletilip "usta öğretici" alanı eklendi, MTAL öğrencisi onu boş
+    bırakıyor.
 
 Çıktı A4 / 300 dpi, baskıya verilebilir.
 
