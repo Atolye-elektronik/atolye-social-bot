@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: posts/media/2026-10-23-hafta_sonu-usta-isi-el-aletleri-seti-7-parca.jpg
-publish_at: 2026-10-23 18:00
+publish_at: 2026-09-20 13:00
 tema: hafta_sonu
 ---
 🛠️ Hafta sonu projesi

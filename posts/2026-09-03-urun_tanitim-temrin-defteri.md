@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: posts/media/2026-10-12-urun_tanitim-temrin-defteri.jpg
-publish_at: 2026-10-12 11:00
+publish_at: 2026-09-03 11:00
 tema: urun_tanitim
 ---
 ⚡ Temrin Defteri

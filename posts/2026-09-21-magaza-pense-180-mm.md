@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: posts/media/2026-11-01-magaza-pense-180-mm.jpg
-publish_at: 2026-11-01 13:00
+publish_at: 2026-09-21 11:00
 tema: magaza
 ---
 🏪 Atölye Elektronik

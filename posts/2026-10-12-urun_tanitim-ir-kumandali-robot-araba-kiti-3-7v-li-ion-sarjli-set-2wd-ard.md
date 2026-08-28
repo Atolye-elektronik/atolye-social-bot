@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: posts/media/2026-09-03-urun_tanitim-ir-kumandali-robot-araba-kiti-3-7v-li-ion-sarjli-set-2wd-ard.jpg
-publish_at: 2026-09-03 11:00
+publish_at: 2026-10-12 11:00
 tema: urun_tanitim
 ---
 🆕 Mağazamızda: IR Kumandalı Robot Araba Kiti - 18650 Pil Yuvalı Set (2WD + Arduino + Motor Sürücü + Kumanda)

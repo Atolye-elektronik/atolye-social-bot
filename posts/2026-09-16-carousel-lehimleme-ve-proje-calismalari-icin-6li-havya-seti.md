@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: [posts\media\carousel\2026-08-26-carousel-lehimleme-ve-proje-calismalari-icin-6li-havya-seti\01-kapak.jpg, posts\media\carousel\2026-08-26-carousel-lehimleme-ve-proje-calismalari-icin-6li-havya-seti\02-urun.jpg, posts\media\carousel\2026-08-26-carousel-lehimleme-ve-proje-calismalari-icin-6li-havya-seti\03-urun.jpg, posts\media\carousel\2026-08-26-carousel-lehimleme-ve-proje-calismalari-icin-6li-havya-seti\04-urun.jpg, posts\media\carousel\2026-08-26-carousel-lehimleme-ve-proje-calismalari-icin-6li-havya-seti\05-urun.jpg, posts\media\carousel\2026-08-26-carousel-lehimleme-ve-proje-calismalari-icin-6li-havya-seti\06-urun.jpg, posts\media\carousel\2026-08-26-carousel-lehimleme-ve-proje-calismalari-icin-6li-havya-seti\07-urun.jpg, posts\media\carousel\2026-08-26-carousel-lehimleme-ve-proje-calismalari-icin-6li-havya-seti\08-urun.jpg, posts\media\carousel\2026-08-26-carousel-lehimleme-ve-proje-calismalari-icin-6li-havya-seti\09-urun.jpg, posts\media\carousel\2026-08-26-carousel-lehimleme-ve-proje-calismalari-icin-6li-havya-seti\10-kapanis.jpg]
-publish_at: 2026-10-28 19:10
+publish_at: 2026-09-16 19:10
 ---
 Fikrin hazır, malzemen eksik 🛠️
 

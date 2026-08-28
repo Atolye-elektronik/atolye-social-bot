@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: posts/media/2026-10-26-urun_tanitim-takim-cantasi-ve-el-aletleri-seti-9-parca.jpg
-publish_at: 2026-10-26 11:00
+publish_at: 2026-09-15 19:30
 tema: urun_tanitim
 ---
 🔧 Rafımızdan: Takım Çantası ve El Aletleri Seti 9 Parça

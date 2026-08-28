@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: [posts\media\carousel\2026-08-24-carousel-takim-cantasi-seti-ogrenci-dostu\01-kapak.jpg, posts\media\carousel\2026-08-24-carousel-takim-cantasi-seti-ogrenci-dostu\02-urun.jpg, posts\media\carousel\2026-08-24-carousel-takim-cantasi-seti-ogrenci-dostu\03-urun.jpg, posts\media\carousel\2026-08-24-carousel-takim-cantasi-seti-ogrenci-dostu\04-urun.jpg, posts\media\carousel\2026-08-24-carousel-takim-cantasi-seti-ogrenci-dostu\05-urun.jpg, posts\media\carousel\2026-08-24-carousel-takim-cantasi-seti-ogrenci-dostu\06-urun.jpg, posts\media\carousel\2026-08-24-carousel-takim-cantasi-seti-ogrenci-dostu\07-urun.jpg, posts\media\carousel\2026-08-24-carousel-takim-cantasi-seti-ogrenci-dostu\08-urun.jpg, posts\media\carousel\2026-08-24-carousel-takim-cantasi-seti-ogrenci-dostu\09-urun.jpg, posts\media\carousel\2026-08-24-carousel-takim-cantasi-seti-ogrenci-dostu\10-kapanis.jpg]
-publish_at: 2026-10-07 19:10
+publish_at: 2026-09-19 19:10
 ---
 Sınıfın malzemesi tek siparişte 🎓
 

@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: posts/media/2026-09-18-hafta_sonu-rfid-kartli-akilli-kilit-sistemi-kiti-rc522-arduino-uno-serv.jpg
-publish_at: 2026-09-18 18:00
+publish_at: 2026-10-28 20:00
 tema: hafta_sonu
 ---
 🛠️ Bu hafta sonu ne yapsak?

@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu2-temrin-defteri.mp4
-publish_at: 2026-09-16 20:00
+publish_at: 2026-09-02 20:00
 youtube_title: Atolye Temrin Defteri - 96 Sayfa
 ---
 Atölye dersi yaklaşıyor, temrin defterin hazır mı? 📓

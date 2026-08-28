@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: posts/media/2026-09-04-hafta_sonu-bluetooth-kontrollu-robot-kiti-3-7v-li-ion-sarjli-tam-set-ar.jpg
-publish_at: 2026-09-04 18:00
+publish_at: 2026-10-12 20:00
 tema: hafta_sonu
 ---
 🛠️ Bu hafta sonu ne yapsak?

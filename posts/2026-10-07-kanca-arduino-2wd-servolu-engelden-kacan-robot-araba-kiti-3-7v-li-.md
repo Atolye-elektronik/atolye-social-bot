@@ -1,7 +1,7 @@
 ---
 platforms: [instagram]
 media: [posts\media\kanca\2026-09-06-kanca-arduino-2wd-servolu-engelden-kacan-robot-araba-kiti-3-7v-li-\01-kanca.png, posts\media\kanca\2026-09-06-kanca-arduino-2wd-servolu-engelden-kacan-robot-araba-kiti-3-7v-li-\02-urun.png, posts\media\kanca\2026-09-06-kanca-arduino-2wd-servolu-engelden-kacan-robot-araba-kiti-3-7v-li-\03-icerik.png, posts\media\kanca\2026-09-06-kanca-arduino-2wd-servolu-engelden-kacan-robot-araba-kiti-3-7v-li-\04-ozellik.png, posts\media\kanca\2026-09-06-kanca-arduino-2wd-servolu-engelden-kacan-robot-araba-kiti-3-7v-li-\05-fiyat.png, posts\media\kanca\2026-09-06-kanca-arduino-2wd-servolu-engelden-kacan-robot-araba-kiti-3-7v-li-\06-kapanis.png]
-publish_at: 2026-09-19 19:10
+publish_at: 2026-10-07 19:10
 ---
 Lehim yapmayı bilmeyen öğrenciye ne verilir?
 

@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: posts/media/2026-10-25-magaza-16-organizerli-takim-cantasi.jpg
-publish_at: 2026-10-25 13:00
+publish_at: 2026-09-20 20:00
 tema: magaza
 ---
 📦 Aynı gün kargo
