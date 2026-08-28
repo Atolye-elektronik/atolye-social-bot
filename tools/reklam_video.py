@@ -148,12 +148,12 @@ def _foto_indir(ad: str) -> pathlib.Path:
 def _foto_kare(ad: str, kart_w: int, kart_h: int) -> pathlib.Path:
     """Fotoğrafı kart oranında beyaz zemine oturtur, iki katı çözünürlükte.
 
-    Yavaş yaklaşma (zoompan) kırpa kırpa ilerlediği için kaynak büyük
-    olmalı; iki kat, %15 yaklaşmada bile netliği koruyor.
+    Kenar payı bilerek geniş: yavaş yaklaşma %8 kırpıyor, pay olmasa ürünün
+    kenarları kesiliyordu. İki kat çözünürlük yaklaşmada netliği koruyor.
     """
     ham = Image.open(_foto_indir(ad)).convert("RGB")
     tw, th = kart_w * 2, kart_h * 2
-    olcek = min((tw - 80) / ham.width, (th - 80) / ham.height)
+    olcek = min((tw - 200) / ham.width, (th - 200) / ham.height)
     yeni = ham.resize((max(1, int(ham.width * olcek)),
                        max(1, int(ham.height * olcek))), Image.LANCZOS)
     tuval = Image.new("RGB", (tw, th), BEYAZ)
@@ -289,11 +289,21 @@ def uret(ffmpeg: str, reklam: dict) -> pathlib.Path:
             )
         else:
             # Alt %7 kırpılıyor: Kling filigranı orada duruyor.
+            #
+            # Klip karta SIĞDIRILIYOR, doldurulmuyor. Önceden
+            # force_original_aspect_ratio=increase + crop vardı; geniş ürün
+            # çekimleri kare kartı doldururken kenarlardan kırpılıyor ve
+            # malzemenin bir kısmı görünmüyordu (kullanıcı 28.08). Artan yer
+            # klibin kendi bulanık kopyasıyla doluyor: beyaz zeminli çekimde
+            # fark edilmiyor, koyu çekimde de bant gibi durmuyor.
             parcalar.append(
                 f"[{i+1}:v]trim=0:{KLIP_SN},setpts=PTS-STARTPTS,"
-                f"crop=iw:trunc(ih*0.93/2)*2:0:0,"
-                f"scale={kart_w}:{kart_h}:force_original_aspect_ratio=increase,"
-                f"crop={kart_w}:{kart_h},fps=30,setsar=1[c{i}]"
+                f"crop=iw:trunc(ih*0.93/2)*2:0:0,fps=30,split=2[b{i}][f{i}];"
+                f"[b{i}]scale={kart_w}:{kart_h}:force_original_aspect_ratio=increase,"
+                f"crop={kart_w}:{kart_h},gblur=sigma=28[bg{i}];"
+                f"[f{i}]scale={kart_w}:{kart_h}:force_original_aspect_ratio=decrease[fg{i}];"
+                f"[bg{i}][fg{i}]overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2,"
+                f"setsar=1[c{i}]"
             )
     zincir = "".join(f"[c{i}]" for i in range(len(sahneler)))
     parcalar.append(f"{zincir}concat=n={len(sahneler)}:v=1[kl]")
