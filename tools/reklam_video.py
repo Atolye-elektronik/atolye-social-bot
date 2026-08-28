@@ -77,11 +77,14 @@ DEFTER_FIYAT = [("1 adet", "90 TL"), ("10 adet", "850 TL"),
 REKLAMLAR = [
     {
         "dosya": "reklam-staj-defteri.mp4",
-        # 3. sahne degisti: onceki klipte cildin kalinligi olduğundan
-        # buyuk gorunuyordu (kullanici 28.08).
+        # `is-dosyasi-pushin` ve `is-dosyasi-orbit` CIKTI: o kliplerdeki
+        # kapakta MEB amblemi var. Bastigimiz defterde amblem yok ve
+        # reklamda resmi onay izlenimi vermek istemiyoruz (kullanici 28.08).
+        # Geriye amblemsiz iki klip kaliyor; ikincisi 2,5 saniyeden sonra
+        # cilde donuyor ve cildi oldugundan kalin gosteriyor, o yuzden kisa.
         "klipler": ["kling_20260819_VIDEO_Front_faci_5256_0.mp4",
-                    "kling_20260823_is-dosyasi-pushin_4756.mp4",
-                    "kling_20260823_is-dosyasi-orbit_4868.mp4"],
+                    ("kling_20260819_VIDEO__4134_0.mp4", 2.5)],
+        "serit": "MESLEK LİSESİ · MESEM · ÇIRAKLIK İÇİN",
         "baslik": "Staj defteri, tek siparişte",
         "destek": "Tek fatura · tek kargo · aynı gün gönderim",
         "fiyatlar": DEFTER_FIYAT,
@@ -198,11 +201,12 @@ def zemin_uret(reklam: dict, hedef: pathlib.Path) -> pathlib.Path:
     d.line([(W / 2 - 60, 174), (W / 2 + 60, 174)], fill=ALTIN, width=4)
 
     # Kitleyi eleyen şerit
+    serit = reklam.get("serit", SERIT)
     fs = _mono(30)
-    while _aralikli_genislik(d, SERIT, fs, aralik=8) > W - 60 and fs.size > 22:
+    while _aralikli_genislik(d, serit, fs, aralik=8) > W - 60 and fs.size > 22:
         fs = _mono(fs.size - 2)
-    gen = _aralikli_genislik(d, SERIT, fs, aralik=8)
-    _aralikli(d, ((W - gen) / 2, 276), SERIT, fs, TURUNCU, aralik=8)
+    gen = _aralikli_genislik(d, serit, fs, aralik=8)
+    _aralikli(d, ((W - gen) / 2, 276), serit, fs, TURUNCU, aralik=8)
 
     # Klip kartı — video bunun üstüne biniyor, burada yalnız çerçevesi var
     d.rounded_rectangle(list(KART), radius=28, fill=BEYAZ,
@@ -281,11 +285,15 @@ def uret(ffmpeg: str, reklam: dict) -> pathlib.Path:
 
     fotograf_modu = "fotograflar" in reklam
     sahneler = reklam.get("fotograflar") or reklam["klipler"]
+    # Klip ("ad", süre) ikilisi olarak da verilebilir: bazı klipler ilk
+    # saniyelerinde doğru, sonra ürünü kötü gösteren bir açıya dönüyor.
+    sureler = [x[1] if isinstance(x, tuple) else KLIP_SN for x in sahneler]
+    sahneler = [x[0] if isinstance(x, tuple) else x for x in sahneler]
 
     girdiler: list[str] = ["-loop", "1", "-i", str(zemin)]
-    for ad in sahneler:
+    for i, ad in enumerate(sahneler):
         if fotograf_modu:
-            girdiler += ["-loop", "1", "-t", str(KLIP_SN),
+            girdiler += ["-loop", "1", "-t", str(sureler[i]),
                          "-i", str(_foto_kare(ad, kart_w, kart_h))]
         else:
             yol = KLIPLER / ad
@@ -319,7 +327,7 @@ def uret(ffmpeg: str, reklam: dict) -> pathlib.Path:
             # klibin kendi bulanık kopyasıyla doluyor: beyaz zeminli çekimde
             # fark edilmiyor, koyu çekimde de bant gibi durmuyor.
             parcalar.append(
-                f"[{i+1}:v]trim=0:{KLIP_SN},setpts=PTS-STARTPTS,"
+                f"[{i+1}:v]trim=0:{sureler[i]},setpts=PTS-STARTPTS,"
                 f"crop=iw:trunc(ih*0.93/2)*2:0:0,fps=30,split=2[b{i}][f{i}];"
                 f"[b{i}]scale={kart_w}:{kart_h}:force_original_aspect_ratio=increase,"
                 f"crop={kart_w}:{kart_h},gblur=sigma=28[bg{i}];"
@@ -336,7 +344,7 @@ def uret(ffmpeg: str, reklam: dict) -> pathlib.Path:
         [ffmpeg, "-v", "error", "-y", *girdiler,
          "-filter_complex", ";".join(parcalar),
          "-map", "[v]", "-an",
-         "-t", str(KLIP_SN * len(sahneler)),
+         "-t", str(sum(sureler)),
          "-c:v", "libx264", "-preset", "medium", "-crf", "20",
          "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(hedef)],
         check=True)

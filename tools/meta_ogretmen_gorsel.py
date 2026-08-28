@@ -64,6 +64,9 @@ REKLAMLAR = [
     # "defterler" reklami ikisini de bulanik anlatiyordu.
     {
         "dosya": "meta-ogretmen-staj-defteri.png",
+        # Staj defteri tek okul turune ait degil: MTAL, MESEM ve ciraklik
+        # egitimi ogrencilerinin hepsi ayni is dosyasini tutuyor.
+        "serit": "MESLEK LİSESİ · MESEM · ÇIRAKLIK İÇİN",
         "foto": "kaynak/staj-defteri.jpg",
         "rozet_fiyat": "öğrenci başına 85 TL",
         "baslik": "Staj defteri, tek siparişte",

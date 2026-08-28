@@ -41,21 +41,19 @@ SERIF_BOLD = ("georgiab.ttf", "timesbd.ttf", "DejaVuSerif-Bold.ttf")
 SANS_BOLD = ("arialbd.ttf", "segoeuib.ttf", "DejaVuSans-Bold.ttf")
 SANS = ("arial.ttf", "segoeui.ttf", "DejaVuSans.ttf")
 
+# Tek kapak, üç kurum türü. Ayrı MESEM kapağı basmak yerine kurum satırı
+# genişletildi (kullanıcı 28.08): aynı iş dosyasını MTAL, MESEM ve çıraklık
+# eğitimi öğrencilerinin hepsi tutuyor, ayrı baskı hem maliyet hem stok yükü.
 KAPAKLAR = [
     {
-        "dosya": "kapak-staj-mtal.png",
-        "kurum": "MESLEKİ VE TEKNİK ANADOLU LİSELERİ İÇİN",
+        "dosya": "kapak-staj.png",
+        "kurum": ["MESLEKİ VE TEKNİK ANADOLU LİSESİ",
+                  "MESEM VE ÇIRAKLIK EĞİTİMİ ÖĞRENCİLERİ İÇİN"],
         "baslik": ["İŞLETMELERDE", "MESLEK EĞİTİMİ", "ÖĞRENCİ İŞ DOSYASI"],
-        "alanlar": ["ADI SOYADI", "SINIFI / NO", "ALANI", "DALI", "İŞLETME ADI"],
-    },
-    {
-        "dosya": "kapak-staj-mesem.png",
-        "kurum": "MESLEKİ EĞİTİM MERKEZLERİ İÇİN",
-        "baslik": ["İŞLETMELERDE", "MESLEK EĞİTİMİ", "ÖĞRENCİ İŞ DOSYASI"],
-        # MESEM'de öğrenci bir işletmeye sözleşmeyle bağlı; usta öğretici
-        # alanı MTAL kapağında yok, burada olmalı.
-        "alanlar": ["ADI SOYADI", "SINIFI / NO", "ALANI", "İŞLETME ADI",
-                    "USTA ÖĞRETİCİ"],
+        # "Usta öğretici" satırı MESEM/çıraklık için gerekli, MTAL öğrencisi
+        # boş bırakır — iki ayrı baskıdan ucuz çözüm.
+        "alanlar": ["ADI SOYADI", "SINIFI / NO", "ALANI / DALI",
+                    "İŞLETME ADI", "USTA ÖĞRETİCİ"],
     },
 ]
 
@@ -133,16 +131,18 @@ def uret(kapak: dict) -> pathlib.Path:
     d.text(((W - d.textlength(nokta, font=nokta_f)) / 2, y), nokta,
            font=nokta_f, fill=BEYAZ)
 
-    # Kurum satırı — hitap, ad değil
+    # Kurum satırı — hitap, ad değil. Birden çok satır olabilir.
     y += 150
-    kf = _font(SERIF_BOLD, 74)
-    while _aralikli_gen(d, kapak["kurum"], kf, 6) > W - 320 and kf.size > 40:
-        kf = _font(SERIF_BOLD, kf.size - 2)
-    _aralikli(d, ((W - _aralikli_gen(d, kapak["kurum"], kf, 6)) / 2, y),
-              kapak["kurum"], kf, BEYAZ, 6)
+    for satir in kapak["kurum"]:
+        kf = _font(SERIF_BOLD, 74)
+        while _aralikli_gen(d, satir, kf, 6) > W - 320 and kf.size > 40:
+            kf = _font(SERIF_BOLD, kf.size - 2)
+        _aralikli(d, ((W - _aralikli_gen(d, satir, kf, 6)) / 2, y),
+                  satir, kf, BEYAZ, 6)
+        y += kf.size + 30
 
     # Başlık
-    y += 220
+    y += 130
     bf = _font(SANS_BOLD, 150)
     for satir in kapak["baslik"]:
         f = bf
