@@ -46,10 +46,11 @@ GRI = (104, 120, 136)
 
 CDN = "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/"
 
-# Fiyatlar Shopify'dan 28.08'de alındı. Fiyat rozeti bilerek var: satış
+# Fiyatlar 28.08'de %11,2 zam sonrası Shopify'dan alındı (ATOLYE10 %10
+# kuponunu nötrleyen oran). Fiyat rozeti bilerek var: satış
 # görselinde rakam görmeyen kullanıcı tıklamıyor, fiyatı merak edip kaydırıyor.
-# Defterde birim "öğrenci başına" — öğretmenin karar verdiği birim bu, 2.473 TL
-# yerine 82 TL görmek kararı kolaylaştırıyor.
+# Defterde birim "öğrenci başına" — öğretmenin karar verdiği birim bu, 2.751 TL
+# yerine 92 TL görmek kararı kolaylaştırıyor.
 REKLAMLAR = [
     {
         "dosya": "meta-ogretmen-defter.png",
@@ -58,15 +59,15 @@ REKLAMLAR = [
         # Bu kare TY onayindan gecen, amblemsiz surum.
         "foto": "https://cdn.dsmcdn.com/ty1905/prod/QC_PREP/20260817/16/"
                 "933fe5df-927d-3c53-a0e2-770fbd910a0e/1_org_zoom.jpg",
-        "rozet_fiyat": "öğrenci başına 82 TL",
+        "rozet_fiyat": "öğrenci başına 92 TL",
         "baslik": "Sınıfın defteri tek siparişte",
-        "destek": "30'lu paket 2.473 TL · tek fatura · aynı gün kargo",
+        "destek": "30'lu paket 2.751 TL · tek fatura · aynı gün kargo",
         "kategori": "STAJ VE TEMRİN DEFTERİ",
     },
     {
         "dosya": "meta-ogretmen-takim-cantasi.png",
         "foto": CDN + "Takimcantasi.png?v=1785258195",
-        "rozet_fiyat": "1.911 TL",
+        "rozet_fiyat": "2.125 TL",
         "baslik": "Atölye dersine hazır sınıf",
         "destek": "17 parça tam set · sınıf adedi kadar tek seferde",
         "kategori": "MESLEK LİSESİ TAKIM ÇANTASI",
@@ -74,7 +75,7 @@ REKLAMLAR = [
     {
         "dosya": "meta-ogretmen-endustriyel.png",
         "foto": CDN + "EndElkhepsi.webp?v=1782335968",
-        "rozet_fiyat": "659 TL",
+        "rozet_fiyat": "733 TL",
         "baslik": "11. sınıf müfredatına birebir",
         "destek": "Her öğrenci aynı setle çalışır · aynı gün kargo",
         "kategori": "ENDÜSTRİYEL ELEKTRONİK SETİ",
@@ -82,7 +83,7 @@ REKLAMLAR = [
     {
         "dosya": "meta-ogretmen-arduino.png",
         "foto": CDN + "Baslangicseti.png?v=1785260927",
-        "rozet_fiyat": "782 TL",
+        "rozet_fiyat": "870 TL",
         "baslik": "Proje dersine hazır set",
         "destek": "46 parça · Türkçe kaynak ve devre örnekleri",
         "kategori": "ARDUINO BAŞLANGIÇ SETİ",
