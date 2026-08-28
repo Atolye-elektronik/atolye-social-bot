@@ -50,21 +50,33 @@ CDN = "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/"
 # kuponunu nötrleyen oran). Fiyat rozeti bilerek var: satış
 # görselinde rakam görmeyen kullanıcı tıklamıyor, fiyatı merak edip kaydırıyor.
 # Defterde birim "öğrenci başına" — öğretmenin karar verdiği birim bu, 2.751 TL
-# yerine 84 TL görmek kararı kolaylaştırıyor. Sınıf paketlerinde kademeli
+# yerine 87 TL görmek kararı kolaylaştırıyor. Sınıf paketlerinde kademeli
 # toplu indirim var (%6/%9/%12); paketi olmayan ürünlerde 10 adet ve üzeri
 # otomatik %10.
 REKLAMLAR = [
+    # Staj defteri ve temrin defteri AYRI reklama cikiyor (kullanici 28.08):
+    # farkli urunler, farkli arama terimleri, farkli ders baglami. Tek
+    # "defterler" reklami ikisini de bulanik anlatiyordu.
     {
-        "dosya": "meta-ogretmen-defter.png",
+        "dosya": "meta-ogretmen-staj-defteri.png",
         # Shopify'daki kapak fotografinda MEB amblemi var; Trendyol defterleri
         # tam da bu yuzden reddetmisti (bkz. trendyol-defter-urunleri-red).
         # Bu kare TY onayindan gecen, amblemsiz surum.
         "foto": "https://cdn.dsmcdn.com/ty1905/prod/QC_PREP/20260817/16/"
                 "933fe5df-927d-3c53-a0e2-770fbd910a0e/1_org_zoom.jpg",
-        "rozet_fiyat": "öğrenci başına 84 TL",
-        "baslik": "Sınıfın defteri tek siparişte",
-        "destek": "30'lu paket 2.508 TL · tek fatura · aynı gün kargo",
-        "kategori": "STAJ VE TEMRİN DEFTERİ",
+        "rozet_fiyat": "öğrenci başına 87 TL",
+        "baslik": "Staj defteri, tek siparişte",
+        "destek": "30'lu paket 2.619 TL · tek fatura · aynı gün kargo",
+        "kategori": "İŞLETMELERDE MESLEKİ EĞİTİM İŞ DOSYASI",
+    },
+    {
+        "dosya": "meta-ogretmen-temrin-defteri.png",
+        "foto": "https://cdn.dsmcdn.com/ty1919/prod/QC_PREP/20260816/20/"
+                "8155b8ae-6190-342d-9f36-3a08d1910c0e/1_org_zoom.jpg",
+        "rozet_fiyat": "öğrenci başına 87 TL",
+        "baslik": "Temrin defteri, tek siparişte",
+        "destek": "48 yaprak 96 sayfa · 30'lu paket 2.619 TL",
+        "kategori": "ATÖLYE TEMRİN DEFTERİ",
     },
     {
         "dosya": "meta-ogretmen-takim-cantasi.png",
