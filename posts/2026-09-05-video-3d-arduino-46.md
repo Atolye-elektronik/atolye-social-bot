@@ -14,4 +14,4 @@ Sipariş 👉 https://atolyeelektronik.com/products/arduino-baslangic-seti
 
 🎁 ATOLYE10 koduyla %10 indirim
 
-#atolyeelektronik #arduino #robotikkodlama #mikrodenetleyici #mesleklisesi #stem #Shorts
+#atolyeelektronik #arduino #robotikkodlama #mikrodenetleyici #mesleklisesi #stem #arduinoseti #arduinorobot #elektronikset #Shorts

@@ -14,4 +14,4 @@ Sipariş 👉 https://atolyeelektronik.com/products/temrin-defteri
 
 🎁 ATOLYE10 koduyla %10 indirim
 
-#atolyeelektronik #temrindefteri #mesleklisesi #atolye #okuladonus #elektrikelektronik #Shorts
+#atolyeelektronik #temrindefteri #mesleklisesi #atolye #okuladonus #elektrikelektronik #temrindefteriotomasyon #stajdefteri #Shorts

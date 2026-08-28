@@ -12,4 +12,4 @@ Sipariş 👉 https://atolyeelektronik.com/products/akilli-proje-ve-sensor-modul
 
 🎁 ATOLYE10 koduyla %10 indirim
 
-#atolyeelektronik #arduino #sensor #projeodevi #robotikkodlama #stem #Shorts
+#atolyeelektronik #arduino #sensor #projeodevi #robotikkodlama #stem #arduinorobot #arduinoproje #sensorseti #Shorts

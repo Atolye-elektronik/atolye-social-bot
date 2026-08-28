@@ -12,4 +12,4 @@ Sipariş 👉 https://atolyeelektronik.com/products/arduino-proje-ve-uygulama-ge
 
 🎁 ATOLYE10 koduyla %10 indirim
 
-#atolyeelektronik #arduino #robotikkodlama #projeodevi #mesleklisesi #stem #Shorts
+#atolyeelektronik #arduino #robotikkodlama #projeodevi #mesleklisesi #stem #arduinoseti #arduinorobot #arduinoproje #Shorts

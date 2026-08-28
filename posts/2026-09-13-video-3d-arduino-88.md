@@ -12,4 +12,4 @@ Sipariş 👉 https://atolyeelektronik.com/products/arduino-ileri-seviye-kutulu-
 
 🎁 ATOLYE10 koduyla %10 indirim
 
-#atolyeelektronik #arduino #robotikkodlama #mikrodenetleyici #mesleklisesi #stem #Shorts
+#atolyeelektronik #arduino #robotikkodlama #mikrodenetleyici #mesleklisesi #stem #arduinoseti #arduinorobot #elektronikset #Shorts

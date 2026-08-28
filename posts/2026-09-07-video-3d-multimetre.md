@@ -12,4 +12,4 @@ Sipariş 👉 https://atolyeelektronik.com/products/dijital-multimetre-dt830d
 
 🎁 ATOLYE10 koduyla %10 indirim
 
-#atolyeelektronik #multimetre #elektrikelektronik #atolye #mesleklisesi #olcme #Shorts
+#atolyeelektronik #multimetre #elektrikelektronik #atolye #mesleklisesi #olcme #dijitalmultimetre #elektronikolcum #Shorts
