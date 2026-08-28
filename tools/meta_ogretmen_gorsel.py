@@ -50,8 +50,8 @@ CDN = "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/"
 # kuponunu nötrleyen oran). Fiyat rozeti bilerek var: satış
 # görselinde rakam görmeyen kullanıcı tıklamıyor, fiyatı merak edip kaydırıyor.
 # Defterde birim "öğrenci başına" — öğretmenin karar verdiği birim bu, 2.751 TL
-# yerine 87 TL görmek kararı kolaylaştırıyor. Sınıf paketlerinde kademeli
-# toplu indirim var (%6/%9/%12); paketi olmayan ürünlerde 10 adet ve üzeri
+# yerine 85 TL görmek kararı kolaylaştırıyor. Defter paketlerinde adet başı
+# sabit 85 TL (tekli 90); paketi olmayan ürünlerde 10 adet ve üzeri
 # otomatik %10.
 REKLAMLAR = [
     # Staj defteri ve temrin defteri AYRI reklama cikiyor (kullanici 28.08):
@@ -64,18 +64,20 @@ REKLAMLAR = [
         # Bu kare TY onayindan gecen, amblemsiz surum.
         "foto": "https://cdn.dsmcdn.com/ty1905/prod/QC_PREP/20260817/16/"
                 "933fe5df-927d-3c53-a0e2-770fbd910a0e/1_org_zoom.jpg",
-        "rozet_fiyat": "öğrenci başına 87 TL",
+        "rozet_fiyat": "öğrenci başına 85 TL",
         "baslik": "Staj defteri, tek siparişte",
-        "destek": "30'lu paket 2.619 TL · tek fatura · aynı gün kargo",
+        "destek": "Tek fatura · tek kargo · aynı gün gönderim",
+        "fiyatlar": "Tekli 90 · 10'lu 850 · 20'li 1.700 · 30'lu 2.550 TL",
         "kategori": "İŞLETMELERDE MESLEKİ EĞİTİM İŞ DOSYASI",
     },
     {
         "dosya": "meta-ogretmen-temrin-defteri.png",
         "foto": "https://cdn.dsmcdn.com/ty1919/prod/QC_PREP/20260816/20/"
                 "8155b8ae-6190-342d-9f36-3a08d1910c0e/1_org_zoom.jpg",
-        "rozet_fiyat": "öğrenci başına 87 TL",
+        "rozet_fiyat": "öğrenci başına 85 TL",
         "baslik": "Temrin defteri, tek siparişte",
-        "destek": "48 yaprak 96 sayfa · 30'lu paket 2.619 TL",
+        "destek": "48 yaprak 96 sayfa · tek fatura · aynı gün kargo",
+        "fiyatlar": "Tekli 90 · 10'lu 850 · 20'li 1.700 · 30'lu 2.550 TL",
         "kategori": "ATÖLYE TEMRİN DEFTERİ",
     },
     {
@@ -84,6 +86,7 @@ REKLAMLAR = [
         "rozet_fiyat": "2.125 TL",
         "baslik": "Atölye dersine hazır sınıf",
         "destek": "17 parça tam set · 10 adet ve üzeri %10 indirim",
+        "fiyatlar": "17 parça tam set 2.125 TL · 10+ adette 1.912 TL",
         "kategori": "MESLEK LİSESİ TAKIM ÇANTASI",
     },
     {
@@ -92,6 +95,7 @@ REKLAMLAR = [
         "rozet_fiyat": "733 TL",
         "baslik": "11. sınıf müfredatına birebir",
         "destek": "Her öğrenci aynı setle · 10 adet ve üzeri %10 indirim",
+        "fiyatlar": "733 TL · 10 adet ve üzeri 660 TL",
         "kategori": "ENDÜSTRİYEL ELEKTRONİK SETİ",
     },
     {
@@ -100,6 +104,7 @@ REKLAMLAR = [
         "rozet_fiyat": "870 TL",
         "baslik": "Proje dersine hazır set",
         "destek": "46 parça · 10 adet ve üzeri %10 indirim",
+        "fiyatlar": "46 parça 870 · 56 parça 1.092 · 88 parça 1.766 TL",
         "kategori": "ARDUINO BAŞLANGIÇ SETİ",
     },
 ]
@@ -206,17 +211,27 @@ def uret(reklam: dict) -> pathlib.Path:
     fb, satirlar, boyut = _sigdir(
         d, reklam["baslik"], W - 160, [([70, 62], 2), ([54], 3)]
     )
-    y = 872
+    y = 838
     for s in satirlar:
         d.text(((W - d.textlength(s, font=fb)) / 2, y), s, font=fb, fill=LACIVERT)
         y += int(boyut * 1.2)
 
+    # Tum fiyatlar tek satirda. Tek fiyat gosterip gerisini gizlemek alicida
+    # "acaba kacmis" sorusu birakiyor; secenekleri gorunce karar hizlaniyor.
+    ff = _bold(30)
+    while d.textlength(reklam["fiyatlar"], font=ff) > W - 120 and ff.size > 20:
+        ff = _bold(ff.size - 1)
+    d.text(((W - d.textlength(reklam["fiyatlar"], font=ff)) / 2, y + 10),
+           reklam["fiyatlar"], font=ff, fill=LACIVERT)
+    y += 10 + ff.size + 16
+
     # Destek cümlesi — gerekirse küçülterek tek satırda tut
-    fd = _normal(32)
-    while d.textlength(reklam["destek"], font=fd) > W - 140 and fd.size > 22:
+    fd = _normal(30)
+    while d.textlength(reklam["destek"], font=fd) > W - 140 and fd.size > 20:
         fd = _normal(fd.size - 2)
-    d.text(((W - d.textlength(reklam["destek"], font=fd)) / 2, y + 16),
+    d.text(((W - d.textlength(reklam["destek"], font=fd)) / 2, y),
            reklam["destek"], font=fd, fill=GRI)
+    y -= 16
 
     # Aciliyet — sezon penceresi dar, karari bugune cekiyor
     fa = _mono(24)
