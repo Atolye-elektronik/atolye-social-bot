@@ -12,8 +12,9 @@ anlatır ("tüm sınıf, tek sipariş, tek fatura").
   * **Ürün fotoğrafı ana öğe.** Akışta durduran şey fotoğraftır; salt metin
     kart kaydırılıp geçilir. Metin kısa tutuldu, işi fotoğraf yapıyor.
 
-Kitleyi görselin kendisi eliyor: üstteki turuncu şerit doğrudan "MESLEK
-LİSESİ ÖĞRETMENLERİNE" diyor. Meta'da meslek hedeflemesi kalmadığı için
+Kitleyi görselin kendisi eliyor: üstteki turuncu şerit doğrudan "MESLEKİ VE
+TEKNİK ANADOLU LİSESİ" diyor — ürünler bu okulların müfredatına göre
+hazırlandı, genel liseye gösterilen her gösterim boşa gidiyor. Meta'da meslek hedeflemesi kalmadığı için
 (bkz. meta-ads-kurulum.md) eleme işini yaratıcı yapıyor.
 
     python tools/meta_ogretmen_gorsel.py
@@ -35,7 +36,7 @@ from src.carousel_gorsel import (  # noqa: E402
     _mono, _normal, _sigdir,
 )
 
-SERIT = "MESLEK LİSESİ ÖĞRETMENLERİNE"
+SERIT = "MESLEKİ VE TEKNİK ANADOLU LİSESİ"
 MARKA = "ATÖLYE ELEKTRONİK"
 SITE = "atolyeelektronik.com"
 
@@ -62,8 +63,7 @@ REKLAMLAR = [
         # Shopify'daki kapak fotografinda MEB amblemi var; Trendyol defterleri
         # tam da bu yuzden reddetmisti (bkz. trendyol-defter-urunleri-red).
         # Bu kare TY onayindan gecen, amblemsiz surum.
-        "foto": "https://cdn.dsmcdn.com/ty1905/prod/QC_PREP/20260817/16/"
-                "933fe5df-927d-3c53-a0e2-770fbd910a0e/1_org_zoom.jpg",
+        "foto": "kaynak/staj-defteri.jpg",
         "rozet_fiyat": "öğrenci başına 85 TL",
         "baslik": "Staj defteri, tek siparişte",
         "destek": "Tek fatura · tek kargo · aynı gün gönderim",
@@ -72,8 +72,7 @@ REKLAMLAR = [
     },
     {
         "dosya": "meta-ogretmen-temrin-defteri.png",
-        "foto": "https://cdn.dsmcdn.com/ty1919/prod/QC_PREP/20260816/20/"
-                "8155b8ae-6190-342d-9f36-3a08d1910c0e/1_org_zoom.jpg",
+        "foto": "kaynak/temrin-defteri.jpg",
         "rozet_fiyat": "öğrenci başına 85 TL",
         "baslik": "Temrin defteri, tek siparişte",
         "destek": "48 yaprak 96 sayfa · tek fatura · aynı gün kargo",
@@ -83,33 +82,33 @@ REKLAMLAR = [
     {
         "dosya": "meta-ogretmen-takim-cantasi.png",
         "foto": CDN + "Takimcantasi.png?v=1785258195",
-        "rozet_fiyat": "2.125 TL",
+        "rozet_fiyat": "1.990 TL",
         "baslik": "Atölye dersine hazır sınıf",
-        "destek": "17 parça tam set · 10 adet ve üzeri %10 indirim",
-        "fiyatlar": "17 parça tam set 2.125 TL · 10+ adette 1.912 TL",
+        "destek": "Pense, havya, multimetre, lehim takımı",
+        "fiyatlar": "17 parça tam set 1.990 TL · 10+ adette 1.791 TL",
         "kategori": "MESLEK LİSESİ TAKIM ÇANTASI",
     },
     {
         "dosya": "meta-ogretmen-endustriyel.png",
         "foto": CDN + "EndElkhepsi.webp?v=1782335968",
-        "rozet_fiyat": "733 TL",
+        "rozet_fiyat": "699 TL",
         "baslik": "11. sınıf müfredatına birebir",
-        "destek": "Her öğrenci aynı setle · 10 adet ve üzeri %10 indirim",
-        "fiyatlar": "733 TL · 10 adet ve üzeri 660 TL",
+        "destek": "Her öğrenci aynı setle çalışır, ders tek elden yürür",
+        "fiyatlar": "699 TL · 10 adet ve üzeri 629 TL",
         "kategori": "ENDÜSTRİYEL ELEKTRONİK SETİ",
     },
     {
         "dosya": "meta-ogretmen-arduino.png",
         "foto": CDN + "Baslangicseti.png?v=1785260927",
-        "rozet_fiyat": "870 TL",
+        "rozet_fiyat": "769 TL",
         "baslik": "Proje dersine hazır set",
-        "destek": "46 parça · 10 adet ve üzeri %10 indirim",
-        "fiyatlar": "46 parça 870 · 56 parça 1.092 · 88 parça 1.766 TL",
+        "destek": "Türkçe kaynak ve devre örnekleriyle",
+        "fiyatlar": "46 parça 769 · 56 parça 1.092 · 88 parça 1.766 TL",
         "kategori": "ARDUINO BAŞLANGIÇ SETİ",
     },
 ]
 
-ACELE = "OKULLAR 15 EYLÜL'DE AÇILIYOR"
+ACELE = "OKULLAR 14 EYLÜL'DE AÇILIYOR"
 CTA = "Hemen Sipariş Ver"
 
 CIKTI_DIZIN = pathlib.Path(__file__).resolve().parents[1] / "posts" / "media" / "meta-ogretmen"
@@ -162,7 +161,13 @@ def _foto_kart(tuval: Image.Image, d: ImageDraw.ImageDraw, url: str) -> None:
     d.rounded_rectangle([x0, y0, x1, y1], radius=28, fill=BEYAZ,
                         outline=(226, 233, 239), width=2)
 
-    foto = _kirp_beyaz(_indir(url).convert("RGB"))
+    # Uzak CDN'e bagimli olmamak icin defter fotograflari depoda duruyor
+    # (28.08: cdn.dsmcdn.com zaman asimina ugrayinca tum uretim dusmustu).
+    if url.startswith("http"):
+        ham = _indir(url)
+    else:
+        ham = Image.open(CIKTI_DIZIN / url)
+    foto = _kirp_beyaz(ham.convert("RGB"))
     ic_w, ic_h = (x1 - x0) - 56, (y1 - y0) - 56
     olcek = min(ic_w / foto.width, ic_h / foto.height)
     yeni = foto.resize((max(1, int(foto.width * olcek)), max(1, int(foto.height * olcek))),
