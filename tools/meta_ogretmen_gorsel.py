@@ -13,7 +13,7 @@ anlatır ("tüm sınıf, tek sipariş, tek fatura").
     kart kaydırılıp geçilir. Metin kısa tutuldu, işi fotoğraf yapıyor.
 
 Kitleyi görselin kendisi eliyor: üstteki turuncu şerit doğrudan "MESLEKİ VE
-TEKNİK ANADOLU LİSESİ" diyor — ürünler bu okulların müfredatına göre
+TEKNİK ANADOLU LİSELERİ İÇİN" diyor — ürünler bu okulların müfredatına göre
 hazırlandı, genel liseye gösterilen her gösterim boşa gidiyor. Meta'da meslek hedeflemesi kalmadığı için
 (bkz. meta-ads-kurulum.md) eleme işini yaratıcı yapıyor.
 
@@ -36,7 +36,7 @@ from src.carousel_gorsel import (  # noqa: E402
     _mono, _normal, _sigdir,
 )
 
-SERIT = "MESLEKİ VE TEKNİK ANADOLU LİSESİ"
+SERIT = "MESLEKİ VE TEKNİK ANADOLU LİSELERİ İÇİN"
 MARKA = "ATÖLYE ELEKTRONİK"
 SITE = "atolyeelektronik.com"
 
@@ -52,23 +52,25 @@ CDN = "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/"
 # görselinde rakam görmeyen kullanıcı tıklamıyor, fiyatı merak edip kaydırıyor.
 # Defterde birim "öğrenci başına" — öğretmenin karar verdiği birim bu, 2.751 TL
 # yerine 85 TL görmek kararı kolaylaştırıyor. Defter paketlerinde adet başı
-# sabit 85 TL (tekli 90); paketi olmayan ürünlerde 10 adet ve üzeri
-# otomatik %10.
+# sabit 85 TL (tekli 90).
+#
+# Toptan indirimi YALNIZ defterlerde açık fiyatla veriliyor (kullanıcı 28.08).
+# Diğer ürünlerde adede göre özel fiyat konuşuluyor; görselde sabit bir oran
+# yazmak sonradan pazarlık alanını kapatıyor.
+TOPTAN = "Toplu alımda özel fiyat · bize yazın"
 REKLAMLAR = [
     # Staj defteri ve temrin defteri AYRI reklama cikiyor (kullanici 28.08):
     # farkli urunler, farkli arama terimleri, farkli ders baglami. Tek
     # "defterler" reklami ikisini de bulanik anlatiyordu.
     {
         "dosya": "meta-ogretmen-staj-defteri.png",
-        # Shopify'daki kapak fotografinda MEB amblemi var; Trendyol defterleri
-        # tam da bu yuzden reddetmisti (bkz. trendyol-defter-urunleri-red).
-        # Bu kare TY onayindan gecen, amblemsiz surum.
         "foto": "kaynak/staj-defteri.jpg",
         "rozet_fiyat": "öğrenci başına 85 TL",
         "baslik": "Staj defteri, tek siparişte",
         "destek": "Tek fatura · tek kargo · aynı gün gönderim",
-        "fiyatlar": "Tekli 90 · 10'lu 850 · 20'li 1.700 · 30'lu 2.550 TL",
-        "kategori": "İŞLETMELERDE MESLEKİ EĞİTİM İŞ DOSYASI",
+        "fiyatlar": [("1 adet", "90 TL"), ("10 adet", "850 TL"),
+                     ("20 adet", "1.700 TL"), ("30 adet", "2.550 TL")],
+        "toptan": None,
     },
     {
         "dosya": "meta-ogretmen-temrin-defteri.png",
@@ -76,8 +78,9 @@ REKLAMLAR = [
         "rozet_fiyat": "öğrenci başına 85 TL",
         "baslik": "Temrin defteri, tek siparişte",
         "destek": "48 yaprak 96 sayfa · tek fatura · aynı gün kargo",
-        "fiyatlar": "Tekli 90 · 10'lu 850 · 20'li 1.700 · 30'lu 2.550 TL",
-        "kategori": "ATÖLYE TEMRİN DEFTERİ",
+        "fiyatlar": [("1 adet", "90 TL"), ("10 adet", "850 TL"),
+                     ("20 adet", "1.700 TL"), ("30 adet", "2.550 TL")],
+        "toptan": None,
     },
     {
         "dosya": "meta-ogretmen-takim-cantasi.png",
@@ -85,36 +88,41 @@ REKLAMLAR = [
         "rozet_fiyat": "1.990 TL",
         "baslik": "Atölye dersine hazır sınıf",
         "destek": "Pense, havya, multimetre, lehim takımı",
-        "fiyatlar": "17 parça tam set 1.990 TL · 10+ adette 1.791 TL",
-        "kategori": "MESLEK LİSESİ TAKIM ÇANTASI",
+        "fiyatlar": [("17 parça tam set", "1.990 TL")],
+        "toptan": TOPTAN,
     },
     {
         "dosya": "meta-ogretmen-endustriyel.png",
         "foto": CDN + "EndElkhepsi.webp?v=1782335968",
         "rozet_fiyat": "699 TL",
-        "baslik": "11. sınıf müfredatına birebir",
-        "destek": "Her öğrenci aynı setle çalışır, ders tek elden yürür",
-        "fiyatlar": "699 TL · 10 adet ve üzeri 629 TL",
-        "kategori": "ENDÜSTRİYEL ELEKTRONİK SETİ",
+        "baslik": "Endüstriyel Elektronik dersi, 11. sınıf",
+        "destek": "Müfredattaki uygulamalar birebir, tek sette",
+        "fiyatlar": [("Tam set", "699 TL")],
+        "toptan": TOPTAN,
     },
     {
         "dosya": "meta-ogretmen-arduino.png",
         "foto": CDN + "Baslangicseti.png?v=1785260927",
         "rozet_fiyat": "769 TL",
-        "baslik": "Proje dersine hazır set",
+        "baslik": "Mikrodenetleyiciler ve Robotik Kodlama",
         "destek": "Türkçe kaynak ve devre örnekleriyle",
-        "fiyatlar": "46 parça 769 · 56 parça 1.092 · 88 parça 1.766 TL",
-        "kategori": "ARDUINO BAŞLANGIÇ SETİ",
+        "fiyatlar": [("46 parça", "769 TL"), ("56 parça", "1.092 TL"),
+                     ("88 parça", "1.766 TL")],
+        "toptan": TOPTAN,
     },
 ]
 
 ACELE = "OKULLAR 14 EYLÜL'DE AÇILIYOR"
 CTA = "Hemen Sipariş Ver"
 
+# Turuncu aciliyet şeridi bunun altına giriyor; CTA düğmesinin üst kenarı
+# 1172px. Metin bloğu bu tabanı geçerse şerit metnin üstüne biniyor.
+METIN_TABANI = 1096
+
 CIKTI_DIZIN = pathlib.Path(__file__).resolve().parents[1] / "posts" / "media" / "meta-ogretmen"
 
 # Fotograf kartinin yerlesimi
-KART = (70, 250, W - 70, 830)
+KART = (70, 232, W - 70, 736)
 
 
 def _zemin_ac(seed: str) -> tuple[Image.Image, ImageDraw.ImageDraw]:
@@ -216,32 +224,60 @@ def uret(reklam: dict) -> pathlib.Path:
     fb, satirlar, boyut = _sigdir(
         d, reklam["baslik"], W - 160, [([70, 62], 2), ([54], 3)]
     )
-    y = 838
+    y = 746
     for s in satirlar:
         d.text(((W - d.textlength(s, font=fb)) / 2, y), s, font=fb, fill=LACIVERT)
         y += int(boyut * 1.2)
 
-    # Tum fiyatlar tek satirda. Tek fiyat gosterip gerisini gizlemek alicida
-    # "acaba kacmis" sorusu birakiyor; secenekleri gorunce karar hizlaniyor.
-    ff = _bold(30)
-    while d.textlength(reklam["fiyatlar"], font=ff) > W - 120 and ff.size > 20:
-        ff = _bold(ff.size - 1)
-    d.text(((W - d.textlength(reklam["fiyatlar"], font=ff)) / 2, y + 10),
-           reklam["fiyatlar"], font=ff, fill=LACIVERT)
-    y += 10 + ff.size + 16
-
-    # Destek cümlesi — gerekirse küçülterek tek satırda tut
-    fd = _normal(30)
+    # Destek cümlesi — gerekirse küçülterek tek satırda tut. Blok taşacaksa
+    # tamamen düşer: başlık iki satıra sığdığında (Arduino, endüstriyel) üç
+    # fiyat kademesi + toptan satırı zaten CTA'ya kadar olan yeri dolduruyor.
+    fd = _normal(28)
     while d.textlength(reklam["destek"], font=fd) > W - 140 and fd.size > 20:
         fd = _normal(fd.size - 2)
-    d.text(((W - d.textlength(reklam["destek"], font=fd)) / 2, y),
-           reklam["destek"], font=fd, fill=GRI)
-    y -= 16
+    kalan = len(reklam["fiyatlar"]) * 42 + (28 if reklam["toptan"] else 0)
+    if y + 8 + fd.size + 16 + kalan <= METIN_TABANI:
+        y += 8
+        d.text(((W - d.textlength(reklam["destek"], font=fd)) / 2, y),
+               reklam["destek"], font=fd, fill=GRI)
+        y += fd.size + 16
+    else:
+        y += 14
 
-    # Aciliyet — sezon penceresi dar, karari bugune cekiyor
+    # Fiyat kademeleri ALT ALTA, adet ve tutar ayrı sütunda. Tek satırda
+    # "Tekli 90 · 10'lu 850 · 20'li 1.700 TL" yazıyordu ve kullanıcı haklı
+    # olarak "90 ne, 90 TL mi?" diye sordu — birimi bir kez sona koymak
+    # okuyanı geri dönüp saymaya zorluyor.
+    fe = _normal(30)
+    ft = _bold(34)
+    kademeler = reklam["fiyatlar"]
+    eg = max(d.textlength(a, font=fe) for a, _ in kademeler)
+    tg = max(d.textlength(b, font=ft) for _, b in kademeler)
+    ara = 36
+    x0 = (W - (eg + ara + tg)) / 2
+    for etiket, tutar in kademeler:
+        d.text((x0 + eg - d.textlength(etiket, font=fe), y + 4), etiket,
+               font=fe, fill=GRI)
+        d.text((x0 + eg + ara, y), tutar, font=ft, fill=LACIVERT)
+        y += 42
+
+    # Toptan satırı yalnız defter dışındaki ürünlerde: defterde kademeli
+    # fiyat zaten yazılı, diğerlerinde adede göre özel fiyat konuşuluyor.
+    if reklam["toptan"]:
+        fto = _bold(26)
+        d.text(((W - d.textlength(reklam["toptan"], font=fto)) / 2, y + 4),
+               reklam["toptan"], font=fto, fill=TEAL)
+        y += 2 + fto.size
+
+    # Aciliyet — sezon penceresi dar, karari bugune cekiyor. CTA 1218'de
+    # sabit (ust kenari 1172); metin tabani 1120'yi gecerse yerlesim tasar,
+    # uretim sirasinda uyar ki sessizce bozuk gorsel cikmasin.
     fa = _mono(24)
     gen = _aralikli_genislik(d, ACELE, fa, aralik=5)
-    _aralikli(d, ((W - gen) / 2, y + 78), ACELE, fa, TURUNCU, aralik=5)
+    if y + 22 > METIN_TABANI + 24:
+        print(f"  UYARI: {reklam['dosya']} metin tabani {y:.0f}px — CTA'ya tasiyor")
+    _aralikli(d, ((W - gen) / 2, min(max(y + 22, 1086), METIN_TABANI + 24)), ACELE, fa,
+              TURUNCU, aralik=5)
 
     # CTA: alan adi degil EYLEM. Alan adi altta kucuk kaliyor.
     fp = _bold(40)
