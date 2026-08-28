@@ -135,6 +135,8 @@ CTA = "Hemen Sipariş Ver"
 METIN_TABANI = 1096
 
 CIKTI_DIZIN = pathlib.Path(__file__).resolve().parents[1] / "posts" / "media" / "meta-ogretmen"
+LOGO = pathlib.Path(__file__).resolve().parents[1] / "posts" / "media" / "marka" / "logo.png"
+LOGO_BOY = 120
 
 # Fotograf kartinin yerlesimi
 KART = (70, 232, W - 70, 736)
@@ -233,6 +235,12 @@ def uret(reklam: dict) -> pathlib.Path:
     _aralikli(d, ((W - gen) / 2, 168), serit, fs, TURUNCU, aralik=8)
 
     _foto_kart(tuval, d, reklam["foto"])
+
+    # Logo kartın SOL üst köşesinde: sağ üstü fiyat rozeti tutuyor.
+    logo = Image.open(LOGO).convert("RGBA")
+    logo.thumbnail((LOGO_BOY, LOGO_BOY), Image.LANCZOS)
+    tuval.paste(logo, (KART[0] + 24, KART[1] + 24), logo)
+
     d = ImageDraw.Draw(tuval)
 
     # Fiyat rozeti — fotografin sag ust kosesine oturuyor

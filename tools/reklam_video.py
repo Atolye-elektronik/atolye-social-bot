@@ -46,6 +46,8 @@ KOK = pathlib.Path(__file__).resolve().parents[1]
 KLIPLER = pathlib.Path.home() / "Desktop" / "kling-videolar"
 CIKTI = KOK / "posts" / "media" / "meta-reklam"
 FOTO_ONBELLEK = CIKTI / "kaynak"
+LOGO = KOK / "posts" / "media" / "marka" / "logo.png"
+LOGO_BOY = 130
 CDN = "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/"
 
 W, H = 1080, 1920
@@ -166,6 +168,20 @@ def _foto_kare(ad: str, kart_w: int, kart_h: int) -> pathlib.Path:
     yol = FOTO_ONBELLEK / f"_kare-{ad.split('?')[0]}.png"
     tuval.save(yol)
     return yol
+
+
+def logo_katman(hedef: pathlib.Path) -> pathlib.Path:
+    """Logoyu kartın sağ üst köşesine koyan saydam katman.
+
+    Zemine değil videonun ÜSTÜNE biniyor: kartın içini klip kaplıyor, zemine
+    çizilen logo görünmezdi.
+    """
+    kat = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    logo = Image.open(LOGO).convert("RGBA")
+    logo.thumbnail((LOGO_BOY, LOGO_BOY), Image.LANCZOS)
+    kat.alpha_composite(logo, (KART[2] - 26 - logo.width, KART[1] + 26))
+    kat.save(hedef)
+    return hedef
 
 
 def _ffmpeg() -> str:
@@ -318,7 +334,10 @@ def uret(ffmpeg: str, reklam: dict) -> pathlib.Path:
             )
     zincir = "".join(f"[c{i}]" for i in range(len(sahneler)))
     parcalar.append(f"{zincir}concat=n={len(sahneler)}:v=1[kl]")
-    parcalar.append(f"[0:v][kl]overlay={KART[0]}:{KART[1]}:shortest=1[v]")
+    logo_no = len(sahneler) + 1
+    girdiler += ["-loop", "1", "-i", str(logo_katman(CIKTI / "_logo.png"))]
+    parcalar.append(f"[0:v][kl]overlay={KART[0]}:{KART[1]}:shortest=1[kart]")
+    parcalar.append(f"[kart][{logo_no}:v]overlay=0:0:shortest=1[v]")
 
     hedef = CIKTI / reklam["dosya"]
     subprocess.run(
@@ -330,6 +349,7 @@ def uret(ffmpeg: str, reklam: dict) -> pathlib.Path:
          "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(hedef)],
         check=True)
     zemin.unlink()
+    (CIKTI / "_logo.png").unlink(missing_ok=True)
     return hedef
 
 
