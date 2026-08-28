@@ -136,7 +136,7 @@ METIN_TABANI = 1096
 
 CIKTI_DIZIN = pathlib.Path(__file__).resolve().parents[1] / "posts" / "media" / "meta-ogretmen"
 LOGO = pathlib.Path(__file__).resolve().parents[1] / "posts" / "media" / "marka" / "logo.png"
-LOGO_BOY = 120
+LOGO_BOY = 340          # arka plana yedirilen filigran
 
 # Fotograf kartinin yerlesimi
 KART = (70, 232, W - 70, 736)
@@ -155,7 +155,17 @@ def _zemin_ac(seed: str) -> tuple[Image.Image, ImageDraw.ImageDraw]:
     _devre_izi(kd, rnd, (0, 0, W, 200), adet=7)
     _devre_izi(kd, rnd, (0, H - 200, W, H), adet=7)
     katman.putalpha(katman.getchannel("A").point(lambda a: int(a * 0.28)))
-    tuval = Image.alpha_composite(tuval.convert("RGBA"), katman).convert("RGB")
+    tuval = Image.alpha_composite(tuval.convert("RGBA"), katman)
+
+    # Logo zemine yedirilmiş filigran olarak giriyor — kart üstünde sert bir
+    # rozet gibi durmasın diye (kullanıcı 28.08). Kadraj DIŞINA taşmıyor:
+    # yarım kalan marka adı tasarım değil hata gibi okunuyor.
+    logo = Image.open(LOGO).convert("RGBA")
+    logo.thumbnail((LOGO_BOY, LOGO_BOY), Image.LANCZOS)
+    logo.putalpha(logo.getchannel("A").point(lambda a: int(a * 0.13)))
+    tuval.alpha_composite(logo, (W - logo.width - 20, H - logo.height - 56))
+
+    tuval = tuval.convert("RGB")
     return tuval, ImageDraw.Draw(tuval)
 
 
@@ -235,12 +245,6 @@ def uret(reklam: dict) -> pathlib.Path:
     _aralikli(d, ((W - gen) / 2, 168), serit, fs, TURUNCU, aralik=8)
 
     _foto_kart(tuval, d, reklam["foto"])
-
-    # Logo kartın SOL üst köşesinde: sağ üstü fiyat rozeti tutuyor.
-    logo = Image.open(LOGO).convert("RGBA")
-    logo.thumbnail((LOGO_BOY, LOGO_BOY), Image.LANCZOS)
-    tuval.paste(logo, (KART[0] + 24, KART[1] + 24), logo)
-
     d = ImageDraw.Draw(tuval)
 
     # Fiyat rozeti — fotografin sag ust kosesine oturuyor
