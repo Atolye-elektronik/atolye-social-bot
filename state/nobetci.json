@@ -1,5 +1,5 @@
 {
-  "kontrol": "2026-08-28T22:47:47.156568+00:00",
+  "kontrol": "2026-08-28T23:47:44.276709+00:00",
   "akislar": [
     {
       "dosya": "gitlab-yedek.yml",
@@ -7,7 +7,7 @@
       "beklenen": "2026-08-28T01:00:00+00:00",
       "son_basarili": "2026-08-28T21:52:11+00:00",
       "son_kosu": "2026-08-28T21:52:11+00:00",
-      "gecikme_dk": 1307,
+      "gecikme_dk": 1367,
       "kacti": false,
       "hatali": false
     },
@@ -17,7 +17,7 @@
       "beklenen": "2026-08-24T04:30:00+00:00",
       "son_basarili": "2026-08-24T06:06:44+00:00",
       "son_kosu": "2026-08-24T06:06:44+00:00",
-      "gecikme_dk": 6857,
+      "gecikme_dk": 6917,
       "kacti": false,
       "hatali": false
     },
@@ -27,7 +27,7 @@
       "beklenen": "2026-08-28T20:13:00+00:00",
       "son_basarili": "2026-08-28T21:50:01+00:00",
       "son_kosu": "2026-08-28T21:50:01+00:00",
-      "gecikme_dk": 154,
+      "gecikme_dk": 214,
       "kacti": false,
       "hatali": false
     },
@@ -37,7 +37,7 @@
       "beklenen": "2026-08-28T18:37:00+00:00",
       "son_basarili": "2026-08-28T21:51:05+00:00",
       "son_kosu": "2026-08-28T21:51:05+00:00",
-      "gecikme_dk": 250,
+      "gecikme_dk": 310,
       "kacti": false,
       "hatali": false
     },
@@ -47,7 +47,7 @@
       "beklenen": "2026-08-28T17:30:00+00:00",
       "son_basarili": "2026-08-28T21:57:08+00:00",
       "son_kosu": "2026-08-28T21:57:08+00:00",
-      "gecikme_dk": 317,
+      "gecikme_dk": 377,
       "kacti": false,
       "hatali": false
     },
@@ -57,7 +57,7 @@
       "beklenen": "2026-08-01T04:00:00+00:00",
       "son_basarili": "2026-08-27T15:24:39+00:00",
       "son_kosu": "2026-08-27T15:24:39+00:00",
-      "gecikme_dk": 40007,
+      "gecikme_dk": 40067,
       "kacti": false,
       "hatali": false
     },
@@ -67,7 +67,7 @@
       "beklenen": "2026-08-27T17:23:00+00:00",
       "son_basarili": "2026-08-28T21:51:05+00:00",
       "son_kosu": "2026-08-28T21:51:05+00:00",
-      "gecikme_dk": 1764,
+      "gecikme_dk": 1824,
       "kacti": false,
       "hatali": false
     }
