@@ -117,7 +117,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "TX10FD1792846",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 119.83,
         "lineUnitPrice": 119.83,
         "fastDeliveryOptions": [
@@ -142,10 +142,14 @@
       {
         "createdDate": 1788043322147,
         "status": "Created"
+      },
+      {
+        "createdDate": 1788073877138,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1788209940000,
@@ -156,7 +160,7 @@
     "agreedDeliveryDate": 1788209940000,
     "fastDelivery": true,
     "originShipmentDate": 1788043316056,
-    "lastModifiedDate": 1788043322147,
+    "lastModifiedDate": 1788073877138,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
