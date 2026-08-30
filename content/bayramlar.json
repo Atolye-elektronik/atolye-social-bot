@@ -1,0 +1,71 @@
+{
+  "_aciklama": "Resmi bayram ve anma gunleri. 'tur' alani TON belirler: kutlama -> 'Kutlu olsun', anma -> 'Saygiyla aniyoruz'. 10 Kasim ve 15 Temmuz KUTLANMAZ, anilir. Hicbirinde fiyat, urun, indirim kodu veya satis cagrisi YOK.",
+
+  "_kural": "Bayram gorsellerinde satis yapilmaz. Marka adi ve logo yeter. Anma gunlerinde hashtag de kullanilmaz.",
+
+  "gunler": [
+    {
+      "slug": "23-nisan",
+      "tarih": "04-23",
+      "ad": "Ulusal Egemenlik ve Çocuk Bayramı",
+      "kisa": "23 NİSAN",
+      "tur": "kutlama",
+      "metin": "23 Nisan Ulusal Egemenlik ve Çocuk Bayramı kutlu olsun.\n\nAtatürk'ün çocuklara armağan ettiği bu bayramda, geleceğin mühendislerini, teknisyenlerini ve ustalarını selamlıyoruz.",
+      "etiketler": "#23Nisan #ÇocukBayramı"
+    },
+    {
+      "slug": "1-mayis",
+      "tarih": "05-01",
+      "ad": "Emek ve Dayanışma Günü",
+      "kisa": "1 MAYIS",
+      "tur": "kutlama",
+      "metin": "1 Mayıs Emek ve Dayanışma Günü kutlu olsun.\n\nAtölyede, tezgâhta, şantiyede emek veren herkesin emeği kutsaldır.",
+      "etiketler": "#1Mayıs #EmekVeDayanışma"
+    },
+    {
+      "slug": "19-mayis",
+      "tarih": "05-19",
+      "ad": "Atatürk'ü Anma, Gençlik ve Spor Bayramı",
+      "kisa": "19 MAYIS",
+      "tur": "kutlama",
+      "metin": "19 Mayıs Atatürk'ü Anma, Gençlik ve Spor Bayramı kutlu olsun.\n\nBu bayram gençliğe emanet edildi. Meslek liselerinde, atölyelerde üreten bütün gençlerin bayramı kutlu olsun.",
+      "etiketler": "#19Mayıs #GençlikVeSporBayramı"
+    },
+    {
+      "slug": "15-temmuz",
+      "tarih": "07-15",
+      "ad": "Demokrasi ve Millî Birlik Günü",
+      "kisa": "15 TEMMUZ",
+      "tur": "anma",
+      "metin": "15 Temmuz Demokrasi ve Millî Birlik Günü'nde hayatını kaybedenleri saygıyla anıyoruz.",
+      "etiketler": ""
+    },
+    {
+      "slug": "30-agustos",
+      "tarih": "08-30",
+      "ad": "Zafer Bayramı",
+      "kisa": "30 AĞUSTOS",
+      "tur": "kutlama",
+      "metin": "30 Ağustos Zafer Bayramı kutlu olsun.\n\nBu toprakların bağımsızlığını kazandıran, başta Mustafa Kemal Atatürk olmak üzere tüm silah arkadaşlarını saygıyla anıyoruz.",
+      "etiketler": "#30Ağustos #ZaferBayramı"
+    },
+    {
+      "slug": "29-ekim",
+      "tarih": "10-29",
+      "ad": "Cumhuriyet Bayramı",
+      "kisa": "29 EKİM",
+      "tur": "kutlama",
+      "metin": "29 Ekim Cumhuriyet Bayramı kutlu olsun.\n\nCumhuriyet, üreten ve öğrenen bir ülkenin temelidir. Nice yıllara.",
+      "etiketler": "#29Ekim #CumhuriyetBayramı"
+    },
+    {
+      "slug": "10-kasim",
+      "tarih": "11-10",
+      "ad": "Mustafa Kemal Atatürk'ü Anma Günü",
+      "kisa": "10 KASIM",
+      "tur": "anma",
+      "metin": "Mustafa Kemal Atatürk'ü, aramızdan ayrılışının yıl dönümünde saygı, sevgi ve özlemle anıyoruz.",
+      "etiketler": ""
+    }
+  ]
+}

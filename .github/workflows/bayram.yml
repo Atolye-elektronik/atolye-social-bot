@@ -1,0 +1,54 @@
+name: Resmi bayram postu (otomatik kuyruk)
+
+# Her sabah bakar: 3 gun icinde bir resmi bayram/anma gunu varsa gorselleri
+# uretir ve postu kuyruga yazar. Post'u yayinlayan publish.yml'dir; bu is
+# yalnizca hazirlik yapar, boylece yayindan once gorup mudahale edebilirsin.
+#
+# Hikaye gorseli de uretilir ama OTOMATIK PAYLASILMAZ - hikayeleri Serdar
+# elle paylasiyor (link etiketi API ile eklenemiyor). Gorsel repoda hazir
+# bekler: posts/media/bayram/
+
+on:
+  schedule:
+    - cron: "0 5 * * *"      # 08:00 TR
+  workflow_dispatch:
+    inputs:
+      tarih:
+        description: "Elle uretim icin YYYY-AA-GG (bos = onumuzdeki 3 gun)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  bayram:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Bagimliliklari kur
+        run: pip install --quiet -r requirements.txt
+
+      - name: Bayram varsa uret ve kuyruga yaz
+        run: |
+          if [ -n "${{ inputs.tarih }}" ]; then
+            python -m tools.bayram_gorsel --tarih "${{ inputs.tarih }}" --post
+          else
+            for i in 0 1 2 3; do
+              gun=$(date -u -d "+$i day" +%Y-%m-%d)
+              python -m tools.bayram_gorsel --tarih "$gun" --post
+            done
+          fi
+
+      - name: Degisiklikleri depoya it
+        run: |
+          git config user.name "atolye-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add posts/ || true
+          git diff --staged --quiet || git commit -m "chore: bayram gorseli ve postu hazirlandi [skip ci]"
+          git pull --rebase --autostash origin main && git push
