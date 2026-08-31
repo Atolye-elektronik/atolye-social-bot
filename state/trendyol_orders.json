@@ -1,189 +1,6 @@
 [
   {
     "shipmentAddress": {
-      "id": 9552239051,
-      "firstName": "asuman",
-      "lastName": "kuzu",
-      "company": "",
-      "address1": "Küçüksu cad.inkilap mah.alyans sok.no:18 reyyan ap.kat.3d.7 ",
-      "address2": "",
-      "city": "İstanbul",
-      "cityCode": 34,
-      "district": "Ümraniye",
-      "districtId": 37,
-      "countyId": 0,
-      "countyName": "",
-      "shortAddress": "",
-      "stateName": "",
-      "addressLines": {
-        "addressLine1": "",
-        "addressLine2": ""
-      },
-      "postalCode": "34000",
-      "countryCode": "TR",
-      "neighborhoodId": 29537,
-      "neighborhood": "İnkılap Mah",
-      "phone": null,
-      "fullAddress": "Küçüksu cad.inkilap mah.alyans sok.no:18 reyyan ap.kat.3d.7     Ümraniye İstanbul",
-      "fullName": "asuman kuzu"
-    },
-    "orderNumber": "11551806545",
-    "orderCountryCode": "TR",
-    "grossAmount": 144.0,
-    "packageGrossAmount": 144.0,
-    "totalDiscount": 7.78,
-    "packageSellerDiscount": 7.78,
-    "totalTyDiscount": 0.0,
-    "packageTyDiscount": 0.0,
-    "packageTotalDiscount": 7.78,
-    "discountDisplays": [
-      {
-        "displayName": "Trendyol Plus'a Özel Fiyat",
-        "discountAmount": 2.74
-      },
-      {
-        "displayName": "Net %5 İndirim",
-        "discountAmount": 5.04
-      }
-    ],
-    "taxNumber": null,
-    "invoiceAddress": {
-      "id": 9552239050,
-      "firstName": "asuman",
-      "lastName": "kuzu",
-      "company": "",
-      "address1": "Küçüksu cad.inkilap mah.alyans sok.no:18 reyyan ap.kat.3d.7 ",
-      "address2": "",
-      "city": "İstanbul",
-      "cityCode": 34,
-      "district": "Ümraniye",
-      "districtId": 37,
-      "countyId": 0,
-      "countyName": "",
-      "shortAddress": "",
-      "stateName": "",
-      "addressLines": {
-        "addressLine1": "",
-        "addressLine2": ""
-      },
-      "postalCode": "34000",
-      "sector": "",
-      "countryCode": "TR",
-      "neighborhoodId": 29537,
-      "neighborhood": "İnkılap Mah",
-      "phone": null,
-      "fullAddress": "Küçüksu cad.inkilap mah.alyans sok.no:18 reyyan ap.kat.3d.7     Ümraniye İstanbul",
-      "fullName": "asuman kuzu"
-    },
-    "customerFirstName": "asuman",
-    "customerEmail": "pf+2b6qkjqm@trendyolmail.com",
-    "customerId": 3079153,
-    "supplierId": 0,
-    "customerLastName": "kuzu",
-    "id": 4114620127,
-    "channelId": 1,
-    "shipmentPackageId": 4114620127,
-    "cargoTrackingNumber": 7270036567979219,
-    "sellerDeliveryMethod": "",
-    "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
-    "lines": [
-      {
-        "quantity": 1,
-        "salesCampaignId": 61,
-        "productSize": "Tek Ebat",
-        "merchantSku": "AETP4056-2",
-        "sku": "2901880000648",
-        "stockCode": "AETP4056-2",
-        "productName": "TP4056 Type-C Li-Ion Pil Şarj Modülü Korumalı - 2 Adet Paket AETP4056-2, one size",
-        "productCode": 1670259202,
-        "contentId": 1670259202,
-        "productOrigin": "CN",
-        "merchantId": 1258869,
-        "sellerId": 1258869,
-        "amount": 144.0,
-        "lineGrossAmount": 144.0,
-        "discount": 7.78,
-        "lineTotalDiscount": 7.78,
-        "lineSellerDiscount": 7.78,
-        "tyDiscount": 0.0,
-        "lineTyDiscount": 0.0,
-        "discountDetails": [
-          {
-            "lineItemPrice": 136.22,
-            "lineItemDiscount": 7.78,
-            "lineItemSellerDiscount": 7.78,
-            "lineItemTyDiscount": 0.0
-          }
-        ],
-        "currencyCode": "TRY",
-        "id": 5891828200,
-        "lineId": 5891828200,
-        "vatBaseAmount": 20.0,
-        "vatRate": 20.0,
-        "barcode": "2901880000648",
-        "orderLineItemStatusName": "Picking",
-        "price": 136.22,
-        "lineUnitPrice": 136.22,
-        "fastDeliveryOptions": [
-          {
-            "type": "FastDelivery"
-          }
-        ],
-        "productCategoryId": 3094,
-        "commission": 2.4,
-        "businessUnit": "Electronic Accessories",
-        "defectiveClaimListingInsight": ""
-      }
-    ],
-    "orderDate": 1788102019743,
-    "identityNumber": "11111111111",
-    "currencyCode": "TRY",
-    "packageHistories": [
-      {
-        "createdDate": 1788091221406,
-        "status": "Awaiting"
-      },
-      {
-        "createdDate": 1788091227312,
-        "status": "Created"
-      },
-      {
-        "createdDate": 1788092125382,
-        "status": "Picking"
-      }
-    ],
-    "shipmentPackageStatus": "Picking",
-    "status": "Picking",
-    "deliveryType": "normal",
-    "timeSlotId": 0,
-    "estimatedDeliveryStartDate": 1788209940000,
-    "estimatedDeliveryEndDate": 1788469140000,
-    "totalPrice": 136.22,
-    "packageTotalPrice": 136.22,
-    "deliveryAddressType": "Shipment",
-    "agreedDeliveryDate": 1788209940000,
-    "fastDelivery": true,
-    "originShipmentDate": 1788091221398,
-    "lastModifiedDate": 1788092125382,
-    "commercial": false,
-    "fastDeliveryType": "FastDelivery",
-    "deliveredByService": false,
-    "warehouseId": 8012721,
-    "invoiceStatus": "NotInvoiced",
-    "invoiceNumber": "",
-    "micro": false,
-    "giftBoxRequested": false,
-    "3pByTrendyol": false,
-    "containsDangerousProduct": false,
-    "isCod": false,
-    "createdBy": "order-creation",
-    "originPackageIds": null,
-    "shipmentNumber": 10810022297,
-    "is4P": false
-  },
-  {
-    "shipmentAddress": {
       "id": 9552307484,
       "firstName": "Mert can",
       "lastName": "Keskin",
@@ -262,10 +79,10 @@
     "id": 4114651905,
     "channelId": 1,
     "shipmentPackageId": 4114651905,
-    "cargoTrackingNumber": 7270036568551292,
+    "cargoTrackingNumber": 7330036598216827,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 2,
@@ -349,7 +166,7 @@
     "agreedDeliveryDate": 1788209940000,
     "fastDelivery": true,
     "originShipmentDate": 1788092026094,
-    "lastModifiedDate": 1788092073485,
+    "lastModifiedDate": 1788153903492,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
@@ -364,6 +181,189 @@
     "createdBy": "order-creation",
     "originPackageIds": null,
     "shipmentNumber": 10810059075,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9552239051,
+      "firstName": "asuman",
+      "lastName": "kuzu",
+      "company": "",
+      "address1": "Küçüksu cad.inkilap mah.alyans sok.no:18 reyyan ap.kat.3d.7 ",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Ümraniye",
+      "districtId": 37,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 29537,
+      "neighborhood": "İnkılap Mah",
+      "phone": null,
+      "fullAddress": "Küçüksu cad.inkilap mah.alyans sok.no:18 reyyan ap.kat.3d.7     Ümraniye İstanbul",
+      "fullName": "asuman kuzu"
+    },
+    "orderNumber": "11551806545",
+    "orderCountryCode": "TR",
+    "grossAmount": 144.0,
+    "packageGrossAmount": 144.0,
+    "totalDiscount": 7.78,
+    "packageSellerDiscount": 7.78,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 7.78,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 2.74
+      },
+      {
+        "displayName": "Net %5 İndirim",
+        "discountAmount": 5.04
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9552239050,
+      "firstName": "asuman",
+      "lastName": "kuzu",
+      "company": "",
+      "address1": "Küçüksu cad.inkilap mah.alyans sok.no:18 reyyan ap.kat.3d.7 ",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Ümraniye",
+      "districtId": 37,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 29537,
+      "neighborhood": "İnkılap Mah",
+      "phone": null,
+      "fullAddress": "Küçüksu cad.inkilap mah.alyans sok.no:18 reyyan ap.kat.3d.7     Ümraniye İstanbul",
+      "fullName": "asuman kuzu"
+    },
+    "customerFirstName": "asuman",
+    "customerEmail": "pf+2b6qkjqm@trendyolmail.com",
+    "customerId": 3079153,
+    "supplierId": 0,
+    "customerLastName": "kuzu",
+    "id": 4114620127,
+    "channelId": 1,
+    "shipmentPackageId": 4114620127,
+    "cargoTrackingNumber": 7330036598211464,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETP4056-2",
+        "sku": "2901880000648",
+        "stockCode": "AETP4056-2",
+        "productName": "TP4056 Type-C Li-Ion Pil Şarj Modülü Korumalı - 2 Adet Paket AETP4056-2, one size",
+        "productCode": 1670259202,
+        "contentId": 1670259202,
+        "productOrigin": "CN",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 144.0,
+        "lineGrossAmount": 144.0,
+        "discount": 7.78,
+        "lineTotalDiscount": 7.78,
+        "lineSellerDiscount": 7.78,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 136.22,
+            "lineItemDiscount": 7.78,
+            "lineItemSellerDiscount": 7.78,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5891828200,
+        "lineId": 5891828200,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901880000648",
+        "orderLineItemStatusName": "Picking",
+        "price": 136.22,
+        "lineUnitPrice": 136.22,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1788102019743,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1788091221406,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1788091227312,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1788092125382,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1788209940000,
+    "estimatedDeliveryEndDate": 1788469140000,
+    "totalPrice": 136.22,
+    "packageTotalPrice": 136.22,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1788209940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1788091221398,
+    "lastModifiedDate": 1788153888598,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10810022297,
     "is4P": false
   },
   {
@@ -446,10 +446,10 @@
     "id": 4113855533,
     "channelId": 1,
     "shipmentPackageId": 4113855533,
-    "cargoTrackingNumber": 7270036553855015,
+    "cargoTrackingNumber": 7330036598197720,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 1,
@@ -527,7 +527,7 @@
     "agreedDeliveryDate": 1788209940000,
     "fastDelivery": true,
     "originShipmentDate": 1788043316056,
-    "lastModifiedDate": 1788073877138,
+    "lastModifiedDate": 1788153867800,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
