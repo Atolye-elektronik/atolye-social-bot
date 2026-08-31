@@ -1,5 +1,5 @@
 {
-  "kontrol": "2026-08-31T22:47:46.169996+00:00",
+  "kontrol": "2026-08-31T23:47:50.523883+00:00",
   "akislar": [
     {
       "dosya": "bayram.yml",
@@ -7,7 +7,7 @@
       "beklenen": "2026-08-31T05:00:00+00:00",
       "son_basarili": "2026-08-31T05:08:51+00:00",
       "son_kosu": "2026-08-31T05:08:51+00:00",
-      "gecikme_dk": 1067,
+      "gecikme_dk": 1127,
       "kacti": false,
       "hatali": false
     },
@@ -17,7 +17,7 @@
       "beklenen": "2026-08-31T01:00:00+00:00",
       "son_basarili": "2026-08-31T01:07:19+00:00",
       "son_kosu": "2026-08-31T01:07:19+00:00",
-      "gecikme_dk": 1307,
+      "gecikme_dk": 1367,
       "kacti": false,
       "hatali": false
     },
@@ -27,7 +27,7 @@
       "beklenen": "2026-08-31T04:30:00+00:00",
       "son_basarili": "2026-08-31T04:36:37+00:00",
       "son_kosu": "2026-08-31T04:36:37+00:00",
-      "gecikme_dk": 1097,
+      "gecikme_dk": 1157,
       "kacti": false,
       "hatali": false
     },
@@ -37,7 +37,7 @@
       "beklenen": "2026-08-31T20:13:00+00:00",
       "son_basarili": "2026-08-31T20:15:29+00:00",
       "son_kosu": "2026-08-31T20:15:29+00:00",
-      "gecikme_dk": 154,
+      "gecikme_dk": 214,
       "kacti": false,
       "hatali": false
     },
@@ -47,7 +47,7 @@
       "beklenen": "2026-08-31T18:37:00+00:00",
       "son_basarili": "2026-08-31T18:39:01+00:00",
       "son_kosu": "2026-08-31T18:39:01+00:00",
-      "gecikme_dk": 250,
+      "gecikme_dk": 310,
       "kacti": false,
       "hatali": false
     },
@@ -57,7 +57,7 @@
       "beklenen": "2026-08-31T17:30:00+00:00",
       "son_basarili": "2026-08-31T17:33:14+00:00",
       "son_kosu": "2026-08-31T17:33:14+00:00",
-      "gecikme_dk": 317,
+      "gecikme_dk": 377,
       "kacti": false,
       "hatali": false
     },
@@ -67,17 +67,17 @@
       "beklenen": "2026-08-01T04:00:00+00:00",
       "son_basarili": "2026-08-27T15:24:39+00:00",
       "son_kosu": "2026-08-27T15:24:39+00:00",
-      "gecikme_dk": 44327,
+      "gecikme_dk": 44387,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "tiktok-zamanla.yml",
       "ad": "TikTok kuyruk zamanlama",
-      "beklenen": "2026-08-27T17:23:00+00:00",
+      "beklenen": "2026-08-31T17:23:00+00:00",
       "son_basarili": "2026-08-31T17:29:45+00:00",
       "son_kosu": "2026-08-31T17:29:45+00:00",
-      "gecikme_dk": 6084,
+      "gecikme_dk": 384,
       "kacti": false,
       "hatali": false
     }
