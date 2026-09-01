@@ -1,1 +1,188 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9565568651,
+      "firstName": "Emine",
+      "lastName": "sünbül",
+      "company": "",
+      "address1": "Bahçeli evler mahallesi taşlı yol caddesi 222.sokak ab5-12 daire 22 kat 5",
+      "address2": "",
+      "city": "Şırnak",
+      "cityCode": 73,
+      "district": "Merkez",
+      "districtId": 931,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "73000",
+      "countryCode": "TR",
+      "neighborhoodId": 52069,
+      "neighborhood": "Bahçelievler Mah",
+      "phone": null,
+      "fullAddress": "Bahçeli evler mahallesi taşlı yol caddesi 222.sokak ab5-12 daire 22 kat 5     Merkez Şırnak",
+      "fullName": "Emine sünbül"
+    },
+    "orderNumber": "11559435492",
+    "orderCountryCode": "TR",
+    "grossAmount": 177.0,
+    "packageGrossAmount": 177.0,
+    "totalDiscount": 24.56,
+    "packageSellerDiscount": 24.56,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 24.56,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 3.36
+      },
+      {
+        "displayName": "Net %5 İndirim",
+        "discountAmount": 6.2
+      },
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9565568650,
+      "firstName": "Emine",
+      "lastName": "sünbül",
+      "company": "",
+      "address1": "Bahçeli evler mahallesi taşlı yol caddesi 222.sokak ab5-12 daire 22 kat 5",
+      "address2": "",
+      "city": "Şırnak",
+      "cityCode": 73,
+      "district": "Merkez",
+      "districtId": 931,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "73000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 52069,
+      "neighborhood": "Bahçelievler Mah",
+      "phone": null,
+      "fullAddress": "Bahçeli evler mahallesi taşlı yol caddesi 222.sokak ab5-12 daire 22 kat 5     Merkez Şırnak",
+      "fullName": "Emine sünbül"
+    },
+    "customerFirstName": "Emine",
+    "customerEmail": "pf+vopvy6ko@trendyolmail.com",
+    "customerId": 198420005,
+    "supplierId": 0,
+    "customerLastName": "sünbül",
+    "id": 4120808877,
+    "channelId": 1,
+    "shipmentPackageId": 4120808877,
+    "cargoTrackingNumber": 7270036690374257,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AERC522RFID",
+        "sku": "TYBDRMWTF231NCAS78",
+        "stockCode": "AERC522RFID",
+        "productName": "Rc522 13,56mhz Rfıd Modülü - Kart Ve Anahtarlık Kiti - Nfc Arduino Rfid Manyetik Kart Okuyucu RC522 Modül, one size",
+        "productCode": 182537025,
+        "contentId": 182537025,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 177.0,
+        "lineGrossAmount": 177.0,
+        "discount": 24.56,
+        "lineTotalDiscount": 24.56,
+        "lineSellerDiscount": 24.56,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemPrice": 152.44,
+            "lineItemDiscount": 24.56,
+            "lineItemSellerDiscount": 24.56,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5900620608,
+        "lineId": 5900620608,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "TYBDRMWTF231NCAS78",
+        "orderLineItemStatusName": "Picking",
+        "price": 152.44,
+        "lineUnitPrice": 152.44,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Computer & Tablet",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1788302097635,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1788291319363,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1788291323980,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1788291420196,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1788382740000,
+    "estimatedDeliveryEndDate": 1788641940000,
+    "totalPrice": 152.44,
+    "packageTotalPrice": 152.44,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1788382740000,
+    "fastDelivery": true,
+    "originShipmentDate": 1788291319354,
+    "lastModifiedDate": 1788291420196,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10817237226,
+    "is4P": false
+  }
+]
