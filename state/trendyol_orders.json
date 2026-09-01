@@ -79,10 +79,10 @@
     "id": 4119660045,
     "channelId": 1,
     "shipmentPackageId": 4119660045,
-    "cargoTrackingNumber": 7270036668879708,
+    "cargoTrackingNumber": 7330036671493022,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 1,
@@ -117,7 +117,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "ATELJKDE20401",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 132.3,
         "lineUnitPrice": 132.3,
         "fastDeliveryOptions": [
@@ -142,10 +142,14 @@
       {
         "createdDate": 1788264187146,
         "status": "Created"
+      },
+      {
+        "createdDate": 1788267161621,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1788382740000,
@@ -156,7 +160,7 @@
     "agreedDeliveryDate": 1788382740000,
     "fastDelivery": true,
     "originShipmentDate": 1788264182199,
-    "lastModifiedDate": 1788264187146,
+    "lastModifiedDate": 1788267171721,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
