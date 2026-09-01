@@ -3,10 +3,16 @@ name: TikTok kuyruk zamanlama
 on:
   schedule:
     - cron: "23 17 * * 1,4"   # Pzt+Per 20:23 TR — her kosu 7 gunu zamanlar
+    - cron: "15 5 * * *"      # Her gun 08:15 TR — analitigi state'e kaydet
   workflow_dispatch:
     inputs:
+      gorev:
+        description: "Hangi is calissin"
+        type: choice
+        default: zamanla
+        options: [zamanla, analitik]
       gun:
-        description: "Kac gun ilerisi zamanlansin"
+        description: "zamanla: kac gun ilerisi"
         type: string
         default: "7"
 
@@ -41,14 +47,29 @@ jobs:
         run: |
           openssl enc -d -aes-256-cbc -pbkdf2 -pass env:CEREZ_PAROLASI \
             -in ci/tiktok-cerez.enc -out .tiktok_studio_state.json
+      - name: Gorevi sec
+        id: sec
+        run: |
+          if [ "${{ github.event.schedule }}" = "15 5 * * *" ] || [ "${{ inputs.gorev }}" = "analitik" ]; then
+            echo "gorev=analitik" >> "$GITHUB_OUTPUT"
+          else
+            echo "gorev=zamanla" >> "$GITHUB_OUTPUT"
+          fi
       - name: Kuyrugu zamanla
+        if: steps.sec.outputs.gorev == 'zamanla'
         env:
           PYTHONUNBUFFERED: "1"
           TIKTOK_STUDIO_YAVASLIK: "1.5"
         run: python -m src.tiktok_studio zamanla --gun "${{ inputs.gun || '7' }}"
-      - name: Zamanlama kaydini commit et
+      - name: Analitigi kaydet
+        if: steps.sec.outputs.gorev == 'analitik'
+        env:
+          PYTHONUNBUFFERED: "1"
+          TIKTOK_STUDIO_YAVASLIK: "1.5"
+        run: python -m src.tiktok_studio analitik
+      - name: Kaydi commit et
         if: always()
-        run: bash tools/state_it.sh "tiktok zamanlama kaydi guncellendi"
+        run: bash tools/state_it.sh "tiktok ${{ steps.sec.outputs.gorev }} kaydi guncellendi"
       - name: Hata dokumlerini yukle
         if: failure()
         uses: actions/upload-artifact@v4

@@ -66,14 +66,14 @@ SENARYOLAR = [
         "cozum_etiket": "İŞTE ÇÖZÜM",
         "kapanis_baslik": ["İlk robotuna", "bugün başlasın"],
         "kapanis_alt": "Kutudan çıkan her şey kurulum için hazır",
-        "kanca_caption": "Ekran süresi tartışmalarına son 🤖",
+        "kanca_caption": "Ekran süresi tartışmasına son 🤖 okul projesi için robot araba kiti",
     },
     {
         "anahtar": ["deney", "başlangıç", "baslangic", "temel"],
         "kanca": {
-            "etiket": "İTİRAF ET",
-            "baslik": "Elektroniğe başlamak istiyorsun ama...",
-            "metin": ["Nereden başlayacağını bilmiyorsun, değil mi?"],
+            "etiket": "ÖDEV Mİ VERİLDİ?",
+            "baslik": "Fen ya da proje ödevi mi verildi?",
+            "metin": ["Devre kurmak zor değil — doğru parçalar tek kutudan çıkınca."],
         },
         "dert": {
             "etiket": "HEP AYNI HİKAYE",
@@ -94,14 +94,14 @@ SENARYOLAR = [
         "cozum_etiket": "SENİ BEKLEYEN KUTU",
         "kapanis_baslik": ["İlk devreni", "bu hafta kur"],
         "kapanis_alt": "Başlamak için tek ihtiyacın bu set",
-        "kanca_caption": "Elektroniğe başlamanın en kolay yolu ⚡",
+        "kanca_caption": "Fen ve proje ödevlerinde en çok aranan deney seti ⚡",
     },
     {
         "anahtar": ["arduino", "proje", "kit"],
         "kanca": {
-            "etiket": "MAKER'LAR BURAYA",
-            "baslik": "Kafanda bir proje fikri var, değil mi?",
-            "metin": ["Aylardır \"bir gün yapacağım\" diyorsun."],
+            "etiket": "HERKES BUNU SORUYOR",
+            "baslik": "Arduino'ya nereden başlanır?",
+            "metin": ["Aylardır \"bir gün öğreneceğim\" diyorsun — cevap sandığından basit."],
         },
         "dert": {
             "etiket": "SORUN ŞU",
@@ -122,7 +122,7 @@ SENARYOLAR = [
         "cozum_etiket": "TEK KUTUDA HEPSİ",
         "kapanis_baslik": ["Projeni", "hayata geçir"],
         "kapanis_alt": "Fikrin hazırsa malzemen de hazır",
-        "kanca_caption": "O projeye başlamanın tam zamanı 🛠️",
+        "kanca_caption": "Arduino'ya nereden başlanır? Cevabı bu kutuda 🛠️",
     },
     {
         "anahtar": ["tornavida", "pense", "yankeski", "kargaburun", "havya", "takım", "alet", "çanta"],
@@ -156,7 +156,7 @@ SENARYOLAR = [
         "anahtar": ["sensör", "sensor", "modül", "modul", "motor", "lcd", "rfid", "buzzer", "röle", "role"],
         "kanca": {
             "etiket": "PROJEN Mİ YARIM KALDI?",
-            "baslik": "Tek bir parça yüzünden proje bekliyor.",
+            "baslik": "Projen tek parça yüzünden mi duruyor?",
             "metin": ["O modül olmadan devre tamamlanmıyor, biliyoruz."],
         },
         "dert": {
@@ -183,9 +183,9 @@ SENARYOLAR = [
     {
         "anahtar": ["meslek", "lise", "temrin", "mesem"],
         "kanca": {
-            "etiket": "ATÖLYE DERSİ YAKLAŞIYOR",
-            "baslik": "Malzeme listesi elinde, kafan karışık mı?",
-            "metin": ["Dönem başı telaşında eksik malzemeyle derse girmek istemezsin."],
+            "etiket": "OKULA DÖNÜŞ",
+            "baslik": "Okul listesindeki her şey tek pakette olsa?",
+            "metin": ["Dönem başı telaşında listeyle mağaza mağaza gezmek istemezsin."],
         },
         "dert": {
             "etiket": "BİLİYORUZ",
@@ -206,7 +206,7 @@ SENARYOLAR = [
         "cozum_etiket": "DERSE HAZIR SET",
         "kapanis_baslik": ["Döneme", "hazır başla"],
         "kapanis_alt": "Müfredata uygun, eksiksiz içerik",
-        "kanca_caption": "Atölye dersine tam hazırlık 🎓",
+        "kanca_caption": "Okul malzeme listesi tek pakette 🎒 meslek lisesi atölye seti",
     },
 ]
 

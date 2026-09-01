@@ -64,6 +64,10 @@ def _ipucu(bicim: str, ad: str) -> str:
 
 
 FONT_DIRS = [
+    # Marka fontlari repodan gelir (assets/fonts, OFL lisansli) — her
+    # ortamda ayni gorunum. Bulunamazsa asagidaki sistem fontlarina duser.
+    str(pathlib.Path(__file__).resolve().parent.parent / "assets" / "fonts"),
+    "assets/fonts",
     "/usr/share/fonts/truetype/dejavu",
     "/usr/share/fonts/dejavu",
     # Windows'ta DejaVu yok; slide'lari yerelde uretebilmek icin sistem
@@ -72,8 +76,11 @@ FONT_DIRS = [
     r"C:\Windows\Fonts",
 ]
 
-# DejaVu bulunamazsa hangi sistem yazi tipi yerine gecsin.
+# Birincil font bulunamazsa hangi yazi tipi yerine gecsin.
 FONT_KARSILIK = {
+    "Montserrat-ExtraBold.ttf": ("DejaVuSans-Bold.ttf", "arialbd.ttf", "segoeuib.ttf", "calibrib.ttf"),
+    "Montserrat-Medium.ttf": ("DejaVuSans.ttf", "arial.ttf", "segoeui.ttf", "calibri.ttf"),
+    "JetBrainsMono-Bold.ttf": ("DejaVuSansMono-Bold.ttf", "consolab.ttf", "cour.ttf", "arialbd.ttf"),
     "DejaVuSans-Bold.ttf": ("arialbd.ttf", "segoeuib.ttf", "calibrib.ttf"),
     "DejaVuSans.ttf": ("arial.ttf", "segoeui.ttf", "calibri.ttf"),
     "DejaVuSansMono-Bold.ttf": ("consolab.ttf", "cour.ttf", "arialbd.ttf"),
@@ -96,15 +103,15 @@ def _font(ad: str, size: int) -> ImageFont.FreeTypeFont:
 
 
 def _bold(size: int) -> ImageFont.FreeTypeFont:
-    return _font("DejaVuSans-Bold.ttf", size)
+    return _font("Montserrat-ExtraBold.ttf", size)
 
 
 def _normal(size: int) -> ImageFont.FreeTypeFont:
-    return _font("DejaVuSans.ttf", size)
+    return _font("Montserrat-Medium.ttf", size)
 
 
 def _mono(size: int) -> ImageFont.FreeTypeFont:
-    f = _font("DejaVuSansMono-Bold.ttf", size)
+    f = _font("JetBrainsMono-Bold.ttf", size)
     return f
 
 
