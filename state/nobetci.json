@@ -1,5 +1,5 @@
 {
-  "kontrol": "2026-09-01T03:50:40.902194+00:00",
+  "kontrol": "2026-09-01T04:49:43.565790+00:00",
   "akislar": [
     {
       "dosya": "bayram.yml",
@@ -7,7 +7,7 @@
       "beklenen": "2026-08-31T05:00:00+00:00",
       "son_basarili": "2026-08-31T05:08:51+00:00",
       "son_kosu": "2026-08-31T05:08:51+00:00",
-      "gecikme_dk": 1370,
+      "gecikme_dk": 1429,
       "kacti": false,
       "hatali": false
     },
@@ -17,7 +17,7 @@
       "beklenen": "2026-08-31T01:00:00+00:00",
       "son_basarili": "2026-09-01T01:12:45+00:00",
       "son_kosu": "2026-09-01T01:12:45+00:00",
-      "gecikme_dk": 1610,
+      "gecikme_dk": 1669,
       "kacti": false,
       "hatali": false
     },
@@ -27,7 +27,7 @@
       "beklenen": "2026-08-31T04:30:00+00:00",
       "son_basarili": "2026-08-31T04:36:37+00:00",
       "son_kosu": "2026-08-31T04:36:37+00:00",
-      "gecikme_dk": 1400,
+      "gecikme_dk": 1459,
       "kacti": false,
       "hatali": false
     },
@@ -37,7 +37,7 @@
       "beklenen": "2026-08-31T20:13:00+00:00",
       "son_basarili": "2026-08-31T20:15:29+00:00",
       "son_kosu": "2026-08-31T20:15:29+00:00",
-      "gecikme_dk": 457,
+      "gecikme_dk": 516,
       "kacti": false,
       "hatali": false
     },
@@ -47,7 +47,7 @@
       "beklenen": "2026-08-31T18:37:00+00:00",
       "son_basarili": "2026-08-31T18:39:01+00:00",
       "son_kosu": "2026-08-31T18:39:01+00:00",
-      "gecikme_dk": 553,
+      "gecikme_dk": 612,
       "kacti": false,
       "hatali": false
     },
@@ -57,7 +57,7 @@
       "beklenen": "2026-08-31T17:30:00+00:00",
       "son_basarili": "2026-08-31T17:33:14+00:00",
       "son_kosu": "2026-08-31T17:33:14+00:00",
-      "gecikme_dk": 620,
+      "gecikme_dk": 679,
       "kacti": false,
       "hatali": false
     },
@@ -65,9 +65,9 @@
       "dosya": "threads-token.yml",
       "ad": "Threads token yenile",
       "beklenen": "2026-08-01T04:00:00+00:00",
-      "son_basarili": "2026-08-27T15:24:39+00:00",
-      "son_kosu": "2026-08-27T15:24:39+00:00",
-      "gecikme_dk": 44630,
+      "son_basarili": "2026-09-01T04:03:16+00:00",
+      "son_kosu": "2026-09-01T04:03:16+00:00",
+      "gecikme_dk": 44689,
       "kacti": false,
       "hatali": false
     },
@@ -77,7 +77,7 @@
       "beklenen": "2026-08-31T17:23:00+00:00",
       "son_basarili": "2026-08-31T17:29:45+00:00",
       "son_kosu": "2026-08-31T17:29:45+00:00",
-      "gecikme_dk": 627,
+      "gecikme_dk": 686,
       "kacti": false,
       "hatali": false
     }
