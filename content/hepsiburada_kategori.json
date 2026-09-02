@@ -296,5 +296,29 @@
     "AEMOTPRV-10": "HBCV0000HXKWT2",
     "AETEMELSET": "HBCV0000HXKRVJ",
     "AEDCM3V-1": "HBCV0000HXKHJZ"
+  },
+  "Elektronik Komponent": {
+    "_yol": "Anne / Bebek / Oyuncak > Oyuncak > Eğitici ve Öğretici Oyun > Bilim Seti",
+    "categoryId": 23024292,
+    "varsayilan_kg": 1,
+    "desi": 1,
+    "_not": "01.09.2026 eklendi. Sarj seti icin. Krokodil kablolar pazaryerine konmuyor (sabit kargo+hizmet gideri kari yiyor).",
+    "sabit_ozellikler": {
+      "yas_araligi": "8+ Yaş"
+    },
+    "desi_override": {},
+    "ad_override": {
+      "AESARJKT1": "Şarj Edilebilir Güç Seti - TP4056 Type-C Şarj Modülü + 18650 Tekli Pil Yuvası"
+    },
+    "stok_override": {
+      "AESARJKT1": 25
+    },
+    "fiyat_override": {
+      "AESARJKT1": 130
+    },
+    "sku_atla": [
+      "AEKRK5",
+      "AEKRK10"
+    ]
   }
 }

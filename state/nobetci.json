@@ -1,13 +1,13 @@
 {
-  "kontrol": "2026-09-02T05:50:22.499897+00:00",
+  "kontrol": "2026-09-01T23:25:01.671231+00:00",
   "akislar": [
     {
       "dosya": "bayram.yml",
       "ad": "Resmi bayram postu (otomatik kuyruk)",
       "beklenen": "2026-09-01T05:00:00+00:00",
-      "son_basarili": "2026-09-02T05:14:58+00:00",
-      "son_kosu": "2026-09-02T05:14:58+00:00",
-      "gecikme_dk": 1490,
+      "son_basarili": "2026-09-01T05:15:15+00:00",
+      "son_kosu": "2026-09-01T05:15:15+00:00",
+      "gecikme_dk": 1105,
       "kacti": false,
       "hatali": false
     },
@@ -15,9 +15,9 @@
       "dosya": "gitlab-yedek.yml",
       "ad": "GitLab yedek aynasi",
       "beklenen": "2026-09-01T01:00:00+00:00",
-      "son_basarili": "2026-09-02T01:11:46+00:00",
-      "son_kosu": "2026-09-02T01:11:46+00:00",
-      "gecikme_dk": 1730,
+      "son_basarili": "2026-09-01T01:12:45+00:00",
+      "son_kosu": "2026-09-01T01:12:45+00:00",
+      "gecikme_dk": 1345,
       "kacti": false,
       "hatali": false
     },
@@ -27,7 +27,7 @@
       "beklenen": "2026-08-31T04:30:00+00:00",
       "son_basarili": "2026-08-31T04:36:37+00:00",
       "son_kosu": "2026-08-31T04:36:37+00:00",
-      "gecikme_dk": 2960,
+      "gecikme_dk": 2575,
       "kacti": false,
       "hatali": false
     },
@@ -37,7 +37,7 @@
       "beklenen": "2026-09-01T20:13:00+00:00",
       "son_basarili": "2026-09-01T20:21:01+00:00",
       "son_kosu": "2026-09-01T20:21:01+00:00",
-      "gecikme_dk": 577,
+      "gecikme_dk": 192,
       "kacti": false,
       "hatali": false
     },
@@ -47,7 +47,7 @@
       "beklenen": "2026-09-01T18:37:00+00:00",
       "son_basarili": "2026-09-01T18:44:56+00:00",
       "son_kosu": "2026-09-01T18:44:56+00:00",
-      "gecikme_dk": 673,
+      "gecikme_dk": 288,
       "kacti": false,
       "hatali": false
     },
@@ -57,17 +57,17 @@
       "beklenen": "2026-09-01T17:30:00+00:00",
       "son_basarili": "2026-09-01T17:34:45+00:00",
       "son_kosu": "2026-09-01T17:34:45+00:00",
-      "gecikme_dk": 740,
+      "gecikme_dk": 355,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "threads-token.yml",
       "ad": "Threads token yenile",
-      "beklenen": "2026-09-01T04:00:00+00:00",
+      "beklenen": "2026-08-01T04:00:00+00:00",
       "son_basarili": "2026-09-01T04:03:16+00:00",
       "son_kosu": "2026-09-01T04:03:16+00:00",
-      "gecikme_dk": 1550,
+      "gecikme_dk": 45805,
       "kacti": false,
       "hatali": false
     },
@@ -75,9 +75,9 @@
       "dosya": "tiktok-zamanla.yml",
       "ad": "TikTok kuyruk zamanlama",
       "beklenen": "2026-09-01T05:15:00+00:00",
-      "son_basarili": "2026-09-02T05:30:22+00:00",
-      "son_kosu": "2026-09-02T05:30:22+00:00",
-      "gecikme_dk": 1475,
+      "son_basarili": "2026-09-01T11:28:35+00:00",
+      "son_kosu": "2026-09-01T11:28:35+00:00",
+      "gecikme_dk": 1090,
       "kacti": false,
       "hatali": false
     }
