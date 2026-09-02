@@ -335,6 +335,66 @@
         "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/mini-yankeski-3lu-2.jpg",
         "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/mini-yankeski-3lu-3.jpg"
       ]
+    },
+    {
+      "stokKodu": "AEKRK5",
+      "modelKodu": "AEKRK5STD",
+      "barkod": "2903160780127",
+      "ad": "Krokodil Kablo Seti 5'li - Timsah Ağızlı Bağlantı Kablosu Deney Ölçüm",
+      "aciklama": "<p>Devre denemelerinin en pratik kablosu. İki ucundaki timsah ağzı klipsler sayesinde lehim yapmadan, tek hareketle bağlantı kurarsınız; ölçüm alırken elleriniz serbest kalır.</p><ul>\n<li>5 adet krokodil (timsah ağızlı) kablo</li>\n<li>Farklı renklerde — kutup ve hat takibi kolay</li>\n<li>İki ucu da izoleli timsah klips</li>\n<li>Esnek bakır iletken, yaklaşık 50 cm uzunluk</li>\n</ul><p>Fen ve elektrik deneylerinde, multimetre ile ölçümde, breadboard üzerinde geçici bağlantılarda, pil ve motor denemelerinde kullanılır.</p>",
+      "fiyat": 169,
+      "stok": 5,
+      "desi": 1,
+      "gorseller": [
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/krokodil-5li-1.jpg",
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/krokodil-5li-2.jpg",
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/krokodil-1.jpg"
+      ]
+    },
+    {
+      "stokKodu": "AEKRK10",
+      "modelKodu": "AEKRK10STD",
+      "barkod": "2900655505074",
+      "ad": "Krokodil Kablo Seti 10'lu - Timsah Ağızlı Bağlantı Kablosu Atölye Paketi",
+      "aciklama": "<p>Sınıf ve atölye çalışmaları için 10'lu ekonomik paket. Timsah ağzı klipsler sayesinde lehim yapmadan bağlantı kurar, birden fazla devreyi aynı anda deneyebilirsiniz.</p><ul>\n<li>10 adet krokodil (timsah ağızlı) kablo</li>\n<li>Farklı renklerde — kutup ve hat takibi kolay</li>\n<li>İki ucu da izoleli timsah klips</li>\n<li>Esnek bakır iletken, yaklaşık 50 cm uzunluk</li>\n</ul><p>Grup çalışması yapan sınıflar, atölye dersleri ve laboratuvarlar için idealdir.</p>",
+      "fiyat": 249,
+      "stok": 3,
+      "desi": 1,
+      "gorseller": [
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/krokodil-10lu-1.jpg",
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/krokodil-10lu-2.jpg",
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/krokodil-3.jpg"
+      ]
+    },
+    {
+      "stokKodu": "AEPY18650T5",
+      "modelKodu": "AEPY18650T5STD",
+      "barkod": "2903501015475",
+      "ad": "18650 Li-on Pil Yuvası Tekli 5'li Paket - 3.7V Kablolu Batarya Yuvası",
+      "aciklama": "<p>Sınıf, atölye ve çoklu proje için 5'li ekonomik paket. Her öğrenci kendi devresine şarj edilebilir güç kaynağı kurar; seri bağlayarak 7.4V veya 11.1V elde edilebilir.</p><ul>\n<li>5 adet tekli 18650 Li-on pil yuvası</li>\n<li>Çıkış: her biri 3.7V (tek hücre)</li>\n<li>Kırmızı (+) ve siyah (-) lehimli besleme kablosu</li>\n<li>ABS plastik gövde, yaylı metal kontak</li>\n</ul><p>Robot yarışması takımlarında, sınıf projelerinde ve TP4056 modülleriyle şarjlı güç ünitesi kurmakta kullanılır. Piller ürüne dahil değildir.</p>",
+      "fiyat": 179,
+      "stok": 4,
+      "desi": 1,
+      "gorseller": [
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/18650-5li-1.jpg",
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/18650-5li-2.jpg",
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/18650-5li-3.jpg"
+      ]
+    },
+    {
+      "stokKodu": "AEPY18650T10",
+      "modelKodu": "AEPY18650T10STD",
+      "barkod": "2903637324434",
+      "ad": "18650 Li-on Pil Yuvası Tekli 10'lu Paket - 3.7V Kablolu Sınıf Seti",
+      "aciklama": "<p>Sınıf, atölye ve robot yarışması takımları için en ekonomik paket. 10 adet tekli 18650 yuvası ile adet başına maliyet ciddi biçimde düşer.</p><ul>\n<li>10 adet tekli 18650 Li-on pil yuvası</li>\n<li>Çıkış: her biri 3.7V (tek hücre)</li>\n<li>Kırmızı (+) ve siyah (-) lehimli besleme kablosu</li>\n<li>ABS plastik gövde, yaylı metal kontak</li>\n<li>Seri bağlanarak 7.4V / 11.1V / 14.8V yapılabilir</li>\n</ul><p>Meslek lisesi atölyeleri ve sınıfça yapılan projeler için uygundur. Piller ürüne dahil değildir.</p>",
+      "fiyat": 279,
+      "stok": 2,
+      "desi": 1,
+      "gorseller": [
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/18650-10lu-1.jpg",
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/18650-10lu-2.jpg",
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/18650-tekli-1.jpg"
+      ]
     }
   ],
   "markaId": 2967081,
