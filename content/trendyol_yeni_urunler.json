@@ -395,6 +395,21 @@
         "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/18650-10lu-2.jpg",
         "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/18650-tekli-1.jpg"
       ]
+    },
+    {
+      "stokKodu": "AESARJKT1",
+      "modelKodu": "AESARJKT1STD",
+      "barkod": "2901325169558",
+      "ad": "Şarj Edilebilir Güç Seti - TP4056 Type-C Şarj Modülü + 18650 Tekli Pil Yuvası",
+      "aciklama": "<p>Tek kullanımlık pillere veda! Bu ikili set, projenize şarj edilebilir güç eklemenin en ekonomik yoludur: pili yuvaya takın, TP4056 modülünü bağlayın, telefon şarj kablonuzla doldurun.</p><p><strong>Sette neler var?</strong></p><ul>\n<li>1 adet TP4056 Type-C Li-on / Li-Po şarj modülü (koruma devreli)</li>\n<li>1 adet tekli 18650 pil yuvası (kablolu)</li>\n</ul><p><strong>Ürün özellikleri</strong></p><ul>\n<li>Şarj girişi: USB Type-C (5V)</li>\n<li>Şarj akımı: 1A, otomatik kesme</li>\n<li>LED gösterge: şarj oluyor / doldu</li>\n<li>Çıkış: 3.7V</li>\n</ul><p>Robot arabalar, taşınabilir devreler, Arduino ve okul projeleri için uygundur. 18650 pil ürüne dahil değildir.</p>",
+      "fiyat": 130,
+      "stok": 10,
+      "desi": 1,
+      "gorseller": [
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/sarj-seti-1.jpg",
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/tp4056-1.jpg",
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/sarj-seti-3.jpg"
+      ]
     }
   ],
   "markaId": 2967081,
