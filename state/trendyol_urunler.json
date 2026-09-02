@@ -78,5 +78,9 @@
   "AETP4056-2": {
     "barkod": "2901880000648",
     "batchRequestId": "a70c28d8-57fe-4401-befc-d1b486305dea-1788127192"
+  },
+  "AEMYNK3": {
+    "barkod": "2901613165361",
+    "batchRequestId": "d4369fa3-1d10-4cda-ab29-4d913d7d2e23-1788935930"
   }
 }

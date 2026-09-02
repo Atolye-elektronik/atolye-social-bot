@@ -313,6 +313,28 @@
       "aciklama": "<p><strong>2 adet</strong> TP4056 Type-C korumalı Li-Ion/Li-Po şarj devresi. 18650 ve tek hücreli 3.7V pillerin güvenli şarjı için; aşırı şarj/deşarj koruması dahildir.</p><ul><li>Giriş: Type-C 5V · Şarj akımı: 1A</li><li>Koruma entegreli (DW01A + FS8205A)</li><li>Projelerde kalıcı kullanım için 2'li paket</li></ul>",
       "ad": "TP4056 Type-C Li-Ion Pil Şarj Modülü Korumalı - 2 Adet Paket",
       "desi": 1
+    },
+    {
+      "stokKodu": "AEMYNK3",
+      "modelKodu": "AEMYNK3STD",
+      "barkod": "2901613165361",
+      "ad": "Mini Yankeski 3'lü Set - Elektronikçi Tipi Dip Yankeski Hassas Kesim",
+      "aciklama": "<p>Lehimden sonra baskı devrenin altında kalan fazla bacakları dibinden, tertemiz keser. Standart yankeskilerin giremediği dar alanlarda çalışır.</p><ul>\n<li>3 adet mini dip yankeski (elektronikçi tipi)</li>\n<li>Sertleştirilmiş çelik ağız — ince bakır tel, direnç ve kondansatör bacağı</li>\n<li>Yaylı mekanizma: bırakınca kendiliğinden açılır, tek elle çalışır</li>\n<li>Kaymayan mavi PVC sap</li>\n</ul><p>Atölye, sınıf ve elektronik laboratuvarları için ekonomik 3'lü paket. Lehim sonrası bacak kesimi, jumper kablo hazırlama, plastik bağcık ve ince tel kesiminde kullanılır.</p>",
+      "fiyat": 349,
+      "stok": 5,
+      "desi": 1,
+      "kategoriId": 2504,
+      "ozellikler": [
+        {
+          "attributeId": 1192,
+          "attributeValueId": 10617300
+        }
+      ],
+      "gorseller": [
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/mini-yankeski-3lu-1.jpg",
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/mini-yankeski-3lu-2.jpg",
+        "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun/mini-yankeski-3lu-3.jpg"
+      ]
     }
   ],
   "markaId": 2967081,
