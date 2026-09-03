@@ -579,7 +579,22 @@
       "id": "studio:2026-09-04 18:00"
     }
   },
-  "2026-09-05-video-3d-arduino-46": {},
-  "2026-09-06-video-kurgu-is-dosyasi": {},
-  "2026-09-07-video-3d-multimetre": {}
+  "2026-09-05-video-3d-arduino-46": {
+    "tiktok_studio": {
+      "at": "2026-09-03T05:18:35+00:00",
+      "id": "studio:2026-09-05 20:00"
+    }
+  },
+  "2026-09-06-video-kurgu-is-dosyasi": {
+    "tiktok_studio": {
+      "at": "2026-09-03T05:43:20+00:00",
+      "id": "studio:2026-09-06 20:00"
+    }
+  },
+  "2026-09-07-video-3d-multimetre": {
+    "tiktok_studio": {
+      "at": "2026-09-03T06:08:05+00:00",
+      "id": "studio:2026-09-07 20:00"
+    }
+  }
 }
