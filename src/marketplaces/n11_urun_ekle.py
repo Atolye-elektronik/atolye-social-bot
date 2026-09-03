@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import n11_client as nc  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-URUN_DOSYASI = ROOT / "content" / "trendyol_yeni_urunler.json"
+URUN_DOSYASI = ROOT / "content" / "n11_urunler.json"
 N11_EK = ROOT / "content" / "n11_ek_bilgi.json"   # sku -> {kategoriId, ozellikler}
 KAYIT = ROOT / "state" / "n11_urunler.json"
 
@@ -69,37 +69,44 @@ def alt(kategori_id: str):
     print(r.text[:2000])
 
 
-def ozellik(kategori_id: str):
+def ozellik(kategori_id: str, sadece_zorunlu: bool = False):
     r = nc.get(f"/cdn/category/{kategori_id}/attribute")
     if r.status_code != 200:
-        print("HTTP", r.status_code, r.text[:400]); return
-    for a in (r.json() or {}).get("categoryAttributes", r.json() if isinstance(r.json(), list) else []):
-        zor = a.get("mandatory", a.get("required"))
-        print(f"  attr {a.get('id')} {a.get('name'):<28} zorunlu={zor} "
-              f"degerler={[(v.get('id'), v.get('name')) for v in (a.get('attributeValues') or [])][:6]}")
+        print("HTTP", r.status_code, r.text[:400]); return []
+    d = r.json()
+    liste = d.get("categoryAttributes", []) if isinstance(d, dict) else d
+    cikti = []
+    for a in liste:
+        zor = a.get("isMandatory")
+        if sadece_zorunlu and not zor:
+            continue
+        cikti.append(a)
+        deg = [(v.get("id"), v.get("value")) for v in (a.get("attributeValues") or [])][:5]
+        print(f"  attr {a.get('attributeId')} {str(a.get('attributeName')):<26} "
+              f"zorunlu={zor} varyant={a.get('isVariant')} serbest={a.get('isCustomValue')} deg={deg}")
+    return cikti
 
 
-def payload_kur(cfg, ek) -> dict:
-    urunler = []
-    for u in cfg["urunler"]:
-        e = ek.get(u["stokKodu"], {})
-        urunler.append({
+def payload_kur(urunler, sablon="Standart", marka="Atölye Elektronik") -> dict:
+    skus = []
+    for u in urunler:
+        skus.append({
             "title": u["ad"][:100],
             "description": u["aciklama"],
-            "categoryId": e.get("kategoriId"),
+            "categoryId": u["kategoriId"],
             "currencyType": "TL",
-            "productMainId": u["modelKodu"],
+            "productMainId": u["stokKodu"],
             "preparingDay": 1,
-            "shipmentTemplate": e.get("kargoSablonu", "Standart"),
+            "shipmentTemplate": sablon,
             "stockCode": u["stokKodu"],
             "barcode": u["barkod"],
             "quantity": u["stok"],
-            "salePrice": float(u["fiyat"]),
-            "listPrice": float(u["fiyat"]),
-            "attributes": e.get("ozellikler", []),
-            "images": [{"url": g, "order": i + 1} for i, g in enumerate(u["gorseller"])],
+            "salePrice": u["fiyat"],
+            "listPrice": u["fiyat"],
+            "attributes": [{"id": 1, "value": marka}],
+            "images": [{"url": g, "order": i + 1} for i, g in enumerate(u["gorseller"][:8])],
         })
-    return {"integrator": nc.ENTEGRATOR, "skus": urunler}
+    return {"integrator": nc.ENTEGRATOR, "skus": skus}
 
 
 def gonder(govde):
