@@ -1,1 +1,184 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9581527000,
+      "firstName": "GÖKHAN",
+      "lastName": "ırmak",
+      "company": "",
+      "address1": "Yavuztürk Mahallesi karadeniz Caddesi Alev sokak no 27 daire 1 üsküdar istanbul",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Üsküdar",
+      "districtId": 35,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 29667,
+      "neighborhood": "Yavuztürk Mah",
+      "phone": null,
+      "fullAddress": "Yavuztürk Mahallesi karadeniz Caddesi Alev sokak no 27 daire 1 üsküdar istanbul     Üsküdar İstanbul",
+      "fullName": "GÖKHAN ırmak"
+    },
+    "orderNumber": "11567903059",
+    "orderCountryCode": "TR",
+    "grossAmount": 419.0,
+    "packageGrossAmount": 419.0,
+    "totalDiscount": 23.38,
+    "packageSellerDiscount": 23.38,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 23.38,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 8.38
+      },
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9581526999,
+      "firstName": "GÖKHAN",
+      "lastName": "ırmak",
+      "company": "",
+      "address1": "Yavuztürk Mahallesi karadeniz Caddesi Alev sokak no 27 daire 1 üsküdar istanbul",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Üsküdar",
+      "districtId": 35,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 29667,
+      "neighborhood": "Yavuztürk Mah",
+      "phone": null,
+      "fullAddress": "Yavuztürk Mahallesi karadeniz Caddesi Alev sokak no 27 daire 1 üsküdar istanbul     Üsküdar İstanbul",
+      "fullName": "GÖKHAN ırmak"
+    },
+    "customerFirstName": "GÖKHAN",
+    "customerEmail": "pf+69akl26m@trendyolmail.com",
+    "customerId": 230912170,
+    "supplierId": 0,
+    "customerLastName": "ırmak",
+    "id": 4128238481,
+    "channelId": 1,
+    "shipmentPackageId": 4128238481,
+    "cargoTrackingNumber": 7270036839387896,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE3-6VMTR4",
+        "sku": "ATEL3-6VMTR41",
+        "stockCode": "AE3-6VMTR4",
+        "productName": "3-6V Redüktürlü Arduino Uyumlu DC Sarı Motor ve Tekerlek Seti - 4 Adet Motor+Teker AE3-6VMTR4, one size",
+        "productCode": 1589543352,
+        "contentId": 1589543352,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 419.0,
+        "lineGrossAmount": 419.0,
+        "discount": 23.38,
+        "lineTotalDiscount": 23.38,
+        "lineSellerDiscount": 23.38,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6745613642",
+            "lineItemPrice": 395.62,
+            "lineItemDiscount": 23.38,
+            "lineItemSellerDiscount": 23.38,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5910718301,
+        "lineId": 5910718301,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATEL3-6VMTR41",
+        "orderLineItemStatusName": "ReadyToShip",
+        "price": 395.62,
+        "lineUnitPrice": 395.62,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1788512114149,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1788501315779,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1788501319159,
+        "status": "Created"
+      }
+    ],
+    "shipmentPackageStatus": "ReadyToShip",
+    "status": "Created",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1788555540000,
+    "estimatedDeliveryEndDate": 1788814740000,
+    "totalPrice": 395.62,
+    "packageTotalPrice": 395.62,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1788555540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1788501315773,
+    "lastModifiedDate": 1788501319159,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10825627916,
+    "is4P": false
+  }
+]
