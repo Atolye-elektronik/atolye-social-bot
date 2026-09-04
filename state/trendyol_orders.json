@@ -122,7 +122,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "ATEL3-6VMTR41",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 395.62,
         "lineUnitPrice": 395.62,
         "fastDeliveryOptions": [
@@ -150,10 +150,14 @@
       {
         "createdDate": 1788501319159,
         "status": "Created"
+      },
+      {
+        "createdDate": 1788508112429,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1788555540000,
@@ -164,7 +168,7 @@
     "agreedDeliveryDate": 1788555540000,
     "fastDelivery": true,
     "originShipmentDate": 1788501315773,
-    "lastModifiedDate": 1788501319159,
+    "lastModifiedDate": 1788508112429,
     "commercial": false,
     "fastDeliveryType": "SameDayShipping",
     "deliveredByService": false,
@@ -179,6 +183,188 @@
     "createdBy": "order-creation",
     "originPackageIds": null,
     "shipmentNumber": 10825627916,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9581701640,
+      "firstName": "Yasin",
+      "lastName": "Yıldız",
+      "company": "",
+      "address1": "Kültür mahallesi 2649 sok no 9 yasin apartmanı kat 3 no 10 ",
+      "address2": "",
+      "city": "Batman",
+      "cityCode": 72,
+      "district": "Merkez",
+      "districtId": 246,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "72000",
+      "countryCode": "TR",
+      "neighborhoodId": 7638,
+      "neighborhood": "Kültür Mah",
+      "phone": null,
+      "fullAddress": "Kültür mahallesi 2649 sok no 9 yasin apartmanı kat 3 no 10     Merkez Batman",
+      "fullName": "Yasin Yıldız"
+    },
+    "orderNumber": "11567990992",
+    "orderCountryCode": "TR",
+    "grossAmount": 449.0,
+    "packageGrossAmount": 449.0,
+    "totalDiscount": 8.98,
+    "packageSellerDiscount": 8.98,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 8.98,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 8.98
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9581701639,
+      "firstName": "Yasin",
+      "lastName": "Yıldız",
+      "company": "",
+      "address1": "Kültür mahallesi 2649 sok no 9 yasin apartmanı kat 3 no 10 ",
+      "address2": "",
+      "city": "Batman",
+      "cityCode": 72,
+      "district": "Merkez",
+      "districtId": 246,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "72000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 7638,
+      "neighborhood": "Kültür Mah",
+      "phone": null,
+      "fullAddress": "Kültür mahallesi 2649 sok no 9 yasin apartmanı kat 3 no 10     Merkez Batman",
+      "fullName": "Yasin Yıldız"
+    },
+    "customerFirstName": "Yasin",
+    "customerEmail": "pf+ea3e6knp@trendyolmail.com",
+    "customerId": 28744160,
+    "supplierId": 0,
+    "customerLastName": "Yıldız",
+    "id": 4128328312,
+    "channelId": 1,
+    "shipmentPackageId": 4128328312,
+    "cargoTrackingNumber": 7270036841425883,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEARNANOTC2",
+        "sku": "TYB1UMHS917VOAUU67",
+        "stockCode": "AEARNANOTC2",
+        "productName": "Nano Klon v3.0 ATMEGA328P - Type-C nano kablo hediye TYCD2A44AC64324AC0DB51C00, one size",
+        "productCode": 1430434685,
+        "contentId": 1430434685,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 449.0,
+        "lineGrossAmount": 449.0,
+        "discount": 8.98,
+        "lineTotalDiscount": 8.98,
+        "lineSellerDiscount": 8.98,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6745747170",
+            "lineItemPrice": 440.02,
+            "lineItemDiscount": 8.98,
+            "lineItemSellerDiscount": 8.98,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5910832941,
+        "lineId": 5910832941,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "TYB1UMHS917VOAUU67",
+        "orderLineItemStatusName": "Picking",
+        "price": 440.02,
+        "lineUnitPrice": 440.02,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1788515737713,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1788504975429,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1788504978519,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1788508109880,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1788555540000,
+    "estimatedDeliveryEndDate": 1788901140000,
+    "totalPrice": 440.02,
+    "packageTotalPrice": 440.02,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1788555540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1788504975422,
+    "lastModifiedDate": 1788508109880,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10825721100,
     "is4P": false
   }
 ]
