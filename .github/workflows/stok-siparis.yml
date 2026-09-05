@@ -34,6 +34,8 @@ jobs:
       PYTHONPATH: src:src/marketplaces
       SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
       SHOPIFY_ADMIN_TOKEN: ${{ secrets.SHOPIFY_ADMIN_TOKEN }}
+      SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}          # Dev Dashboard "Stok merkezi" -> client credentials grant
+      SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
       TRENDYOL_API_KEY: ${{ secrets.TRENDYOL_API_KEY }}
       TRENDYOL_API_SECRET: ${{ secrets.TRENDYOL_API_SECRET }}
       TRENDYOL_SUPPLIER_ID: ${{ secrets.TRENDYOL_SUPPLIER_ID }}

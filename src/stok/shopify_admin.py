@@ -14,15 +14,36 @@ import requests
 KOK = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 MAGAZA = os.environ.get("SHOPIFY_STORE", "a3pnna-xy").strip()
 TOKEN = os.environ.get("SHOPIFY_ADMIN_TOKEN", "").strip()
+CLIENT_ID = os.environ.get("SHOPIFY_CLIENT_ID", "").strip()
+CLIENT_SECRET = os.environ.get("SHOPIFY_CLIENT_SECRET", "").strip()
 SURUM = "2025-07"
 URL = "https://%s.myshopify.com/admin/api/%s/graphql.json" % (MAGAZA, SURUM)
 HARITA = os.path.join(KOK, "content", "shopify_sku.json")
 
 
+_TOKEN_CACHE = {"token": TOKEN, "son": 0.0}
+
+
+def token():
+    """Sabit SHOPIFY_ADMIN_TOKEN varsa onu; yoksa Dev Dashboard uygulamasi icin client-credentials
+    grant ile 24 saatlik token alir (SHOPIFY_CLIENT_ID + SHOPIFY_CLIENT_SECRET). 23 saatte bir yeniler."""
+    import time
+    if TOKEN:
+        return TOKEN
+    if not (CLIENT_ID and CLIENT_SECRET):
+        raise RuntimeError("SHOPIFY_ADMIN_TOKEN veya SHOPIFY_CLIENT_ID/SECRET yok")
+    if _TOKEN_CACHE["token"] and time.time() - _TOKEN_CACHE["son"] < 23 * 3600:
+        return _TOKEN_CACHE["token"]
+    r = requests.post("https://%s.myshopify.com/admin/oauth/access_token" % MAGAZA,
+                      data={"grant_type": "client_credentials", "client_id": CLIENT_ID, "client_secret": CLIENT_SECRET},
+                      timeout=30)
+    r.raise_for_status()
+    _TOKEN_CACHE.update(token=r.json()["access_token"], son=time.time())
+    return _TOKEN_CACHE["token"]
+
+
 def gql(query, variables=None):
-    if not TOKEN:
-        raise RuntimeError("SHOPIFY_ADMIN_TOKEN yok")
-    r = requests.post(URL, headers={"X-Shopify-Access-Token": TOKEN, "Content-Type": "application/json"},
+    r = requests.post(URL, headers={"X-Shopify-Access-Token": token(), "Content-Type": "application/json"},
                       json={"query": query, "variables": variables or {}}, timeout=60)
     r.raise_for_status()
     j = r.json()
@@ -32,9 +53,11 @@ def gql(query, variables=None):
 
 
 def lokasyon_id():
-    d = gql("{ locations(first:5){ nodes{ id name isActive } } }")
-    aktif = [l for l in d["locations"]["nodes"] if l["isActive"]]
-    return aktif[0]["id"]
+    """Aktif lokasyon. read_locations kapsami olmadan: envanter seviyesi olan bir varyanttan okunur."""
+    S = json.load(open(HARITA, encoding="utf-8"))["sku"]
+    item = next(v["item"] for v in S.values() if v.get("item"))
+    d = gql("{ inventoryItem(id:\"gid://shopify/InventoryItem/%d\"){ inventoryLevels(first:1){ nodes{ location{ id } } } } }" % item)
+    return d["inventoryItem"]["inventoryLevels"]["nodes"][0]["location"]["id"]
 
 
 def haritayi_yenile():
