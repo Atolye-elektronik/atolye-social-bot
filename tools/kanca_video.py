@@ -104,6 +104,7 @@ VIDEOLAR = [
     {
         "dosya": "kanca3d-2wd-sasi.mp4",
         "klipler": ["WhatsApp Video 2026-09-06 at 00.27.46.mp4"],   # kullanicinin 06.09 cektigi montaj klibi (512x480)
+        "sn": "tam",   # kullanici 06.09: "hepsini kesmeden al" -> klip suresinin tamami
         "kanca": "Her robot bu şasiyle başlar",
         "urun": "2WD Robot Araba Şasi Kiti",
         "alt": "Şasi · 2 motor · tekerlekler · pil yuvası",
@@ -166,24 +167,38 @@ def katman_uret(video: dict, hedef: pathlib.Path) -> pathlib.Path:
     return hedef
 
 
+def _sure(yol: pathlib.Path) -> float:
+    out = subprocess.run([shutil.which("ffprobe") or "ffprobe", "-v", "error", "-show_entries",
+                          "format=duration", "-of", "default=nw=1:nk=1", str(yol)],
+                         capture_output=True, text=True, check=True).stdout.strip()
+    return float(out)
+
+
+def klip_sn(video: dict, yol: pathlib.Path) -> float:
+    sn = video.get("sn", KLIP_SN)
+    return _sure(yol) if sn == "tam" else float(sn)
+
+
 def uret(ffmpeg: str, video: dict) -> pathlib.Path:
     ux0, uy0, ux1, uy1 = URUN_KUTU
     uw, uh = ux1 - ux0, uy1 - uy0
     katman = katman_uret(video, CIKTI / "_kanca.png")
 
     girdiler: list[str] = []
+    sureler: list[float] = []
     for ad in video["klipler"]:
         yol = KLIPLER / ad
         if not yol.exists():
             raise SystemExit(f"HATA: klip yok -> {yol}")
         girdiler += ["-i", str(yol)]
+        sureler.append(klip_sn(video, yol))
     girdiler += ["-loop", "1", "-i", str(katman)]
 
     parcalar = []
     for i in range(len(video["klipler"])):
         # Alt %7: Kling filigranı orada.
         parcalar.append(
-            f"[{i}:v]trim=0:{KLIP_SN},setpts=PTS-STARTPTS,"
+            f"[{i}:v]trim=0:{sureler[i]:.3f},setpts=PTS-STARTPTS,"
             f"crop=iw:trunc(ih*0.93/2)*2:0:0,fps=30,split=2[b{i}][f{i}];"
             # Zemin: karenin tamamını dolduran bulanık kopya
             f"[b{i}]scale={W}:{H}:force_original_aspect_ratio=increase,"
@@ -202,7 +217,7 @@ def uret(ffmpeg: str, video: dict) -> pathlib.Path:
         [ffmpeg, "-v", "error", "-y", *girdiler,
          "-filter_complex", ";".join(parcalar),
          "-map", "[v]", "-an",
-         "-t", str(KLIP_SN * len(video["klipler"])),
+         "-t", f"{sum(sureler):.3f}",
          "-c:v", "libx264", "-preset", "medium", "-crf", "20",
          "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(hedef)],
         check=True)
@@ -217,8 +232,8 @@ def main() -> int:
         if secim and v["dosya"] not in secim:
             continue
         yol = uret(ffmpeg, v)
-        sn = KLIP_SN * len(v["klipler"])
-        print(f"  uretildi: {yol.name}  ({yol.stat().st_size // 1024} KB, {sn:.0f} sn)")
+        sn = sum(klip_sn(v, KLIPLER / ad) for ad in v["klipler"])
+        print(f"  uretildi: {yol.name}  ({yol.stat().st_size // 1024} KB, {sn:.1f} sn)")
     print(f"\n{len(VIDEOLAR)} kancali 3D video -> {CIKTI}")
     return 0
 
