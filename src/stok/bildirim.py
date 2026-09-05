@@ -49,7 +49,10 @@ def siparis_bildir(yeni, dusum, kritik, kuru=True):
         metin += "\n\n📦 Parca dusumu: " + ", ".join("%s −%d" % (k, v) for k, v in sorted(dusum.items()))
     if kritik:
         metin += "\n\n⚠️ Kritik stok: " + ", ".join("%s=%s" % (k, v) for k, v in sorted(kritik.items()))
-    print(metin)
+    try:
+        print(metin)
+    except UnicodeEncodeError:  # Windows konsolu emoji basamiyor
+        print(metin.encode("ascii", "replace").decode())
     print(telegram(metin))
     rows = [[an, o["kanal"], o["no"], kl.get("kod") or kl.get("barkod"), kl["adet"],
              json.dumps(kl.get("dusum") or {}, ensure_ascii=False), "kuru" if kuru else ""]
