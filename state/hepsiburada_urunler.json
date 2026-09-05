@@ -42,5 +42,45 @@
   "AET2WDRBT-LI": {
     "barkod": "2901520222751",
     "trackingId": "77c8a58c-07fa-4d03-81d1-6816c1de372e"
+  },
+  "AE5X100DT": {
+    "barkod": "2920000600001",
+    "trackingId": "ad402b97-ad06-4a63-a095-c852072bc1ed"
+  },
+  "AE5X100YT": {
+    "barkod": "2920000600018",
+    "trackingId": "ad402b97-ad06-4a63-a095-c852072bc1ed"
+  },
+  "AEKNTKLM": {
+    "barkod": "2920000600025",
+    "trackingId": "ad402b97-ad06-4a63-a095-c852072bc1ed"
+  },
+  "AES400IGG": {
+    "barkod": "2920000600032",
+    "trackingId": "ad402b97-ad06-4a63-a095-c852072bc1ed"
+  },
+  "AE5IZOLE": {
+    "barkod": "2920000600049",
+    "trackingId": "ad402b97-ad06-4a63-a095-c852072bc1ed"
+  },
+  "AEDUY-1": {
+    "barkod": "2920000600056",
+    "trackingId": "ad402b97-ad06-4a63-a095-c852072bc1ed"
+  },
+  "AEAMP-1": {
+    "barkod": "2920000600063",
+    "trackingId": "ad402b97-ad06-4a63-a095-c852072bc1ed"
+  },
+  "AEMYNK": {
+    "barkod": "2920000600070",
+    "trackingId": "ad402b97-ad06-4a63-a095-c852072bc1ed"
+  },
+  "AEPY18650T": {
+    "barkod": "2920000600087",
+    "trackingId": "ad402b97-ad06-4a63-a095-c852072bc1ed"
+  },
+  "AE9VPILSKT1": {
+    "barkod": "2920000600094",
+    "trackingId": "ad402b97-ad06-4a63-a095-c852072bc1ed"
   }
 }

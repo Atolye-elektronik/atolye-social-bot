@@ -82,5 +82,45 @@
   "AEMYNK3": {
     "barkod": "2901613165361",
     "batchRequestId": "d4369fa3-1d10-4cda-ab29-4d913d7d2e23-1788935930"
+  },
+  "AE5X100DT": {
+    "barkod": "2920000600001",
+    "batchRequestId": "4e628d72-839c-485c-9f90-561eccbf8503-1789164121"
+  },
+  "AE5X100YT": {
+    "barkod": "2920000600018",
+    "batchRequestId": "4e628d72-839c-485c-9f90-561eccbf8503-1789164121"
+  },
+  "AEKNTKLM": {
+    "barkod": "2920000600025",
+    "batchRequestId": "4e628d72-839c-485c-9f90-561eccbf8503-1789164121"
+  },
+  "AEMYNK": {
+    "barkod": "2920000600070",
+    "batchRequestId": "4e628d72-839c-485c-9f90-561eccbf8503-1789164121"
+  },
+  "AEDUY-1": {
+    "barkod": "2920000600056",
+    "batchRequestId": "4e628d72-839c-485c-9f90-561eccbf8503-1789164121"
+  },
+  "AEAMP-1": {
+    "barkod": "2920000600063",
+    "batchRequestId": "4e628d72-839c-485c-9f90-561eccbf8503-1789164121"
+  },
+  "AEPY18650T": {
+    "barkod": "2920000600087",
+    "batchRequestId": "4e628d72-839c-485c-9f90-561eccbf8503-1789164121"
+  },
+  "AE9VPILSKT1": {
+    "barkod": "2920000600094",
+    "batchRequestId": "4e628d72-839c-485c-9f90-561eccbf8503-1789164121"
+  },
+  "AES400IGG": {
+    "barkod": "2920000600032",
+    "batchRequestId": "ec03fd85-c541-4562-b7de-2743479ec937-1789191366"
+  },
+  "AE5IZOLE": {
+    "barkod": "2920000600049",
+    "batchRequestId": "ec03fd85-c541-4562-b7de-2743479ec937-1789191366"
   }
 }

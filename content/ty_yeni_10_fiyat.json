@@ -1,0 +1,82 @@
+[
+ {
+  "sk": "AE5X100DT",
+  "ad": "Düz Tornavida 5x100 mm",
+  "web": 79,
+  "maliyet": 20,
+  "ty": 126,
+  "barkod": "2920000600001"
+ },
+ {
+  "sk": "AE5X100YT",
+  "ad": "Yıldız Tornavida 5x100 mm",
+  "web": 79,
+  "maliyet": 20,
+  "ty": 126,
+  "barkod": "2920000600018"
+ },
+ {
+  "sk": "AEKNTKLM",
+  "ad": "Kontrol Kalemi",
+  "web": 75,
+  "maliyet": 15,
+  "ty": 129,
+  "barkod": "2920000600025"
+ },
+ {
+  "sk": "AES400IGG",
+  "ad": "Ayarlı İş Güvenliği Gözlüğü S400",
+  "web": 89,
+  "maliyet": 25,
+  "ty": 130,
+  "barkod": "2920000600032"
+ },
+ {
+  "sk": "AE5IZOLE",
+  "ad": "Elektrik İzolebant Siyah - 5 Adet",
+  "web": 149,
+  "maliyet": 56,
+  "ty": 155,
+  "barkod": "2920000600049"
+ },
+ {
+  "sk": "AEDUY-1",
+  "ad": "Mini Duy",
+  "web": 19.9,
+  "maliyet": 3.24,
+  "ty": 83,
+  "barkod": "2920000600056"
+ },
+ {
+  "sk": "AEAMP-1",
+  "ad": "Mini Ampul 2,5V",
+  "web": 14.9,
+  "maliyet": 5.55,
+  "ty": 74,
+  "barkod": "2920000600063"
+ },
+ {
+  "sk": "AEMYNK",
+  "ad": "Mini Dip Yankeski",
+  "web": 99,
+  "maliyet": 43.24,
+  "ty": 116,
+  "barkod": "2920000600070"
+ },
+ {
+  "sk": "AEPY18650T",
+  "ad": "18650 Pil Yuvası Tekli",
+  "web": 29,
+  "maliyet": 6.0,
+  "ty": 89,
+  "barkod": "2920000600087"
+ },
+ {
+  "sk": "AE9VPILSKT1",
+  "ad": "9V Pil Soketi Tekli",
+  "web": 40,
+  "maliyet": 4.48,
+  "ty": 104,
+  "barkod": "2920000600094"
+ }
+]

@@ -1,0 +1,180 @@
+{
+ "marka": "ATOLYE ELEKTRONİK",
+ "markaId": 2967081,
+ "kategori": "Elektronik Devre Elemanı",
+ "kategoriId": 3094,
+ "kargoId": 9,
+ "kargoKodu": "SURATMP",
+ "mensei": "CN",
+ "ozellikler": [
+  {
+   "attributeId": 1192,
+   "attributeValueId": 10617300
+  }
+ ],
+ "_not": "Shopify'da olup Trendyol'da olmayan 10 urun. Fiyat: TY kargo baremi + %13 komisyon + 11 TL hizmetle web netine esitlenmis, taban web fiyati. 9 Eylul'de minimum siparis adetli fiyatlar girilecek. Barkodlar 2920 0006 00xx (TY/N11/Shopify ile cakismiyor).",
+ "urunler": [
+  {
+   "stokKodu": "AE5X100DT",
+   "modelKodu": "AE5X100DT",
+   "barkod": "2920000600001",
+   "kategoriId": 2512,
+   "ozellikler": [
+    {
+     "attributeId": 1192,
+     "attributeValueId": 10617300
+    },
+    {
+     "attributeId": 18,
+     "attributeValueId": 10561792
+    }
+   ],
+   "ad": "Düz Tornavida 5x100 mm - Ergonomik Saplı, Elektronik ve Montaj İşleri İçin",
+   "aciklama": "<p>Elektronik tamiratlarından mekanik montajlara, kendin yap projelerinden atölye kullanımına kadar her takım çantasında bulunması gereken temel el aleti. <b>5 mm uç genişliği ve 100 mm mil uzunluğu</b> sayesinde dar alanlarda rahat erişim ve vidalamada optimum tork sağlar.</p><h3>Kullanım Alanları</h3><ul><li>Elektrik ve elektronik cihaz tamiratları, klemens vidalamaları</li><li>Robotik proje ve şasi montajları</li><li>Ev, ofis ve atölyede genel tamirat ve montaj</li></ul>",
+   "fiyat": 126,
+   "stok": 50,
+   "desi": 1,
+   "gorseller": [
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/duztornavida2.png?v=1785442877",
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/duztornavida.png?v=1785442877"
+   ]
+  },
+  {
+   "stokKodu": "AE5X100YT",
+   "modelKodu": "AE5X100YT",
+   "barkod": "2920000600018",
+   "kategoriId": 2512,
+   "ozellikler": [
+    {
+     "attributeId": 1192,
+     "attributeValueId": 10617300
+    },
+    {
+     "attributeId": 18,
+     "attributeValueId": 10561792
+    }
+   ],
+   "ad": "Yıldız Tornavida 5x100 mm - Ergonomik Saplı, Elektronik ve Montaj İşleri İçin",
+   "aciklama": "<p>Elektronik tamiratlarından mekanik montajlara, kendin yap projelerinden atölye kullanımına kadar her takım çantasında bulunması gereken temel el aleti. <b>5 mm uç genişliği ve 100 mm mil uzunluğu</b> sayesinde dar alanlarda rahat erişim ve vidalamada optimum tork sağlar.</p><h3>Kullanım Alanları</h3><ul><li>Elektrik ve elektronik cihaz tamiratları, pano ve ekipman vidalamaları</li><li>Robotik proje, 3D yazıcı parçaları ve şasi montajları</li><li>Ev, ofis ve atölyede genel tamirat ve montaj</li></ul>",
+   "fiyat": 126,
+   "stok": 50,
+   "desi": 1,
+   "gorseller": [
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/yildiztornavida2.png?v=1785443195",
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/yildiztornavida.png?v=1785443195"
+   ]
+  },
+  {
+   "stokKodu": "AEKNTKLM",
+   "modelKodu": "AEKNTKLM",
+   "barkod": "2920000600025",
+   "kategoriId": 5548,
+   "ozellikler": [
+    {
+     "attributeId": 1192,
+     "attributeValueId": 10617300
+    },
+    {
+     "attributeId": 91,
+     "attributeValueId": 1256843
+    }
+   ],
+   "ad": "Kontrol Kalemi - 100-500V Faz Test Kalemi, Neon Işıklı, Düz Uçlu",
+   "aciklama": "<p>Evde, ofiste, şantiyede ve atölyede elektrik bakım, tamirat ve montaj işlerinde güvenliğinizi sağlayan temel el aleti. Priz, kablo, sigorta panosu ve elektrikli cihazlarda faz hattının bulunup bulunmadığını hızlı ve güvenli şekilde tespit eder. Düz uç yapısı ve cep klipsi ile hem voltaj test cihazı hem de pratik bir klemens tornavidasıdır.</p><h3>Özellikler</h3><ul><li>Test aralığı: 100V - 500V AC</li><li>Neon lambalı ışıklı ikaz</li><li>Elektrik çarpmasına dirençli yalıtımlı saydam gövde</li><li>Metal cep klipsi</li></ul><p>Kullanım: Tornavida ucunu hatta temas ettirip arka metal kapağa parmağınızla dokunarak test edin.</p>",
+   "fiyat": 129,
+   "stok": 50,
+   "desi": 1,
+   "gorseller": [
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kontrolkalemi2.png?v=1785443416",
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kontrolkalemi.png?v=1785443416"
+   ]
+  },
+  {
+   "stokKodu": "AEMYNK",
+   "modelKodu": "AEMYNK",
+   "barkod": "2920000600070",
+   "kategoriId": 2504,
+   "ad": "Mini Yankeski - Dip Yankeski, Elektronikçi Tipi Hassas Kesim (Tekli)",
+   "aciklama": "<p>Lehimden sonra baskı devrenin altında kalan fazla bacakları dibinden, tertemiz keser. Standart yankeskilerin giremediği dar alanlarda çalışır; elektronikle uğraşan herkesin çekmecesinde bulunması gereken alet.</p><h3>Özellikler</h3><ul><li>Mini boy dip yankeski (yan keski)</li><li>Sertleştirilmiş çelik ağız: ince bakır tel, direnç ve kondansatör bacağı</li><li>Yaylı mekanizma, tek elle çalışır</li><li>Kaymayan PVC sap</li></ul><p>Lehim sonrası bacak kesimi, jumper kablo hazırlama, plastik bağcık ve ince tel kesiminde; atölye dersleri ve elektronik laboratuvarları için.</p>",
+   "fiyat": 116,
+   "stok": 35,
+   "desi": 1,
+   "gorseller": [
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/mini-yankeski-1.jpg?v=1788328796",
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/mini-yankeski-2.jpg?v=1788328796",
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/mini-yankeski-3.jpg?v=1788328796"
+   ]
+  },
+  {
+   "stokKodu": "AEDUY-1",
+   "modelKodU": "AEDUY-1",
+   "modelKodu": "AEDUY-1",
+   "barkod": "2920000600056",
+   "ad": "Mini Duy - Vidalı Terminalli Renkli Lamba Duyu, E10 Ampul Uyumlu, Fen Deney (1 Adet)",
+   "aciklama": "<p>Basit elektrik devresi deneyleri için vidalı bağlantılı mini duy. Pil kutusu + anahtar + duy ile ilk devrenizi 5 dakikada kurun.</p><ul><li>Vidalı terminal: kablo lehimsiz bağlanır</li><li>Renkli gövde (kırmızı, sarı, turuncu, yeşil, mavi - karışık gönderilir)</li><li>E10 mini ampul ile uyumlu (2,5V ampul ayrıca satılır)</li></ul><p>Ampullü seçenek ve 5'li / 10'lu paketler mağazamızda mevcuttur.</p>",
+   "fiyat": 83,
+   "stok": 50,
+   "desi": 1,
+   "gorseller": [
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/duy-ampul.jpg?v=1787487464",
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/duy-10lu.jpg?v=1787487464"
+   ]
+  },
+  {
+   "stokKodu": "AEAMP-1",
+   "modelKodu": "AEAMP-1",
+   "barkod": "2920000600063",
+   "ad": "Mini Ampul 2,5V E10 - Fen Deney Lambası, Mini Duy Uyumlu (1 Adet)",
+   "aciklama": "<p>Fen deneyleri ve basit devre uygulamaları için 2,5V mini ampul (E10 vidalı). 2 adet AA pil (3V) ile çalışır; vidalı mini duy ile birlikte kullanılır.</p><ul><li>Tip: E10 mini, 2,5V</li><li>Pil kutusu + anahtar + duy ile seri/paralel devre deneyleri</li></ul><p>Duy+ampul seti ve 5'li / 10'lu paketler mağazamızda mevcuttur.</p>",
+   "fiyat": 74,
+   "stok": 50,
+   "desi": 1,
+   "gorseller": [
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/duy-ampul.jpg?v=1787487464"
+   ]
+  },
+  {
+   "stokKodu": "AEPY18650T",
+   "modelKodu": "AEPY18650T",
+   "barkod": "2920000600087",
+   "ad": "18650 Li-on Pil Yuvası Tekli (1'li) - 3.7V Kablolu Batarya Yuvası",
+   "aciklama": "<p>Projelerinize şarj edilebilir güç eklemenin en basit yolu. Tek 18650 pil ile 3.7V taşınabilir besleme.</p><ul><li>1 adet 18650 Li-on pil yuvası</li><li>Çıkış: 3.7V (tek hücre)</li><li>Kırmızı (+) ve siyah (−) lehimli besleme kablosu</li><li>ABS plastik gövde, yaylı metal kontak</li><li>Yan yana veya seri/paralel çoğaltılabilir</li></ul><p>Arduino ve robot projelerinde, taşınabilir devrelerde, TP4056 şarj modülüyle şarjlı sistem kurmakta kullanılır. <em>Pil dahil değildir.</em></p>",
+   "fiyat": 89,
+   "stok": 50,
+   "desi": 1,
+   "gorseller": [
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-tekli-1.jpg?v=1788328829",
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-tekli-2.jpg?v=1788328829",
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-tekli-3.jpg?v=1788328828"
+   ]
+  },
+  {
+   "stokKodu": "AE9VPILSKT1",
+   "modelKodu": "AE9VPILSKT1",
+   "barkod": "2920000600094",
+   "ad": "DC Jack Çıkışlı 9V Pil Soketi - Arduino Uyumlu (1 Adet)",
+   "aciklama": "<p>Arduino projelerinizi ve taşınabilir devrelerinizi bilgisayar veya adaptör bağımlılığından kurtaran DC jack çıkışlı 9V pil soketi. Standart 9V pilin kutup başlarına sıkıca oturur; 2.1mm x 5.5mm DC jack ucu Arduino Uno, Mega ve benzeri kartların güç girişine tam uyumludur.</p><ul><li>Tak-çalıştır, lehim gerektirmez</li><li>Artı/eksi kutuplar jack ucuna hazır bağlı, ters bağlantı riski yok</li></ul><p>İçerik: 1 adet DC jack çıkışlı 9V pil soketi. 10'lu paket mağazamızda mevcuttur.</p>",
+   "fiyat": 104,
+   "stok": 30,
+   "desi": 1,
+   "gorseller": [
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/9vsoket1.png?v=1779562792",
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/9vsoket1_20f60c4b-0568-473e-8b06-0893f4f1f2e3.png?v=1786088121"
+   ]
+  }
+ ],
+ "beklemede": [
+  {
+   "stokKodu": "AES400IGG",
+   "barkod": "2920000600032",
+   "fiyat": 130,
+   "neden": "05.09 girildi: bkz. trendyol_yeni_2.json (batch ec03fd85 2/2 SUCCESS)"
+  },
+  {
+   "stokKodu": "AE5IZOLE",
+   "barkod": "2920000600049",
+   "fiyat": 155,
+   "neden": "05.09 girildi: bkz. trendyol_yeni_2.json (batch ec03fd85 2/2 SUCCESS)"
+  }
+ ]
+}

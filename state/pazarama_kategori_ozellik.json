@@ -1,0 +1,920 @@
+{
+ "700bd912-f103-4288-adc5-f5c276bea981": {
+  "id": "700bd912-f103-4288-adc5-f5c276bea981",
+  "name": "Yan Keski",
+  "displayName": "Yan Keski",
+  "description": null,
+  "attributes": [
+   {
+    "id": "08b2020b-e519-405f-85e2-1fd712104097",
+    "name": "Renk",
+    "displayName": "Renk",
+    "isVariantable": true,
+    "isRequired": true,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "2ddb5aeb-3c25-4fb1-975d-031b436f3319",
+      "value": "Siyah"
+     },
+     {
+      "id": "6e4deed0-2555-4ecd-ae1b-051aa30b774a",
+      "value": "Kahverengi"
+     },
+     {
+      "id": "544e1e86-678c-4e19-a7a4-230f180b2ed2",
+      "value": "Mor"
+     },
+     {
+      "id": "162dcf0f-acc2-488a-8a31-342a82c47542",
+      "value": "Haki"
+     },
+     {
+      "id": "66b8e3a6-7578-485c-b676-3840f03fc396",
+      "value": "Bordo"
+     },
+     {
+      "id": "75d0b61d-e6bd-4250-946d-40e9e262e497",
+      "value": "Gri"
+     },
+     {
+      "id": "edd3c58c-f31f-485d-9f8d-53691a39a2d2",
+      "value": "Bej"
+     },
+     {
+      "id": "96bc3661-77b6-4a6d-8745-574c9adb4a03",
+      "value": "Yeşil"
+     },
+     {
+      "id": "0537250c-2b84-475a-b7d1-5d624dd83f08",
+      "value": "Çok Renkli"
+     },
+     {
+      "id": "846aa244-015b-4c5b-97a5-651f0590e7f3",
+      "value": "Gümüş"
+     },
+     {
+      "id": "6faa548f-7f02-42c7-80ba-6b73b84fbbef",
+      "value": "Sarı"
+     },
+     {
+      "id": "a804b5e8-93b5-48e1-8b63-8096a8e83ad8",
+      "value": "Lacivert"
+     },
+     {
+      "id": "c7e562e1-ae2e-4a59-b656-81723601bdbf",
+      "value": "Mavi"
+     },
+     {
+      "id": "4a59cf7c-e321-4a4a-8f8d-8494fcfdbfa7",
+      "value": "Metalik"
+     },
+     {
+      "id": "c0710897-7993-4383-95b5-9abb7a25ce6c",
+      "value": "Ekru"
+     },
+     {
+      "id": "be30b6c2-f895-4b5e-91bd-a6a823fad326",
+      "value": "Altın"
+     },
+     {
+      "id": "aef8fe0b-4f80-4dc3-91f3-b902e6fc4c4c",
+      "value": "Beyaz"
+     },
+     {
+      "id": "ec98860d-668c-4c4f-824c-b918e47f1abf",
+      "value": "Pembe"
+     },
+     {
+      "id": "52a2e275-c6c0-4603-96a4-c3511432e210",
+      "value": "Turuncu"
+     },
+     {
+      "id": "57ecdb59-f9ff-4775-814f-c7a98cfc066e",
+      "value": "Kırmızı"
+     },
+     {
+      "id": "eb4440a4-1146-4b2c-adcb-fcd3e1b6f5de",
+      "value": "Turkuaz"
+     }
+    ]
+   },
+   {
+    "id": "a32b5cd3-d208-42e9-8e22-ab74068016be",
+    "name": "Uzunluk",
+    "displayName": "Uzunluk",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "a104b80e-dca5-4b2b-aa0d-0d6811942f36",
+      "value": "110 mm"
+     },
+     {
+      "id": "d471a4e7-3604-4bc3-8524-12efac6d7e73",
+      "value": "160 mm"
+     },
+     {
+      "id": "4a0ea82c-f0f3-4e1b-bf70-645252a791e8",
+      "value": "140 mm"
+     },
+     {
+      "id": "d1ad45c4-25a0-45f0-a9cc-aed41e296467",
+      "value": "200 mm"
+     },
+     {
+      "id": "f7ef4775-9dd3-491b-8be8-ba6a10a58de6",
+      "value": "250 mm"
+     },
+     {
+      "id": "133d8da9-502e-490e-a8fc-f150d913a159",
+      "value": "150 mm"
+     },
+     {
+      "id": "261d882b-ffc7-4387-be9e-f40730224121",
+      "value": "180 mm"
+     }
+    ]
+   },
+   {
+    "id": "3fac69b5-679a-46b3-94b1-fc6a7b7578c3",
+    "name": "Ürün Tipi",
+    "displayName": "Ürün Tipi",
+    "isVariantable": false,
+    "isRequired": true,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "27823939-49df-4938-b682-993e4d321236",
+      "value": "Eğik Ağızlı Yan Keski"
+     },
+     {
+      "id": "dd931476-5b16-4a25-a941-b596dab9b2b5",
+      "value": "Uzun Burun Yan Keski"
+     },
+     {
+      "id": "e0a5d2ab-fbbf-4ec5-a5cd-cc0d7cfb7498",
+      "value": "Düz Ağızlı Yan Keski"
+     },
+     {
+      "id": "e8a2454e-a7b4-445d-a6fd-e858ef8e3e7d",
+      "value": "Mikro Yan Keski"
+     }
+    ]
+   }
+  ]
+ },
+ "2997cdc1-84de-40a3-963f-20217f03f7de": {
+  "id": "2997cdc1-84de-40a3-963f-20217f03f7de",
+  "name": "Tornavida, Tornavida Setleri",
+  "displayName": "Tornavida, Tornavida Setleri",
+  "description": null,
+  "attributes": [
+   {
+    "id": "08b2020b-e519-405f-85e2-1fd712104097",
+    "name": "Renk",
+    "displayName": "Renk",
+    "isVariantable": true,
+    "isRequired": true,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "2ddb5aeb-3c25-4fb1-975d-031b436f3319",
+      "value": "Siyah"
+     },
+     {
+      "id": "6e4deed0-2555-4ecd-ae1b-051aa30b774a",
+      "value": "Kahverengi"
+     },
+     {
+      "id": "544e1e86-678c-4e19-a7a4-230f180b2ed2",
+      "value": "Mor"
+     },
+     {
+      "id": "162dcf0f-acc2-488a-8a31-342a82c47542",
+      "value": "Haki"
+     },
+     {
+      "id": "66b8e3a6-7578-485c-b676-3840f03fc396",
+      "value": "Bordo"
+     },
+     {
+      "id": "75d0b61d-e6bd-4250-946d-40e9e262e497",
+      "value": "Gri"
+     },
+     {
+      "id": "edd3c58c-f31f-485d-9f8d-53691a39a2d2",
+      "value": "Bej"
+     },
+     {
+      "id": "96bc3661-77b6-4a6d-8745-574c9adb4a03",
+      "value": "Yeşil"
+     },
+     {
+      "id": "0537250c-2b84-475a-b7d1-5d624dd83f08",
+      "value": "Çok Renkli"
+     },
+     {
+      "id": "846aa244-015b-4c5b-97a5-651f0590e7f3",
+      "value": "Gümüş"
+     },
+     {
+      "id": "6faa548f-7f02-42c7-80ba-6b73b84fbbef",
+      "value": "Sarı"
+     },
+     {
+      "id": "a804b5e8-93b5-48e1-8b63-8096a8e83ad8",
+      "value": "Lacivert"
+     },
+     {
+      "id": "c7e562e1-ae2e-4a59-b656-81723601bdbf",
+      "value": "Mavi"
+     },
+     {
+      "id": "4a59cf7c-e321-4a4a-8f8d-8494fcfdbfa7",
+      "value": "Metalik"
+     },
+     {
+      "id": "c0710897-7993-4383-95b5-9abb7a25ce6c",
+      "value": "Ekru"
+     },
+     {
+      "id": "be30b6c2-f895-4b5e-91bd-a6a823fad326",
+      "value": "Altın"
+     },
+     {
+      "id": "aef8fe0b-4f80-4dc3-91f3-b902e6fc4c4c",
+      "value": "Beyaz"
+     },
+     {
+      "id": "ec98860d-668c-4c4f-824c-b918e47f1abf",
+      "value": "Pembe"
+     },
+     {
+      "id": "52a2e275-c6c0-4603-96a4-c3511432e210",
+      "value": "Turuncu"
+     },
+     {
+      "id": "57ecdb59-f9ff-4775-814f-c7a98cfc066e",
+      "value": "Kırmızı"
+     },
+     {
+      "id": "eb4440a4-1146-4b2c-adcb-fcd3e1b6f5de",
+      "value": "Turkuaz"
+     }
+    ]
+   },
+   {
+    "id": "d39d8469-6cd5-4aa8-9327-48d47f303fd4",
+    "name": "Tornavida Seti Tipi",
+    "displayName": "Tornavida Seti Tipi",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "9d85dc74-f208-41d4-7d64-08db20a7a854",
+      "value": "Optik Gözlük Tornavidası"
+     },
+     {
+      "id": "2044aec3-abf6-41d7-a5ef-51587bf4aff4",
+      "value": "Amatör Tornavida Seti"
+     },
+     {
+      "id": "d4c77911-1685-428c-83c7-56fde643c4f0",
+      "value": "Lokma Uçlu Tornavida Seti"
+     },
+     {
+      "id": "0445e63c-cf1f-449e-9982-83dbf1c35475",
+      "value": "Saatçi Tornavida Seti"
+     },
+     {
+      "id": "668694ca-a9b6-416c-b105-95b82d895ef7",
+      "value": "Tornavida Bits Ucu Seti"
+     },
+     {
+      "id": "4b06489e-cab7-43eb-847c-c4ed76dbca1c",
+      "value": "Tornavida Lokma Ucu Seti"
+     },
+     {
+      "id": "512ff88f-93d3-42bb-8643-f6a5dedaafc4",
+      "value": "Elektronikçi Tornavida Seti"
+     }
+    ]
+   },
+   {
+    "id": "dac3b409-2c53-44ae-9c17-b0b68941c92e",
+    "name": "Tornavida Sayısı",
+    "displayName": "Tornavida Sayısı",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "b67de1e3-fdc7-45bf-8157-0263fb121607",
+      "value": "20"
+     },
+     {
+      "id": "0fafb6d4-2601-4a7e-b19f-19525e156e2c",
+      "value": "5"
+     },
+     {
+      "id": "302547c3-4d42-4088-8efd-21f7e35dcbfa",
+      "value": "13"
+     },
+     {
+      "id": "c4729642-5954-43ac-a06b-2a6d38260a59",
+      "value": "19"
+     },
+     {
+      "id": "22abe39d-5a09-4da7-beb5-3926218475fd",
+      "value": "4"
+     },
+     {
+      "id": "4c2dc25d-3730-496d-8699-39eb03a4adf5",
+      "value": "6"
+     },
+     {
+      "id": "56145dd6-46fb-4055-9412-62b1c3a7a33a",
+      "value": "17"
+     },
+     {
+      "id": "adfd2f04-ad56-44cc-9cb3-6fe5f1053aa2",
+      "value": "3"
+     },
+     {
+      "id": "57d756a2-db30-47d9-a618-7390f0d6c368",
+      "value": "1"
+     },
+     {
+      "id": "07193bca-d795-4331-a3b1-78a09237cb91",
+      "value": "9"
+     },
+     {
+      "id": "ab8d5d57-f8cf-4d99-b0a7-7c9ad24bd6ff",
+      "value": "15"
+     },
+     {
+      "id": "b5339be9-2c55-4189-8402-8bc2a35d0a29",
+      "value": "8"
+     },
+     {
+      "id": "3626b1ba-7f88-4788-ba70-8e0cb0a3ccdd",
+      "value": "11"
+     },
+     {
+      "id": "89808c38-05b8-4e6a-b0da-c7a85a716da7",
+      "value": "18"
+     },
+     {
+      "id": "580b78ac-721b-4631-9439-de21c27f96bc",
+      "value": "7"
+     },
+     {
+      "id": "b87e581e-eef9-4855-8590-e2a3425ccddd",
+      "value": "2"
+     },
+     {
+      "id": "826fe36f-1648-4d45-aeb4-e6aa8951509e",
+      "value": "16"
+     },
+     {
+      "id": "e75f883f-e89d-4442-a199-e8fecce8a932",
+      "value": "12"
+     },
+     {
+      "id": "1688ce81-6256-453b-86bb-f06045a498f6",
+      "value": "14"
+     },
+     {
+      "id": "55c9085b-5bb6-45c5-bf58-f4e186202543",
+      "value": "20 Üzeri"
+     },
+     {
+      "id": "b64ee7b3-00e4-406c-8aa2-fc9b320d06f3",
+      "value": "10"
+     }
+    ]
+   }
+  ]
+ },
+ "4d8bdc5a-164c-4457-ae5a-0f107d2183de": {
+  "id": "4d8bdc5a-164c-4457-ae5a-0f107d2183de",
+  "name": "Kontrol Kalemi",
+  "displayName": "Kontrol Kalemi",
+  "description": null,
+  "attributes": [
+   {
+    "id": "08b2020b-e519-405f-85e2-1fd712104097",
+    "name": "Renk",
+    "displayName": "Renk",
+    "isVariantable": true,
+    "isRequired": true,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "2ddb5aeb-3c25-4fb1-975d-031b436f3319",
+      "value": "Siyah"
+     },
+     {
+      "id": "6e4deed0-2555-4ecd-ae1b-051aa30b774a",
+      "value": "Kahverengi"
+     },
+     {
+      "id": "544e1e86-678c-4e19-a7a4-230f180b2ed2",
+      "value": "Mor"
+     },
+     {
+      "id": "162dcf0f-acc2-488a-8a31-342a82c47542",
+      "value": "Haki"
+     },
+     {
+      "id": "66b8e3a6-7578-485c-b676-3840f03fc396",
+      "value": "Bordo"
+     },
+     {
+      "id": "75d0b61d-e6bd-4250-946d-40e9e262e497",
+      "value": "Gri"
+     },
+     {
+      "id": "edd3c58c-f31f-485d-9f8d-53691a39a2d2",
+      "value": "Bej"
+     },
+     {
+      "id": "96bc3661-77b6-4a6d-8745-574c9adb4a03",
+      "value": "Yeşil"
+     },
+     {
+      "id": "0537250c-2b84-475a-b7d1-5d624dd83f08",
+      "value": "Çok Renkli"
+     },
+     {
+      "id": "846aa244-015b-4c5b-97a5-651f0590e7f3",
+      "value": "Gümüş"
+     },
+     {
+      "id": "6faa548f-7f02-42c7-80ba-6b73b84fbbef",
+      "value": "Sarı"
+     },
+     {
+      "id": "a804b5e8-93b5-48e1-8b63-8096a8e83ad8",
+      "value": "Lacivert"
+     },
+     {
+      "id": "c7e562e1-ae2e-4a59-b656-81723601bdbf",
+      "value": "Mavi"
+     },
+     {
+      "id": "4a59cf7c-e321-4a4a-8f8d-8494fcfdbfa7",
+      "value": "Metalik"
+     },
+     {
+      "id": "c0710897-7993-4383-95b5-9abb7a25ce6c",
+      "value": "Ekru"
+     },
+     {
+      "id": "be30b6c2-f895-4b5e-91bd-a6a823fad326",
+      "value": "Altın"
+     },
+     {
+      "id": "aef8fe0b-4f80-4dc3-91f3-b902e6fc4c4c",
+      "value": "Beyaz"
+     },
+     {
+      "id": "ec98860d-668c-4c4f-824c-b918e47f1abf",
+      "value": "Pembe"
+     },
+     {
+      "id": "52a2e275-c6c0-4603-96a4-c3511432e210",
+      "value": "Turuncu"
+     },
+     {
+      "id": "57ecdb59-f9ff-4775-814f-c7a98cfc066e",
+      "value": "Kırmızı"
+     },
+     {
+      "id": "eb4440a4-1146-4b2c-adcb-fcd3e1b6f5de",
+      "value": "Turkuaz"
+     }
+    ]
+   },
+   {
+    "id": "40937a92-a7e1-4390-865b-589fcfb460bb",
+    "name": "Uç Tipi",
+    "displayName": "Uç Tipi",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "b1f7e675-ffb3-4323-811f-31c520dbdddb",
+      "value": "Düz"
+     },
+     {
+      "id": "bc92d527-aef6-403b-bdb8-8af01f1dc56e",
+      "value": "Yıldız"
+     }
+    ]
+   },
+   {
+    "id": "61fc0689-7220-4548-8ae0-81b085004880",
+    "name": "Led Gösterge",
+    "displayName": "Led Gösterge",
+    "isVariantable": false,
+    "isRequired": true,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "03ab4fb0-eee1-4ef7-bfc2-7e8a6cf1e234",
+      "value": "Yok"
+     },
+     {
+      "id": "0a4c2b61-79fa-4460-9f40-e04a17773c37",
+      "value": "Var"
+     }
+    ]
+   },
+   {
+    "id": "6dc04835-c325-4664-957f-b1a7dfb26be7",
+    "name": "Akü Voltajı",
+    "displayName": "Akü Voltajı",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "e6a9526c-6f04-4503-cd89-08dc2c859625",
+      "value": "1.5 V"
+     }
+    ]
+   },
+   {
+    "id": "ed3abb73-328a-48a4-8b9e-cd5124d5315b",
+    "name": "Temassız İşlem",
+    "displayName": "Temassız İşlem",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "03ab4fb0-eee1-4ef7-bfc2-7e8a6cf1e234",
+      "value": "Yok"
+     },
+     {
+      "id": "0a4c2b61-79fa-4460-9f40-e04a17773c37",
+      "value": "Var"
+     }
+    ]
+   }
+  ]
+ },
+ "7cb0d978-d8d3-4b1b-aa1c-9acb2409fd88": {
+  "id": "7cb0d978-d8d3-4b1b-aa1c-9acb2409fd88",
+  "name": "Koruyucu Gözlük",
+  "displayName": "Koruyucu Gözlük",
+  "description": null,
+  "attributes": [
+   {
+    "id": "73f0b041-3764-4d57-86ff-0c98ade5b18f",
+    "name": "Çizilmez Cam",
+    "displayName": "Çizilmez Cam",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "03ab4fb0-eee1-4ef7-bfc2-7e8a6cf1e234",
+      "value": "Yok"
+     },
+     {
+      "id": "0a4c2b61-79fa-4460-9f40-e04a17773c37",
+      "value": "Var"
+     }
+    ]
+   },
+   {
+    "id": "08b2020b-e519-405f-85e2-1fd712104097",
+    "name": "Renk",
+    "displayName": "Renk",
+    "isVariantable": true,
+    "isRequired": true,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "2ddb5aeb-3c25-4fb1-975d-031b436f3319",
+      "value": "Siyah"
+     },
+     {
+      "id": "6e4deed0-2555-4ecd-ae1b-051aa30b774a",
+      "value": "Kahverengi"
+     },
+     {
+      "id": "616cce71-eb49-431b-6c13-08db0e7da3fd",
+      "value": "Siyah - Yeşil"
+     },
+     {
+      "id": "6b5bc6b6-b1e6-4301-dbba-08db156fe89b",
+      "value": "Yeşil - Siyah"
+     },
+     {
+      "id": "544e1e86-678c-4e19-a7a4-230f180b2ed2",
+      "value": "Mor"
+     },
+     {
+      "id": "162dcf0f-acc2-488a-8a31-342a82c47542",
+      "value": "Haki"
+     },
+     {
+      "id": "66b8e3a6-7578-485c-b676-3840f03fc396",
+      "value": "Bordo"
+     },
+     {
+      "id": "75d0b61d-e6bd-4250-946d-40e9e262e497",
+      "value": "Gri"
+     },
+     {
+      "id": "edd3c58c-f31f-485d-9f8d-53691a39a2d2",
+      "value": "Bej"
+     },
+     {
+      "id": "96bc3661-77b6-4a6d-8745-574c9adb4a03",
+      "value": "Yeşil"
+     },
+     {
+      "id": "0537250c-2b84-475a-b7d1-5d624dd83f08",
+      "value": "Çok Renkli"
+     },
+     {
+      "id": "846aa244-015b-4c5b-97a5-651f0590e7f3",
+      "value": "Gümüş"
+     },
+     {
+      "id": "6faa548f-7f02-42c7-80ba-6b73b84fbbef",
+      "value": "Sarı"
+     },
+     {
+      "id": "a804b5e8-93b5-48e1-8b63-8096a8e83ad8",
+      "value": "Lacivert"
+     },
+     {
+      "id": "c7e562e1-ae2e-4a59-b656-81723601bdbf",
+      "value": "Mavi"
+     },
+     {
+      "id": "4a59cf7c-e321-4a4a-8f8d-8494fcfdbfa7",
+      "value": "Metalik"
+     },
+     {
+      "id": "c0710897-7993-4383-95b5-9abb7a25ce6c",
+      "value": "Ekru"
+     },
+     {
+      "id": "be30b6c2-f895-4b5e-91bd-a6a823fad326",
+      "value": "Altın"
+     },
+     {
+      "id": "1a3d460d-1126-4d27-984f-b0b5bfecba01",
+      "value": "Füme"
+     },
+     {
+      "id": "aef8fe0b-4f80-4dc3-91f3-b902e6fc4c4c",
+      "value": "Beyaz"
+     },
+     {
+      "id": "ec98860d-668c-4c4f-824c-b918e47f1abf",
+      "value": "Pembe"
+     },
+     {
+      "id": "52a2e275-c6c0-4603-96a4-c3511432e210",
+      "value": "Turuncu"
+     },
+     {
+      "id": "57ecdb59-f9ff-4775-814f-c7a98cfc066e",
+      "value": "Kırmızı"
+     },
+     {
+      "id": "65414541-cb34-4014-aab0-cb10c3c3578c",
+      "value": "Renksiz/Şeffaf"
+     },
+     {
+      "id": "eb4440a4-1146-4b2c-adcb-fcd3e1b6f5de",
+      "value": "Turkuaz"
+     }
+    ]
+   },
+   {
+    "id": "ef295366-3681-410b-bdd2-5831d36a5f87",
+    "name": "Ayarlanabilirlik",
+    "displayName": "Ayarlanabilirlik",
+    "isVariantable": false,
+    "isRequired": true,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "03ab4fb0-eee1-4ef7-bfc2-7e8a6cf1e234",
+      "value": "Yok"
+     },
+     {
+      "id": "0a4c2b61-79fa-4460-9f40-e04a17773c37",
+      "value": "Var"
+     }
+    ]
+   },
+   {
+    "id": "747ceb0b-2b0d-41ab-8ab6-6cb0d7754295",
+    "name": "Gözlük İpi",
+    "displayName": "Gözlük İpi",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "03ab4fb0-eee1-4ef7-bfc2-7e8a6cf1e234",
+      "value": "Yok"
+     },
+     {
+      "id": "0a4c2b61-79fa-4460-9f40-e04a17773c37",
+      "value": "Var"
+     }
+    ]
+   },
+   {
+    "id": "2d3b13c3-79a7-4064-b175-90355d7f0dc5",
+    "name": "Uyumlu Model",
+    "displayName": "Uyumlu Model",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "9ff99475-d59a-471a-c099-08dd08a80e33",
+      "value": "Grl 300 Hvg"
+     }
+    ]
+   },
+   {
+    "id": "74dc3f7b-e139-4bf8-9a4f-92a5204ee339",
+    "name": "Buğu Yapmama Özelliği",
+    "displayName": "Buğu Yapmama Özelliği",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "03ab4fb0-eee1-4ef7-bfc2-7e8a6cf1e234",
+      "value": "Yok"
+     },
+     {
+      "id": "0a4c2b61-79fa-4460-9f40-e04a17773c37",
+      "value": "Var"
+     }
+    ]
+   },
+   {
+    "id": "ca509e86-5c82-4ff8-b4cf-ce6b263701fd",
+    "name": "Anti Sis Kaplama",
+    "displayName": "Anti Sis Kaplama",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "03ab4fb0-eee1-4ef7-bfc2-7e8a6cf1e234",
+      "value": "Yok"
+     },
+     {
+      "id": "0a4c2b61-79fa-4460-9f40-e04a17773c37",
+      "value": "Var"
+     }
+    ]
+   },
+   {
+    "id": "3fac69b5-679a-46b3-94b1-fc6a7b7578c3",
+    "name": "Ürün Tipi",
+    "displayName": "Ürün Tipi",
+    "isVariantable": false,
+    "isRequired": true,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "bb91d04d-adcb-47f2-b783-255176a43964",
+      "value": "Kaynak Gözlüğü"
+     },
+     {
+      "id": "b127ba95-a428-48b7-b37a-e26b9d4717cd",
+      "value": "Çapak Gözlüğü"
+     }
+    ]
+   }
+  ]
+ },
+ "33fcfd6f-475e-4a13-a2ec-6482e9fcd0c4": {
+  "id": "33fcfd6f-475e-4a13-a2ec-6482e9fcd0c4",
+  "name": "Bant, Bant Makinesi",
+  "displayName": "Bant, Bant Makinesi",
+  "description": null,
+  "attributes": [
+   {
+    "id": "53be7c94-9360-4303-909e-0c1b73424aaa",
+    "name": "Ürün Türü",
+    "displayName": "Ürün Türü",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "744dcfbd-4467-4c1b-b017-51a973c5e695",
+      "value": "Koli Bandı"
+     },
+     {
+      "id": "5828f81e-5400-47af-9a17-acb17927b094",
+      "value": "Çift Taraflı Bantlar"
+     },
+     {
+      "id": "1c9e9e88-e155-4654-b2da-c9e4b6537814",
+      "value": "Bant Makinesi"
+     },
+     {
+      "id": "9295eaac-67fc-4bae-bbc1-c9ecf33fe898",
+      "value": "Yapıştırıcı ve Bantlar"
+     },
+     {
+      "id": "74bdc3ec-79f9-4b9f-b7a3-fa419835d404",
+      "value": "Bant"
+     }
+    ]
+   },
+   {
+    "id": "08b2020b-e519-405f-85e2-1fd712104097",
+    "name": "Renk",
+    "displayName": "Renk",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "a78cf423-d0b2-401c-7e75-08dd08a81f3e",
+      "value": "Metalik - Pembe"
+     },
+     {
+      "id": "6faa548f-7f02-42c7-80ba-6b73b84fbbef",
+      "value": "Sarı"
+     },
+     {
+      "id": "c7e562e1-ae2e-4a59-b656-81723601bdbf",
+      "value": "Mavi"
+     },
+     {
+      "id": "fe5e6acb-e68b-47bb-b09a-97f91878901c",
+      "value": "Yeşil - Beyaz"
+     },
+     {
+      "id": "aef8fe0b-4f80-4dc3-91f3-b902e6fc4c4c",
+      "value": "Beyaz"
+     }
+    ]
+   },
+   {
+    "id": "87b7715f-df0f-487b-941d-d7ef468115fa",
+    "name": "Bant Adet Sayısı",
+    "displayName": "Bant Adet Sayısı",
+    "isVariantable": true,
+    "isRequired": true,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "1be2fb95-728d-4726-b1d6-3a805f9242a0",
+      "value": "Tekli"
+     },
+     {
+      "id": "b9a1b6a6-26cf-4243-a5be-c86f6fc0178c",
+      "value": "Çoklu"
+     }
+    ]
+   }
+  ]
+ },
+ "5fcd4444-87f0-4f3a-8ecf-3df2a91bd7b9": {
+  "id": "5fcd4444-87f0-4f3a-8ecf-3df2a91bd7b9",
+  "name": "Arduino Parçaları ve Setleri",
+  "displayName": "Arduino Parçaları ve Setleri",
+  "description": null,
+  "attributes": [
+   {
+    "id": "08b2020b-e519-405f-85e2-1fd712104097",
+    "name": "Renk",
+    "displayName": "Renk",
+    "isVariantable": false,
+    "isRequired": false,
+    "description": null,
+    "attributeValues": [
+     {
+      "id": "75d0b61d-e6bd-4250-946d-40e9e262e497",
+      "value": "Gri"
+     }
+    ]
+   }
+  ]
+ }
+}

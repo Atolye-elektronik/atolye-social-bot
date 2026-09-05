@@ -1,0 +1,661 @@
+{
+ "AETCS18P": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Takimcantasi.png?v=1785258195",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/takim-cantasi-17p-icerik.jpg?v=1786364430",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tc2_e27d106d-9c2e-4ff2-beed-0613916fcc1c.png?v=1784792879",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tc1.webp?v=1782337505",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Havya-Seti.webp?v=1784791945",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Penseyankeskikargaburun_332406a3-b04b-437a-a997-1c9946cf64f4.webp?v=1784792897",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tornavida_4f566083-8cd2-4f32-9246-232f38a6e814.webp?v=1784792909",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Breadboard1.webp?v=1782337529"
+ ],
+ "AEARBSES": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Baslangicseti.png?v=1785260927",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/baslangic-46-icerik.jpg?v=1786359763",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno.webp?v=1782336192",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sarimavi.webp?v=1782336192",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-1.webp?v=1782336192",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/minibread1.png?v=1785260964",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperee_d45b8de1-5480-4fdb-9dc9-e0d31ff96475.png?v=1785261021"
+ ],
+ "AEUNOR3": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/uno.webp?v=1770828826",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduinouno3.png?v=1777661095"
+ ],
+ "AEEAS3P": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/elalet1.png?v=1785264578",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pense-yankeski-kargaburun-icerik.jpg?v=1786364433",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kargaburun.png?v=1785264578",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pense1_7d6b2e9a-302e-434e-a873-f35b034dfce1.png?v=1785264578",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/yankeski1_43d3df1f-d0c3-414e-8bee-bb7edde5a150.png?v=1785264578"
+ ],
+ "AEZD30C40W": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/havya.webp?v=1770411922",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Havya1_8ee8d3d9-89c4-4cd0-b711-363aeac81628.png?v=1778693666"
+ ],
+ "AEDT830D": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Multimetre1.png?v=1784792238",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/multimetre.webp?v=1784792215"
+ ],
+ "AEJK2040": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/erkek-disi-jumper.webp?v=1770828623",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperkabloee_481b2c6b-186f-4ad2-9d36-beb5175ebfd7.webp?v=1770828826",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumper-kablo-disi-disi.webp?v=1770828559"
+ ],
+ "AEHVYSHP": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/havyaaltligi2.png?v=1777496695",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/havyaaltligi1.png?v=1777496695",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/havyasehpasi.webp?v=1775252903"
+ ],
+ "AETTS3P": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tornavida_4a384efe-e799-4f5e-8266-42870e76b96c.png?v=1785264652",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tornavida-3lu-icerik.jpg?v=1786364435",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tornavida2.png?v=1785264652"
+ ],
+ "AE6X13PLK": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/delikliplaket.jpg?v=1777494318",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Plaket.png?v=1777494318"
+ ],
+ "AE12V1A": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/adaptor1_2d2537d4-9a34-43f4-b695-a77a3c3ba1fb.png?v=1785143092",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/adaptor2_2bbd89ac-90ad-45a3-8864-f1a50f65cbb0.png?v=1785143092"
+ ],
+ "AEIRKMND": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ir1_1aecb4d6-edae-40ac-a8a8-4b3aecdd90ed.png?v=1785261066",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ir-set-icerik.jpg?v=1786364476",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ir2_f51614ab-77d9-42eb-8caf-189c56a56292.png?v=1785261065"
+ ],
+ "AETKRM5V": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/role3_be4d996c-b3ca-4448-8fc2-221937dddb59.png?v=1785261175",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/role1.png?v=1784792408",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/role3.png?v=1784792421",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/role2.png?v=1784792438"
+ ],
+ "AEDHT11": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/dht1_ee25ff19-693b-4675-b33a-62a6cd1cc866.webp?v=1785261273",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/dht11.png?v=1785261276"
+ ],
+ "AESG90": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/servo2.png?v=1777495944",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sg90.png?v=1777495944",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sg90.webp?v=1777495944",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/SG902.png?v=1777495944"
+ ],
+ "AEBB830P": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Breadboard1_0e89169e-7c56-4daa-9b77-0e4b817688df.png?v=1777496055",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Breadboard2.png?v=1777496055"
+ ],
+ "AEPLSTKKT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kutu5.png?v=1785260796",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kutu3.png?v=1785260796",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kutu4.png?v=1785260797",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kutu1.png?v=1777496221",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/mavikutu1.png?v=1778448803"
+ ],
+ "AELHMPMP": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lehimpomasi2.png?v=1784792069",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lehimpomasi1.png?v=1784792087"
+ ],
+ "AEL298NMTRT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motorteker.png?v=1784791910",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-motor-set-icerik.jpg?v=1786364446",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-3.jpg?v=1778318597",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-motor-surucu2.jpg?v=1778318597",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/L298N.webp?v=1778318613",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motorteker1.png?v=1778318551"
+ ],
+ "AE3-6VMTR4": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motorteker4lu.jpg?v=1778318824",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-teker-4lu-icerik.jpg?v=1786364459",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motorteker4lu2.jpg?v=1778318824"
+ ],
+ "AEKB1602": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kargaburun_84b70f5e-37ca-409a-a9e7-f54c96f122fb.png?v=1785264730",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kargaburun2_6d68ea83-3262-46a1-902a-6f1677f815d3.png?v=1785264751"
+ ],
+ "AEYNKSK160": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/yankeski1_7b214124-c4a9-404a-9229-fbf4bc3631fc.png?v=1785264774",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/yankeski2_a96ea85b-e27b-4b31-99a7-84b61504e219.png?v=1785264774"
+ ],
+ "AEPNS180": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pense1_ca1d0ad5-d795-404e-8ae6-664110544ce7.png?v=1785264792",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pense2_bf5b4e6a-f4cf-4ef5-b3cd-ff6d40af7731.png?v=1785264792"
+ ],
+ "AEL298N": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298-motor-surucu.jpg?v=1778320005",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-motor-surucu2_365178e5-84b2-4120-abf6-a0d794aabbee.jpg?v=1778320005",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/L298N_7931acb3-0bf9-498a-8438-1221759b4764.webp?v=1778320005",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-3_68e20ac5-ca54-4b6d-bdf6-eef7c31a55cb.jpg?v=1778320005"
+ ],
+ "AEHC06BT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hc06.webp?v=1778320409",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hc06-2.jpg?v=1778320409",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hc06-3.jpg?v=1778320409"
+ ],
+ "AEHCSR04": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-1_deb9ac56-8716-4c25-b692-45e6b29516ac.jpg?v=1778320685",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-1.png?v=1778320685",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-2.jpg?v=1778320685"
+ ],
+ "AETCS9P": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Takim_Cantasi_ve_Havya_Seti.png?v=1785257839",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/takim-cantasi-9p-icerik.jpg?v=1786364440",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tc3.webp?v=1782337025",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Penseyankeskikargaburun.webp?v=1782337025",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tornavida.webp?v=1782337025",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/gozluk.webp?v=1782337025"
+ ],
+ "AEHVYST6P": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/havyaseti.png?v=1785077727",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/havya-seti-icerik.jpg?v=1786364444",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/havyaseti1.webp?v=1784791962",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Havya1.webp?v=1784791978",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/havyaaltligi2.webp?v=1782334056",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lehimpomasi2.webp?v=1784791996",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Plaket.webp?v=1784792018",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Tuplehim.webp?v=1784792038"
+ ],
+ "AE3-6VMTR": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motorteker.jpg?v=1778445733",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motorteker1_e0e7134a-38f0-4387-95c8-0ffdf9c55564.png?v=1778445733"
+ ],
+ "AETC162": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tc1.png?v=1785262072",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tc2_8e3809f9-438b-4ddf-b42a-4510d263d612.png?v=1785262072",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tc3_e523b1ef-9f3e-4d6e-8c8e-f237a230fb09.png?v=1785262072"
+ ],
+ "AEEAS7P": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/elaletleri7p_10f8f317-6837-468f-8f79-6fc632c75565.png?v=1785265429",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/usta-isi-7p-icerik.jpg?v=1786364441",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/elaletleri7p_b701796a-3579-4015-bd71-6a219813b19d.png?v=1785265011",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/elalet1_3d11aedb-0b6c-40fd-93e5-dccf3c61fb0f.png?v=1785264951",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tornavida_a34c4500-89ee-4729-abac-6bb64cb8a3ac.png?v=1785264951"
+ ],
+ "AE16X2LCD": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lcd5.png?v=1785262190",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lcd3_78c64fb2-231d-4fe3-9097-86efe324c18a.png?v=1785262189",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lcd1.png?v=1785262186",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lcd2.png?v=1785262188"
+ ],
+ "AEARISES": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ileri88.png?v=1785078011",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ileri-88-icerik.jpg?v=1786359766",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_316e47bd-9363-4a23-85fb-3e6439b6147b.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sarimavi_32dd0571-85f6-4468-af4a-17833e14bfee.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hc06-2.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lcd4_2d1b1dd7-5511-4529-8bcc-b5b6cb0a9c39.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-motor-surucu2_b5af2382-6fe7-4c48-863e-be477680e62c.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motorteker_31058a37-5706-4923-8614-fa586a074b99.webp?v=1782337168"
+ ],
+ "AERC522RFID": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rfid1.png?v=1778530877",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rfid2_a6b05fc1-1ca9-44a4-8a44-03b645556749.png?v=1778530877",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rfid3.png?v=1778530910",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rfid5.png?v=1778530911"
+ ],
+ "AE28BYJ48": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/stepmotor.png?v=1785258469",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/step-motor-seti-icerik.jpg?v=1786364465",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/step1_8f34b273-2c73-49c0-962f-63efd87558a4.png?v=1785260650",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/step2_d30ffbdd-a91a-40d0-9979-119cab7b6ac3.png?v=1785260651",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/step1.png?v=1778531140",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/step2.png?v=1778531141",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/step5.png?v=1778531139"
+ ],
+ "AEAROSES": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ortaseviye.png?v=1785263239",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/proje-56-icerik.jpg?v=1786359770",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_e5b79ad3-b221-4bba-8836-d673e46f0047.webp?v=1782336334",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sarimavi_f0bfd5a5-e166-40bb-bc93-bf19decebc76.webp?v=1782336860",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ir1.webp?v=1782336860",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/dht1.webp?v=1782336860",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperde.webp?v=1782336860",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperee.webp?v=1782336860"
+ ],
+ "AEARSNST": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sensorseti_c62e99bd-f32b-41dc-8432-b04a3b1a02ba.png?v=1785262576",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sensor-modul-10-icerik.jpg?v=1786359771",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-motor-surucu2.webp?v=1782336551",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lcd4.webp?v=1782336551",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motorteker_a3e90eea-7881-4fa9-9736-55267480621b.webp?v=1782336551",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rfid2.webp?v=1782336551",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/role1.webp?v=1782336551",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sg90_c56af9ef-54c9-4e17-91ec-2e993b2458db.webp?v=1782336551"
+ ],
+ "AEBB170P": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/minibread1_730b1971-4863-4202-8914-b0ca2dc2bff9.png?v=1778531868",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/minibread2.png?v=1778531868"
+ ],
+ "AETEMDEF": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/temrin-kapak-yesil.png?v=1787654503",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/temrin-ic-sag.png?v=1787654503",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/temrin-ic-sol.png?v=1787654503"
+ ],
+ "AET2WDRBT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/2wdrobotkiti.png?v=1785074879",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/2wd-demonte-icerik.jpg?v=1786359244",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/robotkiti.webp?v=1784791635",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/robotkiti2.webp?v=1784791653",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/robotkiti3.webp?v=1782333821",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motorteker.webp?v=1782333821",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/vidalar.webp?v=1782333821",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sarhos.webp?v=1782333821"
+ ],
+ "AEHCSR501": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pir1.png?v=1784791785",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pir2.png?v=1784791802",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pir3.png?v=1784791841",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pir4.png?v=1784791855"
+ ],
+ "AEENDELK": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/EndElkhepsi.webp?v=1782335968",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/endustriyel-egitim-icerik.jpg?v=1786359799",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/entegretransistor.webp?v=1782335968",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kondansator.webp?v=1782335968",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pot.webp?v=1782335968",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/roleanahtar.webp?v=1782335969",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/led.webp?v=1782335968",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sensorler.webp?v=1782335968"
+ ],
+ "AE9VPILSKT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/9vpilsoketi.png?v=1779562792",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/9vsoket1.png?v=1779562792"
+ ],
+ "AE3-6VMTR2": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motorteker2li.png?v=1784791722",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-teker-2li-icerik.jpg?v=1786364461",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motorteker_5ca76473-3f77-44c3-a593-78439fe7833f.jpg?v=1779563093"
+ ],
+ "AEJK2040222": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumper222.png?v=1779563372",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumper-6li-a-icerik.jpg?v=1786364467",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperdd.png?v=1779563372",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperde.png?v=1779563372",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperee.png?v=1779563373"
+ ],
+ "AEJK2040EEDE33": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumper33.png?v=1779563629",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumper-6li-b-icerik.jpg?v=1786364471",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperde_2637c79e-7f88-4f88-822c-44423b9fb9fb.png?v=1779563626",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperee_8bbd6880-08f9-472d-a0f9-8a4325b752d8.png?v=1779563626"
+ ],
+ "AE16X2LCD2": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lcd222.png?v=1784791442",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lcd3_058798fa-d7ac-46d9-91ad-75d9a2d077a8.png?v=1779563828",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lcd22_1bf9d4f1-48b4-481c-a735-6d58ad975d18.png?v=1784791464"
+ ],
+ "AEUNOR33": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/uno3.png?v=1779564141",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/uno1.png?v=1779564141"
+ ],
+ "AETKRM5V5": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/role5li.png?v=1779564421",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/role1_cc45c975-e833-4a78-bfb8-cc4b4219be46.png?v=1779564421",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/role3_ac5b8069-8eb1-4d79-8898-8a234001b963.png?v=1779564421"
+ ],
+ "AESG905": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/servo5.png?v=1779564491",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/servo2_ac12c86f-46fb-474f-a739-0ba153c5d514.png?v=1779564491",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sg90_6915471b-82bb-470b-ac8b-f7cedc96c1ff.png?v=1779564492"
+ ],
+ "AEHCSR045": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/HCSR04.png?v=1779565197",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-1_9a3f5543-d47c-4129-845f-cfbffe7a29fb.jpg?v=1779565197",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-1_7cc9f899-d953-41b5-ac57-e90eed4a1a34.png?v=1779565196",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-2_c153695c-07b1-4f26-b215-969f49c1fc67.jpg?v=1779565196"
+ ],
+ "AERTC1302": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rt1_b1f84473-73bf-47cc-9feb-a0809540d97f.png?v=1785261653",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rtc2_71a9e978-2837-4bdc-a832-45eb22d78db8.png?v=1785261655",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rtc4_dab39f84-f0c1-4fc3-a42d-4d71e3aeacb2.png?v=1785261654"
+ ],
+ "AERTC13025": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rtc5.png?v=1779565531",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rt1_8b89a8bc-f97b-46c8-ac33-4defd1dc09da.png?v=1779565530",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rtc2_334cde74-e072-4c2e-be10-8549fbb5098e.png?v=1779565531"
+ ],
+ "AE6X13PLK5": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/plaket5.png?v=1779565793",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/delikliplaket_2f87ae6f-ca69-455d-b46d-e66d8aa92f47.jpg?v=1779565792"
+ ],
+ "AEJK2040EE3": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumper3lu.png?v=1779565913",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumper-3lu-icerik.jpg?v=1786364475",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperdd_00ef2b18-585f-4722-86a5-08f3e47fd6f1.png?v=1779565913",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperde_5507c74e-038e-4a55-9937-d2e78033a8b9.png?v=1779565913",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperee_d8299c7b-a56f-4c3a-bea6-d763dc1f921a.png?v=1779565913"
+ ],
+ "AE2WDEKRBT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/engeldenkacan.png?v=1785074750",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/engelden-demonte-icerik.jpg?v=1786359248",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/robotkiti1.webp?v=1784791618",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_e5b79ad3-b221-4bba-8836-d673e46f0047.webp?v=1782336334",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-1_48b986ed-8735-4baa-9854-f30b7df03604.webp?v=1782336334",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sg90_f7b82791-056c-4c04-805d-f5c187e32754.webp?v=1782336334",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/robotkiti2.webp?v=1784791653",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/engelden-kacan-robot-aa.jpg?v=1787503784"
+ ],
+ "AESTJDFTR": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/is-dosyasi-kapak-sade.png?v=1787654526",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/isd1.webp?v=1782333253",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/isd2.webp?v=1782333253",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/isd3.webp?v=1782333253",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/isd6.webp?v=1782333253",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/is-dosyasi-ic-genel-hukumler.png?v=1787652254",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/is-dosyasi-ic-sozlesme-form.png?v=1787652253",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/is-dosyasi-ic-guvenlik-ozel.png?v=1787652254"
+ ],
+ "AEDC125B": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/anahtar1.webp?v=1782418515",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/anahtar2.webp?v=1782418504"
+ ],
+ "AEACDMMR": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/dimmer.webp?v=1782419228",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/dimmer1.webp?v=1782419216"
+ ],
+ "AEXL6009": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/xl60092.webp?v=1782419865",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/xl6009.webp?v=1782419856",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/xl60091.webp?v=1782419856"
+ ],
+ "AEVHM314": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/vhm3141.webp?v=1782420335",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/vhm3142.webp?v=1782420323",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/vhm3143.webp?v=1782420323"
+ ],
+ "AETP4056": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tp40562.webp?v=1782420868",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tp40563.webp?v=1782420876",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tp40561.webp?v=1782420868"
+ ],
+ "AEBZZR5V": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/buzzer1.webp?v=1782421725",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/buzzer4.webp?v=1782421724",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/buzzer3.webp?v=1782421716"
+ ],
+ "AEPY18650": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-1.jpg?v=1784386579",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-2.webp?v=1784386579"
+ ],
+ "AEPYAA2": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/2liaapilyuvasi2.jpg?v=1784388445",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/aa-pil-kutusu.jpg?v=1784388445"
+ ],
+ "AEHC06RAK": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/bluetoothlurobot_d7be9334-6e8f-4840-84bf-9231a783e2b4.png?v=1785074560",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/bluetooth-combo-icerik.jpg?v=1786358321",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/robotkiti1.webp?v=1784791618",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_316e47bd-9363-4a23-85fb-3e6439b6147b.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hc06-2.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-motor-surucu2.webp?v=1782336551",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/bluetooth-robot-aa.jpg?v=1787503785"
+ ],
+ "AERFIDPS": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rfidseti_6531d530-cd4f-4d78-a1f4-9039bec03b01.png?v=1785074286",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rfid-kilit-icerik.jpg?v=1786359032",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_316e47bd-9363-4a23-85fb-3e6439b6147b.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rfid1.png?v=1778530877",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sg90_8f0517a1-6276-454f-8d25-5a8793014f35.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperde_96cd153e-516e-48df-a30b-fd250bcffda4.webp?v=1785529110",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperee_7ababe51-6ee5-46fe-bce9-60f11f4c4083.webp?v=1785529110",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rfid-kilit-kiti.jpg?v=1787503785"
+ ],
+ "AEIRRAK": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kumandalirobot_015b72af-9a99-4266-9095-7b42af598cdf.png?v=1785070555",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ir-robot-combo-icerik.jpg?v=1786359033",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/robotkiti1.webp?v=1784791618",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ir1_ffa1083e-f460-4465-9746-7afbb9cf184f.webp?v=1785070304",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_e5b79ad3-b221-4bba-8836-d673e46f0047.webp?v=1782336334",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-motor-surucu2_b5af2382-6fe7-4c48-863e-be477680e62c.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ir-robot-aa.jpg?v=1787503785"
+ ],
+ "AEHSPS": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hareketsensoru.png?v=1785071045",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pir-alarm-icerik.jpg?v=1786359036",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_316e47bd-9363-4a23-85fb-3e6439b6147b.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/role3_ac5b8069-8eb1-4d79-8898-8a234001b963.png?v=1779564421",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pir1.png?v=1784791785",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperde.webp?v=1782336860",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/buzzer1.webp?v=1782421725",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pir-alarm-kiti.jpg?v=1787503785"
+ ],
+ "AEDHT11PS": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/dht11ekranseti.png?v=1785071336",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/dht11-lcd-icerik.jpg?v=1786359037",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_316e47bd-9363-4a23-85fb-3e6439b6147b.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lcd4_2d1b1dd7-5511-4529-8bcc-b5b6cb0a9c39.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/dht11.jpg?v=1777495815",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperde_5507c74e-038e-4a55-9937-d2e78033a8b9.png?v=1779565913",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/dht11-lcd-kiti.jpg?v=1787503786"
+ ],
+ "AERTCPS": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rtcekranseti.png?v=1785073851",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ds1302-lcd-icerik.jpg?v=1786359040",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_316e47bd-9363-4a23-85fb-3e6439b6147b.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rt1.png?v=1784791552",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lcd4_2d1b1dd7-5511-4529-8bcc-b5b6cb0a9c39.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperde.webp?v=1782336860",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/rtc-lcd-kiti.jpg?v=1787503786"
+ ],
+ "AESTEPPS": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/steparduinoseti.png?v=1785074056",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/step-motor-icerik.jpg?v=1786359042",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_316e47bd-9363-4a23-85fb-3e6439b6147b.webp?v=1782337168",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/step3_6df092bc-9c08-47cf-b79d-1145555e6ada.png?v=1778531140",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperde.webp?v=1782336860",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/step-motor-kiti.jpg?v=1787503787"
+ ],
+ "AE9VPILSKT2": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/soket9v2li.png?v=1785075480"
+ ],
+ "AE9VPILSKT1": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/9vsoket1.png?v=1779562792",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/9vsoket1_20f60c4b-0568-473e-8b06-0893f4f1f2e3.png?v=1786088121"
+ ],
+ "AEGUCVOLTKIT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/xl60092.webp?v=1782419865"
+ ],
+ "AEPROTOTIPKIT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/Breadboard1_0e89169e-7c56-4daa-9b77-0e4b817688df.png?v=1777496055"
+ ],
+ "AESESKIT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/vhm3141.webp?v=1782420335"
+ ],
+ "AESARJKT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tp4056pilyuvasi.png?v=1785075850",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tp40562.webp?v=1782420868",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-2_361170f5-b24f-4190-b9b0-4f5e51f3bdc4.webp?v=1785075860"
+ ],
+ "AEENDELKSET": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/EndElkSeti.png?v=1785182931",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/endustriyel-uygulama-icerik.jpg?v=1786359783",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/EndElkhepsi_f301e6f2-5eb9-4a4b-a4c5-8c30f6449ac0.webp?v=1785182435",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/paket.webp?v=1785182435",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sarimavi.png?v=1785182408",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumper3lu_b15647e5-32ee-4380-9b52-df5679176e8b.png?v=1785182408",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/breadboard2.webp?v=1785182445",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/FullSizeRender_ca616382-7f48-45f9-91b2-815b2039444a.jpg?v=1785271934"
+ ],
+ "AETMLELKDS": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/temelelektronik.png?v=1785263627",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/temel-deney-icerik.jpg?v=1786359784",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/breadboard.jpg?v=1785263672",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperee_679f9025-9ca5-411e-b297-377259d393eb.png?v=1785263627",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/9v1.png?v=1785263627",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/9vsoket1_ed21bae9-070b-4f26-ace4-b6718489db9e.png?v=1785263656",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/330R.png?v=1785263627"
+ ],
+ "AE3IN1ROBOT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/3lurobot_728225af-7134-4491-bc44-60025f8c9a4f.png?v=1785333897",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/3lu-combo-icerik.jpg?v=1786359249",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/2wdrobotkiti.png?v=1785074879",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ir1_1aecb4d6-edae-40ac-a8a8-4b3aecdd90ed.png?v=1785261066",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-1_0c213121-e9f4-4311-bb9e-39d3bd2cf0e0.jpg?v=1785333565",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hc06_86cc68e4-ee77-41a7-a105-baea9463fc4c.webp?v=1785333565",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sg90_c56af9ef-54c9-4e17-91ec-2e993b2458db.webp?v=1782336551",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-1_48b986ed-8735-4baa-9854-f30b7df03604.webp?v=1782336334"
+ ],
+ "AE5X100DT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/duztornavida2.png?v=1785442877",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/duztornavida.png?v=1785442877"
+ ],
+ "AE5X100YT": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/yildiztornavida2.png?v=1785443195",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/yildiztornavida.png?v=1785443195"
+ ],
+ "AEKNTKLM": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kontrolkalemi2.png?v=1785443416",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kontrolkalemi.png?v=1785443416"
+ ],
+ "AES400IGG": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/gozluk.png?v=1785443668",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/gozluk_426875f4-8082-4e80-accf-a6a895ef43ed.webp?v=1785443668"
+ ],
+ "AE5IZOLE": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/bant2.png?v=1785444085",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/bant.png?v=1785444085"
+ ],
+ "AET2WDRBT-LI": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/2wdrobotkiti18650.png?v=1786306330",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/02.jpg?v=1786357102",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/2wd-final-1.jpg?v=1786345355",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-2_361170f5-b24f-4190-b9b0-4f5e51f3bdc4.webp?v=1785075860",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/vidalar.webp?v=1782333821",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sarhos.webp?v=1782333821",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motorteker.webp?v=1782333821"
+ ],
+ "AE2WDEKRBT-LI": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/engeldenkacan18650.png?v=1786307413",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/02_f59b0c1f-bef5-4978-92ad-f252069c302a.jpg?v=1786357152",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/2wd-final-2.jpg?v=1786345357",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_ec249f22-ba08-414e-86ae-862d573dbf24.webp?v=1786307507",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-2_05a7b23d-1dec-4ee7-8638-609308cf2ceb.webp?v=1786298255",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-1_f4a4df8f-876c-4d8e-8413-c52be950ca91.webp?v=1786307507",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-1_abc3281b-cdd8-4ead-aa54-b9c7668abdf6.jpg?v=1786307507",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperde_6bcd1f94-0e3d-426b-b2f1-db45d17169be.webp?v=1786307507"
+ ],
+ "AEHC06RAK-LI": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/bluetoothlurobot18650.png?v=1786308283",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/02_f0c45313-910e-4c78-bef4-1e15bd1ed022.jpg?v=1786357142",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/2wd-final-3.jpg?v=1786345359",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_ec249f22-ba08-414e-86ae-862d573dbf24.webp?v=1786307507",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-2_8f251de1-33b1-42a0-9f86-4ee7b2b468e7.webp?v=1786298230",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hc06_f37b745d-219b-46c9-b130-8e2e3e65dadf.webp?v=1786308295",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-1_abc3281b-cdd8-4ead-aa54-b9c7668abdf6.jpg?v=1786307507",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperde_6bcd1f94-0e3d-426b-b2f1-db45d17169be.webp?v=1786307507"
+ ],
+ "AEIRRAK-LI": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/kumandalirobot18650.png?v=1786308914",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/02_b4898b7b-8447-49b6-9c99-bf8368d3da3e.jpg?v=1786357133",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/2wd-final-4.jpg?v=1786345361",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_ec249f22-ba08-414e-86ae-862d573dbf24.webp?v=1786307507",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-2_978247eb-b713-4d91-a1d4-9f0f354fc406.webp?v=1786298240",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ir1_73c5923f-0734-4fad-8458-eb26d875f3bc.png?v=1786308934",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-1_abc3281b-cdd8-4ead-aa54-b9c7668abdf6.jpg?v=1786307507",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperde_6bcd1f94-0e3d-426b-b2f1-db45d17169be.webp?v=1786307507"
+ ],
+ "AE3IN1ROBOT-LI": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/3lurobot18650.png?v=1786309295",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/02_5065bdaa-64f6-4dae-b1ed-649de99f93df.jpg?v=1786357126",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/2wd-final-5.jpg?v=1786345364",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduino-uno_ec249f22-ba08-414e-86ae-862d573dbf24.webp?v=1786307507",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ir1_73c5923f-0734-4fad-8458-eb26d875f3bc.png?v=1786308934",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hc06_f37b745d-219b-46c9-b130-8e2e3e65dadf.webp?v=1786308295",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-1_f4a4df8f-876c-4d8e-8413-c52be950ca91.webp?v=1786307507",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-2_05a7b23d-1dec-4ee7-8638-609308cf2ceb.webp?v=1786298255"
+ ],
+ "AETEMDEF-10": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/1.webp?v=1784792321"
+ ],
+ "AESTJDFTR-10": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/isdosyasi1_377200c3-0c47-452a-9bde-8c9dcd1ac333.webp?v=1784792291",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/is-dosyasi-ic-genel-hukumler_f1bb6f66-e8df-4d56-9fc9-c9a75d0a1f95.png?v=1787652278",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/is-dosyasi-ic-sozlesme-form_c0597839-adb8-44ff-910f-8c8e3d855368.png?v=1787652278",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/is-dosyasi-ic-guvenlik-ozel_e59e377f-c613-4bff-bb77-4fe7d2ecd55f.png?v=1787652278",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/is-dosyasi-ic-guvenlik-madde_9312d581-887b-48f2-b548-40bf047d52c2.png?v=1787652278"
+ ],
+ "AEDCM3V-1": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-dik.jpg?v=1787487389",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-yan.jpg?v=1787487389",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-5li.jpg?v=1787487389",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-10lu.jpg?v=1787487390"
+ ],
+ "AEPRV-1": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pervane-5li.jpg?v=1787487428",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pervane-10lu.jpg?v=1787487428",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-pervane-takili.jpg?v=1787487428"
+ ],
+ "AEDUY-1": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/duy-ampul.jpg?v=1787487464",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/duy-10lu.jpg?v=1787487464"
+ ],
+ "AEMOTPRV-1": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-pervane.jpg?v=1787487495",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-pervane-takili_88953c44-1330-4260-bf6a-6745510bd6ff.jpg?v=1787487495",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-pervane-10lu.jpg?v=1787487496"
+ ],
+ "AEVANTSET": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/vantilator-seti.jpg?v=1787487525",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/motor-pervane-takili_c560d5bb-af58-497c-9e42-667f341b30b4.jpg?v=1787487525",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/mini-vantilator-seti.jpg?v=1787503789"
+ ],
+ "AEFENSET": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/fen-deney-seti.jpg?v=1787487553",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/fen-deney-seti_4d0e3b9c-54a3-495e-bc78-bef92c8c0c6b.jpg?v=1787503789"
+ ],
+ "AETEMELSET": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/temel-devre-seti.jpg?v=1787487584",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/temel-devre-seti-jumper.jpg?v=1787487585",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/temel-devre-seti-jumper-2.jpg?v=1787487585",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/temel-devre-seti_4ef57c87-b890-4e65-a63c-bec55896f238.jpg?v=1787503790"
+ ],
+ "AEKRK5": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/krokodil-5li-1.jpg?v=1788328795",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/krokodil-5li-2.jpg?v=1788328796",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/krokodil-1.jpg?v=1788348886",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/krokodil-2.jpg?v=1788348886"
+ ],
+ "AEKRK10": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/krokodil-10lu-1.jpg?v=1788328796",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/krokodil-10lu-2.jpg?v=1788328795",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/krokodil-3.jpg?v=1788348923"
+ ],
+ "AEMYNK": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/mini-yankeski-1.jpg?v=1788328796",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/mini-yankeski-2.jpg?v=1788328796",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/mini-yankeski-3.jpg?v=1788328796"
+ ],
+ "AEMYNK3": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/mini-yankeski-3lu-1.jpg?v=1788328796",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/mini-yankeski-3lu-2.jpg?v=1788328796",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/mini-yankeski-3lu-3.jpg?v=1788328796"
+ ],
+ "AEPY18650T": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-tekli-1.jpg?v=1788328829",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-tekli-2.jpg?v=1788328829",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-tekli-3.jpg?v=1788328828"
+ ],
+ "AEPY18650T5": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-5li-1.jpg?v=1788328828",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-5li-2.jpg?v=1788328829",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-5li-3.jpg?v=1788328829"
+ ],
+ "AESARJKT1": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sarj-seti-1.jpg?v=1788328829",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sarj-seti-2.jpg?v=1788328829",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/tp4056-1.jpg?v=1788349132",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/sarj-seti-3.jpg?v=1788349131"
+ ],
+ "AENANOTC": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/nano-1.jpg?v=1788328829",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/nano-2.jpg?v=1788328829",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/nano-3.jpg?v=1788328829",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/nano-kablo.jpg?v=1788328829",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/nano-4.jpg?v=1788349157"
+ ],
+ "AEPY18650T10": [
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-10lu-1.jpg?v=1788350200",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-10lu-2.jpg?v=1788350200",
+  "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/18650-tekli-1_b20b934b-eb9b-4a2c-863b-8fc40cbb36c2.jpg?v=1788350199"
+ ]
+}

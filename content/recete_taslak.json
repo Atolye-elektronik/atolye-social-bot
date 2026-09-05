@@ -1,0 +1,674 @@
+{
+ "coklu_paket": {
+  "AEKRK5": {
+   "parca": "AEKRK1",
+   "adet": 5
+  },
+  "AEKRK10": {
+   "parca": "AEKRK1",
+   "adet": 10
+  },
+  "AEPY18650T5": {
+   "parca": "AEPY18650T",
+   "adet": 5
+  },
+  "AEPY18650T10": {
+   "parca": "AEPY18650T",
+   "adet": 10
+  },
+  "AEMYNK3": {
+   "parca": "AEMYNK",
+   "adet": 3
+  },
+  "AEPRV-5": {
+   "parca": "AEPRV",
+   "adet": 5
+  },
+  "AEPRV-10": {
+   "parca": "AEPRV",
+   "adet": 10
+  },
+  "AEMOTPRV-5": {
+   "parca": "AEMOTPRV-1",
+   "adet": 5
+  },
+  "AEMOTPRV-10": {
+   "parca": "AEMOTPRV-1",
+   "adet": 10
+  },
+  "AEPOT10K-6": {
+   "parca": "AEPOT10K",
+   "adet": 6
+  },
+  "AETP4056-2": {
+   "parca": "AETP4056",
+   "adet": 2
+  },
+  "AEDUYAMP-5": {
+   "parca": "AEDUYAMP-1",
+   "adet": 5
+  },
+  "AEDUYAMP-10": {
+   "parca": "AEDUYAMP-1",
+   "adet": 10
+  },
+  "AEDCM3V-5": {
+   "parca": "AEDCM3V-1",
+   "adet": 5
+  },
+  "AEDCM3V-10": {
+   "parca": "AEDCM3V-1",
+   "adet": 10
+  },
+  "AEBZZR5V-6": {
+   "parca": "AEBZZR5V",
+   "adet": 6
+  },
+  "AEPY18650-2": {
+   "parca": "AEPY18650",
+   "adet": 2
+  },
+  "AETMRNDFTR10": {
+   "parca": "AETEMDEF",
+   "adet": 10
+  },
+  "AETMRNDFTR20": {
+   "parca": "AETEMDEF",
+   "adet": 20
+  },
+  "AETMRNDFTR30": {
+   "parca": "AETEMDEF",
+   "adet": 30
+  },
+  "AEISDSYS10": {
+   "parca": "AESTJDFTR",
+   "adet": 10
+  },
+  "AEISDSYS20": {
+   "parca": "AESTJDFTR",
+   "adet": 20
+  },
+  "AEHCSR045": {
+   "parca": "AEHCSR04",
+   "adet": 5
+  },
+  "AESG905": {
+   "parca": "AESG90",
+   "adet": 5
+  },
+  "AETKRM5V5": {
+   "parca": "AETKRM5V",
+   "adet": 5
+  },
+  "AERTC13025": {
+   "parca": "AERTC1302",
+   "adet": 5
+  },
+  "AEUNOR33": {
+   "parca": "AEUNOR3",
+   "adet": 3
+  },
+  "AE3-6VMTR2": {
+   "parca": "AE3-6VMTR",
+   "adet": 2
+  },
+  "AE3-6VMTR4": {
+   "parca": "AE3-6VMTR",
+   "adet": 4
+  },
+  "AE16X2LCD2": {
+   "parca": "AE16X2LCD",
+   "adet": 2
+  },
+  "AEJK2040222": {
+   "parca": "AEJK2040",
+   "adet": 2
+  },
+  "AEJK2040EE3": {
+   "parca": "AEJK2040EE",
+   "adet": 3
+  },
+  "AEJK2040EEDE33": {
+   "parca": "AEJK2040EE",
+   "adet": 3
+  },
+  "AEARISES88": {
+   "parca": "AEARISES",
+   "adet": 1
+  }
+ },
+ "setler": {
+  "AESARJKT1": {
+   "baslik": "Şarj Edilebilir Güç Seti - TP4056 Type-C Şarj Modülü + 18650 Tekli Pil Yuvası",
+   "kalemler": [
+    {
+     "adet": 1,
+     "aciklama": "TP4056 Type-C Li-on / Li-Po şarj modülü (koruma devreli)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "tekli 18650 pil yuvası (kablolu)",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AEMOTPRV-1": {
+   "baslik": "DC Motor Pervane Seti - 1 Motor + 1 Pervane",
+   "kalemler": []
+  },
+  "AEVANTSET": {
+   "baslik": "Fen Deney Seti - Mini Vantilatör Yapımı - Pil Kutusu + DC Motor + Anahtar + Pervane",
+   "kalemler": []
+  },
+  "AETEMELSET": {
+   "baslik": "Temel Devre Seti - Breadboard, Pil Kutusu, Motor, Pervane, Duy-Ampul, 2 Anahtar - Standart",
+   "kalemler": [
+    {
+     "adet": 2,
+     "aciklama": "on-off rocker anahtar",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AEFENSET": {
+   "baslik": "Fen Deney Seti - Breadboard + Pil Kutusu + DC Motor + Pervane + Anahtar",
+   "kalemler": []
+  },
+  "AEDUYAMP-1": {
+   "baslik": "Mini Duy ve Ampul (2,5V) - Fen Deney Lamba Seti - Duy + Ampul - 1 Adet",
+   "kalemler": []
+  },
+  "AE2WDEKRBT": {
+   "baslik": "2WD Akıllı Robot Araba Şasi Kiti DIY Pleksi Tekerlek Motor Çizgi İzleyen Engelden Kaçma",
+   "kalemler": []
+  },
+  "AE2WDEKRBT-LI": {
+   "baslik": "2WD Servolu Engelden Kaçan Robot Araba Kiti (Demonte Robot Araba Kiti)",
+   "kalemler": [
+    {
+     "adet": 1,
+     "aciklama": "Arduino Uno R3 Klon (USB Programlama Kablosu ve 40'lı Erkek Header Dahil)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "HC-SR04 Ultrasonik Mesafe Sensörü (Robotun Gözleri)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "SG90 Mikro Servo Motor (Sensörü Sağa/Sola Döndürmek İçin)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "L298N Motor Sürücü Modülü",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Robot Şasisi",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "Yüksek Kaliteli Robot Tekerleği (Kauçuk Lastikli)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Sarhoş Tekerlek (Ön Denge ve Rahat Dönüş İçin)",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "Redüktörlü DC Motor (Tekerlek Motorları)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "4'lü AA Pil Kutusu (Sistem Güç Kaynağı)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "40'lı Jumper Kablo - Dişi-Erkek (D-E) (20 cm)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "40'lı Jumper Kablo - Erkek-Erkek (E-E) (20 cm)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Güç Anahtarı (On/Off Switch) ve Motor Bağlantı Kabloları",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Ultrasonik Sensör Tutucu",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AE2WDEKRBT5230-LI": {
+   "baslik": "Arduino 2WD Servolu Engelden Kaçan Robot Araba Kiti - Li-on 18650 Pil Yuvalı Set",
+   "kalemler": [
+    {
+     "adet": 1,
+     "aciklama": "Arduino Uno R3 Klon (USB Programlama Kablosu ve 40'lı Erkek Header Dahil)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "HC-SR04 Ultrasonik Mesafe Sensörü (Robotun Gözleri)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "SG90 Mikro Servo Motor (Sensörü Sağa/Sola Döndürmek İçin)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "L298N Motor Sürücü Modülü",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "18650 Li-Ion Pil Yuvası (2'li)(Li-on pil dahil değildir)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Robot Şasisi",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "Yüksek Kaliteli Robot Tekerleği (Kauçuk Lastikli)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Sarhoş Tekerlek (Ön Denge ve Rahat Dönüş İçin)",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "Redüktörlü DC Motor (Tekerlek Motorları)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "40'lı Jumper Kablo - Dişi-Erkek (D-E) (20 cm)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "40'lı Jumper Kablo - Erkek-Erkek (E-E) (20 cm)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Güç Anahtarı (On/Off Switch) ve Motor Bağlantı Kabloları",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Ultrasonik Sensör Tutucu",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AET2WDRBT": {
+   "baslik": "2WD Robot Araba Kiti (Demonte Robotik Gövde)",
+   "kalemler": [
+    {
+     "adet": 1,
+     "aciklama": "Şeffaf Robot Araba Şasisi (Pleksiglas Gövde)",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "3-6V Redüktörlü DC Motor (Sarı Motor)",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "Yüksek Yol Tutuşlu Lastik & Tekerlek",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "Hız Ölçer Disk (Encoder Diski)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Sarhoş Tekerlek (Ön Yönlendirme Tekeri)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "4'lü AA Pil Kutusu",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AET2WDRBT-LI": {
+   "baslik": "2WD Robot Araba Kiti - 18650 Pil Yuvalı Set",
+   "kalemler": [
+    {
+     "adet": 1,
+     "aciklama": "Şeffaf Robot Araba Şasisi (Pleksiglas Gövde)",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "3-6V Redüktörlü DC Motor (Sarı Motor)",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "Yüksek Yol Tutuşlu Lastik & Tekerlek",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "Hız Ölçer Disk (Encoder Diski)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Sarhoş Tekerlek (Ön Yönlendirme Tekeri)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "18650 Li-Ion Pil Yuvası (2'li) (Li-on pil dahil değildir.)",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AE3IN1ROBOT": {
+   "baslik": "Çok Fonksiyonlu Robot Araba Kiti (Bluetooth + IR Kumanda + Engelden Kaçan)",
+   "kalemler": []
+  },
+  "AE3IN1ROBOT-LI": {
+   "baslik": "3'ü 1 Arada Çok Fonksiyonlu Robot Araba Kiti - 18650 Pil Yuvalı (Bluetooth+IR+Engelden Kaçan)",
+   "kalemler": []
+  },
+  "AEHC06RAK": {
+   "baslik": "Bluetooth Kontrollü Robot Kiti - Tam Set (Arduino + Motor Sürücü Dahil) - Jumper Kablo Hediyeli",
+   "kalemler": []
+  },
+  "AEHC06RAK-LI": {
+   "baslik": "Bluetooth Kontrollü Robot Kiti - 18650 Pil Yuvalı Tam Set (Arduino + Motor Sürücü)",
+   "kalemler": []
+  },
+  "AEIRRAK": {
+   "baslik": "IR Kumandalı Robot Araba Kiti (2WD + Arduino + Motor Sürücü + Kumanda) - Jumper Kablo Hediyeli",
+   "kalemler": []
+  },
+  "AEIRRAK-LI": {
+   "baslik": "IR Kumandalı Robot Araba Kiti - 18650 Pil Yuvalı Set (2WD + Arduino + Motor Sürücü + Kumanda)",
+   "kalemler": []
+  },
+  "AEARBSES": {
+   "baslik": "Arduino Başlangıç Seti 46 Parça | Kutulu | Türkçe Proje Kitabı + Örnek Kod | STEM",
+   "kalemler": [
+    {
+     "adet": 1,
+     "aciklama": "Arduino Uno R3 Klon CH340 Kablo Hediyeli",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "HCSR04 Ultrasonic Mesafe Sensörü",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Jumper Kablo 20cm 40 pin Erkek-Erkek",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Mini Breadboard 170 pin",
+     "parca_sk": null
+    },
+    {
+     "adet": 5,
+     "aciklama": "Kırmızı Led 5mm",
+     "parca_sk": null
+    },
+    {
+     "adet": 5,
+     "aciklama": "Mavi Led 5mm",
+     "parca_sk": null
+    },
+    {
+     "adet": 5,
+     "aciklama": "Yeşil Led 5mm",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "RGB Led 5mm",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "LDR",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Buzzer",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "Buton 6x6 - 2pin",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Potansiyometre 10K",
+     "parca_sk": null
+    },
+    {
+     "adet": 10,
+     "aciklama": "Direnç 10K",
+     "parca_sk": null
+    },
+    {
+     "adet": 10,
+     "aciklama": "Direnç 330R",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "Malzeme Kutusu",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AEARISES": {
+   "baslik": "Arduino İleri Seviye Kutulu Eğitim Seti - 86 Parça",
+   "kalemler": []
+  },
+  "AEAROSES": {
+   "baslik": "Arduino Proje Geliştirme Seti 56 Parça | İleri Seviye | Türkçe Proje Kitabı + Örnek Kod | STEM",
+   "kalemler": []
+  },
+  "AEARSNST": {
+   "baslik": "Akıllı Proje ve Sensör Modülleri Seti - 10 Parça",
+   "kalemler": []
+  },
+  "AETMLELKDS": {
+   "baslik": "Temel Elektronik Deney Seti",
+   "kalemler": [
+    {
+     "adet": 1,
+     "aciklama": "Büyük Boy Breadboard (Prototipleme Kartı)",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "40'lı Erkek-Erkek Jumper Kablo (20 cm)",
+     "parca_sk": null
+    },
+    {
+     "adet": 15,
+     "aciklama": "Karışık Renkli LED (Kırmızı, Mavi, Yeşil)",
+     "parca_sk": null
+    },
+    {
+     "adet": 15,
+     "aciklama": "330 Ohm Çeyrek Watt Direnç (LED koruması için ideal)",
+     "parca_sk": null
+    },
+    {
+     "adet": 4,
+     "aciklama": "Buton - 6x6mm",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "9V Pil",
+     "parca_sk": null
+    },
+    {
+     "adet": 1,
+     "aciklama": "9V Pil Soketi",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AEENDELK": {
+   "baslik": "Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi",
+   "kalemler": []
+  },
+  "AEENDELKSET": {
+   "baslik": "Endüstriyel Elektronik Uygulama Seti - Meslek Lisesi 11. Sınıf",
+   "kalemler": [
+    {
+     "adet": 1,
+     "aciklama": ": Büyükboy Breadboard - 830 Pin",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AEDHT11PS": {
+   "baslik": "Arduino Sıcaklık-Nem Ölçer Proje Kiti | DHT11+LCD | STEM Kodlama + Türkçe Döküman",
+   "kalemler": [
+    {
+     "adet": 16,
+     "aciklama": "2 LCD Ekran I2C Modüllü (Mavi)",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AERFIDPS": {
+   "baslik": "Arduino RFID Akıllı Kilit Proje Kiti | RC522+Servo+Uno | STEM + Örnek Kod",
+   "kalemler": []
+  },
+  "AERTCPS": {
+   "baslik": "Dijital Saat & Takvim Projesi Kiti (DS1302 + LCD + Arduino) - Jumper Kablo Hediyeli",
+   "kalemler": [
+    {
+     "adet": 16,
+     "aciklama": "2 LCD Ekran I2C Modüllü (Mavi)",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AESTEPPS": {
+   "baslik": "Step Motor ile Hassas Konumlandırma Kiti (28BJY-48 + Arduino) - Jumper Kablo Hediyeli",
+   "kalemler": []
+  },
+  "AEHSPS": {
+   "baslik": "Hareket Algılayan Sesli Uyarı Kiti (PIR + Röle + Buzzer + Arduino) - Jumper Kablo Hediyeli",
+   "kalemler": []
+  },
+  "AEL298NMTRT": {
+   "baslik": "L298N Motor Sürücü ve 2 adet 3-6V DC Redüktörlü Motor + Tekerlek Seti",
+   "kalemler": [
+    {
+     "adet": 1,
+     "aciklama": "L298N Motor Sürücü Modülü",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "3-6v Redüktörlü Motor",
+     "parca_sk": null
+    },
+    {
+     "adet": 2,
+     "aciklama": "Tekerlek",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AEEAS3P": {
+   "baslik": "Pense Yankeski Kargaburun 3'lü Set",
+   "kalemler": []
+  },
+  "AEEAS7P": {
+   "baslik": "Usta İşi El Aletleri Seti - 7 Parça",
+   "kalemler": []
+  },
+  "AEHVYST6P": {
+   "baslik": "Lehimleme ve Proje Çalışmaları için 6'lı Havya Seti",
+   "kalemler": []
+  },
+  "AETCS9P": {
+   "baslik": "Takım Çantası ve El Aletleri Seti 9 Parça",
+   "kalemler": [
+    {
+     "adet": 5,
+     "aciklama": "100 Yıldız Tornavida",
+     "parca_sk": null
+    },
+    {
+     "adet": 5,
+     "aciklama": "100 Düz Tornavida",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AETCS18P": {
+   "baslik": "Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set",
+   "kalemler": []
+  },
+  "AE6X13PLK5": {
+   "baslik": "5 Adet Delikli Bakır Plaket - 6x13",
+   "kalemler": [
+    {
+     "adet": 5,
+     "aciklama": "Delikli Bakır Plaket 6x13",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AE9VPILSKT": {
+   "baslik": "DC Jack Çıkışlı 9v Pil Soketi - Arduino Uyumlu 10 Adet",
+   "kalemler": [
+    {
+     "adet": 10,
+     "aciklama": "DC Jack Çıkışlı 9V Pil Soketi",
+     "parca_sk": null
+    }
+   ]
+  },
+  "AEPLSTKKT": {
+   "baslik": "Renkli Çok Amaçlı Malzeme Kutusu (26,5 x 17,5 x 8)",
+   "kalemler": []
+  }
+ }
+}

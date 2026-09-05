@@ -1,0 +1,80 @@
+name: Stok merkezi - siparis toplama
+
+# Yarim saatte bir tum pazaryerlerinden yeni siparisleri ceker, receteyle
+# parcalara acar, Shopify (stok masteri) parca stogundan duser ve hesaplanan
+# set stoklarini kanallara dagitir. Ayni siparis iki kez dusulmez
+# (state/siparis_gorulen.json). Kuru modda hicbir yere yazmaz, sadece raporlar.
+#
+# ILK KURULUM: mod=kuru ile birkac tur izle; parca sayimlari Shopify'a girilince
+# STOK_MOD repo degiskenini "uygula" yap (Settings > Variables).
+
+on:
+  schedule:
+    - cron: "*/30 6-21 * * *"    # 09:00-24:00 TR arasi yarim saatte bir
+  workflow_dispatch:
+    inputs:
+      mod:
+        description: "kuru | uygula"
+        type: choice
+        options: [kuru, uygula]
+        default: kuru
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stok-siparis
+  cancel-in-progress: false
+
+jobs:
+  siparis:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONIOENCODING: utf-8
+      PYTHONPATH: src:src/marketplaces
+      SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
+      SHOPIFY_ADMIN_TOKEN: ${{ secrets.SHOPIFY_ADMIN_TOKEN }}
+      TRENDYOL_API_KEY: ${{ secrets.TRENDYOL_API_KEY }}
+      TRENDYOL_API_SECRET: ${{ secrets.TRENDYOL_API_SECRET }}
+      TRENDYOL_SUPPLIER_ID: ${{ secrets.TRENDYOL_SUPPLIER_ID }}
+      HEPSIBURADA_MERCHANT_ID: ${{ secrets.HEPSIBURADA_MERCHANT_ID }}
+      HEPSIBURADA_SECRET_KEY: ${{ secrets.HEPSIBURADA_SECRET_KEY }}
+      HEPSIBURADA_DEV_USERNAME: ${{ secrets.HEPSIBURADA_DEV_USERNAME }}
+      HEPSIBURADA_ENV: ${{ secrets.HEPSIBURADA_ENV }}
+      N11_API_KEY: ${{ secrets.N11_API_KEY }}
+      N11_API_SECRET: ${{ secrets.N11_API_SECRET }}
+      PAZARAMA_API_KEY: ${{ secrets.PAZARAMA_API_KEY }}
+      PAZARAMA_SECRET_KEY: ${{ secrets.PAZARAMA_SECRET_KEY }}
+      IDEFIX_API_KEY: ${{ secrets.IDEFIX_API_KEY }}
+      IDEFIX_SECRET: ${{ secrets.IDEFIX_SECRET }}
+      IDEFIX_SATICI_ID: ${{ secrets.IDEFIX_SATICI_ID }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Bagimliliklari kur
+        run: pip install --quiet -r requirements.txt
+
+      - name: Siparisleri topla ve dus
+        run: |
+          MOD="${{ inputs.mod || vars.STOK_MOD || 'kuru' }}"
+          echo "mod=$MOD"
+          if [ "$MOD" = "uygula" ]; then
+            python -m stok.siparis --uygula
+          else
+            python -m stok.siparis --kuru
+          fi
+
+      - name: Durumu kaydet
+        run: |
+          git config user.name "stok-bot"
+          git config user.email "stok-bot@users.noreply.github.com"
+          git add state/siparis_gorulen.json state/siparis_gunlugu.jsonl state/stok_dagitim.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "stok: siparis dusumu $(date -u +%Y-%m-%dT%H:%M)"
+          git pull --rebase --quiet origin main || true
+          git push --quiet || true

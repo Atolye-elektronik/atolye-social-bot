@@ -1,0 +1,68 @@
+{
+ "marka": "ATOLYE ELEKTRONİK",
+ "markaId": 2967081,
+ "kategori": "Elektronik Devre Elemanı",
+ "kategoriId": 3094,
+ "kargoId": 9,
+ "kargoKodu": "SURATMP",
+ "mensei": "CN",
+ "ozellikler": [
+  {
+   "attributeId": 1192,
+   "attributeValueId": 10617300
+  }
+ ],
+ "_not": "05.09: gozluk 3473 (Is Guvenligi Gozluk, Kullanim Tipi Koruyucu Gozluk) + izolebant 2530 (Yapistirici ve Bant, Elektrik Bandi)",
+ "urunler": [
+  {
+   "stokKodu": "AES400IGG",
+   "modelKodu": "AES400IGG",
+   "barkod": "2920000600032",
+   "kategoriId": 3473,
+   "ozellikler": [
+    {
+     "attributeId": 1192,
+     "attributeValueId": 10617300
+    },
+    {
+     "attributeId": 198,
+     "attributeValueId": 299531
+    }
+   ],
+   "ad": "Ayarlı İş Güvenliği Gözlüğü S400 - Yan Korumalı Polikarbonat",
+   "aciklama": "Atölye, şantiye ve laboratuvarda gözü toz, çapak ve sıçramalardan koruyan ergonomik koruyucu gözlük. Teleskopik ayarlanabilir sap, darbeye dayanıklı polikarbonat panoramik cam, yan korumalı gövde.",
+   "fiyat": 130,
+   "stok": 50,
+   "desi": 1,
+   "gorseller": [
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/gozluk.png?v=1785443668",
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/gozluk_426875f4-8082-4e80-accf-a6a895ef43ed.webp?v=1785443668"
+   ]
+  },
+  {
+   "stokKodu": "AE5IZOLE",
+   "modelKodu": "AE5IZOLE",
+   "barkod": "2920000600049",
+   "kategoriId": 2530,
+   "ozellikler": [
+    {
+     "attributeId": 1192,
+     "attributeValueId": 10617300
+    },
+    {
+     "attributeId": 493,
+     "attributeValueId": 1179014
+    }
+   ],
+   "ad": "Elektrik İzolebant Siyah - 5 Adet Ekonomik Paket",
+   "aciklama": "Elektrik tesisatı, kablo ekleme ve onarım, otomotiv ve hobi projeleri için PVC elektrik izolasyon bandı, 5'li paket. Esnek yapı, güçlü yapışkan, yüksek voltaj yalıtımı, alev geciktirici.",
+   "fiyat": 155,
+   "stok": 50,
+   "desi": 1,
+   "gorseller": [
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/bant2.png?v=1785444085",
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/bant.png?v=1785444085"
+   ]
+  }
+ ]
+}

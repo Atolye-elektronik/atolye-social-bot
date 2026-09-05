@@ -45,3 +45,7 @@ posts/media/tiktok/
 # README'de nereden alinacagi yaziyor.
 content/muzik-tiktok/*.m4a
 content/muzik-tiktok/*.mp3
+
+# yerel yedekler ve loglar
+.env.yedek-*
+state/*.log

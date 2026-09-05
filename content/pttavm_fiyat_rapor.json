@@ -1,0 +1,470 @@
+[
+ {
+  "sk": "AE12V1A",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=167 -> PTT=167"
+ },
+ {
+  "sk": "AE150LED",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=177 -> PTT=177"
+ },
+ {
+  "sk": "AE16X2LCD",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=278 -> PTT=289"
+ },
+ {
+  "sk": "AE16X2LCD2",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=482 -> PTT=482"
+ },
+ {
+  "sk": "AE28BYJ48",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=177 -> PTT=177"
+ },
+ {
+  "sk": "AE2WDEKRBT",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=492 -> PTT=493"
+ },
+ {
+  "sk": "AE2WDEKRBT-LI",
+  "not": "bilim kat=1342 kom=15% desi=3 TY=1049 -> PTT=1071"
+ },
+ {
+  "sk": "AE2WDEKRBT5230-LI",
+  "not": "bilim kat=1342 kom=15% desi=3 TY=1110 -> PTT=1134"
+ },
+ {
+  "sk": "AE3-6VMTR",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=179 -> PTT=179"
+ },
+ {
+  "sk": "AE3-6VMTR2",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=279 -> PTT=291"
+ },
+ {
+  "sk": "AE3-6VMTR4",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=419 -> PTT=419"
+ },
+ {
+  "sk": "AE3IN1ROBOT",
+  "not": "bilim kat=1342 kom=15% desi=3 TY=1574 -> PTT=1612"
+ },
+ {
+  "sk": "AE3IN1ROBOT-LI",
+  "not": "bilim kat=1342 kom=15% desi=3 TY=1626 -> PTT=1665"
+ },
+ {
+  "sk": "AE6X13PLK5",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=419 -> PTT=419"
+ },
+ {
+  "sk": "AE9VPILSKT",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=314 -> PTT=327"
+ },
+ {
+  "sk": "AEACDMMR",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=150 -> PTT=150"
+ },
+ {
+  "sk": "AEARBSES",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=944 -> PTT=958"
+ },
+ {
+  "sk": "AEARISES",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=2099 -> PTT=2150"
+ },
+ {
+  "sk": "AEARISES88",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=2099 -> PTT=2150"
+ },
+ {
+  "sk": "AEARNANOTC",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=439 -> PTT=439"
+ },
+ {
+  "sk": "AEARNANOTC2",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=449 -> PTT=449"
+ },
+ {
+  "sk": "AEAROSES",
+  "not": "bilim kat=1342 kom=15% desi=3 TY=1364 -> PTT=1396"
+ },
+ {
+  "sk": "AEARSNST",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=1054 -> PTT=1071"
+ },
+ {
+  "sk": "AEBB170P",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=114 -> PTT=114"
+ },
+ {
+  "sk": "AEBB830P",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=177 -> PTT=177"
+ },
+ {
+  "sk": "AEBZZR5V",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=50 -> PTT=50"
+ },
+ {
+  "sk": "AEBZZR5V-6",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=129 -> PTT=129"
+ },
+ {
+  "sk": "AEDCM3V-1",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=104 -> PTT=104"
+ },
+ {
+  "sk": "AEDCM3V-10",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=299 -> PTT=311"
+ },
+ {
+  "sk": "AEDCM3V-5",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=188 -> PTT=188"
+ },
+ {
+  "sk": "AEDHT11",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=125 -> PTT=125"
+ },
+ {
+  "sk": "AEDHT11PS",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=649 -> PTT=658"
+ },
+ {
+  "sk": "AEDT830D",
+  "not": "multimetre kat=3122 kom=13% desi=1 TY=299 -> PTT=302"
+ },
+ {
+  "sk": "AEDUY-10",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=293 -> PTT=305"
+ },
+ {
+  "sk": "AEDUYAMP-1",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=104 -> PTT=104"
+ },
+ {
+  "sk": "AEDUYAMP-10",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=366 -> PTT=380"
+ },
+ {
+  "sk": "AEDUYAMP-5",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=261 -> PTT=272"
+ },
+ {
+  "sk": "AEEAS3P",
+  "not": "pense kat=2861 kom=16% desi=1 TY=933 -> PTT=961"
+ },
+ {
+  "sk": "AEEAS7P",
+  "not": "avadanlik kat=3029 kom=16% desi=1 TY=1049 -> PTT=1082"
+ },
+ {
+  "sk": "AEENDELK",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=888 -> PTT=900"
+ },
+ {
+  "sk": "AEENDELKSET",
+  "not": "bilim kat=1342 kom=15% desi=3 TY=1154 -> PTT=1179"
+ },
+ {
+  "sk": "AEFENSET",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=199 -> PTT=199"
+ },
+ {
+  "sk": "AEHC06BT",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=366 -> PTT=380"
+ },
+ {
+  "sk": "AEHC06RAK",
+  "not": "bilim kat=1342 kom=15% desi=3 TY=1154 -> PTT=1179"
+ },
+ {
+  "sk": "AEHC06RAK-LI",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=1206 -> PTT=1231"
+ },
+ {
+  "sk": "AEHCSR04",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=133 -> PTT=133"
+ },
+ {
+  "sk": "AEHCSR045",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=524 -> PTT=526"
+ },
+ {
+  "sk": "AEHCSR501",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=167 -> PTT=167"
+ },
+ {
+  "sk": "AEHSPS",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=659 -> PTT=668"
+ },
+ {
+  "sk": "AEHVYSHP",
+  "not": "lehimaks kat=2884 kom=16% desi=1 TY=184 -> PTT=184"
+ },
+ {
+  "sk": "AEHVYST6P",
+  "not": "lehim kat=2883 kom=16% desi=2 TY=839 -> PTT=866"
+ },
+ {
+  "sk": "AEIRKMND",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=146 -> PTT=146"
+ },
+ {
+  "sk": "AEIRRAK",
+  "not": "bilim kat=1342 kom=15% desi=3 TY=1049 -> PTT=1071"
+ },
+ {
+  "sk": "AEIRRAK-LI",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=1101 -> PTT=1123"
+ },
+ {
+  "sk": "AEISDSYS10",
+  "not": "defter kat=3859 kom=18% desi=3 TY=1418 -> PTT=1518"
+ },
+ {
+  "sk": "AEISDSYS20",
+  "not": "defter kat=3859 kom=18% desi=7 TY=2350 -> PTT=2554"
+ },
+ {
+  "sk": "AEJK2040",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=135 -> PTT=135"
+ },
+ {
+  "sk": "AEJK2040222",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=513 -> PTT=514"
+ },
+ {
+  "sk": "AEJK2040DD",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=135 -> PTT=135"
+ },
+ {
+  "sk": "AEJK2040DE",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=135 -> PTT=135"
+ },
+ {
+  "sk": "AEJK2040EE3",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=314 -> PTT=327"
+ },
+ {
+  "sk": "AEJK2040EEDE33",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=513 -> PTT=514"
+ },
+ {
+  "sk": "AEKB1602",
+  "not": "kargaburun kat=2866 kom=16% desi=1 TY=398 -> PTT=419"
+ },
+ {
+  "sk": "AEKRK10",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=249 -> PTT=249"
+ },
+ {
+  "sk": "AEKRK5",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=169 -> PTT=169"
+ },
+ {
+  "sk": "AEL298N",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=177 -> PTT=177"
+ },
+ {
+  "sk": "AEL298NMTRT",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=450 -> PTT=450"
+ },
+ {
+  "sk": "AELHMPMP",
+  "not": "lehimaks kat=2884 kom=16% desi=1 TY=156 -> PTT=156"
+ },
+ {
+  "sk": "AEMOTPRV-1",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=109 -> PTT=109"
+ },
+ {
+  "sk": "AEMOTPRV-10",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=399 -> PTT=414"
+ },
+ {
+  "sk": "AEMOTPRV-5",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=279 -> PTT=291"
+ },
+ {
+  "sk": "AEMYNK3",
+  "not": "yankeski kat=2859 kom=16% desi=1 TY=349 -> PTT=368"
+ },
+ {
+  "sk": "AEPLSTKKT",
+  "not": "takimcanta kat=3030 kom=16% desi=2 TY=345 -> PTT=367"
+ },
+ {
+  "sk": "AEPNS180",
+  "not": "pense kat=2861 kom=16% desi=1 TY=398 -> PTT=419"
+ },
+ {
+  "sk": "AEPOT10K",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=95 -> PTT=95"
+ },
+ {
+  "sk": "AEPOT10K-6",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=149 -> PTT=149"
+ },
+ {
+  "sk": "AEPRV-10",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=177 -> PTT=177"
+ },
+ {
+  "sk": "AEPRV-5",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=129 -> PTT=129"
+ },
+ {
+  "sk": "AEPY18650",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=148 -> PTT=148"
+ },
+ {
+  "sk": "AEPY18650-2",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=154 -> PTT=154"
+ },
+ {
+  "sk": "AEPY18650T10",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=450 -> PTT=450"
+ },
+ {
+  "sk": "AEPY18650T5",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=250 -> PTT=261"
+ },
+ {
+  "sk": "AEPYAA2",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=115 -> PTT=115"
+ },
+ {
+  "sk": "AERC522RFID",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=188 -> PTT=188"
+ },
+ {
+  "sk": "AERFIDPS",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=630 -> PTT=638"
+ },
+ {
+  "sk": "AERTC1302",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=146 -> PTT=146"
+ },
+ {
+  "sk": "AERTC13025",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=419 -> PTT=419"
+ },
+ {
+  "sk": "AERTCPS",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=699 -> PTT=709"
+ },
+ {
+  "sk": "AESARJKT1",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=130 -> PTT=130"
+ },
+ {
+  "sk": "AESG90",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=156 -> PTT=156"
+ },
+ {
+  "sk": "AESG905",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=524 -> PTT=526"
+ },
+ {
+  "sk": "AESTEPPS",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=587 -> PTT=594"
+ },
+ {
+  "sk": "AESTJDFTR",
+  "not": "defter kat=3859 kom=18% desi=1 TY=173 -> PTT=173"
+ },
+ {
+  "sk": "AET2WDRBT",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=513 -> PTT=514"
+ },
+ {
+  "sk": "AET2WDRBT-LI",
+  "not": "bilim kat=1342 kom=15% desi=2 TY=545 -> PTT=551"
+ },
+ {
+  "sk": "AETC162",
+  "not": "takimcanta kat=3030 kom=16% desi=1 TY=529 -> PTT=539"
+ },
+ {
+  "sk": "AETCS18P",
+  "not": "avadanlik kat=3029 kom=16% desi=6 TY=3000 -> PTT=3136"
+ },
+ {
+  "sk": "AETCS9P",
+  "not": "avadanlik kat=3029 kom=16% desi=6 TY=1784 -> PTT=1866"
+ },
+ {
+  "sk": "AETEMDEF",
+  "not": "defter kat=3859 kom=18% desi=1 TY=173 -> PTT=173"
+ },
+ {
+  "sk": "AETEMELSET",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=335 -> PTT=348"
+ },
+ {
+  "sk": "AETKRM5V",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=156 -> PTT=156"
+ },
+ {
+  "sk": "AETKRM5V5",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=524 -> PTT=526"
+ },
+ {
+  "sk": "AETMLELKDS",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=314 -> PTT=327"
+ },
+ {
+  "sk": "AETMRNDFTR10",
+  "not": "defter kat=3859 kom=18% desi=3 TY=1418 -> PTT=1518"
+ },
+ {
+  "sk": "AETMRNDFTR20",
+  "not": "defter kat=3859 kom=18% desi=6 TY=2350 -> PTT=2533"
+ },
+ {
+  "sk": "AETMRNDFTR30",
+  "not": "defter kat=3859 kom=18% desi=10 TY=3350 -> PTT=3684"
+ },
+ {
+  "sk": "AETP4056",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=124 -> PTT=124"
+ },
+ {
+  "sk": "AETP4056-2",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=144 -> PTT=144"
+ },
+ {
+  "sk": "AEUNOR3",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=356 -> PTT=370"
+ },
+ {
+  "sk": "AEUNOR32",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=356 -> PTT=370"
+ },
+ {
+  "sk": "AEUNOR33",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=944 -> PTT=958"
+ },
+ {
+  "sk": "AEUT12D",
+  "not": "kontrolkal kat=3123 kom=13% desi=2 TY=468 -> PTT=468"
+ },
+ {
+  "sk": "AEVANTSET",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=159 -> PTT=159"
+ },
+ {
+  "sk": "AEVHM314",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=146 -> PTT=146"
+ },
+ {
+  "sk": "AEXL6009",
+  "not": "bilim kat=1342 kom=15% desi=1 TY=135 -> PTT=135"
+ },
+ {
+  "sk": "AEYNKSK160",
+  "not": "yankeski kat=2859 kom=16% desi=1 TY=398 -> PTT=419"
+ },
+ {
+  "sk": "AEZD30C40W",
+  "not": "lehim kat=2883 kom=16% desi=1 TY=524 -> PTT=533"
+ }
+]

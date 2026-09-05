@@ -1,0 +1,1359 @@
+{
+ "_aciklama": "Sanal set receteleri (05.09.2026, urun aciklamalarindaki kutu iceriklerinden birebir). Stok yalnizca parcalarda tutulur; set stogu = min(parca_stok // adet). Ic ice set desteklenir (bir setin parcasi baska bir set olabilir). 'yeni_parcalar': Shopify'da henuz urun karti olmayan, sadece stok takibi icin acilacak parcalar. 05.09 duzeltme: AET2WDRBT poset tek kalem; AEENDELK paket tek kalem, AEENDELKSET = kutu + 3 jumper + breadboard + paket (ayri kalemler).",
+ "yeni_parcalar": {
+  "AELED5K": "LED 5mm Kirmizi",
+  "AELED5M": "LED 5mm Mavi",
+  "AELED5Y": "LED 5mm Yesil",
+  "AELEDRGB": "RGB LED 5mm",
+  "AELDR": "LDR (isik sensoru)",
+  "AENTC10K": "NTC 10K",
+  "AEBTN6X6": "Buton 6x6 2 pin",
+  "AEDIR10K": "Direnc 10K 1/4W",
+  "AEDIR330": "Direnc 330R 1/4W",
+  "AEPIL9V": "9V Pil",
+  "AETUPLEHIM": "Tup Lehim",
+  "AELEHIMPASTA": "Lehim Pastasi",
+  "AEIZOLE": "Izole Bant (tekli)",
+  "AEPOT10K": "Potansiyometre 10K (TY'de var, Shopify'da urun karti yok)",
+  "AEKRK1": "Krokodil kablo (tekli)"
+ },
+ "coklu_paket": {
+  "AEKRK5": {
+   "parca": "AEKRK1",
+   "adet": 5
+  },
+  "AEKRK10": {
+   "parca": "AEKRK1",
+   "adet": 10
+  },
+  "AEPY18650T5": {
+   "parca": "AEPY18650T",
+   "adet": 5
+  },
+  "AEPY18650T10": {
+   "parca": "AEPY18650T",
+   "adet": 10
+  },
+  "AEMYNK3": {
+   "parca": "AEMYNK",
+   "adet": 3
+  },
+  "AEPRV-5": {
+   "parca": "AEPRV-1",
+   "adet": 5
+  },
+  "AEPRV-10": {
+   "parca": "AEPRV-1",
+   "adet": 10
+  },
+  "AEPOT10K-6": {
+   "parca": "AEPOT10K",
+   "adet": 6
+  },
+  "AETP4056-2": {
+   "parca": "AETP4056",
+   "adet": 2
+  },
+  "AEDUY-10": {
+   "parca": "AEDUY-1",
+   "adet": 10
+  },
+  "AEDCM3V-5": {
+   "parca": "AEDCM3V-1",
+   "adet": 5
+  },
+  "AEDCM3V-10": {
+   "parca": "AEDCM3V-1",
+   "adet": 10
+  },
+  "AEBZZR5V-6": {
+   "parca": "AEBZZR5V",
+   "adet": 6
+  },
+  "AEPY18650-2": {
+   "parca": "AEPY18650",
+   "adet": 2
+  },
+  "AETMRNDFTR10": {
+   "parca": "AETEMDEF",
+   "adet": 10
+  },
+  "AETMRNDFTR20": {
+   "parca": "AETEMDEF",
+   "adet": 20
+  },
+  "AETMRNDFTR30": {
+   "parca": "AETEMDEF",
+   "adet": 30
+  },
+  "AEISDSYS10": {
+   "parca": "AESTJDFTR",
+   "adet": 10
+  },
+  "AEISDSYS20": {
+   "parca": "AESTJDFTR",
+   "adet": 20
+  },
+  "AEHCSR045": {
+   "parca": "AEHCSR04",
+   "adet": 5
+  },
+  "AESG905": {
+   "parca": "AESG90",
+   "adet": 5
+  },
+  "AETKRM5V5": {
+   "parca": "AETKRM5V",
+   "adet": 5
+  },
+  "AERTC13025": {
+   "parca": "AERTC1302",
+   "adet": 5
+  },
+  "AEUNOR33": {
+   "parca": "AEUNOR3",
+   "adet": 3
+  },
+  "AEUNOR32": {
+   "parca": "AEUNOR3",
+   "adet": 1
+  },
+  "AEARNANOTC2": {
+   "parca": "AENANOTC",
+   "adet": 1
+  },
+  "AEARNANOTC": {
+   "parca": "AENANOTC",
+   "adet": 1
+  },
+  "AE3-6VMTR2": {
+   "parca": "AE3-6VMTR",
+   "adet": 2
+  },
+  "AE3-6VMTR4": {
+   "parca": "AE3-6VMTR",
+   "adet": 4
+  },
+  "AE16X2LCD2": {
+   "parca": "AE16X2LCD",
+   "adet": 2
+  },
+  "AE6X13PLK5": {
+   "parca": "AE6X13PLK",
+   "adet": 5
+  },
+  "AE9VPILSKT": {
+   "parca": "AE9VPILSKT1",
+   "adet": 10
+  },
+  "AE9VPILSKT2": {
+   "parca": "AE9VPILSKT1",
+   "adet": 2
+  },
+  "AEARISES88": {
+   "parca": "AEARISES",
+   "adet": 1
+  },
+  "AE5IZOLE": {
+   "parca": "AEIZOLE",
+   "adet": 5
+  },
+  "AEACDMMR2": {
+   "parca": "AEACDMMR",
+   "adet": 2
+  },
+  "AE3-6VMTR5": {
+   "parca": "AE3-6VMTR",
+   "adet": 5
+  },
+  "AE9VPIL10": {
+   "parca": "AEPIL9V",
+   "adet": 10
+  }
+ },
+ "setler": {
+  "AEJK2040EE3": [
+   [
+    "AEJK2040",
+    1
+   ],
+   [
+    "AEJK2040DD",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ]
+  ],
+  "AEJK2040222": [
+   [
+    "AEJK2040",
+    2
+   ],
+   [
+    "AEJK2040DD",
+    2
+   ],
+   [
+    "AEJK2040DE",
+    2
+   ]
+  ],
+  "AEJK2040EEDE33": [
+   [
+    "AEJK2040",
+    3
+   ],
+   [
+    "AEJK2040DE",
+    3
+   ]
+  ],
+  "AE150LED": [
+   [
+    "AELED5K",
+    50
+   ],
+   [
+    "AELED5M",
+    50
+   ],
+   [
+    "AELED5Y",
+    50
+   ]
+  ],
+  "AEMOTPRV-1": [
+   [
+    "AEDCM3V-1",
+    1
+   ],
+   [
+    "AEPRV-1",
+    1
+   ]
+  ],
+  "AEMOTPRV-5": [
+   [
+    "AEDCM3V-1",
+    5
+   ],
+   [
+    "AEPRV-1",
+    5
+   ]
+  ],
+  "AEMOTPRV-10": [
+   [
+    "AEDCM3V-1",
+    10
+   ],
+   [
+    "AEPRV-1",
+    10
+   ]
+  ],
+  "AEDUYAMP-1": [
+   [
+    "AEDUY-1",
+    1
+   ],
+   [
+    "AEAMP-1",
+    1
+   ]
+  ],
+  "AEDUYAMP-5": [
+   [
+    "AEDUY-1",
+    5
+   ],
+   [
+    "AEAMP-1",
+    5
+   ]
+  ],
+  "AEDUYAMP-10": [
+   [
+    "AEDUY-1",
+    10
+   ],
+   [
+    "AEAMP-1",
+    10
+   ]
+  ],
+  "AEVANTSET": [
+   [
+    "AEPYAA2",
+    1
+   ],
+   [
+    "AEDCM3V-1",
+    1
+   ],
+   [
+    "AEDC125B",
+    1
+   ],
+   [
+    "AEPRV-1",
+    1
+   ]
+  ],
+  "AEFENSET": [
+   [
+    "AEBB830P",
+    1
+   ],
+   [
+    "AEPYAA2",
+    1
+   ],
+   [
+    "AEDCM3V-1",
+    1
+   ],
+   [
+    "AEPRV-1",
+    1
+   ],
+   [
+    "AEDC125B",
+    1
+   ]
+  ],
+  "AETEMELSET": [
+   [
+    "AEBB830P",
+    1
+   ],
+   [
+    "AEPYAA2",
+    1
+   ],
+   [
+    "AEDCM3V-1",
+    1
+   ],
+   [
+    "AEPRV-1",
+    1
+   ],
+   [
+    "AEDUY-1",
+    1
+   ],
+   [
+    "AEAMP-1",
+    1
+   ],
+   [
+    "AEDC125B",
+    2
+   ]
+  ],
+  "AETEMELSET-J": [
+   [
+    "AETEMELSET",
+    1
+   ],
+   [
+    "AEJK2040",
+    1
+   ]
+  ],
+  "AESARJKT1": [
+   [
+    "AETP4056",
+    1
+   ],
+   [
+    "AEPY18650T",
+    1
+   ]
+  ],
+  "AESARJKT": [
+   [
+    "AETP4056",
+    1
+   ],
+   [
+    "AEPY18650",
+    1
+   ]
+  ],
+  "AEGUCVOLTKIT": [
+   [
+    "AEXL6009",
+    1
+   ],
+   [
+    "AE9VPILSKT1",
+    1
+   ],
+   [
+    "AE12V1A",
+    1
+   ]
+  ],
+  "AEPROTOTIPKIT": [
+   [
+    "AEBB830P",
+    1
+   ],
+   [
+    "AEJK2040",
+    1
+   ],
+   [
+    "AE6X13PLK",
+    1
+   ],
+   [
+    "AEPLSTKKT",
+    1
+   ]
+  ],
+  "AESESKIT": [
+   [
+    "AEVHM314",
+    1
+   ],
+   [
+    "AEDC125B",
+    1
+   ],
+   [
+    "AE12V1A",
+    1
+   ]
+  ],
+  "AEL298NMTRT": [
+   [
+    "AEL298N",
+    1
+   ],
+   [
+    "AE3-6VMTR",
+    2
+   ]
+  ],
+  "AET2WDRBT-LI": [
+   [
+    "AET2WDRBT",
+    1
+   ],
+   [
+    "AEPY18650",
+    1
+   ]
+  ],
+  "AE2WDEKRBT": [
+   [
+    "AET2WDRBT",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEHCSR04",
+    1
+   ],
+   [
+    "AESG90",
+    1
+   ],
+   [
+    "AEL298N",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ]
+  ],
+  "AE2WDEKRBT-LI": [
+   [
+    "AET2WDRBT-LI",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEHCSR04",
+    1
+   ],
+   [
+    "AESG90",
+    1
+   ],
+   [
+    "AEL298N",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ]
+  ],
+  "AE2WDEKRBT5230-LI": [
+   [
+    "AET2WDRBT-LI",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEHCSR04",
+    1
+   ],
+   [
+    "AESG90",
+    1
+   ],
+   [
+    "AEL298N",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ]
+  ],
+  "AEHC06RAK": [
+   [
+    "AET2WDRBT",
+    1
+   ],
+   [
+    "AEHC06BT",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEL298N",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ]
+  ],
+  "AEHC06RAK-LI": [
+   [
+    "AET2WDRBT-LI",
+    1
+   ],
+   [
+    "AEHC06BT",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEL298N",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ]
+  ],
+  "AEIRRAK": [
+   [
+    "AET2WDRBT",
+    1
+   ],
+   [
+    "AEIRKMND",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEL298N",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ]
+  ],
+  "AEIRRAK-LI": [
+   [
+    "AET2WDRBT-LI",
+    1
+   ],
+   [
+    "AEIRKMND",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEL298N",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ]
+  ],
+  "AE3IN1ROBOT": [
+   [
+    "AET2WDRBT",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEL298N",
+    1
+   ],
+   [
+    "AEHC06BT",
+    1
+   ],
+   [
+    "AEIRKMND",
+    1
+   ],
+   [
+    "AEHCSR04",
+    1
+   ],
+   [
+    "AESG90",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ],
+   [
+    "AEJK2040",
+    1
+   ]
+  ],
+  "AE3IN1ROBOT-LI": [
+   [
+    "AET2WDRBT-LI",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEL298N",
+    1
+   ],
+   [
+    "AEHC06BT",
+    1
+   ],
+   [
+    "AEIRKMND",
+    1
+   ],
+   [
+    "AEHCSR04",
+    1
+   ],
+   [
+    "AESG90",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ],
+   [
+    "AEJK2040",
+    1
+   ]
+  ],
+  "AERFIDPS": [
+   [
+    "AERC522RFID",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AESG90",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ],
+   [
+    "AEJK2040",
+    1
+   ]
+  ],
+  "AESTEPPS": [
+   [
+    "AE28BYJ48",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ]
+  ],
+  "AEDHT11PS": [
+   [
+    "AEDHT11",
+    1
+   ],
+   [
+    "AE16X2LCD",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ]
+  ],
+  "AERTCPS": [
+   [
+    "AERTC1302",
+    1
+   ],
+   [
+    "AE16X2LCD",
+    1
+   ],
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ]
+  ],
+  "AEHSPS": [
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEHCSR501",
+    1
+   ],
+   [
+    "AETKRM5V",
+    1
+   ],
+   [
+    "AEBZZR5V",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ]
+  ],
+  "AEARBSES": [
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AEHCSR04",
+    1
+   ],
+   [
+    "AEJK2040",
+    1
+   ],
+   [
+    "AEBB170P",
+    1
+   ],
+   [
+    "AELED5K",
+    5
+   ],
+   [
+    "AELED5M",
+    5
+   ],
+   [
+    "AELED5Y",
+    5
+   ],
+   [
+    "AELEDRGB",
+    1
+   ],
+   [
+    "AELDR",
+    1
+   ],
+   [
+    "AEBZZR5V",
+    1
+   ],
+   [
+    "AEBTN6X6",
+    2
+   ],
+   [
+    "AEPOT10K",
+    1
+   ],
+   [
+    "AEDIR10K",
+    10
+   ],
+   [
+    "AEDIR330",
+    10
+   ],
+   [
+    "AEPLSTKKT",
+    1
+   ]
+  ],
+  "AEAROSES": [
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AE12V1A",
+    1
+   ],
+   [
+    "AEHCSR04",
+    1
+   ],
+   [
+    "AEDHT11",
+    1
+   ],
+   [
+    "AELDR",
+    1
+   ],
+   [
+    "AENTC10K",
+    1
+   ],
+   [
+    "AEPOT10K",
+    1
+   ],
+   [
+    "AERC522RFID",
+    1
+   ],
+   [
+    "AEIRKMND",
+    1
+   ],
+   [
+    "AEBTN6X6",
+    4
+   ],
+   [
+    "AESG90",
+    1
+   ],
+   [
+    "AELED5K",
+    5
+   ],
+   [
+    "AELED5M",
+    5
+   ],
+   [
+    "AELED5Y",
+    5
+   ],
+   [
+    "AELEDRGB",
+    1
+   ],
+   [
+    "AEBZZR5V",
+    2
+   ],
+   [
+    "AEBB830P",
+    1
+   ],
+   [
+    "AEJK2040",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ],
+   [
+    "AEDIR10K",
+    10
+   ],
+   [
+    "AEDIR330",
+    10
+   ],
+   [
+    "AEPLSTKKT",
+    1
+   ]
+  ],
+  "AEARSNST": [
+   [
+    "AEHC06BT",
+    1
+   ],
+   [
+    "AEIRKMND",
+    1
+   ],
+   [
+    "AERC522RFID",
+    1
+   ],
+   [
+    "AE16X2LCD",
+    1
+   ],
+   [
+    "AETKRM5V",
+    1
+   ],
+   [
+    "AEL298N",
+    1
+   ],
+   [
+    "AE3-6VMTR",
+    1
+   ],
+   [
+    "AE28BYJ48",
+    1
+   ],
+   [
+    "AEHCSR04",
+    1
+   ],
+   [
+    "AEDHT11",
+    1
+   ]
+  ],
+  "AEARISES": [
+   [
+    "AEUNOR3",
+    1
+   ],
+   [
+    "AE12V1A",
+    1
+   ],
+   [
+    "AEL298N",
+    1
+   ],
+   [
+    "AE28BYJ48",
+    1
+   ],
+   [
+    "AESG90",
+    1
+   ],
+   [
+    "AE3-6VMTR",
+    1
+   ],
+   [
+    "AEHC06BT",
+    1
+   ],
+   [
+    "AERC522RFID",
+    1
+   ],
+   [
+    "AEIRKMND",
+    1
+   ],
+   [
+    "AEHCSR04",
+    1
+   ],
+   [
+    "AEDHT11",
+    1
+   ],
+   [
+    "AELDR",
+    1
+   ],
+   [
+    "AENTC10K",
+    1
+   ],
+   [
+    "AEBTN6X6",
+    4
+   ],
+   [
+    "AEPOT10K",
+    1
+   ],
+   [
+    "AE16X2LCD",
+    1
+   ],
+   [
+    "AELED5K",
+    5
+   ],
+   [
+    "AELED5M",
+    5
+   ],
+   [
+    "AELED5Y",
+    5
+   ],
+   [
+    "AELEDRGB",
+    2
+   ],
+   [
+    "AEBZZR5V",
+    4
+   ],
+   [
+    "AEBB830P",
+    1
+   ],
+   [
+    "AEJK2040",
+    1
+   ],
+   [
+    "AEJK2040DD",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ],
+   [
+    "AEDIR10K",
+    20
+   ],
+   [
+    "AEDIR330",
+    20
+   ],
+   [
+    "AEPIL9V",
+    1
+   ],
+   [
+    "AE9VPILSKT1",
+    1
+   ],
+   [
+    "AEPLSTKKT",
+    1
+   ]
+  ],
+  "AETMLELKDS": [
+   [
+    "AEBB830P",
+    1
+   ],
+   [
+    "AEJK2040",
+    1
+   ],
+   [
+    "AELED5K",
+    5
+   ],
+   [
+    "AELED5M",
+    5
+   ],
+   [
+    "AELED5Y",
+    5
+   ],
+   [
+    "AEDIR330",
+    15
+   ],
+   [
+    "AEBTN6X6",
+    4
+   ],
+   [
+    "AEPIL9V",
+    1
+   ],
+   [
+    "AE9VPILSKT1",
+    1
+   ]
+  ],
+  "AEENDELKSET": [
+   [
+    "AEPLSTKKT",
+    1
+   ],
+   [
+    "AEJK2040",
+    1
+   ],
+   [
+    "AEJK2040DD",
+    1
+   ],
+   [
+    "AEJK2040DE",
+    1
+   ],
+   [
+    "AEBB830P",
+    1
+   ],
+   [
+    "AEENDELK",
+    1
+   ]
+  ],
+  "AEEAS3P": [
+   [
+    "AEPNS180",
+    1
+   ],
+   [
+    "AEYNKSK160",
+    1
+   ],
+   [
+    "AEKB1602",
+    1
+   ]
+  ],
+  "AEEAS7P": [
+   [
+    "AEPNS180",
+    1
+   ],
+   [
+    "AEYNKSK160",
+    1
+   ],
+   [
+    "AEKB1602",
+    1
+   ],
+   [
+    "AE5X100DT",
+    1
+   ],
+   [
+    "AE5X100YT",
+    1
+   ],
+   [
+    "AEKNTKLM",
+    1
+   ],
+   [
+    "AEIZOLE",
+    1
+   ]
+  ],
+  "AEHVYST6P": [
+   [
+    "AEZD30C40W",
+    1
+   ],
+   [
+    "AEHVYSHP",
+    1
+   ],
+   [
+    "AELHMPMP",
+    1
+   ],
+   [
+    "AETUPLEHIM",
+    1
+   ],
+   [
+    "AELEHIMPASTA",
+    1
+   ],
+   [
+    "AE6X13PLK",
+    1
+   ]
+  ],
+  "AETCS9P": [
+   [
+    "AETC162",
+    1
+   ],
+   [
+    "AEPNS180",
+    1
+   ],
+   [
+    "AEKB1602",
+    1
+   ],
+   [
+    "AEYNKSK160",
+    1
+   ],
+   [
+    "AE5X100YT",
+    1
+   ],
+   [
+    "AE5X100DT",
+    1
+   ],
+   [
+    "AEKNTKLM",
+    1
+   ],
+   [
+    "AES400IGG",
+    1
+   ],
+   [
+    "AEIZOLE",
+    1
+   ]
+  ],
+  "AETCS18P": [
+   [
+    "AETC162",
+    1
+   ],
+   [
+    "AEYNKSK160",
+    1
+   ],
+   [
+    "AEPNS180",
+    1
+   ],
+   [
+    "AEKB1602",
+    1
+   ],
+   [
+    "AE5X100DT",
+    1
+   ],
+   [
+    "AE5X100YT",
+    1
+   ],
+   [
+    "AEKNTKLM",
+    1
+   ],
+   [
+    "AEZD30C40W",
+    1
+   ],
+   [
+    "AEHVYSHP",
+    1
+   ],
+   [
+    "AELHMPMP",
+    1
+   ],
+   [
+    "AETUPLEHIM",
+    1
+   ],
+   [
+    "AELEHIMPASTA",
+    1
+   ],
+   [
+    "AES400IGG",
+    1
+   ],
+   [
+    "AEIZOLE",
+    1
+   ],
+   [
+    "AE6X13PLK",
+    1
+   ],
+   [
+    "AEDT830D",
+    1
+   ],
+   [
+    "AEBB830P",
+    1
+   ]
+  ]
+ },
+ "parca_olarak_kalan_setler": {
+  "_not": "Kendi icinde set gibi gorunen ama tek kalem olarak alinip satilan urunler; stok kendisinde tutulur.",
+  "AEIRKMND": "17 tuslu kumanda + HX1838 alici + IR verici LED + kablolar",
+  "AE28BYJ48": "step motor + ULN2003 surucu",
+  "AERC522RFID": "RC522 + kart + anahtarlik + header",
+  "AEENDELK": "endustriyel elektronik komponent paketi (kullanici karari: tek parca)",
+  "AE3-6VMTR": "sari motor + tekerlek ikilisi",
+  "AEUNOR3": "Uno + USB kablo",
+  "AENANOTC": "Nano + Type-C kablo",
+  "AET2WDRBT": "2WD robot kiti poseti: sasi + 2 sari motor + tekerler + sarhos teker + enkoder + 4'lu AA kutusu + vida — TEK KALEM (kullanici karari 05.09). Serbest sari motor stogu (AE3-6VMTR) ayri sayilir."
+ }
+}

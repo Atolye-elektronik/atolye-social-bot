@@ -1,0 +1,363 @@
+## AEARBSES | Arduino Başlangıç Seti 46 Parça | Kutulu | Türkçe Proje Kitabı + Örnek Kod | STEM
+Kodlama dünyasına adım atan her öğrencinin ilk durağı! Bu set, hem ortaokul hem lise seviyesinde"Robotik Kodlama" dersi temel uygulamaları yapabilmeniz için özel olarak hazırlandı. LED kontrolünden mesafe ölçümüne, buton girişlerinden sensör okumaya kadar tüm temel elektronik mantığını bu setle kavrayacaksınız. Dağınıklığı önleyen malzeme kutusu ve projelerinizi hızlıca kurmanızı sağlayan mini breadboard ile atölye masanız artık daha düzenli. 
+ Set İçeriği: 
+ • 1x Arduino Uno R3 Klon CH340 Kablo Hediyeli
+ • 1x HCSR04 Ultrasonic Mesafe Sensörü
+ • 1x Jumper Kablo 20cm 40 pin Erkek-Erkek
+ • 1x Mini Breadboard 170 pin
+ • 5x Kırmızı Led 5mm
+ • 5x Mavi Led 5mm
+ • 5x Yeşil Led 5mm
+ • 1x RGB Led 5mm
+ • 1x LDR
+ • 1x Buzzer
+ • 2x Buton 6x6 - 2pin
+ • 1x Potansiyometre 10K
+ • 10x Direnç 10K
+ • 10x Direnç 330R
+ • 1x Malzeme Kutusu
+
+## AEAROSES | Arduino Proje Geliştirme Seti 56 Parça | İleri Seviye | Türkçe Proje Kitabı + Örnek Kod | STEM
+Elektronik ve yazılım dünyasında kendini geliştirmek, ortam verilerini okumak ve kendi akıllı projelerini tasarlamak isteyenler için özel olarak hazırlanmış kapsamlı geliştirme setidir. Sadece temel bileşenlerle sınırlı kalmayan bu set; sensörler, kablosuz haberleşme modülleri, güvenlik sistemleri ve zengin çevresel donanımlar sayesinde projelerinizi gerçeğe dönüştürmeniz için gereken tüm ara yüzleri sunar.
+ Öne Çıkan Özellikler: 
+ • Çevre ve Sensör Teknolojisi: DHT11 ve LDR/NTC gibi bileşenlerle ortamın sıcaklık, nem ve ışık verilerini ölçebilir; HC-SR04 ile mesafe algılayan sistemler kurabilirsiniz.
+ • Kartlı ve Uzaktan Kontrol: RC522 RFID kiti ile şifreli/kartlı geçiş mekanizmaları, IR kumanda ile kablosuz kontrol uygulamaları yapabilirsiniz.
+ • Görsel ve İşitsel Geri Bildirim: Zengin LED seçenekleri, RGB modül ve buzzerlar ile devrelerinizin durumunu izleyebilirsiniz.
+ • Düzenli Atölye Düzeni: Setle birlikte gelen plastik malzeme kutusu sayesinde tüm küçük komponentlerinizi kaybetmeden düzenli bir şekilde saklayabilirsiniz.
+ Set İçeriği: 
+ • Ana Kontrol & Güç: Arduino Uno R3 Klon (Kablolu) ve 12V 1A Adaptör.
+ • Sensör & Algılama: HC-SR04 Mesafe Sensörü, DHT11 Sıcaklık ve Nem Sensörü, LDR, NTC, Potansiyometre.
+ • Haberleşme & Giriş: RC522 RFID Kiti, IR Alıcı Verici Kumanda Seti, 4x Buton.
+ • Hareketli Bileşenler: SG90 Servo Motor.
+ • Görsel & Ses: 15x LED, 1x RGB Led, 2x Buzzer.
+ • Bağlantı & Donanım: Büyük Breadboard, 2x Jumper Kablo Seti (Erkek-Erkek / Dişi-Erkek), 20x Direnç (10k & 330R).
+ • Muhafaza: Plastik Malzeme Kutusu (Kutu rengi stok durumuna göre değişebilir)
+Kullanım Alanları: 
+ • Akıllı ev ve ortam iklimlendirme sistemleri.
+ • RFID tabanlı güvenlik ve turnike uygulamaları.
+ • Park sensörü ve dijital mesafe göstergeleri.
+ • Işığa veya ısıya duyarlı uyarı ve kontrol sistemleri.
+
+## AEARSNST | Akıllı Proje ve Sensör Modülleri Seti - 10 Parça
+Elektronik ve yazılım dünyasında projelerini bir üst seviyeye taşımak isteyenler için özenle derlenmiş kapsamlı Sensör ve Modül Geliştirme Seti. Bu paket; sıcaklık/nem ölçümünden kablosuz Bluetooth kontrolüne, motor sürücülerden RFID güvenlik sistemlerine kadar geniş bir yelpazede uygulama yapmanıza olanak tanır. Akıllı ev uygulamaları, robotik araçlar ve endüstriyel prototipler geliştirmek için ihtiyacınız olan tüm kritik bileşenleri tek sette bulabilirsiniz.
+ Öne Çıkan Özellikler
+ • Kablosuz Haberleşme ve Kontrol: HC-06 modülü ile Bluetooth bağlantısı kurabilir, IR alıcı-verici seti ile projelerinizi uzaktan yönetebilirsiniz.
+ • Görsel ve Veri Ekranı: I2C modüllü 16x2 LCD ekran sayesinde kablo karmaşası yaşamadan verilerinizi anlık olarak okuyabilirsiniz.
+ • Hassas Hareket ve Güç Kontrolü: L298N ve step motor sürücüsü ile yüksek akımlı motorlarınızı ve redüktörlü sistemlerinizi güvenle kontrol edebilirsiniz.
+ • Akıllı Sensörler: DHT11 ve HC-SR04 gibi sensörlerle çevresel verileri toplayabilir, RC522 kiti ile şifreli/kartlı geçiş sistemleri tasarlayabilirsiniz.
+ Set İçeriği
+ • Haberleşme & Kontrol: HC-06 Bluetooth Modülü, IR Alıcı/Verici Kumanda Seti, RC522 NFC/RFID Kiti.
+ • Ekran & Çıkış: 16x2 LCD Ekran (I2C Modüllü), Tek Kanal 5V Röle Modülü.
+ • Motor & Sürücü: L298N Motor Sürücü, 3-6V Redüktörlü Motor + Tekerlek, 28BYJ-48 Step Motor ve Sürücü Seti.
+ • Ölçüm & Sensör: HC-SR04 Mesafe Sensörü, DHT11 Sıcaklık ve Nem Sensörü.
+Kullanım Alanları 
+ • Akıllı oda termostatı ve nem takip sistemleri.
+ • Bluetooth kontrollü robotik araçlar ve engelden kaçan robotlar.
+ • RFID ile çalışan şifreli kapı kilit ve güvenlik uygulamaları.
+ • Zaman ayarlı röle ile ev otomasyonu simülasyonları.
+ • Step motor ve redüktörlü motor ile hassas konumlandırma ve mekanizma tasarımları.
+ Teknisyen Notu
+ Güvenlik ve Kurulum Tavsiyesi: Set içerisindeki modüllerin bağlantılarını yaparken voltaj uyumluluğuna dikkat edilmesi ve röle modülü ile yüksek voltaj (220V) anahtarlama yaparken mutlaka bir eğitmen gözetiminde çalışılması önerilir. Sensörlerin hassas kalibrasyonu için hazır kütüphanelerden faydalanabilirsiniz.
+
+## AEARISES | Arduino İleri Seviye Kutulu Eğitim Seti - 86 Parça
+Elektronik dünyasına adım atmış ve artık kendi projelerini tasarlamak isteyen öğrenciler, mühendis adayları ve hobi tutkunları için özel olarak hazırlanmış kapsamlı bir "İleri Seviye" eğitim setidir. Bu set, temel Arduino Uno kartından başlayarak; robotik hareket, kablosuz haberleşme, sensör tabanlı otomasyon ve endüstriyel kontrol sistemlerini aynı çatı altında buluşturur.
+Neden Bu Set? 
+ Piyasada bulunan başlangıç setlerinin aksine bu paket; 
+ Bluetooth (HC-06), 
+ RFID güvenlik sistemleri, 
+ Step Motor sürücüleri ve 
+ Akıllı Ev sensörleri (DHT11, LDR, NTC) ile zenginleştirilmiştir. Set içerisindeki 12V adaptör ve yüksek akımlı L298N sürücü sayesinde, basit devrelerden güç gerektiren robotik projelere kadar her aşamada ihtiyacınız olan donanımı tek bir kutuda sunar. 
+Set İçeriği (86 parça): 
+ • Kontrol Ünitesi: Arduino Uno(Kablolu) ve güç ihtiyacınız için 12V 1A Adaptör.
+ • Hareket & Motor: L298N Motor Sürücü, Step Motor ve Sürücüsü(28BJY-48), SG90 Servo Motor, Redüktörlü DC Motor ve Tekerlek.
+ • Haberleşme & Kontrol: HC-06 Bluetooth Modülü, RFID RC522 Seti, IR Alıcı/Verici Kumanda Seti.
+ • Sensör & Girdi: HC-SR04 Ultrasonic Mesafe Sensörü, DHT11 Sıcaklık ve Nem Sensörü, LDR (Işık), NTC (Isı), 4x Buton, Potansiyometre(10K),
+ • Görsel & Ses: 16x2 I2C LCD Ekran, 15x LED(Kırmızı, Mavi, Yeşil), 2x RGB LED, 4x Buzzer.
+ • Bağlantı & Donanım: Büyük Breadboard, 3xJumper Kablo(40'lı, 20cm), 40 adet Direnç (10k & 330R), 9V Pil ve Pil Soketi.
+ • Düzenleyici: Tüm malzemelerinizi koruyan ve düzenli tutmanızı sağlayan sarı yada mavi saklama kutusu.
+Kullanım Alanları: 
+ • Engel tanıyan akıllı robotlar.
+ • Bluetooth kontrollü araçlar ve cihazlar.
+ • RFID ile çalışan şifreli kapı kilit sistemleri.
+ • Akıllı sera ve oda iklimlendirme projeleri.
+ • Endüstriyel otomasyon ve zaman ayarlı anahtarlama uygulamaları.
+
+## AETMLELKDS | Temel Elektronik Deney Seti
+Elektronik dünyasına sağlam bir adım atmak, devre kurma mantığını öğrenmek ve temel algoritmaları pratiğe dökmek isteyenler için özenle bir araya getirilmiş 
+ Temel Elektronik Deney Setidir. Sınıf içi atölye uygulamalarından kişisel hobi projelerine kadar geniş bir kullanım standardına sahip olan bu paket, lehim gerektirmeden güvenli bir şekilde devre tasarlamanıza olanak tanır. 
+ Set içerisinde yer alan büyük boy breadboard ve 40'lı jumper kablo sayesinde, bileşenleri rahatça yerleştirebilir ve karmaşık olmayan temiz tasarımlar yapabilirsiniz. Üstelik paket içeriğine 
+ 9V pil ve pil soketi de dahil olduğu için, projelerinizi harici bir güç kaynağı aramaya gerek kalmadan anında çalıştırabilirsiniz. 
+Öne Çıkan Özellikler: 
+ • Tak-Çalıştır Kolaylığı: Büyük boy breadboard (prototip kartı) sayesinde herhangi bir havya veya lehim kullanmadan komponentleri saniyeler içinde birleştirebilirsiniz.
+ • Görsel Geri Bildirim: 3 farklı renkteki (Kırmızı, Mavi, Yeşil) toplam 15 adet LED ve bunlara tam uyumlu 330 Ohm akım sınırlama dirençleri ile zengin ışık/sinyal uygulamaları yapabilirsiniz.
+ • Tamamen Mobil: Pil soketi ve 9V pil sayesinde devrelerinizi bilgisayara bağlı kalmadan, taşınabilir şekilde besleyebilirsiniz.
+ • Müfredata İle Uyumluluk: Meslek liseleri, ortaokul robotik kulüpleri ve temel teknoloji derslerinin "Akım, Gerilim, Direnç ve Buton Kontrolü" gibi temel elektronik uygulamalarına tam olarak hitap eder.
+Set İçeriği: 
+ • 1x Büyük Boy Breadboard (Prototipleme Kartı)
+ • 1x 40'lı Erkek-Erkek Jumper Kablo (20 cm)
+ • 15x Karışık Renkli LED (Kırmızı, Mavi, Yeşil)
+ • 15x 330 Ohm Çeyrek Watt Direnç (LED koruması için ideal)
+ • 4x Buton - 6x6mm
+ • 1x 9V Pil
+ • 1x 9V Pil Soketi
+Kullanım ve Uygulama Alanları:
+ • Temel LED yakma, seri ve paralel devre tasarımları.
+ • Buton ile LED kontrolü, lojik uygulamalar.
+ • Arduino Uno, Mega veya diğer mikrodenetleyiciler için harici deneysel devre alanları oluşturma.
+
+## AEENDELK | Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi
+Endüstriyel Elektronik dersi müfredatına tam uyumlu olarak hazırlanan bu set, öğrencilerin ve elektronik meraklılarının güç elektroniği, sensör teknolojileri ve analog sinyal işleme konularında profesyonel uygulamalar geliştirmesi için tasarlanmıştır. İçeriğindeki 
+ Tristör, 
+ Triyak ve 
+ Diyak gibi yarı iletken güç elemanları sayesinde AC/DC güç kontrolü; 
+ LM358 ve 
+ LM741 entegreleri ile sinyal yükseltme; 
+ 555 ve 
+ 4017 ile zamanlama ve sayıcı projeleri gerçekleştirilebilir. Ayrıca sette yer alan 
+ Hall Sensör, 
+ Kapasitif Mikrofon, 
+ LDR, 
+ NTC ve 
+ PTC gibi bileşenler; manyetik alan, ses, ışık ve sıcaklık gibi çevresel verilerin endüstriyel sistemlerde nasıl işlendiğini anlamak için zengin bir deneyim sunar. Hem teorik bilgiyi pratiğe dökmek hem de kalıcı projeler üretmek için eksiksiz bir eğitim paketidir. 
+ Öne Çıkan Uygulama Alanları: 
+ • Güç Kontrolü: Diyak, Tristör ve Triyak ile lamba dimmer veya motor hız kontrol devreleri.
+ • Sensör Teknolojileri: Hall sensör ile manyetik konumlandırma, kapasitif mikrofon ile ses algılama, LDR ile ışık ve NTC/PTC ile sıcaklık kontrollü otomasyonlar.
+ • Haberleşme & İzolasyon: Optokuplör ve Optotriyak kullanarak düşük voltajlı devreler ile yüksek voltajlı yüklerin güvenli kontrolü.
+ • Analog Sinyal İşleme: Op-Amp (LM741/358) kullanarak karşılaştırıcı, yükseltici ve ses amfisi devre tasarımları.
+ Endüstriyel Elektronik Malzeme Listesi
+Yarı İletkenler ve Entegreler: 
+ • Güç Elemanları: BT151 Tristör, BT136 Triyak, DB-3 Diyak, IRFZ44N Mosfet, 2N5460 FET
+ • Entegreler: 555 Zamanlayıcı, 4017 Sayıcı, LM358 ve LM741 Op-Amp
+ • Transistörler: BC237 (3 adet), BC327, BC547, BC548, BC557
+ • Diyotlar: 1N4001(2 adet), 1N4007(2 adet), 1N4148 ve 3.3V Zener
+ • İzolasyon: 4N35 Optokuplör, MOC3023 Optotriyak
+Sensörler ve Giriş Elemanları: 
+ • Çevresel Sensörler: Hall Sensör (US1881), Kapasitif Mikrofon, LDR (5mm), NTC (10k), PTC (82 Ohm). 
+ • Haberleşme: TSOP1738 ve IR Alıcı, IR Verici
+ • Mekanik Giriş: Piezo Disk, Reedröle, 6 Pin Yaylı Buton(2 adet), 6x6 Buton(2 adet) ve Sürgülü Switch
+Pasif Komponentler ve Kontrol: 
+ • Potansiyometreler: 1k, 5k, 10k, 20k, 100k, 500k ve 1M Ohm seçenekleri
+ • Direnç Grubu: 47 Ohm'dan 4.7M Ohm'a kadar toplam 15 farklı değerde toplamda 23 adet direnç seti
+ • Kondansatör Grubu: 4.7nF'dan 1000uF'a kadar elektrolitik ve seramik kondansatörler; ayrıca 400V yüksek voltaj tipi
+Çıkış ve Diğer Elemanlar: 
+ • Röleler: 12V Röle ve 5V Röle
+ • Uyarıcılar: Aktif Buzzer, Kırmızı ve Mavi LED'ler, 12V 3mm Ampül
+
+## AEENDELKSET | Endüstriyel Elektronik Uygulama Seti - Meslek Lisesi 11. Sınıf
+Ürün Açıklaması:
+ Meslek liselerinin Elektrik-Elektronik Teknolojisi alanı 11. sınıf müfredatında yer alan Endüstriyel Elektronik dersi uygulamaları, laboratuvar deneyleri ve proje geliştirme çalışmalarınız için özel olarak hazırlanmıştır.
+Ders kapsamında işlenen güç elektroniği elemanları, anahtarlama devreleri, tetikleme devreleri ve endüstriyel kontrol uygulamalarını güvenle gerçekleştirebilmeniz için gereken tüm temel yardımcı ekipmanlar ve kompanentler bu sette bir araya getirilmiştir. Karmaşık parça seçimleriyle vakit kaybetmeyin; atölye çalışmalarınız için eksiksiz ve kullanıma hazır tek paket!
+Set İçeriği ve Parça Listesi: 
+ • 1 Adet: Renkli Çok Amaçlı Malzeme Kutusu (26,5 x 17,5 x 8 cm – Düzenli ve taşınabilir saklama alanı, Stok durumuna göre sarı yada mavi renk kutu gönderilecektir.)
+ • 1 Adet: Jumper Kablo Seti - 20 cm - 40'lı - 3'lü Set (1x Dişi-Erkek, 1x Dişi-Dişi, 1x Erkek-Erkek esnek bağlantı kabloları)
+ • 1 Adet: Büyükboy Breadboard - 830 Pin
+ • 1 Adet: Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi Komponent Paketi (Müfredata tam uyumlu temel ve endüstriyel elektronik elemanları)
+ • Endüstriyel Elektronik Eğitim Seti Malzeme Listesi
+ Yarı İletkenler ve Entegreler:
+ Güç Elemanları: BT151 Tristör, BT136 Triyak, DB-3 Diyak, IRFZ44N Mosfet, 2N5460 FET
+ Entegreler: 555 Zamanlayıcı, 4017 Sayıcı, LM358 ve LM741 Op-Amp
+ Transistörler: BC237 (3 adet), BC327, BC547, BC548, BC557
+ Diyotlar: 1N4001(2 adet), 1N4007(2 adet), 1N4148 ve 3.3V Zener
+ İzolasyon: 4N35 Optokuplör, MOC3023 Optotriyak
+ Sensörler ve Giriş Elemanları:
+ Çevresel Sensörler: Hall Sensör (US1881), Kapasitif Mikrofon, LDR (5mm), NTC (10k), PTC (82 Ohm).
+ Haberleşme: TSOP1738 ve IR Alıcı, IR Verici
+ Mekanik Giriş: Piezo Disk, Reedröle, 6 Pin Yaylı Buton(2 adet), 6x6 Buton(2 adet) ve Sürgülü Switch
+ Pasif Komponentler ve Kontrol:
+ Potansiyometreler: 1k, 5k, 10k, 20k, 100k, 500k ve 1M Ohm seçenekleri
+ Direnç Grubu: 47 Ohm'dan 4.7M Ohm'a kadar toplam 15 farklı değerde toplamda 23 adet direnç seti
+ Kondansatör Grubu: 4.7nF'dan 1000uF'a kadar elektrolitik ve seramik kondansatörler; ayrıca 400V yüksek voltaj tipi
+ Çıkış ve Diğer Elemanlar:
+ Röleler: 12V Röle ve 5V Röle
+ Uyarıcılar: Aktif Buzzer, Kırmızı ve Mavi LED'ler, 12V 3mm Ampül
+ Neden Bu Set?
+Müfredata Tam Uyum: 11. sınıf Endüstriyel Elektronik ders kazanımları ve uygulama föyleri dikkate alınarak oluşturulmuştur. 
+ Düzenli ve Dayanıklı: Çok amaçlı malzeme kutusu sayesinde tüm komponentler ve kablolar atölyede veya evde kaybolmadan, düzenli bir şekilde saklanır. 
+ Tak-Çalıştır Kolaylığı: Lehim yapma zorunluluğu olmaksızın, breadboard ve jumper kablolarla devreleri hızla kurup test etmenizi sağlar. 
+ Atölye Elektronik güvencesiyle, mesleki eğitiminizde en büyük yardımcınız!
+
+## AEHSPS | Hareket Algılayan Sesli Uyarı Kiti (PIR + Röle + Buzzer + Arduino) - Jumper Kablo Hediyeli
+Bağlantı şeması ve hazır Arduino kodu ile gönderilir. Kutuda A4 renkli bağlantı şeması bulunur; kod ve adım adım kurulum anlatımı paketle birlikte verilir.
+ Hareket Algılayan Akıllı Alarm ve Otomasyon Seti
+ Hareket algılandığında hem sesli uyarı veren hem de harici bir cihazı (lamba, siren vb.) tetikleyebilen akıllı bir sistem kurun! Bu set; hareket sensörü, sesli ikaz için aktif buzzer ve yüksek güçlü cihazları kontrol etmeniz için röle modülünü Arduino ile nasıl birlikte kullanacağınızı öğretmek üzere tasarlanmıştır.
+Pakette Neler Var? 
+ • Arduino Uno R3 Klon (CH340 Chipset, USB kablo dahil)
+ • HC-SR501 Ayarlanabilir Hareket Sensörü
+ • Tek Kanallı 5V Röle Modülü (220V / Harici Yük Kontrolü İçin)
+ • 5V Aktif Buzzer (Sesli İkaz Elemanı)
+ • Dişiden Erkeğe Jumper Kablo (Devre Bağlantıları İçin)
+Bu Set Kimler İçin? 
+ • Güvenlik ve otomasyon projelerine yeni başlayanlar
+ • Meslek lisesi öğrencileri ve TÜBİTAK proje çalışmaları
+ • Sensör algılama, sesli uyarı ve röle ile harici yük anahtarlama mantığını öğrenmek isteyenler
+ ⚠️UYARI: 220V Elektrik Kullanımı Hakkında Önemli Güvenlik Uyarısı: 
+ Set içerisindeki röle modülü 220V AC şebeke gerilimini anahtarlama kapasitesine sahiptir. Ancak 220V yüksek voltaj hayati risk taşıdığından, proje geliştirme aşamasında öncelikle LED veya 5V/12V gibi düşük gerilimli harici yüklerle çalışılması tavsiye edilir. 220V bağlantısı yapılacaksa mutlaka klemenslerin yalıtıldığından emin olunmalı ve işlemler yetkili/gözetim altında gerçekleştirilmelidir.
+
+## AE3IN1ROBOT | Çok Fonksiyonlu Robot Araba Kiti (Bluetooth + IR Kumanda + Engelden Kaçan)
+Bağlantı şeması ve hazır Arduino kodu ile gönderilir. Kutuda A4 renkli bağlantı şeması bulunur; kod ve adım adım kurulum anlatımı paketle birlikte verilir.
+ 3 ayrı proje, tek kutuda! Bu kombo set; aynı 2WD robot gövdesini kullanarak üç farklı kontrol yöntemini denemeni sağlar — Bluetooth ile telefon üzerinden kontrol, IR kumanda ile kablosuz kontrol ve HC-SR04 sensörle kendi kendine engelden kaçan otonom mod. 
+Modülleri değiştirerek aynı gövde üzerinde üç farklı projeyi yazılımlarını güncelleyerek sırayla kurabilirsin.
+Pakette Neler Var?
+ • 2WD Robot Araba Gövdesi (şasi, 2 adet DC motor, tekerlekler, sarhoş tekerlek, pil kutusu)
+ • Arduino Uno R3 Klon (CH340 Chipset, USB kablo dahil)
+ • L298N Dual Motor Sürücü Modülü
+ • HC-06 Bluetooth Kablosuz Haberleşme Modülü (Proje 1: telefonla kontrol)
+ • IR Alıcı Verici Kumanda Seti - 17 tuşlu kumanda + alıcı (Proje 2: kumandayla kontrol)
+ • HC-SR04 Ultrasonik Mesafe Sensörü + SG90 Mikro Servo Motor (Proje 3: engelden kaçan otonom robot)
+ • Bağlantılar için yeterli miktarda Dişi-Erkek ve Erkek-Erkek jumper kablo
+ • Montaj için gerekli vida, somun ve sabitleme aparatları
+Bu Set Kimler için?
+ • Tek gövdeyle birden fazla kontrol yöntemini kıyaslayarak öğrenmek isteyenler
+ • Meslek lisesi ve teknik lise öğrencileri, STEM/TÜBİTAK proje grupları
+ • Üç ayrı seti tek tek almak yerine tasarruflu bir kombo arayanlar
+ Not: Arduino içerisinde hazır yazılım bulunmamaktadır; her proje için açık kaynak kodlar bloğumuzda ve internette bulunabilir. Ayrıca robot kitinin verimli çalışabilmesi için kaliteli pil kullanmanız gerekmektedir.
+
+## AE2WDEKRBT | 2WD Akıllı Robot Araba Şasi Kiti DIY Pleksi Tekerlek Motor Çizgi İzleyen Engelden Kaçma
+2WD (Two-Wheel Drive / 2 Tekerlekten Çekişli) Akıllı Robot Araba Şasi Kiti, Arduino, Raspberry Pi veya ESP32 tabanlı otonom araç projelerine başlamak için tasarlanmış en popüler mekanik gövde platformudur. Arkada iki adet bağımsız DC motor ve önde $360^\circ$ dönebilen serbest sarhoş (caster) tekerlek kombinasyonu sayesinde, minimum sürtünmeyle harika bir manevra kabiliyeti sunar.Bu kit; çizgi izleyen, engelden kaçan, duvar takip eden veya uzaktan kumandalı (Bluetooth/Wi-Fi) robot projelerinin temel mekanik altyapısını oluşturur. 2WD Akıllı Robot Araba Şasi Kiti - DIY Pleksi Gövde Çizgi İzleyen ve Engelden Kaçan Robot PlatformuKendi otonom robotunuzu inşa etmek için ihtiyacınız olan tüm mekanik parçalar tek bir kitte! 2WD Akıllı Robot Araba Şasi Kiti, lazer kesim şeffaf pleksiglas gövdesiyle hafif, dayanıklı ve esnek bir montaj alanı sunar. Şasi üzerindeki önceden delinmiş fonksiyonel yuvalar; Arduino Uno, motor sürücüler, sensörler ve pil kutularını vidalama veya lehimleme zahmetine girmeden sabitlemenizi sağlar. Çizgi izleyen robot sensörleri (TCRT5000) şasinin ön alt kısmına, engelden kaçma sensörü (HC-SR04) ise ön üst kısma kolayca entegre edilebilir.Yüksek Manevra Kabiliyeti (Diferansiyel Sürüş): Sağ ve sol tekerleklerin bağımsız kontrol edilmesiyle kendi ekseni etrafında keskin dönüşler yapabilme yeteneği.Fonksiyonel Pleksi Gövde: Geliştirme kartları ve modüller için optimize edilmiş, koruyucu jelatinli şeffaf şasi tasarımı.Hız ve Mesafe Ölçümü (Enkoder Desteği): Paket içeriğindeki delikli enkoder diskleri yardımıyla hız sensörleri bağlayarak robotun aldığı yolu milimetrik hesaplayabilme imkanı.Tam Uyumlu Yürüyen Aksam: Sektör standardı sarı TT motorlar ve yüksek yol tutuşlu 65mm kauçuk tekerlek ikilisi.2WD Robot Araba Şasisi DIY Kit - Arduino Çizgi İzleyen ve Engelden Kaçma Robotu GövdesiRobotik kodlama dünyasına adım atmanın en eğlenceli yolu! Okulların robotik atölyelerinde, TÜBİTAK projelerinde ve STEM eğitimlerinde en çok tercih edilen 2WD Robot Araba Şasi Kiti, çocukların ve gençlerin analitik düşünme becerilerini geliştirir. "Kendin Yap" (DIY) felsefesine uygun olarak tasarlanan bu kit, mekanik parçaları birleştirirken el becerisini artırır. Tamamen demonte olarak gelen kiti montajlamak, motorları şasiye sabitlemek ve tekerlekleri takmak son derece pratik ve öğreticidir.Neden Bu 2WD Şasi Kitini Tercih Etmelisiniz?Gelişime Açık Altyapı: Bugün basit bir engelden kaçan robot olarak tasarladığınız araca, yarın yeni sensörler ekleyerek Bluetooth kontrollü veya yapay zeka destekli bir araca dönüştürebilirsiniz.Patinaj Yapmayan Lastikler: 65mm çapındaki tırtıklı kauçuk tekerlek yapısı, evdeki pürüzsüz zeminlerde (parke, fayans) robotun çizgisinden sapmasını ve kaymasını engeller.Eğitim Kurumlarının Bir Numaralı Tercihi: Dayanıklılığı ve uygun fiyatıyla toplu robotik sınıfları kurmak için en ideal bütçe dostu çözümdür.Standart Paket İçeriği (DIY Kit):1 x Lazer Kesim Şeffaf Pleksiglas Robot Şasisi2 x Sarı TT Redüktörlü DC Motor ($3\text{V} - 6\text{V}$)2 x 65mm Yüksek Yol Tutuşlu Kauçuk Tekerlek1 x $360^\circ$ Dönebilen Ön Sarhoş Tekerlek (Caster Wheel)2 x Hız Ölçüm Enkoder Diski (Hız Diski)1 x 4'lü AA Pil Kutusu (Anahtarsız)4 x Motor Sabitleme Aparatı (Pleksi)1 x Montaj İçin Gerekli Vida, Somun ve Metal Aralık (Spacer) SetiÜrün Teknik Özellikleri:Şasi Uzunluğu: ~210 mmŞasi Genişliği: ~150 mm (Tekerlekler hariç)Tekerlek Çapı: 65 mm / Genişlik: 26 mmMotor Besleme Gerilimi: $3\text{V} - 6\text{V} \text{ DC}$Redüksiyon Oranı: 1:48Ürün Girişi ve Kombinasyon Önerisi:Bu temel 2WD şasi kitini mağazanızda listelerken, kullanıcıların projeyi tamamlayabilmesi için ihtiyaç duyacağı yan elektronik ürünleri sayfanın altında "Birlikte Alınabilecekler" olarak sunabilirsiniz. L298N Çift Kanallı Motor Sürücü Kartı, SG90 9g Servo Motor, HC-SR04 Ultrasonik Mesafe Sensörü, W1209 Kontrol Kartı (farklı otomasyon hibrid tasarımları için) ve 65mm yedek tekerlekleri bu şasiyle çapraz satışa açabilirsiniz.Dijital mağazanızın kurumsal antrasit zeminli ürün fotoğraflarında, şasinin şeffaf lazer kesim hatlarını, sarı motorların kontrastını ve ön sarhoş tekerleğin metal parlaklığını net gösteren, dekupe edilmiş 45 derecelik açılar kullanmak e-ticaret sitenizdeki dönüşüm oranlarını doğrudan artıracaktır.
+
+## AEHC06RAK | Bluetooth Kontrollü Robot Kiti - Tam Set (Arduino + Motor Sürücü Dahil) - Jumper Kablo Hediyeli
+Bağlantı şeması ve hazır Arduino kodu ile gönderilir. Kutuda A4 renkli bağlantı şeması bulunur; kod ve adım adım kurulum anlatımı paketle birlikte verilir.
+ Kutudan çıkar, kur, kontrol et! Bu tam set, Bluetooth üzerinden telefonundan kontrol edebileceğin bir robot yapmak için ihtiyacın olan tüm temel bileşenleri içerir.
+ Pakette Neler Var?
+ • 2WD Robot Araba Kiti (demonte robotik gövde, 2 adet DC motor, tekerlekler, vida ve somunlar)
+ • HC-06 Bluetooth Kablosuz Seri Haberleşme Modülü
+ • Arduino Uno R3 Klon (CH340 Chipset, USB kablo dahil)
+ • L298N Dual Motor Sürücü Modülü
+ • Dişiden Erkeğe Jumper Kablo (bağlantılar için)
+Bu Set Kimler İçin?
+ • Arduino ile robotik projelere yeni başlayanlar
+ • Meslek lisesi ve teknik lise öğrencileri
+ • Bluetooth üzerinden telefon uygulamasıyla robot kontrolü öğrenmek isteyen hobiciler
+Bu sette hiçbir eksik yok — kutudan çıkar, birleştir, telefon uygulamasıyla robotunu kontrol etmeye başla!
+
+## AETCS9P | Takım Çantası ve El Aletleri Seti 9 Parça
+Bu set, bir evde veya atölyede oluşabilecek genel arızalara, montaj ihtiyaçlarına ve elektrik işlerine anında müdahale edebilmeniz için gereken tüm temel ekipmanları bir araya getirir. Düzenli bir takım çantası içinde sunulan bu kombinasyon, hem güvenliğinizi korur hem de işlerinizi hızlandırır. 
+ Set İçeriği; 
+ • 16 inç Takım Çantası Plastik Kilitli Organizerli 
+ • 180 mm Pense
+ • 160 mm Kargaburun
+ • 160 mm Yankeski
+ • 5x100 Yıldız Tornavida
+ • 5x100 Düz Tornavida
+ • Kontrol Kalemi
+ • Ayarlanabilir Şeffaf İş Güvenliği Gözlüğü
+ • İzolebant
+
+## AETCS18P | Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set
+Geleceğin teknisyenleri için tasarlanan bu set, bir öğrencinin eğitim hayatı boyunca ihtiyaç duyacağı tüm temel ekipmanları tek bir çantada topluyor. Meslek lisesine adım atan bir öğrencinin, 9. sınıftan mezuniyetine kadar atölye derslerinde ihtiyaç duyacağı tüm temel ekipmanlar bu çantada! "Hangi malzemeyi almalıyım?" derdine son veren bu set; ölçümden lehimlemeye, devre kurulumundan teknik notlara kadar her şeyi tek bir pakette sunuyor. Dayanıklı taşıma çantası ve iş güvenliği ekipmanıyla, atölye dersleriniz artık çok daha keyifli ve düzenli.
+ Set İçeriği (17 parça); 
+ • 16" Superbag Plastik Kilitli Organizerli Takım Çantası
+ • Yankeski - Pense - Kargaburun
+ • Düz Tornavida - Yıldız Tornavida - Kontrol Kalemi
+ • Marxlow ZD30C 40 Kalem Havya
+ • Havya Sehpası - Lehim Pompası - Tüp Lehim - Lehim Pastası
+ • Ayarlanabilir Şeffaf İş Güvenliği Gözlüğü
+ • İzolebant
+ • Delikli Pertinaks (6x12,5)
+ • Dijital Multimetre DT830D
+ • Breadboard 830 pin büyük boy
+
+## AEHVYST6P | Lehimleme ve Proje Çalışmaları için 6'lı Havya Seti
+Bu set, devre kurmaktan küçük ev aletleri onarımına kadar tüm lehimleme ihtiyaçlarınızı karşılamak için tasarlanmış kapsamlı bir çözüm paketidir. Bir projeye başlamak veya mevcut bir kartı tamir etmek için gereken tüm yardımcı ekipmanları bir arada sunar. 
+ Lehimleme yapmak için gereken sarf malzemeleri ve ana aletler bir aradadır; dışarıdan ek bir parça almanıza gerek kalmaz. 
+ Özellikle teknik lise öğrencileri, mühendislik adayları ve maker'lar için temel bir eğitim seti niteliğindedir. 
+ Hafif ve taşınabilir yapısı sayesinde her türlü masaüstü çalışmasına uygundur. 
+ Altlık ve korumalı kalem havya yapısı ile güvenli bir çalışma ortamı sağlar. 
+ Set İçeriği; 
+ • Marxlow ZD30C Kalem Hayva 40W
+ • Havya Sehpası
+ • Lehim Pompası
+ • Tüp Lehim
+ • Lehim Pastası
+ • Delikli Plaket (6x12,5)
+
+## AEEAS3P | Pense Yankeski Kargaburun 3'lü Set
+Pense 180 mm 
+ Yankeski 160 mm 
+ Kargaburun 160mm 
+ Atölyede veya elektrik işlerinde en çok ihtiyaç duyulan üç temel el aletini bir araya getirir. Pense, yankeski ve kargaburundan oluşan bu paket, hem kaba hem de hassas işler için eksiksiz bir çözümdür.
+ Pense: Güçlü kavrama, tutma ve bükme işleriniz için ana yardımcıdır.
+ Yankeski: Kablo, tel ve plastik parçaları temiz ve hızlı şekilde kesmenizi sağlar. 
+ Kargaburun: Dar alanlarda çalışmak, küçük parçaları tutmak ve hassas bükümler yapmak için idealdir.
+
+## AEEAS7P | Usta İşi El Aletleri Seti - 7 Parça
+Atölyede, evde veya sahada; teknik bir müdahale gerektiğinde elinizin altında olması gereken en temel 7 parça tek bir pakette! Meslek Lisesi öğrencilerinin atölye derslerinde en çok kullandığı ve bir teknisyenin çantasında mutlaka bulunması gereken demirbaş ekipmanları bir araya getirdik.
+ Set İçeriği ve Kullanım Alanları:
+ • Pense, Yankeski & Kargaburun: Tutma, sıkma, kablo soyma ve hassas kesim işleri için mukavemetli grup.
+ • Düz & Yıldız Tornavida: Elektronik cihazların montajı ve klemens bağlantıları için ideal, ergonomik saplı tasarım.
+ • Kontrol Kalemi: Elektrik tesisatlarında güvenliğiniz için gerilim kontrolünü saniyeler içinde yapmanızı sağlar.
+ • İzole Bant: Yapılan bağlantıların güvenli ve standartlara uygun şekilde yalıtılması için yüksek yapışma performanslı bant.
+Neden Bu Seti Almalısınız? Meslek lisesi müfredatındaki "El Becerisi ve Montaj" uygulamalarıyla tam uyumludur. Ergonomik sap yapıları sayesinde elinizi yormaz, izoleli gövdeleriyle güvenli bir çalışma ortamı sunar. Atölye çantanızın eksik parçasını bu kaliteli ve ekonomik setle tamamlayın!
+
+## AEIRKMND | IR Alıcı Verici Kumanda Seti - Arduino Uyumlu
+Projelerinize kablosuz kontrol kabiliyeti kazandırmak için ihtiyacınız olan tüm parçalar bu sette! Görseldeki bu özel set; 17 tuşlu ergonomik bir kumanda, montaja hazır bir alıcı modülü, ekstra bir IR verici LED ve bağlantı kablolarından oluşur. Arduino ve diğer mikrodenetleyicilerle 38 kHz frekansında haberleşerek, robotlarınızı veya akıllı ev sistemlerinizi uzaktan yönetmenizi sağlar.
+ Set İçeriği:
+ • 17 Tuşlu IR Kumanda: Sayılar, yön tuşları ve OK butonu ile fonksiyonel kullanım sunar.
+ • HX1838 Alıcı Modülü: Üzerindeki dahili sinyal işleyici sayesinde 38 kHz kızılötesi sinyalleri yakalar.
+ • IR Verici LED: Kendi kumandanızı yapmanız veya başka cihazlara sinyal göndermeniz için sete dahildir.
+ • Dişi-Dişi Jumper Kablolar: Modülü Arduino'nuza lehim gerektirmeden bağlamanızı sağlar.
+Teknik Özellikler:
+ • Frekans: 38 kHz (Standart IR haberleşme frekansı).
+ • Mesafe: Açık alanda yaklaşık 5-8 metre kontrol menzili.
+ • Haberleşme: Tek pin (Digital In) üzerinden kolay veri aktarımı.
+ • Uyumluluk: Tüm Arduino modelleri ve Raspberry Pi ile tam uyumlu.
+
+## AE28BYJ48 | 28BJY-48 Redüktörlü Step Motor Seti
+Hassas konumlandırma gerektiren projeleriniz için ideal, redüktörlü step motor ve sürücü modülü. 5V ile çalışabilmesi ve beraberindeki ULN2003 sürücü kartı sayesinde Arduino'ya kolayca entegre edilebilir. Küçük boyutuna rağmen sahip olduğu dahili redüktör (dişli kutusu) sayesinde boyutuna göre yüksek tork (dönme kuvveti) üretebilen bu set, hem eğitim hem de robotik uygulamaları için mükemmel bir tercihtir.
+ Öne Çıkan Özellikler:
+ • Hassas Açı Kontrolü: Adım adım hareket kabiliyetiyle robotik kollarda, tarayıcılarda ve döner tablalarda tam konumlandırma sağlar.
+ • Tak-Çalıştır Sürücü: Beraberindeki ULN2003A kartı, motorun ihtiyaç duyduğu yüksek akımı Arduino'dan bağımsız yöneterek pinlerinizi korur.
+ • Yüksek Tork (Redüktörlü): 1:64 redüktör oranı sayesinde yavaş ancak yüksek güçlü bir dönüş hareketi elde edilir.
+ • Kolay Kurulum: Standart XH-5P soket yapısı sayesinde kablo karmaşası yaşamadan saniyeler içinde bağlantı kurulur.
+Teknik Özellikler: 
+ • Çalışma Voltajı: 5V DC
+ • Faz Sayısı: 4
+ • Adım Açısı: 5.625° / 64 (Redüktörsüz adım açısıdır; 64 adımda 1 tur atar, dişli oranı ile bu hassasiyet çok daha yüksektir)
+ • Akım Tüketimi: Yaklaşık 240 mA
+ • Boyutlar: Motor çapı 28 mm
+ Kullanım Alanları:
+ • Akıllı ev sistemleri ve otomatik perde/panjur prototipleri.
+ • Küçük ölçekli CNC ve çizici (Plotter) uygulamaları.
+ • Kamera kaydırma (Slider) mekanizmaları.
+ • Robotik projeler ve döner stantlar.
+ Teknisyen Notu:
+ Dikkat: Motorun milini dışarıdan elinizle zorlayarak döndürmemeye özen gösterin, aksi takdirde içindeki redüktör dişlileri zarar görebilir. Hız ve konumlandırma işlemlerini her zaman Arduino kütüphaneleri (örn. Stepper.h) üzerinden yapmanız motorun ömrünü uzatacaktır.
+
+## AERC522RFID | RC522 RFID Okuyucu 13,56 Mhz
+Elektronik projelerinize kartlı giriş veya güvenlik sistemleri eklemek için tasarlanmış profesyonel bir RFID (Radyo Frekanslı Tanımlama) modülüdür. 13.56 MHz frekansında çalışan bu modül, set içerisinden çıkan özel RFID kartı ve anahtarlığı okuyarak, tanımlı kullanıcıları algılayabilir ve kapı kilidi, şifreli sistemler veya varlık takip uygulamaları geliştirmenize olanak tanır.
+Set İçeriği: 
+ • RC522 Okuyucu Modülü: Yüksek hassasiyetli RFID antenine sahip ana ünite.
+ • RFID Kart: Standart kredi kartı boyutunda, kişiselleştirilebilir kimlik kartı.
+ • RFID Anahtarlık (Keyfob): Yanınızda taşıması kolay, kompakt kimlik etiketi.
+ • Header Pinler: Modülün devreye lehimlenerek sabitlenmesi için düz ve açılı pinler.
+Öne Çıkan Özellikler: 
+ • Geniş Uyumluluk: SPI arayüzü ile Arduino, Raspberry Pi ve diğer tüm mikrodenetleyicilerle sorunsuz çalışır.
+ • Yüksek Güvenlik: Benzersiz kimlik numaraları (UID) sayesinde yetkilendirme projeleri için idealdir.
+ • Düşük Enerji Tüketimi: Pil ile çalışan taşınabilir güvenlik projeleri için uygundur.
+ • Kolay Entegrasyon: Arduino için hazır kütüphaneleri (MFRC522) ile "Kart okundu -> Kapıyı aç" mantığını kodlamak sadece birkaç satır sürer.
+ Kullanım Alanları:
+ • Kartlı giriş ve turnike sistemleri.
+ • Akıllı ev güvenlik protokolleri.
+ • Personel veya öğrenci devam takip sistemleri.
+ • Otomatik eşya tanımlama ve stok yönetim uygulamaları.
+
+## AET2WDRBT | 2WD Robot Araba Kiti (Demonte Robotik Gövde)
+Kendi akıllı robotunu tasarlamak, engelden kaçan, çizgi izleyen veya Bluetooth kontrollü araç projeleri geliştirmek isteyenler için ideal mekanik platformdur. Üzerindeki montaj delikleri sayesinde Arduino Uno, NodeMCU, ESP32 gibi mikrodenetleyicilerle ve L298N gibi motor sürücülerle tam uyumludur. Şeffaf ve dayanıklı pleksiglas gövdesi, projelerinize hem estetik bir görünüm kazandırır hem de tüm bileşenleri rahatça sabitlemenize olanak tanır. Ürün demonte olarak gönderilmekte olup, montaj aşaması el becerisini ve mekanik montaj mantığını geliştirmenize yardımcı olur.
+ Öne Çıkan Özellikler:
+ • Yüksek Uyumluluk: Gövde üzerindeki hazır delikler; sensörler, kontrol kartları ve pil kutularını vidalamak için özel olarak konumlandırılmıştır.
+ • Redüktörlü Güçlü Motorlar: Set içindeki 2 adet kaliteli sarı motor (3-6V) yüksek tork sunarak robotunuzun stabil ve dengeli hareket etmesini sağlar.
+ • Dahili Hız Diskleri (Encoder): Motor milleriyle uyumlu delikli diskler sayesinde tekerleklerin dönüş hızını ve aldığı mesafeyi hassas şekilde ölçebilirsiniz.
+ • Esnek Hareket Kabiliyeti: Ön tarafta yer alan sarhoş tekerlek sayesinde robotunuz kendi ekseni etrafında 360 derece esnek dönüşler gerçekleştirebilir.
+ Set İçeriği:
+ • 1x Şeffaf Robot Araba Şasisi (Pleksiglas Gövde)
+ • 2x 3-6V Redüktörlü DC Motor (Sarı Motor)
+ • 2x Yüksek Yol Tutuşlu Lastik & Tekerlek
+ • 2x Hız Ölçer Disk (Encoder Diski)
+ • 1x Sarhoş Tekerlek (Ön Yönlendirme Tekeri)
+ • 1x 4'lü AA Pil Kutusu
+ • Montaj için gerekli tüm vida, somun ve metal/plastik bağlantı aparatları.
+ Kullanım ve Proje Alanları:
+ • Arduino veya Raspberry Pi tabanlı akıllı robot arabalar.
+ • HC-SR04 ultrasonic sensör ile engelden kaçan robot projeleri.
+ • Kızılötesi (IR) sensörler eklenerek çizgi izleyen robot tasarımları.
+ • Bluetooth (HC-06) veya Wi-Fi modülleriyle uzaktan kumandalı araç simülasyonları.

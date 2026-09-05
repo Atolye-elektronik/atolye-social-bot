@@ -23,7 +23,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import trendyol_client as tc  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-URUN_DOSYASI = ROOT / "content" / "trendyol_yeni_urunler.json"
+import os as _os
+URUN_DOSYASI = Path(_os.environ.get("TY_URUN_DOSYASI") or (ROOT / "content" / "trendyol_yeni_urunler.json"))
 KAYIT = ROOT / "state" / "trendyol_urunler.json"
 
 
