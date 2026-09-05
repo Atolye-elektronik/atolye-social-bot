@@ -147,7 +147,33 @@ def topla_idefix():
     return out
 
 
-TOPLAYICI = {"trendyol": topla_trendyol, "hepsiburada": topla_hepsiburada, "n11": topla_n11,
+def topla_shopify(gun=14):
+    """Web (Shopify) siparisleri — Admin GraphQL, SHOPIFY_ADMIN_TOKEN gerekir (read_orders).
+    Shopify satilan SKU'nun stogunu kendisi duser; burada amac SET satisini PARCALARA acmak.
+    Bu yuzden satis_dus'ta set SKU'sunun kendi dusumu degil, parca dusumu esas alinir."""
+    from stok import shopify_admin as sa
+    out = []
+    q = """query($q:String,$after:String){ orders(first:50, query:$q, after:$after, sortKey:CREATED_AT, reverse:true){
+      pageInfo{hasNextPage endCursor}
+      nodes{ name createdAt cancelledAt displayFulfillmentStatus
+             lineItems(first:30){ nodes{ sku quantity variant{ barcode } } } } } }"""
+    bas = (datetime.now() - timedelta(days=gun)).strftime("%Y-%m-%d")
+    after = None
+    while True:
+        d = sa.gql(q, {"q": "created_at:>=%s" % bas, "after": after})["orders"]
+        for o in d["nodes"]:
+            if o.get("cancelledAt"):
+                continue
+            kl = [{"kod": li["sku"], "barkod": (li.get("variant") or {}).get("barcode"), "adet": int(li["quantity"])}
+                  for li in o["lineItems"]["nodes"] if li.get("sku")]
+            out.append({"no": o["name"], "tarih": o["createdAt"], "durum": o.get("displayFulfillmentStatus"), "kalemler": kl})
+        if not d["pageInfo"]["hasNextPage"]:
+            break
+        after = d["pageInfo"]["endCursor"]
+    return out
+
+
+TOPLAYICI = {"shopify": topla_shopify, "trendyol": topla_trendyol, "hepsiburada": topla_hepsiburada, "n11": topla_n11,
              "pazarama": topla_pazarama, "idefix": topla_idefix}
 # pttavm: Api-Key/Access-Token gelince (EN-5313) eklenecek
 
@@ -250,6 +276,10 @@ def main():
                 gunluk({"an": datetime.now().isoformat(timespec="minutes"), "kanal": o["kanal"], "no": o["no"],
                         "kod": kod, "adet": kl["adet"], "hata": "bilinmeyen kod", "kuru": kuru})
                 continue
+            if o["kanal"] == "shopify" and sh not in R.setler:
+                # Web'de satilan tekil parcanin stogunu Shopify zaten dusuyor; cift dusum yapma.
+                print("  %-12s %-14s %-14s x%d -> Shopify kendi dustu (parca)" % (o["kanal"], o["no"], sh, kl["adet"]))
+                continue
             ihtiyac, etk = R.satis_dus(sh, kl["adet"], parca)
             for p, n in ihtiyac.items():
                 toplam_dusum[p] = toplam_dusum.get(p, 0) + n
@@ -277,7 +307,13 @@ def main():
         print("Shopify dusum:", shopify_admin.stok_dus(toplam_dusum, sebep="shrinkage"))
     except Exception as e:
         print("Shopify yazilamadi:", str(e)[:160])
-    print(merkez.dagit(hedef, list(merkez.KANALLAR) if hasattr(merkez, "KANALLAR") else None, kuru=False))
+    # GUVENLIK: kanallara stok dagitimi ancak parca sayimi Shopify'a girildikten sonra (STOK_DAGIT=1).
+    # Aksi halde sayilmamis (0 gorunen) parcalar tum setleri kanallarda 0'a cekerdi.
+    if os.environ.get("STOK_DAGIT") == "1":
+        kanallar = os.environ.get("STOK_KANALLAR", "trendyol,hepsiburada,n11,pazarama,idefix").split(",")
+        print(merkez.dagit(hedef, kanallar, kuru=False))
+    else:
+        print("(STOK_DAGIT=1 degil: kanallara stok yazilmadi, yalniz Shopify dusumu yapildi)")
     gorulen_yaz(g)
 
 

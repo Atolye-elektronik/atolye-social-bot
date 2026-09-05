@@ -50,6 +50,8 @@ jobs:
       IDEFIX_SATICI_ID: ${{ secrets.IDEFIX_SATICI_ID }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      STOK_SHEET_WEBHOOK: ${{ secrets.STOK_SHEET_WEBHOOK }}
+      STOK_DAGIT: ${{ vars.STOK_DAGIT }}        # "1" olunca kanallara stok yazilir (parca sayimi girildikten sonra)
     steps:
       - uses: actions/checkout@v4
         with:
