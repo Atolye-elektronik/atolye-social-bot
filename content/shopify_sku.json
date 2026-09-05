@@ -895,5 +895,9 @@
    "status": "DRAFT",
    "tracked": true
   }
+ },
+ "barkod_alias": {
+  "2920000600056": "AEDUY-1",
+  "2920000600063": "AEAMP-1"
  }
 }

@@ -1,0 +1,43 @@
+{
+ "marka": "ATOLYE ELEKTRONİK",
+ "markaId": 2967081,
+ "kategori": "Elektronik Devre Elemanı",
+ "kategoriId": 3094,
+ "kargoId": 9,
+ "kargoKodu": "SURATMP",
+ "mensei": "CN",
+ "ozellikler": [
+  {
+   "attributeId": 1192,
+   "attributeValueId": 10617300
+  }
+ ],
+ "_not": "AE9VPILSKT1 red: kategori uyumsuz (3094) -> 1841 Pil & Sarj Cihazi, Tip=9V Pil",
+ "urunler": [
+  {
+   "stokKodu": "AE9VPILSKT1",
+   "modelKodu": "AE9VPILSKT1",
+   "barkod": "2920000600094",
+   "kategoriId": 1841,
+   "ozellikler": [
+    {
+     "attributeId": 1192,
+     "attributeValueId": 10617300
+    },
+    {
+     "attributeId": 34,
+     "attributeValueId": 4032
+    }
+   ],
+   "ad": "DC Jack Çıkışlı 9V Pil Soketi - Arduino Uyumlu (1 Adet)",
+   "aciklama": "Arduino projelerinizi ve taşınabilir devrelerinizi bilgisayar veya adaptör bağımlılığından kurtaran DC jack çıkışlı 9V pil soketi. Standart 9V pilin kutup başlarına sıkıca oturur; 2.1mm x 5.5mm DC jack ucu Arduino Uno, Mega ve benzeri kartların güç girişine tam uyumludur. Tak-çalıştır, lehim gerektirmez Artı/eksi kutuplar jack ucuna hazır bağlı, ters bağlantı riski yok İçerik: 1 adet DC jack çıkışlı 9V pil soketi. 10'lu paket mağazamızda mevcuttur.",
+   "fiyat": 104,
+   "stok": 30,
+   "desi": 1,
+   "gorseller": [
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/9vsoket1.png?v=1779562792",
+    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/9vsoket1_20f60c4b-0568-473e-8b06-0893f4f1f2e3.png?v=1786088121"
+   ]
+  }
+ ]
+}

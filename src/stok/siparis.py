@@ -23,6 +23,14 @@ sys.path.insert(0, os.path.join(KOK, "src"))
 sys.path.insert(0, os.path.join(KOK, "src", "marketplaces"))
 GORULEN = os.path.join(KOK, "state", "siparis_gorulen.json")
 GUNLUK = os.path.join(KOK, "state", "siparis_gunlugu.jsonl")
+def _barkod_alias():
+    try:
+        return json.load(open(os.path.join(KOK, "content", "shopify_sku.json"), encoding="utf-8")).get("barkod_alias", {})
+    except FileNotFoundError:
+        return {}
+
+
+BARKOD_ALIAS = _barkod_alias()
 IPTAL = {"cancelled", "canceled", "iptal", "returned", "unsupplied", "undelivered", "iade"}
 
 
@@ -231,7 +239,8 @@ def main():
     toplam_dusum, etkilenen = {}, set()
     for o in yeni:
         for kl in o["kalemler"]:
-            kod = kl["kod"] or bh.get(str(kl["barkod"]))
+            # Barkod alias once: TY bazi urunlere yanlis stockCode veriyor (orn. Mini Duy 2920000600056 -> "AEDUYAMP-1")
+            kod = BARKOD_ALIAS.get(str(kl.get("barkod"))) or kl["kod"] or bh.get(str(kl["barkod"]))
             if not kod:
                 print("  ! %s %s: kod cozulemedi %s" % (o["kanal"], o["no"], kl))
                 continue
