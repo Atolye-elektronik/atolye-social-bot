@@ -101,6 +101,13 @@ VIDEOLAR = [
         "urun": "Atölye Temrin Defteri · 96 sayfa",
         "alt": "Tekli ve sınıf paketi stokta",
     },
+    {
+        "dosya": "kanca3d-2wd-sasi.mp4",
+        "klipler": ["WhatsApp Video 2026-09-06 at 00.27.46.mp4"],   # kullanicinin 06.09 cektigi montaj klibi (512x480)
+        "kanca": "Her robot bu şasiyle başlar",
+        "urun": "2WD Robot Araba Şasi Kiti",
+        "alt": "Şasi · 2 motor · tekerlekler · pil yuvası",
+    },
 ]
 
 
@@ -205,7 +212,10 @@ def uret(ffmpeg: str, video: dict) -> pathlib.Path:
 
 def main() -> int:
     ffmpeg = _ffmpeg()
+    secim = [a for a in sys.argv[1:] if a.endswith(".mp4")]
     for v in VIDEOLAR:
+        if secim and v["dosya"] not in secim:
+            continue
         yol = uret(ffmpeg, v)
         sn = KLIP_SN * len(v["klipler"])
         print(f"  uretildi: {yol.name}  ({yol.stat().st_size // 1024} KB, {sn:.0f} sn)")
