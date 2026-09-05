@@ -1,4 +1,257 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6a9b1424-a938-a844-61c0-a7df06060606",
+      "status": "Open",
+      "customerId": "d3faa75e-5efe-43d9-b672-553e4b97c8f5",
+      "orderDate": "2026-09-04T21:55:31",
+      "dueDate": "2026-09-05T18:30:00",
+      "barcode": "62955132944190",
+      "packageNumber": "5513294419",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Aydin mah Beyazit caddesi no 26g öz isik Market Pervari Siirt AYDIN PERVARİ Siirt",
+      "recipientName": "mekin yavuz",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "AYDIN",
+      "shippingTown": "PERVARİ",
+      "shippingCity": "Siirt",
+      "email": "4425686837_5513294419@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Mekin Yavuz",
+      "billingAddress": "Şirinevler mahallesi Şirinevler caddesi41/5 no 6   kat. 1 ŞİRİNEVLER YILDIRIM Bursa",
+      "billingCity": "Bursa",
+      "billingTown": "YILDIRIM",
+      "billingDistrict": "ŞİRİNEVLER",
+      "billingPostalCode": "16330",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 145
+      },
+      "items": [
+        {
+          "lineItemId": "6a9b1423-a161-ccb2-c28c-1a5306060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 145
+          },
+          "vat": 24.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 145
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.05
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 145
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 145
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4425686837",
+          "orderDate": "2026-09-04T21:55:31",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Mekin Yavuz",
+      "estimatedArrivalDate": "2026-09-09T15:30:00Z",
+      "totalDeci": 1
+    },
+    {
+      "id": "6a9b26bf-233e-272f-5f3a-69da06060606",
+      "status": "Open",
+      "customerId": "00344703-7a46-43bd-900c-fb1e2739501a",
+      "orderDate": "2026-09-04T23:14:54",
+      "dueDate": "2026-09-05T18:30:00",
+      "barcode": "62955133112415",
+      "packageNumber": "5513311241",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Atatürk Mh. Dubaz Sk. No:20 D:16 Istıranca Su Bayii Üstü\n ATATÜRK KAPAKLI Tekirdağ",
+      "recipientName": "Anıl Gökpınar",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ATATÜRK",
+      "shippingTown": "KAPAKLI",
+      "shippingCity": "Tekirdağ",
+      "email": "4663146932_5513311241@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Anıl Gökpınar",
+      "billingAddress": "Atatürk Mh. Gazi Sk. No:2 Daire:3 ATATÜRK KAPAKLI Tekirdağ",
+      "billingCity": "Tekirdağ",
+      "billingTown": "KAPAKLI",
+      "billingDistrict": "ATATÜRK",
+      "billingPostalCode": "",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 277.72
+      },
+      "items": [
+        {
+          "lineItemId": "6a9b26be-571e-d867-1a94-310a06060606",
+          "listingId": "8be24673-889d-446a-bfa4-10461f2772da",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUARTF",
+          "merchantSku": "ATELJKEE20403",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 277.72
+          },
+          "vat": 46.29,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 277.72
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 24.99
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 36.28
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 36.28
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 277.72
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 277.72
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 20CM Jumper Kablo Seti 40'lı - 3'lü Kablo Seti Çok Renkli Bağlantı Elemanları (1x Dişi Erkek / 1x Dişi Dişi / 1x Erkek Erkek)",
+          "orderNumber": "4663146932",
+          "orderDate": "2026-09-04T23:14:54",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELJKEE20403",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001753319286.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Anıl Gökpınar",
+      "estimatedArrivalDate": "2026-09-09T15:30:00Z",
+      "totalDeci": 1.1
+    }
+  ]
 }
