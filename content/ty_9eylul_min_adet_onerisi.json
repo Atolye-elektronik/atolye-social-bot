@@ -1,0 +1,13 @@
+{"_not": "9 Eylul 2026 Trendyol minimum siparis adedi geri gelince: birim fiyat ~web fiyati, min adet sepeti >=120 TL'ye tasir (34,2 TL kargo baremi), net = sepet*(1/1.2-0.13)-kargo-11-maliyet*adet. 'alt' = birim %10 yukari + daha dusuk min adet. KULLANICI ONAYI BEKLIYOR.",
+ "oneri": [
+  {"kod":"AE5X100DT","birim":79,"min":2,"sepet":158,"net":25.9,"alt":{"birim":87,"min":2,"net":37.2}},
+  {"kod":"AE5X100YT","birim":79,"min":2,"sepet":158,"net":25.9,"alt":{"birim":87,"min":2,"net":37.2}},
+  {"kod":"AEKNTKLM","birim":75,"min":2,"sepet":150,"net":30.3,"alt":{"birim":83,"min":2,"net":41.6}},
+  {"kod":"AES400IGG","birim":89,"min":2,"sepet":178,"net":30.0,"alt":{"birim":98,"min":2,"net":42.7}},
+  {"kod":"AE5IZOLE","birim":149,"min":1,"sepet":149,"net":3.6,"alt":{"birim":164,"min":1,"net":14.2},"uyari":"tekli zayif; 155 TL mevcut fiyat kalabilir"},
+  {"kod":"AEMYNK","birim":99,"min":2,"sepet":198,"net":7.6,"alt":{"birim":109,"min":3,"net":23.5},"uyari":"zayif; 116 TL tekli mevcut fiyat daha iyi"},
+  {"kod":"AEDUY-1","birim":19.9,"min":7,"sepet":139,"net":30.1,"alt":{"birim":22,"min":6,"net":28.2}},
+  {"kod":"AEAMP-1","birim":14.9,"min":10,"sepet":149,"net":4.1,"alt":{"birim":17,"min":8,"net":6.1},"uyari":"zayif; duy+ampul seti daha mantikli"},
+  {"kod":"AEPY18650T","birim":29,"min":5,"sepet":145,"net":26.8,"alt":{"birim":32,"min":4,"net":20.8}},
+  {"kod":"AE9VPILSKT1","birim":40,"min":3,"sepet":120,"net":25.8,"alt":{"birim":44,"min":3,"net":34.2}}
+ ]}

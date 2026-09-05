@@ -80,7 +80,7 @@ def stok_bas_n11(hedef, kuru=True):
     items = [{"stockCode": k, "quantity": int(v)} for k, v in _kanal_kodlari(hedef).items()]
     if kuru:
         return "kuru: %d stok kodu" % len(items)
-    return n11.post("/ms/product/tasks/price-stock-update", {"payload": {"skus": items}})
+    return n11.post("/ms/product/tasks/price-stock-update", {"payload": {"integrator": n11.ENTEGRATOR, "skus": items}})
 
 
 # ---------------- Idefix: barcode + inventoryQuantity ----------------

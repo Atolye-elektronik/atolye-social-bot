@@ -1,0 +1,2756 @@
+[
+ {
+  "sk": "AE12V1A",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 108.0,
+   "ty": 167.0,
+   "hb": 177.0,
+   "n11": 270.0,
+   "pz": 228.0,
+   "ptt": 167.0,
+   "idx": 255.0
+  },
+  "net": {
+   "web": 86.4,
+   "ty": 72.3,
+   "hb": 80.0,
+   "n11": 72.1,
+   "pz": 72.7,
+   "ptt": 118.3,
+   "idx": 72.4
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AE150LED",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 177.0,
+   "hb": 177.0,
+   "n11": 281.0,
+   "pz": 238.0,
+   "ptt": 177.0,
+   "idx": 269.0
+  },
+  "net": {
+   "ty": 79.3,
+   "hb": 80.0,
+   "n11": 79.4,
+   "pz": 79.6,
+   "ptt": 125.4,
+   "idx": 82.7
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AE16X2LCD",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 198.0,
+   "ty": 278.0,
+   "hb": 250.0,
+   "n11": 331.0,
+   "ptt": 289.0,
+   "idx": 319.0
+  },
+  "net": {
+   "web": 158.4,
+   "ty": 118.7,
+   "hb": 101.3,
+   "n11": 112.6,
+   "ptt": 114.7,
+   "idx": 119.4
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (250 < 278)",
+   "HB neti TY'den 17 TL dusuk",
+   "PTT: 289 TL yerine 250 TL daha karli (kargo baremi)"
+  ]
+ },
+ {
+  "sk": "AE16X2LCD2",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 482.0,
+   "hb": 482.0,
+   "n11": 526.0,
+   "pz": 503.0,
+   "ptt": 482.0,
+   "idx": 498.0
+  },
+  "net": {
+   "ty": 250.5,
+   "hb": 258.0,
+   "n11": 250.4,
+   "pz": 250.8,
+   "ptt": 251.4,
+   "idx": 250.6
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AE28BYJ48",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 119.0,
+   "ty": 177.0,
+   "hb": 164.0,
+   "n11": 281.0,
+   "pz": 238.0,
+   "ptt": 177.0,
+   "idx": 265.0
+  },
+  "net": {
+   "web": 95.2,
+   "ty": 79.3,
+   "hb": 70.8,
+   "n11": 79.4,
+   "pz": 79.6,
+   "ptt": 125.4,
+   "idx": 79.8
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (164 < 177)"
+  ]
+ },
+ {
+  "sk": "AE2WDEKRBT",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 899.0,
+   "ty": 492.0,
+   "hb": 1049.0,
+   "n11": 537.0,
+   "ptt": 493.0,
+   "idx": 508.0
+  },
+  "net": {
+   "web": 719.2,
+   "ty": 257.5,
+   "hb": 656.8,
+   "n11": 257.7,
+   "ptt": 259.2,
+   "idx": 258.0
+  },
+  "uyari": [
+   "WEB fiyati TY'den yuksek (899 > 492)"
+  ]
+ },
+ {
+  "sk": "AE2WDEKRBT-LI",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 929.0,
+   "ty": 1049.0,
+   "hb": 1280.0,
+   "n11": 1127.0,
+   "pz": 1098.0,
+   "ptt": 1071.0,
+   "idx": 1066.0
+  },
+  "net": {
+   "web": 743.2,
+   "ty": 649.3,
+   "hb": 819.3,
+   "n11": 649.1,
+   "pz": 663.3,
+   "ptt": 668.6,
+   "idx": 667.2
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AE2WDEKRBT5230-LI",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 1110.0,
+   "n11": 1192.0,
+   "ptt": 1134.0,
+   "idx": 1124.0
+  },
+  "net": {
+   "ty": 692.2,
+   "n11": 692.2,
+   "ptt": 713.2,
+   "idx": 709.7
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AE3-6VMTR",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 138.0,
+   "ty": 179.0,
+   "hb": 219.0,
+   "n11": 283.0,
+   "pz": 240.0,
+   "ptt": 179.0,
+   "idx": 267.0
+  },
+  "net": {
+   "web": 110.4,
+   "ty": 80.7,
+   "hb": 79.5,
+   "n11": 80.7,
+   "pz": 81.0,
+   "ptt": 126.8,
+   "idx": 81.2
+  },
+  "uyari": [
+   "HB: 219 TL yerine 200 TL daha karli (kargo baremi)"
+  ]
+ },
+ {
+  "sk": "AE3-6VMTR2",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 279.0,
+   "hb": 293.0,
+   "n11": 332.0,
+   "pz": 296.0,
+   "ptt": 291.0,
+   "idx": 320.0
+  },
+  "net": {
+   "ty": 119.4,
+   "hb": 131.6,
+   "n11": 113.2,
+   "pz": 119.8,
+   "ptt": 116.1,
+   "idx": 120.1
+  },
+  "uyari": [
+   "PTT: 291 TL yerine 250 TL daha karli (kargo baremi)"
+  ]
+ },
+ {
+  "sk": "AE3-6VMTR4",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 336.0,
+   "ty": 419.0,
+   "n11": 459.0,
+   "pz": 439.0,
+   "ptt": 419.0,
+   "idx": 438.0
+  },
+  "net": {
+   "web": 268.8,
+   "ty": 206.2,
+   "n11": 206.0,
+   "pz": 206.4,
+   "ptt": 206.8,
+   "idx": 206.6
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AE3IN1ROBOT",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 1099.0,
+   "ty": 1574.0,
+   "hb": 1574.0,
+   "n11": 1684.0,
+   "pz": 1631.0,
+   "ptt": 1612.0,
+   "idx": 1574.0
+  },
+  "net": {
+   "web": 879.2,
+   "ty": 1018.5,
+   "hb": 1026.0,
+   "n11": 1018.6,
+   "pz": 1032.8,
+   "ptt": 1051.8,
+   "idx": 1039.7
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AE3IN1ROBOT-LI",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 1149.0,
+   "ty": 1626.0,
+   "hb": 1658.0,
+   "n11": 1739.0,
+   "pz": 1684.0,
+   "ptt": 1665.0,
+   "idx": 1626.0
+  },
+  "net": {
+   "web": 919.2,
+   "ty": 1055.1,
+   "hb": 1085.1,
+   "n11": 1055.0,
+   "pz": 1069.6,
+   "ptt": 1089.4,
+   "idx": 1077.8
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AE5X100DT",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 79.0,
+   "ty": 129.0,
+   "hb": 129.0,
+   "pz": 148.0,
+   "idx": 239.0
+  },
+  "net": {
+   "web": 63.2,
+   "ty": 45.5,
+   "hb": 46.2,
+   "pz": 48.0,
+   "idx": 60.7
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AE5X100YT",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 79.0,
+   "ty": 129.0,
+   "hb": 129.0,
+   "pz": 148.0,
+   "idx": 239.0
+  },
+  "net": {
+   "web": 63.2,
+   "ty": 45.5,
+   "hb": 46.2,
+   "pz": 48.0,
+   "idx": 60.7
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AE6X13PLK5",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 419.0,
+   "hb": 419.0,
+   "n11": 459.0,
+   "pz": 439.0,
+   "ptt": 419.0,
+   "idx": 438.0
+  },
+  "net": {
+   "ty": 206.2,
+   "hb": 213.7,
+   "n11": 206.0,
+   "pz": 206.4,
+   "ptt": 206.8,
+   "idx": 206.6
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AE9VPILSKT",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 314.0,
+   "hb": 314.0,
+   "n11": 369.0,
+   "pz": 350.0,
+   "ptt": 327.0,
+   "idx": 353.0
+  },
+  "net": {
+   "ty": 144.0,
+   "hb": 146.3,
+   "n11": 137.8,
+   "pz": 144.7,
+   "ptt": 141.6,
+   "idx": 144.3
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEACDMMR",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 96.0,
+   "ty": 150.0,
+   "hb": 145.0,
+   "n11": 252.0,
+   "ptt": 150.0,
+   "idx": 244.0
+  },
+  "net": {
+   "web": 76.8,
+   "ty": 60.3,
+   "hb": 57.5,
+   "n11": 60.2,
+   "ptt": 106.2,
+   "idx": 64.4
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (145 < 150)"
+  ]
+ },
+ {
+  "sk": "AEARBSES",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 769.0,
+   "ty": 944.0,
+   "hb": 828.0,
+   "n11": 1016.0,
+   "pz": 972.0,
+   "ptt": 958.0,
+   "idx": 944.0
+  },
+  "net": {
+   "web": 615.2,
+   "ty": 575.4,
+   "hb": 501.4,
+   "n11": 575.4,
+   "pz": 575.9,
+   "ptt": 588.6,
+   "idx": 577.7
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (828 < 944)",
+   "HB neti TY'den 74 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AEARISES",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 1766.0,
+   "ty": 2099.0,
+   "hb": 1889.0,
+   "n11": 2241.0,
+   "ptt": 2150.0,
+   "idx": 2099.0,
+   "pz": 2143.0
+  },
+  "net": {
+   "web": 1412.8,
+   "ty": 1387.8,
+   "hb": 1247.6,
+   "n11": 1388.0,
+   "ptt": 1432.9,
+   "idx": 1424.7,
+   "pz": 1387.8
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (1889 < 2099)",
+   "HB neti TY'den 140 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AEAROSES",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 1092.0,
+   "ty": 1364.0,
+   "hb": 1364.0,
+   "n11": 1461.0,
+   "ptt": 1396.0,
+   "idx": 1368.0
+  },
+  "net": {
+   "web": 873.6,
+   "ty": 870.8,
+   "hb": 878.3,
+   "n11": 870.6,
+   "ptt": 898.8,
+   "idx": 888.6
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEARSNST",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 976.0,
+   "ty": 1054.0,
+   "hb": 1154.0,
+   "n11": 1133.0,
+   "pz": 1083.0,
+   "ptt": 1071.0,
+   "idx": 1054.0
+  },
+  "net": {
+   "web": 780.8,
+   "ty": 652.8,
+   "hb": 730.6,
+   "n11": 653.1,
+   "pz": 652.9,
+   "ptt": 668.6,
+   "idx": 658.4
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEBB170P",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 78.0,
+   "ty": 114.0,
+   "hb": 125.0,
+   "n11": 214.0,
+   "pz": 130.0,
+   "ptt": 114.0,
+   "idx": 204.0
+  },
+  "net": {
+   "web": 62.4,
+   "ty": 35.0,
+   "hb": 43.4,
+   "n11": 35.0,
+   "pz": 35.6,
+   "ptt": 80.8,
+   "idx": 35.0
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEBB830P",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 96.0,
+   "ty": 177.0,
+   "hb": 156.0,
+   "n11": 281.0,
+   "ptt": 177.0,
+   "idx": 265.0
+  },
+  "net": {
+   "web": 76.8,
+   "ty": 79.3,
+   "hb": 65.2,
+   "n11": 79.4,
+   "ptt": 125.4,
+   "idx": 79.8
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (156 < 177)"
+  ]
+ },
+ {
+  "sk": "AEBZZR5V",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 14.0,
+   "ty": 49.9,
+   "hb": 111.0,
+   "n11": 190.0,
+   "ptt": 50.0,
+   "idx": 143.0
+  },
+  "net": {
+   "web": 11.2,
+   "ty": -10.1,
+   "hb": 33.6,
+   "n11": 19.0,
+   "ptt": 35.4,
+   "idx": -9.7
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEBZZR5V-6",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 129.0,
+   "n11": 230.0,
+   "ptt": 129.0,
+   "idx": 219.0
+  },
+  "net": {
+   "ty": 45.5,
+   "n11": 45.6,
+   "ptt": 91.4,
+   "idx": 46.0
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEDCM3V-1",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 29.9,
+   "ty": 104.0,
+   "hb": 104.0,
+   "n11": 204.0,
+   "pz": 120.0,
+   "ptt": 104.0,
+   "idx": 195.0
+  },
+  "net": {
+   "web": 23.9,
+   "ty": 27.9,
+   "hb": 28.6,
+   "n11": 28.3,
+   "pz": 28.6,
+   "ptt": 73.7,
+   "idx": 28.4
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEDCM3V-10",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 189.0,
+   "ty": 299.0,
+   "hb": 299.0,
+   "n11": 353.0,
+   "pz": 334.0,
+   "ptt": 311.0,
+   "idx": 339.0
+  },
+  "net": {
+   "web": 151.2,
+   "ty": 133.5,
+   "hb": 135.8,
+   "n11": 127.2,
+   "pz": 133.6,
+   "ptt": 130.3,
+   "idx": 134.0
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEDCM3V-5",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 99.0,
+   "ty": 188.0,
+   "hb": 188.0,
+   "n11": 293.0,
+   "pz": 249.0,
+   "ptt": 188.0,
+   "idx": 275.0
+  },
+  "net": {
+   "web": 79.2,
+   "ty": 87.0,
+   "hb": 87.7,
+   "n11": 87.4,
+   "pz": 87.2,
+   "ptt": 133.2,
+   "idx": 87.1
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEDHT11",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 96.0,
+   "ty": 125.0,
+   "hb": 130.0,
+   "n11": 226.0,
+   "pz": 141.0,
+   "ptt": 125.0,
+   "idx": 215.0
+  },
+  "net": {
+   "web": 76.8,
+   "ty": 42.7,
+   "hb": 46.9,
+   "n11": 42.9,
+   "pz": 43.2,
+   "ptt": 88.5,
+   "idx": 43.1
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEDHT11PS",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 599.0,
+   "ty": 649.0,
+   "hb": 786.0,
+   "n11": 703.0,
+   "pz": 673.0,
+   "ptt": 658.0,
+   "idx": 663.0
+  },
+  "net": {
+   "web": 479.2,
+   "ty": 368.0,
+   "hb": 471.8,
+   "n11": 367.8,
+   "pz": 368.6,
+   "ptt": 376.1,
+   "idx": 371.6
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEDT830D",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 210.0,
+   "ty": 299.0,
+   "hb": 289.0,
+   "n11": 353.0,
+   "pz": 349.0,
+   "ptt": 302.0,
+   "idx": 374.0
+  },
+  "net": {
+   "web": 168.0,
+   "ty": 133.5,
+   "hb": 128.8,
+   "n11": 127.2,
+   "pz": 133.5,
+   "ptt": 121.4,
+   "idx": 133.5
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (289 < 299)",
+   "PTT: 302 TL yerine 250 TL daha karli (kargo baremi)"
+  ]
+ },
+ {
+  "sk": "AEDUY-10",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 151.0,
+   "ty": 199.0,
+   "hb": 293.0,
+   "n11": 347.0,
+   "ptt": 305.0,
+   "idx": 333.0
+  },
+  "net": {
+   "web": 120.8,
+   "ty": 94.8,
+   "hb": 131.6,
+   "n11": 123.2,
+   "ptt": 126.0,
+   "idx": 129.6
+  },
+  "uyari": [
+   "PTT: 305 TL yerine 250 TL daha karli (kargo baremi)"
+  ]
+ },
+ {
+  "sk": "AEDUYAMP-1",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 29.9,
+   "ty": 104.0,
+   "hb": 104.0,
+   "n11": 204.0,
+   "pz": 120.0,
+   "ptt": 104.0,
+   "idx": 195.0
+  },
+  "net": {
+   "web": 23.9,
+   "ty": 27.9,
+   "hb": 28.6,
+   "n11": 28.3,
+   "pz": 28.6,
+   "ptt": 73.7,
+   "idx": 28.4
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEDUYAMP-10",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 217.0,
+   "ty": 349.0,
+   "hb": 349.0,
+   "n11": 424.0,
+   "ptt": 380.0,
+   "idx": 403.0
+  },
+  "net": {
+   "web": 173.6,
+   "ty": 168.7,
+   "hb": 171.0,
+   "n11": 182.8,
+   "ptt": 179.2,
+   "idx": 181.0
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEDUYAMP-5",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 126.9,
+   "ty": 199.0,
+   "hb": 199.0,
+   "n11": 313.0,
+   "pz": 278.0,
+   "ptt": 272.0,
+   "idx": 302.0
+  },
+  "net": {
+   "web": 101.5,
+   "ty": 94.8,
+   "hb": 95.5,
+   "n11": 100.6,
+   "pz": 107.3,
+   "ptt": 102.7,
+   "idx": 106.9
+  },
+  "uyari": [
+   "PTT: 272 TL yerine 250 TL daha karli (kargo baremi)"
+  ]
+ },
+ {
+  "sk": "AEEAS3P",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 696.0,
+   "ty": 933.0,
+   "hb": 912.0,
+   "n11": 1004.0,
+   "pz": 1004.0,
+   "ptt": 961.0,
+   "idx": 1029.0
+  },
+  "net": {
+   "web": 556.8,
+   "ty": 567.7,
+   "hb": 560.4,
+   "n11": 567.5,
+   "pz": 568.0,
+   "ptt": 582.7,
+   "idx": 568.0
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (912 < 933)"
+  ]
+ },
+ {
+  "sk": "AEEAS7P",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 839.0,
+   "ty": 1049.0,
+   "hb": 1049.0,
+   "n11": 1127.0,
+   "ptt": 1082.0,
+   "idx": 1152.0
+  },
+  "net": {
+   "web": 671.2,
+   "ty": 649.3,
+   "hb": 656.8,
+   "n11": 649.1,
+   "ptt": 676.4,
+   "idx": 730.2
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEENDELK",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 699.0,
+   "ty": 888.0,
+   "hb": 786.0,
+   "n11": 957.0,
+   "pz": 915.0,
+   "ptt": 900.0,
+   "idx": 888.0
+  },
+  "net": {
+   "web": 559.2,
+   "ty": 536.1,
+   "hb": 471.8,
+   "n11": 536.3,
+   "pz": 536.4,
+   "ptt": 547.5,
+   "idx": 536.6
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (786 < 888)",
+   "HB neti TY'den 64 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AEENDELKSET",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 999.0,
+   "ty": 1154.0,
+   "hb": 1154.0,
+   "n11": 1239.0,
+   "pz": 1205.0,
+   "ptt": 1179.0,
+   "idx": 1166.0
+  },
+  "net": {
+   "web": 799.2,
+   "ty": 723.1,
+   "hb": 730.6,
+   "n11": 723.4,
+   "pz": 737.5,
+   "ptt": 745.1,
+   "idx": 740.5
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEFENSET",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 141.0,
+   "ty": 199.0,
+   "hb": 199.0,
+   "n11": 304.0,
+   "pz": 260.0,
+   "ptt": 199.0,
+   "idx": 286.0
+  },
+  "net": {
+   "web": 112.8,
+   "ty": 94.8,
+   "hb": 95.5,
+   "n11": 94.7,
+   "pz": 94.9,
+   "ptt": 141.0,
+   "idx": 95.2
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEHC06BT",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 252.0,
+   "ty": 366.0,
+   "hb": 387.0,
+   "n11": 424.0,
+   "pz": 402.0,
+   "ptt": 380.0,
+   "idx": 403.0
+  },
+  "net": {
+   "web": 201.6,
+   "ty": 180.6,
+   "hb": 197.7,
+   "n11": 182.8,
+   "pz": 180.7,
+   "ptt": 179.2,
+   "idx": 181.0
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEHC06RAK",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 919.0,
+   "ty": 1154.0,
+   "hb": 1154.0,
+   "n11": 1239.0,
+   "pz": 1205.0,
+   "ptt": 1179.0,
+   "idx": 1166.0
+  },
+  "net": {
+   "web": 735.2,
+   "ty": 723.1,
+   "hb": 730.6,
+   "n11": 723.4,
+   "pz": 737.5,
+   "ptt": 745.1,
+   "idx": 740.5
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEHC06RAK-LI",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 899.0,
+   "ty": 1206.0,
+   "hb": 1290.0,
+   "n11": 1294.0,
+   "pz": 1238.0,
+   "ptt": 1231.0,
+   "idx": 1206.0
+  },
+  "net": {
+   "web": 719.2,
+   "ty": 759.7,
+   "hb": 826.3,
+   "n11": 759.9,
+   "pz": 760.4,
+   "ptt": 782.0,
+   "idx": 769.8
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEHCSR04",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 108.0,
+   "ty": 133.0,
+   "hb": 136.0,
+   "n11": 234.0,
+   "pz": 149.0,
+   "ptt": 133.0,
+   "idx": 223.0
+  },
+  "net": {
+   "web": 86.4,
+   "ty": 48.3,
+   "hb": 51.2,
+   "n11": 48.2,
+   "pz": 48.7,
+   "ptt": 94.2,
+   "idx": 49.0
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEHCSR045",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 524.0,
+   "hb": 524.0,
+   "n11": 571.0,
+   "pz": 546.0,
+   "ptt": 526.0,
+   "idx": 539.0
+  },
+  "net": {
+   "ty": 280.0,
+   "hb": 287.5,
+   "n11": 280.3,
+   "pz": 280.6,
+   "ptt": 282.6,
+   "idx": 280.7
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEHCSR501",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 99.0,
+   "ty": 167.0,
+   "hb": 170.0,
+   "n11": 270.0,
+   "ptt": 167.0,
+   "idx": 255.0
+  },
+  "net": {
+   "web": 79.2,
+   "ty": 72.3,
+   "hb": 75.1,
+   "n11": 72.1,
+   "ptt": 118.3,
+   "idx": 72.4
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEHSPS",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 532.0,
+   "ty": 659.0,
+   "hb": 734.0,
+   "n11": 714.0,
+   "ptt": 668.0,
+   "idx": 673.0
+  },
+  "net": {
+   "web": 425.6,
+   "ty": 375.0,
+   "hb": 435.2,
+   "n11": 375.1,
+   "ptt": 383.2,
+   "idx": 379.0
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEHVYSHP",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 119.0,
+   "ty": 184.0,
+   "hb": 172.0,
+   "n11": 289.0,
+   "pz": 256.0,
+   "ptt": 184.0,
+   "idx": 300.0
+  },
+  "net": {
+   "web": 95.2,
+   "ty": 84.2,
+   "hb": 76.5,
+   "n11": 84.7,
+   "pz": 84.4,
+   "ptt": 128.8,
+   "idx": 84.4
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (172 < 184)"
+  ]
+ },
+ {
+  "sk": "AEHVYST6P",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 599.0,
+   "ty": 839.0,
+   "hb": 786.0,
+   "n11": 905.0,
+   "pz": 904.0,
+   "ptt": 866.0,
+   "idx": 934.0
+  },
+  "net": {
+   "web": 479.2,
+   "ty": 501.6,
+   "hb": 471.8,
+   "n11": 501.8,
+   "pz": 501.7,
+   "ptt": 516.2,
+   "idx": 505.0
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (786 < 839)",
+   "HB neti TY'den 30 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AEIRKMND",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 99.0,
+   "ty": 146.0,
+   "hb": 146.0,
+   "n11": 248.0,
+   "pz": 207.0,
+   "ptt": 146.0,
+   "idx": 235.0
+  },
+  "net": {
+   "web": 79.2,
+   "ty": 57.5,
+   "hb": 58.2,
+   "n11": 57.5,
+   "pz": 58.1,
+   "ptt": 103.4,
+   "idx": 57.8
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEIRRAK",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 899.0,
+   "ty": 1049.0,
+   "hb": 1049.0,
+   "n11": 1127.0,
+   "pz": 1098.0,
+   "ptt": 1071.0,
+   "idx": 1066.0
+  },
+  "net": {
+   "web": 719.2,
+   "ty": 649.3,
+   "hb": 656.8,
+   "n11": 649.1,
+   "pz": 663.3,
+   "ptt": 668.6,
+   "idx": 667.2
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEIRRAK-LI",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 879.0,
+   "ty": 1101.0,
+   "hb": 1185.0,
+   "n11": 1182.0,
+   "pz": 1131.0,
+   "ptt": 1123.0,
+   "idx": 1101.0
+  },
+  "net": {
+   "web": 703.2,
+   "ty": 685.9,
+   "hb": 752.5,
+   "n11": 685.6,
+   "pz": 686.2,
+   "ptt": 705.5,
+   "idx": 692.8
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEJK2040",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 45.0,
+   "ty": 135.0,
+   "hb": 135.0,
+   "n11": 237.0,
+   "pz": 195.0,
+   "ptt": 135.0,
+   "idx": 225.0
+  },
+  "net": {
+   "web": 36.0,
+   "ty": 49.8,
+   "hb": 50.5,
+   "n11": 50.2,
+   "pz": 49.8,
+   "ptt": 95.6,
+   "idx": 50.4
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEJK2040222",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 513.0,
+   "hb": 524.0,
+   "n11": 559.0,
+   "ptt": 514.0,
+   "idx": 528.0
+  },
+  "net": {
+   "ty": 272.3,
+   "hb": 287.5,
+   "n11": 272.3,
+   "ptt": 274.1,
+   "idx": 272.6
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEJK2040DD",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 45.0,
+   "ty": 135.0,
+   "hb": 135.0,
+   "n11": 237.0,
+   "ptt": 135.0,
+   "idx": 225.0
+  },
+  "net": {
+   "web": 36.0,
+   "ty": 49.8,
+   "hb": 50.5,
+   "n11": 50.2,
+   "ptt": 95.6,
+   "idx": 50.4
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEJK2040DE",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 45.0,
+   "ty": 135.0,
+   "hb": 135.0,
+   "n11": 237.0,
+   "pz": 195.0,
+   "ptt": 135.0,
+   "idx": 225.0
+  },
+  "net": {
+   "web": 36.0,
+   "ty": 49.8,
+   "hb": 50.5,
+   "n11": 50.2,
+   "pz": 49.8,
+   "ptt": 95.6,
+   "idx": 50.4
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEJK2040EE3",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 314.0,
+   "n11": 369.0,
+   "pz": 350.0,
+   "ptt": 327.0,
+   "idx": 353.0,
+   "hb": 314.0
+  },
+  "net": {
+   "ty": 144.0,
+   "n11": 137.8,
+   "pz": 144.7,
+   "ptt": 141.6,
+   "idx": 144.3,
+   "hb": 146.3
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEJK2040EEDE33",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 513.0,
+   "hb": 524.0,
+   "n11": 559.0,
+   "pz": 535.0,
+   "ptt": 514.0,
+   "idx": 528.0
+  },
+  "net": {
+   "ty": 272.3,
+   "hb": 287.5,
+   "n11": 272.3,
+   "pz": 273.0,
+   "ptt": 274.1,
+   "idx": 272.6
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEKB1602",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 251.0,
+   "ty": 398.0,
+   "n11": 458.0,
+   "pz": 454.0,
+   "ptt": 419.0,
+   "idx": 479.0,
+   "hb": 377.0
+  },
+  "net": {
+   "web": 200.8,
+   "ty": 203.1,
+   "n11": 205.3,
+   "pz": 203.2,
+   "ptt": 203.3,
+   "idx": 203.2,
+   "hb": 190.7
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (377 < 398)"
+  ]
+ },
+ {
+  "sk": "AEKNTKLM",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 75.0,
+   "ty": 129.0,
+   "hb": 129.0,
+   "pz": 198.0,
+   "idx": 242.0
+  },
+  "net": {
+   "web": 60.0,
+   "ty": 45.5,
+   "hb": 46.2,
+   "pz": 51.9,
+   "idx": 62.9
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEKRK10",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 99.0,
+   "ty": 249.0,
+   "n11": 300.0,
+   "ptt": 249.0,
+   "idx": 291.0
+  },
+  "net": {
+   "web": 79.2,
+   "ty": 98.3,
+   "n11": 92.0,
+   "ptt": 176.4,
+   "idx": 98.8
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEKRK5",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 59.0,
+   "ty": 169.0,
+   "n11": 273.0,
+   "ptt": 169.0,
+   "idx": 257.0
+  },
+  "net": {
+   "web": 47.2,
+   "ty": 73.7,
+   "n11": 74.1,
+   "ptt": 119.7,
+   "idx": 73.9
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEL298N",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 126.0,
+   "ty": 177.0,
+   "hb": 188.0,
+   "n11": 281.0,
+   "ptt": 177.0,
+   "idx": 265.0
+  },
+  "net": {
+   "web": 100.8,
+   "ty": 79.3,
+   "hb": 87.7,
+   "n11": 79.4,
+   "ptt": 125.4,
+   "idx": 79.8
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEL298NMTRT",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 330.0,
+   "ty": 450.0,
+   "hb": 419.0,
+   "n11": 492.0,
+   "ptt": 450.0,
+   "idx": 468.0
+  },
+  "net": {
+   "web": 264.0,
+   "ty": 228.0,
+   "hb": 213.7,
+   "n11": 227.9,
+   "ptt": 228.8,
+   "idx": 228.6
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (419 < 450)"
+  ]
+ },
+ {
+  "sk": "AELHMPMP",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 108.0,
+   "ty": 156.0,
+   "hb": 142.0,
+   "n11": 259.0,
+   "pz": 227.0,
+   "ptt": 156.0,
+   "idx": 270.0
+  },
+  "net": {
+   "web": 86.4,
+   "ty": 64.5,
+   "hb": 55.4,
+   "n11": 64.8,
+   "pz": 65.2,
+   "ptt": 109.2,
+   "idx": 64.5
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (142 < 156)"
+  ]
+ },
+ {
+  "sk": "AEMOTPRV-1",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 39.9,
+   "ty": 109.0,
+   "hb": 114.0,
+   "n11": 209.0,
+   "pz": 125.0,
+   "ptt": 109.0,
+   "idx": 200.0
+  },
+  "net": {
+   "web": 31.9,
+   "ty": 31.5,
+   "hb": 35.7,
+   "n11": 31.6,
+   "pz": 32.1,
+   "ptt": 77.2,
+   "idx": 32.1
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEMOTPRV-10",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 265.0,
+   "ty": 399.0,
+   "hb": 399.0,
+   "n11": 459.0,
+   "pz": 436.0,
+   "ptt": 414.0,
+   "idx": 435.0
+  },
+  "net": {
+   "web": 212.0,
+   "ty": 203.8,
+   "hb": 206.1,
+   "n11": 206.0,
+   "pz": 204.3,
+   "ptt": 203.2,
+   "idx": 204.4
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEMOTPRV-5",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 149.0,
+   "ty": 299.0,
+   "hb": 282.0,
+   "n11": 332.0,
+   "pz": 296.0,
+   "ptt": 291.0,
+   "idx": 320.0
+  },
+  "net": {
+   "web": 119.2,
+   "ty": 133.5,
+   "hb": 123.8,
+   "n11": 113.2,
+   "pz": 119.8,
+   "ptt": 116.1,
+   "idx": 120.1
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (282 < 299)",
+   "N11 neti TY'den 20 TL dusuk",
+   "PZ fiyati TY'nin altinda (296 < 299)",
+   "PTT fiyati TY'nin altinda (291 < 299)",
+   "PTT neti TY'den 17 TL dusuk",
+   "PTT: 291 TL yerine 250 TL daha karli (kargo baremi)"
+  ]
+ },
+ {
+  "sk": "AEMYNK",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 99.0,
+   "ty": 189.0,
+   "hb": 189.0,
+   "n11": 217.0,
+   "pz": 138.0,
+   "idx": 228.0
+  },
+  "net": {
+   "web": 79.2,
+   "ty": 87.7,
+   "hb": 88.4,
+   "n11": 36.9,
+   "pz": 41.1,
+   "idx": 52.6
+  },
+  "uyari": [
+   "N11 neti TY'den 51 TL dusuk",
+   "PZ fiyati TY'nin altinda (138 < 189)",
+   "PZ neti TY'den 47 TL dusuk",
+   "IDX neti TY'den 35 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AEMYNK3",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "ty": 349.0,
+   "n11": 349.0,
+   "pz": 402.0,
+   "ptt": 368.0,
+   "idx": 427.0
+  },
+  "net": {
+   "ty": 168.7,
+   "n11": 124.5,
+   "pz": 168.7,
+   "ptt": 167.6,
+   "idx": 168.7
+  },
+  "uyari": [
+   "N11 neti TY'den 44 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AENANOTC",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 259.0,
+   "ty": 439.0,
+   "n11": 481.0,
+   "pz": 460.0,
+   "ptt": 439.0,
+   "idx": 457.0,
+   "hb": 440.0
+  },
+  "net": {
+   "web": 207.2,
+   "ty": 220.3,
+   "n11": 220.6,
+   "pz": 221.0,
+   "ptt": 221.0,
+   "idx": 220.6,
+   "hb": 228.5
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEPLSTKKT",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 239.0,
+   "ty": 345.0,
+   "hb": 450.0,
+   "n11": 345.0,
+   "pz": 398.0,
+   "ptt": 367.0,
+   "idx": 428.0
+  },
+  "net": {
+   "web": 191.2,
+   "ty": 165.9,
+   "hb": 235.5,
+   "n11": 121.8,
+   "pz": 166.0,
+   "ptt": 166.9,
+   "idx": 169.4
+  },
+  "uyari": [
+   "N11 neti TY'den 44 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AEPNS180",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 251.0,
+   "ty": 398.0,
+   "hb": 366.0,
+   "n11": 458.0,
+   "pz": 454.0,
+   "ptt": 419.0,
+   "idx": 479.0
+  },
+  "net": {
+   "web": 200.8,
+   "ty": 203.1,
+   "hb": 182.9,
+   "n11": 205.3,
+   "pz": 203.2,
+   "ptt": 203.3,
+   "idx": 203.2
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (366 < 398)",
+   "HB neti TY'den 20 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AEPOT10K",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 95.0,
+   "n11": 194.0,
+   "pz": 110.0,
+   "ptt": 95.0,
+   "idx": 186.0
+  },
+  "net": {
+   "ty": 21.6,
+   "n11": 21.7,
+   "pz": 21.7,
+   "ptt": 67.3,
+   "idx": 21.8
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEPOT10K-6",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 149.0,
+   "n11": 251.0,
+   "pz": 210.0,
+   "ptt": 149.0,
+   "idx": 238.0
+  },
+  "net": {
+   "ty": 59.6,
+   "n11": 59.5,
+   "pz": 60.2,
+   "ptt": 105.5,
+   "idx": 60.0
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEPRV-10",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 94.0,
+   "ty": 189.0,
+   "hb": 129.0,
+   "n11": 281.0,
+   "pz": 238.0,
+   "ptt": 177.0,
+   "idx": 265.0
+  },
+  "net": {
+   "web": 75.2,
+   "ty": 87.7,
+   "hb": 46.2,
+   "n11": 79.4,
+   "pz": 79.6,
+   "ptt": 125.4,
+   "idx": 79.8
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (129 < 189)",
+   "HB neti TY'den 42 TL dusuk",
+   "PTT fiyati TY'nin altinda (177 < 189)"
+  ]
+ },
+ {
+  "sk": "AEPRV-5",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 57.9,
+   "ty": 129.0,
+   "hb": 135.0,
+   "n11": 230.0,
+   "ptt": 129.0,
+   "idx": 219.0
+  },
+  "net": {
+   "web": 46.3,
+   "ty": 45.5,
+   "hb": 50.5,
+   "n11": 45.6,
+   "ptt": 91.4,
+   "idx": 46.0
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEPY18650",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 49.0,
+   "ty": 148.0,
+   "hb": 74.9,
+   "n11": 250.0,
+   "pz": 209.0,
+   "ptt": 148.0,
+   "idx": 242.0
+  },
+  "net": {
+   "web": 39.2,
+   "ty": 58.9,
+   "hb": 8.2,
+   "n11": 58.8,
+   "pz": 59.5,
+   "ptt": 104.8,
+   "idx": 62.9
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (75 < 148)",
+   "HB neti TY'den 51 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AEPY18650-2",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 154.0,
+   "n11": 257.0,
+   "ptt": 154.0,
+   "idx": 243.0,
+   "hb": 74.9
+  },
+  "net": {
+   "ty": 63.1,
+   "n11": 63.5,
+   "ptt": 109.1,
+   "idx": 63.6,
+   "hb": 8.2
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (75 < 154)",
+   "HB neti TY'den 55 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AEPY18650T",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 29.0,
+   "ty": 109.0,
+   "hb": 69.0,
+   "n11": 188.0,
+   "pz": 104.0,
+   "idx": 180.0
+  },
+  "net": {
+   "web": 23.2,
+   "ty": 31.5,
+   "hb": 4.0,
+   "n11": 17.7,
+   "pz": 17.5,
+   "idx": 17.4
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (69 < 109)",
+   "HB neti TY'den 27 TL dusuk",
+   "PZ fiyati TY'nin altinda (104 < 109)"
+  ]
+ },
+ {
+  "sk": "AEPY18650T10",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 450.0,
+   "pz": 471.0,
+   "ptt": 450.0,
+   "idx": 468.0
+  },
+  "net": {
+   "ty": 228.0,
+   "pz": 228.6,
+   "ptt": 228.8,
+   "idx": 228.6
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEPY18650T5",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 250.0,
+   "pz": 267.0,
+   "ptt": 261.0,
+   "idx": 292.0
+  },
+  "net": {
+   "ty": 99.0,
+   "pz": 99.7,
+   "ptt": 94.9,
+   "idx": 99.6
+  },
+  "uyari": [
+   "PTT: 261 TL yerine 250 TL daha karli (kargo baremi)"
+  ]
+ },
+ {
+  "sk": "AEPYAA2",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 29.0,
+   "ty": 115.0,
+   "hb": 74.9,
+   "n11": 215.0,
+   "pz": 131.0,
+   "ptt": 115.0,
+   "idx": 205.0
+  },
+  "net": {
+   "web": 23.2,
+   "ty": 35.7,
+   "hb": 8.2,
+   "n11": 35.6,
+   "pz": 36.2,
+   "ptt": 81.5,
+   "idx": 35.8
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (75 < 115)",
+   "HB neti TY'den 27 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AERC522RFID",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 150.0,
+   "ty": 188.0,
+   "hb": 188.0,
+   "n11": 293.0,
+   "ptt": 188.0,
+   "idx": 275.0
+  },
+  "net": {
+   "web": 120.0,
+   "ty": 87.0,
+   "hb": 87.7,
+   "n11": 87.4,
+   "ptt": 133.2,
+   "idx": 87.1
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AERFIDPS",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 649.0,
+   "ty": 630.0,
+   "n11": 683.0,
+   "pz": 653.0,
+   "ptt": 638.0,
+   "idx": 645.0
+  },
+  "net": {
+   "web": 519.2,
+   "ty": 354.6,
+   "n11": 354.6,
+   "pz": 354.8,
+   "ptt": 361.9,
+   "idx": 358.4
+  },
+  "uyari": [
+   "WEB fiyati TY'den yuksek (649 > 630)"
+  ]
+ },
+ {
+  "sk": "AERTC1302",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 99.0,
+   "ty": 146.0,
+   "hb": 140.0,
+   "n11": 248.0,
+   "pz": 207.0,
+   "ptt": 146.0,
+   "idx": 235.0
+  },
+  "net": {
+   "web": 79.2,
+   "ty": 57.5,
+   "hb": 54.0,
+   "n11": 57.5,
+   "pz": 58.1,
+   "ptt": 103.4,
+   "idx": 57.8
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (140 < 146)"
+  ]
+ },
+ {
+  "sk": "AERTC13025",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 419.0,
+   "hb": 419.0,
+   "n11": 459.0,
+   "pz": 439.0,
+   "ptt": 419.0,
+   "idx": 438.0
+  },
+  "net": {
+   "ty": 206.2,
+   "hb": 213.7,
+   "n11": 206.0,
+   "pz": 206.4,
+   "ptt": 206.8,
+   "idx": 206.6
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AERTCPS",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 599.0,
+   "ty": 699.0,
+   "hb": 786.0,
+   "n11": 756.0,
+   "pz": 723.0,
+   "ptt": 709.0,
+   "idx": 711.0
+  },
+  "net": {
+   "web": 479.2,
+   "ty": 403.1,
+   "hb": 471.8,
+   "n11": 403.0,
+   "pz": 403.3,
+   "ptt": 412.2,
+   "idx": 406.8
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AES400IGG",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 89.0,
+   "ty": 130.0,
+   "hb": 129.0,
+   "pz": 199.0,
+   "idx": 243.0
+  },
+  "net": {
+   "web": 71.2,
+   "ty": 46.2,
+   "hb": 46.2,
+   "pz": 52.6,
+   "idx": 63.6
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (129 < 130)"
+  ]
+ },
+ {
+  "sk": "AESARJKT1",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 65.0,
+   "ty": 139.0,
+   "hb": 139.0,
+   "n11": 231.0,
+   "pz": 146.0,
+   "ptt": 130.0,
+   "idx": 220.0
+  },
+  "net": {
+   "web": 52.0,
+   "ty": 52.6,
+   "hb": 53.3,
+   "n11": 46.2,
+   "pz": 46.6,
+   "ptt": 92.1,
+   "idx": 46.8
+  },
+  "uyari": [
+   "PTT fiyati TY'nin altinda (130 < 139)"
+  ]
+ },
+ {
+  "sk": "AESG90",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 96.0,
+   "ty": 156.0,
+   "hb": 152.0,
+   "n11": 259.0,
+   "ptt": 156.0,
+   "idx": 245.0
+  },
+  "net": {
+   "web": 76.8,
+   "ty": 64.5,
+   "hb": 62.4,
+   "n11": 64.8,
+   "ptt": 110.5,
+   "idx": 65.1
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (152 < 156)"
+  ]
+ },
+ {
+  "sk": "AESG905",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 524.0,
+   "hb": 483.0,
+   "n11": 571.0,
+   "pz": 546.0,
+   "ptt": 526.0,
+   "idx": 539.0
+  },
+  "net": {
+   "ty": 280.0,
+   "hb": 258.7,
+   "n11": 280.3,
+   "pz": 280.6,
+   "ptt": 282.6,
+   "idx": 280.7
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (483 < 524)",
+   "HB neti TY'den 21 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AESTEPPS",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 439.0,
+   "ty": 587.0,
+   "hb": 587.0,
+   "n11": 637.0,
+   "pz": 610.0,
+   "ptt": 594.0,
+   "idx": 604.0
+  },
+  "net": {
+   "web": 351.2,
+   "ty": 324.4,
+   "hb": 331.9,
+   "n11": 324.0,
+   "pz": 325.0,
+   "ptt": 330.8,
+   "idx": 328.4
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AESTJDFTR",
+  "grup": "Kirtasiye",
+  "fiyat": {
+   "web": 90.0,
+   "ty": 173.0,
+   "hb": 173.0,
+   "n11": 277.0,
+   "pz": 248.0,
+   "ptt": 173.0,
+   "idx": 293.0
+  },
+  "net": {
+   "web": 72.0,
+   "ty": 76.5,
+   "hb": 77.2,
+   "n11": 76.7,
+   "pz": 76.6,
+   "ptt": 118.2,
+   "idx": 76.9
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AESTJDFTR-10",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 850.0,
+   "ty": 1418.0,
+   "n11": 1519.0,
+   "pz": 1563.0,
+   "ptt": 1518.0,
+   "idx": 1593.0,
+   "hb": 1418.0
+  },
+  "net": {
+   "web": 680.0,
+   "ty": 908.8,
+   "n11": 909.1,
+   "pz": 985.7,
+   "ptt": 985.2,
+   "idx": 1053.6,
+   "hb": 916.3
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AESTJDFTR-20",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 1700.0,
+   "ty": 2350.0,
+   "n11": 2507.0,
+   "pz": 2601.0,
+   "ptt": 2554.0,
+   "idx": 2663.0,
+   "hb": 2350.0
+  },
+  "net": {
+   "web": 1360.0,
+   "ty": 1564.3,
+   "n11": 1564.5,
+   "pz": 1705.4,
+   "ptt": 1719.1,
+   "idx": 1838.3,
+   "hb": 1571.8
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AET2WDRBT",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 382.0,
+   "ty": 513.0,
+   "hb": 482.0,
+   "n11": 559.0,
+   "pz": 535.0,
+   "ptt": 514.0,
+   "idx": 528.0
+  },
+  "net": {
+   "web": 305.6,
+   "ty": 272.3,
+   "hb": 258.0,
+   "n11": 272.3,
+   "pz": 273.0,
+   "ptt": 274.1,
+   "idx": 272.6
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (482 < 513)"
+  ]
+ },
+ {
+  "sk": "AET2WDRBT-LI",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 389.0,
+   "ty": 545.0,
+   "hb": 650.0,
+   "n11": 593.0,
+   "pz": 567.0,
+   "ptt": 551.0,
+   "idx": 563.0
+  },
+  "net": {
+   "web": 311.2,
+   "ty": 294.8,
+   "hb": 376.2,
+   "n11": 294.9,
+   "pz": 295.1,
+   "ptt": 300.3,
+   "idx": 298.3
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AETC162",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 330.0,
+   "ty": 529.0,
+   "hb": 549.0,
+   "n11": 576.0,
+   "pz": 576.0,
+   "ptt": 539.0,
+   "idx": 601.0
+  },
+  "net": {
+   "web": 264.0,
+   "ty": 283.6,
+   "hb": 305.1,
+   "n11": 283.6,
+   "pz": 284.1,
+   "ptt": 287.3,
+   "idx": 284.1
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AETCS18P",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 1990.0,
+   "ty": 3000.0,
+   "hb": 2199.0,
+   "n11": 3196.0,
+   "pz": 3251.0,
+   "ptt": 3136.0,
+   "idx": 3295.0
+  },
+  "net": {
+   "web": 1592.0,
+   "ty": 2021.5,
+   "hb": 1465.6,
+   "n11": 2021.5,
+   "pz": 2058.5,
+   "ptt": 2105.2,
+   "idx": 2071.1
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (2199 < 3000)",
+   "HB neti TY'den 556 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AETCS9P",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 1376.0,
+   "ty": 1784.0,
+   "hb": 1427.0,
+   "n11": 1907.0,
+   "pz": 1961.0,
+   "ptt": 1866.0,
+   "idx": 2006.0
+  },
+  "net": {
+   "web": 1100.8,
+   "ty": 1166.2,
+   "hb": 922.7,
+   "n11": 1166.5,
+   "pz": 1202.8,
+   "ptt": 1216.2,
+   "idx": 1216.1
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (1427 < 1784)",
+   "HB neti TY'den 244 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AETEMDEF",
+  "grup": "Kirtasiye",
+  "fiyat": {
+   "web": 90.0,
+   "ty": 173.0,
+   "hb": 173.0,
+   "n11": 277.0,
+   "pz": 248.0,
+   "ptt": 173.0,
+   "idx": 293.0
+  },
+  "net": {
+   "web": 72.0,
+   "ty": 76.5,
+   "hb": 77.2,
+   "n11": 76.7,
+   "pz": 76.6,
+   "ptt": 118.2,
+   "idx": 76.9
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AETEMDEF-10",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 850.0,
+   "ty": 1418.0,
+   "n11": 1519.0,
+   "pz": 1563.0,
+   "ptt": 1518.0,
+   "idx": 1593.0,
+   "hb": 1418.0
+  },
+  "net": {
+   "web": 680.0,
+   "ty": 908.8,
+   "n11": 909.1,
+   "pz": 985.7,
+   "ptt": 985.2,
+   "idx": 1053.6,
+   "hb": 916.3
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AETEMDEF-20",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 1700.0,
+   "ty": 2350.0,
+   "n11": 2507.0,
+   "pz": 2601.0,
+   "ptt": 2533.0,
+   "idx": 2646.0,
+   "hb": 2350.0
+  },
+  "net": {
+   "web": 1360.0,
+   "ty": 1564.3,
+   "n11": 1564.5,
+   "pz": 1705.4,
+   "ptt": 1704.2,
+   "idx": 1825.8,
+   "hb": 1571.8
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AETEMDEF-30",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 2550.0,
+   "ty": 3350.0,
+   "n11": 3567.0,
+   "pz": 3677.0,
+   "ptt": 3684.0,
+   "idx": 3790.0,
+   "hb": 3350.0
+  },
+  "net": {
+   "web": 2040.0,
+   "ty": 2267.7,
+   "n11": 2267.6,
+   "pz": 2451.4,
+   "ptt": 2519.5,
+   "idx": 2664.8,
+   "hb": 2275.2
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AETEMELSET",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 189.0,
+   "ty": 335.0,
+   "hb": 335.0,
+   "n11": 391.0,
+   "pz": 371.0,
+   "ptt": 348.0,
+   "idx": 373.0
+  },
+  "net": {
+   "web": 151.2,
+   "ty": 158.8,
+   "hb": 161.1,
+   "n11": 152.4,
+   "pz": 159.2,
+   "ptt": 156.5,
+   "idx": 159.0
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AETKRM5V",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 108.0,
+   "ty": 156.0,
+   "hb": 167.0,
+   "n11": 259.0,
+   "pz": 217.0,
+   "ptt": 156.0,
+   "idx": 245.0
+  },
+  "net": {
+   "web": 86.4,
+   "ty": 64.5,
+   "hb": 73.0,
+   "n11": 64.8,
+   "pz": 65.0,
+   "ptt": 110.5,
+   "idx": 65.1
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AETKRM5V5",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 524.0,
+   "hb": 524.0,
+   "n11": 571.0,
+   "pz": 546.0,
+   "ptt": 526.0,
+   "idx": 539.0
+  },
+  "net": {
+   "ty": 280.0,
+   "hb": 287.5,
+   "n11": 280.3,
+   "pz": 280.6,
+   "ptt": 282.6,
+   "idx": 280.7
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AETMLELKDS",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 199.0,
+   "ty": 314.0,
+   "hb": 314.0,
+   "n11": 369.0,
+   "pz": 350.0,
+   "ptt": 327.0,
+   "idx": 353.0
+  },
+  "net": {
+   "web": 159.2,
+   "ty": 144.0,
+   "hb": 146.3,
+   "n11": 137.8,
+   "pz": 144.7,
+   "ptt": 141.6,
+   "idx": 144.3
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AETP4056",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 45.0,
+   "ty": 124.0,
+   "hb": 72.0,
+   "n11": 225.0,
+   "pz": 140.0,
+   "ptt": 124.0,
+   "idx": 214.0
+  },
+  "net": {
+   "web": 36.0,
+   "ty": 42.0,
+   "hb": 6.1,
+   "n11": 42.2,
+   "pz": 42.5,
+   "ptt": 87.8,
+   "idx": 42.4
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (72 < 124)",
+   "HB neti TY'den 36 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AETP4056-2",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 144.0,
+   "n11": 246.0,
+   "pz": 205.0,
+   "ptt": 144.0,
+   "idx": 233.0
+  },
+  "net": {
+   "ty": 56.1,
+   "n11": 56.2,
+   "pz": 56.7,
+   "ptt": 102.0,
+   "idx": 56.3
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AETTS3P",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 156.0,
+   "ty": 198.0,
+   "hb": 188.0
+  },
+  "net": {
+   "web": 124.8,
+   "ty": 94.1,
+   "hb": 87.7
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (188 < 198)"
+  ]
+ },
+ {
+  "sk": "AETY4LUMTRST",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 395.0
+  },
+  "net": {
+   "ty": 201.0
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEUNOR3",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 270.0,
+   "ty": 356.0,
+   "hb": 377.0,
+   "n11": 356.0,
+   "pz": 392.0,
+   "ptt": 370.0,
+   "idx": 393.0
+  },
+  "net": {
+   "web": 216.0,
+   "ty": 173.6,
+   "hb": 190.7,
+   "n11": 129.1,
+   "pz": 173.8,
+   "ptt": 172.1,
+   "idx": 173.6
+  },
+  "uyari": [
+   "N11 neti TY'den 44 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AEUNOR33",
+  "grup": "Elektronik",
+  "fiyat": {
+   "ty": 944.0,
+   "hb": 944.0,
+   "n11": 1016.0,
+   "pz": 972.0,
+   "ptt": 958.0,
+   "idx": 944.0
+  },
+  "net": {
+   "ty": 575.4,
+   "hb": 582.9,
+   "n11": 575.4,
+   "pz": 575.9,
+   "ptt": 588.6,
+   "idx": 577.7
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEUT12D",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "ty": 468.0,
+   "n11": 511.0,
+   "ptt": 468.0,
+   "idx": 541.0
+  },
+  "net": {
+   "ty": 240.7,
+   "n11": 240.5,
+   "ptt": 237.6,
+   "idx": 244.3
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEVANTSET",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 84.9,
+   "ty": 159.0,
+   "hb": 167.0,
+   "n11": 262.0,
+   "pz": 220.0,
+   "ptt": 159.0,
+   "idx": 248.0
+  },
+  "net": {
+   "web": 67.9,
+   "ty": 66.6,
+   "hb": 73.0,
+   "n11": 66.8,
+   "pz": 67.1,
+   "ptt": 112.6,
+   "idx": 67.3
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEVHM314",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 96.0,
+   "ty": 146.0,
+   "hb": 156.0,
+   "n11": 248.0,
+   "ptt": 146.0,
+   "idx": 235.0
+  },
+  "net": {
+   "web": 76.8,
+   "ty": 57.5,
+   "hb": 65.2,
+   "n11": 57.5,
+   "ptt": 103.4,
+   "idx": 57.8
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEXL6009",
+  "grup": "Elektronik",
+  "fiyat": {
+   "web": 90.0,
+   "ty": 135.0,
+   "hb": 146.0,
+   "n11": 237.0,
+   "pz": 195.0,
+   "ptt": 135.0,
+   "idx": 225.0
+  },
+  "net": {
+   "web": 72.0,
+   "ty": 49.8,
+   "hb": 58.2,
+   "n11": 50.2,
+   "pz": 49.8,
+   "ptt": 95.6,
+   "idx": 50.4
+  },
+  "uyari": []
+ },
+ {
+  "sk": "AEYNKSK160",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 251.0,
+   "ty": 398.0,
+   "hb": 366.0,
+   "n11": 458.0,
+   "pz": 454.0,
+   "ptt": 419.0,
+   "idx": 479.0
+  },
+  "net": {
+   "web": 200.8,
+   "ty": 203.1,
+   "hb": 182.9,
+   "n11": 205.3,
+   "pz": 203.2,
+   "ptt": 203.3,
+   "idx": 203.2
+  },
+  "uyari": [
+   "HB fiyati TY'nin altinda (366 < 398)",
+   "HB neti TY'den 20 TL dusuk"
+  ]
+ },
+ {
+  "sk": "AEZD30C40W",
+  "grup": "YapiMarket",
+  "fiyat": {
+   "web": 372.0,
+   "ty": 524.0,
+   "hb": 524.0,
+   "n11": 571.0,
+   "pz": 570.0,
+   "ptt": 533.0,
+   "idx": 595.0
+  },
+  "net": {
+   "web": 297.6,
+   "ty": 280.0,
+   "hb": 287.5,
+   "n11": 280.3,
+   "pz": 280.1,
+   "ptt": 283.1,
+   "idx": 280.1
+  },
+  "uyari": []
+ }
+]

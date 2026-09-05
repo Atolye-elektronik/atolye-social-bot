@@ -60,6 +60,7 @@ KAT.update({
 })
 # Shopify-only urunlerin TY katalogunda olmayanlari icin kaynak: content/trendyol_yeni_10.json
 EK_KAYNAK = [os.path.join(KOK, "content", "trendyol_yeni_10.json"), os.path.join(KOK, "content", "trendyol_yeni_2.json")]
+HARIC = {"AEUT12D"}   # kullanici 05.09: UT12D sadece Trendyol'da kalsin
 SET_IPUCU = ("SET", "ROBOT", "RAK", "RBT", "ELK", "SES", "SNST", "PS")
 
 # Surat Kargo, KDV haric (28.01.2026 listesi): desi ust siniri -> ucret
@@ -112,6 +113,8 @@ def urunler(brand_id, ship_id, ret_id, vat=20):
                    | {"AE5X100DT", "AE5X100YT", "AEKNTKLM", "AEMYNK", "AEDUY-1", "AEAMP-1", "AEPY18650T", "AE9VPILSKT1", "AES400IGG", "AE5IZOLE"})
     cikti, rapor = [], []
     for sk in hedef:
+        if sk in HARIC:
+            continue
         u = kat.get(sk)
         if not u or not u.get("salePrice"):
             rapor.append((sk, "TY yok")); continue

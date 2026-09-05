@@ -789,6 +789,111 @@
    "item": 54869749891301,
    "qty": 5,
    "status": "ARCHIVED"
+  },
+  "AELED5K": {
+   "variant": 52775836844261,
+   "item": 54888990343397,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AELED5M": {
+   "variant": 52775836909797,
+   "item": 54888990408933,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AELED5Y": {
+   "variant": 52775836942565,
+   "item": 54888990441701,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AELEDRGB": {
+   "variant": 52775836975333,
+   "item": 54888990507237,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AELDR": {
+   "variant": 52775837073637,
+   "item": 54888990572773,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AENTC10K": {
+   "variant": 52775837106405,
+   "item": 54888990605541,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AEBTN6X6": {
+   "variant": 52775837139173,
+   "item": 54888990638309,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AEDIR10K": {
+   "variant": 52775837171941,
+   "item": 54888990671077,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AEDIR330": {
+   "variant": 52775837663461,
+   "item": 54888991162597,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AEPIL9V": {
+   "variant": 52775837728997,
+   "item": 54888991228133,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AETUPLEHIM": {
+   "variant": 52775837761765,
+   "item": 54888991260901,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AELEHIMPASTA": {
+   "variant": 52775837794533,
+   "item": 54888991293669,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AEIZOLE": {
+   "variant": 52775837892837,
+   "item": 54888991391973,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AEPOT10K": {
+   "variant": 52775837925605,
+   "item": 54888991424741,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AEKRK1": {
+   "variant": 52775837958373,
+   "item": 54888991457509,
+   "qty": 0,
+   "status": "DRAFT",
+   "tracked": true
   }
  }
 }
