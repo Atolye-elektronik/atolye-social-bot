@@ -1,1 +1,359 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9592101323,
+      "firstName": "ömer ege",
+      "lastName": "üncü",
+      "company": "",
+      "address1": "Selek sokak no.24 1. kat",
+      "address2": "",
+      "city": "İzmir",
+      "cityCode": 35,
+      "district": "Beydağ",
+      "districtId": 89,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "35000",
+      "countryCode": "TR",
+      "neighborhoodId": 24291,
+      "neighborhood": "Cumhuriyet Mah",
+      "phone": null,
+      "fullAddress": "Selek sokak no.24 1. kat     Beydağ İzmir",
+      "fullName": "ömer ege üncü"
+    },
+    "orderNumber": "11574169431",
+    "orderCountryCode": "TR",
+    "grossAmount": 279.0,
+    "packageGrossAmount": 279.0,
+    "totalDiscount": 9.77,
+    "packageSellerDiscount": 9.77,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 9.77,
+    "discountDisplays": [
+      {
+        "displayName": "Net %5 İndirim",
+        "discountAmount": 9.77
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9592101321,
+      "firstName": "ömer ege",
+      "lastName": "üncü",
+      "company": "",
+      "address1": "Selek sokak no.24 1. kat",
+      "address2": "",
+      "city": "İzmir",
+      "cityCode": 35,
+      "district": "Beydağ",
+      "districtId": 89,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "35000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 24291,
+      "neighborhood": "Cumhuriyet Mah",
+      "phone": null,
+      "fullAddress": "Selek sokak no.24 1. kat     Beydağ İzmir",
+      "fullName": "ömer ege üncü"
+    },
+    "customerFirstName": "ömer ege",
+    "customerEmail": "pf+zanr8q6x@trendyolmail.com",
+    "customerId": 73194618,
+    "supplierId": 0,
+    "customerLastName": "üncü",
+    "id": 4133071022,
+    "channelId": 1,
+    "shipmentPackageId": 4133071022,
+    "cargoTrackingNumber": 7270036887911883,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEMOTPRV-5",
+        "sku": "2901463317217",
+        "stockCode": "AEMOTPRV-5",
+        "productName": "DC Motor + Pervane Seti (3V) - Mini Vantilatör Motoru - 5 Motor + 5 Pervane AEMOTPRV-5, one size",
+        "productCode": 1670396891,
+        "contentId": 1670396891,
+        "productOrigin": "CN",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 279.0,
+        "lineGrossAmount": 279.0,
+        "discount": 9.77,
+        "lineTotalDiscount": 9.77,
+        "lineSellerDiscount": 9.77,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6753655588",
+            "lineItemPrice": 269.23,
+            "lineItemDiscount": 9.77,
+            "lineItemSellerDiscount": 9.77,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5917701772,
+        "lineId": 5917701772,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901463317217",
+        "orderLineItemStatusName": "Picking",
+        "price": 269.23,
+        "lineUnitPrice": 269.23,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1788688707461,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1788677909067,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1788677914147,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1788681086025,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1788814740000,
+    "estimatedDeliveryEndDate": 1789073940000,
+    "totalPrice": 269.23,
+    "packageTotalPrice": 269.23,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1788814740000,
+    "fastDelivery": true,
+    "originShipmentDate": 1788677909058,
+    "lastModifiedDate": 1788681086025,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10831357781,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9592158413,
+      "firstName": "Mehmet savaş",
+      "lastName": "Coşkun",
+      "company": "",
+      "address1": "Mebusevleri mahallesi İller sokak 17/4 dostlar apartmani Çankaya/Ankara ",
+      "address2": "",
+      "city": "Ankara",
+      "cityCode": 6,
+      "district": "Çankaya",
+      "districtId": 5,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "06000",
+      "countryCode": "TR",
+      "neighborhoodId": 0,
+      "phone": null,
+      "fullAddress": "Mebusevleri mahallesi İller sokak 17/4 dostlar apartmani Çankaya/Ankara     Çankaya Ankara",
+      "fullName": "Mehmet savaş Coşkun"
+    },
+    "orderNumber": "11574199729",
+    "orderCountryCode": "TR",
+    "grossAmount": 156.0,
+    "packageGrossAmount": 156.0,
+    "totalDiscount": 5.46,
+    "packageSellerDiscount": 5.46,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 5.46,
+    "discountDisplays": [
+      {
+        "displayName": "Net %5 İndirim",
+        "discountAmount": 5.46
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9592158411,
+      "firstName": "Mehmet savaş",
+      "lastName": "Coşkun",
+      "company": "",
+      "address1": "Mebusevleri mahallesi İller sokak 17/4 dostlar apartmani Çankaya/Ankara ",
+      "address2": "",
+      "city": "Ankara",
+      "cityCode": 6,
+      "district": "Çankaya",
+      "districtId": 5,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "06000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 0,
+      "phone": null,
+      "fullAddress": "Mebusevleri mahallesi İller sokak 17/4 dostlar apartmani Çankaya/Ankara     Çankaya Ankara",
+      "fullName": "Mehmet savaş Coşkun"
+    },
+    "customerFirstName": "Mehmet savaş",
+    "customerEmail": "pf+o4pmenoj@trendyolmail.com",
+    "customerId": 8320638,
+    "supplierId": 0,
+    "customerLastName": "Coşkun",
+    "id": 4133094298,
+    "channelId": 1,
+    "shipmentPackageId": 4133094298,
+    "cargoTrackingNumber": 7270036888145430,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AESG90",
+        "sku": "7807653553435",
+        "stockCode": "AESG90",
+        "productName": "Tower Pro Sg90 Rc Mini Servo Motor 1, one size",
+        "productCode": 59484390,
+        "contentId": 59484390,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 156.0,
+        "lineGrossAmount": 156.0,
+        "discount": 5.46,
+        "lineTotalDiscount": 5.46,
+        "lineSellerDiscount": 5.46,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6753696901",
+            "lineItemPrice": 150.54,
+            "lineItemDiscount": 5.46,
+            "lineItemSellerDiscount": 5.46,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5917737934,
+        "lineId": 5917737934,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "7807653553435",
+        "orderLineItemStatusName": "Picking",
+        "price": 150.54,
+        "lineUnitPrice": 150.54,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1788689893786,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1788679094603,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1788679099442,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1788681064646,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1788814740000,
+    "estimatedDeliveryEndDate": 1788987540000,
+    "totalPrice": 150.54,
+    "packageTotalPrice": 150.54,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1788814740000,
+    "fastDelivery": true,
+    "originShipmentDate": 1788679094592,
+    "lastModifiedDate": 1788681064646,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10831387865,
+    "is4P": false
+  }
+]
