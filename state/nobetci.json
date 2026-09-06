@@ -1,5 +1,5 @@
 {
-  "kontrol": "2026-09-06T15:47:55.063548+00:00",
+  "kontrol": "2026-09-06T16:48:08.875119+00:00",
   "akislar": [
     {
       "dosya": "bayram.yml",
@@ -7,7 +7,7 @@
       "beklenen": "2026-09-06T05:00:00+00:00",
       "son_basarili": "2026-09-06T05:14:34+00:00",
       "son_kosu": "2026-09-06T05:14:34+00:00",
-      "gecikme_dk": 647,
+      "gecikme_dk": 708,
       "kacti": false,
       "hatali": false
     },
@@ -17,7 +17,7 @@
       "beklenen": "2026-09-06T01:00:00+00:00",
       "son_basarili": "2026-09-06T01:11:52+00:00",
       "son_kosu": "2026-09-06T01:11:52+00:00",
-      "gecikme_dk": 887,
+      "gecikme_dk": 948,
       "kacti": false,
       "hatali": false
     },
@@ -27,7 +27,7 @@
       "beklenen": "2026-08-31T04:30:00+00:00",
       "son_basarili": "2026-08-31T04:36:37+00:00",
       "son_kosu": "2026-08-31T04:36:37+00:00",
-      "gecikme_dk": 9317,
+      "gecikme_dk": 9378,
       "kacti": false,
       "hatali": false
     },
@@ -35,9 +35,9 @@
       "dosya": "pazaryeri-sync.yml",
       "ad": "Pazaryeri siparis senkronu",
       "beklenen": "2026-09-06T14:13:00+00:00",
-      "son_basarili": "2026-09-06T14:20:14+00:00",
-      "son_kosu": "2026-09-06T14:20:14+00:00",
-      "gecikme_dk": 94,
+      "son_basarili": "2026-09-06T16:21:36+00:00",
+      "son_kosu": "2026-09-06T16:21:36+00:00",
+      "gecikme_dk": 155,
       "kacti": false,
       "hatali": false
     },
@@ -47,7 +47,7 @@
       "beklenen": "2026-09-05T18:37:00+00:00",
       "son_basarili": "2026-09-05T18:43:41+00:00",
       "son_kosu": "2026-09-05T18:43:41+00:00",
-      "gecikme_dk": 1270,
+      "gecikme_dk": 1331,
       "kacti": false,
       "hatali": false
     },
@@ -57,17 +57,17 @@
       "beklenen": "2026-09-06T09:00:00+00:00",
       "son_basarili": "2026-09-06T09:11:24+00:00",
       "son_kosu": "2026-09-06T09:11:24+00:00",
-      "gecikme_dk": 407,
+      "gecikme_dk": 468,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "stok-siparis.yml",
       "ad": "Stok merkezi - siparis toplama",
-      "beklenen": "2026-09-06T14:00:00+00:00",
-      "son_basarili": "2026-09-06T15:40:18+00:00",
-      "son_kosu": "2026-09-06T15:40:18+00:00",
-      "gecikme_dk": 107,
+      "beklenen": "2026-09-06T15:00:00+00:00",
+      "son_basarili": "2026-09-06T16:40:30+00:00",
+      "son_kosu": "2026-09-06T16:40:30+00:00",
+      "gecikme_dk": 108,
       "kacti": false,
       "hatali": false
     },
@@ -77,7 +77,7 @@
       "beklenen": "2026-09-01T04:00:00+00:00",
       "son_basarili": "2026-09-01T04:03:16+00:00",
       "son_kosu": "2026-09-01T04:03:16+00:00",
-      "gecikme_dk": 7907,
+      "gecikme_dk": 7968,
       "kacti": false,
       "hatali": false
     },
@@ -87,7 +87,7 @@
       "beklenen": "2026-09-06T05:15:00+00:00",
       "son_basarili": "2026-09-06T05:25:51+00:00",
       "son_kosu": "2026-09-06T05:25:51+00:00",
-      "gecikme_dk": 632,
+      "gecikme_dk": 693,
       "kacti": false,
       "hatali": false
     }
