@@ -241,8 +241,15 @@ def yeni_siparisler(kanallar):
     return yeni, g
 
 
-def liste(kanallar, dosya):
-    """Stoktan bagimsiz siparis listesi: tum kanallar, son 14 gun, Excel."""
+def _gun(t):
+    """Tarih alanini YYYY-MM-DD'ye indirger (ms epoch / ISO / 'YYYY-MM-DD HH:MM')."""
+    if isinstance(t, (int, float)):
+        return datetime.fromtimestamp(t / 1000).strftime("%Y-%m-%d")
+    return str(t or "")[:10]
+
+
+def liste(kanallar, dosya, sadece_bugun=False):
+    """Stoktan bagimsiz siparis listesi: tum kanallar, son 14 gun (veya sadece bugun), Excel."""
     import openpyxl
     from openpyxl.styles import Font
     wb = openpyxl.Workbook(); ws = wb.active; ws.title = "Siparisler"
@@ -254,6 +261,9 @@ def liste(kanallar, dosya):
             L = TOPLAYICI[k]()
         except Exception as e:
             print("  %s hata: %s" % (k, str(e)[:120])); continue
+        if sadece_bugun:
+            bugun = datetime.now().strftime("%Y-%m-%d")
+            L = [o for o in L if _gun(o.get("tarih")) == bugun]
         say[k] = len(L)
         for o in L:
             t = o.get("tarih")
@@ -269,6 +279,8 @@ def liste(kanallar, dosya):
         ws.column_dimensions[col].width = w
     wb.save(dosya)
     print("kanal basina siparis:", say, "->", dosya)
+    for r in ws.iter_rows(min_row=2, values_only=True):
+        print("  %-11s %-14s %-16s %-10s %8s  %s" % (r[0], str(r[1])[:14], r[2], str(r[3])[:10], r[5] if r[5] is not None else "", r[7][:60]))
     return say
 
 
@@ -276,8 +288,10 @@ def main():
     a = sys.argv[1:]
     if "--liste" in a:
         kanallar = [a[a.index("--kanal") + 1]] if "--kanal" in a else list(TOPLAYICI)
-        dosya = a[a.index("--liste") + 1] if len(a) > a.index("--liste") + 1 and a[a.index("--liste") + 1].endswith(".xlsx") else os.path.join(os.path.expanduser("~"), "Desktop", "SIPARISLER.xlsx")
-        liste(kanallar, dosya); return
+        bugun = "--bugun" in a
+        varsayilan = "SIPARIS-BUGUN.xlsx" if bugun else "SIPARISLER.xlsx"
+        dosya = a[a.index("--liste") + 1] if len(a) > a.index("--liste") + 1 and a[a.index("--liste") + 1].endswith(".xlsx") else os.path.join(os.path.expanduser("~"), "Desktop", varsayilan)
+        liste(kanallar, dosya, sadece_bugun=bugun); return
     kuru = "--uygula" not in a
     kanallar = [a[a.index("--kanal") + 1]] if "--kanal" in a else list(TOPLAYICI)
     from stok.recete import Recete
