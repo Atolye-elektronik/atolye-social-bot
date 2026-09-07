@@ -74,7 +74,10 @@ def topla_trendyol(gun=14):
         L = d.get("content") or []
         for o in L:
             out.append({"no": str(o["orderNumber"]), "tarih": o.get("orderDate"),
-                        "durum": o.get("status"), "kalemler": _kalemler(o)})
+                        "durum": o.get("status"), "kalemler": _kalemler(o),
+                        "tutar": o.get("totalPrice") or o.get("grossAmount"),
+                        "musteri": ("%s %s" % (o.get("customerFirstName", ""), o.get("customerLastName", ""))).strip(),
+                        "kargo_son": o.get("agreedDeliveryDate") or o.get("estimatedDeliveryEndDate")})
         if len(L) < 100:
             break
     return out
@@ -96,7 +99,10 @@ def topla_hepsiburada():
         for o in L:
             no = str(_ilk(o, "orderNumber", "OrderNumber", "PackageNumber", "id", "Id"))
             g = grup.setdefault(no, {"no": no, "tarih": _ilk(o, "orderDate", "OrderDate", "createdDate"),
-                                     "durum": _ilk(o, "status", "Status", vars=fn.__name__), "kalemler": []})
+                                     "durum": _ilk(o, "status", "Status", vars=fn.__name__), "kalemler": [],
+                                     "tutar": ((o.get("totalPrice") or {}).get("amount") if isinstance(o.get("totalPrice"), dict) else o.get("totalPrice")),
+                                     "musteri": _ilk(o, "customerName", "CustomerName", vars=""),
+                                     "kargo_son": _ilk(o, "dueDate", "DueDate")})
             kl = _kalemler(o)
             if not kl and _ilk(o, "merchantSKU", "merchantSku"):
                 kl = _kalemler({"lines": [o]})
@@ -155,7 +161,7 @@ def topla_shopify(gun=14):
     out = []
     q = """query($q:String,$after:String){ orders(first:50, query:$q, after:$after, sortKey:CREATED_AT, reverse:true){
       pageInfo{hasNextPage endCursor}
-      nodes{ name createdAt cancelledAt displayFulfillmentStatus
+      nodes{ name createdAt cancelledAt displayFulfillmentStatus totalPriceSet{ shopMoney{ amount } }
              lineItems(first:30){ nodes{ sku quantity variant{ barcode } } } } } }"""
     bas = (datetime.now() - timedelta(days=gun)).strftime("%Y-%m-%d")
     after = None
@@ -166,7 +172,8 @@ def topla_shopify(gun=14):
                 continue
             kl = [{"kod": li["sku"], "barkod": (li.get("variant") or {}).get("barcode"), "adet": int(li["quantity"])}
                   for li in o["lineItems"]["nodes"] if li.get("sku")]
-            out.append({"no": o["name"], "tarih": o["createdAt"], "durum": o.get("displayFulfillmentStatus"), "kalemler": kl})
+            out.append({"no": o["name"], "tarih": o["createdAt"], "durum": o.get("displayFulfillmentStatus"), "kalemler": kl,
+                        "tutar": ((o.get("totalPriceSet") or {}).get("shopMoney") or {}).get("amount")})
         if not d["pageInfo"]["hasNextPage"]:
             break
         after = d["pageInfo"]["endCursor"]
@@ -234,8 +241,43 @@ def yeni_siparisler(kanallar):
     return yeni, g
 
 
+def liste(kanallar, dosya):
+    """Stoktan bagimsiz siparis listesi: tum kanallar, son 14 gun, Excel."""
+    import openpyxl
+    from openpyxl.styles import Font
+    wb = openpyxl.Workbook(); ws = wb.active; ws.title = "Siparisler"
+    ws.append(["Kanal", "Siparis no", "Tarih", "Durum", "Musteri", "Tutar", "Kargo son", "Urunler"])
+    for c in ws[1]: c.font = Font(bold=True)
+    say = {}
+    for k in kanallar:
+        try:
+            L = TOPLAYICI[k]()
+        except Exception as e:
+            print("  %s hata: %s" % (k, str(e)[:120])); continue
+        say[k] = len(L)
+        for o in L:
+            t = o.get("tarih")
+            if isinstance(t, (int, float)):
+                t = datetime.fromtimestamp(t / 1000).strftime("%Y-%m-%d %H:%M")
+            ks = o.get("kargo_son")
+            if isinstance(ks, (int, float)):
+                ks = datetime.fromtimestamp(ks / 1000).strftime("%Y-%m-%d")
+            urun = ", ".join("%s x%d" % (kl.get("kod") or kl.get("barkod"), kl["adet"]) for kl in o["kalemler"])
+            ws.append([k, o["no"], str(t or "")[:16], o.get("durum"), o.get("musteri", ""), o.get("tutar"), str(ks or "")[:10], urun])
+    ws.freeze_panes = "A2"
+    for col, w in zip("ABCDEFGH", [12, 18, 17, 14, 22, 10, 12, 70]):
+        ws.column_dimensions[col].width = w
+    wb.save(dosya)
+    print("kanal basina siparis:", say, "->", dosya)
+    return say
+
+
 def main():
     a = sys.argv[1:]
+    if "--liste" in a:
+        kanallar = [a[a.index("--kanal") + 1]] if "--kanal" in a else list(TOPLAYICI)
+        dosya = a[a.index("--liste") + 1] if len(a) > a.index("--liste") + 1 and a[a.index("--liste") + 1].endswith(".xlsx") else os.path.join(os.path.expanduser("~"), "Desktop", "SIPARISLER.xlsx")
+        liste(kanallar, dosya); return
     kuru = "--uygula" not in a
     kanallar = [a[a.index("--kanal") + 1]] if "--kanal" in a else list(TOPLAYICI)
     from stok.recete import Recete
