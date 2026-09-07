@@ -241,11 +241,18 @@ def yeni_siparisler(kanallar):
     return yeni, g
 
 
-def _gun(t):
-    """Tarih alanini YYYY-MM-DD'ye indirger (ms epoch / ISO / 'YYYY-MM-DD HH:MM')."""
+def _zaman(t):
+    """Tarih alanini datetime'a cevirir (ms epoch / ISO / 'YYYY-MM-DD HH:MM'); yerel saat."""
     if isinstance(t, (int, float)):
-        return datetime.fromtimestamp(t / 1000).strftime("%Y-%m-%d")
-    return str(t or "")[:10]
+        return datetime.fromtimestamp(t / 1000)
+    s = str(t or "")[:16].replace("T", " ")
+    try:
+        return datetime.strptime(s, "%Y-%m-%d %H:%M")
+    except ValueError:
+        try:
+            return datetime.strptime(s[:10], "%Y-%m-%d")
+        except ValueError:
+            return None
 
 
 def liste(kanallar, dosya, sadece_bugun=False):
@@ -262,8 +269,15 @@ def liste(kanallar, dosya, sadece_bugun=False):
         except Exception as e:
             print("  %s hata: %s" % (k, str(e)[:120])); continue
         if sadece_bugun:
-            bugun = datetime.now().strftime("%Y-%m-%d")
-            L = [o for o in L if _gun(o.get("tarih")) == bugun]
+            # Kesit: dun 14:00 < siparis <= bugun 14:00 (kullanici 07.09). 14:00'ten sonra calisirsa
+            # bugun 14:00 -> yarin 14:00 degil, yine "son 14:00"e kadar olan pencere alinir.
+            simdi = datetime.now()
+            son = simdi.replace(hour=14, minute=0, second=0, microsecond=0)
+            if simdi < son:
+                son -= timedelta(days=1)
+            bas = son - timedelta(days=1)
+            L = [o for o in L if (_zaman(o.get("tarih")) or bas) > bas and (_zaman(o.get("tarih")) or son) <= son]
+            print("kesit: %s -> %s" % (bas.strftime("%d.%m %H:%M"), son.strftime("%d.%m %H:%M")))
         say[k] = len(L)
         for o in L:
             t = o.get("tarih")
