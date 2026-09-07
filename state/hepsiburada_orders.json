@@ -1,4 +1,528 @@
 {
-  "newOrderItems": [],
-  "packages": []
+  "newOrderItems": [
+    {
+      "dueDate": "2026-09-05T18:30:00",
+      "lastStatusUpdateDate": "2026-09-07T09:30:01.705",
+      "id": "6a9b1423-a161-ccb2-c28c-1a5306060606",
+      "name": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+      "sku": "HBCV00003Z3U77",
+      "orderId": "6a9b1423-a161-ccb2-c28c-1a5406060606",
+      "orderNumber": "4425686837",
+      "orderDate": "2026-09-04T21:55:31",
+      "quantity": 1,
+      "deci": 1,
+      "totalDeci": 1,
+      "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 145
+      },
+      "unitPrice": {
+        "currency": "TRY",
+        "amount": 145
+      },
+      "hbDiscount": {
+        "totalPrice": {
+          "currency": "TRY",
+          "amount": 0
+        },
+        "unitPrice": {
+          "currency": "TRY",
+          "amount": 0
+        }
+      },
+      "merchantDiscount": {
+        "totalPrice": {
+          "currency": "TRY",
+          "amount": 0
+        },
+        "unitPrice": {
+          "currency": "TRY",
+          "amount": 0
+        }
+      },
+      "vat": 24.17,
+      "vatRate": 20,
+      "customerName": "Mekin Yavuz",
+      "customerId": "d3faa75e-5efe-43d9-b672-553e4b97c8f5",
+      "status": "Open",
+      "shippingAddress": {
+        "addressId": "fe196f7a-7faa-40c1-b405-95ff91a96f0a",
+        "address": "Aydin mah Beyazit caddesi no 26g öz isik Market Pervari Siirt AYDIN PERVARİ Siirt",
+        "name": "mekin yavuz",
+        "email": "4425686837_7000324046_3@hepsifatura.com",
+        "countryCode": "TR",
+        "phoneNumber": "",
+        "alternatePhoneNumber": "",
+        "district": "AYDIN",
+        "city": "Siirt",
+        "town": "PERVARİ",
+        "directions": "",
+        "postalCode": "56700"
+      },
+      "invoice": {
+        "turkishIdentityNumber": "11111111111",
+        "taxNumber": "",
+        "taxOffice": null,
+        "address": {
+          "addressId": "f3f0d86d-93ee-4488-aca4-c30c400c7871",
+          "address": "Şirinevler mahallesi Şirinevler caddesi41/5 no 6   kat. 1 ŞİRİNEVLER YILDIRIM Bursa",
+          "name": "Mekin Yavuz",
+          "email": "4425686837_7000324046_3@hepsifatura.com",
+          "countryCode": "TR",
+          "phoneNumber": "",
+          "alternatePhoneNumber": "",
+          "district": "ŞİRİNEVLER",
+          "city": "Bursa",
+          "town": "YILDIRIM",
+          "directions": "",
+          "postalCode": "16330"
+        }
+      },
+      "sapNumber": "000010",
+      "dispatchTime": 0,
+      "commission": {
+        "currency": "TRY",
+        "amount": 13.05
+      },
+      "commissionRate": 9,
+      "paymentTermInDays": 24,
+      "commissionType": 0,
+      "cargoCompanyModel": {
+        "id": 2,
+        "name": "Aras Kargo",
+        "shortName": "AR",
+        "logoUrl": "https://images.hepsiburada.net/shipping/assets/cargo-logo/2.svg",
+        "trackingUrl": "https://kargotakip.araskargo.com.tr/mainpage.aspx?code={0}"
+      },
+      "cargoCompany": "Aras Kargo",
+      "customizedText01": "",
+      "customizedText02": "",
+      "customizedText03": "",
+      "customizedText04": "",
+      "customizedTextX": "",
+      "creditCardHolderName": null,
+      "isCustomized": false,
+      "canCreatePackage": true,
+      "isCancellable": true,
+      "isCancellableByHbAdmin": true,
+      "deliveryType": "StandardDelivery",
+      "deliveryOptionId": 1,
+      "slot": null,
+      "pickUpTime": null,
+      "discountInfo": [],
+      "merchantSKU": "AEACDMMR",
+      "purchasePrice": {
+        "currency": "TRY",
+        "amount": 0
+      },
+      "deliveryNote": {},
+      "isCargoChangable": true,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      },
+      "deptorDifferenceAmount": 0,
+      "isJetDelivery": false,
+      "isSundayDelivery": false,
+      "properties": [],
+      "discountToBeBilledToHB": 0,
+      "bnplCommissionAmount": {
+        "currency": "TRY",
+        "amount": 0
+      },
+      "unitLaborCost": {
+        "currency": "TRY",
+        "amount": 0
+      },
+      "productBarcode": "HBCC138FA6619",
+      "creationReason": "OrderCreated",
+      "packageNumber": "",
+      "barcode": "",
+      "isMicroExport": false,
+      "releatedLineIndexesWithCampaign": [],
+      "parentItemIndex": -1,
+      "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg"
+    }
+  ],
+  "packages": [
+    {
+      "id": "6a9dee78-6b4b-088b-58a9-073406060606",
+      "status": "Open",
+      "customerId": "12d3bfbf-0c0f-43ff-b36d-5f00031da702",
+      "orderDate": "2026-09-07T01:51:33",
+      "dueDate": "2026-09-08T18:30:00",
+      "barcode": "62955138460104",
+      "packageNumber": "5513846010",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Yunuseli mah. Kamelya sk. No:40 K:2 (elif yufka üstü, kamelya  market karşısı ) YUNUSELİ OSMANGAZİ Bursa",
+      "recipientName": "Tugay ENGİN",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YUNUSELİ",
+      "shippingTown": "OSMANGAZİ",
+      "shippingCity": "Bursa",
+      "email": "4654731247_5513846010@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Tugay Engin",
+      "billingAddress": "Yunuseli Mah. Kamelya cad. No:40 k:2 16165  YUNUSELİ OSMANGAZİ Bursa",
+      "billingCity": "Bursa",
+      "billingTown": "OSMANGAZİ",
+      "billingDistrict": "YUNUSELİ",
+      "billingPostalCode": "16165",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 128.44
+      },
+      "items": [
+        {
+          "lineItemId": "6a9dee76-571e-d867-1ae6-b1e006060606",
+          "listingId": "969eda22-a6ee-4e2d-8a57-458996739c62",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8L",
+          "merchantSku": "AEHB18650PY3",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 64.22
+          },
+          "vat": 21.41,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 128.44
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.21
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 4.78
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 9.56
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 69
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 138
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 18650 Pil Yuvası Kablolu Tutucu 3.7V 1'li Tekli Pil Kutusu Özellikli",
+          "orderNumber": "4654731247",
+          "orderDate": "2026-09-07T01:51:33",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100780",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568559.jpg",
+          "deci": 0.5
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Tugay ENGİN",
+      "estimatedArrivalDate": "2026-09-10T15:30:00Z",
+      "totalDeci": 1
+    },
+    {
+      "id": "6a9e4ddf-217a-5a3e-7bcf-4a4e06060606",
+      "status": "Open",
+      "customerId": "07ef7d77-811c-469f-a2fd-5a021a4c25f8",
+      "orderDate": "2026-09-07T08:38:38",
+      "dueDate": "2026-09-07T18:30:00",
+      "barcode": "62955138957664",
+      "packageNumber": "5513895766",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Ihlamurkent Mahallesi Kadırga Sokak K2-10 Blok Daire : 11 Toki Personel Konutları Odunpazarı/Eskişehir IHLAMURKENT ODUNPAZARI Eskişehir",
+      "recipientName": "Melih Özdemir",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "IHLAMURKENT",
+      "shippingTown": "ODUNPAZARI",
+      "shippingCity": "Eskişehir",
+      "email": "4439062852_5513895766@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "mukaddes özdemir",
+      "billingAddress": "ıhlamurkent mahallesi kadırga sokak no2 k2/10 blok daire 11  IHLAMURKENT ODUNPAZARI Eskişehir",
+      "billingCity": "Eskişehir",
+      "billingTown": "ODUNPAZARI",
+      "billingDistrict": "IHLAMURKENT",
+      "billingPostalCode": "26240",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 134.82
+      },
+      "items": [
+        {
+          "lineItemId": "6a9e4dde-5d62-ad12-635f-78d606060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 67.41
+          },
+          "vat": 22.47,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 134.82
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 7.48999
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 14.97999
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.89999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.79998
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4439062852",
+          "orderDate": "2026-09-07T08:38:38",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "MELİH ÖZDEMİR",
+      "estimatedArrivalDate": "2026-09-08T15:30:00Z",
+      "totalDeci": 2
+    },
+    {
+      "id": "6a9e52ca-8f52-3d6d-01a6-91e606060606",
+      "status": "Open",
+      "customerId": "d06e8f90-62e2-45bc-b999-b13c6a004375",
+      "orderDate": "2026-09-07T08:59:37",
+      "dueDate": "2026-09-07T18:30:00",
+      "barcode": "62955139076027",
+      "packageNumber": "5513907602",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Ulusal Sok. Verda Park Evleri No:73/A ABlok D.16 YAZIR SELÇUKLU Konya",
+      "recipientName": "ÇAĞATAY İZBUDAK",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YAZIR",
+      "shippingTown": "SELÇUKLU",
+      "shippingCity": "Konya",
+      "email": "4317151123_5513907602@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "ÇAĞATAY İZBUDAK",
+      "billingAddress": "Ulusal Sok. Verda Park Evleri No:73/A ABlok D.16 YAZIR SELÇUKLU Konya",
+      "billingCity": "Konya",
+      "billingTown": "SELÇUKLU",
+      "billingDistrict": "YAZIR",
+      "billingPostalCode": "42130",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 276.95
+      },
+      "items": [
+        {
+          "lineItemId": "6a9e52ca-cf7a-8250-d67f-e42406060606",
+          "listingId": "8be24673-889d-446a-bfa4-10461f2772da",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUARTF",
+          "merchantSku": "ATELJKEE20403",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 276.95
+          },
+          "vat": 46.16,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 276.95
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 27.69
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 30.77
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 30.77
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 6.28
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 6.28
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 307.71999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 307.71999
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 20CM Jumper Kablo Seti 40'lı - 3'lü Kablo Seti Çok Renkli Bağlantı Elemanları (1x Dişi Erkek / 1x Dişi Dişi / 1x Erkek Erkek)",
+          "orderNumber": "4317151123",
+          "orderDate": "2026-09-07T08:59:37",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELJKEE20403",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001753319286.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Çağatay İzbudak",
+      "estimatedArrivalDate": "2026-09-09T15:30:00Z",
+      "totalDeci": 1.1
+    }
+  ]
 }
