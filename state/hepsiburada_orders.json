@@ -1,4 +1,131 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6a9f15ea-f321-1eb2-dfc9-323606060606",
+      "status": "Open",
+      "customerId": "3b5a9d2a-1223-4c9a-991d-8e34e7bcf2fc",
+      "orderDate": "2026-09-07T22:52:08",
+      "dueDate": "2026-09-08T18:30:00",
+      "barcode": "62955143194968",
+      "packageNumber": "5514319496",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Tepecikler Mahallesi 844. sokak no:5 Daire 2 TEPECİKLER GEYVE Sakarya",
+      "recipientName": "Mahmut Sami Dağdelen",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "TEPECİKLER",
+      "shippingTown": "GEYVE",
+      "shippingCity": "Sakarya",
+      "email": "4547097024_5514319496@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Mahmut Sami Dağdelen",
+      "billingAddress": "Tepecikler mahallesi 844 sokak no:5 D:2 TEPECİKLER GEYVE Sakarya",
+      "billingCity": "Sakarya",
+      "billingTown": "GEYVE",
+      "billingDistrict": "TEPECİKLER",
+      "billingPostalCode": "54700",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 135
+      },
+      "items": [
+        {
+          "lineItemId": "6a9f15e9-a311-280b-04db-c77906060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 135
+          },
+          "vat": 22.5,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 135
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.5
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 15
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 15
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 150
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 150
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4547097024",
+          "orderDate": "2026-09-07T22:52:08",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "mahmut sami dağdelen",
+      "estimatedArrivalDate": "2026-09-17T15:30:00Z",
+      "totalDeci": 1
+    }
+  ]
 }
