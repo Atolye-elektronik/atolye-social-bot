@@ -1,6 +1,182 @@
 [
   {
     "shipmentAddress": {
+      "id": 9598214599,
+      "firstName": "Mehmet",
+      "lastName": "ataş",
+      "company": "",
+      "address1": "Mevlana mahallesi 101065 SK No: 16 iç kapı No: 3 Akadağ apt. TOROSLAR/MERSİN",
+      "address2": "",
+      "city": "Mersin",
+      "cityCode": 33,
+      "district": "Toroslar",
+      "districtId": 1061,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "33000",
+      "countryCode": "TR",
+      "neighborhoodId": 58036,
+      "neighborhood": "Mevlana Mah",
+      "phone": null,
+      "fullAddress": "Mevlana mahallesi 101065 SK No: 16 iç kapı No: 3 Akadağ apt. TOROSLAR/MERSİN     Toroslar Mersin",
+      "fullName": "Mehmet ataş"
+    },
+    "orderNumber": "11577624973",
+    "orderCountryCode": "TR",
+    "grossAmount": 119.07,
+    "packageGrossAmount": 119.07,
+    "totalDiscount": 0.0,
+    "packageSellerDiscount": 0.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 0.0,
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9598214598,
+      "firstName": "Mehmet",
+      "lastName": "ataş",
+      "company": "",
+      "address1": "Mevlana mahallesi 101065 SK No: 16 iç kapı No: 3 Akadağ apt. TOROSLAR/MERSİN",
+      "address2": "",
+      "city": "Mersin",
+      "cityCode": 33,
+      "district": "Toroslar",
+      "districtId": 1061,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "33000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 58036,
+      "neighborhood": "Mevlana Mah",
+      "phone": null,
+      "fullAddress": "Mevlana mahallesi 101065 SK No: 16 iç kapı No: 3 Akadağ apt. TOROSLAR/MERSİN     Toroslar Mersin",
+      "fullName": "Mehmet ataş"
+    },
+    "customerFirstName": "Mehmet",
+    "customerEmail": "pf+4nz8py4p@trendyolmail.com",
+    "customerId": 16410952,
+    "supplierId": 0,
+    "customerLastName": "ataş",
+    "id": 4135872716,
+    "channelId": 1,
+    "shipmentPackageId": 4135872716,
+    "cargoTrackingNumber": 7270036916719787,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEVHM314",
+        "sku": "TX10FD1792846",
+        "stockCode": "AEVHM314",
+        "productName": "VHM-314 Micro USB Bluetooth Kablosuz Ses MP3 Modül Amfi Müzik Çalma Kartı DC 5V Lityum Pil RD100617, one size",
+        "productCode": 158858927,
+        "contentId": 158858927,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 119.07,
+        "lineGrossAmount": 119.07,
+        "discount": 0.0,
+        "lineTotalDiscount": 0.0,
+        "lineSellerDiscount": 0.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6758288459",
+            "lineItemPrice": 119.07,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5921747360,
+        "lineId": 5921747360,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "TX10FD1792846",
+        "orderLineItemStatusName": "Picking",
+        "price": 119.07,
+        "lineUnitPrice": 119.07,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2677,
+        "commission": 3.3,
+        "businessUnit": "Computer & Tablet",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1788782427468,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1788771645697,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1788771649268,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1788771677826,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1788814740000,
+    "estimatedDeliveryEndDate": 1788987540000,
+    "totalPrice": 119.07,
+    "packageTotalPrice": 119.07,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1788814740000,
+    "fastDelivery": true,
+    "originShipmentDate": 1788771645691,
+    "lastModifiedDate": 1788771677826,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10834688442,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9597846278,
       "firstName": "Melih",
       "lastName": "Yakıcı",
