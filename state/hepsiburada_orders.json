@@ -126,6 +126,218 @@
       "customerName": "Erdinç Bayram",
       "estimatedArrivalDate": "2026-09-11T15:30:00Z",
       "totalDeci": 2
+    },
+    {
+      "id": "6aa05eee-d159-4a7e-ab21-40e606060606",
+      "status": "Open",
+      "customerId": "d8501913-15cf-4646-8c50-a3626951f186",
+      "orderDate": "2026-09-08T22:15:57",
+      "dueDate": "2026-09-09T18:30:00",
+      "barcode": "62955148163112",
+      "packageNumber": "5514816311",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Dr.Mediha Eldem Sok.no: 77/15 KÜLTÜR ÇANKAYA Ankara",
+      "recipientName": "ramazan Çontuk",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KÜLTÜR",
+      "shippingTown": "ÇANKAYA",
+      "shippingCity": "Ankara",
+      "email": "4226104360_5514816311@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "ramazan Çontuk",
+      "billingAddress": "Dr.Mediha Eldem Sok.no: 77/15 KÜLTÜR ÇANKAYA Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "ÇANKAYA",
+      "billingDistrict": "KÜLTÜR",
+      "billingPostalCode": "06420",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 286.54
+      },
+      "items": [
+        {
+          "lineItemId": "6aa05eee-b463-8d40-e5f2-ee9d06060606",
+          "listingId": "a41bcf45-fe9d-427b-a7ac-14a67903b066",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HXL576",
+          "merchantSku": "AEDCM3V-5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 166.78
+          },
+          "vat": 27.8,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 166.78
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 15.01
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 21.22
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 21.22
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 166.78
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 166.78
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Dc Motor 3V Yassı (130 Tip) - Hobi ve Fen Deney Motoru - 5'li Paket",
+          "orderNumber": "4226104360",
+          "orderDate": "2026-09-08T22:15:57",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2902635605668",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002057919850.jpg",
+          "deci": 1
+        },
+        {
+          "lineItemId": "6aa05eee-b463-8d40-e5f2-ee9e06060606",
+          "listingId": "514144e5-2605-4c5d-b9a5-fbee1a9cd829",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HXLCX9",
+          "merchantSku": "AEPRV-5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 119.76
+          },
+          "vat": 19.96,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 119.76
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 10.78
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 15.23999
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 15.23999
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 119.76
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 119.76
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Plastik Pervane 3 Kanat - Dc Motor Uyumlu (Kırmızı) - 5'li Paket",
+          "orderNumber": "4226104360",
+          "orderDate": "2026-09-08T22:15:57",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901639901745",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002057945999.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "ramazan Çontuk",
+      "estimatedArrivalDate": "2026-09-11T15:30:00Z",
+      "totalDeci": 2
     }
   ]
 }
