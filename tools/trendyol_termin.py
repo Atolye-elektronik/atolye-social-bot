@@ -1,0 +1,203 @@
+# -*- coding: utf-8 -*-
+"""TUM Trendyol urunlerinin termin suresini (deliveryDuration) verilen degere ceker (varsayilan 0 = Bugun Kargoda).
+
+Kopya: trendyol_hizli_teslimat.py (ayni tam-payload kurali gecerli).
+
+Trendyol paneli (Hizli Teslimat & Operasyon) "sevkiyat surelerini 1 olarak
+guncellemeniz yeterli" diyor. API tarafinda kural su: fastDeliveryType
+tanimlayabilmek icin deliveryDuration = 1 olmali.
+
+DIKKAT: updateProduct'ta gonderilmeyen alanlar varsayilana doner. Bu yuzden
+payload, urunun API'den okunan MEVCUT degerleriyle eksiksiz kurulur; sadece
+teslimat alanlari eklenir.
+
+    python tools/trendyol_hizli_teslimat.py            # kuru calisma (gondermez)
+    python tools/trendyol_hizli_teslimat.py --uygula   # gercekten gonderir
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import pathlib
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+
+import requests
+
+from src.marketplaces import trendyol_client as tc
+
+KARGO_ID = 9          # SURATMP - content/trendyol_yeni_urunler.json ile ayni
+KESIM_SAATI = "14:00"  # mevcut 79 urunde kullanilan kesim saati
+TIP = "SAME_DAY_SHIPPING"   # panelde "Bugun Kargoda"
+
+# Desi'si TY'de 0/None kalmis urunler. Desi kargo ucretini belirledigi icin
+# degerler uydurulmadi - kullanicidan alindi (26.08: "kitler 2 desi, 2-3 desi
+# gir urunlere"). Buyuk kutulu robot kitleri ve endustriyel set 3, digerleri 2.
+DESI = {
+    "AESTEPPS": 2,      # Step motor proje kiti
+    "AEDHT11PS": 2,     # DHT11 sicaklik-nem kiti
+    "AERTCPS": 2,       # DS1302 saat/takvim kiti
+    "AEHSPS": 2,        # PIR hareket kiti
+    "AE150LED": 2,      # 150 adet LED
+    "AEHCSR04E": 2,     # HC-SR04 sensor
+    "AEUT12D": 2,       # temassiz voltaj dedektoru
+    "AEIRRAK": 3,       # IR kumandali robot araba kiti (buyuk kutu)
+    "AE3IN1ROBOT": 3,   # 3'u 1 arada robot araba kiti
+    "AEHC06RAK": 3,     # Bluetooth robot kiti tam set
+    "AEENDELKSET": 3,   # Endustriyel elektronik uygulama seti
+    # 27.08 kullanici: "arduino 56 parca 3 desi. digerleri 2 desi"
+    "AEAROSES": 3,      # Arduino Proje Gelistirme Seti 56 Parca
+    "AEACDMMR": 2,      # AC 220V 2000W dimmer karti
+    "AEPY18650": 2,     # 18650 pil yuvasi ikili seri
+    "AETY4LUMTRST": 2,  # 4lu motor-tekerlek seti (08.09 termin turu, kit=2 desi kurali)
+}
+
+
+SURE = 0
+
+def mevcut_sure(varyant):
+    return (varyant.get("deliveryOptions") or {}).get("deliveryDuration", varyant.get("deliveryDuration"))
+
+def _desi_n11():
+    try:
+        d = json.load(open(pathlib.Path(__file__).resolve().parents[1] / "content" / "n11_urunler.json", encoding="utf-8"))
+        return {x["tyStokKodu"]: float(x.get("desi") or 0) for x in d if x.get("tyStokKodu")}
+    except Exception:
+        return {}
+
+DESI_N11 = _desi_n11()
+
+def uygun_degil(varyant: dict) -> bool:
+    return mevcut_sure(varyant) != SURE
+
+
+def payload_kur(urun: dict, varyant: dict) -> dict:
+    """Urunun mevcut bilgileriyle tam guncelleme payload'i kurar.
+    SURE=0 ("0 Gun / Bugun Kargoda", TY 08.09.2026 duyurusu): deliveryOption/fastDeliveryType
+    GONDERILMEZ - gonderilirse TY "Sevkiyat suresi 1 olarak girilmelidir" diye reddediyor."""
+    p = _payload(urun, varyant)
+    if SURE == 0:
+        p.pop("deliveryOption", None)
+    return p
+
+
+def _payload(urun: dict, varyant: dict) -> dict:
+    return {
+        "barcode": varyant.get("barcode"),
+        "title": urun.get("title"),
+        "productMainId": urun.get("productMainId"),
+        "brandId": (urun.get("brand") or {}).get("id"),
+        "categoryId": (urun.get("category") or {}).get("id"),
+        "stockCode": varyant.get("stockCode"),
+        # TY'de desi 0/None kalmissa DESI tablosundan tamamla.
+        "dimensionalWeight": varyant.get("dimensionalWeight") or DESI.get(varyant.get("stockCode")) or DESI_N11.get(varyant.get("stockCode")) or None,
+        "description": urun.get("description"),
+        "currencyType": "TRY",
+        "vatRate": varyant.get("vatRate"),
+        "cargoCompanyId": KARGO_ID,
+        "images": [{"url": g.get("url")} for g in (urun.get("images") or []) if g.get("url")],
+        "attributes": [
+            {"attributeId": a["attributeId"], "attributeValueId": a["attributeValueId"]}
+            for a in (urun.get("attributes") or [])
+            if a.get("attributeId") and a.get("attributeValueId")
+        ],
+        # Asil degisiklik: termin 1 gun + ayni gun kargo etiketi
+        "deliveryDuration": SURE,
+        "deliveryOption": {
+            "deliveryDuration": SURE,
+            "fastDeliveryType": TIP,
+        },
+    }
+
+
+def topla():
+    hedef = []
+    for _, urun in tc.iter_all_products(size=100):
+        if urun.get("archived"):
+            continue
+        for varyant in (urun.get("variants") or []):
+            if varyant.get("archived") or varyant.get("onSale") is False:
+                continue
+            if uygun_degil(varyant):
+                hedef.append((urun, varyant))
+    return hedef
+
+
+def gonder(items: list[dict]) -> dict:
+    url = f"{tc.BASE_URL}/product/sellers/{tc.SUPPLIER_ID}/products"
+    r = requests.put(url, headers=tc._auth_header(), json={"items": items}, timeout=60)
+    r.raise_for_status()
+    return r.json()
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--uygula", action="store_true", help="gercekten gonder (yoksa kuru calisir)")
+    ap.add_argument("--adet", type=int, default=0, help="sadece ilk N urunu isle (deneme icin)")
+    ap.add_argument("--sure", type=int, default=0, help="hedef termin gunu (varsayilan 0)")
+    ap.add_argument("--kod", default="", help="sadece bu stok kodu")
+    a = ap.parse_args()
+    global SURE
+    SURE = a.sure
+
+    hedef = topla()
+    if a.kod:
+        hedef = [h for h in hedef if h[1].get("stockCode") == a.kod]
+    from collections import Counter
+    print("mevcut termin dagilimi:", Counter(mevcut_sure(v) for _, v in hedef))
+    print(f"Hizli teslimata uygun olmayan varyant: {len(hedef)}\n")
+    if not hedef:
+        return 0
+
+    if a.adet:
+        hedef = hedef[: a.adet]
+        print(f"(sadece ilk {len(hedef)} tanesi islenecek)\n")
+
+    items = []
+    eksikli = []
+    for urun, varyant in hedef:
+        p = payload_kur(urun, varyant)
+        eksik = [k for k in ("barcode", "title", "productMainId", "brandId", "categoryId",
+                             "stockCode", "dimensionalWeight", "description", "vatRate")
+                 if not p.get(k)]
+        if not p["images"]:
+            eksik.append("images")
+        if eksik:
+            eksikli.append((p.get("stockCode"), eksik))
+            continue
+        items.append(p)
+
+    if eksikli:
+        print("!! Eksik alani olan urunler atlandi:")
+        for sc, e in eksikli:
+            print(f"   {sc}: {', '.join(e)}")
+        print()
+
+    print(f"Gonderilecek: {len(items)} urun")
+    for p in items[:5]:
+        print(f"   {p['stockCode']:16s} {str(p['title'])[:44]}")
+    if len(items) > 5:
+        print(f"   ... ve {len(items)-5} tane daha")
+
+    if not a.uygula:
+        print("\n--- KURU CALISMA - hicbir sey gonderilmedi ---")
+        print("Ornek payload:")
+        if items:
+            ornek = dict(items[0])
+            ornek["description"] = (ornek.get("description") or "")[:60] + "..."
+            print(json.dumps(ornek, ensure_ascii=False, indent=2)[:1200])
+        print("\nGercekten uygulamak icin: --uygula")
+        return 0
+
+    # Trendyol istek basina en fazla 1000 item aliyor; yine de gruplayalim.
+    for i in range(0, len(items), 100):
+        obek = items[i : i + 100]
+        sonuc = gonder(obek)
+        print(f"gonderildi ({len(obek)} urun) -> {sonuc}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
