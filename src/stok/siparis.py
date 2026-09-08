@@ -98,6 +98,8 @@ def topla_hepsiburada():
         L = r if isinstance(r, list) else (r.get("items") or [])
         for o in L:
             no = str(_ilk(o, "orderNumber", "OrderNumber", "PackageNumber", "id", "Id"))
+            if no in ("None", ""):
+                continue  # /packages/unpacked yalniz paket no + barkod verir, siparis degil
             g = grup.setdefault(no, {"no": no, "tarih": _ilk(o, "orderDate", "OrderDate", "createdDate"),
                                      "durum": _ilk(o, "status", "Status", vars=fn.__name__), "kalemler": [],
                                      "tutar": ((o.get("totalPrice") or {}).get("amount") if isinstance(o.get("totalPrice"), dict) else o.get("totalPrice")),
@@ -108,6 +110,27 @@ def topla_hepsiburada():
                 kl = _kalemler({"lines": [o]})
             g["kalemler"].extend(kl)
         out.extend(grup.values())
+    # Kargolanmis paketler (HB ayni gun kargolayinca siparis /orders'tan dusuyor): siparis detayindan kalemler
+    try:
+        r = hb.get_shipped_packages(offset=0, limit=100)
+        gorulen = {o["no"] for o in out}
+        esik = (datetime.now() - timedelta(days=14)).strftime("%Y-%m-%d")
+        for pk in (r.get("items") or []):
+            no = str(pk.get("OrderNumber") or "")
+            if not no or no in gorulen or str(pk.get("ShippedDate") or "")[:10] < esik:
+                continue
+            try:
+                d = hb.get_order_detail(no)
+            except Exception as e:
+                print("  HB detay", no, str(e)[:80]); continue
+            kl = [{"kod": it.get("merchantSKU") or it.get("merchantSku"), "barkod": it.get("productBarcode"),
+                   "adet": int(it.get("quantity") or 1)} for it in (d.get("items") or []) if str(it.get("status", "")).lower() not in IPTAL]
+            tutar = sum(float(((it.get("totalPrice") or {}).get("amount") or 0)) for it in (d.get("items") or []))
+            out.append({"no": no, "tarih": d.get("orderDate"), "durum": "Shipped", "kalemler": kl, "tutar": tutar,
+                        "musteri": (d.get("customer") or {}).get("name", ""), "kargo_son": str(pk.get("ShippedDate") or "")[:16]})
+            gorulen.add(no)
+    except Exception as e:
+        print("  HB shipped hata:", str(e)[:120])
     return out
 
 
