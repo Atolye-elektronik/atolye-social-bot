@@ -16,7 +16,7 @@ import json
 import os
 import sys
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 KOK = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(KOK, "src"))
@@ -203,8 +203,26 @@ def topla_shopify(gun=14):
     return out
 
 
+def topla_amazon(gun=14):
+    """Amazon SP-API Orders v0. Alici bilgisi (PII) gelmez; kalemler orderItems ile."""
+    from marketplaces import amazon_client as az
+    out = []
+    bas = (datetime.now(timezone.utc) - timedelta(days=gun)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    for o in az.orders(bas):
+        no = o["AmazonOrderId"]
+        durum = o.get("OrderStatus")
+        kl = []
+        if durum not in ("Canceled", "Pending"):
+            kl = [{"kod": it.get("SellerSKU"), "barkod": None, "adet": int(it.get("QuantityOrdered") or 0)}
+                  for it in az.order_items(no) if it.get("SellerSKU") and int(it.get("QuantityOrdered") or 0) > 0]
+        out.append({"no": no, "tarih": o.get("PurchaseDate"), "durum": durum, "kalemler": kl,
+                    "tutar": (o.get("OrderTotal") or {}).get("Amount"), "musteri": "",
+                    "kargo_son": o.get("LatestShipDate")})
+    return out
+
+
 TOPLAYICI = {"shopify": topla_shopify, "trendyol": topla_trendyol, "hepsiburada": topla_hepsiburada, "n11": topla_n11,
-             "pazarama": topla_pazarama, "idefix": topla_idefix}
+             "pazarama": topla_pazarama, "idefix": topla_idefix, "amazon": topla_amazon}
 # pttavm: Api-Key/Access-Token gelince (EN-5313) eklenecek
 
 
