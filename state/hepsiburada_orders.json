@@ -9,7 +9,7 @@
       "dueDate": "2026-09-09T18:30:00",
       "barcode": "62955147062612",
       "packageNumber": "5514706261",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Yalı mah.214.sok. Manolya Apt.no:20/2 YALI KARASU Sakarya",
       "recipientName": "Erdinç Bayram",
       "shippingCountryCode": "TR",
@@ -135,7 +135,7 @@
       "dueDate": "2026-09-09T18:30:00",
       "barcode": "62955148163112",
       "packageNumber": "5514816311",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Dr.Mediha Eldem Sok.no: 77/15 KÜLTÜR ÇANKAYA Ankara",
       "recipientName": "ramazan Çontuk",
       "shippingCountryCode": "TR",
@@ -347,7 +347,7 @@
       "dueDate": "2026-09-09T18:30:00",
       "barcode": "62955148739580",
       "packageNumber": "5514873958",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "19 mayıs caddesi no:163 daire:9 yusufbey apartmanı İNÖNÜ ATAŞEHİR İstanbul",
       "recipientName": "harun gülcan",
       "shippingCountryCode": "TR",
@@ -473,7 +473,7 @@
       "dueDate": "2026-09-09T18:30:00",
       "barcode": "62955149910410",
       "packageNumber": "5514991041",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Ahsen Çıkmazı Sokak, No:10 Sadıkoğlu İş Merkezi 1, Daire 58 EĞİTİM KADIKÖY İstanbul",
       "recipientName": "Ece Şahin",
       "shippingCountryCode": "TR",
@@ -590,6 +590,258 @@
       "customerName": "Yahya Özgür Turhan",
       "estimatedArrivalDate": "2026-09-14T15:30:00Z",
       "totalDeci": 2
+    },
+    {
+      "id": "6aa136c5-244a-c91b-d9b7-917006060606",
+      "status": "Open",
+      "customerId": "07d16405-5ee4-48e6-bb31-e3e8d6879039",
+      "orderDate": "2026-09-09T13:36:52",
+      "dueDate": "2026-09-09T18:30:00",
+      "barcode": "62955150845501",
+      "packageNumber": "5515084550",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "elperek .gülsoy kasap üstü kat No:1 Kat:4 Daire:6 ELPEREK PAMUKOVA Sakarya",
+      "recipientName": "orhan Tekir",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ELPEREK",
+      "shippingTown": "PAMUKOVA",
+      "shippingCity": "Sakarya",
+      "email": "4036666935_5515084550@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "orhan tekir",
+      "billingAddress": "Tahilpazari elperek .gülsoy kasap üstü kat No:1 Kat:4 Daire:6 ELPEREK PAMUKOVA Sakarya",
+      "billingCity": "Sakarya",
+      "billingTown": "PAMUKOVA",
+      "billingDistrict": "ELPEREK",
+      "billingPostalCode": "54900",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 134.82
+      },
+      "items": [
+        {
+          "lineItemId": "6aa136c4-cd79-51a9-f19e-2bdd06060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 67.41
+          },
+          "vat": 22.47,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 134.82
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 7.48999
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 14.97999
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.89999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.79998
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4036666935",
+          "orderDate": "2026-09-09T13:36:52",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Orhan Tekir",
+      "estimatedArrivalDate": "2026-09-18T15:30:00Z",
+      "totalDeci": 2
+    },
+    {
+      "id": "6aa144b6-bb77-ea5c-f26a-190906060606",
+      "status": "Open",
+      "customerId": "367551df-ae82-451a-bba8-f14c982b66cf",
+      "orderDate": "2026-09-09T14:36:20",
+      "dueDate": "2026-09-10T18:30:00",
+      "barcode": "62955151143233",
+      "packageNumber": "5515114323",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Mazi Sk. No. 10 Daire. 4 TAŞOLUK ARNAVUTKÖY İstanbul",
+      "recipientName": "Hüseyin Karaca",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "TAŞOLUK",
+      "shippingTown": "ARNAVUTKÖY",
+      "shippingCity": "İstanbul",
+      "email": "4420070371_5515114323@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Hüseyin Karaca",
+      "billingAddress": "Çayır Cd. Dere sokak No. 5/A İSTHOME gayrimenkul İSTİNYE SARIYER İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "SARIYER",
+      "billingDistrict": "İSTİNYE",
+      "billingPostalCode": "34460",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 117
+      },
+      "items": [
+        {
+          "lineItemId": "6aa144b5-d804-2b9f-0b60-919306060606",
+          "listingId": "25de0756-3f6a-41cd-9901-f8d9c6adfc33",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006X2A5A",
+          "merchantSku": "AEHB18650PY2",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 58.5
+          },
+          "vat": 19.5,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 5.85
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 6.5
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 13
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 65
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 130
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya 18650 Tekli Pil Yuvası Eğlenceli Tasarım ile Projelerinizi Kolayca Tamamlayın",
+          "orderNumber": "4420070371",
+          "orderDate": "2026-09-09T14:36:20",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6203",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000763914260.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "HÜSEYİN KARACA",
+      "estimatedArrivalDate": "2026-09-15T15:30:00Z",
+      "totalDeci": 2.2
     }
   ]
 }

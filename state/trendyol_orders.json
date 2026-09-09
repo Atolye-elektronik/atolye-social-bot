@@ -1,1 +1,187 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9611513492,
+      "firstName": "Seda",
+      "lastName": "Özbakır",
+      "company": "",
+      "address1": "821 sok.Gündüz Apt.No:1/4",
+      "address2": "",
+      "city": "Yalova",
+      "cityCode": 77,
+      "district": "Çınarcık",
+      "districtId": 1007,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "77000",
+      "countryCode": "TR",
+      "neighborhoodId": 52572,
+      "neighborhood": "Hasanbaba Mah",
+      "phone": null,
+      "fullAddress": "821 sok.Gündüz Apt.No:1/4     Çınarcık Yalova",
+      "fullName": "Seda Özbakır"
+    },
+    "orderNumber": "11584946011",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 173.0,
+    "packageGrossAmount": 173.0,
+    "totalDiscount": 3.46,
+    "packageSellerDiscount": 3.46,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 3.46,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 3.46
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9611513491,
+      "firstName": "Seda",
+      "lastName": "Özbakır",
+      "company": "",
+      "address1": "821 sok.Gündüz Apt.No:1/4",
+      "address2": "",
+      "city": "Yalova",
+      "cityCode": 77,
+      "district": "Çınarcık",
+      "districtId": 1007,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "77000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 52572,
+      "neighborhood": "Hasanbaba Mah",
+      "phone": null,
+      "fullAddress": "821 sok.Gündüz Apt.No:1/4     Çınarcık Yalova",
+      "fullName": "Seda Özbakır"
+    },
+    "customerFirstName": "Seda",
+    "customerEmail": "pf+xy3npkmm@trendyolmail.com",
+    "customerId": 16639396,
+    "supplierId": 0,
+    "customerLastName": "Özbakır",
+    "id": 4142051887,
+    "channelId": 1,
+    "shipmentPackageId": 4142051887,
+    "cargoTrackingNumber": 7270036978580578,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETEMDEF",
+        "sku": "2901069996298",
+        "stockCode": "AETEMDEF",
+        "productName": "Temrin Defteri AETEMDEF, one size",
+        "productCode": 1664639329,
+        "contentId": 1664639329,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 173.0,
+        "lineGrossAmount": 173.0,
+        "discount": 3.46,
+        "lineTotalDiscount": 3.46,
+        "lineSellerDiscount": 3.46,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6768374095",
+            "lineItemPrice": 169.54,
+            "lineItemDiscount": 3.46,
+            "lineItemSellerDiscount": 3.46,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "productColor": "Yeşil",
+        "id": 5930518018,
+        "lineId": 5930518018,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901069996298",
+        "orderLineItemStatusName": "Picking",
+        "price": 169.54,
+        "lineUnitPrice": 169.54,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1520,
+        "commission": 3.6,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1788961840525,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1788951042167,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1788951044898,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1788953477484,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1788987540000,
+    "estimatedDeliveryEndDate": 1789160340000,
+    "totalPrice": 169.54,
+    "packageTotalPrice": 169.54,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1788987540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1788951042162,
+    "lastModifiedDate": 1788953477484,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10841918117,
+    "is4P": false
+  }
+]
