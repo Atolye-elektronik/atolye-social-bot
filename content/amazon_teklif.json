@@ -1,0 +1,170 @@
+[
+ {
+  "sku": "AEHCSR04",
+  "asin": "B0H96NCMPF",
+  "fiyat": 262,
+  "adet": 23,
+  "ty": 133.0,
+  "ad": "HC-SR04 5V Ultrasonik Mesafe Sensör Modülü"
+ },
+ {
+  "sku": "AEUNOR3",
+  "asin": "B0H96NN7TD",
+  "fiyat": 514,
+  "adet": 22,
+  "ty": 356.0,
+  "ad": "Arduino Uno R3 Klon USB Kablo Hediyeli - CH340 Chi"
+ },
+ {
+  "sku": "AEXL6009",
+  "asin": "B0GPXBPQQS",
+  "fiyat": 265,
+  "adet": 49,
+  "ty": 135.0,
+  "ad": "4A XL6009 Ayarlanabilir Step Up Boost Voltaj Yükse"
+ },
+ {
+  "sku": "AEVHM314",
+  "asin": "B0GPX2CTG1",
+  "fiyat": 277,
+  "adet": 50,
+  "ty": 146.0,
+  "ad": "Vhm-314 Bluetooth 5.0 Mp3 Ses Kayıt Kartı Dekoder "
+ },
+ {
+  "sku": "AEACDMMR",
+  "asin": "B0GPX2ZXN1",
+  "fiyat": 286,
+  "adet": 50,
+  "ty": 150.0,
+  "ad": "Ac 220v 2000w Motor Hız Kontrol Kartı Dimmer"
+ },
+ {
+  "sku": "AEBZZR5V",
+  "asin": "B09R7XDRGQ",
+  "fiyat": 215,
+  "adet": 170,
+  "ty": 91.0,
+  "ad": "5V Aktif Buzzer - Sesli Uyarı Elemanı, Arduino Uyu"
+ },
+ {
+  "sku": "AEPYAA2",
+  "asin": "B09KFSMYPT",
+  "fiyat": 242,
+  "adet": 100,
+  "ty": 115.0,
+  "ad": "2'li Aa Kalem Pil Kutusu Yuvası 3v Kablolu Kalem P"
+ },
+ {
+  "sku": "AEDCM3V-1",
+  "asin": "B09JHYF237",
+  "fiyat": 230,
+  "adet": 50,
+  "ty": 104.0,
+  "ad": "DC Motor 3V Yassı (130 Tip) - Hobi ve Fen Deney Mo"
+ },
+ {
+  "sku": "AE16X2LCD",
+  "asin": "B0GPWYCH4H",
+  "fiyat": 426,
+  "adet": 30,
+  "ty": 278.0,
+  "ad": "Iıc I2c Seri 1602a 2x16 Mavi Karakter Lcd Modül Di"
+ },
+ {
+  "sku": "AESG90",
+  "asin": "B0HGS3J3V1",
+  "fiyat": 288,
+  "adet": 15,
+  "ty": 156.0,
+  "ad": "Tower Pro Sg90 Rc Mini Servo Motor"
+ },
+ {
+  "sku": "AERTC1302",
+  "asin": "B0H962N55Q",
+  "fiyat": 277,
+  "adet": 80,
+  "ty": 146.0,
+  "ad": "DS1302 RTC Gerçek Zamanlı Saat Modülü (Pil Dahil)"
+ },
+ {
+  "sku": "AETKRM5V",
+  "asin": "B0FDKZCHMC",
+  "fiyat": 288,
+  "adet": 30,
+  "ty": 156.0,
+  "ad": "Tek Kanallı 5v Röle Modülü"
+ },
+ {
+  "sku": "AEHCSR501",
+  "asin": "B09KG4LT1N",
+  "fiyat": 301,
+  "adet": 30,
+  "ty": 167.0,
+  "ad": "HC-SR501 Ayarlanabilir PIR Hareket Sensörü"
+ },
+ {
+  "sku": "AE28BYJ48",
+  "asin": "B09KFWX2HR",
+  "fiyat": 312,
+  "adet": 40,
+  "ty": 177.0,
+  "ad": "28BJY-48 Redüktörlü Step Motor Seti"
+ },
+ {
+  "sku": "AE12V1A",
+  "asin": "B09RWQPTKF",
+  "fiyat": 301,
+  "adet": 30,
+  "ty": 167.0,
+  "ad": "12V 1A Adaptör - Priz Tipi Güç Kaynağı, 5.5x2.1mm "
+ },
+ {
+  "sku": "AEIRKMND",
+  "asin": "B0BWS264Z9",
+  "fiyat": 277,
+  "adet": 29,
+  "ty": 146.0,
+  "ad": "IR Alıcı Verici Kumanda Seti - Arduino Uyumlu"
+ },
+ {
+  "sku": "AELHMPMP",
+  "asin": "B0DZPB3WQN",
+  "fiyat": 288,
+  "adet": 90,
+  "ty": 156.0,
+  "ad": "Lehim Pompası - Metal"
+ },
+ {
+  "sku": "AEHC06BT",
+  "asin": "B0F8QTQDVY",
+  "fiyat": 525,
+  "adet": 30,
+  "ty": 366.0,
+  "ad": "HC-06 Bluetooth Kablosuz Seri Haberleşme Modülü"
+ },
+ {
+  "sku": "AEJK2040",
+  "asin": "B0BT4YP1GN",
+  "fiyat": 265,
+  "adet": 50,
+  "ty": 135.0,
+  "ad": "Jumper Kablo Seti 20 cm 40'lı - Erkek-Erkek"
+ },
+ {
+  "sku": "AEBB830P",
+  "asin": "B0GVGMRTS7",
+  "fiyat": 312,
+  "adet": 100,
+  "ty": 177.0,
+  "ad": "Büyükboy Breadboard"
+ },
+ {
+  "sku": "AEL298N",
+  "asin": "B09JHYKDQG",
+  "fiyat": 312,
+  "adet": 10,
+  "ty": 177.0,
+  "ad": "L298N Motor Sürücü Kartı"
+ }
+]
