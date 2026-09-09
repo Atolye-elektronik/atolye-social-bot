@@ -23,3 +23,6 @@ pazarlama/ozel-robotik.csv
 pazarlama/okullar-1parti.csv
 pazarlama/yeniden-gonderim.csv
 logs/
+pazarlama/okul-instagram-ee.csv
+pazarlama/okul-instagram-tam.csv
+state/gunluk_tur.lock

@@ -23,6 +23,7 @@ import pathlib
 import smtplib
 import subprocess
 import sys
+import time
 from email.message import EmailMessage
 from email.utils import formatdate
 
@@ -36,6 +37,11 @@ from src import okul_daveti  # noqa: E402
 
 PY = sys.executable
 KOTA_DOSYA = KOK / "state/gunluk_tur.json"
+KILIT_DOSYA = KOK / "state/gunluk_tur.lock"
+# Kota ancak tur BITINCE yaziliyor; o yuzden kota kontrolu ayni anda baslayan
+# ikinci turu durdurmuyor. 07.09.2026'da nobetci, elle baslatilan turun uzerine
+# ikinci tur acti ve ayni okullara ikinci kez mail gitti. Kilit bunu engelliyor.
+KILIT_OMRU = 2 * 60 * 60  # gorevin ExecutionTimeLimit degeri ile ayni
 LOG_DIR = KOK / "logs/gunluk_tur"
 MTAL_LISTE, MESEM_LISTE = "pazarlama/okullar-hedef.csv", "pazarlama/mesem-hedef.csv"
 MTAL_ADET, MESEM_ADET = 15, 10
@@ -45,7 +51,11 @@ GMAIL = "atolyeelektronik07@gmail.com"
 def log(msg: str) -> None:
     LOG_DIR.mkdir(parents=True, exist_ok=True)
     satir = f"[{dt.datetime.now():%H:%M:%S}] {msg}"
-    print(satir)
+    # Log dosyasi utf-8 ama Windows konsolu cp1254; kodlanamayan karakter
+    # print()'i patlatiyor. 09.09.2026'da kutu aktarim ciktisindaki bir karakter
+    # yuzunden tur, ozet maili ve git adimlarina gelmeden coktu (25 mail gitmisti).
+    kodlama = getattr(sys.stdout, "encoding", None) or "ascii"
+    print(satir.encode(kodlama, errors="replace").decode(kodlama, errors="replace"))
     with (LOG_DIR / f"{dt.date.today()}.log").open("a", encoding="utf-8") as f:
         f.write(satir + "\n")
 
@@ -86,6 +96,22 @@ def main() -> int:
         log(f"{gun} icin tur zaten yapilmis ({kota[gun]} gonderim); atlaniyor.")
         return 0
 
+    if KILIT_DOSYA.exists():
+        yas = time.time() - KILIT_DOSYA.stat().st_mtime
+        if yas < KILIT_OMRU:
+            log(f"baska bir tur {yas/60:.0f} dk once baslamis, hala calisiyor; atlaniyor.")
+            return 0
+        log(f"bayat kilit bulundu ({yas/3600:.1f} sa), yok sayiliyor.")
+    KILIT_DOSYA.parent.mkdir(parents=True, exist_ok=True)
+    KILIT_DOSYA.write_text(f"{os.getpid()} {dt.datetime.now():%Y-%m-%d %H:%M:%S}", encoding="utf-8")
+
+    try:
+        return _tur(gun, kota)
+    finally:
+        KILIT_DOSYA.unlink(missing_ok=True)
+
+
+def _tur(gun: str, kota: dict) -> int:
     log("gunluk tur basliyor")
     once = {k["ozet"] for k in kayit_oku()}
 
