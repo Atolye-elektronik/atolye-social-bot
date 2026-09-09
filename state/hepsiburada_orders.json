@@ -1,4 +1,131 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6aa1a619-7757-2a6c-26b4-a0af06060606",
+      "status": "Open",
+      "customerId": "20e192f1-ddf8-4187-8218-44a3d97fa45a",
+      "orderDate": "2026-09-09T21:31:52",
+      "dueDate": "2026-09-10T18:30:00",
+      "barcode": "62955152711891",
+      "packageNumber": "5515271189",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Özilke Apt. 351. Sokak No:113 Daire:4 BARIŞ BUCA İzmir",
+      "recipientName": "MUHARREM KARAHAN",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BARIŞ",
+      "shippingTown": "BUCA",
+      "shippingCity": "İzmir",
+      "email": "4822104869_5515271189@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "MUHARREM KARAHAN",
+      "billingAddress": "Barış mah. 351. sokak. No:113 D:4  BARIŞ BUCA İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "BUCA",
+      "billingDistrict": "BARIŞ",
+      "billingPostalCode": "35370",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 134.82
+      },
+      "items": [
+        {
+          "lineItemId": "6aa1a618-ee24-f5af-55d4-3fe406060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 67.41
+          },
+          "vat": 22.47,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 134.82
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 7.48999
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 14.97999
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.89999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.79998
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4822104869",
+          "orderDate": "2026-09-09T21:31:52",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "MUHARREM KARAHAN",
+      "estimatedArrivalDate": "2026-09-14T15:30:00Z",
+      "totalDeci": 2
+    }
+  ]
 }
