@@ -1020,6 +1020,13 @@
    "qty": 0,
    "status": "DRAFT",
    "tracked": true
+  },
+  "AEESP32TC": {
+   "variant": 52803866362085,
+   "item": 54917159059685,
+   "qty": 5,
+   "status": "DRAFT",
+   "tracked": true
   }
  },
  "barkod_alias": {
