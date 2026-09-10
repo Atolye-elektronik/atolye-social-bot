@@ -504,6 +504,132 @@
       "customerName": "mesut kaya",
       "estimatedArrivalDate": "2026-09-15T15:30:00Z",
       "totalDeci": 1
+    },
+    {
+      "id": "6aa2829c-0642-0f53-493b-d7b006060606",
+      "status": "Open",
+      "customerId": "37dca5a3-3aa7-489f-82f2-98860f115597",
+      "orderDate": "2026-09-10T13:12:42",
+      "dueDate": "2026-09-10T18:30:00",
+      "barcode": "62955155247564",
+      "packageNumber": "5515524756",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Çambayırı caddesi, Bağloca sitesi B Blok no 12/8 BAĞLICA ETİMESGUT Ankara",
+      "recipientName": "ilhan koçak",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BAĞLICA",
+      "shippingTown": "ETİMESGUT",
+      "shippingCity": "Ankara",
+      "email": "4973428705_5515524756@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Ilhan koçak",
+      "billingAddress": "Çambayırı Cd. Bağ loca sitesi B blok 12/8  YENİ BAĞLICA ETİMESGUT Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "ETİMESGUT",
+      "billingDistrict": "YENİ BAĞLICA",
+      "billingPostalCode": "6790",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 2940
+      },
+      "items": [
+        {
+          "lineItemId": "6aa2829b-fd07-0279-163d-a65006060606",
+          "listingId": "9dabd470-f0eb-4677-b862-d8f24b98fb65",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000E9OWRF",
+          "merchantSku": "AETCS18P",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 2940
+          },
+          "vat": 490,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 2940
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 264.6
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 60
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 60
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 2940
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 2940
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Meslek Lisesi Takım Çantası Seti - 17 Parça Full Set",
+          "orderNumber": "4973428705",
+          "orderDate": "2026-09-10T13:12:42",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELTCS18P001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001685029413.jpg",
+          "deci": 6
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "ilhan koçak",
+      "estimatedArrivalDate": "2026-09-14T15:30:00Z",
+      "totalDeci": 6
     }
   ]
 }
