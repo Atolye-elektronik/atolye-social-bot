@@ -125,6 +125,25 @@ def run(only: str | None = None, force: bool = False, max_per_run: int | None = 
             except Exception as exc:  # noqa: BLE001
                 failures += 1
                 print(f"  ❌ hata: {exc}")
+                continue
+
+            # Instagram'a giden her post ayrıca hikaye olarak da paylaşılır.
+            # Hikaye hatası postu başarısız saymaz; ayrı anahtarla kaydedilir
+            # ki sonraki turda yeniden denensin, feed postu tekrar atılmasın.
+            if (
+                platform == "instagram"
+                and config.IG_STORY_AUTO
+                and not state.already_published(published_state, post.slug, "instagram_story")
+            ):
+                print(f"→ {post.slug} → instagram hikaye")
+                try:
+                    story_id = instagram.hikaye_yayinla(post.media, post.is_video)
+                    state.mark_published(
+                        published_state, post.slug, "instagram_story", str(story_id)
+                    )
+                    print(f"  ✅ hikaye paylaşıldı (id: {story_id})")
+                except Exception as exc:  # noqa: BLE001
+                    print(f"  ⚠️  hikaye atılamadı: {exc}")
 
         # Post en az bir platforma gittiyse bu turun kotasından düşer.
         if gonderildi:

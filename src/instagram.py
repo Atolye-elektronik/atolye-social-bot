@@ -128,23 +128,29 @@ def _publish_carousel(caption: str, media_paths: list[str]) -> str:
     return _publish_container(creation_id)
 
 
-def hikaye_yayinla(media_path: str) -> str:
-    """Tek gorseli hikaye (story) olarak yayinlar.
+def hikaye_yayinla(media_path: str | list[str] | None, is_video: bool = False) -> str:
+    """Tek gorseli/videoyu hikaye (story) olarak yayinlar.
 
     Business hesaplarda Graph API STORIES tipini destekliyor. Hikayeler
     24 saat sonra kaybolur; kalici olmasi istenenler uygulamadan
-    "one cikan"a eklenir (o adim API'de yok).
+    "one cikan"a eklenir (o adim API'de yok). Hikaye aciklama almaz;
+    carousel verilirse ilk slide kullanilir. Video hikayede Instagram
+    60 sn siniri uygular, uzun videoda API hata verir.
     """
     if not config.IG_USER_ID:
         raise InstagramError("IG_USER_ID tanimli degil.")
+    if not media_path:
+        raise InstagramError("Hikaye icin medya yok.")
+    if isinstance(media_path, list):
+        media_path = media_path[0]
+        is_video = media_path.lower().endswith((".mp4", ".mov", ".m4v"))
     url = config.media_url(media_path)
     if config.DRY_RUN:
         print(f"  [DRY RUN] Instagram hikaye → {url}")
         return "dry-run"
-    container = _post(
-        f"{config.IG_USER_ID}/media",
-        {"media_type": "STORIES", "image_url": url},
-    )
+    govde = {"media_type": "STORIES"}
+    govde["video_url" if is_video else "image_url"] = url
+    container = _post(f"{config.IG_USER_ID}/media", govde)
     _wait_until_ready(container["id"])
     return _publish_container(container["id"])
 

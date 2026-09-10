@@ -69,6 +69,12 @@ PINTEREST_BOARD_ID = os.environ.get("PINTEREST_BOARD_ID", "").strip()
 # Kuru çalışma: API çağrısı yapmadan ne olacağını gösterir.
 DRY_RUN = os.environ.get("DRY_RUN", "false").lower() in ("1", "true", "yes")
 
+# Instagram'a giden her post ayrıca hikaye olarak da paylaşılsın (10.09.2026
+# kullanıcı kararı). Görsel post → aynı görsel, carousel → ilk slide,
+# video → aynı video (60 sn üstü videoda API hata verir, post yine de
+# paylaşılmış sayılır). Kapatmak için IG_STORY_AUTO=0.
+IG_STORY_AUTO = os.environ.get("IG_STORY_AUTO", "1").lower() in ("1", "true", "yes")
+
 # Tek çalışmada en fazla kaç post paylaşılsın. Bot saat başı çalıştığı için
 # birikmiş kuyruk saatlere yayılır; 0 yazarsan sınır kalkar.
 try:
