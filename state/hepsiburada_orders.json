@@ -126,6 +126,384 @@
       "customerName": "MUHARREM KARAHAN",
       "estimatedArrivalDate": "2026-09-14T15:30:00Z",
       "totalDeci": 2
+    },
+    {
+      "id": "6aa2545d-847d-d589-b485-471d06060606",
+      "status": "Open",
+      "customerId": "325820db-7a8b-43ed-8eda-c94578276f19",
+      "orderDate": "2026-09-10T09:55:22",
+      "dueDate": "2026-09-10T18:30:00",
+      "barcode": "62955154341678",
+      "packageNumber": "5515434167",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Harbiye MAHHALLESİ Şehit Er Mehmet Duman Caddesi no:14 HARBİYE DEFNE Hatay",
+      "recipientName": "COŞKUN AĞIRDAŞ",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "HARBİYE",
+      "shippingTown": "DEFNE",
+      "shippingCity": "Hatay",
+      "email": "4332282163_5515434167@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "COŞKUN AĞIRDAŞ",
+      "billingAddress": "Harbiye MAHHALLESİ Şehit Er Mehmet Duman Caddesi no:14 HARBİYE DEFNE Hatay",
+      "billingCity": "Hatay",
+      "billingTown": "DEFNE",
+      "billingDistrict": "HARBİYE",
+      "billingPostalCode": "",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 134.82
+      },
+      "items": [
+        {
+          "lineItemId": "6aa2545c-7413-6d0f-95a8-a5d906060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 67.41
+          },
+          "vat": 22.47,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 134.82
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 7.48999
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 14.97999
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.89999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.79998
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4332282163",
+          "orderDate": "2026-09-10T09:55:22",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "COŞKUN AĞIRDAŞ",
+      "estimatedArrivalDate": "2026-09-21T15:30:00Z",
+      "totalDeci": 2
+    },
+    {
+      "id": "6aa25d0f-b914-eb20-c0d7-5bf206060606",
+      "status": "Open",
+      "customerId": "576d72bf-93ce-4664-b6e7-c543675e350e",
+      "orderDate": "2026-09-10T10:32:29",
+      "dueDate": "2026-09-10T18:30:00",
+      "barcode": "62955154507201",
+      "packageNumber": "5515450720",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "izmit sanayi sitesi 6.cadde 7.blok no:21 SANAYİ İZMİT Kocaeli",
+      "recipientName": "ismail vatansever",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "SANAYİ",
+      "shippingTown": "İZMİT",
+      "shippingCity": "Kocaeli",
+      "email": "4719191432_5515450720@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "VATANSEVER ELEKTRO MEKANİK TİC.LTD.ŞTİ. ",
+      "billingAddress": "izmit sanayi sitesi 6.cadde 7.blok no:21 SANAYİ İZMİT Kocaeli",
+      "billingCity": "Kocaeli",
+      "billingTown": "İZMİT",
+      "billingDistrict": "SANAYİ",
+      "billingPostalCode": "",
+      "billingCountryCode": "TR",
+      "taxOffice": "TEPECİK",
+      "taxNumber": "9240445807",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 522.57
+      },
+      "items": [
+        {
+          "lineItemId": "6aa25d0e-b914-eb20-c0d7-55aa06060606",
+          "listingId": "d9f1dcb0-a496-42a5-ae17-38ee8b01661f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000PLEY2",
+          "merchantSku": "AEACDMMR2",
+          "quantity": 3,
+          "price": {
+            "currency": "TRY",
+            "amount": 174.19
+          },
+          "vat": 87.1,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 522.57
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 15.68
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 174.19
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 522.57
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl Ac 220V 2000W Motor Hız Kontrol Kartı Dimmer",
+          "orderNumber": "4719191432",
+          "orderDate": "2026-09-10T10:32:29",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000000CNL576",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/121/{size}/110000071106017.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "ismail vatansever",
+      "estimatedArrivalDate": "2026-09-15T15:30:00Z",
+      "totalDeci": 3
+    },
+    {
+      "id": "6aa25ef1-644f-96cd-73bf-002b06060606",
+      "status": "Open",
+      "customerId": "f584e538-11d4-47de-95f3-bf01ae586c95",
+      "orderDate": "2026-09-10T10:40:32",
+      "dueDate": "2026-09-10T18:30:00",
+      "barcode": "62955154544637",
+      "packageNumber": "5515454463",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "cumhuriyet mah huzur sokak toki konutları 2, kısım c2-9 blok daire 2 şekerpınar CUMHURİYET ÇAYIROVA Kocaeli",
+      "recipientName": "Mesut kaya",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "CUMHURİYET",
+      "shippingTown": "ÇAYIROVA",
+      "shippingCity": "Kocaeli",
+      "email": "4449204777_5515454463@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "mesut kaya",
+      "billingAddress": "huzur sokak toki konutları 2, kısım c2-9 blok daire 2  CUMHURİYET ÇAYIROVA Kocaeli",
+      "billingCity": "Kocaeli",
+      "billingTown": "ÇAYIROVA",
+      "billingDistrict": "CUMHURİYET",
+      "billingPostalCode": "41420",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 150
+      },
+      "items": [
+        {
+          "lineItemId": "6aa25ef1-9933-6986-29e5-6f3906060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 150
+          },
+          "vat": 25,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 150
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.5
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 150
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 150
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4449204777",
+          "orderDate": "2026-09-10T10:40:32",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "mesut kaya",
+      "estimatedArrivalDate": "2026-09-15T15:30:00Z",
+      "totalDeci": 1
     }
   ]
 }
