@@ -49,7 +49,7 @@
  },
  {
   "sku": "AEPYAA2",
-  "asin": "B09KFSMYPT",
+  "asin": "B0GPXBGD4Z",
   "fiyat": 242,
   "adet": 100,
   "ty": 115.0,
@@ -89,7 +89,7 @@
  },
  {
   "sku": "AETKRM5V",
-  "asin": "B0FDKZCHMC",
+  "asin": "B0FGQ8SBSY",
   "fiyat": 288,
   "adet": 30,
   "ty": 156.0,
@@ -97,7 +97,7 @@
  },
  {
   "sku": "AEHCSR501",
-  "asin": "B09KG4LT1N",
+  "asin": "B0GPX314RJ",
   "fiyat": 301,
   "adet": 30,
   "ty": 167.0,
@@ -105,7 +105,7 @@
  },
  {
   "sku": "AE28BYJ48",
-  "asin": "B09KFWX2HR",
+  "asin": "B0FH2J18F7",
   "fiyat": 312,
   "adet": 40,
   "ty": 177.0,
@@ -161,10 +161,40 @@
  },
  {
   "sku": "AEL298N",
-  "asin": "B09JHYKDQG",
+  "asin": "B0FH2H2S4D",
   "fiyat": 312,
   "adet": 10,
   "ty": 177.0,
   "ad": "L298N Motor Sürücü Kartı"
+ },
+ {
+  "sku": "AETP4056",
+  "asin": "B0HFQ6NFPQ",
+  "fiyat": 252,
+  "adet": 50
+ },
+ {
+  "sku": "AETP4056-2",
+  "asin": "B0GVGS2J34",
+  "fiyat": 275,
+  "adet": 3
+ },
+ {
+  "sku": "AERC522RFID",
+  "asin": "B0FGPY7NDH",
+  "fiyat": 324,
+  "adet": 20
+ },
+ {
+  "sku": "AEJK2040DD",
+  "asin": "B0FGQCJWB5",
+  "fiyat": 265,
+  "adet": 30
+ },
+ {
+  "sku": "AEPOT10K",
+  "asin": "B09PJQ14MD",
+  "fiyat": 219,
+  "adet": 180
  }
 ]
