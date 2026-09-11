@@ -86,6 +86,27 @@ def ozet_mail(gonderilen: list[str], kutu_cikti: str, gun: str) -> None:
         s.send_message(m, from_addr=kul)
 
 
+def _kilit_sahibi() -> int | None:
+    """Kilit dosyasindaki pid; okunamazsa None."""
+    try:
+        return int(KILIT_DOSYA.read_text(encoding="utf-8").split()[0])
+    except (OSError, ValueError, IndexError):
+        return None
+
+
+def _surec_yasiyor(pid: int) -> bool:
+    """pid hala calisiyor mu. Windows'ta os.kill(pid, 0) SURECI OLDURUYOR
+    (TerminateProcess cagiriyor), o yuzden tasklist ile bakiyoruz.
+    11.09.2026'da tur disaridan oldurulup (0x8007042B) kilidi ortada
+    biraktigi ve sonraki 2 saat tum turlari engelledigi icin eklendi."""
+    try:
+        r = subprocess.run(["tasklist", "/FI", f"PID eq {pid}", "/NH"],
+                           capture_output=True, text=True, timeout=15)
+        return str(pid) in (r.stdout or "")
+    except Exception:
+        return True  # emin olamiyorsak kilide saygi duy
+
+
 def main() -> int:
     zorla = "--zorla" in sys.argv
     gun = str(dt.date.today())
@@ -98,10 +119,14 @@ def main() -> int:
 
     if KILIT_DOSYA.exists():
         yas = time.time() - KILIT_DOSYA.stat().st_mtime
-        if yas < KILIT_OMRU:
-            log(f"baska bir tur {yas/60:.0f} dk once baslamis, hala calisiyor; atlaniyor.")
+        sahip = _kilit_sahibi()
+        if sahip and _surec_yasiyor(sahip) and yas < KILIT_OMRU:
+            log(f"baska bir tur {yas/60:.0f} dk once baslamis (pid {sahip}), hala calisiyor; atlaniyor.")
             return 0
-        log(f"bayat kilit bulundu ({yas/3600:.1f} sa), yok sayiliyor.")
+        if sahip and not _surec_yasiyor(sahip):
+            log(f"olu kilit: pid {sahip} artik yok, yok sayiliyor.")
+        else:
+            log(f"bayat kilit bulundu ({yas/3600:.1f} sa), yok sayiliyor.")
     KILIT_DOSYA.parent.mkdir(parents=True, exist_ok=True)
     KILIT_DOSYA.write_text(f"{os.getpid()} {dt.datetime.now():%Y-%m-%d %H:%M:%S}", encoding="utf-8")
 
