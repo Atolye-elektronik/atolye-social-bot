@@ -1,1 +1,183 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9623810228,
+      "firstName": "Yunus Emre",
+      "lastName": "Yaslıtepe",
+      "company": "",
+      "address1": "Arapçiftliği Mah.3027.Sokak No/23 Kat :2/Merkez Düzce",
+      "address2": "",
+      "city": "Düzce",
+      "cityCode": 81,
+      "district": "Merkez",
+      "districtId": 407,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "81000",
+      "countryCode": "TR",
+      "neighborhoodId": 15968,
+      "neighborhood": "Arapçiftliği Mah",
+      "phone": null,
+      "fullAddress": "Arapçiftliği Mah.3027.Sokak No/23 Kat :2/Merkez Düzce     Merkez Düzce",
+      "fullName": "Yunus Emre Yaslıtepe"
+    },
+    "orderNumber": "11592158333",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 996.55,
+    "packageGrossAmount": 996.55,
+    "totalDiscount": 50.0,
+    "packageSellerDiscount": 50.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 50.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 50
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9623810227,
+      "firstName": "Yunus Emre",
+      "lastName": "Yaslıtepe",
+      "company": "",
+      "address1": "Arapçiftliği Mah.3027.Sokak No/23 Kat :2/Merkez Düzce",
+      "address2": "",
+      "city": "Düzce",
+      "cityCode": 81,
+      "district": "Merkez",
+      "districtId": 407,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "81000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 15968,
+      "neighborhood": "Arapçiftliği Mah",
+      "phone": null,
+      "fullAddress": "Arapçiftliği Mah.3027.Sokak No/23 Kat :2/Merkez Düzce     Merkez Düzce",
+      "fullName": "Yunus Emre Yaslıtepe"
+    },
+    "customerFirstName": "Yunus Emre",
+    "customerEmail": "pf+33a3ppvw@trendyolmail.com",
+    "customerId": 237894534,
+    "supplierId": 0,
+    "customerLastName": "Yaslıtepe",
+    "id": 4147849019,
+    "channelId": 1,
+    "shipmentPackageId": 4147849019,
+    "cargoTrackingNumber": 7270037036261071,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE2WDEKRBT-LI",
+        "sku": "AE2WDEKRBT-LI",
+        "stockCode": "AE2WDEKRBT-LI",
+        "productName": "2WD Servolu Engelden Kaçan Robot Araba Kiti (Demonte Robot Araba Kiti) AE2WDEKRBT, one size",
+        "productCode": 1617156276,
+        "contentId": 1617156276,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 996.55,
+        "lineGrossAmount": 996.55,
+        "discount": 50.0,
+        "lineTotalDiscount": 50.0,
+        "lineSellerDiscount": 50.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6777681258",
+            "lineItemPrice": 946.55,
+            "lineItemDiscount": 50.0,
+            "lineItemSellerDiscount": 50.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5938580872,
+        "lineId": 5938580872,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "AE2WDEKRBT-LI",
+        "orderLineItemStatusName": "Picking",
+        "price": 946.55,
+        "lineUnitPrice": 946.55,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1789143062878,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1789132264135,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1789132267211,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1789133690272,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1789246740000,
+    "estimatedDeliveryEndDate": 1789505940000,
+    "totalPrice": 946.55,
+    "packageTotalPrice": 946.55,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1789246740000,
+    "fastDelivery": true,
+    "originShipmentDate": 1789132264123,
+    "lastModifiedDate": 1789133690272,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10848518582,
+    "is4P": false
+  }
+]
