@@ -24,7 +24,8 @@
   "AEHB18650TK": "AEPY18650T",
   "AEHB18650PY2": "AEPY18650-2",
   "AEKB160": "AEKB1602",
-  "AEHB18650PY3": "AEPY18650T"
+  "AEHB18650PY3": "AEPY18650T",
+  "AEESP32TC38": "AEESP32TC"
  },
  "sku": {
   "AETCS18P": {
@@ -1025,7 +1026,7 @@
    "variant": 52803866362085,
    "item": 54917159059685,
    "qty": 5,
-   "status": "DRAFT",
+   "status": "ACTIVE",
    "tracked": true
   }
  },
