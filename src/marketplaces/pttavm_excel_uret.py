@@ -91,7 +91,11 @@ def main():
     kat = {u.get("stockCode"): u for u in katalog()}
     pz = {x["sk"]: x for x in json.load(
         open(os.path.join(KOK, "content", "pazarama_fiyat.json"), encoding="utf-8"))}
-    hedef = sorted(set(pz) | {"AEPYAA2", "AEPY18650", "AEPY18650T5", "AEPY18650T10", "AEEAS7P"})
+    # --hedef ile disaridan liste verilebilir (eksik urun tamamlama, 12.09.2026)
+    if "--hedef" in sys.argv:
+        hedef = sorted(json.load(open(sys.argv[sys.argv.index("--hedef") + 1], encoding="utf-8")))
+    else:
+        hedef = sorted(set(pz) | {"AEPYAA2", "AEPY18650", "AEPY18650T5", "AEPY18650T10", "AEEAS7P"})
 
     sablon = r"C:\Users\serdar\Downloads\pttavm\pttavm-ornek.xlsx"
     wb = openpyxl.load_workbook(sablon)
@@ -126,11 +130,12 @@ def main():
         ws.append(satir)
         rapor.append((sk, "%s kat=%d kom=%.0f%% desi=%g TY=%.0f -> PTT=%d" % (anah, kat_id, kom * 100, desi, p_ty, p)))
 
-    cikti = r"C:\Users\serdar\Downloads\pttavm\PTTAVM-urunler.xlsx"
+    cikti = (sys.argv[sys.argv.index("--cikti") + 1] if "--cikti" in sys.argv else r"C:\Users\serdar\Downloads\pttavm\PTTAVM-urunler.xlsx")
     wb.save(cikti)
-    json.dump([{"sk": sk, "not": n} for sk, n in rapor], open(
-        os.path.join(KOK, "content", "pttavm_fiyat_rapor.json"), "w", encoding="utf-8"),
-        ensure_ascii=False, indent=1)
+    if "--hedef" not in sys.argv:
+        json.dump([{"sk": sk, "not": n} for sk, n in rapor], open(
+            os.path.join(KOK, "content", "pttavm_fiyat_rapor.json"), "w", encoding="utf-8"),
+            ensure_ascii=False, indent=1)
     ok = sum(1 for _, n in rapor if "->" in n)
     print("yazildi: %s | urun: %d | atlanan: %d" % (cikti, ok, len(rapor) - ok))
     for sk, n in rapor:

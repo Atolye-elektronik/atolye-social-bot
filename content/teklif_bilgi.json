@@ -1,0 +1,30 @@
+{
+  "_aciklama": "Teklif/proforma basliginda kullanilan sabit bilgiler. DIKKAT: 'unvan' fatura kesilen tuzel kimlik (sahis sirketi), marka adi degil. Bu dosya kisi adi icerdigi ve depo public oldugu icin .gitignore'da.",
+  "satici": {
+    "unvan": "Ayşe Arslan Güler",
+    "adres": "Tomalar Mah. 911 Sok. Döşemealtı / Antalya",
+    "vergi_no": "0810617468",
+    "vergi_dairesi": "",
+    "eposta": "info@atolyeelektronik.com",
+    "telefon": "0546 825 32 10",
+    "site": "atolyeelektronik.com",
+    "marka": "Atölye Elektronik"
+  },
+  "_odeme_uyarisi": "IBAN BOS. Okul havale/EFT ile odeyecegi icin bu alan doldurulmadan teklif gonderilmemeli. Arac bos birakilirsa uyari basar.",
+  "odeme": {
+    "banka": "",
+    "hesap_sahibi": "Ayşe Arslan Güler",
+    "iban": ""
+  },
+  "kosullar": {
+    "gecerlilik_gun": 15,
+    "kdv_orani": 20,
+    "ucretsiz_kargo_esigi": 1200,
+    "teslim": "Stoktaki ürünler aynı/ertesi iş günü kargoya verilir.",
+    "notlar": [
+      "Fiyatlara KDV dahildir.",
+      "Ödeme havale/EFT ile yapılabilir; e-arşiv fatura sipariş sonrası düzenlenir.",
+      "Sınıf paketlerinde tek sipariş, tek fatura, tek kargo."
+    ]
+  }
+}
