@@ -83,31 +83,26 @@ def ptt_uygula(satir, uygula):
 
 
 def idx_uygula(satir, uygula):
+    """Idefix stok&fiyat gonderimi: POST /pim/catalog/{vendorId}/inventory-upload (developer.idefix.com)."""
     import idefix_client as ix
     tum = {x.get("vendorStockCode"): x for x in json.load(open(S / "idx_tum.json", encoding="utf-8"))}
     v = os.environ["IDEFIX_SATICI_ID"]
-    urunler = []
+    items = []
     for s in satir:
         p = s.get("idx_yeni")
         x = tum.get(s["sk"])
-        if not p or not x:
+        if not p or not x or not x.get("barcode"):
             continue
-        u = {k: x.get(k) for k in ("barcode", "title", "productMainId", "brandId", "categoryId",
-                                   "inventoryQuantity", "vendorStockCode", "description", "desi",
-                                   "deliveryType", "shipmentAddressId", "returnAddressId")}
-        u["vatRate"] = x.get("vatRate") or 20
-        u["deliveryDuration"] = x.get("deliveryDuration") or 1
-        u["price"] = round(p, 2); u["comparePrice"] = round(p, 2)
-        u["images"] = [{"url": (g.get("url") if isinstance(g, dict) else g), "order": i + 1}
-                       for i, g in enumerate((x.get("images") or [])[:8])]
-        u["attributes"] = x.get("attributes") or []
-        urunler.append(u)
+        items.append({"barcode": str(x["barcode"]), "price": round(p, 2), "comparePrice": round(p, 2),
+                      "inventoryQuantity": int(x.get("inventoryQuantity") or 0),
+                      "deliveryDuration": int(x.get("deliveryDuration") or 1),
+                      "deliveryType": x.get("deliveryType") or "regular"})
         print(f"  {s['sk']:16s} {str(s.get('idx_simdi')):>8} -> {p:>8.2f}")
-    print(f"Idefix: {len(urunler)} urun")
-    if uygula and urunler:
-        for i in range(0, len(urunler), 20):
-            r = ix.post(f"/pim/pool/{v}/create", {"products": urunler[i:i + 20]})
-            print("   gonderim", r.status_code, r.text[:140])
+    print(f"Idefix: {len(items)} urun")
+    if uygula and items:
+        for i in range(0, len(items), 50):
+            r = ix.post(f"/pim/catalog/{v}/inventory-upload", {"items": items[i:i + 50]})
+            print("   gonderim", r.status_code, r.text[:200])
             time.sleep(2)
 
 
