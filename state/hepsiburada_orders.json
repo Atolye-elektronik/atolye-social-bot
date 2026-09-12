@@ -1,4 +1,131 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6aa54b79-d159-4a7e-ab5a-0a3006060606",
+      "status": "Open",
+      "customerId": "ea60601f-54ec-4636-a034-3aea8468c5a8",
+      "orderDate": "2026-09-12T15:54:16",
+      "dueDate": "2026-09-14T18:30:00",
+      "barcode": "62955163597233",
+      "packageNumber": "5516359723",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Darüşşafaka Mahallesi. Çağdaş Sokak. Karikatüristler Sitesi B Blok. Daire 9 İSTİNYE SARIYER İstanbul",
+      "recipientName": "doruk çapanik",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "İSTİNYE",
+      "shippingTown": "SARIYER",
+      "shippingCity": "İstanbul",
+      "email": "4707681312_5516359723@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "GALİP DORUK ÇAPANIK ",
+      "billingAddress": "DARÜŞŞAFAKA MAH. ÇAĞDAŞ SK. KARIKATÜRISTLER B\nBLOK NO: 20 İÇ KAPI NO: 9 SARIYER/ İSTANBUL DARÜŞŞAFAKA SARIYER İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "SARIYER",
+      "billingDistrict": "DARÜŞŞAFAKA",
+      "billingPostalCode": "34457",
+      "billingCountryCode": "TR",
+      "taxOffice": "SARIYER",
+      "taxNumber": "2300065226",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 117
+      },
+      "items": [
+        {
+          "lineItemId": "6aa54b78-b914-eb20-c05f-8dfe06060606",
+          "listingId": "b192e250-5772-46ac-8c4c-515499321179",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3XH1",
+          "merchantSku": "AEVHM314",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "vat": 19.5,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 10.53
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya VHM-314 Bluetooth Amfi Kablosuz Ses Alıcı Modülü Siyah 1 Adet Yüksek Ses Kalitesi",
+          "orderNumber": "4707681312",
+          "orderDate": "2026-09-12T15:54:16",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6846",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869040.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "GALİP DORUK ÇAPANIK",
+      "estimatedArrivalDate": "2026-09-17T15:30:00Z",
+      "totalDeci": 1.1
+    }
+  ]
 }
