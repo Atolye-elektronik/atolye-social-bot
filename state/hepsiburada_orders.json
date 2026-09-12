@@ -2,132 +2,6 @@
   "newOrderItems": [],
   "packages": [
     {
-      "id": "6aa438ec-cd19-50dd-9bbb-cf5006060606",
-      "status": "Open",
-      "customerId": "af55c692-a94b-4dab-94f7-44d773b303c5",
-      "orderDate": "2026-09-11T20:22:50",
-      "dueDate": "2026-09-12T18:30:00",
-      "barcode": "62955160805432",
-      "packageNumber": "5516080543",
-      "cargoCompany": "Sürat Kargo",
-      "shippingAddressDetail": "Bedir sokak no 24 Tuncer sitesi B blok k1 d2 ATAŞEHİR MERKEZ Elazığ",
-      "recipientName": "Mustafa Aydın",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "ATAŞEHİR",
-      "shippingTown": "MERKEZ",
-      "shippingCity": "Elazığ",
-      "email": "4158101092_5516080543@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Mustafa Aydın",
-      "billingAddress": "Bedir sokak no 24 Tuncer sitesi B blok k1 d2 ATAŞEHİR MERKEZ Elazığ",
-      "billingCity": "Elazığ",
-      "billingTown": "MERKEZ",
-      "billingDistrict": "ATAŞEHİR",
-      "billingPostalCode": "23040",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 144.9
-      },
-      "items": [
-        {
-          "lineItemId": "6aa438eb-cd19-50dd-9bbb-cd9006060606",
-          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00003Z3U77",
-          "merchantSku": "AEACDMMR",
-          "quantity": 1,
-          "price": {
-            "currency": "TRY",
-            "amount": 144.9
-          },
-          "vat": 24.15,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 144.9
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 13.04
-          },
-          "commissionRate": 9,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 144.9
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 144.9
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
-          "orderNumber": "4158101092",
-          "orderDate": "2026-09-11T20:22:50",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "HBCC138FA6619",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
-          "deci": 1
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "Meliha AYDIN",
-      "estimatedArrivalDate": "2026-09-15T15:30:00Z",
-      "totalDeci": 1
-    },
-    {
       "id": "6aa4bc20-7557-2379-0db5-dda606060606",
       "status": "Open",
       "customerId": "e34d10c2-675c-46d9-a02c-44c0de67f6cb",
@@ -135,7 +9,7 @@
       "dueDate": "2026-09-14T18:30:00",
       "barcode": "62955161849062",
       "packageNumber": "5516184906",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Göktürk merkez mahallesi İstanbul caddesi zengin bahçe konutları 1 no 21 güvenlik GÖKTÜRK MERKEZ EYÜPSULTAN İstanbul",
       "recipientName": "Engin Bağcı",
       "shippingCountryCode": "TR",
@@ -251,6 +125,132 @@
       "isCargoChangable": true,
       "customerName": "engin bagci",
       "estimatedArrivalDate": "2026-09-17T15:30:00Z",
+      "totalDeci": 1
+    },
+    {
+      "id": "6aa521fd-f70c-6eae-edc7-2cc206060606",
+      "status": "Open",
+      "customerId": "af55c692-a94b-4dab-94f7-44d773b303c5",
+      "orderDate": "2026-09-11T20:22:50",
+      "dueDate": "2026-09-12T18:30:00",
+      "barcode": "62755162997535",
+      "packageNumber": "5516299753",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Bedir sokak no 24 Tuncer sitesi B blok k1 d2 ATAŞEHİR MERKEZ Elazığ",
+      "recipientName": "Mustafa Aydın",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ATAŞEHİR",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Elazığ",
+      "email": "4158101092_5516299753@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Mustafa Aydın",
+      "billingAddress": "Bedir sokak no 24 Tuncer sitesi B blok k1 d2 ATAŞEHİR MERKEZ Elazığ",
+      "billingCity": "Elazığ",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "ATAŞEHİR",
+      "billingPostalCode": "23040",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 144.9
+      },
+      "items": [
+        {
+          "lineItemId": "6aa438eb-cd19-50dd-9bbb-cd9006060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "vat": 24.15,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.04
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4158101092",
+          "orderDate": "2026-09-11T20:22:50",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Meliha AYDIN",
+      "estimatedArrivalDate": "2026-09-15T15:30:00Z",
       "totalDeci": 1
     }
   ]
