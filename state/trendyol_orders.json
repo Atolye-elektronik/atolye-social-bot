@@ -1,6 +1,186 @@
 [
   {
     "shipmentAddress": {
+      "id": 9629875216,
+      "firstName": "Ahmet",
+      "lastName": "Buzcu",
+      "company": "",
+      "address1": "1867 Sokak Yaman Apartmanı No:3 Daire No:4",
+      "address2": "",
+      "city": "Antalya",
+      "cityCode": 7,
+      "district": "Kepez",
+      "districtId": 1042,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "07000",
+      "countryCode": "TR",
+      "neighborhoodId": 5730,
+      "neighborhood": "Ayanoğlu Mah",
+      "phone": null,
+      "fullAddress": "1867 Sokak Yaman Apartmanı No:3 Daire No:4     Kepez Antalya",
+      "fullName": "Ahmet Buzcu"
+    },
+    "orderNumber": "11596004382",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 467.0,
+    "packageGrossAmount": 467.0,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9629875215,
+      "firstName": "Ahmet",
+      "lastName": "Buzcu",
+      "company": "",
+      "address1": "1867 Sokak Yaman Apartmanı No:3 Daire No:4",
+      "address2": "",
+      "city": "Antalya",
+      "cityCode": 7,
+      "district": "Kepez",
+      "districtId": 1042,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "07000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 5730,
+      "neighborhood": "Ayanoğlu Mah",
+      "phone": null,
+      "fullAddress": "1867 Sokak Yaman Apartmanı No:3 Daire No:4     Kepez Antalya",
+      "fullName": "Ahmet Buzcu"
+    },
+    "customerFirstName": "Ahmet",
+    "customerEmail": "pf+zamkljzy@trendyolmail.com",
+    "customerId": 101523896,
+    "supplierId": 0,
+    "customerLastName": "Buzcu",
+    "id": 4150683546,
+    "channelId": 1,
+    "shipmentPackageId": 4150683546,
+    "cargoTrackingNumber": 7270037063718135,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEUT12D",
+        "sku": "TYBI4USEB2DIY02J13",
+        "stockCode": "AEUT12D",
+        "productName": "Ut12d Temassız Ac Voltaj Gerilim Dedektörü UT12D-UNIT, one size",
+        "productCode": 264480205,
+        "contentId": 264480205,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 467.0,
+        "lineGrossAmount": 467.0,
+        "discount": 15.0,
+        "lineTotalDiscount": 15.0,
+        "lineSellerDiscount": 15.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6782241641",
+            "lineItemPrice": 452.0,
+            "lineItemDiscount": 15.0,
+            "lineItemSellerDiscount": 15.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5942535778,
+        "lineId": 5942535778,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "TYBI4USEB2DIY02J13",
+        "orderLineItemStatusName": "Picking",
+        "price": 452.0,
+        "lineUnitPrice": 452.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2471,
+        "commission": 3.3,
+        "businessUnit": "Garden & Power Tools",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1789240524319,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1789229726135,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1789229730580,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1789229788577,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1789419540000,
+    "estimatedDeliveryEndDate": 1789592340000,
+    "totalPrice": 452.0,
+    "packageTotalPrice": 452.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1789419540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1789229726125,
+    "lastModifiedDate": 1789229788577,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10851776785,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9628901784,
       "firstName": "Sadi",
       "lastName": "Kasırga",
