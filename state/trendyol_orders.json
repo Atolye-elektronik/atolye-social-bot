@@ -1,186 +1,6 @@
 [
   {
     "shipmentAddress": {
-      "id": 9625160730,
-      "firstName": "Mehman",
-      "lastName": "İbrahimov",
-      "company": "",
-      "address1": "Maltepe, Zümrütevler, Hanımeli cd 24 , kat 3, daire 7",
-      "address2": "",
-      "city": "İstanbul",
-      "cityCode": 34,
-      "district": "Maltepe",
-      "districtId": 27,
-      "countyId": 0,
-      "countyName": "",
-      "shortAddress": "",
-      "stateName": "",
-      "addressLines": {
-        "addressLine1": "",
-        "addressLine2": ""
-      },
-      "postalCode": "34000",
-      "countryCode": "TR",
-      "neighborhoodId": 28789,
-      "neighborhood": "Zümrütevler Mah",
-      "phone": null,
-      "fullAddress": "Maltepe, Zümrütevler, Hanımeli cd 24 , kat 3, daire 7     Maltepe İstanbul",
-      "fullName": "Mehman İbrahimov"
-    },
-    "orderNumber": "11593168096",
-    "paymentMethod": "Banka Kartı",
-    "orderCountryCode": "TR",
-    "grossAmount": 468.0,
-    "packageGrossAmount": 468.0,
-    "totalDiscount": 15.0,
-    "packageSellerDiscount": 15.0,
-    "totalTyDiscount": 0.0,
-    "packageTyDiscount": 0.0,
-    "packageTotalDiscount": 15.0,
-    "discountDisplays": [
-      {
-        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
-        "discountAmount": 15
-      }
-    ],
-    "taxNumber": null,
-    "invoiceAddress": {
-      "id": 9625160725,
-      "firstName": "Mehman",
-      "lastName": "İbrahimov",
-      "company": "",
-      "address1": "Maltepe, Zümrütevler, Hanımeli cd 24 , kat 3, daire 7",
-      "address2": "",
-      "city": "İstanbul",
-      "cityCode": 34,
-      "district": "Maltepe",
-      "districtId": 27,
-      "countyId": 0,
-      "countyName": "",
-      "shortAddress": "",
-      "stateName": "",
-      "addressLines": {
-        "addressLine1": "",
-        "addressLine2": ""
-      },
-      "postalCode": "34000",
-      "sector": "",
-      "countryCode": "TR",
-      "neighborhoodId": 28789,
-      "neighborhood": "Zümrütevler Mah",
-      "phone": null,
-      "fullAddress": "Maltepe, Zümrütevler, Hanımeli cd 24 , kat 3, daire 7     Maltepe İstanbul",
-      "fullName": "Mehman İbrahimov"
-    },
-    "customerFirstName": "Mehman",
-    "customerEmail": "pf+9yezy3l2@trendyolmail.com",
-    "customerId": 32105959,
-    "supplierId": 0,
-    "customerLastName": "İbrahimov",
-    "id": 4148486897,
-    "channelId": 1,
-    "shipmentPackageId": 4148486897,
-    "cargoTrackingNumber": 7270037042305226,
-    "sellerDeliveryMethod": "",
-    "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
-    "lines": [
-      {
-        "quantity": 1,
-        "salesCampaignId": 61,
-        "productSize": "Tek Ebat",
-        "merchantSku": "AEUT12D",
-        "sku": "TYBI4USEB2DIY02J13",
-        "stockCode": "AEUT12D",
-        "productName": "Ut12d Temassız Ac Voltaj Gerilim Dedektörü UT12D-UNIT, one size",
-        "productCode": 264480205,
-        "contentId": 264480205,
-        "merchantId": 1258869,
-        "sellerId": 1258869,
-        "amount": 468.0,
-        "lineGrossAmount": 468.0,
-        "discount": 15.0,
-        "lineTotalDiscount": 15.0,
-        "lineSellerDiscount": 15.0,
-        "tyDiscount": 0.0,
-        "lineTyDiscount": 0.0,
-        "discountDetails": [
-          {
-            "lineItemId": "6778694872",
-            "lineItemPrice": 453.0,
-            "lineItemDiscount": 15.0,
-            "lineItemSellerDiscount": 15.0,
-            "lineItemTyDiscount": 0.0
-          }
-        ],
-        "currencyCode": "TRY",
-        "id": 5939458575,
-        "lineId": 5939458575,
-        "vatBaseAmount": 20.0,
-        "vatRate": 20.0,
-        "barcode": "TYBI4USEB2DIY02J13",
-        "orderLineItemStatusName": "Picking",
-        "price": 453.0,
-        "lineUnitPrice": 453.0,
-        "fastDeliveryOptions": [
-          {
-            "type": "FastDelivery"
-          }
-        ],
-        "productCategoryId": 2471,
-        "commission": 3.3,
-        "businessUnit": "Garden & Power Tools",
-        "defectiveClaimListingInsight": ""
-      }
-    ],
-    "orderDate": 1789160238430,
-    "identityNumber": "11111111111",
-    "currencyCode": "TRY",
-    "packageHistories": [
-      {
-        "createdDate": 1789149443164,
-        "status": "Awaiting"
-      },
-      {
-        "createdDate": 1789149447197,
-        "status": "Created"
-      },
-      {
-        "createdDate": 1789149636643,
-        "status": "Picking"
-      }
-    ],
-    "shipmentPackageStatus": "Picking",
-    "status": "Picking",
-    "deliveryType": "normal",
-    "timeSlotId": 0,
-    "estimatedDeliveryStartDate": 1789246740000,
-    "estimatedDeliveryEndDate": 1789505940000,
-    "totalPrice": 453.0,
-    "packageTotalPrice": 453.0,
-    "deliveryAddressType": "Shipment",
-    "agreedDeliveryDate": 1789246740000,
-    "fastDelivery": true,
-    "originShipmentDate": 1789149443156,
-    "lastModifiedDate": 1789149636643,
-    "commercial": false,
-    "fastDeliveryType": "FastDelivery",
-    "deliveredByService": false,
-    "warehouseId": 8012721,
-    "invoiceStatus": "NotInvoiced",
-    "invoiceNumber": "",
-    "micro": false,
-    "giftBoxRequested": false,
-    "3pByTrendyol": false,
-    "containsDangerousProduct": false,
-    "isCod": false,
-    "createdBy": "order-creation",
-    "originPackageIds": null,
-    "shipmentNumber": 10849245169,
-    "is4P": false
-  },
-  {
-    "shipmentAddress": {
       "id": 9623810228,
       "firstName": "Yunus Emre",
       "lastName": "Yaslıtepe",
@@ -260,10 +80,10 @@
     "id": 4147849019,
     "channelId": 1,
     "shipmentPackageId": 4147849019,
-    "cargoTrackingNumber": 7270037036261071,
+    "cargoTrackingNumber": 7330037052162216,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 1,
@@ -343,7 +163,7 @@
     "agreedDeliveryDate": 1789246740000,
     "fastDelivery": true,
     "originShipmentDate": 1789132264123,
-    "lastModifiedDate": 1789133690272,
+    "lastModifiedDate": 1789199108933,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
@@ -358,6 +178,186 @@
     "createdBy": "order-creation",
     "originPackageIds": null,
     "shipmentNumber": 10848518582,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9625160730,
+      "firstName": "Mehman",
+      "lastName": "İbrahimov",
+      "company": "",
+      "address1": "Maltepe, Zümrütevler, Hanımeli cd 24 , kat 3, daire 7",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Maltepe",
+      "districtId": 27,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 28789,
+      "neighborhood": "Zümrütevler Mah",
+      "phone": null,
+      "fullAddress": "Maltepe, Zümrütevler, Hanımeli cd 24 , kat 3, daire 7     Maltepe İstanbul",
+      "fullName": "Mehman İbrahimov"
+    },
+    "orderNumber": "11593168096",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 468.0,
+    "packageGrossAmount": 468.0,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9625160725,
+      "firstName": "Mehman",
+      "lastName": "İbrahimov",
+      "company": "",
+      "address1": "Maltepe, Zümrütevler, Hanımeli cd 24 , kat 3, daire 7",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Maltepe",
+      "districtId": 27,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 28789,
+      "neighborhood": "Zümrütevler Mah",
+      "phone": null,
+      "fullAddress": "Maltepe, Zümrütevler, Hanımeli cd 24 , kat 3, daire 7     Maltepe İstanbul",
+      "fullName": "Mehman İbrahimov"
+    },
+    "customerFirstName": "Mehman",
+    "customerEmail": "pf+9yezy3l2@trendyolmail.com",
+    "customerId": 32105959,
+    "supplierId": 0,
+    "customerLastName": "İbrahimov",
+    "id": 4148486897,
+    "channelId": 1,
+    "shipmentPackageId": 4148486897,
+    "cargoTrackingNumber": 7330037052155959,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEUT12D",
+        "sku": "TYBI4USEB2DIY02J13",
+        "stockCode": "AEUT12D",
+        "productName": "Ut12d Temassız Ac Voltaj Gerilim Dedektörü UT12D-UNIT, one size",
+        "productCode": 264480205,
+        "contentId": 264480205,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 468.0,
+        "lineGrossAmount": 468.0,
+        "discount": 15.0,
+        "lineTotalDiscount": 15.0,
+        "lineSellerDiscount": 15.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6778694872",
+            "lineItemPrice": 453.0,
+            "lineItemDiscount": 15.0,
+            "lineItemSellerDiscount": 15.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5939458575,
+        "lineId": 5939458575,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "TYBI4USEB2DIY02J13",
+        "orderLineItemStatusName": "Picking",
+        "price": 453.0,
+        "lineUnitPrice": 453.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2471,
+        "commission": 3.3,
+        "businessUnit": "Garden & Power Tools",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1789160238430,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1789149443164,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1789149447197,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1789149636643,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1789246740000,
+    "estimatedDeliveryEndDate": 1789505940000,
+    "totalPrice": 453.0,
+    "packageTotalPrice": 453.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1789246740000,
+    "fastDelivery": true,
+    "originShipmentDate": 1789149443156,
+    "lastModifiedDate": 1789199092746,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10849245169,
     "is4P": false
   }
 ]
