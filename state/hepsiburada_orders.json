@@ -126,6 +126,132 @@
       "customerName": "GALİP DORUK ÇAPANIK",
       "estimatedArrivalDate": "2026-09-17T15:30:00Z",
       "totalDeci": 1.1
+    },
+    {
+      "id": "6aa58592-ef3a-4296-4b84-676e06060606",
+      "status": "Open",
+      "customerId": "f00317f3-4785-4b0b-9e5c-35340c1e4d27",
+      "orderDate": "2026-09-12T20:02:09",
+      "dueDate": "2026-09-14T18:30:00",
+      "barcode": "62955164200936",
+      "packageNumber": "5516420093",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "1165. Sk. Erhan Fındık No:2 KARAPINAR OSB ALTINORDU Ordu",
+      "recipientName": "Selim Odabaş",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KARAPINAR OSB",
+      "shippingTown": "ALTINORDU",
+      "shippingCity": "Ordu",
+      "email": "4030986664_5516420093@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Selim Odabaş",
+      "billingAddress": "Kökenli mah. kaşaltı göçeli sok. No:7 KÖKENLİ ALTINORDU Ordu",
+      "billingCity": "Ordu",
+      "billingTown": "ALTINORDU",
+      "billingDistrict": "KÖKENLİ",
+      "billingPostalCode": "52210",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 315.99
+      },
+      "items": [
+        {
+          "lineItemId": "6aa58591-7878-0b3c-0319-692906060606",
+          "listingId": "b192e250-5772-46ac-8c4c-515499321179",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3XH1",
+          "merchantSku": "AEVHM314",
+          "quantity": 3,
+          "price": {
+            "currency": "TRY",
+            "amount": 105.33
+          },
+          "vat": 52.66,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 315.99
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 9.48
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 11.67
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35.01
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 105.33
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 315.99
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya VHM-314 Bluetooth Amfi Kablosuz Ses Alıcı Modülü Siyah 1 Adet Yüksek Ses Kalitesi",
+          "orderNumber": "4030986664",
+          "orderDate": "2026-09-12T20:02:09",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6846",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869040.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "selim odabaş",
+      "estimatedArrivalDate": "2026-09-16T15:30:00Z",
+      "totalDeci": 3.3
     }
   ]
 }
