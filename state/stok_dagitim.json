@@ -1,5 +1,5 @@
 {
- "zaman": "2026-09-13 14:07",
+ "zaman": "2026-09-13 14:09",
  "hedef": {
   "AETCS18P": 64,
   "AEARBSES": 25,
@@ -19,7 +19,7 @@
   "AEDHT11": 37,
   "AESG90": 107,
   "AEBB830P": 183,
-  "AEPLSTKKT": 179,
+  "AEPLSTKKT": 79,
   "AELHMPMP": 186,
   "AEL298NMTRT": 49,
   "AE3-6VMTR4": 28,
@@ -78,7 +78,7 @@
   "AE9VPILSKT2": 45,
   "AE9VPILSKT1": 90,
   "AEGUCVOLTKIT": 35,
-  "AEPROTOTIPKIT": 175,
+  "AEPROTOTIPKIT": 79,
   "AESESKIT": 36,
   "AESARJKT": 44,
   "AEENDELKSET": 28,
@@ -161,11 +161,11 @@
   "AEJK2040EE": 310
  },
  "sonuc": {
-  "trendyol": "[{'batchRequestId': '57e4c6bc-af63-11f1-a6f6-2a98e1a8d2ef-1789312063'}, {'batchRequestId': '585d528c-af63-11f1-85cc-c2d494bcae91-1789312064'}]",
-  "hepsiburada": "{'id': '1632fd7e-54d1-4d37-a439-18da903dfcc1'}",
+  "trendyol": "[{'batchRequestId': '98878fa1-af63-11f1-9741-3a39892ea639-1789312172'}, {'batchRequestId': '98cfbc70-af63-11f1-8bfc-4a55bb82afd4-1789312172'}]",
+  "hepsiburada": "{'id': '06c8d96a-bb39-46b4-a04b-0c87993845b2'}",
   "n11": "<Response [200]>",
-  "pazarama": "(200, '{\"data\":\"78cd56bc-d4fd-415f-b099-5ed41833026b\",\"success\":true,\"messageCode\":null,\"message\":\"Fiyat/Stok güncelleme işleminiz sıraya alındı.\",\"userMessage\":\"Fiyat/Stok güncelleme işleminiz sıraya alındı.\",\"fromCache\":false}')",
+  "pazarama": "(200, '{\"data\":\"9495d75d-b398-48e3-97ac-8518750391a9\",\"success\":true,\"messageCode\":null,\"message\":\"Fiyat/Stok güncelleme işleminiz sıraya alındı.\",\"userMessage\":\"Fiyat/Stok güncelleme işleminiz sıraya alındı.\",\"fromCache\":false}')",
   "idefix": "{'items': [{'price': None, 'comparePrice': None, 'barcode': '2915113417646', 'inventoryQuantity': 64, 'maximumPurchasableQuantity': None, 'erpId': None, 'deliveryDuration': None, 'deliveryType': None, 'isZoneSale': None, 'status': 'created', 'failureReasons': None}, {'price': None, 'comparePrice': N",
-  "pttavm": "(200, '{\"countOfProductsToBeProcessed\":114,\"trackingId\":\"6aa68404b265980001f22706\",\"success\":true,\"message\":\"İşleminiz başarıyla sıraya alınmıştır. Size verilen tracking id ile takibini sağlayabilirsiniz.\"}')"
+  "pttavm": "(200, '{\"countOfProductsToBeProcessed\":0,\"trackingId\":null,\"success\":false,\"message\":\"Aynı isteği ancak 5 dakika sonra tekrardan gönderebilirsiniz\"}')"
  }
 }
