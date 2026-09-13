@@ -428,7 +428,7 @@ def main():
         # tazeleniyor -> tools/ altindaki akis, bkz. memory/pttavm-entegrasyonu.
         kanallar = os.environ.get(
             "STOK_KANALLAR", "trendyol,hepsiburada,n11,pazarama,idefix,amazon").split(",")
-        print(merkez.dagit(hedef, kanallar, kuru=False))
+        print(merkez.dagit(hedef, kanallar, kuru=False, recete=R, parca=parca))
     else:
         print("(STOK_DAGIT=1 degil: kanallara stok yazilmadi, yalniz Shopify dusumu yapildi)")
     gorulen_yaz(g)

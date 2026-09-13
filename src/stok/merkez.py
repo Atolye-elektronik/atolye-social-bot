@@ -91,7 +91,35 @@ def kanal_kodu(kanal, shopify_kodu, recete):
     return ters.get(shopify_kodu, [shopify_kodu])
 
 
-def dagit(hedef, kanallar, kuru=True):
+def shopify_geri_yaz(recete, parca, hedef):
+    """Shopify'a geri yazilanlar. PARCALARA DOKUNMAZ - onlar master.
+
+      1) havuz uyeleri: satis kanonikten dusuyor, uyeler geride kalmasin
+      2) hesaplanan SET stoklari: web sitesi Shopify envanterinden satiyor;
+         yazilmazsa site, parcasi bitmis seti satmaya devam eder (13.09).
+    """
+    try:
+        from stok import shopify_admin
+        geri = {u: hedef[u] for uy in havuzlar().values() for u in uy if u in hedef}
+        for s in recete.setler:
+            if s in parca and hedef.get(s) is not None:
+                geri[s] = hedef[s]
+        fark = {k: v for k, v in geri.items() if parca.get(k) != v}
+        if fark:
+            shopify_admin.stok_yaz(fark, sebep="correction")
+            print("Shopify'a geri yazildi: %d kod (havuz uyesi + set)" % len(fark))
+        return fark
+    except Exception as e:
+        print("! Shopify geri yazimi basarisiz:", str(e)[:120])
+        return {}
+
+
+def dagit(hedef, kanallar, kuru=True, recete=None, parca=None):
+    # 13.09 DUZELTME: geri yazim main()'de "--dagit" argumanina bagliydi, ama
+    # zamanlanmis is siparis.py -> merkez.dagit() yolundan geciyor ve main()
+    # hic calismiyordu; set stoklari siteye yazilmiyordu. Artik dagit icinde.
+    if not kuru and recete is not None and parca is not None:
+        shopify_geri_yaz(recete, parca, hedef)
     from stok import kanallar as K
     sonuc = {}
     for ad in kanallar:
@@ -110,23 +138,6 @@ def main():
     recete = Recete()
     parca = parca_stoklari()
     hedef = hedef_stoklar(recete, parca)
-    # Shopify'a geri yazilanlar (parcalara DOKUNULMAZ, onlar master):
-    #   1) havuz uyeleri - satis kanonikten dusuyor, uyeler geride kalmasin
-    #   2) hesaplanan SET stoklari - web sitesi Shopify envanterinden satiyor;
-    #      yazilmazsa site, parcasi bitmis seti satmaya devam eder (13.09).
-    if "--dagit" in sys.argv:
-        try:
-            from stok import shopify_admin
-            geri = {u: hedef[u] for uy in havuzlar().values() for u in uy if u in hedef}
-            for s in recete.setler:
-                if s in parca and hedef.get(s) is not None:
-                    geri[s] = hedef[s]
-            fark = {k: v for k, v in geri.items() if parca.get(k) != v}
-            if fark:
-                shopify_admin.stok_yaz(fark, sebep="correction")
-                print("Shopify'a geri yazildi: %d kod (havuz uyesi + set)" % len(fark))
-        except Exception as e:
-            print("! Shopify geri yazimi basarisiz:", str(e)[:120])
     setler = {s: hedef.get(s) for s in recete.setler}
     print("parca: %d | set: %d | kritik esik: %d" % (len(parca), len(setler), KRITIK_ESIK))
     bilinmeyen = [s for s, v in setler.items() if v is None]
@@ -138,7 +149,7 @@ def main():
     kanallar = [a for a in ("trendyol", "hepsiburada", "n11", "pazarama", "idefix", "pttavm", "amazon")
                 if "--kanal" not in sys.argv or a in sys.argv]
     if "--dagit" in sys.argv or "--kuru" in sys.argv:
-        sonuc = dagit(hedef, kanallar, kuru=kuru)
+        sonuc = dagit(hedef, kanallar, kuru=kuru, recete=recete, parca=parca)
         for k, v in sonuc.items():
             print("%-12s %s" % (k, v))
         if not kuru:
