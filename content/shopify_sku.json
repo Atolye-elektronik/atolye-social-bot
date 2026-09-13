@@ -174,7 +174,7 @@
   "AEPLSTKKT": {
    "variant": 48913127276773,
    "item": 51019951767781,
-   "qty": 179,
+   "qty": 79,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -454,7 +454,7 @@
   "AESTJDFTR": {
    "variant": 49882313720037,
    "item": 51992755634405,
-   "qty": 500,
+   "qty": 830,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -468,7 +468,7 @@
   "AEACDMMR": {
    "variant": 49896381055205,
    "item": 52006871728357,
-   "qty": 26,
+   "qty": 25,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -496,7 +496,7 @@
   "AEBZZR5V": {
    "variant": 49896441282789,
    "item": 52006932414693,
-   "qty": 500,
+   "qty": 833,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -587,7 +587,7 @@
   "AEPROTOTIPKIT": {
    "variant": 50755670671589,
    "item": 52866913861861,
-   "qty": 175,
+   "qty": 79,
    "status": "ARCHIVED",
    "tracked": true
   },
@@ -937,7 +937,7 @@
   "AELED5K": {
    "variant": 52775836844261,
    "item": 54888990343397,
-   "qty": 500,
+   "qty": 4400,
    "status": "DRAFT",
    "tracked": true
   },
@@ -958,7 +958,7 @@
   "AELEDRGB": {
    "variant": 52775836975333,
    "item": 54888990507237,
-   "qty": 500,
+   "qty": 972,
    "status": "DRAFT",
    "tracked": true
   },
@@ -979,7 +979,7 @@
   "AEBTN6X6": {
    "variant": 52775837139173,
    "item": 54888990638309,
-   "qty": 500,
+   "qty": 1036,
    "status": "DRAFT",
    "tracked": true
   },
@@ -993,7 +993,7 @@
   "AEDIR330": {
    "variant": 52775837663461,
    "item": 54888991162597,
-   "qty": 500,
+   "qty": 24425,
    "status": "DRAFT",
    "tracked": true
   },
@@ -1028,7 +1028,7 @@
   "AEPOT10K": {
    "variant": 52775837925605,
    "item": 54888991424741,
-   "qty": 500,
+   "qty": 675,
    "status": "DRAFT",
    "tracked": true
   },
@@ -1076,5 +1076,8 @@
    "AEJK2040DD",
    "AEJK2040EE"
   ]
- }
+ },
+ "sifirla": [
+  "AEUT12D"
+ ]
 }

@@ -70,6 +70,12 @@ def hedef_stoklar(recete, parca):
         if st is not None:
             hedef[s] = st
     havuzu_yansit(hedef)
+    # Shopify'da urunu olmayan ama kanalda ilani duran, tukenmis kodlar.
+    # Hedefe girmedikleri icin hicbir zaman sifirlanmiyorlardi: UT12D son
+    # adedi satildiktan sonra N11'de 2 gorunmeye devam ediyordu (13.09).
+    S = json.load(open(os.path.join(KOK, "content", "shopify_sku.json"), encoding="utf-8"))
+    for k in S.get("sifirla", []):
+        hedef[k] = 0
     for k, v in list(hedef.items()):
         if v is None:
             continue
