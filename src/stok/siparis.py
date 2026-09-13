@@ -421,7 +421,13 @@ def main():
     # GUVENLIK: kanallara stok dagitimi ancak parca sayimi Shopify'a girildikten sonra (STOK_DAGIT=1).
     # Aksi halde sayilmamis (0 gorunen) parcalar tum setleri kanallarda 0'a cekerdi.
     if os.environ.get("STOK_DAGIT") == "1":
-        kanallar = os.environ.get("STOK_KANALLAR", "trendyol,hepsiburada,n11,pazarama,idefix").split(",")
+        # 13.09.2026: amazon eklendi (adaptoru yeni yazildi, calisiyor).
+        # pttavm BILEREK YOK: /products/stock-prices 200 donuyor ama HICBIR SEY
+        # uygulamiyor (uc kez dogrulandi). Listeye koymak bosuna istek atip
+        # "guncellendi" yanilgisi yaratir. PttAVM stogu panelden Excel ile
+        # tazeleniyor -> tools/ altindaki akis, bkz. memory/pttavm-entegrasyonu.
+        kanallar = os.environ.get(
+            "STOK_KANALLAR", "trendyol,hepsiburada,n11,pazarama,idefix,amazon").split(",")
         print(merkez.dagit(hedef, kanallar, kuru=False))
     else:
         print("(STOK_DAGIT=1 degil: kanallara stok yazilmadi, yalniz Shopify dusumu yapildi)")
