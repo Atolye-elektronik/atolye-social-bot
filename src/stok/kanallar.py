@@ -36,15 +36,53 @@ def _kanal_kodlari(hedef):
     return out
 
 
+SNAPSHOT = os.path.join(KOK, "state", "ty_katalog_snapshot.json")
+
+
+def ty_katalog_yenile():
+    """Trendyol katalogunu canli ceker ve snapshot'i tazeler.
+
+    13.09.2026: snapshot tek seferlik uretilmis ve bayatlamisti (119 kayit).
+    Sonradan acilan urunlerin barkodu icinde olmadigi icin stok guncellemesi
+    onlara HIC gitmiyordu - sessizce atlaniyorlardi. Artik her dagitimda
+    tazeleniyor; ag/kimlik hatasinda eski dosyaya dusuluyor.
+    """
+    import base64
+    import requests
+    sid = os.environ["TRENDYOL_SUPPLIER_ID"]
+    au = base64.b64encode(("%s:%s" % (os.environ["TRENDYOL_API_KEY"],
+                                      os.environ["TRENDYOL_API_SECRET"])).encode()).decode()
+    h = {"Authorization": "Basic " + au, "User-Agent": "%s - SelfIntegration" % sid}
+    tum, sayfa = [], 0
+    while True:
+        r = requests.get("https://apigw.trendyol.com/integration/product/sellers/%s/products" % sid,
+                         params={"page": sayfa, "size": 200, "approved": "true"}, headers=h, timeout=90)
+        r.raise_for_status()
+        j = r.json()
+        tum.extend(j.get("content") or [])
+        sayfa += 1
+        if sayfa >= int(j.get("totalPages") or 1):
+            break
+    kayit = [{"stockCode": x.get("stockCode"), "barcode": x.get("barcode"),
+              "quantity": x.get("quantity"), "title": x.get("title")} for x in tum if x.get("stockCode")]
+    json.dump(kayit, open(SNAPSHOT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    return kayit
+
+
 def _barkodlar():
     """kanal stok kodu -> {ty: TY barkodu, ean: 13 haneli}"""
     b = {}
     try:
-        for u in json.load(open(os.path.join(KOK, "state", "ty_katalog_snapshot.json"), encoding="utf-8")):
-            if u.get("stockCode"):
-                b.setdefault(u["stockCode"], {})["ty"] = u.get("barcode")
-    except FileNotFoundError:
-        pass
+        kayit = ty_katalog_yenile()
+    except Exception as e:
+        print("! TY katalogu tazelenemedi (%s), snapshot kullaniliyor" % str(e)[:90])
+        try:
+            kayit = json.load(open(SNAPSHOT, encoding="utf-8"))
+        except FileNotFoundError:
+            kayit = []
+    for u in kayit:
+        if u.get("stockCode"):
+            b.setdefault(u["stockCode"], {})["ty"] = u.get("barcode")
     for u in json.load(open(os.path.join(KOK, "content", "n11_urunler.json"), encoding="utf-8")):
         sk = u.get("tyStokKodu") or u["stokKodu"]
         b.setdefault(sk, {})["ean"] = str(u.get("barkod") or "")
@@ -75,12 +113,39 @@ def stok_bas_hepsiburada(hedef, kuru=True):
 
 
 # ---------------- N11: stockCode + quantity (max 1000) ----------------
+def _n11_kodlari():
+    """bizim stok kodu -> N11'deki GERCEK stockCode.
+
+    13.09.2026 BUG: N11'de kodlarin sonunda -N11 / -AE eki var. Duz kodu
+    gonderince N11 istegi 200 ile kabul ediyor ama HICBIR urunu guncellemiyordu;
+    118 urun aylardir eski stokla duruyordu. Artik gercek kodla gonderiliyor.
+    """
+    import n11_client as n11
+    d = n11.get("/ms/product-query", page=0, size=200).json().get("content") or []
+    out = {}
+    for x in d:
+        tam = str(x.get("stockCode") or "")
+        sade = tam
+        for ek in ("-N11", "-AE"):
+            if sade.endswith(ek):
+                sade = sade[: -len(ek)]
+        if sade:
+            out[sade] = tam
+    return out
+
+
 def stok_bas_n11(hedef, kuru=True):
     import n11_client as n11
-    items = [{"stockCode": k, "quantity": int(v)} for k, v in _kanal_kodlari(hedef).items()]
+    kod = _n11_kodlari()
+    istek = _kanal_kodlari(hedef)
+    items = [{"stockCode": kod[k], "quantity": int(v)} for k, v in istek.items() if k in kod]
     if kuru:
-        return "kuru: %d stok kodu" % len(items)
-    return n11.post("/ms/product/tasks/price-stock-update", {"payload": {"integrator": n11.ENTEGRATOR, "skus": items}})
+        return "kuru: %d stok kodu (%d kod N11'de yok)" % (len(items), len(istek) - len(items))
+    sonuc = []
+    for i in range(0, len(items), 100):
+        sonuc.append(n11.post("/ms/product/tasks/price-stock-update",
+                              {"payload": {"integrator": n11.ENTEGRATOR, "skus": items[i:i + 100]}}).status_code)
+    return "N11: %d urun, partiler %s" % (len(items), sonuc)
 
 
 # ---------------- Idefix: barcode + inventoryQuantity ----------------

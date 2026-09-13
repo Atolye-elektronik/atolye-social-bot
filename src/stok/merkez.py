@@ -21,6 +21,11 @@ sys.path.insert(0, os.path.join(KOK, "src"))
 from stok.recete import Recete  # noqa: E402
 
 KRITIK_ESIK = int(os.environ.get("STOK_KRITIK_ESIK", "2"))   # bu ve alti -> diger kanallarda 0
+# Pazaryerinde 500'den fazla stok gostermenin faydasi yok. DIKKAT: tavan yalniz
+# YAYINLANAN sayiya uygulanir; set hesabi GERCEK parca stoguyla yapilir. Tavani
+# parca stoguna uygulamak 13.09'da Arduino setlerini yanlis kisitlamisti
+# (24.425 direnc 500'e kirpilinca 20 dirençli set 25 adede dusuyordu).
+TAVAN = int(os.environ.get("STOK_TAVAN", "500"))
 DURUM = os.path.join(KOK, "state", "stok_dagitim.json")
 
 
@@ -66,8 +71,9 @@ def hedef_stoklar(recete, parca):
             hedef[s] = st
     havuzu_yansit(hedef)
     for k, v in list(hedef.items()):
-        if v is not None and v <= KRITIK_ESIK:
-            hedef[k] = 0
+        if v is None:
+            continue
+        hedef[k] = 0 if v <= KRITIK_ESIK else min(v, TAVAN)
     return hedef
 
 

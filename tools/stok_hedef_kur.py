@@ -15,7 +15,8 @@ for l in open(KOK + "/.env", encoding="utf-8"):
 from stok.recete import Recete  # noqa: E402
 from stok import shopify_admin as sa  # noqa: E402
 
-TAVAN = 500
+# TAVAN burada UYGULANMAZ. Shopify stok masteri; gercek sayiyi tutmali ki set
+# hesabi dogru olsun. Tavan yalniz kanallara basarken merkez.py'de uygulanir.
 ESIK = 2
 
 
@@ -32,7 +33,7 @@ def main():
     for k, v in ham.items():
         if k not in mevcut:
             urunsuz.append(k); continue
-        v = min(int(v), TAVAN)
+        v = int(v)
         hedef[k] = 0 if v <= ESIK else v
     json.dump(hedef, open(KOK + "/state/stok_hedef.json", "w", encoding="utf-8"),
               ensure_ascii=False, indent=1, sort_keys=True)
