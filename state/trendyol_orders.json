@@ -2,10 +2,10 @@
   {
     "shipmentAddress": {
       "id": 4151505418,
-      "firstName": "Recep ",
+      "firstName": "recep",
       "lastName": "ekici",
       "company": "",
-      "address1": "ipek sok no 29",
+      "address1": "recep tayip erdogan bulvari demir apartmani no 43 - 6ci kat\n11 numara",
       "address2": "",
       "city": "Rize",
       "cityCode": 53,
@@ -20,12 +20,12 @@
         "addressLine2": ""
       },
       "postalCode": "53000",
-      "countryCode": "tr",
-      "neighborhoodId": 67466,
-      "neighborhood": "Yağlıtaş Mah",
+      "countryCode": "TR",
+      "neighborhoodId": 67342,
+      "neighborhood": "İslampaşa Mah",
       "phone": null,
-      "fullAddress": "ipek sok no 29     Merkez Rize",
-      "fullName": "Recep  ekici"
+      "fullAddress": "recep tayip erdogan bulvari demir apartmani no 43 - 6ci kat\n11 numara     Merkez Rize",
+      "fullName": "recep ekici"
     },
     "orderNumber": "11597116066",
     "paymentMethod": "Kredi Kartı",
@@ -66,7 +66,7 @@
       "fullAddress": "deprem konutları 2. etap adıyaman gölbaşı     Gölbaşı Adıyaman",
       "fullName": "recep Ekici"
     },
-    "customerFirstName": "Recep ",
+    "customerFirstName": "recep",
     "customerEmail": "pf+b2l8eyvy@trendyolmail.com",
     "customerId": 66410163,
     "supplierId": 0,
@@ -156,7 +156,7 @@
     "agreedDeliveryDate": 1789419540000,
     "fastDelivery": true,
     "originShipmentDate": 1789252470027,
-    "lastModifiedDate": 1789261583517,
+    "lastModifiedDate": 1789284863479,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
