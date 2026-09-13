@@ -33,3 +33,4 @@
 {"an": "2026-09-06T02:57", "kanal": "hepsiburada", "no": "6a9c6d0d-a161-ccb2-c297-81ee06060606", "kod": "AEJK2040EE3", "adet": 1, "dusum": {"AEJK2040": 1, "AEJK2040DD": 1, "AEJK2040DE": 1}, "kuru": true}
 {"an": "2026-09-13T14:21", "kanal": "trendyol", "no": "11597116066", "kod": "AEUT12D", "adet": 1, "hata": "bilinmeyen kod", "kuru": false}
 {"an": "2026-09-13T14:21", "kanal": "hepsiburada", "no": "6aa67c0d-644f-96cd-7363-34df06060606", "kod": "AEACDMMR", "adet": 1, "dusum": {"AEACDMMR": 1}, "kuru": false}
+{"an": "2026-09-13T11:40", "kanal": "hepsiburada", "no": "6aa68ae6-2f52-a12c-8de7-c90106060606", "kod": "AEPY18650T", "adet": 2, "dusum": {"AEPY18650T": 2}, "kuru": false}
