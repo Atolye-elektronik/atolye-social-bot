@@ -39,6 +39,21 @@ def _kanal_kodlari(hedef):
 SNAPSHOT = os.path.join(KOK, "state", "ty_katalog_snapshot.json")
 
 
+def barkod_duzeltme():
+    """Trendyol'da stok kodu YANLIS urunu gosteren ilanlar: barkod -> gercek kod.
+
+    13.09.2026: TYBW805DFS3U8DIC36 barkodlu "2 Pin Siyah Anahtar Switch Mini
+    Buton" ilaninin merchantSku'su AEBZZR5V (buzzer) gorunuyor. Uc ayda 18 adet
+    switch satildi ve her seferinde BUZZER stogu dustu. merchantSku sonradan
+    degistirilemedigi icin duzeltmeyi barkod duzeyinde yapiyoruz.
+    """
+    try:
+        d = json.load(open(os.path.join(KOK, "content", "barkod_duzeltme.json"), encoding="utf-8"))
+    except FileNotFoundError:
+        return {}
+    return {k: v for k, v in d.items() if not k.startswith("_")}
+
+
 def ty_katalog_yenile():
     """Trendyol katalogunu canli ceker ve snapshot'i tazeler.
 
@@ -84,8 +99,9 @@ def _barkodlar():
     # 6 stok kodunun 2-3 AKTIF ilani var (mukerrer ilanlar); stok yalnizca bir
     # ilana gidiyor, digerleri aylardir eski sayida kaliyordu - kullanici
     # uygulamada AEVHM314'u 40 ve 30 olarak yan yana gordu. Artik TUM barkodlar.
+    duz = barkod_duzeltme()
     for u in kayit:
-        sk = u.get("stockCode")
+        sk = duz.get(u.get("barcode")) or u.get("stockCode")
         if not sk or not u.get("barcode"):
             continue
         d = b.setdefault(sk, {})

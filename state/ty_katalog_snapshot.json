@@ -44,7 +44,7 @@
  {
   "stockCode": "AEDUYAMP-1",
   "barcode": "2920000600056",
-  "quantity": 50,
+  "quantity": 90,
   "title": "Mini Duy - Vidalı Terminalli Renkli Lamba Duyu, E10 Ampul Uyumlu, Fen Deney (1 Adet)"
  },
  {
@@ -170,13 +170,13 @@
  {
   "stockCode": "AEPOT10K-6",
   "barcode": "2901880000624",
-  "quantity": 112,
+  "quantity": 29,
   "title": "10K Potansiyometre - 6'lı Paket - B10K Arduino Uyumlu"
  },
  {
   "stockCode": "AETEMELSET",
   "barcode": "2901970047133",
-  "quantity": 90,
+  "quantity": 87,
   "title": "Temel Devre Seti - Breadboard, Pil Kutusu, Motor, Pervane, Duy-Ampul, 2 Anahtar - Standart"
  },
  {
@@ -212,7 +212,7 @@
  {
   "stockCode": "AEBZZR5V-6",
   "barcode": "2901880000617",
-  "quantity": 138,
+  "quantity": 141,
   "title": "5V Aktif Buzzer - 6'lı Paket - Arduino Uyumlu Sesli Uyarı Elemanı"
  },
  {
@@ -416,7 +416,7 @@
  {
   "stockCode": "AEBZZR5V",
   "barcode": "TYBW805DFS3U8DIC36",
-  "quantity": 182,
+  "quantity": 175,
   "title": "2 Pin Siyah Anahtar Switch Mini Buton Kcd1 Plastik Açma Kapama On / Off"
  },
  {
@@ -428,7 +428,7 @@
  {
   "stockCode": "AEVHM314",
   "barcode": "TX10FD1792846",
-  "quantity": 40,
+  "quantity": 30,
   "title": "VHM-314 Micro USB Bluetooth Kablosuz Ses MP3 Modül Amfi Müzik Çalma Kartı DC 5V Lityum Pil"
  },
  {
@@ -458,13 +458,13 @@
  {
   "stockCode": "AEPOT10K",
   "barcode": "9999880000047",
-  "quantity": 500,
+  "quantity": 175,
   "title": "10k Potansiyometre"
  },
  {
   "stockCode": "AEBZZR5V",
   "barcode": "9999880000034",
-  "quantity": 170,
+  "quantity": 500,
   "title": "Buzzer"
  },
  {
@@ -494,25 +494,25 @@
  {
   "stockCode": "AEBB830P",
   "barcode": "TYB5D2SIVFVH6VK808",
-  "quantity": 29,
+  "quantity": 183,
   "title": "Ard-mb 102 Breadboard"
  },
  {
   "stockCode": "AEDT830D",
   "barcode": "1011880000561",
-  "quantity": 50,
+  "quantity": 191,
   "title": "DT830D Dijital Multimetre"
  },
  {
   "stockCode": "AEDT830D",
   "barcode": "CES8735241573",
-  "quantity": 45,
+  "quantity": 191,
   "title": "Dijital Avometre Multimetre Ölçü Aleti Akım Voltaj Direnç Ölçer"
  },
  {
   "stockCode": "AERC522RFID",
   "barcode": "TYBDRMWTF231NCAS78",
-  "quantity": 27,
+  "quantity": 36,
   "title": "Rc522 13,56mhz Rfıd Modülü -  Kart Ve Anahtarlık Kiti - Nfc Arduino Rfid Manyetik Kart Okuyucu"
  },
  {

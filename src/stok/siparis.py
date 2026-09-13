@@ -24,10 +24,27 @@ sys.path.insert(0, os.path.join(KOK, "src", "marketplaces"))
 GORULEN = os.path.join(KOK, "state", "siparis_gorulen.json")
 GUNLUK = os.path.join(KOK, "state", "siparis_gunlugu.jsonl")
 def _barkod_alias():
+    """barkod -> gercek stok kodu. Siparis satirindaki merchantSku'yu EZER.
+
+    Iki kaynak birlesir:
+      - shopify_sku.json "barkod_alias": TY'nin bazi urunlere yanlis stockCode
+        vermesi (orn. Mini Duy 2920000600056 -> AEDUYAMP-1)
+      - content/barkod_duzeltme.json: ILANIN stok kodu bambaska bir urunu
+        gosteriyor (13.09.2026: TYBW805DFS3U8DIC36 "2 Pin Siyah Anahtar Switch"
+        ilaninin kodu AEBZZR5V/buzzer cikiyordu; uc ayda 18 switch satildi,
+        her seferinde buzzer stogu dustu).
+    """
+    d = {}
     try:
-        return json.load(open(os.path.join(KOK, "content", "shopify_sku.json"), encoding="utf-8")).get("barkod_alias", {})
+        d.update(json.load(open(os.path.join(KOK, "content", "shopify_sku.json"), encoding="utf-8")).get("barkod_alias", {}))
     except FileNotFoundError:
-        return {}
+        pass
+    try:
+        ek = json.load(open(os.path.join(KOK, "content", "barkod_duzeltme.json"), encoding="utf-8"))
+        d.update({k: v for k, v in ek.items() if not k.startswith("_")})
+    except FileNotFoundError:
+        pass
+    return d
 
 
 BARKOD_ALIAS = _barkod_alias()
@@ -246,6 +263,12 @@ def gunluk(kayit):
 def barkod_haritasi():
     """barkod -> kanal stok kodu (kod gelmeyen kalemler icin)."""
     h = {}
+    # Stok kodu yanlis urunu gosteren ilanlar en yuksek oncelikli (13.09.2026)
+    try:
+        _d = json.load(open(os.path.join(KOK, "content", "barkod_duzeltme.json"), encoding="utf-8"))
+        h.update({k: v for k, v in _d.items() if not k.startswith("_")})
+    except FileNotFoundError:
+        pass
     try:
         for u in json.load(open(os.path.join(KOK, "content", "n11_urunler.json"), encoding="utf-8")):
             if u.get("barkod"):
