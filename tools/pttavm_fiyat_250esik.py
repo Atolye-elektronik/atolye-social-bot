@@ -19,8 +19,17 @@ D = os.path.dirname(os.path.abspath(__file__))
 ESIK = 250.0
 # PttAVM desi tarifesi, KDV DAHIL (13.09 kullanici dogrulamasi: sepet desisi
 # olculen koli desisi, bildirilen desilerin toplami DEGIL)
+# 13.09.2026 resmi PDF'ten (pttavm-Kargo-Sozlesmesi.pdf, "Guncellenen Yeni
+# Kargo Fiyatlari", KDV DAHIL). 0 = 0-500 gr, 1 = 501-1000 gr, sonrasi kg/desi.
+# DIKKAT: tarife monoton DEGIL - 14,01-15 desi (153,75) 13,01-14'ten (165,00) UCUZ.
 TARIFE = {0: 77.50, 1: 78.75, 2: 81.25, 3: 82.50, 4: 85.00, 5: 86.25,
-          6: 90.00, 7: 103.75, 8: 125.00, 9: 131.00, 10: 138.75}
+          6: 90.00, 7: 103.75, 8: 125.00, 9: 131.25, 10: 138.75,
+          11: 143.75, 12: 153.75, 13: 158.75, 14: 165.00, 15: 153.75,
+          16: 156.25, 17: 157.50, 18: 168.75, 19: 168.75, 20: 168.75,
+          21: 169.90, 22: 169.90, 23: 169.90, 24: 169.90, 25: 169.90,
+          26: 194.90, 27: 194.90, 28: 194.90, 29: 194.90, 30: 194.90,
+          31: 199.90, 32: 209.90, 33: 207.90, 34: 219.90, 35: 229.90,
+          36: 239.90, 37: 287.50, 38: 291.25, 39: 301.25, 40: 303.75}
 KOM = 0.15   # tam_liste'de kullanilan kategori orani (panel %3 gosteriyor ama dogrulanmadi)
 
 
