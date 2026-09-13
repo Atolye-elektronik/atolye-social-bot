@@ -85,7 +85,21 @@ def ean13(gov12):
     return gov12 + str((10 - s % 10) % 10)
 
 
+def _donmus_barkodlar():
+    """PttAVM'de HALIHAZIRDA kayitli barkodlar (state/pttavm_barkod.json).
+
+    Bu urunlerin gercek EAN'i yok; barkodlari ilk yuklemede uretilmis. Onemli
+    olan hangi deger oldugu degil, DEGISMEMESI. Yeni urun eklenince bu dosyayi
+    panelden guncelle.
+    """
+    try:
+        return json.load(open(os.path.join(KOK, "state", "pttavm_barkod.json"), encoding="utf-8"))
+    except FileNotFoundError:
+        return {}
+
+
 def main():
+    DONMUS = _donmus_barkodlar()
     n11 = {(u.get("tyStokKodu") or u["stokKodu"]): u for u in json.load(
         open(os.path.join(KOK, "content", "n11_urunler.json"), encoding="utf-8"))}
     kat = {u.get("stockCode"): u for u in katalog()}
@@ -118,9 +132,13 @@ def main():
         kat_id, kom = KAT[anah]
         desi = float((n11.get(sk) or {}).get("desi") or 1)
         p = fiyat(p_ty, kom, desi)
-        bar = str((n11.get(sk) or {}).get("barkod") or "")
+        # 13.09.2026 TUZAK: n11_urunler.json'da olmayan SKU'larda burasi HER
+        # CALISMADA YENI bir barkod uyduruyordu ve yukleme PttAVM'deki barkodu
+        # degistiriyordu (11 urunde oldu). Once PttAVM'de KAYITLI barkoda bak.
+        bar = str(DONMUS.get(sk) or (n11.get(sk) or {}).get("barkod") or "")
         if not re.fullmatch(r"\d{13}", bar):
             bar = ean13("29" + str(90000 + i).zfill(10))
+            print("  ! %s barkodu uyduruldu (%s) - state/pttavm_barkod.json'a ekle" % (sk, bar))
         gor = [im["url"] for im in u.get("images", [])][:12]
         gor += [None] * (12 - len(gor))
         acik = _duz_metin(u.get("description") or "") or u["title"]
