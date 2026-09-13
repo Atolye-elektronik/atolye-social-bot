@@ -40,8 +40,7 @@
   "AEBCTRANS": "AEGUCELEMAN",
   "AEJK2040DE": "AEJK2040",
   "AEJK2040DD": "AEJK2040",
-  "AEJK2040EE": "AEJK2040",
-  "AETYYNKSK1": "AEMYNK"
+  "AEJK2040EE": "AEJK2040"
  },
  "sku": {
   "AETCS18P": {
@@ -1072,5 +1071,10 @@
  },
  "sifirla": [
   "AEUT12D"
+ ],
+ "pasif": [
+  "AEESP32TC38",
+  "AETYYNKSK1",
+  "AEESP32TC38-2"
  ]
 }

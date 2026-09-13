@@ -76,6 +76,10 @@ def hedef_stoklar(recete, parca):
     S = json.load(open(os.path.join(KOK, "content", "shopify_sku.json"), encoding="utf-8"))
     for k in S.get("sifirla", []):
         hedef[k] = 0
+    # Arsivlenmis / satisa kapali ilanlar: stok gonderimi "Satisa kapatilan
+    # urunlerin fiyat stogu guncellenemez" hatasi veriyor (13.09). Listeden cikar.
+    for k in S.get("pasif", []):
+        hedef.pop(k, None)
     for k, v in list(hedef.items()):
         if v is None:
             continue
