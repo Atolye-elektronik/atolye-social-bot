@@ -116,9 +116,31 @@ def idefix():
     return out
 
 
+def pazarama():
+    """Pazarama: ilan bazinda (bir stok kodunun 2 ilani olabiliyor)."""
+    import pazarama_client as pc
+    from stok import kanallar as K
+    bk = K._pazarama_barkodlari()
+    ters = {c: k for k, v in bk.items() for c in v}
+    out = []
+    for p in range(4):
+        r = pc.get("/product/products/approved", Size=100, Page=p)
+        d = r.json().get("data")
+        l = (d or {}).get("sellerProducts") if isinstance(d, dict) else d
+        if not l:
+            break
+        for x in l:
+            k = ters.get(x.get("code"))
+            if k:
+                out.append((k, x.get("code"), x.get("stockCount")))
+        if len(l) < 100:
+            break
+    return out
+
+
 if __name__ == "__main__":
     for ad, fn in (("SHOPIFY", shopify), ("TRENDYOL", trendyol), ("N11", n11),
-                   ("HEPSIBURADA", hepsiburada), ("IDEFIX", idefix)):
+                   ("HEPSIBURADA", hepsiburada), ("PAZARAMA", pazarama), ("IDEFIX", idefix)):
         try:
             rapor(ad, fn())
         except Exception as e:
