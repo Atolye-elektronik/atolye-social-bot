@@ -2,132 +2,6 @@
   "newOrderItems": [],
   "packages": [
     {
-      "id": "6aa54b79-d159-4a7e-ab5a-0a3006060606",
-      "status": "Open",
-      "customerId": "ea60601f-54ec-4636-a034-3aea8468c5a8",
-      "orderDate": "2026-09-12T15:54:16",
-      "dueDate": "2026-09-14T18:30:00",
-      "barcode": "62955163597233",
-      "packageNumber": "5516359723",
-      "cargoCompany": "Sürat Kargo",
-      "shippingAddressDetail": "Darüşşafaka Mahallesi. Çağdaş Sokak. Karikatüristler Sitesi B Blok. Daire 9 İSTİNYE SARIYER İstanbul",
-      "recipientName": "doruk çapanik",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "İSTİNYE",
-      "shippingTown": "SARIYER",
-      "shippingCity": "İstanbul",
-      "email": "4707681312_5516359723@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "GALİP DORUK ÇAPANIK ",
-      "billingAddress": "DARÜŞŞAFAKA MAH. ÇAĞDAŞ SK. KARIKATÜRISTLER B\nBLOK NO: 20 İÇ KAPI NO: 9 SARIYER/ İSTANBUL DARÜŞŞAFAKA SARIYER İstanbul",
-      "billingCity": "İstanbul",
-      "billingTown": "SARIYER",
-      "billingDistrict": "DARÜŞŞAFAKA",
-      "billingPostalCode": "34457",
-      "billingCountryCode": "TR",
-      "taxOffice": "SARIYER",
-      "taxNumber": "2300065226",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 117
-      },
-      "items": [
-        {
-          "lineItemId": "6aa54b78-b914-eb20-c05f-8dfe06060606",
-          "listingId": "b192e250-5772-46ac-8c4c-515499321179",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00003Z3XH1",
-          "merchantSku": "AEVHM314",
-          "quantity": 1,
-          "price": {
-            "currency": "TRY",
-            "amount": 117
-          },
-          "vat": 19.5,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 117
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 10.53
-          },
-          "commissionRate": 9,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 117
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 117
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Robo Dünya VHM-314 Bluetooth Amfi Kablosuz Ses Alıcı Modülü Siyah 1 Adet Yüksek Ses Kalitesi",
-          "orderNumber": "4707681312",
-          "orderDate": "2026-09-12T15:54:16",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "HBCC138FA6846",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869040.jpg",
-          "deci": 1.1
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "GALİP DORUK ÇAPANIK",
-      "estimatedArrivalDate": "2026-09-17T15:30:00Z",
-      "totalDeci": 1.1
-    },
-    {
       "id": "6aa58592-ef3a-4296-4b84-676e06060606",
       "status": "Open",
       "customerId": "f00317f3-4785-4b0b-9e5c-35340c1e4d27",
@@ -135,7 +9,7 @@
       "dueDate": "2026-09-14T18:30:00",
       "barcode": "62955164200936",
       "packageNumber": "5516420093",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "1165. Sk. Erhan Fındık No:2 KARAPINAR OSB ALTINORDU Ordu",
       "recipientName": "Selim Odabaş",
       "shippingCountryCode": "TR",
@@ -261,7 +135,7 @@
       "dueDate": "2026-09-14T18:30:00",
       "barcode": "62955164771887",
       "packageNumber": "5516477188",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "ahmet turan gazi mahallesi 73-27. sokak suzi irfan oğlu apartmanı b blokno1 kat 5 daire 17 AHMET TURANGAZİ MERKEZ Sivas",
       "recipientName": "Ahmet eren erbaş",
       "shippingCountryCode": "TR",
@@ -387,7 +261,7 @@
       "dueDate": "2026-09-14T18:30:00",
       "barcode": "62955164846880",
       "packageNumber": "5516484688",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Cumhuriyet MahallesiÇimen Sokak    Kanarya Apt. No 1/6 CUMHURİYET MERKEZ Elazığ",
       "recipientName": "Salih Eren Çavuşoğlu",
       "shippingCountryCode": "TR",
@@ -513,7 +387,7 @@
       "dueDate": "2026-09-14T18:30:00",
       "barcode": "62955165875311",
       "packageNumber": "5516587531",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "MEHMETÇİK CAD. MERVE APT. NO:5 D:3 BARIŞ BEYLİKDÜZÜ İstanbul",
       "recipientName": "ŞENOL DİLSİZ",
       "shippingCountryCode": "TR",
@@ -639,7 +513,7 @@
       "dueDate": "2026-09-14T18:30:00",
       "barcode": "62955166079923",
       "packageNumber": "5516607992",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Reşitpaşa Posta yolu CAD muhtarlar sok no 9 k 2 Sarıyer  REŞİTPAŞA SARIYER İstanbul",
       "recipientName": "Mehmet Polat",
       "shippingCountryCode": "TR",
@@ -756,6 +630,384 @@
       "customerName": "mehmet polat",
       "estimatedArrivalDate": "2026-09-17T15:30:00Z",
       "totalDeci": 2.2
+    },
+    {
+      "id": "6aa69841-0642-0f53-4942-d41f06060606",
+      "status": "Open",
+      "customerId": "4ef5ae8f-311a-40cc-95f4-c65fd7b8a5f3",
+      "orderDate": "2026-09-13T15:34:08",
+      "dueDate": "2026-09-14T18:30:00",
+      "barcode": "62955166257345",
+      "packageNumber": "5516625734",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "12292. Sokak No:22 Daire no: 2 AKKAPI SEYHAN Adana",
+      "recipientName": "Serdar Çetin",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "AKKAPI",
+      "shippingTown": "SEYHAN",
+      "shippingCity": "Adana",
+      "email": "4633715447_5516625734@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Serdar Çetin",
+      "billingAddress": "12292. Sokak No:22 Daire no: 2 AKKAPI SEYHAN Adana",
+      "billingCity": "Adana",
+      "billingTown": "SEYHAN",
+      "billingDistrict": "AKKAPI",
+      "billingPostalCode": "01040",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 117
+      },
+      "items": [
+        {
+          "lineItemId": "6aa69841-3050-51fd-ef54-120006060606",
+          "listingId": "b192e250-5772-46ac-8c4c-515499321179",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3XH1",
+          "merchantSku": "AEVHM314",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "vat": 19.5,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 10.53
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya VHM-314 Bluetooth Amfi Kablosuz Ses Alıcı Modülü Siyah 1 Adet Yüksek Ses Kalitesi",
+          "orderNumber": "4633715447",
+          "orderDate": "2026-09-13T15:34:08",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6846",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869040.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Serdar Çetin",
+      "estimatedArrivalDate": "2026-09-17T15:30:00Z",
+      "totalDeci": 1.1
+    },
+    {
+      "id": "6aa69ef4-cd19-50dd-9b4f-93eb06060606",
+      "status": "Open",
+      "customerId": "b2715bc7-6c2d-48ef-a35c-511c5514966a",
+      "orderDate": "2026-09-13T16:02:43",
+      "dueDate": "2026-09-14T18:30:00",
+      "barcode": "62955166335388",
+      "packageNumber": "5516633538",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Merkez mahallesi 2605 sokak no:24 Güngör oto tamirhanesi Emiralem menemen izmir EMİRALEM MERKEZ MENEMEN İzmir",
+      "recipientName": "Gürkan Göz",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "EMİRALEM MERKEZ",
+      "shippingTown": "MENEMEN",
+      "shippingCity": "İzmir",
+      "email": "4982483996_5516633538@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Gürkan Göz",
+      "billingAddress": "Kasımpaşa Mahallesi Altuğ Karaburun Caddesi No:2 Menemen/İzmir KASIMPAŞA MENEMEN İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "MENEMEN",
+      "billingDistrict": "KASIMPAŞA",
+      "billingPostalCode": "",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 117
+      },
+      "items": [
+        {
+          "lineItemId": "6aa69ef3-d17d-3253-2346-9c4806060606",
+          "listingId": "b192e250-5772-46ac-8c4c-515499321179",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3XH1",
+          "merchantSku": "AEVHM314",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "vat": 19.5,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 10.53
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 117
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya VHM-314 Bluetooth Amfi Kablosuz Ses Alıcı Modülü Siyah 1 Adet Yüksek Ses Kalitesi",
+          "orderNumber": "4982483996",
+          "orderDate": "2026-09-13T16:02:43",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6846",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869040.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Gürkan Göz",
+      "estimatedArrivalDate": "2026-09-17T15:30:00Z",
+      "totalDeci": 1.1
+    },
+    {
+      "id": "6aa6afd7-9933-6986-29f1-6b5106060606",
+      "status": "Open",
+      "customerId": "79cd4167-b4cd-4727-b6d9-c4c488f9b1a4",
+      "orderDate": "2026-09-13T17:14:45",
+      "dueDate": "2026-09-14T18:30:00",
+      "barcode": "62955166556981",
+      "packageNumber": "5516655698",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "T.Özal Bulv. Mahfesığmaz Mah. 79091 Sok. Ata Sitesi B Blk. Kat:9 D.No:17 MAHFESIĞMAZ ÇUKUROVA Adana",
+      "recipientName": "Harun Reşat İzler",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MAHFESIĞMAZ",
+      "shippingTown": "ÇUKUROVA",
+      "shippingCity": "Adana",
+      "email": "4507430863_5516655698@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Harun Reşat İzler",
+      "billingAddress": "Evim\nT.Özal Bulv. Mahfesığmaz Mah. 79091 Sok. Ata Sitesi B Blk. Kat:9 D.No:17 MAHFESIĞMAZ ÇUKUROVA Adana",
+      "billingCity": "Adana",
+      "billingTown": "ÇUKUROVA",
+      "billingDistrict": "MAHFESIĞMAZ",
+      "billingPostalCode": "01170",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 114
+      },
+      "items": [
+        {
+          "lineItemId": "6aa6afd6-9f54-7f96-3ceb-be4906060606",
+          "listingId": "fd59b995-e684-4370-838e-7aa26dedd56b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000FOY2RK",
+          "merchantSku": "AEDC125B",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "vat": 19,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 10.26
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 6 Adet - 2 Pin Siyah Anahtar Switch Mini Buton Kcd1 Plastik Açma Kapama On / Off",
+          "orderNumber": "4507430863",
+          "orderDate": "2026-09-13T17:14:45",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELDC125B001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001832081235.jpg",
+          "deci": 0.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Harun Reşat İzler",
+      "estimatedArrivalDate": "2026-09-17T15:30:00Z",
+      "totalDeci": 0.1
     }
   ]
 }
