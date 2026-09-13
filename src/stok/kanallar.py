@@ -205,13 +205,24 @@ def stok_bas_pttavm(hedef, kuru=True):
 
 # ---------------- Pazarama: POST /product/updateStock-v2 {items:[{code: BARKOD, stockCount}]} ----------------
 def _pazarama_barkodlari():
-    """stokKodu -> Pazarama barkodu (code). state/pazarama_katalog.json'dan; yoksa API'den ceker."""
+    """stokKodu -> [Pazarama code, ...]. state/pazarama_katalog.json'dan; yoksa API'den ceker.
+
+    13.09.2026 DUZELTME: eskiden stok kodu basina TEK code tutuluyordu. Pazarama'da
+    3 stok kodunun 2 ilani var (AEBZZR5V, AERC522RFID, AEVHM314); ikincilere stok
+    hic gitmiyordu. AEBZZR5V'nin ikinci ilani ("2 Pin Siyah Anahtar Switch") bu
+    yuzden 0 stokla satisa kapanmis, duzenleme ekrani bile devre disi kalmisti.
+    Ayrica content/barkod_duzeltme.json burada da uygulanir: o ilan aslinda
+    switch, stogu AEDC125B'den gelmeli.
+    """
     from marketplaces import pazarama_client as pc
     yol = os.path.join(KOK, "state", "pazarama_katalog.json")
     try:
-        return json.load(open(yol, encoding="utf-8"))
+        d = json.load(open(yol, encoding="utf-8"))
+        if d and all(isinstance(v, list) for v in d.values()):
+            return d
     except FileNotFoundError:
         pass
+    duz = barkod_duzeltme()
     g = {}
     for y in ("/product/products/approved", "/product/products/unapproved"):
         for p in range(8):
@@ -220,8 +231,12 @@ def _pazarama_barkodlari():
             l = l or []
             yeni = 0
             for x in l:
-                if x["stockCode"] not in g:
-                    g[x["stockCode"]] = x["code"]; yeni += 1
+                if not x.get("stockCode") or not x.get("code"):
+                    continue
+                sk = duz.get(x["code"]) or x["stockCode"]
+                liste = g.setdefault(sk, [])
+                if x["code"] not in liste:
+                    liste.append(x["code"]); yeni += 1
             if yeni == 0 or len(l) < 100:
                 break
     json.dump(g, open(yol, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
@@ -231,7 +246,9 @@ def _pazarama_barkodlari():
 def stok_bas_pazarama(hedef, kuru=True):
     from marketplaces import pazarama_client as pc
     bk = _pazarama_barkodlari()
-    items = [{"code": bk[k], "stockCount": int(v)} for k, v in _kanal_kodlari(hedef).items() if k in bk]
+    items = [{"code": c, "stockCount": int(v)}
+             for k, v in _kanal_kodlari(hedef).items() if k in bk
+             for c in bk[k]]
     if kuru:
         return "kuru: %d barkod" % len(items)
     r = pc.post("/product/updateStock-v2", {"items": items})
