@@ -30,7 +30,19 @@
   "AEDHT11-BB": "AEDHT11",
   "AEJK2040-BB": "AEJK2040",
   "AE28BYJ48-BB": "AE28BYJ48",
-  "AEHC06BT-BB": "AEHC06BT"
+  "AEHC06BT-BB": "AEHC06BT",
+  "AEDIRENC": "AEDIR330",
+  "AEDIRENC-END": "AEDIR330",
+  "AEDIR10K": "AEDIR330",
+  "AELED": "AELED5K",
+  "AELED5M": "AELED5K",
+  "AELED5Y": "AELED5K",
+  "AEBTN6PIN": "AEBTN6X6",
+  "AEMONOPOT": "AEPOT10K",
+  "AEBCTRANS": "AEGUCELEMAN",
+  "AEJK2040DE": "AEJK2040",
+  "AEJK2040DD": "AEJK2040",
+  "AEJK2040EE": "AEJK2040"
  },
  "sku": {
   "AETCS18P": {
@@ -43,7 +55,7 @@
   "AEARBSES": {
    "variant": 48371751485669,
    "item": 50476629655781,
-   "qty": 30,
+   "qty": 40,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -78,21 +90,21 @@
   "AEJK2040": {
    "variant": 48773514068197,
    "item": 50879705612517,
-   "qty": 210,
+   "qty": 310,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEJK2040DD": {
    "variant": 48773514100965,
    "item": 50879705645285,
-   "qty": 70,
+   "qty": 310,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEJK2040DE": {
    "variant": 48773514133733,
    "item": 50879705678053,
-   "qty": 100,
+   "qty": 310,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -162,7 +174,7 @@
   "AEPLSTKKT": {
    "variant": 48913127276773,
    "item": 51019951767781,
-   "qty": 30,
+   "qty": 179,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -274,7 +286,7 @@
   "AEARISES": {
    "variant": 49003602772197,
    "item": 51110844629221,
-   "qty": 30,
+   "qty": 31,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -295,7 +307,7 @@
   "AEAROSES": {
    "variant": 49003627020517,
    "item": 51110868877541,
-   "qty": 30,
+   "qty": 33,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -358,14 +370,14 @@
   "AEJK2040222": {
    "variant": 49247046533349,
    "item": 51355210055909,
-   "qty": 35,
+   "qty": 51,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AEJK2040EEDE33": {
    "variant": 49247109185765,
    "item": 51355272708325,
-   "qty": 33,
+   "qty": 51,
    "status": "ARCHIVED",
    "tracked": true
   },
@@ -428,7 +440,7 @@
   "AEJK2040EE3": {
    "variant": 49248843890917,
    "item": 51357007413477,
-   "qty": 70,
+   "qty": 103,
    "status": "ARCHIVED",
    "tracked": true
   },
@@ -575,7 +587,7 @@
   "AEPROTOTIPKIT": {
    "variant": 50755670671589,
    "item": 52866913861861,
-   "qty": 30,
+   "qty": 175,
    "status": "ARCHIVED",
    "tracked": true
   },
@@ -1016,7 +1028,7 @@
   "AEPOT10K": {
    "variant": 52775837925605,
    "item": 54888991424741,
-   "qty": 175,
+   "qty": 500,
    "status": "DRAFT",
    "tracked": true
   },
@@ -1038,5 +1050,31 @@
  "barkod_alias": {
   "2920000600056": "AEDUY-1",
   "2920000600063": "AEAMP-1"
+ },
+ "havuz": {
+  "AEDIR330": [
+   "AEDIRENC",
+   "AEDIRENC-END",
+   "AEDIR10K"
+  ],
+  "AELED5K": [
+   "AELED",
+   "AELED5M",
+   "AELED5Y"
+  ],
+  "AEBTN6X6": [
+   "AEBTN6PIN"
+  ],
+  "AEPOT10K": [
+   "AEMONOPOT"
+  ],
+  "AEGUCELEMAN": [
+   "AEBCTRANS"
+  ],
+  "AEJK2040": [
+   "AEJK2040DE",
+   "AEJK2040DD",
+   "AEJK2040EE"
+  ]
  }
 }

@@ -62,13 +62,19 @@ class Recete:
         return sorted(s for s in self.setler if parca in self.parcalar(s))
 
     def set_stogu(self, kod, parca_stok):
-        """parca_stok: {parca_kodu: adet}. Bilinmeyen parca -> None (hesaplanamaz)."""
+        """parca_stok: {parca_kodu: adet}. Bilinmeyen parca -> None (hesaplanamaz).
+
+        Ihtiyac once YAPRAK parca duzeyinde toplanir. Satir satir min almak
+        yanlis sonuc veriyordu: havuz alias'indan sonra "1 E-E + 1 E-D + 1 D-D"
+        gibi receteler ayni parcaya cikiyor, satir bazinda min alinca 3 jumper
+        gerektigi halde stok 3'e bolunmuyordu (13.09.2026).
+        """
         kod = self.kanonik(kod)
         if kod not in self.setler:
             return parca_stok.get(kod)
         vals = []
-        for p, n in self.setler[kod]:
-            st = self.set_stogu(p, parca_stok)
+        for p, n in self.parcalar(kod).items():
+            st = parca_stok.get(p)
             if st is None:
                 return None
             vals.append(st // n)

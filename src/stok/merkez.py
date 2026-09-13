@@ -35,6 +35,26 @@ def parca_stoklari():
         return {k: v["qty"] for k, v in S["sku"].items()}
 
 
+def havuzlar():
+    """{kanonik: [uye...]} — degeri/rengi farkli ama ayni malzeme olan kodlar.
+
+    Kullanici karari 13.09.2026: 330 ohm ile 10k direnc, kirmizi ile sari LED
+    bizim icin tek malzeme. Satis hangisinden gelirse gelsin ayni havuzdan
+    duser (alias sayesinde), havuzdaki her uye ayni sayiyi gosterir.
+    """
+    S = json.load(open(os.path.join(KOK, "content", "shopify_sku.json"), encoding="utf-8"))
+    return S.get("havuz", {})
+
+
+def havuzu_yansit(hedef):
+    """Kanonik degeri havuzun tum uyelerine kopyalar."""
+    for kanonik, uyeler in havuzlar().items():
+        if kanonik in hedef:
+            for u in uyeler:
+                hedef[u] = hedef[kanonik]
+    return hedef
+
+
 def hedef_stoklar(recete, parca):
     """Kanallara basilacak stok: parcalar + hesaplanan setler; kritik esik altinda 0."""
     hedef = {}
@@ -44,6 +64,7 @@ def hedef_stoklar(recete, parca):
         st = recete.set_stogu(s, parca)
         if st is not None:
             hedef[s] = st
+    havuzu_yansit(hedef)
     for k, v in list(hedef.items()):
         if v is not None and v <= KRITIK_ESIK:
             hedef[k] = 0
@@ -77,6 +98,17 @@ def main():
     recete = Recete()
     parca = parca_stoklari()
     hedef = hedef_stoklar(recete, parca)
+    # Satis kanonikten dusuyor (alias); Shopify'daki uye urunler geride kalmasin.
+    if "--dagit" in sys.argv:
+        try:
+            from stok import shopify_admin
+            uye = {u: hedef[u] for uy in havuzlar().values() for u in uy if u in hedef}
+            fark = {k: v for k, v in uye.items() if parca.get(k) != v}
+            if fark:
+                shopify_admin.stok_yaz(fark, sebep="correction")
+                print("havuz yansimasi: %d uye Shopify'da esitlendi" % len(fark))
+        except Exception as e:
+            print("! havuz yansimasi yazilamadi:", str(e)[:120])
     setler = {s: hedef.get(s) for s in recete.setler}
     print("parca: %d | set: %d | kritik esik: %d" % (len(parca), len(setler), KRITIK_ESIK))
     bilinmeyen = [s for s, v in setler.items() if v is None]

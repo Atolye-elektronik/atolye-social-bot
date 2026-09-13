@@ -11,17 +11,27 @@ SB = "C:/Users/serdar/AppData/Local/Temp/claude/C--Users-serdar-Desktop-atolyeso
 sys.path.insert(0, KOK + "/src")
 from stok.recete import Recete  # noqa: E402
 
-# stok_hesap'ta GRUP ile birlestirilen kodlar. Fatura satirlari renk/deger ayirmadigi
-# icin toplam stok alt kodlara ESIT BOLUNUR (ayni fiziksel yigin, ucu birden sayilmasin).
-GRUP_ACK = {
-    "AELED":    ["AELED5K", "AELED5M", "AELED5Y"],
-    "AEDIRENC": ["AEDIR330", "AEDIR10K"],
-    "AEJK2040": ["AEJK2040DE", "AEJK2040DD", "AEJK2040EE"],
+# AILE: degeri/rengi farkli ama BIZIM ICIN AYNI malzeme olan kodlar tek havuzda
+# toplanir (kullanici karari 13.09.2026). Faturalar deger kirilimi vermiyor;
+# 330 ohm ile 10k direnci ayri ayri saymanin anlami yok. Havuzdaki her uye ayni
+# stok sayisini gosterir ve hangisi satilirsa havuzdan duser.
+#   kanonik (Shopify'da urunu OLAN kod) -> ayni havuza giren diger kodlar
+AILE = {
+    "AEDIR330":    ["AEDIRENC", "AEDIRENC-END", "AEDIR10K"],   # tum karbon direncler
+    "AELED5K":     ["AELED", "AELED5M", "AELED5Y"],            # 5mm LED, tum renkler
+    "AEBTN6X6":    ["AEBTN6PIN"],                              # butonlar
+    "AEPOT10K":    ["AEMONOPOT"],                              # potansiyometreler
+    "AEGUCELEMAN": ["AEBCTRANS"],                              # transistor + guc elemani
+    "AEJK2040":    ["AEJK2040DE", "AEJK2040DD", "AEJK2040EE"], # jumper, tum tipler
 }
+UYE = {u: k for k, v in AILE.items() for u in v}
+
 TUKENDI = {"AEUT12D"}
 # Faturasi olmayan/eksik kalemler icin ELLE verilen stok. Hesap bunlari negatif
 # gosteriyor ve tek basina 5 seti sifira dusuruyor -> acik varsayimla ezildi.
-ELLE = {"AEPLSTKKT": 30}   # renkli malzeme kutusu: alim faturasi YOK, 18 tuketilmis
+# Alim defterine giremeyen kalemler icin kacamak. Su an bos: kutunun 200 adedi
+# 13.09'da alim defterine "faturasiz (kullanici beyani)" basligiyla islendi.
+ELLE_ALIM = {}
 
 
 def main():
@@ -32,18 +42,19 @@ def main():
         k = x.get("kalan")
         if k is None:
             continue
-        alts = GRUP_ACK.get(kod, [])
-        if alts:
-            pay = max(0, int(k)) // len(alts)
-            parca[r.kanonik(kod)] = max(0, int(k))      # grup kodunun kendisi (recete icin)
-            for alt in alts:
-                parca[r.kanonik(alt)] = pay              # alt kodlar: esit bolunmus
-        else:
-            parca[r.kanonik(kod)] = max(0, int(k))
+        sku = r.kanonik(UYE.get(kod, kod))
+        parca[sku] = parca.get(sku, 0) + max(0, int(k))   # ayni aileyse havuza eklenir
     for k in TUKENDI:
         parca[r.kanonik(k)] = 0
-    for k, v in ELLE.items():
-        parca[r.kanonik(k)] = v
+    for k, v in ELLE_ALIM.items():
+        sku = r.kanonik(k)
+        d = D.get(k) or {}
+        tuketim = int(d.get("satis") or 0)
+        parca[sku] = max(0, v - tuketim)
+    # havuz uyelerinin hepsi ayni sayiyi gosterir (kanal ve Shopify icin)
+    for kanonik, uyeler in AILE.items():
+        for u in uyeler:
+            parca[u] = parca.get(kanonik, 0)
 
     # recetelerin ihtiyac duydugu tum yaprak parcalar
     gerekli = set()
