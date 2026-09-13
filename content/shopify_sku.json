@@ -36,70 +36,70 @@
   "AETCS18P": {
    "variant": 48357287231717,
    "item": 50462117101797,
-   "qty": 50,
+   "qty": 64,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEARBSES": {
    "variant": 48371751485669,
    "item": 50476629655781,
-   "qty": 19,
+   "qty": 30,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEUNOR3": {
    "variant": 48378119225573,
    "item": 50483049070821,
-   "qty": 20,
+   "qty": 84,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEEAS3P": {
    "variant": 48378861420773,
    "item": 50483794870501,
-   "qty": 25,
+   "qty": 92,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEZD30C40W": {
    "variant": 48378865320165,
    "item": 50483798769893,
-   "qty": 20,
+   "qty": 191,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEDT830D": {
    "variant": 48658454741221,
    "item": 50764351668453,
-   "qty": 100,
+   "qty": 191,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEJK2040": {
    "variant": 48773514068197,
    "item": 50879705612517,
-   "qty": 50,
+   "qty": 210,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEJK2040DD": {
    "variant": 48773514100965,
    "item": 50879705645285,
-   "qty": 50,
+   "qty": 70,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEJK2040DE": {
    "variant": 48773514133733,
    "item": 50879705678053,
-   "qty": 50,
+   "qty": 100,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEHVYSHP": {
    "variant": 48713784066277,
    "item": 50819732504805,
-   "qty": 20,
+   "qty": 200,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -113,609 +113,609 @@
   "AE6X13PLK": {
    "variant": 48912719020261,
    "item": 51019543511269,
-   "qty": 25,
+   "qty": 175,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE12V1A": {
    "variant": 48912777478373,
    "item": 51019601969381,
-   "qty": 28,
+   "qty": 38,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEIRKMND": {
    "variant": 48912841736421,
    "item": 51019666227429,
-   "qty": 10,
+   "qty": 33,
    "status": "ACTIVE",
    "tracked": true
   },
   "AETKRM5V": {
    "variant": 48912947970277,
    "item": 51019772461285,
-   "qty": 20,
+   "qty": 45,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEDHT11": {
    "variant": 48913020256485,
    "item": 51019844714725,
-   "qty": 20,
+   "qty": 37,
    "status": "ACTIVE",
    "tracked": true
   },
   "AESG90": {
    "variant": 48913042800869,
    "item": 51019867291877,
-   "qty": 20,
+   "qty": 107,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEBB830P": {
    "variant": 48913086709989,
    "item": 51019911200997,
-   "qty": 17,
+   "qty": 183,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEPLSTKKT": {
    "variant": 48913127276773,
    "item": 51019951767781,
-   "qty": 20,
+   "qty": 30,
    "status": "ACTIVE",
    "tracked": true
   },
   "AELHMPMP": {
    "variant": 48913142284517,
    "item": 51019966775525,
-   "qty": 50,
+   "qty": 186,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEL298NMTRT": {
    "variant": 48995570680037,
    "item": 51102764105957,
-   "qty": 5,
+   "qty": 49,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE3-6VMTR4": {
    "variant": 48995584671973,
    "item": 51102778097893,
-   "qty": 14,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEKB1602": {
    "variant": 48995592470757,
    "item": 51102785896677,
-   "qty": 50,
+   "qty": 97,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEYNKSK160": {
    "variant": 48995592929509,
    "item": 51102786355429,
-   "qty": 50,
+   "qty": 96,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEPNS180": {
    "variant": 48995593322725,
    "item": 51102786748645,
-   "qty": 50,
+   "qty": 92,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEL298N": {
    "variant": 48995595911397,
    "item": 51102789337317,
-   "qty": 5,
+   "qty": 49,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEHC06BT": {
    "variant": 48995597746405,
    "item": 51102791172325,
-   "qty": 20,
+   "qty": 34,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEHCSR04": {
    "variant": 48995598565605,
    "item": 51102791991525,
-   "qty": 20,
+   "qty": 45,
    "status": "ACTIVE",
    "tracked": true
   },
   "AETCS9P": {
    "variant": 48995601776869,
    "item": 51102795202789,
-   "qty": 50,
+   "qty": 92,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEHVYST6P": {
    "variant": 48995603316965,
    "item": 51102796742885,
-   "qty": 50,
+   "qty": 64,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE3-6VMTR": {
    "variant": 48998117441765,
    "item": 51105347633381,
-   "qty": 10,
+   "qty": 113,
    "status": "ACTIVE",
    "tracked": true
   },
   "AETC162": {
    "variant": 48998134481125,
    "item": 51105364672741,
-   "qty": 47,
+   "qty": 95,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEEAS7P": {
    "variant": 48998136316133,
    "item": 51105366507749,
-   "qty": 50,
+   "qty": 92,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE16X2LCD": {
    "variant": 49003582193893,
    "item": 51110824050917,
-   "qty": 47,
+   "qty": 31,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEARISES": {
    "variant": 49003602772197,
    "item": 51110844629221,
-   "qty": 20,
+   "qty": 30,
    "status": "ACTIVE",
    "tracked": true
   },
   "AERC522RFID": {
    "variant": 49003608572133,
    "item": 51110850429157,
-   "qty": 30,
+   "qty": 36,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE28BYJ48": {
    "variant": 49003617517797,
    "item": 51110859374821,
-   "qty": 30,
+   "qty": 88,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEAROSES": {
    "variant": 49003627020517,
    "item": 51110868877541,
-   "qty": 20,
+   "qty": 30,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEARSNST": {
    "variant": 49003636457701,
    "item": 51110878314725,
-   "qty": 5,
+   "qty": 31,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEBB170P": {
    "variant": 49003641798885,
    "item": 51110883655909,
-   "qty": 20,
+   "qty": 40,
    "status": "ACTIVE",
    "tracked": true
   },
   "AETEMDEF": {
    "variant": 49039183085797,
    "item": 51146610442469,
-   "qty": 100,
+   "qty": 90,
    "status": "ACTIVE",
    "tracked": true
   },
   "AET2WDRBT": {
    "variant": 49062024315109,
    "item": 51169512030437,
-   "qty": 50,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEHCSR501": {
    "variant": 49062043877605,
    "item": 51169531592933,
-   "qty": 50,
+   "qty": 49,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEENDELK": {
    "variant": 49246347788517,
    "item": 51354511311077,
-   "qty": 29,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE9VPILSKT": {
    "variant": 49246572151013,
    "item": 51354735673573,
-   "qty": 8,
+   "qty": 9,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AE3-6VMTR2": {
    "variant": 49246803624165,
    "item": 51354967146725,
-   "qty": 25,
+   "qty": 56,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AEJK2040222": {
    "variant": 49247046533349,
    "item": 51355210055909,
-   "qty": 10,
+   "qty": 35,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AEJK2040EEDE33": {
    "variant": 49247109185765,
    "item": 51355272708325,
-   "qty": 20,
+   "qty": 33,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AE16X2LCD2": {
    "variant": 49247335514341,
    "item": 51355499036901,
-   "qty": 23,
+   "qty": 15,
    "status": "DRAFT",
    "tracked": true
   },
   "AEUNOR33": {
    "variant": 49247551160549,
    "item": 51355714683109,
-   "qty": 20,
+   "qty": 28,
    "status": "DRAFT",
    "tracked": true
   },
   "AETKRM5V5": {
    "variant": 49247702515941,
    "item": 51355866038501,
-   "qty": 8,
+   "qty": 9,
    "status": "DRAFT",
    "tracked": true
   },
   "AESG905": {
    "variant": 49247771361509,
    "item": 51355934884069,
-   "qty": 8,
+   "qty": 21,
    "status": "DRAFT",
    "tracked": true
   },
   "AEHCSR045": {
    "variant": 49248268681445,
    "item": 51356432204005,
-   "qty": 15,
+   "qty": 9,
    "status": "DRAFT",
    "tracked": true
   },
   "AERTC1302": {
    "variant": 49248442581221,
    "item": 51356606103781,
-   "qty": 100,
+   "qty": 95,
    "status": "ACTIVE",
    "tracked": true
   },
   "AERTC13025": {
    "variant": 49248541966565,
    "item": 51356705489125,
-   "qty": 20,
+   "qty": 19,
    "status": "DRAFT",
    "tracked": true
   },
   "AE6X13PLK5": {
    "variant": 49248706298085,
    "item": 51356869820645,
-   "qty": 30,
+   "qty": 35,
    "status": "DRAFT",
    "tracked": true
   },
   "AEJK2040EE3": {
    "variant": 49248843890917,
    "item": 51357007413477,
-   "qty": 19,
+   "qty": 70,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AE2WDEKRBT": {
    "variant": 49494853157093,
    "item": 51603390038245,
-   "qty": 5,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AESTJDFTR": {
    "variant": 49882313720037,
    "item": 51992755634405,
-   "qty": 180,
+   "qty": 500,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEDC125B": {
    "variant": 49896370471141,
    "item": 52006861144293,
-   "qty": 100,
+   "qty": 194,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEACDMMR": {
    "variant": 49896381055205,
    "item": 52006871728357,
-   "qty": 50,
+   "qty": 26,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEXL6009": {
    "variant": 49896397308133,
    "item": 52006887981285,
-   "qty": 50,
+   "qty": 35,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEVHM314": {
    "variant": 49896404058341,
    "item": 52006894731493,
-   "qty": 50,
+   "qty": 36,
    "status": "ACTIVE",
    "tracked": true
   },
   "AETP4056": {
    "variant": 49896410317029,
    "item": 52006901448933,
-   "qty": 40,
+   "qty": 120,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEBZZR5V": {
    "variant": 49896441282789,
    "item": 52006932414693,
-   "qty": 200,
+   "qty": 500,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEPY18650": {
    "variant": 50362958250213,
    "item": 52474039075045,
-   "qty": 50,
+   "qty": 44,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEPYAA2": {
    "variant": 50365643882725,
    "item": 52476724707557,
-   "qty": 50,
+   "qty": 180,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEHC06RAK": {
    "variant": 50755593666789,
    "item": 52866836791525,
-   "qty": 5,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AERFIDPS": {
    "variant": 50755601301733,
    "item": 52866844426469,
-   "qty": 15,
+   "qty": 36,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEIRRAK": {
    "variant": 50755606315237,
    "item": 52866849439973,
-   "qty": 5,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEHSPS": {
    "variant": 50755606380773,
    "item": 52866849505509,
-   "qty": 20,
+   "qty": 45,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEDHT11PS": {
    "variant": 50755606511845,
    "item": 52866849636581,
-   "qty": 20,
+   "qty": 31,
    "status": "ACTIVE",
    "tracked": true
   },
   "AERTCPS": {
    "variant": 50755606610149,
    "item": 52866849734885,
-   "qty": 20,
+   "qty": 31,
    "status": "ACTIVE",
    "tracked": true
   },
   "AESTEPPS": {
    "variant": 50755609821413,
    "item": 52866852946149,
-   "qty": 20,
+   "qty": 84,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE9VPILSKT2": {
    "variant": 50755667230949,
    "item": 52866910421221,
-   "qty": 20,
+   "qty": 45,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AE9VPILSKT1": {
    "variant": 50755667460325,
    "item": 52866910650597,
-   "qty": 30,
+   "qty": 90,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEGUCVOLTKIT": {
    "variant": 50755667984613,
    "item": 52866911174885,
-   "qty": 25,
+   "qty": 35,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AEPROTOTIPKIT": {
    "variant": 50755670671589,
    "item": 52866913861861,
-   "qty": 10,
+   "qty": 30,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AESESKIT": {
    "variant": 50755670737125,
    "item": 52866913927397,
-   "qty": 29,
+   "qty": 36,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AESARJKT": {
    "variant": 50755682533605,
    "item": 52866925723877,
-   "qty": 10,
+   "qty": 44,
    "status": "DRAFT",
    "tracked": true
   },
   "AEENDELKSET": {
    "variant": 50911473533157,
    "item": 53022749950181,
-   "qty": 20,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AETMLELKDS": {
    "variant": 50999416258789,
    "item": 53110928310501,
-   "qty": 15,
+   "qty": 40,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE3IN1ROBOT": {
    "variant": 51103305400549,
    "item": 53214832165093,
-   "qty": 5,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE5X100DT": {
    "variant": 51240383217893,
    "item": 53351922368741,
-   "qty": 50,
+   "qty": 97,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE5X100YT": {
    "variant": 51240645886181,
    "item": 53352193196261,
-   "qty": 50,
+   "qty": 97,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEKNTKLM": {
    "variant": 51241097920741,
    "item": 53352645230821,
-   "qty": 50,
+   "qty": 97,
    "status": "ACTIVE",
    "tracked": true
   },
   "AES400IGG": {
    "variant": 51241934094565,
    "item": 53353481404645,
-   "qty": 50,
+   "qty": 97,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE5IZOLE": {
    "variant": 51242419290341,
    "item": 53353958441189,
-   "qty": 50,
+   "qty": 39,
    "status": "ACTIVE",
    "tracked": true
   },
   "AET2WDRBT-LI": {
    "variant": 52037951881445,
    "item": 54150018892005,
-   "qty": 20,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE2WDEKRBT-LI": {
    "variant": 52037973967077,
    "item": 54150040977637,
-   "qty": 5,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEHC06RAK-LI": {
    "variant": 52037982814437,
    "item": 54150049824997,
-   "qty": 5,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEIRRAK-LI": {
    "variant": 52037997297893,
    "item": 54150064308453,
-   "qty": 5,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE3IN1ROBOT-LI": {
    "variant": 52038010536165,
    "item": 54150077546725,
-   "qty": 5,
+   "qty": 28,
    "status": "ACTIVE",
    "tracked": true
   },
   "AETEMDEF-10": {
    "variant": 52076214354149,
    "item": 54188366266597,
-   "qty": 0,
+   "qty": 9,
    "status": "ACTIVE",
    "tracked": false
   },
   "AETEMDEF-20": {
    "variant": 52076214386917,
    "item": 54188366299365,
-   "qty": 0,
+   "qty": 4,
    "status": "ACTIVE",
    "tracked": false
   },
   "AETEMDEF-30": {
    "variant": 52076214419685,
    "item": 54188366332133,
-   "qty": 0,
+   "qty": 3,
    "status": "ACTIVE",
    "tracked": false
   },
   "AESTJDFTR-10": {
    "variant": 52076215042277,
    "item": 54188366954725,
-   "qty": 0,
+   "qty": 83,
    "status": "ACTIVE",
    "tracked": false
   },
   "AESTJDFTR-20": {
    "variant": 52076215075045,
    "item": 54188366987493,
-   "qty": 0,
+   "qty": 41,
    "status": "ACTIVE",
    "tracked": false
   },
@@ -729,308 +729,308 @@
   "AEDCM3V-1": {
    "variant": 52148720206053,
    "item": 54261450670309,
-   "qty": 50,
+   "qty": 90,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEDCM3V-5": {
    "variant": 52148720238821,
    "item": 54261450703077,
-   "qty": 20,
+   "qty": 18,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEDCM3V-10": {
    "variant": 52148720271589,
    "item": 54261450735845,
-   "qty": 10,
+   "qty": 9,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEPRV-1": {
    "variant": 52148720435429,
    "item": 54261450899685,
-   "qty": 50,
+   "qty": 90,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEPRV-5": {
    "variant": 52148720468197,
    "item": 54261450932453,
-   "qty": 20,
+   "qty": 18,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEPRV-10": {
    "variant": 52148720500965,
    "item": 54261450965221,
-   "qty": 10,
+   "qty": 9,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEDUY-1": {
    "variant": 52148720566501,
    "item": 54261451030757,
-   "qty": 50,
+   "qty": 90,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEAMP-1": {
    "variant": 52148720599269,
    "item": 54261451063525,
-   "qty": 50,
+   "qty": 90,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEDUYAMP-1": {
    "variant": 52148720632037,
    "item": 54261451096293,
-   "qty": 50,
+   "qty": 90,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEDUYAMP-5": {
    "variant": 52148720664805,
    "item": 54261451129061,
-   "qty": 20,
+   "qty": 18,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEDUY-10": {
    "variant": 52148720697573,
    "item": 54261451161829,
-   "qty": 10,
+   "qty": 9,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEDUYAMP-10": {
    "variant": 52148720730341,
    "item": 54261451194597,
-   "qty": 10,
+   "qty": 9,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEMOTPRV-1": {
    "variant": 52148720992485,
    "item": 54261451456741,
-   "qty": 50,
+   "qty": 90,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEMOTPRV-5": {
    "variant": 52148721025253,
    "item": 54261451489509,
-   "qty": 20,
+   "qty": 18,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEMOTPRV-10": {
    "variant": 52148721058021,
    "item": 54261451522277,
-   "qty": 10,
+   "qty": 9,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEVANTSET": {
    "variant": 52148721189093,
    "item": 54261451653349,
-   "qty": 30,
+   "qty": 90,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEFENSET": {
    "variant": 52148721221861,
    "item": 54261451686117,
-   "qty": 30,
+   "qty": 90,
    "status": "ACTIVE",
    "tracked": true
   },
   "AETEMELSET": {
    "variant": 52148721287397,
    "item": 54261451751653,
-   "qty": 30,
+   "qty": 90,
    "status": "ACTIVE",
    "tracked": true
   },
   "AETEMELSET-J": {
    "variant": 52148721320165,
    "item": 54261451784421,
-   "qty": 30,
+   "qty": 90,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEKRK5": {
    "variant": 52756076069093,
    "item": 54869121433829,
-   "qty": 10,
+   "qty": 20,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEKRK10": {
    "variant": 52756076101861,
    "item": 54869121466597,
-   "qty": 5,
+   "qty": 10,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEMYNK": {
    "variant": 52756076331237,
    "item": 54869121695973,
-   "qty": 35,
+   "qty": 49,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEMYNK3": {
    "variant": 52756076462309,
    "item": 54869121827045,
-   "qty": 5,
+   "qty": 16,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AEPY18650T": {
    "variant": 52756076495077,
    "item": 54869121859813,
-   "qty": 50,
+   "qty": 190,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEPY18650T5": {
    "variant": 52756076658917,
    "item": 54869122023653,
-   "qty": 10,
+   "qty": 38,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AESARJKT1": {
    "variant": 52756076986597,
    "item": 54869122351333,
-   "qty": 25,
+   "qty": 120,
    "status": "ACTIVE",
    "tracked": true
   },
   "AENANOTC": {
    "variant": 52756077019365,
    "item": 54869122384101,
-   "qty": 20,
+   "qty": 18,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEPY18650T10": {
    "variant": 52756702429413,
    "item": 54869749891301,
-   "qty": 5,
+   "qty": 19,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AELED5K": {
    "variant": 52775836844261,
    "item": 54888990343397,
-   "qty": 0,
+   "qty": 500,
    "status": "DRAFT",
    "tracked": true
   },
   "AELED5M": {
    "variant": 52775836909797,
    "item": 54888990408933,
-   "qty": 0,
+   "qty": 500,
    "status": "DRAFT",
    "tracked": true
   },
   "AELED5Y": {
    "variant": 52775836942565,
    "item": 54888990441701,
-   "qty": 0,
+   "qty": 500,
    "status": "DRAFT",
    "tracked": true
   },
   "AELEDRGB": {
    "variant": 52775836975333,
    "item": 54888990507237,
-   "qty": 0,
+   "qty": 500,
    "status": "DRAFT",
    "tracked": true
   },
   "AELDR": {
    "variant": 52775837073637,
    "item": 54888990572773,
-   "qty": 0,
+   "qty": 181,
    "status": "DRAFT",
    "tracked": true
   },
   "AENTC10K": {
    "variant": 52775837106405,
    "item": 54888990605541,
-   "qty": 0,
+   "qty": 189,
    "status": "DRAFT",
    "tracked": true
   },
   "AEBTN6X6": {
    "variant": 52775837139173,
    "item": 54888990638309,
-   "qty": 0,
+   "qty": 500,
    "status": "DRAFT",
    "tracked": true
   },
   "AEDIR10K": {
    "variant": 52775837171941,
    "item": 54888990671077,
-   "qty": 0,
+   "qty": 500,
    "status": "DRAFT",
    "tracked": true
   },
   "AEDIR330": {
    "variant": 52775837663461,
    "item": 54888991162597,
-   "qty": 0,
+   "qty": 500,
    "status": "DRAFT",
    "tracked": true
   },
   "AEPIL9V": {
    "variant": 52775837728997,
    "item": 54888991228133,
-   "qty": 0,
+   "qty": 40,
    "status": "DRAFT",
    "tracked": true
   },
   "AETUPLEHIM": {
    "variant": 52775837761765,
    "item": 54888991260901,
-   "qty": 0,
+   "qty": 191,
    "status": "DRAFT",
    "tracked": true
   },
   "AELEHIMPASTA": {
    "variant": 52775837794533,
    "item": 54888991293669,
-   "qty": 0,
+   "qty": 64,
    "status": "DRAFT",
    "tracked": true
   },
   "AEIZOLE": {
    "variant": 52775837892837,
    "item": 54888991391973,
-   "qty": 0,
+   "qty": 197,
    "status": "DRAFT",
    "tracked": true
   },
   "AEPOT10K": {
    "variant": 52775837925605,
    "item": 54888991424741,
-   "qty": 0,
+   "qty": 175,
    "status": "DRAFT",
    "tracked": true
   },
   "AEKRK1": {
    "variant": 52775837958373,
    "item": 54888991457509,
-   "qty": 0,
+   "qty": 100,
    "status": "DRAFT",
    "tracked": true
   },
   "AEESP32TC": {
    "variant": 52803866362085,
    "item": 54917159059685,
-   "qty": 5,
+   "qty": 10,
    "status": "ACTIVE",
    "tracked": true
   }

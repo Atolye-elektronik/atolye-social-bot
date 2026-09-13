@@ -15,6 +15,7 @@ import sys
 from . import (
     config,
     facebook,
+    hikaye_gorsel,
     instagram,
     pinterest,
     pinterest_studio,
@@ -137,7 +138,11 @@ def run(only: str | None = None, force: bool = False, max_per_run: int | None = 
             ):
                 print(f"→ {post.slug} → instagram hikaye")
                 try:
-                    story_id = instagram.hikaye_yayinla(post.media, post.is_video)
+                    # Feed gorseli 4:5, hikaye 9:16. Ham gorseli hikayeye verince
+                    # Instagram saga-sola KIRPIYOR; 9:16 surumunu uretip onu atiyoruz.
+                    ham = post.media[0] if isinstance(post.media, list) else post.media
+                    hikaye_medya = str(hikaye_gorsel.hikaye_surumu(ham, post.is_video))
+                    story_id = instagram.hikaye_yayinla(hikaye_medya, post.is_video)
                     state.mark_published(
                         published_state, post.slug, "instagram_story", str(story_id)
                     )
