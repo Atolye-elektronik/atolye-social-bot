@@ -110,17 +110,23 @@ def main():
     recete = Recete()
     parca = parca_stoklari()
     hedef = hedef_stoklar(recete, parca)
-    # Satis kanonikten dusuyor (alias); Shopify'daki uye urunler geride kalmasin.
+    # Shopify'a geri yazilanlar (parcalara DOKUNULMAZ, onlar master):
+    #   1) havuz uyeleri - satis kanonikten dusuyor, uyeler geride kalmasin
+    #   2) hesaplanan SET stoklari - web sitesi Shopify envanterinden satiyor;
+    #      yazilmazsa site, parcasi bitmis seti satmaya devam eder (13.09).
     if "--dagit" in sys.argv:
         try:
             from stok import shopify_admin
-            uye = {u: hedef[u] for uy in havuzlar().values() for u in uy if u in hedef}
-            fark = {k: v for k, v in uye.items() if parca.get(k) != v}
+            geri = {u: hedef[u] for uy in havuzlar().values() for u in uy if u in hedef}
+            for s in recete.setler:
+                if s in parca and hedef.get(s) is not None:
+                    geri[s] = hedef[s]
+            fark = {k: v for k, v in geri.items() if parca.get(k) != v}
             if fark:
                 shopify_admin.stok_yaz(fark, sebep="correction")
-                print("havuz yansimasi: %d uye Shopify'da esitlendi" % len(fark))
+                print("Shopify'a geri yazildi: %d kod (havuz uyesi + set)" % len(fark))
         except Exception as e:
-            print("! havuz yansimasi yazilamadi:", str(e)[:120])
+            print("! Shopify geri yazimi basarisiz:", str(e)[:120])
     setler = {s: hedef.get(s) for s in recete.setler}
     print("parca: %d | set: %d | kritik esik: %d" % (len(parca), len(setler), KRITIK_ESIK))
     bilinmeyen = [s for s, v in setler.items() if v is None]

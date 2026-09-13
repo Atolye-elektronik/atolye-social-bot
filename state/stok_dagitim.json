@@ -1,5 +1,5 @@
 {
- "zaman": "2026-09-13 14:24",
+ "zaman": "2026-09-13 15:19",
  "hedef": {
   "AETCS18P": 64,
   "AEARBSES": 40,
@@ -63,8 +63,8 @@
   "AEDC125B": 194,
   "AEACDMMR": 25,
   "AEXL6009": 35,
-  "AEVHM314": 36,
-  "AETP4056": 120,
+  "AEVHM314": 32,
+  "AETP4056": 117,
   "AEBZZR5V": 500,
   "AEPY18650": 44,
   "AEPYAA2": 180,
@@ -79,7 +79,7 @@
   "AE9VPILSKT1": 90,
   "AEGUCVOLTKIT": 35,
   "AEPROTOTIPKIT": 79,
-  "AESESKIT": 36,
+  "AESESKIT": 32,
   "AESARJKT": 44,
   "AEENDELKSET": 28,
   "AETMLELKDS": 40,
@@ -123,11 +123,11 @@
   "AEKRK10": 10,
   "AEMYNK": 49,
   "AEMYNK3": 16,
-  "AEPY18650T": 190,
-  "AEPY18650T5": 38,
-  "AESARJKT1": 120,
+  "AEPY18650T": 188,
+  "AEPY18650T5": 37,
+  "AESARJKT1": 117,
   "AENANOTC": 18,
-  "AEPY18650T10": 19,
+  "AEPY18650T10": 18,
   "AELED5K": 500,
   "AELED5M": 500,
   "AELED5Y": 500,
@@ -147,7 +147,7 @@
   "AE150LED": 29,
   "AE2WDEKRBT5230-LI": 28,
   "AEPOT10K-6": 112,
-  "AETP4056-2": 60,
+  "AETP4056-2": 58,
   "AEBZZR5V-6": 138,
   "AEPY18650-2": 22,
   "AEACDMMR2": 12,
@@ -158,14 +158,14 @@
   "AELED": 500,
   "AEBTN6PIN": 500,
   "AEMONOPOT": 500,
-  "AEJK2040EE": 310
+  "AEJK2040EE": 310,
+  "AEUT12D": 0
  },
  "sonuc": {
-  "trendyol": "[{'batchRequestId': 'aaa47c70-af65-11f1-8bfc-4a55bb82afd4-1789313061'}, {'batchRequestId': 'aaef8eab-af65-11f1-a41a-12ade837d3c0-1789313061'}]",
-  "hepsiburada": "{'id': 'dee31f52-be85-41ab-ac7f-7b122fee87b3'}",
-  "n11": "N11: 124 urun, partiler [200, 200]",
-  "pazarama": "(200, '{\"data\":\"d6927b67-0a0a-44a3-a3a7-fe4e461ec575\",\"success\":true,\"messageCode\":null,\"message\":\"Fiyat/Stok güncelleme işleminiz sıraya alındı.\",\"userMessage\":\"Fiyat/Stok güncelleme işleminiz sıraya alındı.\",\"fromCache\":false}')",
-  "idefix": "{'items': [{'price': None, 'comparePrice': None, 'barcode': '2915113417646', 'inventoryQuantity': 64, 'maximumPurchasableQuantity': None, 'erpId': None, 'deliveryDuration': None, 'deliveryType': None, 'isZoneSale': None, 'status': 'created', 'failureReasons': None}, {'price': None, 'comparePrice': N",
-  "pttavm": "(200, '{\"countOfProductsToBeProcessed\":0,\"trackingId\":null,\"success\":false,\"message\":\"Aynı isteği ancak 5 dakika sonra tekrardan gönderebilirsiniz\"}')"
+  "trendyol": "[{'batchRequestId': '533711e5-af6d-11f1-85cc-c2d494bcae91-1789316350'}, {'batchRequestId': '539892d5-af6d-11f1-a9ff-c610ee64e3ea-1789316351'}]",
+  "hepsiburada": "{'id': '4957a8ff-09f0-42c9-8f55-b94be237ddf0'}",
+  "n11": "N11: 125 urun, partiler [200, 200]",
+  "pazarama": "(200, '{\"data\":\"7363eb71-1bdc-42e6-8eab-8a3a0a33ad3f\",\"success\":true,\"messageCode\":null,\"message\":\"Fiyat/Stok güncelleme işleminiz sıraya alındı.\",\"userMessage\":\"Fiyat/Stok güncelleme işleminiz sıraya alındı.\",\"fromCache\":false}')",
+  "idefix": "{'items': [{'price': None, 'comparePrice': None, 'barcode': '2915113417646', 'inventoryQuantity': 64, 'maximumPurchasableQuantity': None, 'erpId': None, 'deliveryDuration': None, 'deliveryType': None, 'isZoneSale': None, 'status': 'created', 'failureReasons': None}, {'price': None, 'comparePrice': N"
  }
 }
