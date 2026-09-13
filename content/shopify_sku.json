@@ -40,7 +40,8 @@
   "AEBCTRANS": "AEGUCELEMAN",
   "AEJK2040DE": "AEJK2040",
   "AEJK2040DD": "AEJK2040",
-  "AEJK2040EE": "AEJK2040"
+  "AEJK2040EE": "AEJK2040",
+  "AETYYNKSK1": "AEMYNK"
  },
  "sku": {
   "AETCS18P": {
@@ -858,14 +859,14 @@
   "AETEMELSET": {
    "variant": 52148721287397,
    "item": 54261451751653,
-   "qty": 90,
+   "qty": 87,
    "status": "ACTIVE",
    "tracked": true
   },
   "AETEMELSET-J": {
    "variant": 52148721320165,
    "item": 54261451784421,
-   "qty": 90,
+   "qty": 87,
    "status": "ACTIVE",
    "tracked": true
   },
