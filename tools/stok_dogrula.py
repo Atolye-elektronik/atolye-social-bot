@@ -26,8 +26,10 @@ for k, v in H.items():
 
 
 def rapor(ad, canli):
+    """canli: {kod: adet} ya da [(kod, barkod, adet)] - ikincisi mukerrer ilanlar icin."""
     ok, fark, ornek = 0, 0, []
-    for k, v in canli.items():
+    ciftler = canli if isinstance(canli, list) else [(k, None, v) for k, v in canli.items()]
+    for k, bar, v in ciftler:
         b = BEK.get(k)
         if b is None:
             continue
@@ -36,7 +38,7 @@ def rapor(ad, canli):
         else:
             fark += 1
             if len(ornek) < 5:
-                ornek.append("%s bekl %s canli %s" % (k, b, v))
+                ornek.append("%s%s bekl %s canli %s" % (k, (" [%s]" % bar) if bar else "", b, v))
     isaret = "OK " if fark == 0 else "!! "
     print("%s%-13s dogrulanan %3d | UYUSMAYAN %3d  %s" % (isaret, ad, ok, fark, "; ".join(ornek)))
 
@@ -47,17 +49,23 @@ def shopify():
 
 
 def trendyol():
+    """DIKKAT: sozluk yerine ILAN LISTESI dondurur.
+
+    Ayni stok kodunda 2-3 aktif ilan var (mukerrer ilanlar). Sozluge yazinca
+    sonuncusu onceki(leri)ni eziyor ve eski stokta kalan ilan dogrulamada
+    GORUNMUYORDU (13.09). Artik her ilan ayri satir.
+    """
     sid = os.environ["TRENDYOL_SUPPLIER_ID"]
     au = base64.b64encode(("%s:%s" % (os.environ["TRENDYOL_API_KEY"], os.environ["TRENDYOL_API_SECRET"])).encode()).decode()
     h = {"Authorization": "Basic " + au, "User-Agent": sid + " - SelfIntegration"}
-    out = {}
-    for s in range(3):
+    out = []
+    for s in range(4):
         r = requests.get("https://apigw.trendyol.com/integration/product/sellers/%s/products" % sid,
                          params={"page": s, "size": 200, "approved": "true"}, headers=h, timeout=90)
         j = r.json()
         for x in j.get("content") or []:
             if x.get("stockCode"):
-                out[x["stockCode"]] = x.get("quantity")
+                out.append((x["stockCode"], x.get("barcode"), x.get("quantity")))
         if s + 1 >= int(j.get("totalPages") or 1):
             break
     return out

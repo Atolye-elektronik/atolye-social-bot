@@ -80,9 +80,19 @@ def _barkodlar():
             kayit = json.load(open(SNAPSHOT, encoding="utf-8"))
         except FileNotFoundError:
             kayit = []
+    # 13.09.2026 BUG: setdefault yalnizca ILK barkodu tutuyordu. Trendyol'da
+    # 6 stok kodunun 2-3 AKTIF ilani var (mukerrer ilanlar); stok yalnizca bir
+    # ilana gidiyor, digerleri aylardir eski sayida kaliyordu - kullanici
+    # uygulamada AEVHM314'u 40 ve 30 olarak yan yana gordu. Artik TUM barkodlar.
     for u in kayit:
-        if u.get("stockCode"):
-            b.setdefault(u["stockCode"], {})["ty"] = u.get("barcode")
+        sk = u.get("stockCode")
+        if not sk or not u.get("barcode"):
+            continue
+        d = b.setdefault(sk, {})
+        d.setdefault("ty", u["barcode"])              # geriye donuk uyum
+        d.setdefault("ty_hepsi", [])
+        if u["barcode"] not in d["ty_hepsi"]:
+            d["ty_hepsi"].append(u["barcode"])
     for u in json.load(open(os.path.join(KOK, "content", "n11_urunler.json"), encoding="utf-8")):
         sk = u.get("tyStokKodu") or u["stokKodu"]
         b.setdefault(sk, {})["ean"] = str(u.get("barkod") or "")
@@ -93,8 +103,10 @@ def _barkodlar():
 def stok_bas_trendyol(hedef, kuru=True):
     import trendyol_client as tc
     bk = _barkodlar()
-    items = [{"barcode": bk[k]["ty"], "quantity": int(v)} for k, v in _kanal_kodlari(hedef).items()
-             if k in bk and bk[k].get("ty")]
+    items = [{"barcode": bar, "quantity": int(v)}
+             for k, v in _kanal_kodlari(hedef).items()
+             if k in bk
+             for bar in (bk[k].get("ty_hepsi") or ([bk[k]["ty"]] if bk[k].get("ty") else []))]
     if kuru:
         return "kuru: %d barkod" % len(items)
     sonuc = []

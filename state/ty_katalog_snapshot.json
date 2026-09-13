@@ -62,7 +62,7 @@
  {
   "stockCode": "AEPY18650T",
   "barcode": "2920000600087",
-  "quantity": 190,
+  "quantity": 188,
   "title": "18650 Li-on Pil Yuvası Tekli (1'li) - 3.7V Kablolu Batarya Yuvası"
  },
  {
@@ -86,13 +86,13 @@
  {
   "stockCode": "AEPY18650T5",
   "barcode": "2903501015475111",
-  "quantity": 38,
+  "quantity": 37,
   "title": "18650 Pil Yuvası Tekli 3.7V Kablolu Batarya Yuvası - 5'li Paket"
  },
  {
   "stockCode": "AEPY18650T10",
   "barcode": "2903637324434",
-  "quantity": 19,
+  "quantity": 18,
   "title": "18650 Pil Yuvası Tekli 3.7V Kablolu Set - 10'lu Paket"
  },
  {
@@ -104,7 +104,7 @@
  {
   "stockCode": "AESARJKT1",
   "barcode": "2901325169558",
-  "quantity": 120,
+  "quantity": 117,
   "title": "Şarj Edilebilir Güç Seti - TP4056 Type-C Şarj Modülü + 18650 Tekli Pil Yuvası"
  },
  {
@@ -182,7 +182,7 @@
  {
   "stockCode": "AETP4056-2",
   "barcode": "2901880000648",
-  "quantity": 60,
+  "quantity": 58,
   "title": "TP4056 Type-C Li-Ion Pil Şarj Modülü Korumalı - 2 Adet Paket"
  },
  {
@@ -434,7 +434,7 @@
  {
   "stockCode": "AEVHM314",
   "barcode": "651044152547",
-  "quantity": 36,
+  "quantity": 30,
   "title": "Vhm-314 Bluetooth 5.0 Mp3 Ses Kayıt Kartı Dekoder Stereo Müzik Modulü"
  },
  {
@@ -446,7 +446,7 @@
  {
   "stockCode": "AETP4056",
   "barcode": "TYB1FWMHAXR7W1GI43",
-  "quantity": 120,
+  "quantity": 117,
   "title": "TP4056 Korumalı Lityum Pil Şarj Devresi Type C Usb Batarya"
  },
  {
