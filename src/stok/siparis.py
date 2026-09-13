@@ -23,6 +23,7 @@ sys.path.insert(0, os.path.join(KOK, "src"))
 sys.path.insert(0, os.path.join(KOK, "src", "marketplaces"))
 GORULEN = os.path.join(KOK, "state", "siparis_gorulen.json")
 GUNLUK = os.path.join(KOK, "state", "siparis_gunlugu.jsonl")
+IADE = os.path.join(KOK, "state", "siparis_iade.json")   # stogu GERI verilen siparisler
 def _barkod_alias():
     """barkod -> gercek stok kodu. Siparis satirindaki merchantSku'yu EZER.
 
@@ -284,9 +285,45 @@ def barkod_haritasi():
     return h
 
 
+def iade_oku():
+    try:
+        return json.load(open(IADE, encoding="utf-8"))
+    except FileNotFoundError:
+        return {}
+
+
+def iade_yaz(d):
+    json.dump(d, open(IADE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+
+def dusulen_kalemler(kanal, no):
+    """Bu siparis icin daha once ne dusuldugunu gunlukten okur: {parca: adet}."""
+    out = {}
+    try:
+        for l in open(GUNLUK, encoding="utf-8"):
+            l = l.strip()
+            if not l:
+                continue
+            k = json.loads(l)
+            if k.get("kanal") == kanal and str(k.get("no")) == str(no) and not k.get("kuru"):
+                for p, n in (k.get("dusum") or {}).items():
+                    out[p] = out.get(p, 0) + n
+    except FileNotFoundError:
+        pass
+    return out
+
+
 def yeni_siparisler(kanallar):
+    """Yeni siparisleri ve IPTAL/IADE olanlari birlikte dondurur.
+
+    13.09.2026: iptal edilen siparisler eskiden sadece ATLANIYORDU. Siparis once
+    dusulup SONRA iptal edilirse stok geri gelmiyordu (TY 11593168096 / UT12D
+    boyle oldu). Artik daha once dusulmus ve simdi iptal/iade gorunen siparisler
+    ayrica dondurulur, stok geri eklenir.
+    """
     g = gorulen_oku()
-    yeni = []
+    iade = iade_oku()
+    yeni, iptaller = [], []
     for k in kanallar:
         try:
             L = TOPLAYICI[k]()
@@ -294,15 +331,23 @@ def yeni_siparisler(kanallar):
             print("  %s toplama hatasi: %s" % (k, str(e)[:160]))
             continue
         gk = g.setdefault(k, {})
-        n_yeni = 0
+        ik = iade.setdefault(k, {})
+        n_yeni = n_ipt = 0
         for o in L:
-            if o["no"] in gk or str(o.get("durum", "")).lower() in IPTAL:
+            iptal_mi = str(o.get("durum", "")).lower() in IPTAL
+            if iptal_mi:
+                if o["no"] in gk and o["no"] not in ik:
+                    o["kanal"] = k
+                    iptaller.append(o)
+                    n_ipt += 1
+                continue
+            if o["no"] in gk:
                 continue
             o["kanal"] = k
             yeni.append(o)
             n_yeni += 1
-        print("  %-12s %3d siparis, %d yeni" % (k, len(L), n_yeni))
-    return yeni, g
+        print("  %-12s %3d siparis, %d yeni, %d iptal/iade" % (k, len(L), n_yeni, n_ipt))
+    return yeni, g, iptaller, iade
 
 
 def _zaman(t):
@@ -362,6 +407,17 @@ def liste(kanallar, dosya, sadece_bugun=False):
     return say
 
 
+def _dagit_sonrasi(merkez, R, kanallar_ad=None):
+    """Stok degistikten sonra kanallara yeniden dagit (iade yolunda da gerekli)."""
+    if os.environ.get("STOK_DAGIT") != "1":
+        print("(STOK_DAGIT=1 degil: kanallara yazilmadi)")
+        return
+    parca = merkez.parca_stoklari()
+    hedef = merkez.hedef_stoklar(R, parca)
+    kn = os.environ.get("STOK_KANALLAR", "trendyol,hepsiburada,n11,pazarama,idefix,amazon").split(",")
+    print(merkez.dagit(hedef, kn, kuru=False, recete=R, parca=parca))
+
+
 def main():
     a = sys.argv[1:]
     if "--liste" in a:
@@ -390,9 +446,42 @@ def main():
         return
 
     print("siparisler toplaniyor (%s)..." % ("KURU" if kuru else "UYGULA"))
-    yeni, g = yeni_siparisler(kanallar)
+    yeni, g, iptaller, iade = yeni_siparisler(kanallar)
+
+    # --- IPTAL/IADE: daha once dusulmus siparis iptal olduysa stogu GERI ver ---
+    geri = {}
+    iade_degisti = False
+    for o in iptaller:
+        d = dusulen_kalemler(o["kanal"], o["no"])
+        if not d:
+            print("  ~ %s %s iptal ama dusum kaydi yok, atlandi" % (o["kanal"], o["no"]))
+            iade.setdefault(o["kanal"], {})[o["no"]] = "dusum yok"
+            iade_degisti = True
+            continue
+        for pk, n in d.items():
+            geri[pk] = geri.get(pk, 0) + n
+        print("  IADE %-12s %-14s (%s) -> %s" % (o["kanal"], o["no"], o.get("durum"),
+                                                ", ".join("%s+%d" % (a, b) for a, b in d.items())))
+        iade.setdefault(o["kanal"], {})[o["no"]] = datetime.now().isoformat(timespec="minutes")
+        iade_degisti = True
+        gunluk({"an": datetime.now().isoformat(timespec="minutes"), "kanal": o["kanal"], "no": o["no"],
+                "iade": d, "durum": o.get("durum"), "kuru": kuru})
+    if geri and not kuru:
+        try:
+            from stok import shopify_admin
+            print("Shopify iade:", shopify_admin.stok_yaz(
+                {k: (shopify_admin.stoklari_oku().get(k, 0) + v) for k, v in geri.items()}, sebep="restock"))
+        except Exception as e:
+            print("! iade yazilamadi:", str(e)[:140])
+    elif geri:
+        print("(kuru: %d parca geri verilmedi)" % len(geri))
+    if iade_degisti and not kuru:
+        iade_yaz(iade)
+
     if not yeni:
         print("yeni siparis yok")
+        if geri and not kuru:
+            _dagit_sonrasi(merkez, R, kanallar)
         return
 
     parca = merkez.parca_stoklari()
