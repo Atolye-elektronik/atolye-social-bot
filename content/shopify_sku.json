@@ -482,14 +482,14 @@
   "AEVHM314": {
    "variant": 49896404058341,
    "item": 52006894731493,
-   "qty": 36,
+   "qty": 32,
    "status": "ACTIVE",
    "tracked": true
   },
   "AETP4056": {
    "variant": 49896410317029,
    "item": 52006901448933,
-   "qty": 120,
+   "qty": 117,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -594,7 +594,7 @@
   "AESESKIT": {
    "variant": 50755670737125,
    "item": 52866913927397,
-   "qty": 36,
+   "qty": 32,
    "status": "ARCHIVED",
    "tracked": true
   },
@@ -909,14 +909,14 @@
   "AEPY18650T5": {
    "variant": 52756076658917,
    "item": 54869122023653,
-   "qty": 38,
+   "qty": 37,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AESARJKT1": {
    "variant": 52756076986597,
    "item": 54869122351333,
-   "qty": 120,
+   "qty": 117,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -930,7 +930,7 @@
   "AEPY18650T10": {
    "variant": 52756702429413,
    "item": 54869749891301,
-   "qty": 19,
+   "qty": 18,
    "status": "ARCHIVED",
    "tracked": true
   },

@@ -208,3 +208,44 @@ def stok_bas_pazarama(hedef, kuru=True):
         return "kuru: %d barkod" % len(items)
     r = pc.post("/product/updateStock-v2", {"items": items})
     return r.status_code, r.text[:300]
+
+
+# ---------------- Amazon: AEMZN-<kod> + fulfillment_availability ----------------
+def stok_bas_amazon(hedef, kuru=True):
+    """Amazon SP-API listing patch ile stok yazar.
+
+    13.09.2026 EKLENDI: siparis toplayicida amazon vardi ama stok BASILMIYORDU -
+    Amazon'dan satis gelince parca stogu dususe girip diger kanallar guncelleniyor,
+    Amazon ilaninin kendi stogu ise oldugu gibi kaliyordu.
+    SKU kalibi: AEMZN-<bizim kod>. productType her ilandan okunur (urune gore degisiyor,
+    sabit bir deger patch'i reddettiriyor).
+    """
+    import time
+    from marketplaces import amazon_client as az
+    try:
+        teklif = json.load(open(os.path.join(KOK, "content", "amazon_teklif.json"), encoding="utf-8"))
+    except FileNotFoundError:
+        return "amazon_teklif.json yok"
+    kodlar = _kanal_kodlari(hedef)
+    hedefler = [(x["sku"], kodlar[x["sku"]]) for x in teklif if x.get("sku") in kodlar]
+    if kuru:
+        return "kuru: %d ilan" % len(hedefler)
+    ok, hata = 0, []
+    for kod, adet in hedefler:
+        sku = "AEMZN-" + kod
+        try:
+            r = az.listing(sku)
+            if r.status_code != 200:
+                hata.append("%s okunamadi %s" % (kod, r.status_code)); continue
+            pt = (r.json().get("summaries") or [{}])[0].get("productType")
+            rr = az.stok_yaz(sku, int(adet), product_type=pt)
+            j = rr.json() if hasattr(rr, "json") else {}
+            err = [i for i in (j.get("issues") or []) if i.get("severity") == "ERROR"]
+            if err:
+                hata.append("%s %s" % (kod, str(err)[:70]))
+            else:
+                ok += 1
+        except Exception as e:
+            hata.append("%s %s" % (kod, str(e)[:70]))
+        time.sleep(0.6)
+    return "Amazon: %d ilan yazildi%s" % (ok, (" | hata: " + "; ".join(hata[:4])) if hata else "")

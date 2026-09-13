@@ -135,7 +135,7 @@ def main():
     if "--liste" in sys.argv or kuru:
         for s in sorted(recete.setler):
             print("  %-18s %s" % (s, setler[s]))
-    kanallar = [a for a in ("trendyol", "hepsiburada", "n11", "pazarama", "idefix", "pttavm")
+    kanallar = [a for a in ("trendyol", "hepsiburada", "n11", "pazarama", "idefix", "pttavm", "amazon")
                 if "--kanal" not in sys.argv or a in sys.argv]
     if "--dagit" in sys.argv or "--kuru" in sys.argv:
         sonuc = dagit(hedef, kanallar, kuru=kuru)
