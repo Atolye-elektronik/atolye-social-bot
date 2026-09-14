@@ -115,10 +115,18 @@ def topla_hepsiburada():
         grup = {}
         L = r if isinstance(r, list) else (r.get("items") or [])
         for o in L:
-            no = str(_ilk(o, "orderNumber", "OrderNumber", "PackageNumber", "id", "Id"))
+            # 14.09.2026 DUZELTME: anahtar HER ZAMAN HB siparis numarasi. Eskiden /packages
+            # nesnesinde ust seviyede orderNumber olmadigi icin paket id'si (GUID) anahtar
+            # oluyordu; paket kargolaninca /shipped ucundan siparis numarasiyla yeniden
+            # "yeni" sayilip IKINCI kez dusuluyordu, paket bozulup yeniden yapilinca UCUNCU
+            # kez (4449938925 VHM-314 x5 uc kez dusuldu). Siparis no kalemlerin icinde.
+            its = o.get("items") if isinstance(o.get("items"), list) else []
+            ilk = its[0] if its and isinstance(its[0], dict) else {}
+            no = str(_ilk(o, "orderNumber", "OrderNumber") or ilk.get("orderNumber") or "")
+            paket = str(_ilk(o, "id", "Id", vars="") or "")
             if no in ("None", ""):
                 continue  # /packages/unpacked yalniz paket no + barkod verir, siparis degil
-            g = grup.setdefault(no, {"no": no, "tarih": _ilk(o, "orderDate", "OrderDate", "createdDate"),
+            g = grup.setdefault(no, {"no": no, "paket": paket, "tarih": _ilk(o, "orderDate", "OrderDate", "createdDate"),
                                      "durum": _ilk(o, "status", "Status", vars=fn.__name__), "kalemler": [],
                                      "tutar": ((o.get("totalPrice") or {}).get("amount") if isinstance(o.get("totalPrice"), dict) else o.get("totalPrice")),
                                      "musteri": _ilk(o, "customerName", "CustomerName", vars=""),
@@ -341,7 +349,8 @@ def yeni_siparisler(kanallar):
                     iptaller.append(o)
                     n_ipt += 1
                 continue
-            if o["no"] in gk:
+            # Eski kayitlar paket id'siyle tutulmus olabilir: ikisinden biri goruldu ise atla.
+            if o["no"] in gk or (o.get("paket") and o["paket"] in gk):
                 continue
             o["kanal"] = k
             yeni.append(o)

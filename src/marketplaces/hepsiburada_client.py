@@ -95,10 +95,14 @@ def get_new_order_items(offset=0, limit=100):
     return _request("GET", url, params={"offset": offset, "limit": limit})
 
 
-def get_packages(offset=0, limit=100):
-    """Paketlenmiş, kargoya verilmeyi bekleyen paketler (OMS /packages)."""
+def get_packages(offset=0, limit=100, timespan=720):
+    """Paketlenmiş, kargoya verilmeyi bekleyen paketler (OMS /packages).
+
+    14.09.2026: timespan (saat) verilmezse HB yalnız son 24 saatin paketlerini
+    döndürüyor; 12-13 Eylül'ün 3 açık paketi listede hiç görünmedi (panel 10,
+    API 7). 720 saat = 30 gün."""
     url = f"{OMS_BASE}/packages/merchantid/{MERCHANT_ID}"
-    return _request("GET", url, params={"offset": offset, "limit": limit})
+    return _request("GET", url, params={"offset": offset, "limit": limit, "timespan": timespan})
 
 
 def get_shipped_packages(offset=0, limit=100):
