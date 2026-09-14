@@ -252,6 +252,132 @@
       "customerName": "Enes karaköse",
       "estimatedArrivalDate": "2026-09-17T15:30:00Z",
       "totalDeci": 2.2
+    },
+    {
+      "id": "6aa84c45-b41e-18e4-38e5-50a306060606",
+      "status": "Open",
+      "customerId": "4ee08469-ead7-4e89-beed-c3d7bd04e6fc",
+      "orderDate": "2026-09-14T22:34:27",
+      "dueDate": "2026-09-15T18:30:00",
+      "barcode": "62955172200375",
+      "packageNumber": "5517220037",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Meydan Mahallesi Hüseyin Rahmi Gürpınar Sok. No:9 Kat:2 MEYDAN MERKEZ Kütahya",
+      "recipientName": "Mustafa Kaya",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MEYDAN",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Kütahya",
+      "email": "4227402525_5517220037@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Mustafa Kaya",
+      "billingAddress": "Meydan Mahallesi Hüseyin Rahmi Gürpınar Sok. No:9 Kat:2 MEYDAN MERKEZ Kütahya",
+      "billingCity": "Kütahya",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "MEYDAN",
+      "billingPostalCode": "",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 667.02
+      },
+      "items": [
+        {
+          "lineItemId": "6aa84c44-5c7e-e614-da17-612706060606",
+          "listingId": "b192e250-5772-46ac-8c4c-515499321179",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3XH1",
+          "merchantSku": "AEVHM314",
+          "quantity": 6,
+          "price": {
+            "currency": "TRY",
+            "amount": 111.17
+          },
+          "vat": 111.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 667.02
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 10.01
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 5.83
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 34.98
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 111.17
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 667.02
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya VHM-314 Bluetooth Amfi Kablosuz Ses Alıcı Modülü Siyah 1 Adet Yüksek Ses Kalitesi",
+          "orderNumber": "4227402525",
+          "orderDate": "2026-09-14T22:34:27",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6846",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869040.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Mustafa Kaya",
+      "estimatedArrivalDate": "2026-09-17T15:30:00Z",
+      "totalDeci": 6.6
     }
   ]
 }
