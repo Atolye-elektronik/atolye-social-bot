@@ -1,6 +1,186 @@
 [
   {
     "shipmentAddress": {
+      "id": 9640018073,
+      "firstName": "Umut",
+      "lastName": "Zeytinoğlu",
+      "company": "",
+      "address1": "Alipaşa Mahallesi FSM bulvarı no 9 Anadolu Hastanesi Yemekhane 5.kat Merkez Kütahya",
+      "address2": "",
+      "city": "Kütahya",
+      "cityCode": 43,
+      "district": "Merkez",
+      "districtId": 701,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "43000",
+      "countryCode": "TR",
+      "neighborhoodId": 44540,
+      "neighborhood": "Alipaşa Mah",
+      "phone": null,
+      "fullAddress": "Alipaşa Mahallesi FSM bulvarı no 9 Anadolu Hastanesi Yemekhane 5.kat Merkez Kütahya     Merkez Kütahya",
+      "fullName": "Umut Zeytinoğlu"
+    },
+    "orderNumber": "11601850685",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 529.0,
+    "packageGrossAmount": 529.0,
+    "totalDiscount": 10.58,
+    "packageSellerDiscount": 10.58,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 10.58,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 10.58
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9640018071,
+      "firstName": "Umut",
+      "lastName": "Zeytinoğlu",
+      "company": "",
+      "address1": "Alipaşa Mahallesi FSM bulvarı no 9 Anadolu Hastanesi Yemekhane 5.kat Merkez Kütahya",
+      "address2": "",
+      "city": "Kütahya",
+      "cityCode": 43,
+      "district": "Merkez",
+      "districtId": 701,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "43000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 44540,
+      "neighborhood": "Alipaşa Mah",
+      "phone": null,
+      "fullAddress": "Alipaşa Mahallesi FSM bulvarı no 9 Anadolu Hastanesi Yemekhane 5.kat Merkez Kütahya     Merkez Kütahya",
+      "fullName": "Umut Zeytinoğlu"
+    },
+    "customerFirstName": "Umut",
+    "customerEmail": "pf+keo24vee@trendyolmail.com",
+    "customerId": 130866506,
+    "supplierId": 0,
+    "customerLastName": "Zeytinoğlu",
+    "id": 4155302541,
+    "channelId": 1,
+    "shipmentPackageId": 4155302541,
+    "cargoTrackingNumber": 7270037109585219,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETC162",
+        "sku": "ATELTC1600002",
+        "stockCode": "AETC162",
+        "productName": "16\" Organizerli Takım Çantası AETC162, one size",
+        "productCode": 1590180350,
+        "contentId": 1590180350,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 529.0,
+        "lineGrossAmount": 529.0,
+        "discount": 10.58,
+        "lineTotalDiscount": 10.58,
+        "lineSellerDiscount": 10.58,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6789910155",
+            "lineItemPrice": 518.42,
+            "lineItemDiscount": 10.58,
+            "lineItemSellerDiscount": 10.58,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5949194861,
+        "lineId": 5949194861,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTC1600002",
+        "orderLineItemStatusName": "Picking",
+        "price": 518.42,
+        "lineUnitPrice": 518.42,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 4,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1789400637981,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1789389906513,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1789389910159,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1789390480607,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1789505940000,
+    "estimatedDeliveryEndDate": 1789678740000,
+    "totalPrice": 518.42,
+    "packageTotalPrice": 518.42,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1789505940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1789389906504,
+    "lastModifiedDate": 1789390480607,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10857200713,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9638434976,
       "firstName": "UĞUR",
       "lastName": "AYRANCI",
