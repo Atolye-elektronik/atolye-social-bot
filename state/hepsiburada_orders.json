@@ -1,4 +1,257 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6aa8342d-7b6a-b856-d9a7-833006060606",
+      "status": "Open",
+      "customerId": "4367d0f5-47fc-4742-b1dd-cb1f87609aaf",
+      "orderDate": "2026-09-14T20:51:40",
+      "dueDate": "2026-09-15T18:30:00",
+      "barcode": "62955171796741",
+      "packageNumber": "5517179674",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "YENİ MAHALLE 7052 SOKAK C 1 BLOK DAİRE 10 KAT 2 YALÇIN PARK MANAVOĞLU 1 SİTESİ SİLİVRİ  /İSTANBUL  YENİ SİLİVRİ İstanbul",
+      "recipientName": "Kürşat ÇELİK",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YENİ",
+      "shippingTown": "SİLİVRİ",
+      "shippingCity": "İstanbul",
+      "email": "4148802864_5517179674@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Muhammed Kürşat Çelik",
+      "billingAddress": "YENİ MAHALLE 7052 SOKAK C 1 BLOK DAİRE 10 KAT 2 YALÇIN PARK MANAVOĞLU 1 SİTESİ SİLİVRİ  /İSTANBUL  YENİ SİLİVRİ İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "SİLİVRİ",
+      "billingDistrict": "YENİ",
+      "billingPostalCode": "34570",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 315.99
+      },
+      "items": [
+        {
+          "lineItemId": "6aa8342d-980d-94bc-ac15-f4f006060606",
+          "listingId": "b192e250-5772-46ac-8c4c-515499321179",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3XH1",
+          "merchantSku": "AEVHM314",
+          "quantity": 3,
+          "price": {
+            "currency": "TRY",
+            "amount": 105.33
+          },
+          "vat": 52.66,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 315.99
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 9.48
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 11.67
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35.01
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 105.33
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 315.99
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya VHM-314 Bluetooth Amfi Kablosuz Ses Alıcı Modülü Siyah 1 Adet Yüksek Ses Kalitesi",
+          "orderNumber": "4148802864",
+          "orderDate": "2026-09-14T20:51:40",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6846",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869040.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "MKÜRŞAT ÇELİK",
+      "estimatedArrivalDate": "2026-09-18T15:30:00Z",
+      "totalDeci": 3.3
+    },
+    {
+      "id": "6aa83b09-5a43-d637-ab56-dea306060606",
+      "status": "Open",
+      "customerId": "c406bc2d-5e48-45cc-8f4e-c6386716f49a",
+      "orderDate": "2026-09-14T21:20:55",
+      "dueDate": "2026-09-15T18:30:00",
+      "barcode": "62955171920117",
+      "packageNumber": "5517192011",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "55016.sokak dış kapı no.8 iç kapı no.6 PİRİ REİS ONİKİŞUBAT Kahramanmaraş",
+      "recipientName": "Enes karaköse",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "PİRİ REİS",
+      "shippingTown": "ONİKİŞUBAT",
+      "shippingCity": "Kahramanmaraş",
+      "email": "4432523612_5517192011@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Hacı Enes karaköse",
+      "billingAddress": "55016.sokak dış kapı no.8 iç kapı no.6 PİRİ REİS ONİKİŞUBAT Kahramanmaraş",
+      "billingCity": "Kahramanmaraş",
+      "billingTown": "ONİKİŞUBAT",
+      "billingDistrict": "PİRİ REİS",
+      "billingPostalCode": "46040",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 130
+      },
+      "items": [
+        {
+          "lineItemId": "6aa83b08-d213-4657-f4cf-d51a06060606",
+          "listingId": "25de0756-3f6a-41cd-9901-f8d9c6adfc33",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006X2A5A",
+          "merchantSku": "AEHB18650PY2",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 65
+          },
+          "vat": 21.67,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 130
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 5.85
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 65
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 130
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya 18650 Tekli Pil Yuvası Eğlenceli Tasarım ile Projelerinizi Kolayca Tamamlayın",
+          "orderNumber": "4432523612",
+          "orderDate": "2026-09-14T21:20:55",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6203",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000763914260.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Enes karaköse",
+      "estimatedArrivalDate": "2026-09-17T15:30:00Z",
+      "totalDeci": 2.2
+    }
+  ]
 }
