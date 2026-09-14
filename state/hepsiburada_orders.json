@@ -882,6 +882,132 @@
       "customerName": "Okan İlkince",
       "estimatedArrivalDate": "2026-09-17T15:30:00Z",
       "totalDeci": 2.2
+    },
+    {
+      "id": "6aa7c512-7b6a-b856-d96f-e2dd06060606",
+      "status": "Open",
+      "customerId": "f99cfc0a-095a-465f-aaf0-95e7fe274de5",
+      "orderDate": "2026-09-14T12:57:37",
+      "dueDate": "2026-09-14T18:30:00",
+      "barcode": "62955170051252",
+      "packageNumber": "5517005125",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "eski silivri caddesi akcansa fabrika yanı no 31 şahin damper MİMAR SİNAN MERKEZ BÜYÜKÇEKMECE İstanbul",
+      "recipientName": "kaya kurt",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MİMAR SİNAN MERKEZ",
+      "shippingTown": "BÜYÜKÇEKMECE",
+      "shippingCity": "İstanbul",
+      "email": "4449938925_5517005125@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "kaya kurt",
+      "billingAddress": "eski silivri caddesi akcansa fabrika yanı no 31 şahin damper MİMAR SİNAN MERKEZ BÜYÜKÇEKMECE İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "BÜYÜKÇEKMECE",
+      "billingDistrict": "MİMAR SİNAN MERKEZ",
+      "billingPostalCode": "34535",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 550
+      },
+      "items": [
+        {
+          "lineItemId": "6aa7c511-a075-beb6-9c87-140706060606",
+          "listingId": "b192e250-5772-46ac-8c4c-515499321179",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3XH1",
+          "merchantSku": "AEVHM314",
+          "quantity": 5,
+          "price": {
+            "currency": "TRY",
+            "amount": 110
+          },
+          "vat": 91.67,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 550
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 9.9
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 7
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 110
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 550
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya VHM-314 Bluetooth Amfi Kablosuz Ses Alıcı Modülü Siyah 1 Adet Yüksek Ses Kalitesi",
+          "orderNumber": "4449938925",
+          "orderDate": "2026-09-14T12:57:37",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6846",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869040.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "kayakurt kayakurt",
+      "estimatedArrivalDate": "2026-09-17T15:30:00Z",
+      "totalDeci": 5.5
     }
   ]
 }

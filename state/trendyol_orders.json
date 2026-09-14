@@ -119,7 +119,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "ATEL3-6VMTR02",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 273.42,
         "lineUnitPrice": 273.42,
         "fastDeliveryOptions": [
@@ -131,7 +131,7 @@
           }
         ],
         "productCategoryId": 3094,
-        "commission": null,
+        "commission": 2.4,
         "businessUnit": "Hobby",
         "defectiveClaimListingInsight": ""
       }
@@ -147,10 +147,14 @@
       {
         "createdDate": 1789374273029,
         "status": "Created"
+      },
+      {
+        "createdDate": 1789374366372,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1789419540000,
@@ -161,7 +165,7 @@
     "agreedDeliveryDate": 1789419540000,
     "fastDelivery": true,
     "originShipmentDate": 1789374266919,
-    "lastModifiedDate": 1789374273029,
+    "lastModifiedDate": 1789374366372,
     "commercial": false,
     "fastDeliveryType": "SameDayShipping",
     "deliveredByService": false,
