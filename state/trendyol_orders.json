@@ -1,6 +1,188 @@
 [
   {
     "shipmentAddress": {
+      "id": 9649801906,
+      "firstName": "özgür",
+      "lastName": "tayhan",
+      "company": "",
+      "address1": "karagülle Arif efendi sokak Aydın apartmani no 4 daire 8 ",
+      "address2": "",
+      "city": "Sinop",
+      "cityCode": 57,
+      "district": "Gerze",
+      "districtId": 897,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "57000",
+      "countryCode": "TR",
+      "neighborhoodId": 72235,
+      "neighborhood": "Hamidiye Mah",
+      "phone": null,
+      "fullAddress": "karagülle Arif efendi sokak Aydın apartmani no 4 daire 8     Gerze Sinop",
+      "fullName": "özgür tayhan"
+    },
+    "orderNumber": "11607074149",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 1418.0,
+    "packageGrossAmount": 1418.0,
+    "totalDiscount": 28.36,
+    "packageSellerDiscount": 28.36,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 28.36,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 28.36
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9649801905,
+      "firstName": "özgür",
+      "lastName": "tayhan",
+      "company": "",
+      "address1": "karagülle Arif efendi sokak Aydın apartmani no 4 daire 8 ",
+      "address2": "",
+      "city": "Sinop",
+      "cityCode": 57,
+      "district": "Gerze",
+      "districtId": 897,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "57000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 72235,
+      "neighborhood": "Hamidiye Mah",
+      "phone": null,
+      "fullAddress": "karagülle Arif efendi sokak Aydın apartmani no 4 daire 8     Gerze Sinop",
+      "fullName": "özgür tayhan"
+    },
+    "customerFirstName": "özgür",
+    "customerEmail": "pf+p8e42j59@trendyolmail.com",
+    "customerId": 2866223,
+    "supplierId": 0,
+    "customerLastName": "tayhan",
+    "id": 4159786008,
+    "channelId": 1,
+    "shipmentPackageId": 4159786008,
+    "cargoTrackingNumber": 7330037154519147,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEISDSYS10",
+        "sku": "2909960376034",
+        "stockCode": "AEISDSYS10",
+        "productName": "İşletmelerde Mesleki Eğitim İş Dosyası (Staj Defteri) — Sınıf Paketi - 10 Adet AEISDSYS10, one size",
+        "productCode": 1664935521,
+        "contentId": 1664935521,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 1418.0,
+        "lineGrossAmount": 1418.0,
+        "discount": 28.36,
+        "lineTotalDiscount": 28.36,
+        "lineSellerDiscount": 28.36,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6797359339",
+            "lineItemPrice": 1389.64,
+            "lineItemDiscount": 28.36,
+            "lineItemSellerDiscount": 28.36,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "productColor": "Yeşil",
+        "id": 5955667745,
+        "lineId": 5955667745,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2909960376034",
+        "orderLineItemStatusName": "Picking",
+        "price": 1389.64,
+        "lineUnitPrice": 1389.64,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1520,
+        "commission": 3.6,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1789507898662,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1789497100200,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1789497104058,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1789497155038,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1789592340000,
+    "estimatedDeliveryEndDate": 1790024340000,
+    "totalPrice": 1389.64,
+    "packageTotalPrice": 1389.64,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1789592340000,
+    "fastDelivery": true,
+    "originShipmentDate": 1789497100190,
+    "lastModifiedDate": 1789498161700,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10862342961,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9649101374,
       "firstName": "Bircan",
       "lastName": "keser",
