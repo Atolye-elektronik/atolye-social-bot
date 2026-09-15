@@ -1,6 +1,192 @@
 [
   {
     "shipmentAddress": {
+      "id": 9649101374,
+      "firstName": "Bircan",
+      "lastName": "keser",
+      "company": "",
+      "address1": "Balikyolu mah.468 sk dış kapi no 6 daire 4 esenyurt istanbul ",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Esenyurt",
+      "districtId": 66,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 28236,
+      "neighborhood": "Balıkyolu Mah",
+      "phone": null,
+      "fullAddress": "Balikyolu mah.468 sk dış kapi no 6 daire 4 esenyurt istanbul     Esenyurt İstanbul",
+      "fullName": "Bircan keser"
+    },
+    "orderNumber": "11606721577",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 173.0,
+    "packageGrossAmount": 173.0,
+    "totalDiscount": 18.46,
+    "packageSellerDiscount": 18.46,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 18.46,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      },
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 3.46
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9649101371,
+      "firstName": "Bircan",
+      "lastName": "keser",
+      "company": "",
+      "address1": "Balikyolu mah.468 sk dış kapi no 6 daire 4 esenyurt istanbul ",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Esenyurt",
+      "districtId": 66,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 28236,
+      "neighborhood": "Balıkyolu Mah",
+      "phone": null,
+      "fullAddress": "Balikyolu mah.468 sk dış kapi no 6 daire 4 esenyurt istanbul     Esenyurt İstanbul",
+      "fullName": "Bircan keser"
+    },
+    "customerFirstName": "Bircan",
+    "customerEmail": "pf+w29ypwkk@trendyolmail.com",
+    "customerId": 161527851,
+    "supplierId": 0,
+    "customerLastName": "keser",
+    "id": 4159465569,
+    "channelId": 1,
+    "shipmentPackageId": 4159465569,
+    "cargoTrackingNumber": 7270037150697503,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETEMDEF",
+        "sku": "2901069996298",
+        "stockCode": "AETEMDEF",
+        "productName": "Temrin Defteri AETEMDEF, one size",
+        "productCode": 1664639329,
+        "contentId": 1664639329,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 173.0,
+        "lineGrossAmount": 173.0,
+        "discount": 18.46,
+        "lineTotalDiscount": 18.46,
+        "lineSellerDiscount": 18.46,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6796832308",
+            "lineItemPrice": 154.54,
+            "lineItemDiscount": 18.46,
+            "lineItemSellerDiscount": 18.46,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "productColor": "Yeşil",
+        "id": 5955204743,
+        "lineId": 5955204743,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901069996298",
+        "orderLineItemStatusName": "Picking",
+        "price": 154.54,
+        "lineUnitPrice": 154.54,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1520,
+        "commission": 3.6,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1789503439728,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1789492641383,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1789492646131,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1789494041893,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1789592340000,
+    "estimatedDeliveryEndDate": 1789765140000,
+    "totalPrice": 154.54,
+    "packageTotalPrice": 154.54,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1789592340000,
+    "fastDelivery": true,
+    "originShipmentDate": 1789492641374,
+    "lastModifiedDate": 1789494041893,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10861972924,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9646400734,
       "firstName": "kubra",
       "lastName": "eken",
