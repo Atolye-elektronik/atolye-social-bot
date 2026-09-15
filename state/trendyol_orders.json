@@ -1,1 +1,175 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9645051714,
+      "firstName": "Süleyman",
+      "lastName": "UĞURLU",
+      "company": "",
+      "address1": "hacı musa sokak no:20 kat:2 daire:4 ",
+      "address2": "",
+      "city": "Zonguldak",
+      "cityCode": 67,
+      "district": "Ereğli",
+      "districtId": 1030,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "67000",
+      "countryCode": "TR",
+      "neighborhoodId": 60478,
+      "neighborhood": "Kepez Mah",
+      "phone": null,
+      "fullAddress": "hacı musa sokak no:20 kat:2 daire:4     Ereğli Zonguldak",
+      "fullName": "Süleyman UĞURLU"
+    },
+    "orderNumber": "11604436759",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 314.0,
+    "packageGrossAmount": 314.0,
+    "totalDiscount": 0.0,
+    "packageSellerDiscount": 0.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 0.0,
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9645051711,
+      "firstName": "Süleyman",
+      "lastName": "UĞURLU",
+      "company": "",
+      "address1": "hacı musa sokak no:20 kat:2 daire:4 ",
+      "address2": "",
+      "city": "Zonguldak",
+      "cityCode": 67,
+      "district": "Ereğli",
+      "districtId": 1030,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "67000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 60478,
+      "neighborhood": "Kepez Mah",
+      "phone": null,
+      "fullAddress": "hacı musa sokak no:20 kat:2 daire:4     Ereğli Zonguldak",
+      "fullName": "Süleyman UĞURLU"
+    },
+    "customerFirstName": "Süleyman",
+    "customerEmail": "pf+zayv5z2k@trendyolmail.com",
+    "customerId": 220683831,
+    "supplierId": 0,
+    "customerLastName": "UĞURLU",
+    "id": 4157606646,
+    "channelId": 1,
+    "shipmentPackageId": 4157606646,
+    "cargoTrackingNumber": 7270037132369459,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEJK2040EE3",
+        "sku": "ATELJKEE20403",
+        "stockCode": "AEJK2040EE3",
+        "productName": "Jumper Kablo Seti - 20cm - 40'lı - 3'lü Kablo Seti (1x Dişi Erkek / 1x Dişi Dişi / 1x Erkek Erkek) AEJK2040EE3, one size",
+        "productCode": 1605300026,
+        "contentId": 1605300026,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 314.0,
+        "lineGrossAmount": 314.0,
+        "discount": 0.0,
+        "lineTotalDiscount": 0.0,
+        "lineSellerDiscount": 0.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6793733647",
+            "lineItemPrice": 314.0,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5952527212,
+        "lineId": 5952527212,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELJKEE20403",
+        "orderLineItemStatusName": "ReadyToShip",
+        "price": 314.0,
+        "lineUnitPrice": 314.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 2.4,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1789471413554,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1789460645858,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1789460649399,
+        "status": "Created"
+      }
+    ],
+    "shipmentPackageStatus": "ReadyToShip",
+    "status": "Created",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1789505940000,
+    "estimatedDeliveryEndDate": 1789765140000,
+    "totalPrice": 314.0,
+    "packageTotalPrice": 314.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1789505940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1789460645853,
+    "lastModifiedDate": 1789460649399,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10859862974,
+    "is4P": false
+  }
+]

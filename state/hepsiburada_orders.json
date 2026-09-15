@@ -378,6 +378,132 @@
       "customerName": "Mustafa Kaya",
       "estimatedArrivalDate": "2026-09-17T15:30:00Z",
       "totalDeci": 6.6
+    },
+    {
+      "id": "6aa8f110-e360-91c0-f71b-920406060606",
+      "status": "Open",
+      "customerId": "82c068f4-c346-48eb-a974-10b1210f5cbe",
+      "orderDate": "2026-09-15T10:17:34",
+      "dueDate": "2026-09-16T18:30:00",
+      "barcode": "62955173546900",
+      "packageNumber": "5517354690",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Mb1-1 no 81/A DİCLE MERKEZ Şırnak",
+      "recipientName": "cetin batmaz",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "DİCLE",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Şırnak",
+      "email": "4625402498_5517354690@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "çetin batmaz",
+      "billingAddress": "Mb1-1 no 81/A\n DİCLE MERKEZ Şırnak",
+      "billingCity": "Şırnak",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "DİCLE",
+      "billingPostalCode": "73100",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 627.4
+      },
+      "items": [
+        {
+          "lineItemId": "6aa8f10f-343a-d536-1891-f3fd06060606",
+          "listingId": "969eda22-a6ee-4e2d-8a57-458996739c62",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8L",
+          "merchantSku": "AEHB18650PY3",
+          "quantity": 10,
+          "price": {
+            "currency": "TRY",
+            "amount": 62.73999
+          },
+          "vat": 104.57,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 627.4
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 5.65
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 6.26
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 62.59999
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 62.73999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 627.4
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 18650 Pil Yuvası Kablolu Tutucu 3.7V 1'li Tekli Pil Kutusu Özellikli",
+          "orderNumber": "4625402498",
+          "orderDate": "2026-09-15T10:17:34",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100780",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568559.jpg",
+          "deci": 0.5
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Çetin Batmaz",
+      "estimatedArrivalDate": "2026-09-17T15:30:00Z",
+      "totalDeci": 5
     }
   ]
 }
