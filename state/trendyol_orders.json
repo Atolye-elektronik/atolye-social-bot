@@ -1,6 +1,198 @@
 [
   {
     "shipmentAddress": {
+      "id": 9645726181,
+      "firstName": "Süleyman",
+      "lastName": "Durak",
+      "company": "",
+      "address1": "Refik Saydam Cad. No.56 (veya 58) Kat.2",
+      "address2": "",
+      "city": "Isparta",
+      "cityCode": 32,
+      "district": "Keçiborlu",
+      "districtId": 535,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "32000",
+      "countryCode": "TR",
+      "neighborhoodId": 26070,
+      "neighborhood": "Tuzla Mah",
+      "phone": null,
+      "fullAddress": "Refik Saydam Cad. No.56 (veya 58) Kat.2     Keçiborlu Isparta",
+      "fullName": "Süleyman Durak"
+    },
+    "orderNumber": "11604804036",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 346.0,
+    "packageGrossAmount": 346.0,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9645726178,
+      "firstName": "Süleyman",
+      "lastName": "Durak",
+      "company": "",
+      "address1": "Refik Saydam Cad. No.56 (veya 58) Kat.2",
+      "address2": "",
+      "city": "Isparta",
+      "cityCode": 32,
+      "district": "Keçiborlu",
+      "districtId": 535,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "32000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 26070,
+      "neighborhood": "Tuzla Mah",
+      "phone": null,
+      "fullAddress": "Refik Saydam Cad. No.56 (veya 58) Kat.2     Keçiborlu Isparta",
+      "fullName": "Süleyman Durak"
+    },
+    "customerFirstName": "Süleyman",
+    "customerEmail": "pf+ke869apx@trendyolmail.com",
+    "customerId": 6077883,
+    "supplierId": 0,
+    "customerLastName": "Durak",
+    "id": 4157920589,
+    "channelId": 1,
+    "shipmentPackageId": 4157920589,
+    "cargoTrackingNumber": 7330037136103401,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 2,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETEMDEF",
+        "sku": "2901069996298",
+        "stockCode": "AETEMDEF",
+        "productName": "Temrin Defteri AETEMDEF, one size",
+        "productCode": 1664639329,
+        "contentId": 1664639329,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 173.0,
+        "lineGrossAmount": 173.0,
+        "discount": 7.5,
+        "lineTotalDiscount": 7.5,
+        "lineSellerDiscount": 7.5,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6794256489",
+            "lineItemPrice": 165.5,
+            "lineItemDiscount": 7.5,
+            "lineItemSellerDiscount": 7.5,
+            "lineItemTyDiscount": 0.0
+          },
+          {
+            "lineItemId": "6794256490",
+            "lineItemPrice": 165.5,
+            "lineItemDiscount": 7.5,
+            "lineItemSellerDiscount": 7.5,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "productColor": "Yeşil",
+        "id": 5952974450,
+        "lineId": 5952974450,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901069996298",
+        "orderLineItemStatusName": "Picking",
+        "price": 165.5,
+        "lineUnitPrice": 165.5,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1520,
+        "commission": 3.6,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1789476658765,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1789465860765,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1789465865475,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1789465883992,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1789505940000,
+    "estimatedDeliveryEndDate": 1789851540000,
+    "totalPrice": 331.0,
+    "packageTotalPrice": 331.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1789505940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1789465860760,
+    "lastModifiedDate": 1789466802005,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10860214343,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9645051714,
       "firstName": "Süleyman",
       "lastName": "UĞURLU",
@@ -74,10 +266,10 @@
     "id": 4157606646,
     "channelId": 1,
     "shipmentPackageId": 4157606646,
-    "cargoTrackingNumber": 7270037132369459,
+    "cargoTrackingNumber": 7330037132496705,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 1,
@@ -113,7 +305,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "ATELJKEE20403",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 314.0,
         "lineUnitPrice": 314.0,
         "fastDeliveryOptions": [
@@ -141,10 +333,14 @@
       {
         "createdDate": 1789460649399,
         "status": "Created"
+      },
+      {
+        "createdDate": 1789460851567,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1789505940000,
@@ -155,7 +351,7 @@
     "agreedDeliveryDate": 1789505940000,
     "fastDelivery": true,
     "originShipmentDate": 1789460645853,
-    "lastModifiedDate": 1789460649399,
+    "lastModifiedDate": 1789460864084,
     "commercial": false,
     "fastDeliveryType": "SameDayShipping",
     "deliveredByService": false,
