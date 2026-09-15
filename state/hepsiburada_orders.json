@@ -1,4 +1,131 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6aa96cac-cd13-f1bd-55d3-cbff06060606",
+      "status": "Open",
+      "customerId": "8246bcd3-84fa-49f9-adf7-43456c38fcaa",
+      "orderDate": "2026-09-15T19:04:58",
+      "dueDate": "2026-09-16T18:30:00",
+      "barcode": "62955175932314",
+      "packageNumber": "5517593231",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "3116.Sokak, Extra Life-2 Sitesi, No:4B, B blok, kat:6, daire:30 ŞEMİKLER MERKEZEFENDİ Denizli",
+      "recipientName": "Atakan Bodur",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ŞEMİKLER",
+      "shippingTown": "MERKEZEFENDİ",
+      "shippingCity": "Denizli",
+      "email": "4194366937_5517593231@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Atakan Bodur",
+      "billingAddress": "ŞEMİKLER Mah. 3116. Sk. Bina No : 4B Daire No : 30 Kat : 6 MERKEZEFENDİ / Denizli ŞEMİKLER MERKEZEFENDİ Denizli",
+      "billingCity": "Denizli",
+      "billingTown": "MERKEZEFENDİ",
+      "billingDistrict": "ŞEMİKLER",
+      "billingPostalCode": "20030",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 108
+      },
+      "items": [
+        {
+          "lineItemId": "6aa96cab-513b-d97b-3439-6cea06060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "vat": 18,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 4.86
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4194366937",
+          "orderDate": "2026-09-15T19:04:58",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "atakan bodur",
+      "estimatedArrivalDate": "2026-09-18T15:30:00Z",
+      "totalDeci": 2.2
+    }
+  ]
 }
