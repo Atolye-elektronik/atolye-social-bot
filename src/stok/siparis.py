@@ -52,6 +52,12 @@ BARKOD_ALIAS = _barkod_alias()
 IPTAL = {"cancelled", "canceled", "iptal", "returned", "unsupplied", "undelivered", "iade"}
 
 
+def _iptal_mi(durum):
+    """15.09.2026: HB kalem durumu "CancelledByCustomer" gibi bilesik geliyor; tam eslesme kaciriyordu."""
+    s = str(durum or "").lower()
+    return s in IPTAL or "cancel" in s
+
+
 def _ilk(d, *anahtarlar, vars=None):
     for a in anahtarlar:
         if isinstance(d, dict) and d.get(a) not in (None, ""):
@@ -69,7 +75,7 @@ def _kalemler(o):
                 if not isinstance(x, dict):
                     continue
                 durum = str(_ilk(x, "orderLineItemStatusName", "status", "lineStatus", vars="") or "").lower()
-                if durum in IPTAL:
+                if _iptal_mi(durum):
                     continue
                 out.append({
                     "kod": _ilk(x, "merchantSku", "merchantSKU", "stockCode", "sellerStockCode", "vendorStockCode", "productCode", "code", "sku"),
@@ -150,13 +156,33 @@ def topla_hepsiburada():
             except Exception as e:
                 print("  HB detay", no, str(e)[:80]); continue
             kl = [{"kod": it.get("merchantSKU") or it.get("merchantSku"), "barkod": it.get("productBarcode"),
-                   "adet": int(it.get("quantity") or 1)} for it in (d.get("items") or []) if str(it.get("status", "")).lower() not in IPTAL]
+                   "adet": int(it.get("quantity") or 1)} for it in (d.get("items") or []) if not _iptal_mi(it.get("status"))]
             tutar = sum(float(((it.get("totalPrice") or {}).get("amount") or 0)) for it in (d.get("items") or []))
             out.append({"no": no, "tarih": d.get("orderDate"), "durum": "Shipped", "kalemler": kl, "tutar": tutar,
                         "musteri": (d.get("customer") or {}).get("name", ""), "kargo_son": str(pk.get("ShippedDate") or "")[:16]})
             gorulen.add(no)
     except Exception as e:
         print("  HB shipped hata:", str(e)[:120])
+    # 15.09.2026: HB iptal edilen siparisi hicbir liste ucunda iptal durumuyla gostermiyor, siparis
+    # acik/paket/kargo listelerinden sessizce dusuyor; stok hic geri verilmiyordu (4679093299 VHM-314 x3
+    # ve 4441939902 x1 dusuldu, musteri iptal etti). Dusulmus ama artik listelerde olmayan son 3 gunun
+    # siparislerine detaydan bak; tum kalemleri iptalse iptal olarak dondur, yeni_siparisler geri versin.
+    try:
+        listede = {o["no"] for o in out}
+        g_hb = gorulen_oku().get("hepsiburada", {})
+        i_hb = iade_oku().get("hepsiburada", {})
+        esik = (datetime.now() - timedelta(days=3)).strftime("%Y-%m-%dT%H:%M:%S")
+        for no, t in g_hb.items():
+            if not no.isdigit() or no in listede or no in i_hb or str(t) < esik:
+                continue
+            try:
+                its = hb.get_order_detail(no).get("items") or []
+            except Exception as e:
+                print("  HB iptal kontrol", no, str(e)[:80]); continue
+            if its and all(_iptal_mi(it.get("status")) for it in its):
+                out.append({"no": no, "tarih": t, "durum": its[0].get("status"), "kalemler": []})
+    except Exception as e:
+        print("  HB iptal kontrol hata:", str(e)[:120])
     return out
 
 
@@ -342,7 +368,7 @@ def yeni_siparisler(kanallar):
         ik = iade.setdefault(k, {})
         n_yeni = n_ipt = 0
         for o in L:
-            iptal_mi = str(o.get("durum", "")).lower() in IPTAL
+            iptal_mi = _iptal_mi(o.get("durum"))
             if iptal_mi:
                 if o["no"] in gk and o["no"] not in ik:
                     o["kanal"] = k
