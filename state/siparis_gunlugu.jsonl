@@ -69,3 +69,4 @@
 {"an": "2026-09-15T10:37", "kanal": "hepsiburada", "no": "4441939902", "iade": {"AEVHM314": 1}, "durum": "CancelledByCustomer", "kuru": true}
 {"an": "2026-09-15T10:39", "kanal": "hepsiburada", "no": "4679093299", "iade": {"AEVHM314": 3}, "durum": "CancelledByCustomer", "kuru": false}
 {"an": "2026-09-15T10:39", "kanal": "hepsiburada", "no": "4441939902", "iade": {"AEVHM314": 1}, "durum": "CancelledByCustomer", "kuru": false}
+{"an": "2026-09-15T11:15", "kanal": "trendyol", "no": "11605149465", "kod": "AEUNOR3", "adet": 1, "dusum": {"AEUNOR3": 1}, "kuru": false}
