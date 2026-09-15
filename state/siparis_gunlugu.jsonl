@@ -71,3 +71,5 @@
 {"an": "2026-09-15T10:39", "kanal": "hepsiburada", "no": "4441939902", "iade": {"AEVHM314": 1}, "durum": "CancelledByCustomer", "kuru": false}
 {"an": "2026-09-15T11:15", "kanal": "trendyol", "no": "11605149465", "kod": "AEUNOR3", "adet": 1, "dusum": {"AEUNOR3": 1}, "kuru": false}
 {"an": "2026-09-15T12:20", "kanal": "hepsiburada", "no": "4148802864", "kod": "AEVHM314", "adet": 3, "dusum": {"AEVHM314": 3}, "kuru": false}
+{"an": "2026-09-15T16:17", "kanal": "shopify", "no": "#1016", "kod": "AESTJDFTR-10", "adet": 1, "dusum": {"AESTJDFTR": 10}, "kuru": false}
+{"an": "2026-09-15T16:17", "kanal": "hepsiburada", "no": "4194366937", "kod": "AEPY18650T", "adet": 2, "dusum": {"AEPY18650T": 2}, "kuru": false}
