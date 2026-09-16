@@ -80,3 +80,4 @@
 {"an": "2026-09-16T06:20", "kanal": "n11", "no": "228978342423", "kod": "AEACDMMR-N11", "adet": 2, "hata": "bilinmeyen kod", "kuru": false}
 {"an": "2026-09-16T08:16", "kanal": "hepsiburada", "no": "4729614602", "kod": "AEJK2040EE3", "adet": 1, "dusum": {"AEJK2040": 3}, "kuru": false}
 {"an": "2026-09-16T14:16", "kanal": "trendyol", "no": "11610027066", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
+{"an": "2026-09-16T15:43", "kanal": "trendyol", "no": "11610438164", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
