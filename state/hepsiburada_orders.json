@@ -2,280 +2,28 @@
   "newOrderItems": [],
   "packages": [
     {
-      "id": "6aaae894-e467-2c71-3bec-d15e06060606",
+      "id": "6aabe752-b04c-c23b-be02-287306060606",
       "status": "Open",
-      "customerId": "22e2414d-5735-4ed7-a105-3e3cf651841d",
-      "orderDate": "2026-09-16T22:05:55",
-      "dueDate": "2026-09-17T18:30:00",
-      "barcode": "62955181154494",
-      "packageNumber": "5518115449",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Hacıbey mahallesi İstiklal caddesi no 27 Alaşehir/Manisa HACIBEY ALAŞEHİR Manisa",
-      "recipientName": "Gürsel Ertürk",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "HACIBEY",
-      "shippingTown": "ALAŞEHİR",
-      "shippingCity": "Manisa",
-      "email": "4467557763_5518115449@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Gürsel Ertürk",
-      "billingAddress": "Hacıbey mahallesi İstiklal caddesi no 27 Alaşehir/Manisa HACIBEY ALAŞEHİR Manisa",
-      "billingCity": "Manisa",
-      "billingTown": "ALAŞEHİR",
-      "billingDistrict": "HACIBEY",
-      "billingPostalCode": "45600",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 184
-      },
-      "items": [
-        {
-          "lineItemId": "6aaae893-594e-2a9f-9e60-2d4a06060606",
-          "listingId": "6e958f8f-c621-4768-87f4-1366f2429559",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV0000E9Q2DJ",
-          "merchantSku": "AEHVYSHP",
-          "quantity": 1,
-          "price": {
-            "currency": "TRY",
-            "amount": 184
-          },
-          "vat": 30.67,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 184
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 16.55999
-          },
-          "commissionRate": 9,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 184
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 184
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Yaylı Süngerli Metal Havya Standı",
-          "orderNumber": "4467557763",
-          "orderDate": "2026-09-16T22:05:55",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "ATELHVYSHP001",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001685156313.jpg",
-          "deci": 0.1
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "Mehmet Bilgi",
-      "estimatedArrivalDate": "2026-09-21T15:30:00Z",
-      "totalDeci": 0.1
-    },
-    {
-      "id": "6aaafe04-4a6f-c3e6-8dae-f98f06060606",
-      "status": "Open",
-      "customerId": "7f2a9172-eded-4f10-ac7c-5de8128a836c",
-      "orderDate": "2026-09-16T23:37:23",
-      "dueDate": "2026-09-17T18:30:00",
-      "barcode": "62955181709656",
-      "packageNumber": "5518170965",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Easy Point Esnaf - D&D Pazarı İsmetpaşa-İSMETPAŞA MAH. MASHARBEY SOK. NO:6/B İSMETPAŞA MERKEZ BİLECİK",
-      "recipientName": "serdar doğan",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "İSMETPAŞA",
-      "shippingTown": "MERKEZ",
-      "shippingCity": "Bilecik",
-      "email": "4901589637_5518170965@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Serdar Doğan",
-      "billingAddress": "Esenyalı mah. Istıranca sok. No.62  pendik - istanbul           ESENYALI PENDİK İstanbul",
-      "billingCity": "İstanbul",
-      "billingTown": "PENDİK",
-      "billingDistrict": "ESENYALI",
-      "billingPostalCode": "34903",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 144.9
-      },
-      "items": [
-        {
-          "lineItemId": "6aaafe04-4832-be3d-729d-958506060606",
-          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00003Z3U77",
-          "merchantSku": "AEACDMMR",
-          "quantity": 1,
-          "price": {
-            "currency": "TRY",
-            "amount": 144.9
-          },
-          "vat": 24.15,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 144.9
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 13.04
-          },
-          "commissionRate": 9,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 144.9
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 144.9
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
-          "orderNumber": "4901589637",
-          "orderDate": "2026-09-16T23:37:23",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "HBCC138FA6619",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
-          "deci": 1
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "MEHMET SERDAR DOĞAN",
-      "estimatedArrivalDate": "2026-09-21T15:30:00Z",
-      "totalDeci": 1
-    },
-    {
-      "id": "6aab83ce-594e-2a9f-9ec5-6a6306060606",
-      "status": "Open",
-      "customerId": "158e89d0-3b06-4ede-821f-40498e704b66",
-      "orderDate": "2026-09-17T09:08:13",
-      "dueDate": "2026-09-17T18:30:00",
-      "barcode": "62955183945818",
-      "packageNumber": "5518394581",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "İNÖNÜ MAH. BÜLENT ECEVİT CAD. GÜNEŞ 4 \nBLOK NO: 2D İÇ KAPI NO: 18 KAPAKLI / \nTEKİRDAĞ İNÖNÜ KAPAKLI Tekirdağ",
-      "recipientName": "Ertan Toykan",
+      "customerId": "f6bda323-5a64-4b42-b6f5-57c9a35b42b2",
+      "orderDate": "2026-09-17T16:12:49",
+      "dueDate": "2026-09-18T18:30:00",
+      "barcode": "62955185803242",
+      "packageNumber": "5518580324",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "6746 sokak no 33 35570 İNÖNÜ KARŞIYAKA İzmir",
+      "recipientName": "Bülent Öztürk",
       "shippingCountryCode": "TR",
       "shippingDistrict": "İNÖNÜ",
-      "shippingTown": "KAPAKLI",
-      "shippingCity": "Tekirdağ",
-      "email": "4564109262_5518394581@hepsifatura.com",
+      "shippingTown": "KARŞIYAKA",
+      "shippingCity": "İzmir",
+      "email": "4407028464_5518580324@hepsifatura.com",
       "phoneNumber": "",
-      "companyName": "Çağan Toykan",
-      "billingAddress": "İnönü mahallesi Yıldız kent sitesi güneş 4 D:18Kapaklı İNÖNÜ KAPAKLI Tekirdağ",
-      "billingCity": "Tekirdağ",
-      "billingTown": "KAPAKLI",
-      "billingDistrict": "İNÖNÜ",
-      "billingPostalCode": "59510",
+      "companyName": "Bülent Öztürk",
+      "billingAddress": "6746 sokak no 33 İNÖNÜ MAHALLESİ KARŞIYAKA İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "KARŞIYAKA",
+      "billingDistrict": "İNÖNÜ MAHALLESİ",
+      "billingPostalCode": "",
       "billingCountryCode": "TR",
       "taxOffice": null,
       "taxNumber": "",
@@ -288,7 +36,7 @@
       },
       "items": [
         {
-          "lineItemId": "6aab83cd-787f-36e7-32a7-399706060606",
+          "lineItemId": "6aabe751-8049-f466-c4be-713e06060606",
           "listingId": "d9f1dcb0-a496-42a5-ae17-38ee8b01661f",
           "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
           "hbSku": "HBCV00000PLEY2",
@@ -343,8 +91,8 @@
           "customizedText04": "",
           "properties": [],
           "productName": "Cnl Ac 220V 2000W Motor Hız Kontrol Kartı Dimmer",
-          "orderNumber": "4564109262",
-          "orderDate": "2026-09-17T09:08:13",
+          "orderNumber": "4407028464",
+          "orderDate": "2026-09-17T16:12:49",
           "deliveryType": "Standart Teslimat",
           "customerDelivery": "",
           "pickupTime": null,
@@ -375,7 +123,7 @@
         }
       ],
       "isCargoChangable": true,
-      "customerName": "Ertan Toykan",
+      "customerName": "Bülent Öztürk",
       "estimatedArrivalDate": "2026-09-22T15:30:00Z",
       "totalDeci": 1
     }
