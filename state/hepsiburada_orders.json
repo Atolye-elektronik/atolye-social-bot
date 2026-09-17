@@ -9,7 +9,7 @@
       "dueDate": "2026-09-17T18:30:00",
       "barcode": "62955181154494",
       "packageNumber": "5518115449",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Hacıbey mahallesi İstiklal caddesi no 27 Alaşehir/Manisa HACIBEY ALAŞEHİR Manisa",
       "recipientName": "Gürsel Ertürk",
       "shippingCountryCode": "TR",
@@ -126,6 +126,258 @@
       "customerName": "Mehmet Bilgi",
       "estimatedArrivalDate": "2026-09-21T15:30:00Z",
       "totalDeci": 0.1
+    },
+    {
+      "id": "6aaafe04-4a6f-c3e6-8dae-f98f06060606",
+      "status": "Open",
+      "customerId": "7f2a9172-eded-4f10-ac7c-5de8128a836c",
+      "orderDate": "2026-09-16T23:37:23",
+      "dueDate": "2026-09-17T18:30:00",
+      "barcode": "62955181709656",
+      "packageNumber": "5518170965",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Easy Point Esnaf - D&D Pazarı İsmetpaşa-İSMETPAŞA MAH. MASHARBEY SOK. NO:6/B İSMETPAŞA MERKEZ BİLECİK",
+      "recipientName": "serdar doğan",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "İSMETPAŞA",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Bilecik",
+      "email": "4901589637_5518170965@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Serdar Doğan",
+      "billingAddress": "Esenyalı mah. Istıranca sok. No.62  pendik - istanbul           ESENYALI PENDİK İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "PENDİK",
+      "billingDistrict": "ESENYALI",
+      "billingPostalCode": "34903",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 144.9
+      },
+      "items": [
+        {
+          "lineItemId": "6aaafe04-4832-be3d-729d-958506060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "vat": 24.15,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.04
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4901589637",
+          "orderDate": "2026-09-16T23:37:23",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "MEHMET SERDAR DOĞAN",
+      "estimatedArrivalDate": "2026-09-21T15:30:00Z",
+      "totalDeci": 1
+    },
+    {
+      "id": "6aab83ce-594e-2a9f-9ec5-6a6306060606",
+      "status": "Open",
+      "customerId": "158e89d0-3b06-4ede-821f-40498e704b66",
+      "orderDate": "2026-09-17T09:08:13",
+      "dueDate": "2026-09-17T18:30:00",
+      "barcode": "62955183945818",
+      "packageNumber": "5518394581",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "İNÖNÜ MAH. BÜLENT ECEVİT CAD. GÜNEŞ 4 \nBLOK NO: 2D İÇ KAPI NO: 18 KAPAKLI / \nTEKİRDAĞ İNÖNÜ KAPAKLI Tekirdağ",
+      "recipientName": "Ertan Toykan",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "İNÖNÜ",
+      "shippingTown": "KAPAKLI",
+      "shippingCity": "Tekirdağ",
+      "email": "4564109262_5518394581@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Çağan Toykan",
+      "billingAddress": "İnönü mahallesi Yıldız kent sitesi güneş 4 D:18Kapaklı İNÖNÜ KAPAKLI Tekirdağ",
+      "billingCity": "Tekirdağ",
+      "billingTown": "KAPAKLI",
+      "billingDistrict": "İNÖNÜ",
+      "billingPostalCode": "59510",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 174.19
+      },
+      "items": [
+        {
+          "lineItemId": "6aab83cd-787f-36e7-32a7-399706060606",
+          "listingId": "d9f1dcb0-a496-42a5-ae17-38ee8b01661f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000PLEY2",
+          "merchantSku": "AEACDMMR2",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 174.19
+          },
+          "vat": 29.03,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 174.19
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 15.68
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 174.19
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 174.19
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl Ac 220V 2000W Motor Hız Kontrol Kartı Dimmer",
+          "orderNumber": "4564109262",
+          "orderDate": "2026-09-17T09:08:13",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000000CNL576",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/121/{size}/110000071106017.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Ertan Toykan",
+      "estimatedArrivalDate": "2026-09-22T15:30:00Z",
+      "totalDeci": 1
     }
   ]
 }
