@@ -1,5 +1,5 @@
 {
-  "kontrol": "2026-09-18T10:49:34.064608+00:00",
+  "kontrol": "2026-09-18T11:48:32.758097+00:00",
   "akislar": [
     {
       "dosya": "bayram.yml",
@@ -7,7 +7,7 @@
       "beklenen": "2026-09-18T05:00:00+00:00",
       "son_basarili": "2026-09-18T05:15:02+00:00",
       "son_kosu": "2026-09-18T05:15:02+00:00",
-      "gecikme_dk": 349,
+      "gecikme_dk": 408,
       "kacti": false,
       "hatali": false
     },
@@ -17,7 +17,7 @@
       "beklenen": "2026-09-18T01:00:00+00:00",
       "son_basarili": "2026-09-13T01:11:45+00:00",
       "son_kosu": "2026-09-18T01:13:05+00:00",
-      "gecikme_dk": 589,
+      "gecikme_dk": 648,
       "kacti": false,
       "hatali": true
     },
@@ -27,17 +27,17 @@
       "beklenen": "2026-09-14T04:30:00+00:00",
       "son_basarili": "2026-09-14T04:43:15+00:00",
       "son_kosu": "2026-09-14T04:43:15+00:00",
-      "gecikme_dk": 6139,
+      "gecikme_dk": 6198,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "pazaryeri-sync.yml",
       "ad": "Pazaryeri siparis senkronu",
-      "beklenen": "2026-09-18T08:13:00+00:00",
+      "beklenen": "2026-09-18T10:13:00+00:00",
       "son_basarili": "2026-09-18T10:21:54+00:00",
       "son_kosu": "2026-09-18T10:21:54+00:00",
-      "gecikme_dk": 156,
+      "gecikme_dk": 95,
       "kacti": false,
       "hatali": false
     },
@@ -47,7 +47,7 @@
       "beklenen": "2026-09-17T18:37:00+00:00",
       "son_basarili": "2026-09-17T18:46:57+00:00",
       "son_kosu": "2026-09-17T18:46:57+00:00",
-      "gecikme_dk": 972,
+      "gecikme_dk": 1031,
       "kacti": false,
       "hatali": false
     },
@@ -57,17 +57,17 @@
       "beklenen": "2026-09-18T09:00:00+00:00",
       "son_basarili": "2026-09-18T09:11:38+00:00",
       "son_kosu": "2026-09-18T09:11:38+00:00",
-      "gecikme_dk": 109,
+      "gecikme_dk": 168,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "stok-siparis.yml",
       "ad": "Stok merkezi - siparis toplama",
-      "beklenen": "2026-09-18T09:00:00+00:00",
-      "son_basarili": "2026-09-18T10:41:45+00:00",
-      "son_kosu": "2026-09-18T10:41:45+00:00",
-      "gecikme_dk": 109,
+      "beklenen": "2026-09-18T10:00:00+00:00",
+      "son_basarili": "2026-09-18T11:41:07+00:00",
+      "son_kosu": "2026-09-18T11:41:07+00:00",
+      "gecikme_dk": 108,
       "kacti": false,
       "hatali": false
     },
@@ -77,17 +77,17 @@
       "beklenen": "2026-09-01T04:00:00+00:00",
       "son_basarili": "2026-09-01T04:03:16+00:00",
       "son_kosu": "2026-09-01T04:03:16+00:00",
-      "gecikme_dk": 24889,
+      "gecikme_dk": 24948,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "tiktok-zamanla.yml",
       "ad": "TikTok kuyruk zamanlama",
-      "beklenen": "2026-09-17T17:23:00+00:00",
+      "beklenen": "2026-09-18T05:15:00+00:00",
       "son_basarili": "2026-09-18T05:26:19+00:00",
       "son_kosu": "2026-09-18T05:26:19+00:00",
-      "gecikme_dk": 1046,
+      "gecikme_dk": 393,
       "kacti": false,
       "hatali": false
     }
