@@ -1,6 +1,374 @@
 [
   {
     "shipmentAddress": {
+      "id": 9672479675,
+      "firstName": "çiğdem",
+      "lastName": "ayan",
+      "company": "",
+      "address1": "gazi mustafa kemalpasa mahallesi hükümet caddesi ilyas nas apartmanı kat2 daire6 çerkezköy tekirdağ",
+      "address2": "",
+      "city": "Tekirdağ",
+      "cityCode": 59,
+      "district": "Çerkezköy",
+      "districtId": 940,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "59000",
+      "countryCode": "TR",
+      "neighborhoodId": 73008,
+      "neighborhood": "Gazi Mustafa Kemalpaşa Mah",
+      "phone": null,
+      "fullAddress": "gazi mustafa kemalpasa mahallesi hükümet caddesi ilyas nas apartmanı kat2 daire6 çerkezköy tekirdağ     Çerkezköy Tekirdağ",
+      "fullName": "çiğdem ayan"
+    },
+    "orderNumber": "11618408179",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2233.42,
+    "packageGrossAmount": 2233.42,
+    "totalDiscount": 161.67,
+    "packageSellerDiscount": 161.67,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 161.67,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 111.67
+      },
+      {
+        "displayName": "Atölye Elektronik - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 50
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9672479674,
+      "firstName": "çiğdem",
+      "lastName": "ayan",
+      "company": "",
+      "address1": "gazi mustafa kemalpasa mahallesi hükümet caddesi ilyas nas apartmanı kat2 daire6 çerkezköy tekirdağ",
+      "address2": "",
+      "city": "Tekirdağ",
+      "cityCode": 59,
+      "district": "Çerkezköy",
+      "districtId": 940,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "59000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 73008,
+      "neighborhood": "Gazi Mustafa Kemalpaşa Mah",
+      "phone": null,
+      "fullAddress": "gazi mustafa kemalpasa mahallesi hükümet caddesi ilyas nas apartmanı kat2 daire6 çerkezköy tekirdağ     Çerkezköy Tekirdağ",
+      "fullName": "çiğdem ayan"
+    },
+    "customerFirstName": "çiğdem",
+    "customerEmail": "pf+qbz83jlb@trendyolmail.com",
+    "customerId": 10225297,
+    "supplierId": 0,
+    "customerLastName": "ayan",
+    "id": 4170084861,
+    "channelId": 1,
+    "shipmentPackageId": 4170084861,
+    "cargoTrackingNumber": 7270037256760446,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2233.42,
+        "lineGrossAmount": 2233.42,
+        "discount": 161.67,
+        "lineTotalDiscount": 161.67,
+        "lineSellerDiscount": 161.67,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6814708663",
+            "lineItemPrice": 2071.75,
+            "lineItemDiscount": 161.67,
+            "lineItemSellerDiscount": 161.67,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5970701925,
+        "lineId": 5970701925,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2071.75,
+        "lineUnitPrice": 2071.75,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 4,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1789757170842,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1789746372798,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1789746376854,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1789746415874,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1789851540000,
+    "estimatedDeliveryEndDate": 1790110740000,
+    "totalPrice": 2071.75,
+    "packageTotalPrice": 2071.75,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1789851540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1789746372788,
+    "lastModifiedDate": 1789746415874,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10874108770,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9672456369,
+      "firstName": "Özkan",
+      "lastName": "Yıldız",
+      "company": "",
+      "address1": "Güzeltepe mh. Çamlıktepe caddesi No:55/1 D.2 Çengelköy ",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Üsküdar",
+      "districtId": 35,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 29584,
+      "neighborhood": "Güzeltepe Mah",
+      "phone": null,
+      "fullAddress": "Güzeltepe mh. Çamlıktepe caddesi No:55/1 D.2 Çengelköy     Üsküdar İstanbul",
+      "fullName": "Özkan Yıldız"
+    },
+    "orderNumber": "11618389319",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2233.42,
+    "packageGrossAmount": 2233.42,
+    "totalDiscount": 161.67,
+    "packageSellerDiscount": 161.67,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 161.67,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 50
+      },
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 111.67
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9672456364,
+      "firstName": "Özkan",
+      "lastName": "Yıldız",
+      "company": "",
+      "address1": "Güzeltepe mh. Çamlıktepe caddesi No:55/1 D.2 Çengelköy ",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Üsküdar",
+      "districtId": 35,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 29584,
+      "neighborhood": "Güzeltepe Mah",
+      "phone": null,
+      "fullAddress": "Güzeltepe mh. Çamlıktepe caddesi No:55/1 D.2 Çengelköy     Üsküdar İstanbul",
+      "fullName": "Özkan Yıldız"
+    },
+    "customerFirstName": "Özkan",
+    "customerEmail": "pf+9yvejww5@trendyolmail.com",
+    "customerId": 2387555,
+    "supplierId": 0,
+    "customerLastName": "Yıldız",
+    "id": 4170072097,
+    "channelId": 1,
+    "shipmentPackageId": 4170072097,
+    "cargoTrackingNumber": 7270037256644005,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2233.42,
+        "lineGrossAmount": 2233.42,
+        "discount": 161.67,
+        "lineTotalDiscount": 161.67,
+        "lineSellerDiscount": 161.67,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6814690382",
+            "lineItemPrice": 2071.75,
+            "lineItemDiscount": 161.67,
+            "lineItemSellerDiscount": 161.67,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5970686668,
+        "lineId": 5970686668,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2071.75,
+        "lineUnitPrice": 2071.75,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 4,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1789756898793,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1789746115271,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1789746120890,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1789746200221,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1789851540000,
+    "estimatedDeliveryEndDate": 1790197140000,
+    "totalPrice": 2071.75,
+    "packageTotalPrice": 2071.75,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1789851540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1789746115262,
+    "lastModifiedDate": 1789746200221,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10874096457,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9671949963,
       "firstName": "Yağmur Lara",
       "lastName": "Yıldırım",
