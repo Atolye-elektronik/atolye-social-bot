@@ -68,7 +68,7 @@ REKLAMLAR = [
         # egitimi ogrencilerinin hepsi ayni is dosyasini tutuyor.
         "serit": "MESLEK LİSESİ · MESEM · ÇIRAKLIK İÇİN",
         "foto": "kaynak/staj-defteri.jpg",
-        "rozet_fiyat": "öğrenci başına 85 TL",
+        "rozet_fiyat": "10+ adette tanesi 85 TL",
         "baslik": "Staj defteri, tek siparişte",
         "destek": "Tek fatura · tek kargo · aynı gün gönderim",
         "fiyatlar": [("1 adet", "90 TL"), ("10 adet", "850 TL"),
@@ -78,12 +78,27 @@ REKLAMLAR = [
     {
         "dosya": "meta-ogretmen-temrin-defteri.png",
         "foto": "kaynak/temrin-defteri.jpg",
-        "rozet_fiyat": "öğrenci başına 85 TL",
+        # 15.09.2026 kullanici: tekli 100 TL, coklularda adet basi 90 TL (KDV dahil),
+        # reklamda da sitede de ayni.
+        # 16.09: "ogrenci basina 90 TL" rozeti tekli fiyat 90 gibi okunuyordu (kullanici
+        # "reklam hala 90 diyor") -> adet esigi rozete yazildi, ogrenci reklamina ayri gorsel.
+        "rozet_fiyat": "10+ adette tanesi 90 TL",
         "baslik": "Temrin defteri, tek siparişte",
         "destek": "48 yaprak 96 sayfa · tek fatura · aynı gün kargo",
-        "fiyatlar": [("1 adet", "90 TL"), ("10 adet", "850 TL"),
-                     ("20 adet", "1.700 TL"), ("30 adet", "2.550 TL")],
+        "fiyatlar": [("1 adet", "100 TL"), ("10 adet", "900 TL"),
+                     ("20 adet", "1.800 TL"), ("30 adet", "2.700 TL")],
         "toptan": None,
+        "acele": "AYNI GÜN KARGODA",   # 14 Eylul okul acilisi gecti
+    },
+    {
+        "dosya": "meta-ogrenci-temrin-defteri.png",
+        "foto": "kaynak/temrin-defteri.jpg",
+        "rozet_fiyat": "100 TL",
+        "baslik": "Atölye dersin için temrin defteri",
+        "destek": "48 yaprak 96 sayfa · A4 · aynı gün kargo",
+        "fiyatlar": [("1 adet", "100 TL"), ("10 adet", "900 TL")],
+        "toptan": None,
+        "acele": "AYNI GÜN KARGODA",
     },
     {
         "dosya": "meta-ogretmen-takim-cantasi.png",
@@ -121,7 +136,7 @@ REKLAMLAR = [
         "dosya": "meta-mesem-staj-defteri.png",
         "serit": "MESLEKİ EĞİTİM MERKEZİ · MESEM İÇİN",
         "foto": "kaynak/staj-defteri.jpg",
-        "rozet_fiyat": "öğrenci başına 85 TL",
+        "rozet_fiyat": "10+ adette tanesi 85 TL",
         "baslik": "MESEM staj defteri",
         "destek": "İşletmelerde mesleki eğitim iş dosyası",
         "fiyatlar": [("1 adet", "90 TL"), ("10 adet", "850 TL"),
@@ -130,7 +145,7 @@ REKLAMLAR = [
     },
 ]
 
-ACELE = "OKULLAR 14 EYLÜL'DE AÇILIYOR"
+ACELE = "AYNI GÜN KARGODA"   # 16.09: "OKULLAR 14 EYLÜL'DE AÇILIYOR" tarihi geçti
 CTA = "Hemen Sipariş Ver"
 
 # Turuncu aciliyet şeridi bunun altına giriyor; CTA düğmesinin üst kenarı
@@ -306,10 +321,11 @@ def uret(reklam: dict) -> pathlib.Path:
     # sabit (ust kenari 1172); metin tabani 1120'yi gecerse yerlesim tasar,
     # uretim sirasinda uyar ki sessizce bozuk gorsel cikmasin.
     fa = _mono(24)
-    gen = _aralikli_genislik(d, ACELE, fa, aralik=5)
+    acele = reklam.get("acele", ACELE)
+    gen = _aralikli_genislik(d, acele, fa, aralik=5)
     if y + 22 > METIN_TABANI + 24:
         print(f"  UYARI: {reklam['dosya']} metin tabani {y:.0f}px — CTA'ya tasiyor")
-    _aralikli(d, ((W - gen) / 2, min(max(y + 22, 1086), METIN_TABANI + 24)), ACELE, fa,
+    _aralikli(d, ((W - gen) / 2, min(max(y + 22, 1086), METIN_TABANI + 24)), acele, fa,
               TURUNCU, aralik=5)
 
     # CTA: alan adi degil EYLEM. Alan adi altta kucuk kaliyor.
