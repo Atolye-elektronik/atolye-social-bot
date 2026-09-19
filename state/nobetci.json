@@ -1,5 +1,5 @@
 {
-  "kontrol": "2026-09-19T16:48:00.968011+00:00",
+  "kontrol": "2026-09-19T19:35:38.632679+00:00",
   "akislar": [
     {
       "dosya": "bayram.yml",
@@ -7,7 +7,7 @@
       "beklenen": "2026-09-19T05:00:00+00:00",
       "son_basarili": "2026-09-19T05:14:24+00:00",
       "son_kosu": "2026-09-19T05:14:24+00:00",
-      "gecikme_dk": 708,
+      "gecikme_dk": 875,
       "kacti": false,
       "hatali": false
     },
@@ -17,7 +17,7 @@
       "beklenen": "2026-09-19T01:00:00+00:00",
       "son_basarili": "2026-09-13T01:11:45+00:00",
       "son_kosu": "2026-09-19T01:11:44+00:00",
-      "gecikme_dk": 948,
+      "gecikme_dk": 1115,
       "kacti": false,
       "hatali": true
     },
@@ -27,17 +27,17 @@
       "beklenen": "2026-09-14T04:30:00+00:00",
       "son_basarili": "2026-09-14T04:43:15+00:00",
       "son_kosu": "2026-09-14T04:43:15+00:00",
-      "gecikme_dk": 7938,
+      "gecikme_dk": 8105,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "pazaryeri-sync.yml",
       "ad": "Pazaryeri siparis senkronu",
-      "beklenen": "2026-09-19T14:13:00+00:00",
-      "son_basarili": "2026-09-19T15:49:46+00:00",
-      "son_kosu": "2026-09-19T15:49:46+00:00",
-      "gecikme_dk": 155,
+      "beklenen": "2026-09-19T16:13:00+00:00",
+      "son_basarili": "2026-09-19T18:34:17+00:00",
+      "son_kosu": "2026-09-19T18:34:17+00:00",
+      "gecikme_dk": 202,
       "kacti": false,
       "hatali": false
     },
@@ -45,29 +45,39 @@
       "dosya": "pinterest-pin.yml",
       "ad": "Pinterest gunluk pin",
       "beklenen": "2026-09-18T18:37:00+00:00",
-      "son_basarili": "2026-09-18T18:43:30+00:00",
-      "son_kosu": "2026-09-18T18:43:30+00:00",
-      "gecikme_dk": 1331,
+      "son_basarili": "2026-09-19T18:43:29+00:00",
+      "son_kosu": "2026-09-19T18:43:29+00:00",
+      "gecikme_dk": 1498,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "publish.yml",
       "ad": "Sosyal medya paylasimi",
-      "beklenen": "2026-09-19T09:00:00+00:00",
+      "beklenen": "2026-09-19T17:30:00+00:00",
       "son_basarili": "2026-09-19T09:11:26+00:00",
-      "son_kosu": "2026-09-19T09:11:26+00:00",
-      "gecikme_dk": 468,
+      "son_kosu": "2026-09-19T17:33:27+00:00",
+      "gecikme_dk": 125,
       "kacti": false,
-      "hatali": false
+      "hatali": true
     },
     {
       "dosya": "stok-siparis.yml",
       "ad": "Stok merkezi - siparis toplama",
-      "beklenen": "2026-09-19T15:00:00+00:00",
-      "son_basarili": "2026-09-19T14:46:46+00:00",
-      "son_kosu": "2026-09-19T14:46:46+00:00",
-      "gecikme_dk": 108,
+      "beklenen": "2026-09-19T18:45:00+00:00",
+      "son_basarili": "2026-09-19T19:14:54+00:00",
+      "son_kosu": "2026-09-19T19:14:54+00:00",
+      "gecikme_dk": 50,
+      "kacti": false,
+      "hatali": false
+    },
+    {
+      "dosya": "telegram-karne.yml",
+      "ad": "Telegram haftalik karne",
+      "beklenen": "2026-09-14T06:00:00+00:00",
+      "son_basarili": null,
+      "son_kosu": null,
+      "gecikme_dk": 8015,
       "kacti": true,
       "hatali": false
     },
@@ -75,9 +85,9 @@
       "dosya": "telegram-ozet.yml",
       "ad": "Telegram gunluk ozet",
       "beklenen": "2026-09-19T15:00:00+00:00",
-      "son_basarili": "2026-09-19T16:25:13+00:00",
-      "son_kosu": "2026-09-19T16:25:13+00:00",
-      "gecikme_dk": 108,
+      "son_basarili": "2026-09-19T17:54:06+00:00",
+      "son_kosu": "2026-09-19T17:54:06+00:00",
+      "gecikme_dk": 275,
       "kacti": false,
       "hatali": false
     },
@@ -87,7 +97,7 @@
       "beklenen": "2026-09-01T04:00:00+00:00",
       "son_basarili": "2026-09-01T04:03:16+00:00",
       "son_kosu": "2026-09-01T04:03:16+00:00",
-      "gecikme_dk": 26688,
+      "gecikme_dk": 26855,
       "kacti": false,
       "hatali": false
     },
@@ -97,7 +107,7 @@
       "beklenen": "2026-09-19T05:15:00+00:00",
       "son_basarili": "2026-09-19T05:25:39+00:00",
       "son_kosu": "2026-09-19T05:25:39+00:00",
-      "gecikme_dk": 693,
+      "gecikme_dk": 860,
       "kacti": false,
       "hatali": false
     }
