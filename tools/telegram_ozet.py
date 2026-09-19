@@ -27,6 +27,12 @@ from stok.recete import Recete  # noqa: E402
 # Bu kelimeler durumda geciyorsa is bitmis demektir; gerisi "kargoya verilmedi".
 KAPALI = ("ship", "deliver", "teslim", "fulfil", "cancel", "iptal", "iade", "return", "unsupplied", "refund")
 ACIK_ZORLA = ("unfulfilled", "unshipped", "unpacked", "partially_fulfilled", "partially fulfilled")
+# Kanal durumunu insan diline cevir: "neden hala listede?" sorusunun cevabi.
+DURUM_AD = {"picking": "etiket basildi, kargo almadi", "created": "yeni, hazirlanmadi",
+            "invoiced": "faturalandi, kargo almadi", "unfulfilled": "kargolanmadi",
+            "partially_fulfilled": "kismen kargolandi", "get_packages": "paketlendi, kargo almadi",
+            "get_new_order_items": "yeni, hazirlanmadi", "get_unpacked_packages": "paketlenmedi",
+            "open": "yeni, hazirlanmadi", "processing": "hazirlaniyor", "readytoship": "kargoya hazir"}
 KANAL_AD = {"shopify": "Site", "trendyol": "Trendyol", "hepsiburada": "Hepsiburada", "n11": "N11",
             "pazarama": "Pazarama", "idefix": "Idefix", "amazon": "Amazon"}
 
@@ -103,7 +109,10 @@ def metin_kur():
         sat.append("\n<b>%s (%d)</b>" % (KANAL_AD.get(k, k), len(liste)))
         for o in sorted(liste, key=lambda x: str(x.get("tarih")))[:12]:
             t = siparis._zaman(o.get("tarih"))
-            sat.append("• %s %s — %s" % (t.strftime("%d.%m") if t else "", o.get("no"), kalem_metni(o)[:70]))
+            d = str(o.get("durum") or "").lower()
+            aciklama = DURUM_AD.get(d, o.get("durum") or "")
+            sat.append("• %s %s — %s <i>(%s)</i>" % (t.strftime("%d.%m") if t else "", o.get("no"),
+                                                     kalem_metni(o)[:70], aciklama))
         if len(liste) > 12:
             sat.append("• ... +%d siparis daha" % (len(liste) - 12))
 
