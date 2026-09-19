@@ -2,28 +2,28 @@
   "newOrderItems": [],
   "packages": [
     {
-      "id": "6aad6f30-c075-2a76-0847-52be06060606",
+      "id": "6aae76ac-611a-65c8-4847-96e006060606",
       "status": "Open",
-      "customerId": "469abdad-90b9-4644-be28-6b75680929ab",
-      "orderDate": "2026-09-18T20:04:44",
-      "dueDate": "2026-09-19T18:30:00",
-      "barcode": "62955189899344",
-      "packageNumber": "5518989934",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "2000 Evler Mah\n76080 Sokak\nDemir Tekince Life Apt\nNo:8\nKat:8\nDarie:49\nSeyhan Adana\n 2000 EVLER SEYHAN Adana",
-      "recipientName": "ASIYE Dogan",
+      "customerId": "b1db67e6-246a-4c06-bfd0-5314c6f769e7",
+      "orderDate": "2026-09-19T14:48:58",
+      "dueDate": "2026-09-21T18:30:00",
+      "barcode": "62955192041017",
+      "packageNumber": "5519204101",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Obalar caddesi kebapçı şaban usta salı pazarı yanı seyhan adana  DUMLUPINAR SEYHAN Adana",
+      "recipientName": "Resit Erbeyi",
       "shippingCountryCode": "TR",
-      "shippingDistrict": "2000 EVLER",
+      "shippingDistrict": "DUMLUPINAR",
       "shippingTown": "SEYHAN",
       "shippingCity": "Adana",
-      "email": "4493629626_5518989934@hepsifatura.com",
+      "email": "4679491133_5519204101@hepsifatura.com",
       "phoneNumber": "",
-      "companyName": "ASIYE Dogan",
-      "billingAddress": "2000 Evler Mah\n76080 Sokak\nDemir Tekince Life Apt\nNo:8\nKat:8\nDarie:49\nSeyhan Adana\n 2000 EVLER SEYHAN Adana",
+      "companyName": "Reşit Erbeyi",
+      "billingAddress": "OBALAR CAD SALI Pazarı YANI KEBAPÇI Şaban Usta  DUMLUPINAR SEYHAN Adana",
       "billingCity": "Adana",
       "billingTown": "SEYHAN",
-      "billingDistrict": "2000 EVLER",
-      "billingPostalCode": "01200",
+      "billingDistrict": "DUMLUPINAR",
+      "billingPostalCode": "01070",
       "billingCountryCode": "TR",
       "taxOffice": null,
       "taxNumber": "",
@@ -32,28 +32,28 @@
       "customsTotalPrice": null,
       "totalPrice": {
         "currency": "TRY",
-        "amount": 149.8
+        "amount": 289.8
       },
       "items": [
         {
-          "lineItemId": "6aad6f2d-8049-f466-c483-555406060606",
-          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "lineItemId": "6aae76ab-8158-35f8-e90d-85b906060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
           "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00006WCA8J",
-          "merchantSku": "AEPY18650",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
           "quantity": 2,
           "price": {
             "currency": "TRY",
-            "amount": 74.9
+            "amount": 144.9
           },
-          "vat": 24.97,
+          "vat": 48.3,
           "totalPrice": {
             "currency": "TRY",
-            "amount": 149.8
+            "amount": 289.8
           },
           "commission": {
             "currency": "TRY",
-            "amount": 6.74
+            "amount": 13.04
           },
           "commissionRate": 9,
           "unitHBDiscount": {
@@ -74,11 +74,11 @@
           },
           "merchantUnitPrice": {
             "currency": "TRY",
-            "amount": 74.9
+            "amount": 144.9
           },
           "merchantTotalPrice": {
             "currency": "TRY",
-            "amount": 149.8
+            "amount": 289.8
           },
           "unitLaborCost": {
             "currency": "TRY",
@@ -90,9 +90,9 @@
           "customizedText03": "",
           "customizedText04": "",
           "properties": [],
-          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
-          "orderNumber": "4493629626",
-          "orderDate": "2026-09-18T20:04:44",
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4679491133",
+          "orderDate": "2026-09-19T14:48:58",
           "deliveryType": "Standart Teslimat",
           "customerDelivery": "",
           "pickupTime": null,
@@ -109,7 +109,7 @@
             "amount": 0
           },
           "discountToBeBilledToHB": 0,
-          "productBarcode": "000RBYL100779",
+          "productBarcode": "HBCC138FA6619",
           "bnplCommissionAmount": {
             "currency": "TRY",
             "amount": 0
@@ -118,164 +118,38 @@
           "isMicroExport": false,
           "releatedLineIndexesWithCampaign": null,
           "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
           "deci": 1
         }
       ],
       "isCargoChangable": true,
-      "customerName": "Kamil Aru",
-      "estimatedArrivalDate": "2026-09-23T15:30:00Z",
+      "customerName": "REŞİT ERBEYİ",
+      "estimatedArrivalDate": "2026-09-24T15:30:00Z",
       "totalDeci": 2
     },
     {
-      "id": "6aad71f4-611a-65c8-485e-9cf706060606",
+      "id": "6aae8d6b-d773-caa5-9731-b96c06060606",
       "status": "Open",
-      "customerId": "f75b968b-85ae-4f8c-bbd9-64e21fec1d11",
-      "orderDate": "2026-09-18T20:16:35",
-      "dueDate": "2026-09-19T18:30:00",
-      "barcode": "62955189927522",
-      "packageNumber": "5518992752",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "GÜNEYKENT MAH. 102238 NOLU CAD. EMEK APT BLOK NO: 1 İÇ KAPI NO: 12 ŞAHİNBEY / GAZİANTEP GÜNEYKENT ŞAHİNBEY Gaziantep",
-      "recipientName": "Ahmad Azouz",
+      "customerId": "74e019ad-25b2-4ae0-a3f3-c5479743e86d",
+      "orderDate": "2026-09-19T16:26:01",
+      "dueDate": "2026-09-21T18:30:00",
+      "barcode": "62955192279771",
+      "packageNumber": "5519227977",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "paşakapı cad. uğurlu sok.  benli apt. kat.1 no:1 ESENBEY MERKEZ Niğde",
+      "recipientName": "orhan altunsoy",
       "shippingCountryCode": "TR",
-      "shippingDistrict": "GÜNEYKENT",
-      "shippingTown": "ŞAHİNBEY",
-      "shippingCity": "Gaziantep",
-      "email": "4517233423_5518992752@hepsifatura.com",
+      "shippingDistrict": "ESENBEY",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Niğde",
+      "email": "4813478217_5519227977@hepsifatura.com",
       "phoneNumber": "",
-      "companyName": "Ahmad Azouz",
-      "billingAddress": "GÜNEYKENT MAH. 102238 NOLU CAD. EMEK APT BLOK NO: 1 İÇ KAPI NO: 12 ŞAHİNBEY / GAZİANTEPGÜNEYKENT /ŞAHİNBEY /Gaziantep GÜNEYKENT ŞAHİNBEY Gaziantep",
-      "billingCity": "Gaziantep",
-      "billingTown": "ŞAHİNBEY",
-      "billingDistrict": "GÜNEYKENT",
-      "billingPostalCode": "27470",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 149.8
-      },
-      "items": [
-        {
-          "lineItemId": "6aad71f4-4c61-1933-3d40-dbd806060606",
-          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00006WCA8J",
-          "merchantSku": "AEPY18650",
-          "quantity": 2,
-          "price": {
-            "currency": "TRY",
-            "amount": 74.9
-          },
-          "vat": 24.97,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 149.8
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 6.74
-          },
-          "commissionRate": 9,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 74.9
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 149.8
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
-          "orderNumber": "4517233423",
-          "orderDate": "2026-09-18T20:16:35",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "000RBYL100779",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
-          "deci": 1
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "Ahmad Azouz",
-      "estimatedArrivalDate": "2026-09-23T15:30:00Z",
-      "totalDeci": 2
-    },
-    {
-      "id": "6aad79db-547e-fc6b-aca9-567106060606",
-      "status": "Open",
-      "customerId": "e33bab45-e9fb-4783-b774-b625c05f84ac",
-      "orderDate": "2026-09-18T20:50:18",
-      "dueDate": "2026-09-19T18:30:00",
-      "barcode": "62955190012978",
-      "packageNumber": "5519001297",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Mithat Ünal Cad. Kahramandere Mah. Avukatlar Sitesi. 53/8 KAHRAMANDERE GÜZELBAHÇE İzmir",
-      "recipientName": "Enis Adanır",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "KAHRAMANDERE",
-      "shippingTown": "GÜZELBAHÇE",
-      "shippingCity": "İzmir",
-      "email": "4245485408_5519001297@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Enis Adanır",
-      "billingAddress": "2108. Sk No:53 Daire:8 MUSTAFA KEMAL PAŞA GÜZELBAHÇE İzmir",
-      "billingCity": "İzmir",
-      "billingTown": "GÜZELBAHÇE",
-      "billingDistrict": "MUSTAFA KEMAL PAŞA",
-      "billingPostalCode": "35310",
+      "companyName": "orhan altunsoy",
+      "billingAddress": "paşakapı cad benli apt no 1 ESENBEY MERKEZ Niğde",
+      "billingCity": "Niğde",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "ESENBEY",
+      "billingPostalCode": "51100",
       "billingCountryCode": "TR",
       "taxOffice": null,
       "taxNumber": "",
@@ -288,7 +162,7 @@
       },
       "items": [
         {
-          "lineItemId": "6aad79da-2850-f0d4-946d-5f8306060606",
+          "lineItemId": "6aae8d6a-5361-aafd-0e2a-f9a306060606",
           "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
           "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
           "hbSku": "HBCV00003Z3U77",
@@ -343,8 +217,8 @@
           "customizedText04": "",
           "properties": [],
           "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
-          "orderNumber": "4245485408",
-          "orderDate": "2026-09-18T20:50:18",
+          "orderNumber": "4813478217",
+          "orderDate": "2026-09-19T16:26:01",
           "deliveryType": "Standart Teslimat",
           "customerDelivery": "",
           "pickupTime": null,
@@ -375,63 +249,63 @@
         }
       ],
       "isCargoChangable": true,
-      "customerName": "Enis Adanır",
-      "estimatedArrivalDate": "2026-09-22T15:30:00Z",
+      "customerName": "orhan altunsoy",
+      "estimatedArrivalDate": "2026-09-23T15:30:00Z",
       "totalDeci": 1
     },
     {
-      "id": "6aae31ad-6626-e0d3-031c-7ffa06060606",
+      "id": "6aae9de3-082f-5aa8-7774-011306060606",
       "status": "Open",
-      "customerId": "e18c70de-b826-4a1b-ae90-aa1aeb463a1a",
-      "orderDate": "2026-09-19T09:50:58",
-      "dueDate": "2026-09-19T18:30:00",
-      "barcode": "62755191107619",
-      "packageNumber": "5519110761",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "mezarlık sok. no:108 C1 Blok Kat:10 D:63 SARIGÖL GAZİOSMANPAŞA İstanbul",
-      "recipientName": "bekir disli",
+      "customerId": "d9a5e4ab-913d-4cf8-b0a8-a707bc3ad31b",
+      "orderDate": "2026-09-19T17:36:18",
+      "dueDate": "2026-09-21T18:30:00",
+      "barcode": "62955192441527",
+      "packageNumber": "5519244152",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Akbel Sk. güneş kırtasiye İSLAMLAR KAŞ Antalya",
+      "recipientName": "Hiranur yıldız",
       "shippingCountryCode": "TR",
-      "shippingDistrict": "SARIGÖL",
-      "shippingTown": "GAZİOSMANPAŞA",
-      "shippingCity": "İstanbul",
-      "email": "4877810189_5519110761@hepsifatura.com",
+      "shippingDistrict": "İSLAMLAR",
+      "shippingTown": "KAŞ",
+      "shippingCity": "Antalya",
+      "email": "4191302513_5519244152@hepsifatura.com",
       "phoneNumber": "",
-      "companyName": "ZEMİN ARAŞTIRMA MERKEZİ LTD.ŞTİ ",
-      "billingAddress": "mezarlık sok. No:108 C1 D:63 SARIGÖL GAZİOSMANPAŞA İstanbul",
-      "billingCity": "İstanbul",
-      "billingTown": "GAZİOSMANPAŞA",
-      "billingDistrict": "SARIGÖL",
-      "billingPostalCode": "34245",
+      "companyName": "Hiranur yıldız",
+      "billingAddress": "islamlar mahallesi akbel sokak no:295 İSLAMLAR KAŞ Antalya",
+      "billingCity": "Antalya",
+      "billingTown": "KAŞ",
+      "billingDistrict": "İSLAMLAR",
+      "billingPostalCode": "07960",
       "billingCountryCode": "TR",
-      "taxOffice": "GAZİOSMANPAŞA",
-      "taxNumber": "3010281491",
+      "taxOffice": null,
+      "taxNumber": "",
       "identityNo": "11111111111",
       "shippingTotalPrice": null,
       "customsTotalPrice": null,
       "totalPrice": {
         "currency": "TRY",
-        "amount": 348.38
+        "amount": 324
       },
       "items": [
         {
-          "lineItemId": "6aae30d2-4c61-1933-3d67-48b206060606",
-          "listingId": "d9f1dcb0-a496-42a5-ae17-38ee8b01661f",
+          "lineItemId": "6aae9de2-de0b-5ae9-d2a9-c0c706060606",
+          "listingId": "fe338885-2dca-43a0-87e5-b5646c9d6925",
           "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00000PLEY2",
-          "merchantSku": "AEACDMMR2",
-          "quantity": 2,
+          "hbSku": "HBCV0000FU7PJL",
+          "merchantSku": "AEUNOR3",
+          "quantity": 1,
           "price": {
             "currency": "TRY",
-            "amount": 174.19
+            "amount": 324
           },
-          "vat": 58.06,
+          "vat": 54,
           "totalPrice": {
             "currency": "TRY",
-            "amount": 348.38
+            "amount": 324
           },
           "commission": {
             "currency": "TRY",
-            "amount": 15.68
+            "amount": 29.16
           },
           "commissionRate": 9,
           "unitHBDiscount": {
@@ -444,19 +318,19 @@
           },
           "unitMerchantDiscount": {
             "currency": "TRY",
-            "amount": 0
+            "amount": 35
           },
           "totalMerchantDiscount": {
             "currency": "TRY",
-            "amount": 0
+            "amount": 35
           },
           "merchantUnitPrice": {
             "currency": "TRY",
-            "amount": 174.19
+            "amount": 324
           },
           "merchantTotalPrice": {
             "currency": "TRY",
-            "amount": 348.38
+            "amount": 324
           },
           "unitLaborCost": {
             "currency": "TRY",
@@ -467,14 +341,20 @@
           "customizedText02": "",
           "customizedText03": "",
           "customizedText04": "",
-          "properties": [],
-          "productName": "Cnl Ac 220V 2000W Motor Hız Kontrol Kartı Dimmer",
-          "orderNumber": "4877810189",
-          "orderDate": "2026-09-19T09:50:58",
+          "properties": [
+            {
+              "name": "Renk",
+              "value": "Mavi",
+              "displayName": ""
+            }
+          ],
+          "productName": "Arduino Uno R3 Smd (Klon - CH340 Chip - USB Kablo Hediye",
+          "orderNumber": "4191302513",
+          "orderDate": "2026-09-19T17:36:18",
           "deliveryType": "Standart Teslimat",
           "customerDelivery": "",
           "pickupTime": null,
-          "gtip": "950300870000",
+          "gtip": "",
           "weight": 0,
           "vatRate": 20,
           "warehouse": {
@@ -487,7 +367,7 @@
             "amount": 0
           },
           "discountToBeBilledToHB": 0,
-          "productBarcode": "0000000CNL576",
+          "productBarcode": "Zepron.netc715d62a-74d",
           "bnplCommissionAmount": {
             "currency": "TRY",
             "amount": 0
@@ -496,14 +376,14 @@
           "isMicroExport": false,
           "releatedLineIndexesWithCampaign": null,
           "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/121/{size}/110000071106017.jpg",
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001843554809.jpg",
           "deci": 1
         }
       ],
       "isCargoChangable": true,
-      "customerName": "bekir disli",
-      "estimatedArrivalDate": "2026-09-23T15:30:00Z",
-      "totalDeci": 2
+      "customerName": "HİRANUR YILDIZ",
+      "estimatedArrivalDate": "2026-09-24T15:30:00Z",
+      "totalDeci": 1
     }
   ]
 }
