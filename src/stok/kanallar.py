@@ -100,9 +100,15 @@ def _barkodlar():
     # ilana gidiyor, digerleri aylardir eski sayida kaliyordu - kullanici
     # uygulamada AEVHM314'u 40 ve 30 olarak yan yana gordu. Artik TUM barkodlar.
     duz = barkod_duzeltme()
+    # 19.09.2026: mukerrer ilanlar kapatildi (stok 0). Kapali barkodlara stok basilirsa
+    # ilan yeniden acilir; bu yuzden content/ty_kapali_barkod.json'dakiler atlanir.
+    try:
+        kapali = set(k for k in json.load(open(os.path.join(KOK, "content", "ty_kapali_barkod.json"), encoding="utf-8")) if not k.startswith("_"))
+    except FileNotFoundError:
+        kapali = set()
     for u in kayit:
         sk = duz.get(u.get("barcode")) or u.get("stockCode")
-        if not sk or not u.get("barcode"):
+        if not sk or not u.get("barcode") or u.get("barcode") in kapali:
             continue
         d = b.setdefault(sk, {})
         d.setdefault("ty", u["barcode"])              # geriye donuk uyum
