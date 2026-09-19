@@ -1,0 +1,35 @@
+name: Telegram chat id bul
+
+# Elle calistirilir: bota/gruba gelen son mesajlardan chat id'lerini listeler.
+# Token yalniz GitHub secret'inda durur, hicbir yere yazilmaz.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  chatid:
+    runs-on: ubuntu-latest
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Guncellemeleri oku
+        run: |
+          python - <<'PY'
+          import json, os, urllib.request
+          tok = os.environ["TELEGRAM_BOT_TOKEN"].strip()
+          url = "https://api.telegram.org/bot%s/getUpdates?limit=50" % tok
+          d = json.load(urllib.request.urlopen(url, timeout=30))
+          gorulen = {}
+          for u in d.get("result", []):
+              m = u.get("message") or u.get("my_chat_member") or u.get("channel_post") or {}
+              c = m.get("chat") or {}
+              if c.get("id"):
+                  gorulen[c["id"]] = (c.get("type"), c.get("title") or c.get("first_name"))
+          print("guncelleme:", len(d.get("result", [])))
+          for cid, (tip, ad) in gorulen.items():
+              print("CHAT %s | tip: %s | ad: %s" % (cid, tip, ad))
+          PY
