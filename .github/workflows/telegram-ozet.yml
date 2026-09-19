@@ -1,0 +1,56 @@
+name: Telegram gunluk ozet
+
+# Sabah 09:00 ve aksam 18:00 (TR) Telegram'a ozet atar:
+# bugunku satislar + kargoya verilmemis siparisler + kritik stok.
+# Siparis basina anlik bildirim stok-siparis.yml icinde (stok/bildirim.py).
+
+on:
+  schedule:
+    - cron: "0 6 * * *"     # 09:00 TR
+    - cron: "0 15 * * *"    # 18:00 TR
+  workflow_dispatch:
+
+jobs:
+  ozet:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONIOENCODING: utf-8
+      PYTHONPATH: src:src/marketplaces
+      SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
+      SHOPIFY_ADMIN_TOKEN: ${{ secrets.SHOPIFY_ADMIN_TOKEN }}
+      SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}          # Dev Dashboard "Stok merkezi" -> client credentials grant
+      SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
+      TRENDYOL_API_KEY: ${{ secrets.TRENDYOL_API_KEY }}
+      TRENDYOL_API_SECRET: ${{ secrets.TRENDYOL_API_SECRET }}
+      TRENDYOL_SUPPLIER_ID: ${{ secrets.TRENDYOL_SUPPLIER_ID }}
+      HEPSIBURADA_MERCHANT_ID: ${{ secrets.HEPSIBURADA_MERCHANT_ID }}
+      HEPSIBURADA_SECRET_KEY: ${{ secrets.HEPSIBURADA_SECRET_KEY }}
+      HEPSIBURADA_DEV_USERNAME: ${{ secrets.HEPSIBURADA_DEV_USERNAME }}
+      HEPSIBURADA_ENV: ${{ secrets.HEPSIBURADA_ENV }}
+      N11_API_KEY: ${{ secrets.N11_API_KEY }}
+      N11_API_SECRET: ${{ secrets.N11_API_SECRET }}
+      PAZARAMA_API_KEY: ${{ secrets.PAZARAMA_API_KEY }}
+      PAZARAMA_SECRET_KEY: ${{ secrets.PAZARAMA_SECRET_KEY }}
+      IDEFIX_API_KEY: ${{ secrets.IDEFIX_API_KEY }}
+      IDEFIX_SECRET: ${{ secrets.IDEFIX_SECRET }}
+      IDEFIX_SATICI_ID: ${{ secrets.IDEFIX_SATICI_ID }}
+      AMAZON_LWA_CLIENT_ID: ${{ secrets.AMAZON_LWA_CLIENT_ID }}
+      AMAZON_LWA_CLIENT_SECRET: ${{ secrets.AMAZON_LWA_CLIENT_SECRET }}
+      AMAZON_REFRESH_TOKEN: ${{ secrets.AMAZON_REFRESH_TOKEN }}
+      AMAZON_SELLER_ID: ${{ secrets.AMAZON_SELLER_ID }}
+      AMAZON_MARKETPLACE_ID: ${{ secrets.AMAZON_MARKETPLACE_ID }}
+      AMAZON_SPAPI_ENDPOINT: ${{ secrets.AMAZON_SPAPI_ENDPOINT }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      STOK_SHEET_WEBHOOK: ${{ secrets.STOK_SHEET_WEBHOOK }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Bagimliliklari kur
+        run: pip install --quiet -r requirements.txt
+      - name: Ozeti gonder
+        run: python tools/telegram_ozet.py
