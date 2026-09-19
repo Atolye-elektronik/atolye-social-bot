@@ -384,6 +384,384 @@
       "customerName": "HİRANUR YILDIZ",
       "estimatedArrivalDate": "2026-09-24T15:30:00Z",
       "totalDeci": 1
+    },
+    {
+      "id": "6aaed91a-2850-f0d4-94de-644906060606",
+      "status": "Open",
+      "customerId": "50a463cc-8499-4db6-b227-6f3ec4852b93",
+      "orderDate": "2026-09-19T21:48:56",
+      "dueDate": "2026-09-21T18:30:00",
+      "barcode": "62955192965319",
+      "packageNumber": "5519296531",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Bülent Ulusu Caddesi Çelik Apartmanı No:1 Kat:1 Daire:3 ÇUKURALTI MENDERES İzmir",
+      "recipientName": "Cem Perin",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ÇUKURALTI",
+      "shippingTown": "MENDERES",
+      "shippingCity": "İzmir",
+      "email": "4413967574_5519296531@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Cem Perin",
+      "billingAddress": "5113 sokak No:8 Daire:5 CUMHURİYET SELÇUK İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "SELÇUK",
+      "billingDistrict": "CUMHURİYET",
+      "billingPostalCode": "35920",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 144.9
+      },
+      "items": [
+        {
+          "lineItemId": "6aaed918-3e36-9905-de61-e09706060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "vat": 24.15,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.04
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4413967574",
+          "orderDate": "2026-09-19T21:48:56",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "cem perin",
+      "estimatedArrivalDate": "2026-09-24T15:30:00Z",
+      "totalDeci": 1
+    },
+    {
+      "id": "6aaeda2d-4c5d-11a9-ceda-1d9b06060606",
+      "status": "Open",
+      "customerId": "4f9fefe2-d4c1-4564-a4a3-a90958b0bb31",
+      "orderDate": "2026-09-19T21:53:31",
+      "dueDate": "2026-09-21T18:30:00",
+      "barcode": "62955192976485",
+      "packageNumber": "5519297648",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Kılıçarslan Mahallesi Rauf Denktaş Bulvarı No:26/A Bolu Merkez, 14200 Merkez/Bolu (FİNAL VİP LGS KURS MERKEZİ) KILIÇARSLAN MERKEZ Bolu",
+      "recipientName": "Merve ÖZÇELİK",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KILIÇARSLAN",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Bolu",
+      "email": "4162643831_5519297648@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Merve Özçelik",
+      "billingAddress": "Kılıçarslan Mahallesi 155.Sokak No:26/10 Bolu Merkez, 14200 Merkez/Bolu KILIÇARSLAN MERKEZ Bolu",
+      "billingCity": "Bolu",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "KILIÇARSLAN",
+      "billingPostalCode": "14300",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 149.8
+      },
+      "items": [
+        {
+          "lineItemId": "6aaeda2c-6a4b-ab62-03ce-6c9f06060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "vat": 24.97,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4162643831",
+          "orderDate": "2026-09-19T21:53:31",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "merve onsekiz",
+      "estimatedArrivalDate": "2026-09-23T15:30:00Z",
+      "totalDeci": 2
+    },
+    {
+      "id": "6aaee54a-c239-383f-6da9-b9af06060606",
+      "status": "Open",
+      "customerId": "5d970dae-7da9-45f4-bed2-f8f24c3e9b7c",
+      "orderDate": "2026-09-19T22:40:56",
+      "dueDate": "2026-09-21T18:30:00",
+      "barcode": "62955193090719",
+      "packageNumber": "5519309071",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Güzeller mahallesi gençlik caddesi no 29 daire 9 Gebze /Kocaeli  GÜZELLER GEBZE Kocaeli",
+      "recipientName": "Zuhal Apaydin",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "GÜZELLER",
+      "shippingTown": "GEBZE",
+      "shippingCity": "Kocaeli",
+      "email": "4540643626_5519309071@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Buğlem Apaydin",
+      "billingAddress": "Güzeller mahallesi gençlik caddesi no 29 kat 5 daire 9 Kocaeli Gebze \n\n GÜZELLER GEBZE Kocaeli",
+      "billingCity": "Kocaeli",
+      "billingTown": "GEBZE",
+      "billingDistrict": "GÜZELLER",
+      "billingPostalCode": "41400",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 384
+      },
+      "items": [
+        {
+          "lineItemId": "6aaee549-4c61-1933-3dc6-ca1106060606",
+          "listingId": "353b5f2f-e329-4cf2-86b0-2a536ededae2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EATWVS",
+          "merchantSku": "AE3-6VMTR5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 384
+          },
+          "vat": 64,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 384
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 34.56
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 384
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 384
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Dc Sarı Motor + Tekerlek / 4 Adet",
+          "orderNumber": "4540643626",
+          "orderDate": "2026-09-19T22:40:56",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR45",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001688556195.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Zuhal Apaydın",
+      "estimatedArrivalDate": "2026-09-24T15:30:00Z",
+      "totalDeci": 1.1
     }
   ]
 }
