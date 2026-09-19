@@ -1,1 +1,371 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9679421140,
+      "firstName": "Betül",
+      "lastName": "ündar",
+      "company": "",
+      "address1": "Şeker Mh Taşova Sk No:13 Meva Kule B Blok Daire:14",
+      "address2": "",
+      "city": "Konya",
+      "cityCode": 42,
+      "district": "Selçuklu",
+      "districtId": 692,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "42000",
+      "countryCode": "TR",
+      "neighborhoodId": 54612,
+      "neighborhood": "Şeker Mah",
+      "phone": null,
+      "fullAddress": "Şeker Mh Taşova Sk No:13 Meva Kule B Blok Daire:14     Selçuklu Konya",
+      "fullName": "Betül ündar"
+    },
+    "orderNumber": "11622312151",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 1110.0,
+    "packageGrossAmount": 1110.0,
+    "totalDiscount": 72.2,
+    "packageSellerDiscount": 72.2,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 72.2,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 22.2
+      },
+      {
+        "displayName": "Atölye Elektronik - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 50
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9679421138,
+      "firstName": "Betül",
+      "lastName": "ündar",
+      "company": "",
+      "address1": "Şeker Mh Taşova Sk No:13 Meva Kule B Blok Daire:14",
+      "address2": "",
+      "city": "Konya",
+      "cityCode": 42,
+      "district": "Selçuklu",
+      "districtId": 692,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "42000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 54612,
+      "neighborhood": "Şeker Mah",
+      "phone": null,
+      "fullAddress": "Şeker Mh Taşova Sk No:13 Meva Kule B Blok Daire:14     Selçuklu Konya",
+      "fullName": "Betül ündar"
+    },
+    "customerFirstName": "Betül",
+    "customerEmail": "pf+vojlvn6k@trendyolmail.com",
+    "customerId": 66727312,
+    "supplierId": 0,
+    "customerLastName": "ündar",
+    "id": 4173250129,
+    "channelId": 1,
+    "shipmentPackageId": 4173250129,
+    "cargoTrackingNumber": 7270037287919073,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE2WDEKRBT5230-LI",
+        "sku": "2907696815230",
+        "stockCode": "AE2WDEKRBT5230-LI",
+        "productName": "Arduino 2WD Servolu Engelden Kaçan Robot Araba Kiti - Li-on 18650 Pil Yuvalı Set AE2WDEKRBT-LI, one size",
+        "productCode": 1665199759,
+        "contentId": 1665199759,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 1110.0,
+        "lineGrossAmount": 1110.0,
+        "discount": 72.2,
+        "lineTotalDiscount": 72.2,
+        "lineSellerDiscount": 72.2,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6820009882",
+            "lineItemPrice": 1037.8,
+            "lineItemDiscount": 72.2,
+            "lineItemSellerDiscount": 72.2,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5975287689,
+        "lineId": 5975287689,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2907696815230",
+        "orderLineItemStatusName": "Picking",
+        "price": 1037.8,
+        "lineUnitPrice": 1037.8,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 4391,
+        "commission": 4,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1789847170896,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1789836372494,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1789836375377,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1789836404989,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790024340000,
+    "estimatedDeliveryEndDate": 1790197140000,
+    "totalPrice": 1037.8,
+    "packageTotalPrice": 1037.8,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790024340000,
+    "fastDelivery": true,
+    "originShipmentDate": 1789836372486,
+    "lastModifiedDate": 1789836404989,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10877746255,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9679134983,
+      "firstName": "Aynur",
+      "lastName": "Yiğit",
+      "company": "",
+      "address1": "Arpaçay sokak Vadikent sitesi 4/B 28",
+      "address2": "",
+      "city": "Ankara",
+      "cityCode": 6,
+      "district": "Keçiören",
+      "districtId": 17,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "06000",
+      "countryCode": "TR",
+      "neighborhoodId": 10034,
+      "neighborhood": "Yükseltepe Mah",
+      "phone": null,
+      "fullAddress": "Arpaçay sokak Vadikent sitesi 4/B 28     Keçiören Ankara",
+      "fullName": "Aynur Yiğit"
+    },
+    "orderNumber": "11622103136",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2233.42,
+    "packageGrossAmount": 2233.42,
+    "totalDiscount": 161.67,
+    "packageSellerDiscount": 161.67,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 161.67,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 111.67
+      },
+      {
+        "displayName": "Atölye Elektronik - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 50
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9679134982,
+      "firstName": "Aynur",
+      "lastName": "Yiğit",
+      "company": "",
+      "address1": "Arpaçay sokak Vadikent sitesi 4/B 28",
+      "address2": "",
+      "city": "Ankara",
+      "cityCode": 6,
+      "district": "Keçiören",
+      "districtId": 17,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "06000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 10034,
+      "neighborhood": "Yükseltepe Mah",
+      "phone": null,
+      "fullAddress": "Arpaçay sokak Vadikent sitesi 4/B 28     Keçiören Ankara",
+      "fullName": "Aynur Yiğit"
+    },
+    "customerFirstName": "Aynur",
+    "customerEmail": "pf+lqy48kln@trendyolmail.com",
+    "customerId": 220650162,
+    "supplierId": 0,
+    "customerLastName": "Yiğit",
+    "id": 4173120158,
+    "channelId": 1,
+    "shipmentPackageId": 4173120158,
+    "cargoTrackingNumber": 7270037286701792,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2233.42,
+        "lineGrossAmount": 2233.42,
+        "discount": 161.67,
+        "lineTotalDiscount": 161.67,
+        "lineSellerDiscount": 161.67,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6819794392",
+            "lineItemPrice": 2071.75,
+            "lineItemDiscount": 161.67,
+            "lineItemSellerDiscount": 161.67,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5975101308,
+        "lineId": 5975101308,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2071.75,
+        "lineUnitPrice": 2071.75,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 4,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1789844238865,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1789833441419,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1789833444411,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1789834506726,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790024340000,
+    "estimatedDeliveryEndDate": 1790197140000,
+    "totalPrice": 2071.75,
+    "packageTotalPrice": 2071.75,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790024340000,
+    "fastDelivery": true,
+    "originShipmentDate": 1789833441410,
+    "lastModifiedDate": 1789834506726,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10877595275,
+    "is4P": false
+  }
+]
