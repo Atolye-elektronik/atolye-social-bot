@@ -1,9 +1,3 @@
 {
- "_not": "19.09.2026 mukerrer ilan kapatma: bu barkodlara stok basilmaz (kanallar._barkodlar atlar). Geri acmak icin listeden sil + stok bas.",
- "TYB5D2SIVFVH6VK808": "AEBB830P: paylasimli 'Ard-mb 102 Breadboard', 0 satis; ATELBB830P001 kaldi",
- "TYBPT2Q0O7Y1KGYG90": "AEBZZR5V: 90g 6 satis; 9999880000034 'Buzzer' (18 satis) kaldi",
- "ATELDT830D001": "AEDT830D: 0 satis; CES8735241573 (4 satis) kaldi",
- "1011880000561": "AEDT830D: 0 satis; CES8735241573 kaldi",
- "TYBDRMWTF231NCAS78": "AERC522RFID: paylasimli, 0 satis; ATELRC522RFID (5 foto) kaldi",
- "651044152547": "AEVHM314: 0 satis, esit; TX10FD1792846 kaldi"
+ "_not": "19.09.2026: kapatma geri alindi, liste bos. Barkod eklenirse kanallar._barkodlar o ilana stok basmaz."
 }
