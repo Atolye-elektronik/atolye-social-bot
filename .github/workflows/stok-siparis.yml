@@ -10,7 +10,7 @@ name: Stok merkezi - siparis toplama
 
 on:
   schedule:
-    - cron: "*/30 6-21 * * *"    # 09:00-24:00 TR arasi yarim saatte bir
+    - cron: "*/15 5-21 * * *"    # 08:00-24:00 TR arasi 15 dakikada bir (bildirim gecikmesi azalsin)
   workflow_dispatch:
     inputs:
       mod:

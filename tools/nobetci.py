@@ -38,6 +38,7 @@ KAYIT = KOK / "state" / "nobetci.json"
 # bu yuzden tolerans genis; aylik is icin cok daha genis.
 VARSAYILAN_TOLERANS_DK = 90
 TOLERANS_DK = {
+    "stok-siparis.yml": 45,            # siparis bildirimi: 15 dk'da bir donuyor, 45 dk sessizlik zaten fazla
     "threads-token.yml": 24 * 60,      # ayda bir, gecikmesi kritik degil
     "haftalik-rapor.yml": 6 * 60,      # haftalik
     "tiktok-zamanla.yml": 6 * 60,      # haftada iki
