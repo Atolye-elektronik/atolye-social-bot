@@ -91,6 +91,21 @@ def kritik_stoklar(esik=None):
     return {k: v for k, v in sorted(hedef.items()) if isinstance(v, int) and v <= esik}
 
 
+def pttavm_acik():
+    """PttAVM'nin siparis API'si yok: Gmail'deki siparis mailleri Apps Script ile Sheet'e yazilir,
+    ayni web uygulamasi ?tip=pttavm ile 'yeni' olanlari JSON dondurur (docs/pttavm_gmail_appsscript.gs)."""
+    url = os.environ.get("STOK_SHEET_WEBHOOK", "").strip()
+    if not url:
+        return []
+    try:
+        import requests
+        r = requests.get(url, params={"tip": "pttavm"}, timeout=30)
+        d = r.json()
+        return d if isinstance(d, list) else []
+    except Exception:
+        return []
+
+
 def metin_kur():
     an = datetime.now()
     hepsi, hata = siparisleri_topla()
@@ -116,6 +131,11 @@ def metin_kur():
         if len(liste) > 12:
             sat.append("• ... +%d siparis daha" % (len(liste) - 12))
 
+    ptt = pttavm_acik()
+    if ptt:
+        sat += ["", "<b>PttAVM (%d) — panelden kontrol et</b>" % len(ptt)]
+        for o in ptt[:8]:
+            sat.append("• %s — %s %s" % (o.get("no") or "?", str(o.get("urun") or "")[:50], o.get("tutar") or ""))
     try:
         kritik = kritik_stoklar()
         if kritik:
