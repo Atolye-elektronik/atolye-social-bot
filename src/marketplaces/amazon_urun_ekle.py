@@ -30,6 +30,11 @@ CIKTI = os.path.join(KOK, "content", "amazon_urunler.json")
 MIN_FIYAT = 400.0
 HARIC = {"AEUT12D", "AEARNANOTC"}   # UT12D yalniz Trendyol; Nano zaten AEMZNARNN001 olarak Amazon'da (B0H96QCN1N)
 MARKA = "Atölye Elektronik"
+HEDEF = {}
+try:
+    HEDEF = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "content", "amazon_hedef_fiyat.json"), encoding="utf-8"))
+except Exception:
+    HEDEF = {}
 JENERIK = False           # --jenerik: marka "Genel" (barkodsuz otomatik muafiyet); defterler haric
 JENERIK_MARKA = os.environ.get("AMAZON_JENERIK_MARKA", "Genel")
 
@@ -109,6 +114,12 @@ def kur(u):
     gorseller = [g for g in (u.get("gorseller") or []) if str(g).startswith("http")][:8]
     adet = int(float(u.get("stok") or 0))
     fiyat = float(u.get("tyFiyat") or 0)
+    # content/amazon_hedef_fiyat.json: kanal bazli hedef kar icin ozel fiyat/stok (20.09: canta 450 TL kar)
+    h = HEDEF.get(sku) or {}
+    if h.get("fiyat"):
+        fiyat = float(h["fiyat"])
+    if h.get("stok") is not None:
+        adet = int(h["stok"])
     marka = JENERIK_MARKA if JENERIK else MARKA
     if JENERIK:
         acik = re.sub(r"At[öo]lye Elektronik( taraf[ıi]ndan)?", "", acik)

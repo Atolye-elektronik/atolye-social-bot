@@ -1,0 +1,4 @@
+{
+ "_not": "Amazon hedef fiyat/stok: kar = fiyat/1.2 - fiyat*komisyon - kargo(KDV haric) - 6 TL CSBA - maliyet. 20.09.2026 kullanici: canta 450 TL kar (TY ile ayni). AETCS18P: maliyet 1092, Yapi Market %12,7, 6 desi kargo 111,13 -> 2349.",
+ "AETCS18P": {"fiyat": 2349.0, "stok": 57}
+}
