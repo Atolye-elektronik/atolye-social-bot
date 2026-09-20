@@ -1,90 +1,30 @@
 {
- "AESTEPPS": {
+ "AETCS18P": {
   "status": "INVALID",
-  "submissionId": "6ad23224d9ac47d78b2ec25ebdb82e0c",
+  "submissionId": "f181ddbd6fbd47a789eb7f69c6ce4e8b",
   "issues": [
+   [
+    "ERROR",
+    "8560",
+    "Ürün detaylarınız, eşleşen bir ASIN bulmak veya yeni bir tane oluşturmak için yeterince eksiksiz değil. Bunu d",
+    [
+     "externally_assigned_product_identifier"
+    ]
+   ],
+   [
+    "WARNING",
+    "90000900",
+    "Listelemeye çalıştığınız ürün türüne ait olmayan veya artık geçerli olmayan bir Elektrik fişi öz niteliği gönd",
+    [
+     "power_plug_type"
+    ]
+   ],
    [
     "WARNING",
     "90000900",
     "Listelemeye çalıştığınız ürün türüne ait olmayan veya artık geçerli olmayan bir Kabul Edilen Voltaj Frekansı ö",
     [
      "accepted_voltage_frequency"
-    ]
-   ],
-   [
-    "ERROR",
-    "8560",
-    "Ürün detaylarınız, eşleşen bir ASIN bulmak veya yeni bir tane oluşturmak için yeterince eksiksiz değil. Bunu d",
-    [
-     "externally_assigned_product_identifier"
-    ]
-   ],
-   [
-    "WARNING",
-    "18367",
-    "Bir ürün için en uygun ürün türüne sahip olmak hem satıcı hem de müşteri deneyimini geliştirir. Bu nedenle, SC",
-    [
-     "product_type"
-    ]
-   ],
-   [
-    "WARNING",
-    "90000900",
-    "Listelemeye çalıştığınız ürün türüne ait olmayan veya artık geçerli olmayan bir Model Adı öz niteliği gönderdi",
-    [
-     "model_name"
-    ]
-   ]
-  ]
- },
- "AEHCSR045": {
-  "status": "INVALID",
-  "submissionId": "4da95a22513d4db5a85bb462365aa968",
-  "issues": [
-   [
-    "WARNING",
-    "90000900",
-    "Listelemeye çalıştığınız ürün türüne ait olmayan veya artık geçerli olmayan bir Ürünün Boyutları öz niteliği g",
-    [
-     "item_dimensions"
-    ]
-   ],
-   [
-    "ERROR",
-    "8560",
-    "Ürün detaylarınız, eşleşen bir ASIN bulmak veya yeni bir tane oluşturmak için yeterince eksiksiz değil. Bunu d",
-    [
-     "externally_assigned_product_identifier"
-    ]
-   ]
-  ]
- },
- "AESG905": {
-  "status": "INVALID",
-  "submissionId": "87db5eb1a22440fe9396fdd9926cd5a0",
-  "issues": [
-   [
-    "WARNING",
-    "90000900",
-    "Listelemeye çalıştığınız ürün türüne ait olmayan veya artık geçerli olmayan bir Ürünün Boyutları öz niteliği g",
-    [
-     "item_dimensions"
-    ]
-   ],
-   [
-    "WARNING",
-    "18367",
-    "Bir ürün için en uygun ürün türüne sahip olmak hem satıcı hem de müşteri deneyimini geliştirir. Bu nedenle, SI",
-    [
-     "product_type"
-    ]
-   ],
-   [
-    "ERROR",
-    "8560",
-    "Ürün detaylarınız, eşleşen bir ASIN bulmak veya yeni bir tane oluşturmak için yeterince eksiksiz değil. Bunu d",
-    [
-     "externally_assigned_product_identifier"
     ]
    ]
   ]
