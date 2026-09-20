@@ -762,6 +762,132 @@
       "customerName": "Zuhal Apaydın",
       "estimatedArrivalDate": "2026-09-24T15:30:00Z",
       "totalDeci": 1.1
+    },
+    {
+      "id": "6aafb1b9-ef73-1aa7-ec02-4fc206060606",
+      "status": "Open",
+      "customerId": "5fd92b4f-05d7-4927-b887-49ecac04d43f",
+      "orderDate": "2026-09-20T13:13:13",
+      "dueDate": "2026-09-21T18:30:00",
+      "barcode": "62955194040377",
+      "packageNumber": "5519404037",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "KOŞU YOLU CAD. TÜBİTAK FEN LİSESİ BLOK NO 42/5 (Fen lisesi öğrencisi) BARIŞ GEBZE Kocaeli",
+      "recipientName": "Yusuf Said Taşkın",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BARIŞ",
+      "shippingTown": "GEBZE",
+      "shippingCity": "Kocaeli",
+      "email": "4241608908_5519404037@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Vedat Taşkın",
+      "billingAddress": "Karacaahmet mah. 38029 no lu sok. No:4 oğuz kağan apt. Daire no:11. KARACAAHMET ŞEHİTKAMİL Gaziantep",
+      "billingCity": "Gaziantep",
+      "billingTown": "ŞEHİTKAMİL",
+      "billingDistrict": "KARACAAHMET",
+      "billingPostalCode": "27590",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 173
+      },
+      "items": [
+        {
+          "lineItemId": "6aafb1b9-3b19-3a30-8547-405006060606",
+          "listingId": "dbb4549e-5ceb-4923-b2f5-eca2ae52e1a2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPD07X",
+          "merchantSku": "AETEMDEF",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 173
+          },
+          "vat": 28.83,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 173
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 14.71
+          },
+          "commissionRate": 8.5,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 173
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 173
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Temrin Defteri",
+          "orderNumber": "4241608908",
+          "orderDate": "2026-09-20T13:13:13",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901069996298",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033336619.jpg",
+          "deci": 0.3
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "ESME TAŞKIN",
+      "estimatedArrivalDate": "2026-09-24T15:30:00Z",
+      "totalDeci": 0.3
     }
   ]
 }
