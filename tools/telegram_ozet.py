@@ -26,13 +26,15 @@ from stok.recete import Recete  # noqa: E402
 
 # Bu kelimeler durumda geciyorsa is bitmis demektir; gerisi "kargoya verilmedi".
 KAPALI = ("ship", "deliver", "teslim", "fulfil", "cancel", "iptal", "iade", "return", "unsupplied", "refund")
-ACIK_ZORLA = ("unfulfilled", "unshipped", "unpacked", "partially_fulfilled", "partially fulfilled")
+ACIK_ZORLA = ("unfulfilled", "unshipped", "unpacked", "partially_fulfilled", "partially fulfilled",
+              "shipment_picking", "picking", "hazirlan", "hazırlan")  # Idefix "shipment_picking" icinde "ship" geciyor
 # Kanal durumunu insan diline cevir: "neden hala listede?" sorusunun cevabi.
 DURUM_AD = {"picking": "etiket basildi, kargo almadi", "created": "yeni, hazirlanmadi",
             "invoiced": "faturalandi, kargo almadi", "unfulfilled": "kargolanmadi",
             "partially_fulfilled": "kismen kargolandi", "get_packages": "paketlendi, kargo almadi",
             "get_new_order_items": "yeni, hazirlanmadi", "get_unpacked_packages": "paketlenmedi",
-            "open": "yeni, hazirlanmadi", "processing": "hazirlaniyor", "readytoship": "kargoya hazir"}
+            "open": "yeni, hazirlanmadi", "processing": "hazirlaniyor", "readytoship": "kargoya hazir",
+            "shipment_picking": "hazirlaniyor, kargo almadi"}
 KANAL_AD = {"shopify": "Site", "trendyol": "Trendyol", "hepsiburada": "Hepsiburada", "n11": "N11",
             "pazarama": "Pazarama", "idefix": "Idefix", "amazon": "Amazon"}
 
