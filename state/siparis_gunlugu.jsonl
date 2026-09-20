@@ -127,3 +127,8 @@
 {"an": "2026-09-19T19:15", "kanal": "n11", "no": "247613622422", "kod": "AETEMDEF-N11", "adet": 1, "hata": "bilinmeyen kod", "kuru": false}
 {"an": "2026-09-19T21:30", "kanal": "trendyol", "no": "11623002487", "kod": "AE2WDEKRBT-LI", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEPY18650": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
 {"an": "2026-09-19T21:30", "kanal": "hepsiburada", "no": "4540643626", "kod": "AE3-6VMTR5", "adet": 1, "dusum": {"AE3-6VMTR": 5}, "kuru": false}
+{"an": "2026-09-20T09:38", "kanal": "trendyol", "no": "11624168118", "kod": "AE2WDEKRBT-LI", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEPY18650": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
+{"an": "2026-09-20T09:38", "kanal": "trendyol", "no": "11624158369", "kod": "AEENDELKSET", "adet": 1, "dusum": {"AEPLSTKKT": 1, "AEJK2040": 1, "AEJK2040DD": 1, "AEJK2040DE": 1, "AEBB830P": 1, "AEENDELK": 1}, "kuru": false}
+{"an": "2026-09-20T09:38", "kanal": "trendyol", "no": "11624014752", "kod": "AESTJDFTR-10", "adet": 2, "dusum": {"AESTJDFTR": 20}, "kuru": false}
+{"an": "2026-09-20T09:38", "kanal": "trendyol", "no": "11623912324", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
+{"an": "2026-09-20T09:38", "kanal": "trendyol", "no": "11623547565", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
