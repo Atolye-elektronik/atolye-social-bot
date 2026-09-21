@@ -888,6 +888,258 @@
       "customerName": "ESME TAŞKIN",
       "estimatedArrivalDate": "2026-09-24T15:30:00Z",
       "totalDeci": 0.3
+    },
+    {
+      "id": "6ab0ed54-616f-932c-628b-a2e806060606",
+      "status": "Open",
+      "customerId": "8025a62b-3c18-426c-b449-dbbabfbd352f",
+      "orderDate": "2026-09-21T11:39:46",
+      "dueDate": "2026-09-21T18:30:00",
+      "barcode": "62955197469908",
+      "packageNumber": "5519746990",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "ŞEKERBANK KDZ EREĞLİ ŞUBESİ MÜFTÜ MAH Yukarı sok  NO:16/101 KDZ EREĞLİ ZONGULDAK MÜFTÜ EREĞLİ Zonguldak",
+      "recipientName": "GÜLŞAH ERDOĞAN",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MÜFTÜ",
+      "shippingTown": "EREĞLİ",
+      "shippingCity": "Zonguldak",
+      "email": "4071175128_5519746990@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Gülşah Aydın",
+      "billingAddress": "Yukarı sok no 16 101 Kdz Ereğli Zonguldak  MÜFTÜ EREĞLİ Zonguldak",
+      "billingCity": "Zonguldak",
+      "billingTown": "EREĞLİ",
+      "billingDistrict": "MÜFTÜ",
+      "billingPostalCode": "67300",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 149.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ab0ed53-a205-2098-e7df-a76006060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "vat": 24.97,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4071175128",
+          "orderDate": "2026-09-21T11:39:46",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "GÜLŞAH ERDOĞAN",
+      "estimatedArrivalDate": "2026-09-24T15:30:00Z",
+      "totalDeci": 2
+    },
+    {
+      "id": "6ab109b1-a836-0a4c-51e2-337306060606",
+      "status": "Open",
+      "customerId": "3085c757-93e6-4a83-b6fd-9f38c3f07199",
+      "orderDate": "2026-09-21T13:40:45",
+      "dueDate": "2026-09-21T18:30:00",
+      "barcode": "62955198027189",
+      "packageNumber": "5519802718",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Serintepe mevkii Mutlu Dede Cad. No:2A KARATAŞ KARATAŞ Adana",
+      "recipientName": "Celile Kaymaz",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KARATAŞ",
+      "shippingTown": "KARATAŞ",
+      "shippingCity": "Adana",
+      "email": "4007791647_5519802718@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Celile Küver",
+      "billingAddress": "405. Sk. No:3 /1 Kat:3 Daire:8  Ali Orhan Apt. YENİ KARATAŞ Adana",
+      "billingCity": "Adana",
+      "billingTown": "KARATAŞ",
+      "billingDistrict": "YENİ",
+      "billingPostalCode": "01900",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 364
+      },
+      "items": [
+        {
+          "lineItemId": "6ab109af-ef73-1aa7-ec19-906206060606",
+          "listingId": "87fe2395-071a-4680-920c-5e51967ebc6f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HXKWT2",
+          "merchantSku": "AEMOTPRV-10",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 364
+          },
+          "vat": 60.67,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 364
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 32.76
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 364
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 364
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Dc Motor + Pervane Seti (3V) - Mini Vantilatör Motoru - 10 Motor + 10 Pervane",
+          "orderNumber": "4007791647",
+          "orderDate": "2026-09-21T13:40:45",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2902223452209",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002057893698.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "CELİLE KÜVER",
+      "estimatedArrivalDate": "2026-10-01T15:30:00Z",
+      "totalDeci": 1
     }
   ]
 }
