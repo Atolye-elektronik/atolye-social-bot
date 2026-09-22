@@ -1,0 +1,99 @@
+{
+ "tarih": "2026-09-22",
+ "plan": {
+  "AETP4056": 49.9,
+  "AEPY18650T": 49.9,
+  "AEPY18650": 74.9,
+  "AEBZZR5V": 24.9,
+  "AEPOT10K": 24.9,
+  "AEDC125B": 24.9,
+  "AEDCM3V-1": 34.9,
+  "AE9VPILSKT1": 49.9,
+  "AEDUY-1": 24.9,
+  "AEMOTPRV-1": 49.9,
+  "AEPYAA2": 34.9,
+  "AEBB170P": 49.9,
+  "AEDUYAMP-1": 49.9
+ },
+ "items": [
+  {
+   "barcode": "2920000600094",
+   "salePrice": 49.9,
+   "listPrice": 104.0,
+   "quantity": 89
+  },
+  {
+   "barcode": "2920000600056",
+   "salePrice": 24.9,
+   "listPrice": 119.0,
+   "quantity": 90
+  },
+  {
+   "barcode": "2920000600087",
+   "salePrice": 49.9,
+   "listPrice": 109.0,
+   "quantity": 174
+  },
+  {
+   "barcode": "2901193165614",
+   "salePrice": 49.9,
+   "listPrice": 109.0,
+   "quantity": 69
+  },
+  {
+   "barcode": "2901238096255",
+   "salePrice": 49.9,
+   "listPrice": 104.0,
+   "quantity": 90
+  },
+  {
+   "barcode": "2901905375140",
+   "salePrice": 34.9,
+   "listPrice": 104.0,
+   "quantity": 74
+  },
+  {
+   "barcode": "TYBRAWXK3UZY5HUP72",
+   "salePrice": 34.9,
+   "listPrice": 115.0,
+   "quantity": 179
+  },
+  {
+   "barcode": "AB0281",
+   "salePrice": 74.9,
+   "listPrice": 148.0,
+   "quantity": 16
+  },
+  {
+   "barcode": "TYBW805DFS3U8DIC36",
+   "salePrice": 24.9,
+   "listPrice": 77.0,
+   "quantity": 174
+  },
+  {
+   "barcode": "TYB1FWMHAXR7W1GI43",
+   "salePrice": 49.9,
+   "listPrice": 123.0,
+   "quantity": 114
+  },
+  {
+   "barcode": "9999880000047",
+   "salePrice": 24.9,
+   "listPrice": 95.0,
+   "quantity": 163
+  },
+  {
+   "barcode": "9999880000034",
+   "salePrice": 24.9,
+   "listPrice": 91.0,
+   "quantity": 500
+  },
+  {
+   "barcode": "ATELBB170P001",
+   "salePrice": 49.9,
+   "listPrice": 114.0,
+   "quantity": 40
+  }
+ ],
+ "batch": "44f8d7f5-b6c4-11f1-b5f7-f217d323c2ce-1790123351"
+}

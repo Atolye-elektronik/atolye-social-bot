@@ -1,0 +1,1163 @@
+[
+[
+"AEDC125B",
+"2 Pin Siyah Anahtar Switch Mini Buton ",
+77,
+2.32,
+1,
+6.6,
+"DUSUK (<25)"
+],
+[
+"AEDHT11",
+"DHT11 Sıcaklık ve Nem Sensör Modülü",
+125,
+29,
+1,
+13.7,
+"DUSUK (<25)"
+],
+[
+"AEHCSR04",
+"HC-SR04 5V Ultrasonik Mesafe Sensör Mo",
+126,
+29,
+1,
+14.4,
+"DUSUK (<25)"
+],
+[
+"AEBZZR5V",
+"Buzzer",
+91,
+4.3,
+1,
+14.5,
+"DUSUK (<25)"
+],
+[
+"AEXL6009",
+"4A XL6009 Ayarlanabilir Step Up Boost ",
+135,
+34.73,
+1,
+15.0,
+"DUSUK (<25)"
+],
+[
+"AEVHM314",
+"VHM-314 Micro USB Bluetooth Kablosuz S",
+144,
+39.36,
+1,
+16.7,
+"DUSUK (<25)"
+],
+[
+"AEPOT10K",
+"10k Potansiyometre",
+95,
+4.3,
+1,
+17.3,
+"DUSUK (<25)"
+],
+[
+"AEACDMMR",
+"Ac 220v 2000w Motor Hız Kontrol Kartı ",
+150,
+41.68,
+1,
+18.6,
+"DUSUK (<25)"
+],
+[
+"AEDUYAMP-1",
+"Mini Duy ve Ampul (2,5V) - Fen Deney L",
+104,
+8.87,
+1,
+19.1,
+"DUSUK (<25)"
+],
+[
+"AEBZZR5V-6",
+"5V Aktif Buzzer - 6'lı Paket - Arduino",
+129,
+25.8,
+1,
+19.7,
+"DUSUK (<25)"
+],
+[
+"AES400IGG",
+"Ayarlı İş Güvenliği Gözlüğü S400 - Yan",
+130,
+25,
+1,
+21.2,
+"DUSUK (<25)"
+],
+[
+"AE9VPILSKT1",
+"DC Jack Çıkışlı 9V Pil Soketi - Arduin",
+104,
+6.0,
+1,
+21.9,
+"DUSUK (<25)"
+],
+[
+"AEDCM3V-1",
+"DC Motor 3V Yassı (130 Tip) - Hobi ve ",
+104,
+5.56,
+1,
+22.4,
+"DUSUK (<25)"
+],
+[
+"AEMOTPRV-1",
+"DC Motor Pervane Seti - 1 Motor + 1 Pe",
+109,
+8.34,
+1,
+23.1,
+"DUSUK (<25)"
+],
+[
+"AE5IZOLE",
+"Elektrik İzolebant Siyah 19mm x 10 Yar",
+199,
+70.0,
+1,
+24.8,
+"DUSUK (<25)"
+],
+[
+"AEPY18650T",
+"18650 Li-on Pil Yuvası Tekli (1'li) - ",
+109,
+6.0,
+1,
+25.5,
+"OK"
+],
+[
+"AE5X100YT",
+"Yıldız Tornavida 5x100 mm - Ergonomik ",
+129,
+20,
+1,
+25.5,
+"OK"
+],
+[
+"AE5X100DT",
+"Düz Tornavida 5x100 mm - Ergonomik Sap",
+129,
+20,
+1,
+25.5,
+"OK"
+],
+[
+"AEBB170P",
+"Miniboy Breadboard - 170 pin",
+114,
+9.0,
+1,
+26.0,
+"OK"
+],
+[
+"AERC522RFID",
+"Rc522 13,56mhz Rfıd Modülü -  Kart Ve ",
+177,
+52.0,
+1,
+27.3,
+"OK"
+],
+[
+"AEJK2040DE",
+"Jumper Kablo Seti 20 cm 40'lı - Dişi/E",
+134,
+20.18,
+1,
+28.9,
+"OK"
+],
+[
+"AESG90",
+"Tower Pro Sg90 Rc Mini Servo Motor",
+155,
+34.73,
+1,
+29.1,
+"OK"
+],
+[
+"AE12V1A",
+"12V 1A Adaptör",
+167,
+43.0,
+1,
+29.3,
+"OK"
+],
+[
+"AESARJKT1",
+"Şarj Edilebilir Güç Seti - TP4056 Type",
+139,
+23.16,
+1,
+29.4,
+"OK"
+],
+[
+"AEJK2040DD",
+"Jumper Kablo Seti 20 cm 40'lı - Dişi /",
+135,
+20.18,
+1,
+29.6,
+"OK"
+],
+[
+"AEJK2040",
+"Jumper Kablo Seti 20 cm 40'lı - Erkek-",
+135,
+20.18,
+1,
+29.6,
+"OK"
+],
+[
+"AETP4056",
+"TP4056 Korumalı Lityum Pil Şarj Devres",
+123,
+11.58,
+1,
+29.7,
+"OK"
+],
+[
+"AEKNTKLM",
+"Kontrol Kalemi - 100-500V Faz Test Kal",
+129,
+15,
+1,
+30.5,
+"OK"
+],
+[
+"AE150LED",
+"150 Adet Karışık LED - 5mm (Kırmızı - ",
+177,
+48.0,
+1,
+31.3,
+"OK"
+],
+[
+"AEPYAA2",
+"2'li Aa Kalem Pil Kutusu Yuvası 3v Kab",
+115,
+4.17,
+1,
+31.5,
+"OK"
+],
+[
+"AEIRKMND",
+"IR Alıcı Verici Kumanda Seti - Arduino",
+146,
+26.0,
+1,
+31.5,
+"OK"
+],
+[
+"AEPRV-5",
+"Plastik Pervane 3 Kanat - DC Motor Uyu",
+129,
+13.9,
+1,
+31.6,
+"OK"
+],
+[
+"AEHVYSHP",
+"Yaylı Süngerli Metal Havya Standı",
+184,
+52.0,
+1,
+32.2,
+"OK"
+],
+[
+"AEL298N",
+"L298N Motor Sürücü Kartı",
+177,
+47.0,
+1,
+32.3,
+"OK"
+],
+[
+"AELHMPMP",
+"Lehim Pompası - Metal",
+156,
+32.0,
+1,
+32.5,
+"OK"
+],
+[
+"AETP4056-2",
+"TP4056 Type-C Li-Ion Pil Şarj Modülü K",
+144,
+23.16,
+1,
+32.9,
+"OK"
+],
+[
+"AETTS3P",
+"Düz-Yıldız Tornavida ve Kontrol Kalemi",
+198,
+61.0,
+1,
+33.1,
+"OK"
+],
+[
+"AE28BYJ48",
+"28BJY-48 Redüktörlü Step Motor Seti",
+177,
+46.0,
+1,
+33.3,
+"OK"
+],
+[
+"AEPOT10K-6",
+"10K Potansiyometre - 6'lı Paket - B10K",
+149,
+25.8,
+1,
+33.8,
+"OK"
+],
+[
+"AESTJDFTR",
+"Meslek Lisesi ve MESEM Öğrencileri içi",
+173,
+42,
+1,
+34.5,
+"OK"
+],
+[
+"AEDUY-1",
+"Mini Duy - Vidalı Terminalli Renkli La",
+119,
+3.24,
+1,
+35.3,
+"OK"
+],
+[
+"AERTC1302",
+"DS1302 RTC Gerçek Zamanlı Saat Modülü ",
+146,
+20.0,
+1,
+37.5,
+"OK"
+],
+[
+"AEMYNK3",
+"Mini Yankeski 3'lü Set - Elektronikçi ",
+349,
+129.72,
+1,
+38.9,
+"OK"
+],
+[
+"AETEMDEF",
+"Temrin Defteri",
+173,
+36.6,
+1,
+39.9,
+"OK"
+],
+[
+"AEPY18650-2",
+"18650 Li-Ion Pil Yuvası 2'li Seri Kabl",
+154,
+23.16,
+1,
+40.0,
+"OK"
+],
+[
+"AETKRM5V",
+"Tek Kanallı 5v Röle Modülü",
+156,
+24.0,
+1,
+40.5,
+"OK"
+],
+[
+"AEHCSR501",
+"HC-SR501 Ayarlanabilir PIR Hareket Sen",
+167,
+31.0,
+1,
+41.3,
+"OK"
+],
+[
+"AE16X2LCD",
+"Iıc I2c Seri 1602a 2x16 Mavi Karakter ",
+275,
+75.0,
+1,
+41.6,
+"OK"
+],
+[
+"AEBB830P",
+"Ard-mb 102 Breadboard",
+167,
+29.0,
+1,
+43.3,
+"OK"
+],
+[
+"AEMYNK",
+"Mini Yankeski - Dip Yankeski, Elektron",
+189,
+43.24,
+1,
+44.5,
+"OK"
+],
+[
+"AEDHT11-BB",
+"DHT11 Arduino Sensör Modulü (Nem ve Sı",
+214,
+29.0,
+1,
+44.7,
+"OK"
+],
+[
+"AEUNOR32",
+"Uno R3 Klon - Usb Kablo Hediyeli",
+356,
+127.31,
+1,
+46.3,
+"OK"
+],
+[
+"AEUNOR3",
+"Arduino Uno R3 Klon USB Kablo Hediyeli",
+356,
+127.31,
+1,
+46.3,
+"OK"
+],
+[
+"AEPY18650",
+"18650 Lityum Iyon Pil Batarya Yuvası I",
+148,
+11.58,
+1,
+47.3,
+"OK"
+],
+[
+"AE3-6VMTR",
+"3-6V Redüktörlü Arduino Uyumlu DC Sarı",
+179,
+31.23,
+1,
+49.5,
+"OK"
+],
+[
+"AEDUYAMP-5",
+"Mini Duy ve Ampul (2,5V) - Fen Deney L",
+199,
+44.35,
+1,
+50.4,
+"OK"
+],
+[
+"AEVANTSET",
+"Fen Deney Seti - Mini Vantilatör Yapım",
+159,
+14.83,
+1,
+51.8,
+"OK"
+],
+[
+"AEKRK5",
+"Krokodil Kablo Seti 5'li - Timsah Ağız",
+169,
+21.6,
+1,
+52.1,
+"OK"
+],
+[
+"AEDT830D",
+"DT830D Dijital Multimetre",
+314,
+90.0,
+1,
+54.0,
+"OK"
+],
+[
+"AEKRK10",
+"Krokodil Kablo Seti 10'lu - Timsah Ağı",
+249,
+43.2,
+1,
+55.1,
+"OK"
+],
+[
+"AE3-6VMTR2",
+"3-6V Redüktörlü Arduino Uyumlu DC Sarı",
+279,
+62.46,
+1,
+57.0,
+"OK"
+],
+[
+"AEDCM3V-5",
+"DC Motor 3V Yassı (130 Tip) - Hobi ve ",
+188,
+27.8,
+1,
+59.2,
+"OK"
+],
+[
+"AEPRV-10",
+"Plastik Pervane 3 Kanat - DC Motor Uyu",
+189,
+27.8,
+1,
+59.9,
+"OK"
+],
+[
+"AEDUY-10",
+"Mini Duy ve Ampul (2,5V) - Fen Deney L",
+199,
+33.1,
+1,
+61.7,
+"OK"
+],
+[
+"AEHC06BT",
+"HC-06 Bluetooth Kablosuz Seri Haberleş",
+366,
+115.0,
+1,
+65.6,
+"OK"
+],
+[
+"AEKB1602",
+"Kargaburun 160mm",
+398,
+135.0,
+1,
+68.1,
+"OK"
+],
+[
+"AEYNKSK160",
+"Yankeski 160 mm",
+398,
+135.0,
+1,
+68.1,
+"OK"
+],
+[
+"AEPNS180",
+"Pense 180 mm",
+398,
+135.0,
+1,
+68.1,
+"OK"
+],
+[
+"AEPY18650T5",
+"18650 Pil Yuvası Tekli 3.7V Kablolu Ba",
+250,
+30.0,
+1,
+69.0,
+"OK"
+],
+[
+"AEFENSET",
+"Fen Deney Seti - Breadboard + Pil Kutu",
+199,
+23.83,
+1,
+70.9,
+"OK"
+],
+[
+"AETY4LUMTRST",
+"(4 Adet) Akıllı Robot Arduino 6V 250 R",
+389,
+124.92,
+1,
+71.9,
+"OK"
+],
+[
+"AEHC06BT-BB",
+"Hc-06 Bluetooth Sistem Modülü -",
+379,
+115.0,
+1,
+74.8,
+"OK"
+],
+[
+"AEDCM3V-10",
+"DC Motor 3V Yassı (130 Tip) - Hobi ve ",
+299,
+55.6,
+1,
+77.9,
+"OK"
+],
+[
+"AEDUYAMP-10",
+"Mini Duy ve Ampul (2,5V) - Fen Deney L",
+349,
+88.7,
+1,
+80.0,
+"OK"
+],
+[
+"AE3-6VMTR4",
+"3-6V Redüktürlü Arduino Uyumlu DC Sarı",
+419,
+124.92,
+1,
+81.3,
+"OK"
+],
+[
+"AEJK2040EE3",
+"Jumper Kablo Seti - 20cm - 40'lı - 3'l",
+314,
+60.54,
+1,
+83.5,
+"OK"
+],
+[
+"AE9VPILSKT",
+"DC Jack Çıkışlı 9v Pil Soketi - Arduin",
+314,
+60.0,
+1,
+84.0,
+"OK"
+],
+[
+"AEMOTPRV-5",
+"DC Motor + Pervane Seti (3V) - Mini Va",
+299,
+41.7,
+1,
+91.8,
+"OK"
+],
+[
+"AETC162",
+"16\" Organizerli Takım Çantası",
+529,
+130.0,
+6,
+96.6,
+"OK"
+],
+[
+"AEARNANOTC",
+"Arduino Nano Klon Ch340 Chipli - Type ",
+447,
+127.31,
+1,
+98.6,
+"OK"
+],
+[
+"AET2WDRBT",
+"2WD Robot Araba Kiti (Demonte Robotik ",
+488,
+155.0,
+1,
+99.7,
+"OK"
+],
+[
+"AEARNANOTC2",
+"Nano Klon v3.0 ATMEGA328P - Type-C nan",
+449,
+127.31,
+1,
+100.0,
+"OK"
+],
+[
+"AETEMELSET",
+"Temel Devre Seti - Breadboard, Pil Kut",
+335,
+58.6,
+1,
+100.2,
+"OK"
+],
+[
+"AERFIDPS",
+"Arduino RFID Akıllı Kilit Proje Kiti |",
+630,
+254.4,
+2,
+100.2,
+"OK"
+],
+[
+"AE16X2LCD2",
+"16x2 LCD Ekran I2C Modüllü - Mavi - Ar",
+482,
+150.0,
+1,
+100.5,
+"OK"
+],
+[
+"AE2WDEKRBT",
+"2WD Akıllı Robot Araba Şasi Kiti DIY P",
+492,
+155.0,
+1,
+102.5,
+"OK"
+],
+[
+"AERTC13025",
+"5 Adet DS1302 RTC Gerçek Zamanlı Saat ",
+419,
+100.0,
+1,
+106.2,
+"OK"
+],
+[
+"AESG905",
+"5 Adet SG90 Servo Motor 9gr 180 Derece",
+524,
+173.65,
+1,
+106.4,
+"OK"
+],
+[
+"AEZD30C40W",
+"40w Topraklı Kalem Havya",
+524,
+165.0,
+1,
+115.0,
+"OK"
+],
+[
+"AEPLSTKKT",
+"Renkli Çok Amaçlı Malzeme Kutusu (26,5",
+345,
+50.0,
+2,
+115.9,
+"OK"
+],
+[
+"AE6X13PLK5",
+"5 Adet Delikli Bakır Plaket - 6x13",
+419,
+90.0,
+1,
+116.2,
+"OK"
+],
+[
+"AEDHT11PS",
+"Arduino Sıcaklık-Nem Ölçer Proje Kiti ",
+649,
+251.49,
+2,
+116.5,
+"OK"
+],
+[
+"AEL298NMTRT",
+"L298N Motor Sürücü ve 2 adet 3-6V DC R",
+450,
+109.46,
+1,
+118.5,
+"OK"
+],
+[
+"AEMOTPRV-10",
+"DC Motor + Pervane Seti (3V) - Mini Va",
+399,
+83.4,
+1,
+120.4,
+"OK"
+],
+[
+"AET2WDRBT-LI",
+"2WD Robot Araba Kiti - 18650 Pil Yuval",
+545,
+174.08,
+2,
+120.7,
+"OK"
+],
+[
+"AEARSNST",
+"Akıllı Proje ve Sensör Modülleri Seti ",
+1054,
+528.23,
+1,
+124.6,
+"OK"
+],
+[
+"AESTEPPS",
+"Step Motor ile Hassas Konumlandırma Ki",
+587,
+193.49,
+2,
+130.9,
+"OK"
+],
+[
+"AEHCSR045",
+"5 Adet HC-SR04 Ultrasonik Mesafe Sensö",
+524,
+145.0,
+1,
+135.0,
+"OK"
+],
+[
+"AEJK2040EEDE33",
+"Jumper Kablo Seti - 20cm - 40'lı - 6'l",
+513,
+121.08,
+1,
+151.2,
+"OK"
+],
+[
+"AEJK2040222",
+"Jumper Kablo Seti - 20cm - 40'lı - 6'l",
+513,
+121.08,
+1,
+151.2,
+"OK"
+],
+[
+"AEHVYST6P",
+"Lehimleme ve Proje Çalışmaları için 6'",
+839,
+342.0,
+2,
+159.6,
+"OK"
+],
+[
+"AETKRM5V5",
+"5 Adet Tek Kanallı 5v Röle Modülü",
+524,
+120.0,
+1,
+160.0,
+"OK"
+],
+[
+"AERTCPS",
+"Dijital Saat & Takvim Projesi Kiti (DS",
+699,
+242.49,
+2,
+160.6,
+"OK"
+],
+[
+"AEEAS3P",
+"Pense Yankeski Kargaburun 3'lü Set",
+933,
+405.0,
+1,
+162.7,
+"OK"
+],
+[
+"AEPY18650T10",
+"18650 Pil Yuvası Tekli 3.7V Kablolu Se",
+450,
+60.0,
+1,
+168.0,
+"OK"
+],
+[
+"AEHSPS",
+"Hareket Algılayan Sesli Uyarı Kiti (PI",
+659,
+206.79,
+2,
+168.2,
+"OK"
+],
+[
+"AEEAS7P",
+"Usta İşi El Aletleri Seti - 7 Parça",
+1049,
+480.0,
+1,
+169.3,
+"OK"
+],
+[
+"AE2WDEKRBT-LI",
+"2WD Servolu Engelden Kaçan Robot Araba",
+1049,
+433.4,
+3,
+186.9,
+"OK"
+],
+[
+"AEUNOR33",
+"Arduino Uno R3 Klon 3'lü Set | CH340 +",
+944,
+381.93,
+1,
+193.5,
+"OK"
+],
+[
+"AE2WDEKRBT5230-LI",
+"Arduino 2WD Servolu Engelden Kaçan Rob",
+1110,
+438.4,
+3,
+224.9,
+"OK"
+],
+[
+"AEHC06RAK",
+"Bluetooth Kontrollü Robot Kiti - Tam S",
+1154,
+464.49,
+3,
+229.7,
+"OK"
+],
+[
+"AEENDELKSET",
+"Endüstriyel Elektronik Uygulama Seti -",
+1154,
+455.76,
+3,
+238.4,
+"OK"
+],
+[
+"AEIRRAK",
+"IR Kumandalı Robot Araba Kiti (2WD + A",
+1049,
+375.49,
+3,
+244.9,
+"OK"
+],
+[
+"AEENDELK",
+"Endüstriyel Elektronik Eğitim Seti - M",
+888,
+281.22,
+1,
+254.8,
+"OK"
+],
+[
+"AEESP32TC",
+"ESP32 WROOM-32 WiFi Bluetooth Geliştir",
+789,
+210,
+1,
+256.4,
+"OK"
+],
+[
+"AETCS9P",
+"Takım Çantası ve El Aletleri Seti 9 Pa",
+1468.74,
+630.0,
+6,
+257.5,
+"OK"
+],
+[
+"AEHC06RAK-LI",
+"Bluetooth Kontrollü Robot Kiti - 18650",
+1206,
+483.57,
+2,
+276.2,
+"OK"
+],
+[
+"AEARBSES",
+"Arduino Başlangıç Seti 46 Parça | Kutu",
+944,
+287.05,
+1,
+288.4,
+"OK"
+],
+[
+"AEIRRAK-LI",
+"IR Kumandalı Robot Araba Kiti - 18650 ",
+1101,
+394.57,
+2,
+291.3,
+"OK"
+],
+[
+"AEAROSES",
+"Arduino Proje Geliştirme Seti 56 Parça",
+1364,
+519.69,
+3,
+322.2,
+"OK"
+],
+[
+"AETCS18P",
+"Meslek Lisesi Takım Çantası Seti - 18 ",
+2233.42,
+1092.0,
+6,
+333.4,
+"OK"
+],
+[
+"AE3IN1ROBOT",
+"Çok Fonksiyonlu Robot Araba Kiti (Blue",
+1574,
+574.4,
+3,
+415.2,
+"OK"
+],
+[
+"AEARISES88",
+"Arduino İleri Seviye Kutulu Eğitim Set",
+2099,
+955.18,
+2,
+432.6,
+"OK"
+],
+[
+"AE3IN1ROBOT-LI",
+"3'ü 1 Arada Çok Fonksiyonlu Robot Arab",
+1626,
+593.48,
+3,
+432.7,
+"OK"
+],
+[
+"AEARISES",
+"Arduino İleri Seviye Kutulu Eğitim Set",
+2099,
+953.18,
+2,
+434.6,
+"OK"
+],
+[
+"AEISDSYS10",
+"İşletmelerde Mesleki Eğitim İş Dosyası",
+1418,
+420.0,
+1,
+488.8,
+"OK"
+],
+[
+"AETMRNDFTR10",
+"Temrin Defteri — Sınıf Paketi - 10 Ade",
+1418,
+366.0,
+3,
+513.9,
+"OK"
+],
+[
+"AEISDSYS20",
+"İşletmelerde Mesleki Eğitim İş Dosyası",
+2350,
+840.0,
+2,
+724.3,
+"OK"
+],
+[
+"AETMLELKDS",
+"Temel Elektronik Deney Seti",
+314,
+null,
+1,
+null,
+"maliyet yok"
+]
+]
