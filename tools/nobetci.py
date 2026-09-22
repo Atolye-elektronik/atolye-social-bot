@@ -215,8 +215,8 @@ def main() -> int:
 
     if hatalilar:
         print(f"\n!! {len(hatalilar)} is calisti ama HATA verdi - tetiklenmiyor, elle bakilmali:")
-        for a in hatalilar:
-            print(f"   {a['ad']}  ({a['dosya']})")
+        for h in hatalilar:
+            print(f"   {h['ad']}  ({h['dosya']})")
 
     if not gecikenler:
         if not hatalilar:
