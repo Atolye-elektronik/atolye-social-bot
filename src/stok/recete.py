@@ -39,7 +39,15 @@ class Recete:
         self.setler = temiz
 
     def kanonik(self, kod):
-        """Pazaryeri stok kodunu Shopify SKU'suna cevirir (alias yoksa aynen)."""
+        """Pazaryeri stok kodunu Shopify SKU'suna cevirir (alias yoksa aynen).
+        22.09.2026: N11 kodlari '-N11' / '-AE' ekli geliyor; ek soyulmadigi icin N11 satislari
+        'bilinmeyen kod' diye dusulmuyordu (9 adet: dimmer 6, canta 2, defter 1)."""
+        kod = str(kod or "")
+        if kod not in self.alias:
+            for ek in ("-N11", "-AE"):
+                if kod.endswith(ek):
+                    kod = kod[: -len(ek)]
+                    break
         return self.alias.get(kod, kod)
 
     def set_mi(self, kod):
