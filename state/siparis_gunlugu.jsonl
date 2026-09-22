@@ -163,3 +163,6 @@
 {"an": "2026-09-22T13:29", "kanal": "hepsiburada", "no": "4072660852", "kod": "AEACDMMR2", "adet": 2, "dusum": {"AEACDMMR": 4}, "kuru": true}
 {"an": "2026-09-22T13:29", "kanal": "hepsiburada", "no": "4663401226", "kod": "AE6X13PLK", "adet": 1, "dusum": {"AE6X13PLK": 1}, "kuru": true}
 {"an": "2026-09-22T13:29", "kanal": "hepsiburada", "no": "4093359771", "kod": "AEACDMMR2", "adet": 3, "dusum": {"AEACDMMR": 6}, "kuru": true}
+{"an": "2026-09-22T14:12", "kanal": "hepsiburada", "no": "4072660852", "kod": "AEACDMMR2", "adet": 2, "dusum": {"AEACDMMR": 4}, "kuru": false}
+{"an": "2026-09-22T14:12", "kanal": "hepsiburada", "no": "4663401226", "kod": "AE6X13PLK", "adet": 1, "dusum": {"AE6X13PLK": 1}, "kuru": false}
+{"an": "2026-09-22T14:12", "kanal": "hepsiburada", "no": "4093359771", "kod": "AEACDMMR2", "adet": 3, "dusum": {"AEACDMMR": 6}, "kuru": false}
