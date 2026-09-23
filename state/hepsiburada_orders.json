@@ -1,4 +1,257 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ab2fcb0-3645-9654-c742-cc7606060606",
+      "status": "Open",
+      "customerId": "6c7f509d-2a33-4071-b5a8-54579bba06c0",
+      "orderDate": "2026-09-23T01:09:50",
+      "dueDate": "2026-09-23T18:30:00",
+      "barcode": "62955203784975",
+      "packageNumber": "5520378497",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Altınay caddesi zemzem sokak no4/3 seyrantepe kağıthane SEYRANTEPE KAĞITHANE İstanbul",
+      "recipientName": "Beyhan Sancak",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "SEYRANTEPE",
+      "shippingTown": "KAĞITHANE",
+      "shippingCity": "İstanbul",
+      "email": "4438568260_5520378497@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Beyhan Sancak",
+      "billingAddress": "Altınay caddesi zemzem sokak no4/3 seyrantepe kağıthane SEYRANTEPE KAĞITHANE İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "KAĞITHANE",
+      "billingDistrict": "SEYRANTEPE",
+      "billingPostalCode": "34418",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 144.9
+      },
+      "items": [
+        {
+          "lineItemId": "6ab2fcaf-707b-6e5b-cd6a-a4c106060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "vat": 24.15,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.04
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4438568260",
+          "orderDate": "2026-09-23T01:09:50",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Murat Sancak",
+      "estimatedArrivalDate": "2026-09-28T15:30:00Z",
+      "totalDeci": 1
+    },
+    {
+      "id": "6ab3849e-3770-4ac0-b41d-833506060606",
+      "status": "Open",
+      "customerId": "daab2390-3e42-4515-aae0-5e851ffcad96",
+      "orderDate": "2026-09-23T10:49:48",
+      "dueDate": "2026-09-23T18:30:00",
+      "barcode": "62955204754272",
+      "packageNumber": "5520475427",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Fatih caddesi no 13 ÇAKIRLI ORHANGAZİ Bursa",
+      "recipientName": "Ender Tepe",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ÇAKIRLI",
+      "shippingTown": "ORHANGAZİ",
+      "shippingCity": "Bursa",
+      "email": "4201485574_5520475427@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Ender Tepe",
+      "billingAddress": "Fatih caddesi no 13 ÇAKIRLI ORHANGAZİ Bursa",
+      "billingCity": "Bursa",
+      "billingTown": "ORHANGAZİ",
+      "billingDistrict": "ÇAKIRLI",
+      "billingPostalCode": "16800",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 149.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ab3849d-f929-2330-6b61-0be406060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "vat": 24.97,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4201485574",
+          "orderDate": "2026-09-23T10:49:48",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Ayşegül Tepe",
+      "estimatedArrivalDate": "2026-09-28T15:30:00Z",
+      "totalDeci": 2
+    }
+  ]
 }

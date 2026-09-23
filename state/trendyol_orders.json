@@ -1,6 +1,561 @@
 [
   {
     "shipmentAddress": {
+      "id": 9702051968,
+      "firstName": "hasan",
+      "lastName": "Demirtaş",
+      "company": "",
+      "address1": "HACI VELİ MAH 482/1 SK. NO:2 D BLOK K:2 D:3 BAĞARASİ ",
+      "address2": "",
+      "city": "İzmir",
+      "cityCode": 35,
+      "district": "Foça",
+      "districtId": 76,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "35000",
+      "countryCode": "TR",
+      "neighborhoodId": 35443,
+      "neighborhood": "Hacıveli Mah",
+      "phone": null,
+      "fullAddress": "HACI VELİ MAH 482/1 SK. NO:2 D BLOK K:2 D:3 BAĞARASİ     Foça İzmir",
+      "fullName": "hasan Demirtaş"
+    },
+    "orderNumber": "11634487422",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 173.0,
+    "packageGrossAmount": 173.0,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9702051967,
+      "firstName": "hasan",
+      "lastName": "Demirtaş",
+      "company": "",
+      "address1": "HACI VELİ MAH 482/1 SK. NO:2 D BLOK K:2 D:3 BAĞARASİ ",
+      "address2": "",
+      "city": "İzmir",
+      "cityCode": 35,
+      "district": "Foça",
+      "districtId": 76,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "35000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 35443,
+      "neighborhood": "Hacıveli Mah",
+      "phone": null,
+      "fullAddress": "HACI VELİ MAH 482/1 SK. NO:2 D BLOK K:2 D:3 BAĞARASİ     Foça İzmir",
+      "fullName": "hasan Demirtaş"
+    },
+    "customerFirstName": "hasan",
+    "customerEmail": "pf+jrrb3lrn@trendyolmail.com",
+    "customerId": 29034629,
+    "supplierId": 0,
+    "customerLastName": "Demirtaş",
+    "id": 4183671686,
+    "channelId": 1,
+    "shipmentPackageId": 4183671686,
+    "cargoTrackingNumber": 7270037393371567,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETEMDEF",
+        "sku": "2901069996298",
+        "stockCode": "AETEMDEF",
+        "productName": "Temrin Defteri AETEMDEF, one size",
+        "productCode": 1664639329,
+        "contentId": 1664639329,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 173.0,
+        "lineGrossAmount": 173.0,
+        "discount": 15.0,
+        "lineTotalDiscount": 15.0,
+        "lineSellerDiscount": 15.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6837195372",
+            "lineItemPrice": 158.0,
+            "lineItemDiscount": 15.0,
+            "lineItemSellerDiscount": 15.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "productColor": "Yeşil",
+        "id": 5990203841,
+        "lineId": 5990203841,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901069996298",
+        "orderLineItemStatusName": "Picking",
+        "price": 158.0,
+        "lineUnitPrice": 158.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1520,
+        "commission": 3.6,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790159618435,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790148819819,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790148823820,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790149925270,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790197140000,
+    "estimatedDeliveryEndDate": 1790369940000,
+    "totalPrice": 158.0,
+    "packageTotalPrice": 158.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790197140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790148819815,
+    "lastModifiedDate": 1790149925270,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10889740070,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9701663589,
+      "firstName": "Bayram",
+      "lastName": "kurtcuoğlu",
+      "company": "",
+      "address1": "Hulusi Akar caddesi. No 27. G-A7 BLOK.DAİRE 30 KAT 3",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Esenler",
+      "districtId": 65,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 116111,
+      "neighborhood": "15 Temmuz Mah",
+      "phone": null,
+      "fullAddress": "Hulusi Akar caddesi. No 27. G-A7 BLOK.DAİRE 30 KAT 3     Esenler İstanbul",
+      "fullName": "Bayram kurtcuoğlu"
+    },
+    "orderNumber": "11634301656",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2233.42,
+    "packageGrossAmount": 2233.42,
+    "totalDiscount": 126.67,
+    "packageSellerDiscount": 126.67,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 126.67,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 111.67
+      },
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9701663588,
+      "firstName": "Bayram",
+      "lastName": "kurtcuoğlu",
+      "company": "",
+      "address1": "Hulusi Akar caddesi. No 27. G-A7 BLOK.DAİRE 30 KAT 3",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Esenler",
+      "districtId": 65,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 116111,
+      "neighborhood": "15 Temmuz Mah",
+      "phone": null,
+      "fullAddress": "Hulusi Akar caddesi. No 27. G-A7 BLOK.DAİRE 30 KAT 3     Esenler İstanbul",
+      "fullName": "Bayram kurtcuoğlu"
+    },
+    "customerFirstName": "Bayram",
+    "customerEmail": "pf+2bbrxz6p@trendyolmail.com",
+    "customerId": 153509799,
+    "supplierId": 0,
+    "customerLastName": "kurtcuoğlu",
+    "id": 4183483127,
+    "channelId": 1,
+    "shipmentPackageId": 4183483127,
+    "cargoTrackingNumber": 7270037391150362,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2233.42,
+        "lineGrossAmount": 2233.42,
+        "discount": 126.67,
+        "lineTotalDiscount": 126.67,
+        "lineSellerDiscount": 126.67,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6836896888",
+            "lineItemPrice": 2106.75,
+            "lineItemDiscount": 126.67,
+            "lineItemSellerDiscount": 126.67,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5989950930,
+        "lineId": 5989950930,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2106.75,
+        "lineUnitPrice": 2106.75,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 4,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790153937761,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790143139050,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790143141990,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790145931991,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790197140000,
+    "estimatedDeliveryEndDate": 1790456340000,
+    "totalPrice": 2106.75,
+    "packageTotalPrice": 2106.75,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790197140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790143139044,
+    "lastModifiedDate": 1790145931991,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10889537352,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9701109439,
+      "firstName": "Tuncay ",
+      "lastName": "MANDACI ",
+      "company": "",
+      "address1": "219 Sokak. No:21 Kat 2 Daire 6 Arhan Apartmanı",
+      "address2": "",
+      "city": "Çanakkale",
+      "cityCode": 17,
+      "district": "Biga",
+      "districtId": 338,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "17000",
+      "countryCode": "TR",
+      "neighborhoodId": 12065,
+      "neighborhood": "Sakarya Mah",
+      "phone": null,
+      "fullAddress": "219 Sokak. No:21 Kat 2 Daire 6 Arhan Apartmanı     Biga Çanakkale",
+      "fullName": "Tuncay  MANDACI"
+    },
+    "orderNumber": "11634072146",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2233.42,
+    "packageGrossAmount": 2233.42,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9701109438,
+      "firstName": "Tuncay ",
+      "lastName": "MANDACI ",
+      "company": "",
+      "address1": "219 Sokak. No:21 Kat 2 Daire 6 Arhan Apartmanı",
+      "address2": "",
+      "city": "Çanakkale",
+      "cityCode": 17,
+      "district": "Biga",
+      "districtId": 338,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "17000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 12065,
+      "neighborhood": "Sakarya Mah",
+      "phone": null,
+      "fullAddress": "219 Sokak. No:21 Kat 2 Daire 6 Arhan Apartmanı     Biga Çanakkale",
+      "fullName": "Tuncay  MANDACI"
+    },
+    "customerFirstName": "Tuncay ",
+    "customerEmail": "pf+b2283494@trendyolmail.com",
+    "customerId": 42368199,
+    "supplierId": 0,
+    "customerLastName": "MANDACI ",
+    "id": 4183236042,
+    "channelId": 1,
+    "shipmentPackageId": 4183236042,
+    "cargoTrackingNumber": 7330037389794968,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2233.42,
+        "lineGrossAmount": 2233.42,
+        "discount": 15.0,
+        "lineTotalDiscount": 15.0,
+        "lineSellerDiscount": 15.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6836476082",
+            "lineItemPrice": 2218.42,
+            "lineItemDiscount": 15.0,
+            "lineItemSellerDiscount": 15.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5989585908,
+        "lineId": 5989585908,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2218.42,
+        "lineUnitPrice": 2218.42,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 4,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790125849312,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790115051005,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790115057573,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790134355699,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790197140000,
+    "estimatedDeliveryEndDate": 1790456340000,
+    "totalPrice": 2218.42,
+    "packageTotalPrice": 2218.42,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790197140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790115050999,
+    "lastModifiedDate": 1790137249551,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10889243361,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9700397302,
       "firstName": "Nedim",
       "lastName": "Şener",
