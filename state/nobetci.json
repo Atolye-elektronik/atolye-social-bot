@@ -1,5 +1,5 @@
 {
-  "kontrol": "2026-09-22T23:51:07.350658+00:00",
+  "kontrol": "2026-09-23T05:10:08.922565+00:00",
   "akislar": [
     {
       "dosya": "bayram.yml",
@@ -7,7 +7,7 @@
       "beklenen": "2026-09-22T05:00:00+00:00",
       "son_basarili": "2026-09-22T09:48:03+00:00",
       "son_kosu": "2026-09-22T09:48:03+00:00",
-      "gecikme_dk": 1131,
+      "gecikme_dk": 1450,
       "kacti": false,
       "hatali": false
     },
@@ -17,7 +17,7 @@
       "beklenen": "2026-09-22T01:00:00+00:00",
       "son_basarili": "2026-09-13T01:11:45+00:00",
       "son_kosu": "2026-09-22T05:56:39+00:00",
-      "gecikme_dk": 1371,
+      "gecikme_dk": 1690,
       "kacti": false,
       "hatali": true
     },
@@ -27,7 +27,7 @@
       "beklenen": "2026-09-21T04:30:00+00:00",
       "son_basarili": "2026-09-21T04:43:13+00:00",
       "son_kosu": "2026-09-21T04:43:13+00:00",
-      "gecikme_dk": 2601,
+      "gecikme_dk": 2920,
       "kacti": false,
       "hatali": false
     },
@@ -37,7 +37,7 @@
       "beklenen": "2026-09-22T20:13:00+00:00",
       "son_basarili": "2026-09-22T21:14:01+00:00",
       "son_kosu": "2026-09-22T21:14:01+00:00",
-      "gecikme_dk": 218,
+      "gecikme_dk": 537,
       "kacti": false,
       "hatali": false
     },
@@ -47,7 +47,7 @@
       "beklenen": "2026-09-22T18:37:00+00:00",
       "son_basarili": "2026-09-22T21:36:41+00:00",
       "son_kosu": "2026-09-22T21:36:41+00:00",
-      "gecikme_dk": 314,
+      "gecikme_dk": 633,
       "kacti": false,
       "hatali": false
     },
@@ -57,7 +57,7 @@
       "beklenen": "2026-09-22T17:30:00+00:00",
       "son_basarili": "2026-09-22T20:18:55+00:00",
       "son_kosu": "2026-09-22T20:18:55+00:00",
-      "gecikme_dk": 381,
+      "gecikme_dk": 700,
       "kacti": false,
       "hatali": false
     },
@@ -67,7 +67,7 @@
       "beklenen": "2026-09-22T21:45:00+00:00",
       "son_basarili": "2026-09-22T23:43:37+00:00",
       "son_kosu": "2026-09-22T23:43:37+00:00",
-      "gecikme_dk": 126,
+      "gecikme_dk": 445,
       "kacti": false,
       "hatali": false
     },
@@ -77,7 +77,7 @@
       "beklenen": "2026-09-21T06:00:00+00:00",
       "son_basarili": "2026-09-21T12:12:33+00:00",
       "son_kosu": "2026-09-21T12:12:33+00:00",
-      "gecikme_dk": 2511,
+      "gecikme_dk": 2830,
       "kacti": false,
       "hatali": false
     },
@@ -87,7 +87,7 @@
       "beklenen": "2026-09-22T15:00:00+00:00",
       "son_basarili": "2026-09-22T18:42:07+00:00",
       "son_kosu": "2026-09-22T18:42:07+00:00",
-      "gecikme_dk": 531,
+      "gecikme_dk": 850,
       "kacti": false,
       "hatali": false
     },
@@ -97,7 +97,7 @@
       "beklenen": "2026-09-01T04:00:00+00:00",
       "son_basarili": "2026-09-01T04:03:16+00:00",
       "son_kosu": "2026-09-01T04:03:16+00:00",
-      "gecikme_dk": 31431,
+      "gecikme_dk": 31750,
       "kacti": false,
       "hatali": false
     },
@@ -107,7 +107,7 @@
       "beklenen": "2026-09-22T05:15:00+00:00",
       "son_basarili": "2026-09-22T09:59:17+00:00",
       "son_kosu": "2026-09-22T09:59:17+00:00",
-      "gecikme_dk": 1116,
+      "gecikme_dk": 1435,
       "kacti": false,
       "hatali": false
     }
