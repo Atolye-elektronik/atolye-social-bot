@@ -44,7 +44,7 @@
   "AETCS18P": {
    "variant": 48357287231717,
    "item": 50462117101797,
-   "qty": 52,
+   "qty": 51,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -72,14 +72,14 @@
   "AEZD30C40W": {
    "variant": 48378865320165,
    "item": 50483798769893,
-   "qty": 179,
+   "qty": 177,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEDT830D": {
    "variant": 48658454741221,
    "item": 50764351668453,
-   "qty": 179,
+   "qty": 177,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -107,7 +107,7 @@
   "AEHVYSHP": {
    "variant": 48713784066277,
    "item": 50819732504805,
-   "qty": 186,
+   "qty": 184,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -121,7 +121,7 @@
   "AE6X13PLK": {
    "variant": 48912719020261,
    "item": 51019543511269,
-   "qty": 155,
+   "qty": 153,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -163,7 +163,7 @@
   "AEBB830P": {
    "variant": 48913086709989,
    "item": 51019911200997,
-   "qty": 169,
+   "qty": 167,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -177,7 +177,7 @@
   "AELHMPMP": {
    "variant": 48913142284517,
    "item": 51019966775525,
-   "qty": 173,
+   "qty": 171,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -198,21 +198,21 @@
   "AEKB1602": {
    "variant": 48995592470757,
    "item": 51102785896677,
-   "qty": 85,
+   "qty": 83,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEYNKSK160": {
    "variant": 48995592929509,
    "item": 51102786355429,
-   "qty": 84,
+   "qty": 82,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEPNS180": {
    "variant": 48995593322725,
    "item": 51102786748645,
-   "qty": 80,
+   "qty": 78,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -261,7 +261,7 @@
   "AETC162": {
    "variant": 48998134481125,
    "item": 51105364672741,
-   "qty": 82,
+   "qty": 80,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -324,7 +324,7 @@
   "AETEMDEF": {
    "variant": 49039183085797,
    "item": 51146610442469,
-   "qty": 42,
+   "qty": 41,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -625,28 +625,28 @@
   "AE5X100DT": {
    "variant": 51240383217893,
    "item": 53351922368741,
-   "qty": 85,
+   "qty": 83,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE5X100YT": {
    "variant": 51240645886181,
    "item": 53352193196261,
-   "qty": 85,
+   "qty": 83,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEKNTKLM": {
    "variant": 51241097920741,
    "item": 53352645230821,
-   "qty": 85,
+   "qty": 83,
    "status": "ACTIVE",
    "tracked": true
   },
   "AES400IGG": {
    "variant": 51241934094565,
    "item": 53353481404645,
-   "qty": 85,
+   "qty": 83,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -1003,21 +1003,21 @@
   "AETUPLEHIM": {
    "variant": 52775837761765,
    "item": 54888991260901,
-   "qty": 179,
+   "qty": 177,
    "status": "DRAFT",
    "tracked": true
   },
   "AELEHIMPASTA": {
    "variant": 52775837794533,
    "item": 54888991293669,
-   "qty": 52,
+   "qty": 50,
    "status": "DRAFT",
    "tracked": true
   },
   "AEIZOLE": {
    "variant": 52775837892837,
    "item": 54888991391973,
-   "qty": 270,
+   "qty": 268,
    "status": "DRAFT",
    "tracked": true
   },
