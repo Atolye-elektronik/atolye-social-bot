@@ -1,4 +1,131 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ab575dc-3041-487c-6bff-ec8006060606",
+      "status": "Open",
+      "customerId": "17b8a121-4c5a-456a-8b20-8f18db453e3a",
+      "orderDate": "2026-09-24T22:11:24",
+      "dueDate": "2026-09-25T18:30:00",
+      "barcode": "62955210650560",
+      "packageNumber": "5521065056",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Mehmet ihsan Zeyrek sokak no 36/2 daire 1 hesna apartmanı ALAYBEY KARŞIYAKA İzmir",
+      "recipientName": "Fatih Karasakal",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ALAYBEY",
+      "shippingTown": "KARŞIYAKA",
+      "shippingCity": "İzmir",
+      "email": "4516834591_5521065056@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Fatih Karasakal",
+      "billingAddress": "Mehmet ihsan Zeyrek sokak no 36/2 hesna apt. daire 1  ALAYBEY KARŞIYAKA İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "KARŞIYAKA",
+      "billingDistrict": "ALAYBEY",
+      "billingPostalCode": "35600",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 174.19
+      },
+      "items": [
+        {
+          "lineItemId": "6ab575dc-6369-e281-0cdc-a59f06060606",
+          "listingId": "d9f1dcb0-a496-42a5-ae17-38ee8b01661f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000PLEY2",
+          "merchantSku": "AEACDMMR2",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 174.19
+          },
+          "vat": 29.03,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 174.19
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 15.68
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 174.19
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 174.19
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl Ac 220V 2000W Motor Hız Kontrol Kartı Dimmer",
+          "orderNumber": "4516834591",
+          "orderDate": "2026-09-24T22:11:24",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000000CNL576",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/121/{size}/110000071106017.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "fatih Karasakal",
+      "estimatedArrivalDate": "2026-09-28T15:30:00Z",
+      "totalDeci": 1
+    }
+  ]
 }
