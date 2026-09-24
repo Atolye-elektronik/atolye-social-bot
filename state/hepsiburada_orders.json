@@ -126,6 +126,132 @@
       "customerName": "fatih Karasakal",
       "estimatedArrivalDate": "2026-09-28T15:30:00Z",
       "totalDeci": 1
+    },
+    {
+      "id": "6ab5905c-437b-8e78-c9ab-3a4506060606",
+      "status": "Open",
+      "customerId": "e18c70de-b826-4a1b-ae90-aa1aeb463a1a",
+      "orderDate": "2026-09-25T00:04:27",
+      "dueDate": "2026-09-25T18:30:00",
+      "barcode": "62955210955359",
+      "packageNumber": "5521095535",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "mezarlık sok. no:108 C1 Blok Kat:10 D:63 SARIGÖL GAZİOSMANPAŞA İstanbul",
+      "recipientName": "bekir disli",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "SARIGÖL",
+      "shippingTown": "GAZİOSMANPAŞA",
+      "shippingCity": "İstanbul",
+      "email": "4083657424_5521095535@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "ZEMİN ARAŞTIRMA MERKEZİ LTD.ŞTİ ",
+      "billingAddress": "mezarlık sok. No:108 C1 D:63 SARIGÖL GAZİOSMANPAŞA İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "GAZİOSMANPAŞA",
+      "billingDistrict": "SARIGÖL",
+      "billingPostalCode": "34245",
+      "billingCountryCode": "TR",
+      "taxOffice": "GAZİOSMANPAŞA",
+      "taxNumber": "3010281491",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 521.4
+      },
+      "items": [
+        {
+          "lineItemId": "6ab5905b-cb06-8ece-5432-b6ea06060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 4,
+          "price": {
+            "currency": "TRY",
+            "amount": 130.35
+          },
+          "vat": 86.9,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 521.4
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 11.73
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 14.55
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 58.2
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 130.35
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 521.4
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4083657424",
+          "orderDate": "2026-09-25T00:04:27",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "bekir disli",
+      "estimatedArrivalDate": "2026-09-29T15:30:00Z",
+      "totalDeci": 4
     }
   ]
 }
