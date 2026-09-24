@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9710580636,
+      "firstName": "ayşe",
+      "lastName": "Akın",
+      "company": "",
+      "address1": "1627 ada 5/blok daire 4 ",
+      "address2": "",
+      "city": "Sakarya",
+      "cityCode": 54,
+      "district": "Adapazarı",
+      "districtId": 852,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "54000",
+      "countryCode": "TR",
+      "neighborhoodId": 50513,
+      "neighborhood": "15 Temmuz Camili Mah",
+      "phone": null,
+      "fullAddress": "1627 ada 5/blok daire 4     Adapazarı Sakarya",
+      "fullName": "ayşe Akın"
+    },
+    "orderNumber": "11639650147",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2233.42,
+    "packageGrossAmount": 2233.42,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9710580635,
+      "firstName": "ayşe",
+      "lastName": "Akın",
+      "company": "",
+      "address1": "1627 ada 5/blok daire 4 ",
+      "address2": "",
+      "city": "Sakarya",
+      "cityCode": 54,
+      "district": "Adapazarı",
+      "districtId": 852,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "54000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 50513,
+      "neighborhood": "15 Temmuz Camili Mah",
+      "phone": null,
+      "fullAddress": "1627 ada 5/blok daire 4     Adapazarı Sakarya",
+      "fullName": "ayşe Akın"
+    },
+    "customerFirstName": "ayşe",
+    "customerEmail": "pf+nxx9pka3@trendyolmail.com",
+    "customerId": 163611515,
+    "supplierId": 0,
+    "customerLastName": "Akın",
+    "id": 4187705392,
+    "channelId": 1,
+    "shipmentPackageId": 4187705392,
+    "cargoTrackingNumber": 7270037433877431,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2233.42,
+        "lineGrossAmount": 2233.42,
+        "discount": 15.0,
+        "lineTotalDiscount": 15.0,
+        "lineSellerDiscount": 15.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6843603526",
+            "lineItemPrice": 2218.42,
+            "lineItemDiscount": 15.0,
+            "lineItemSellerDiscount": 15.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5995738502,
+        "lineId": 5995738502,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2218.42,
+        "lineUnitPrice": 2218.42,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 4,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790277432442,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790266634489,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790266639665,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790267500791,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790369940000,
+    "estimatedDeliveryEndDate": 1790629140000,
+    "totalPrice": 2218.42,
+    "packageTotalPrice": 2218.42,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790369940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790266634480,
+    "lastModifiedDate": 1790267500791,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10894274056,
+    "is4P": false
+  }
+]
