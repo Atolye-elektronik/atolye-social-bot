@@ -386,9 +386,17 @@ def yeni_siparisler(kanallar):
 
 
 def _zaman(t):
-    """Tarih alanini datetime'a cevirir (ms epoch / ISO / 'YYYY-MM-DD HH:MM'); yerel saat."""
+    """Tarih alanini datetime'a cevirir (ms epoch / ISO / 'YYYY-MM-DD HH:MM'); TR yerel saat.
+
+    25.09.2026 DUZELTME: ms epoch (Trendyol orderDate) UTC bir andir; fromtimestamp()
+    calistigi makinenin SISTEM saat dilimini kullanir. Yerelde (TR) dogru sonuc
+    verdigi icin fark edilmiyordu ama GitHub Actions runner'i UTC oldugundan
+    uretimde Trendyol siparis saatleri hep 3 saat geri hesaplaniyordu (gece
+    00:00-02:59 TR sipariri bir onceki takvim gunune duserdi). Artik sistem saat
+    diliminden bagimsiz, sabit UTC+3 (Turkiye DST uygulamiyor) ile hesaplaniyor.
+    """
     if isinstance(t, (int, float)):
-        return datetime.fromtimestamp(t / 1000)
+        return datetime.utcfromtimestamp(t / 1000) + timedelta(hours=3)
     s = str(t or "")[:16].replace("T", " ")
     try:
         return datetime.strptime(s, "%Y-%m-%d %H:%M")
