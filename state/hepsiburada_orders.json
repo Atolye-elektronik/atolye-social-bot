@@ -9,7 +9,7 @@
       "dueDate": "2026-09-26T18:30:00",
       "barcode": "62955212921666",
       "packageNumber": "5521292166",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Tefenni İlçe Hastanesi FATİH TEFENNİ Burdur",
       "recipientName": "seher çelik",
       "shippingCountryCode": "TR",
@@ -135,7 +135,7 @@
       "dueDate": "2026-09-26T18:30:00",
       "barcode": "62955213277270",
       "packageNumber": "5521327727",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Kızılarık mahallesi 2818 sokak Kemal bey sitesi no  33 a blok kat 3 daire 11 KIZILARIK MURATPAŞA Antalya",
       "recipientName": "Ali Sarıgül",
       "shippingCountryCode": "TR",
@@ -261,7 +261,7 @@
       "dueDate": "2026-09-26T18:30:00",
       "barcode": "62955213765571",
       "packageNumber": "5521376557",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "3036 sok.no6 ataşehir AŞIKVEYSEL ATAŞEHİR İstanbul",
       "recipientName": "MURAT AKGÖZ",
       "shippingCountryCode": "TR",
@@ -378,6 +378,132 @@
       "customerName": "Murat Akgöz",
       "estimatedArrivalDate": "2026-09-30T15:30:00Z",
       "totalDeci": 4.7
+    },
+    {
+      "id": "6ab6dbb7-5d27-d7f5-f6ad-307506060606",
+      "status": "Open",
+      "customerId": "f1b70938-9059-424d-b498-1da7488bcaec",
+      "orderDate": "2026-09-25T23:38:14",
+      "dueDate": "2026-09-26T18:30:00",
+      "barcode": "62955214036722",
+      "packageNumber": "5521403672",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "EAE ELEKTRİK A.Ş. DL3 BUSBAR MAKİNE İHTİSAS OSB. 6. CADDE N0:6 41455 Demirciler Köyü DEMİRCİLER OSB DİLOVASI Kocaeli",
+      "recipientName": "Samet Yeşil",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "DEMİRCİLER OSB",
+      "shippingTown": "DİLOVASI",
+      "shippingCity": "Kocaeli",
+      "email": "4707722254_5521403672@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Samet Yeşil",
+      "billingAddress": "EAE ELEKTRİK A.Ş. DL3 MAKİNE İHTİSAS OSB. 6.CAD. NO:6 41455 Demirciler Köyü DEMİRCİLER OSB DİLOVASI Kocaeli",
+      "billingCity": "Kocaeli",
+      "billingTown": "DİLOVASI",
+      "billingDistrict": "DEMİRCİLER OSB",
+      "billingPostalCode": "41455",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 299
+      },
+      "items": [
+        {
+          "lineItemId": "6ab6dbb6-d42b-5d78-b964-d15b06060606",
+          "listingId": "fb4841a3-9109-4bb4-ac41-5c20e9fe7dbb",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HXL0XO",
+          "merchantSku": "AEMOTPRV-5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 299
+          },
+          "vat": 49.83,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 299
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 26.91
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 299
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 299
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik DC Motor + Pervane Seti (3V) - Mini Vantilatör Motoru - 5 Motor + 5 Pervane",
+          "orderNumber": "4707722254",
+          "orderDate": "2026-09-25T23:38:14",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901463317217",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002059475004.jpg",
+          "deci": 0.5
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Samet Yeşil",
+      "estimatedArrivalDate": "2026-09-30T15:30:00Z",
+      "totalDeci": 0.5
     }
   ]
 }
