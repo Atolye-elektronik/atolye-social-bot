@@ -526,7 +526,12 @@ def main():
 
     if not yeni:
         print("yeni siparis yok")
-        if geri and not kuru:
+        # 25.09.2026 DUZELTME: yeni siparis yoksa dagitim hic calismiyordu; elle
+        # Shopify duzeltmesi yapip (--tohum disinda) bu scripti calistirmak
+        # kanallara HICBIR SEY yazmiyordu (2WD sasi 14e duzeltildi ama HB/TY 20
+        # gostermeye devam etti, cunku bu script "yeni yok" deyip dagit'i hic
+        # cagirmadi). STOK_ZORLA_DAGIT=1 ile, yeni siparis olmasa da zorla dagit.
+        if not kuru and (geri or os.environ.get("STOK_ZORLA_DAGIT") == "1"):
             _dagit_sonrasi(merkez, R, kanallar)
         return
 

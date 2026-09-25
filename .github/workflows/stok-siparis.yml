@@ -23,6 +23,10 @@ on:
         type: choice
         options: [kuru, uygula]
         default: kuru
+      zorla_dagit:
+        description: "yeni siparis olmasa da kanallara zorla dagit (elle stok duzeltmesinden sonra)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -76,9 +80,11 @@ jobs:
         run: pip install --quiet -r requirements.txt
 
       - name: Siparisleri topla ve dus
+        env:
+          STOK_ZORLA_DAGIT: ${{ (inputs.zorla_dagit && '1') || '' }}
         run: |
           MOD="${{ inputs.mod || vars.STOK_MOD || 'kuru' }}"
-          echo "mod=$MOD"
+          echo "mod=$MOD zorla_dagit=$STOK_ZORLA_DAGIT"
           if [ "$MOD" = "uygula" ]; then
             python -m stok.siparis --uygula
           else
