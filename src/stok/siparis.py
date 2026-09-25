@@ -457,6 +457,9 @@ def _dagit_sonrasi(merkez, R, kanallar_ad=None):
         return
     parca = merkez.parca_stoklari()
     hedef = merkez.hedef_stoklar(R, parca)
+    # pttavm BILEREK YOK (bkz. main()'deki ayni not): /products/stock-prices 200
+    # donuyor ama hicbir sey uygulamiyor (uc kez dogrulandi, 13.09). PttAVM
+    # stogu panelden Excel ile tazeleniyor.
     kn = os.environ.get("STOK_KANALLAR", "trendyol,hepsiburada,n11,pazarama,idefix,amazon").split(",")
     print(merkez.dagit(hedef, kn, kuru=False, recete=R, parca=parca))
 
