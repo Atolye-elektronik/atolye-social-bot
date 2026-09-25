@@ -1,4 +1,131 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ab66e82-7715-366b-7cca-0d9e06060606",
+      "status": "Open",
+      "customerId": "fefe3fc3-8303-4e00-be5c-67c923a6618c",
+      "orderDate": "2026-09-25T15:52:13",
+      "dueDate": "2026-09-26T18:30:00",
+      "barcode": "62955212921666",
+      "packageNumber": "5521292166",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Tefenni İlçe Hastanesi FATİH TEFENNİ Burdur",
+      "recipientName": "seher çelik",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "FATİH",
+      "shippingTown": "TEFENNİ",
+      "shippingCity": "Burdur",
+      "email": "4856015631_5521292166@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "seher çelik",
+      "billingAddress": "tefenni ilçe hastanesi FATİH TEFENNİ Burdur",
+      "billingCity": "Burdur",
+      "billingTown": "TEFENNİ",
+      "billingDistrict": "FATİH",
+      "billingPostalCode": "15600",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 149.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ab66e7e-6369-e281-0cc9-5b7b06060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "vat": 24.97,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4856015631",
+          "orderDate": "2026-09-25T15:52:13",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "SEHER ÇELİK",
+      "estimatedArrivalDate": "2026-10-03T15:30:00Z",
+      "totalDeci": 2
+    }
+  ]
 }
