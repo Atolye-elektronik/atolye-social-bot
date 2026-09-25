@@ -10,7 +10,12 @@ name: Stok merkezi - siparis toplama
 
 on:
   schedule:
-    - cron: "*/15 5-21 * * *"    # 08:00-24:00 TR arasi 15 dakikada bir (bildirim gecikmesi azalsin)
+    # 25.09.2026 DUZELTME: "5-21" araligi 01:00-08:00 TR arasi 7 saatlik bir
+    # KOR NOKTA birakiyordu; pazaryerleri o saatlerde de siparis aliyor.
+    # AEACDMMR (dimmer) tam bu araliktaki 2 siparisle stok -1'e dustu ve
+    # hicbir kanala 0 basilamadi cunku is o saatlerde hic calismiyordu.
+    # Artik 7/24 15 dakikada bir calisiyor.
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       mod:

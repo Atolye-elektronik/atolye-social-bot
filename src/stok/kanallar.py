@@ -25,12 +25,19 @@ def _alias_ters():
 
 
 def _kanal_kodlari(hedef):
-    """{kanal_stok_kodu: adet} — Shopify SKU'sunu kanal kodlarina acar (alias tersi + kendisi)."""
+    """{kanal_stok_kodu: adet} — Shopify SKU'sunu kanal kodlarina acar (alias tersi + kendisi).
+
+    25.09.2026 DUZELTME: negatif hedef (oversell/kayip senkron nedeniyle) hicbir
+    yerde 0'a sabitlenmiyordu; -1 gibi bir deger pazaryerine OLDUGU GIBI
+    gonderiliyordu (AEACDMMR -1 -> HB yeni siparis almaya devam etti). Kanala
+    cikan her deger artik en az 0.
+    """
     ters = _alias_ters()
     out = {}
     for sku, adet in hedef.items():
         if adet is None:
             continue
+        adet = max(0, adet)
         for kod in [sku] + ters.get(sku, []):
             out[kod] = adet
     return out
