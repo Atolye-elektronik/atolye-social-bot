@@ -108,7 +108,7 @@
   "AEHVYSHP": {
    "variant": 48713784066277,
    "item": 50819732504805,
-   "qty": 166,
+   "qty": 165,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -332,7 +332,7 @@
   "AET2WDRBT": {
    "variant": 49062024315109,
    "item": 51169512030437,
-   "qty": 20,
+   "qty": 14,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -1061,15 +1061,6 @@
   ],
   "AEGUCELEMAN": [
    "AEBCTRANS"
-  ],
-  "AET2WDRBT": [
-   "AE2WDEKRBT",
-   "AE3IN1ROBOT"
-  ],
-  "AET2WDRBT-LI": [
-   "AE2WDEKRBT-LI",
-   "AE2WDEKRBT5230-LI",
-   "AE3IN1ROBOT-LI"
   ]
  },
  "sifirla": [
