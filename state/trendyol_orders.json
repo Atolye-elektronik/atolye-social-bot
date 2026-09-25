@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9715630309,
+      "firstName": "Hayriye",
+      "lastName": "davuter",
+      "company": "",
+      "address1": "ülkü 1 sokak güney yamaç evleri A blok kat.5 no.12 ",
+      "address2": "",
+      "city": "Yozgat",
+      "cityCode": 66,
+      "district": "Merkez",
+      "districtId": 1012,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "66000",
+      "countryCode": "TR",
+      "neighborhoodId": 65631,
+      "neighborhood": "Aşağınohutlu Mah",
+      "phone": null,
+      "fullAddress": "ülkü 1 sokak güney yamaç evleri A blok kat.5 no.12     Merkez Yozgat",
+      "fullName": "Hayriye davuter"
+    },
+    "orderNumber": "11642713610",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2233.42,
+    "packageGrossAmount": 2233.42,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9715630308,
+      "firstName": "Hayriye",
+      "lastName": "davuter",
+      "company": "",
+      "address1": "ülkü 1 sokak güney yamaç evleri A blok kat.5 no.12 ",
+      "address2": "",
+      "city": "Yozgat",
+      "cityCode": 66,
+      "district": "Merkez",
+      "districtId": 1012,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "66000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 65631,
+      "neighborhood": "Aşağınohutlu Mah",
+      "phone": null,
+      "fullAddress": "ülkü 1 sokak güney yamaç evleri A blok kat.5 no.12     Merkez Yozgat",
+      "fullName": "Hayriye davuter"
+    },
+    "customerFirstName": "Hayriye",
+    "customerEmail": "pf+5mlexx22@trendyolmail.com",
+    "customerId": 112422189,
+    "supplierId": 0,
+    "customerLastName": "davuter",
+    "id": 4190085679,
+    "channelId": 1,
+    "shipmentPackageId": 4190085679,
+    "cargoTrackingNumber": 7270037457581338,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2233.42,
+        "lineGrossAmount": 2233.42,
+        "discount": 15.0,
+        "lineTotalDiscount": 15.0,
+        "lineSellerDiscount": 15.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6847385194",
+            "lineItemPrice": 2218.42,
+            "lineItemDiscount": 15.0,
+            "lineItemSellerDiscount": 15.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 5999012278,
+        "lineId": 5999012278,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2218.42,
+        "lineUnitPrice": 2218.42,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 4,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790361799971,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790351001535,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790351006196,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790351466581,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790456340000,
+    "estimatedDeliveryEndDate": 1790801940000,
+    "totalPrice": 2218.42,
+    "packageTotalPrice": 2218.42,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790456340000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790351001526,
+    "lastModifiedDate": 1790351466581,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10896953047,
+    "is4P": false
+  }
+]
