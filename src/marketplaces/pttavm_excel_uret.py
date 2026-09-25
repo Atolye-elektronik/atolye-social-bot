@@ -142,7 +142,11 @@ def main():
         gor = [im["url"] for im in u.get("images", [])][:12]
         gor += [None] * (12 - len(gor))
         acik = _duz_metin(u.get("description") or "") or u["title"]
-        satir = [kat_id, bar, sk, u["title"], acik, "Atölye Elektronik",
+        # 25.09.2026 TUZAK: "Atölye Elektronik" PttAVM marka listesinde yok; bu
+        # alan doluyken yukleme "Gecersiz marka" hatasiyla TUM satirlar icin
+        # basarisiz oluyor (19.09'da 100+ satir bu yuzden dustu, fark edilmeden
+        # gunlerce kaldi). Marka sutunu bos birakilir.
+        satir = [kat_id, bar, sk, u["title"], acik, None,
                  int(u.get("quantity") or 10), p, int(u.get("vatRate") or 20), desi] + gor + [
                  1, 1, None, 1, 0, None, None, 0, 1 if p >= 250 else 0]
         ws.append(satir)
