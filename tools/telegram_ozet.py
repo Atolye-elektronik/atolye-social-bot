@@ -1,14 +1,22 @@
 # -*- coding: utf-8 -*-
-"""Gunluk Telegram ozeti: bugunku satislar + kargoya verilmemis siparisler + kritik stok.
+"""Telegram bildirimleri: 14:00 TR'de kargoya verilmeyen siparisler, 24:00
+TR'de gunun toplam cirosu. Siparis basina anlik bildirimden AYRIDIR.
 
-Sabah 09:00 ve aksam 18:00'de (TR) calisir; siparis basina bildirimden AYRIDIR.
-    python tools/telegram_ozet.py            # ekrana basar + Telegram'a gonderir
-    python tools/telegram_ozet.py --kuru     # yalniz ekrana basar
+25.09.2026 YENIDEN YAZILDI (kullanici talebi): eski 09:00/18:00 "hepsi bir
+arada" ozeti (satis+kargo+kritik stok) kaldirildi; artik yalnizca bu iki rapor
+var, baska bir sey eklenmiyor. Ayrica saat hatasi duzeltildi: GitHub Actions
+runner'i UTC calisiyor, datetime.now() kullanilinca mesajdaki saat gercek TR
+saatinden 3 saat geri gorunuyordu. Artik stok.bildirim.simdi_tr() (sabit
+UTC+3 - Turkiye DST uygulamiyor) kullaniliyor.
+
+    python tools/telegram_ozet.py --kargo    # 14:00 TR: kargoya verilmemis siparisler
+    python tools/telegram_ozet.py --ciro     # 24:00 TR: biten gunun toplam cirosu
+    python tools/telegram_ozet.py --kargo --kuru   # ekrana basar, Telegram'a GONDERMEZ
 """
 import io
 import os
 import sys
-from datetime import datetime, timedelta
+from datetime import timedelta
 
 KOK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path[:0] = [KOK, os.path.join(KOK, "src"), os.path.join(KOK, "src", "marketplaces")]
@@ -21,14 +29,12 @@ for _p in (os.path.join(KOK, ".env"),):          # yerelde calistirinca anahtarl
                 _k, _v = _l.split("=", 1)
                 os.environ.setdefault(_k.strip(), _v.strip().strip('"').strip("'"))
 
-from stok import bildirim, merkez, siparis  # noqa: E402
-from stok.recete import Recete  # noqa: E402
+from stok import bildirim, siparis  # noqa: E402
 
 # Bu kelimeler durumda geciyorsa is bitmis demektir; gerisi "kargoya verilmedi".
 KAPALI = ("ship", "deliver", "teslim", "fulfil", "cancel", "iptal", "iade", "return", "unsupplied", "refund")
 ACIK_ZORLA = ("unfulfilled", "unshipped", "unpacked", "partially_fulfilled", "partially fulfilled",
               "shipment_picking", "picking", "hazirlan", "hazırlan")  # Idefix "shipment_picking" icinde "ship" geciyor
-# Kanal durumunu insan diline cevir: "neden hala listede?" sorusunun cevabi.
 DURUM_AD = {"picking": "etiket basildi, kargo almadi", "created": "yeni, hazirlanmadi",
             "invoiced": "faturalandi, kargo almadi", "unfulfilled": "kargolanmadi",
             "partially_fulfilled": "kismen kargolandi", "get_packages": "paketlendi, kargo almadi",
@@ -65,14 +71,13 @@ def siparisleri_topla():
     return out, hata
 
 
-def bugunku_satis(hepsi):
-    """Bugun gelen siparis sayisi ve cirosu (iptaller haric)."""
-    bugun = datetime.now().strftime("%Y-%m-%d")
+def gunun_satisi(hepsi, gun_str):
+    """gun_str: 'YYYY-MM-DD' (TR takvim gunu). Adet, toplam TL, kanal kirilimi (iptaller haric)."""
     adet, tutar, kanal = 0, 0.0, {}
     for k, L in hepsi.items():
         for o in L:
             t = siparis._zaman(o.get("tarih"))
-            if not t or t.strftime("%Y-%m-%d") != bugun:
+            if not t or t.strftime("%Y-%m-%d") != gun_str:
                 continue
             if siparis._iptal_mi(o.get("durum")):
                 continue
@@ -83,14 +88,6 @@ def bugunku_satis(hepsi):
             except (TypeError, ValueError):
                 pass
     return adet, tutar, kanal
-
-
-def kritik_stoklar(esik=None):
-    esik = merkez.KRITIK_ESIK if esik is None else esik
-    R = Recete()
-    parca = merkez.parca_stoklari()
-    hedef = merkez.hedef_stoklar(R, parca)
-    return {k: v for k, v in sorted(hedef.items()) if isinstance(v, int) and v <= esik}
 
 
 def pttavm_acik():
@@ -108,55 +105,66 @@ def pttavm_acik():
         return []
 
 
-def metin_kur():
-    an = datetime.now()
+def metin_kargo():
+    """14:00 TR: su an kargoya verilmemis TUM siparisler (kanal kirilimi + liste)."""
+    an = bildirim.simdi_tr()
     hepsi, hata = siparisleri_topla()
-    sat = ["📋 <b>%s ozeti</b> — %s" % ("Sabah" if an.hour < 12 else "Aksam", an.strftime("%d.%m %H:%M")), ""]
-
-    adet, tutar, kanal = bugunku_satis(hepsi)
-    sat.append("💰 <b>Bugun: %d siparis · %.0f TL</b>%s" % (
-        adet, tutar, ("  (" + ", ".join("%s %d" % (KANAL_AD.get(k, k), n) for k, n in sorted(kanal.items(), key=lambda x: -x[1])) + ")") if kanal else ""))
+    sat = ["🚚 <b>Kargoya verilmemiş siparişler</b> — %s" % an.strftime("%d.%m %H:%M"), ""]
 
     acik = {k: [o for o in L if acik_mi(o)] for k, L in hepsi.items()}
     toplam = sum(len(v) for v in acik.values())
-    sat += ["", "🚚 <b>Kargoya verilmemis: %d siparis</b>" % toplam]
+    sat.append("<b>Toplam: %d sipariş</b>" % toplam)
     for k, liste in acik.items():
         if not liste:
             continue
         sat.append("\n<b>%s (%d)</b>" % (KANAL_AD.get(k, k), len(liste)))
-        for o in sorted(liste, key=lambda x: str(x.get("tarih")))[:12]:
+        for o in sorted(liste, key=lambda x: str(x.get("tarih")))[:20]:
             t = siparis._zaman(o.get("tarih"))
             d = str(o.get("durum") or "").lower()
             aciklama = DURUM_AD.get(d, o.get("durum") or "")
             sat.append("• %s %s — %s <i>(%s)</i>" % (t.strftime("%d.%m") if t else "", o.get("no"),
                                                      kalem_metni(o)[:70], aciklama))
-        if len(liste) > 12:
-            sat.append("• ... +%d siparis daha" % (len(liste) - 12))
+        if len(liste) > 20:
+            sat.append("• ... +%d sipariş daha" % (len(liste) - 20))
 
     ptt = pttavm_acik()
     if ptt:
         sat += ["", "<b>PttAVM (%d) — panelden kontrol et</b>" % len(ptt)]
-        for o in ptt[:8]:
+        for o in ptt[:10]:
             sat.append("• %s — %s %s" % (o.get("no") or "?", str(o.get("urun") or "")[:50], o.get("tutar") or ""))
-    try:
-        kritik = kritik_stoklar()
-        if kritik:
-            sat += ["", "⚠️ <b>Kritik stok (%d)</b>" % len(kritik),
-                    ", ".join("%s=%s" % (k, v) for k, v in list(kritik.items())[:40])]
-    except Exception as e:
-        hata.append("stok: %s" % str(e)[:50])
+
     if hata:
-        sat += ["", "❗ Okunamadi: " + " | ".join(hata)]
+        sat += ["", "❗ Okunamadı: " + " | ".join(hata)]
+    return "\n".join(sat)
+
+
+def metin_ciro():
+    """24:00 TR: biten gunun (bugun degil, iş bu saatte TR takviminde zaten yeni gune gectigi
+    icin dun) tum siparisleri, toplam ciro olarak."""
+    an = bildirim.simdi_tr()
+    gun = (an - timedelta(minutes=5)).date()  # tam gece yarisi tetiklendiginde bir onceki takvim gunu
+    hepsi, hata = siparisleri_topla()
+    adet, tutar, kanal = gunun_satisi(hepsi, gun.strftime("%Y-%m-%d"))
+    sat = ["💰 <b>Günün cirosu</b> — %s" % gun.strftime("%d.%m.%Y"), "",
+           "<b>%d sipariş · %.0f TL</b>" % (adet, tutar)]
+    if kanal:
+        sat.append(", ".join("%s %d" % (KANAL_AD.get(k, k), n) for k, n in sorted(kanal.items(), key=lambda x: -x[1])))
+    if hata:
+        sat += ["", "❗ Okunamadı: " + " | ".join(hata)]
     return "\n".join(sat)
 
 
 def main():
-    metin = metin_kur()
+    a = sys.argv[1:]
+    if "--ciro" in a:
+        metin = metin_ciro()
+    else:
+        metin = metin_kargo()  # varsayilan / --kargo
     try:
         print(metin)
     except UnicodeEncodeError:
         print(metin.encode("ascii", "replace").decode())
-    if "--kuru" not in sys.argv:
+    if "--kuru" not in a:
         print(bildirim.telegram(metin))
 
 

@@ -10,9 +10,19 @@ Hicbiri tanimli degilse yalnizca stdout'a yazar; boylece kuru calistirmada da go
 """
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 
 import requests
+
+# 25.09.2026: GitHub Actions runner'i UTC calisiyor; datetime.now() dogrudan
+# kullanilinca Telegram mesajlarindaki saat gercek TR saatinden 3 saat geri
+# gorunuyordu ("Telegram saati yanlis" sikayeti). Turkiye 2016'dan beri DST
+# uygulamiyor, sabit UTC+3 - bu yuzden sabit offset yeterli ve guvenilir.
+TR = timezone(timedelta(hours=3))
+
+
+def simdi_tr():
+    return datetime.now(TR)
 
 
 def telegram(metin):
@@ -39,7 +49,7 @@ def siparis_bildir(yeni, dusum, kritik, kuru=True):
     """yeni: siparis.py'nin yeni siparis listesi; dusum: {parca: adet}; kritik: {kod: stok}."""
     if not yeni:
         return None
-    an = datetime.now().strftime("%d.%m %H:%M")
+    an = simdi_tr().strftime("%d.%m %H:%M")
     sat = []
     for o in yeni:
         for kl in o["kalemler"]:
