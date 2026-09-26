@@ -339,3 +339,5 @@
 {"an": "2026-09-25T22:43", "kanal": "trendyol", "no": "11643500529", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
 {"an": "2026-09-25T22:43", "kanal": "hepsiburada", "no": "4707722254", "kod": "AEMOTPRV-5", "adet": 1, "dusum": {"AEDCM3V-1": 5, "AEPRV-1": 5}, "kuru": false}
 {"an": "2026-09-26T04:11", "kanal": "hepsiburada", "no": "4346537986", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": true}
+{"an": "2026-09-26T05:11", "kanal": "trendyol", "no": "11644045534", "kod": "AETCS18P", "adet": 1, "dusum": {"AETC162": 1, "AEYNKSK160": 1, "AEPNS180": 1, "AEKB1602": 1, "AE5X100DT": 1, "AE5X100YT": 1, "AEKNTKLM": 1, "AEZD30C40W": 1, "AEHVYSHP": 1, "AELHMPMP": 1, "AETUPLEHIM": 1, "AELEHIMPASTA": 1, "AES400IGG": 1, "AEIZOLE": 1, "AE6X13PLK": 1, "AEDT830D": 1, "AEBB830P": 1}, "kuru": true}
+{"an": "2026-09-26T05:11", "kanal": "hepsiburada", "no": "4346537986", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": true}
