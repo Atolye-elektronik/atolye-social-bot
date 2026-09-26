@@ -1,6 +1,370 @@
 [
   {
     "shipmentAddress": {
+      "id": 9721098538,
+      "firstName": "Ayhan",
+      "lastName": "Akkan",
+      "company": "",
+      "address1": "Yunus emre mahallesi Isaklı no 1 ilçe nüfus müdürlüğü çekerek",
+      "address2": "",
+      "city": "Yozgat",
+      "cityCode": 66,
+      "district": "Çekerek",
+      "districtId": 1014,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "66000",
+      "countryCode": "TR",
+      "neighborhoodId": 63180,
+      "neighborhood": "Yunus Emre Mah",
+      "phone": null,
+      "fullAddress": "Yunus emre mahallesi Isaklı no 1 ilçe nüfus müdürlüğü çekerek     Çekerek Yozgat",
+      "fullName": "Ayhan Akkan"
+    },
+    "orderNumber": "11646313916",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2233.42,
+    "packageGrossAmount": 2233.42,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9721098537,
+      "firstName": "Ayhan",
+      "lastName": "Akkan",
+      "company": "",
+      "address1": "Yunus emre mahallesi Isaklı no 1 ilçe nüfus müdürlüğü çekerek",
+      "address2": "",
+      "city": "Yozgat",
+      "cityCode": 66,
+      "district": "Çekerek",
+      "districtId": 1014,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "66000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 63180,
+      "neighborhood": "Yunus Emre Mah",
+      "phone": null,
+      "fullAddress": "Yunus emre mahallesi Isaklı no 1 ilçe nüfus müdürlüğü çekerek     Çekerek Yozgat",
+      "fullName": "Ayhan Akkan"
+    },
+    "customerFirstName": "Ayhan",
+    "customerEmail": "pf+mjmpjnok@trendyolmail.com",
+    "customerId": 132061733,
+    "supplierId": 0,
+    "customerLastName": "Akkan",
+    "id": 4192620096,
+    "channelId": 1,
+    "shipmentPackageId": 4192620096,
+    "cargoTrackingNumber": 7270037482371959,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2233.42,
+        "lineGrossAmount": 2233.42,
+        "discount": 15.0,
+        "lineTotalDiscount": 15.0,
+        "lineSellerDiscount": 15.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6851470264",
+            "lineItemPrice": 2218.42,
+            "lineItemDiscount": 15.0,
+            "lineItemSellerDiscount": 15.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6002560120,
+        "lineId": 6002560120,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2218.42,
+        "lineUnitPrice": 2218.42,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 4,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790455396697,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790444598090,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790444603283,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790445200745,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790629140000,
+    "estimatedDeliveryEndDate": 1790888340000,
+    "totalPrice": 2218.42,
+    "packageTotalPrice": 2218.42,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790629140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790444598083,
+    "lastModifiedDate": 1790445200745,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10899860932,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9721121883,
+      "firstName": "NECATİ",
+      "lastName": "BİLEN",
+      "company": "",
+      "address1": "MEVLANA mh. PAPATYA cd. 30/2 ",
+      "address2": "",
+      "city": "Kayseri",
+      "cityCode": 38,
+      "district": "Talas",
+      "districtId": 625,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "38000",
+      "countryCode": "TR",
+      "neighborhoodId": 41174,
+      "neighborhood": "Mevlana Mah",
+      "phone": null,
+      "fullAddress": "MEVLANA mh. PAPATYA cd. 30/2     Talas Kayseri",
+      "fullName": "NECATİ BİLEN"
+    },
+    "orderNumber": "11646329040",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2233.42,
+    "packageGrossAmount": 2233.42,
+    "totalDiscount": 126.67,
+    "packageSellerDiscount": 126.67,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 126.67,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 111.67
+      },
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9721121882,
+      "firstName": "NECATİ",
+      "lastName": "BİLEN",
+      "company": "",
+      "address1": "MEVLANA mh. PAPATYA cd. 30/2 ",
+      "address2": "",
+      "city": "Kayseri",
+      "cityCode": 38,
+      "district": "Talas",
+      "districtId": 625,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "38000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 41174,
+      "neighborhood": "Mevlana Mah",
+      "phone": null,
+      "fullAddress": "MEVLANA mh. PAPATYA cd. 30/2     Talas Kayseri",
+      "fullName": "NECATİ BİLEN"
+    },
+    "customerFirstName": "NECATİ",
+    "customerEmail": "pf+xyr5ravl@trendyolmail.com",
+    "customerId": 29986694,
+    "supplierId": 0,
+    "customerLastName": "BİLEN",
+    "id": 4192631639,
+    "channelId": 1,
+    "shipmentPackageId": 4192631639,
+    "cargoTrackingNumber": 7270037482457370,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2233.42,
+        "lineGrossAmount": 2233.42,
+        "discount": 126.67,
+        "lineTotalDiscount": 126.67,
+        "lineSellerDiscount": 126.67,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6851486187",
+            "lineItemPrice": 2106.75,
+            "lineItemDiscount": 126.67,
+            "lineItemSellerDiscount": 126.67,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6002575060,
+        "lineId": 6002575060,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2106.75,
+        "lineUnitPrice": 2106.75,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 4,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790455627627,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790444829262,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790444833502,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790445191535,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790629140000,
+    "estimatedDeliveryEndDate": 1790801940000,
+    "totalPrice": 2106.75,
+    "packageTotalPrice": 2106.75,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790629140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790444829251,
+    "lastModifiedDate": 1790445191535,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10899873396,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9720488793,
       "firstName": "teslime",
       "lastName": "Dalçık",
@@ -84,10 +448,10 @@
     "id": 4192343942,
     "channelId": 1,
     "shipmentPackageId": 4192343942,
-    "cargoTrackingNumber": 7270037479755489,
+    "cargoTrackingNumber": 7330037482412721,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 1,
@@ -166,7 +530,7 @@
     "agreedDeliveryDate": 1790629140000,
     "fastDelivery": true,
     "originShipmentDate": 1790436588435,
-    "lastModifiedDate": 1790436618739,
+    "lastModifiedDate": 1790444715229,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
