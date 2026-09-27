@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Telegram bildirimleri: 14:00 TR'de kargoya verilmeyen siparisler, 24:00
-TR'de gunun toplam cirosu. Siparis basina anlik bildirimden AYRIDIR.
+"""Telegram bildirimleri: 14:00 TR'de kargoya verilmeyen siparisler, 23:55
+TR'de gunun toplam cirosu. 27.09.2026'dan beri Telegram'a giden TEK mesajlar bunlar
+(siparis basina bildirim ve haftalik karne kapatildi).
 
 25.09.2026 YENIDEN YAZILDI (kullanici talebi): eski 09:00/18:00 "hepsi bir
 arada" ozeti (satis+kargo+kritik stok) kaldirildi; artik yalnizca bu iki rapor
@@ -10,7 +11,7 @@ saatinden 3 saat geri gorunuyordu. Artik stok.bildirim.simdi_tr() (sabit
 UTC+3 - Turkiye DST uygulamiyor) kullaniliyor.
 
     python tools/telegram_ozet.py --kargo    # 14:00 TR: kargoya verilmemis siparisler
-    python tools/telegram_ozet.py --ciro     # 24:00 TR: biten gunun toplam cirosu
+    python tools/telegram_ozet.py --ciro     # 23:55 TR: gunun toplam cirosu
     python tools/telegram_ozet.py --kargo --kuru   # ekrana basar, Telegram'a GONDERMEZ
 """
 import io
@@ -139,10 +140,10 @@ def metin_kargo():
 
 
 def metin_ciro():
-    """24:00 TR: biten gunun (bugun degil, iş bu saatte TR takviminde zaten yeni gune gectigi
-    icin dun) tum siparisleri, toplam ciro olarak."""
+    """23:55 TR: gunun tum siparisleri, toplam ciro olarak."""
     an = bildirim.simdi_tr()
-    gun = (an - timedelta(minutes=5)).date()  # tam gece yarisi tetiklendiginde bir onceki takvim gunu
+    # 5 dk pay: is gece yarisindan sonra gec tetiklenirse yine biten gun sayilsin
+    gun = (an - timedelta(minutes=5)).date()
     hepsi, hata = siparisleri_topla()
     adet, tutar, kanal = gunun_satisi(hepsi, gun.strftime("%Y-%m-%d"))
     sat = ["💰 <b>Günün cirosu</b> — %s" % gun.strftime("%d.%m.%Y"), "",

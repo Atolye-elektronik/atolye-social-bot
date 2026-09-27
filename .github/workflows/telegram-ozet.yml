@@ -1,16 +1,15 @@
 name: Telegram gunluk ozet
 
-# 25.09.2026 YENIDEN KURULDU (kullanici talebi): eski 09:00/18:00 "hepsi bir
-# arada" ozeti kaldirildi. Artik sadece iki mesaj var:
+# 27.09.2026 (kullanici talebi): Telegram'a giden TEK iki mesaj bunlar.
 #   14:00 TR -> o an kargoya verilmemis TUM siparisler
-#   24:00 TR -> biten gunun tum siparisleri, toplam ciro olarak
-# Baska bir sey eklenmedi. Siparis basina anlik bildirim ayri (stok-siparis.yml
-# icinde, stok/bildirim.py).
+#   23:55 TR -> gunun tum siparisleri, toplam ciro olarak
+# Siparis basina anlik bildirim ve Pazartesi karnesi KAPATILDI ("cok fazla
+# bildirim geliyor"). Runner UTC: 14:00 TR = 11:00 UTC, 23:55 TR = 20:55 UTC.
 
 on:
   schedule:
     - cron: "0 11 * * *"    # 14:00 TR -> kargoya verilmemis siparisler
-    - cron: "0 21 * * *"    # 24:00 TR (bir sonraki gunun 00:00'i) -> gunun cirosu
+    - cron: "55 20 * * *"   # 23:55 TR -> gunun cirosu
   workflow_dispatch:
     inputs:
       rapor:
@@ -65,7 +64,7 @@ jobs:
         run: |
           RAPOR="${{ inputs.rapor }}"
           if [ -z "$RAPOR" ]; then
-            if [ "${{ github.event.schedule }}" = "0 21 * * *" ]; then RAPOR=ciro; else RAPOR=kargo; fi
+            if [ "${{ github.event.schedule }}" = "55 20 * * *" ]; then RAPOR=ciro; else RAPOR=kargo; fi
           fi
           echo "rapor=$RAPOR"
           python tools/telegram_ozet.py "--$RAPOR"

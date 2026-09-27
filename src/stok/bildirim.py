@@ -63,7 +63,9 @@ def siparis_bildir(yeni, dusum, kritik, kuru=True):
         print(metin)
     except UnicodeEncodeError:  # Windows konsolu emoji basamiyor
         print(metin.encode("ascii", "replace").decode())
-    print(telegram(metin))
+    # 27.09.2026: siparis basina Telegram mesaji KALDIRILDI (kullanici: "cok fazla
+    # bildirim geliyor"). Telegram'a yalnizca 14:00 kargo ve 23:55 ciro raporu gider
+    # (tools/telegram_ozet.py). Sheet kaydi ve konsol ciktisi devam ediyor.
     rows = [[an, o["kanal"], o["no"], kl.get("kod") or kl.get("barkod"), kl["adet"],
              json.dumps(kl.get("dusum") or {}, ensure_ascii=False), "kuru" if kuru else ""]
             for o in yeni for kl in o["kalemler"]]

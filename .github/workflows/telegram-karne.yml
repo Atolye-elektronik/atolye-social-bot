@@ -1,10 +1,10 @@
 name: Telegram haftalik karne
 
-# Pazartesi 09:00 TR: son 7 gun vs onceki 7 gun kanal karnesi (tools/haftalik_karne.py).
+# Son 7 gun vs onceki 7 gun kanal karnesi (tools/haftalik_karne.py).
+# 27.09.2026: Pazartesi 09:00 zamanlamasi KAPATILDI (kullanici: Telegram'a yalnizca
+# 14:00 kargo + 23:55 ciro gelsin). Istenirse elle calistirilir.
 
 on:
-  schedule:
-    - cron: "0 6 * * 1"     # Pazartesi 09:00 TR
   workflow_dispatch:
 
 jobs:
