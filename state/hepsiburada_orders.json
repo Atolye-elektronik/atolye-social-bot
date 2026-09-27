@@ -126,6 +126,132 @@
       "customerName": "Tamer Tamer",
       "estimatedArrivalDate": "2026-09-30T15:30:00Z",
       "totalDeci": 0.3
+    },
+    {
+      "id": "6ab943fd-c561-81c4-5e18-bebf06060606",
+      "status": "Open",
+      "customerId": "0be45560-ce72-4d83-9f00-004dd1ad4de1",
+      "orderDate": "2026-09-27T19:27:41",
+      "dueDate": "2026-09-28T18:30:00",
+      "barcode": "62955218683892",
+      "packageNumber": "5521868389",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "8831 sokak no 31 daire 9 KARANFİL APARTMANI Egekent mahallesi çiğli izmir  EGEKENT ÇİĞLİ İzmir",
+      "recipientName": "Abdulkerim Alkan",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "EGEKENT",
+      "shippingTown": "ÇİĞLİ",
+      "shippingCity": "İzmir",
+      "email": "4317190332_5521868389@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Abdulkerim Alkan",
+      "billingAddress": "8831 sokak no 31 daire 9 KARANFİL APARTMANI Egekent mahallesi çiğli izmir  EGEKENT ÇİĞLİ İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "ÇİĞLİ",
+      "billingDistrict": "EGEKENT",
+      "billingPostalCode": "35610",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 144.9
+      },
+      "items": [
+        {
+          "lineItemId": "6ab943fd-6c48-112a-97b2-24bf06060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "vat": 24.15,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.04
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4317190332",
+          "orderDate": "2026-09-27T19:27:41",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Kerim Alkan",
+      "estimatedArrivalDate": "2026-09-30T15:30:00Z",
+      "totalDeci": 1
     }
   ]
 }
