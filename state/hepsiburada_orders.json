@@ -1,4 +1,131 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ab8f1f6-312f-522b-2d73-1b2306060606",
+      "status": "Open",
+      "customerId": "88d035a0-f9de-4a5f-82c6-d8d10165c418",
+      "orderDate": "2026-09-27T13:37:40",
+      "dueDate": "2026-09-28T18:30:00",
+      "barcode": "62955217705416",
+      "packageNumber": "5521770541",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "can apt no 50 kat 3 daire 7 EMİREFENDİ BAFRA Samsun",
+      "recipientName": "Tamer fişek",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "EMİREFENDİ",
+      "shippingTown": "BAFRA",
+      "shippingCity": "Samsun",
+      "email": "4771388524_5521770541@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Tamer fişek",
+      "billingAddress": "can apt no 50 kat 3 daire 7 EMİREFENDİ BAFRA Samsun",
+      "billingCity": "Samsun",
+      "billingTown": "BAFRA",
+      "billingDistrict": "EMİREFENDİ",
+      "billingPostalCode": "55400",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 173
+      },
+      "items": [
+        {
+          "lineItemId": "6ab8f1f5-6369-e281-0c24-b02a06060606",
+          "listingId": "dbb4549e-5ceb-4923-b2f5-eca2ae52e1a2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPD07X",
+          "merchantSku": "AETEMDEF",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 173
+          },
+          "vat": 28.83,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 173
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 14.71
+          },
+          "commissionRate": 8.5,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 173
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 173
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Temrin Defteri",
+          "orderNumber": "4771388524",
+          "orderDate": "2026-09-27T13:37:40",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901069996298",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033336619.jpg",
+          "deci": 0.3
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Tamer Tamer",
+      "estimatedArrivalDate": "2026-09-30T15:30:00Z",
+      "totalDeci": 0.3
+    }
+  ]
 }
