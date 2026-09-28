@@ -80,10 +80,10 @@
     "id": 4196207515,
     "channelId": 1,
     "shipmentPackageId": 4196207515,
-    "cargoTrackingNumber": 7270037521310031,
+    "cargoTrackingNumber": 7330037523486636,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 1,
@@ -165,7 +165,7 @@
     "agreedDeliveryDate": 1790629140000,
     "fastDelivery": true,
     "originShipmentDate": 1790581303981,
-    "lastModifiedDate": 1790581392290,
+    "lastModifiedDate": 1790585626702,
     "commercial": false,
     "fastDeliveryType": "SameDayShipping",
     "deliveredByService": false,
@@ -180,6 +180,191 @@
     "createdBy": "order-creation",
     "originPackageIds": null,
     "shipmentNumber": 10904036891,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9729390978,
+      "firstName": "Döndü Mutlu",
+      "lastName": "Bekar",
+      "company": "",
+      "address1": "Hikmet Erkek Sk. No:2-17 ",
+      "address2": "",
+      "city": "Kastamonu",
+      "cityCode": 37,
+      "district": "Taşköprü",
+      "districtId": 600,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "37000",
+      "countryCode": "TR",
+      "neighborhoodId": 67105,
+      "neighborhood": "Pulcular Mah",
+      "phone": null,
+      "fullAddress": "Hikmet Erkek Sk. No:2-17     Taşköprü Kastamonu",
+      "fullName": "Döndü Mutlu Bekar"
+    },
+    "orderNumber": "11650993105",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2350.0,
+    "packageGrossAmount": 2350.0,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9729390977,
+      "firstName": "Döndü Mutlu",
+      "lastName": "Bekar",
+      "company": "",
+      "address1": "Hikmet Erkek Sk. No:2-17 ",
+      "address2": "",
+      "city": "Kastamonu",
+      "cityCode": 37,
+      "district": "Taşköprü",
+      "districtId": 600,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "37000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 67105,
+      "neighborhood": "Pulcular Mah",
+      "phone": null,
+      "fullAddress": "Hikmet Erkek Sk. No:2-17     Taşköprü Kastamonu",
+      "fullName": "Döndü Mutlu Bekar"
+    },
+    "customerFirstName": "Döndü Mutlu",
+    "customerEmail": "pf+o4x6k3kr@trendyolmail.com",
+    "customerId": 20198205,
+    "supplierId": 0,
+    "customerLastName": "Bekar",
+    "id": 4196367474,
+    "channelId": 1,
+    "shipmentPackageId": 4196367474,
+    "cargoTrackingNumber": 7330037523479720,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEISDSYS20",
+        "sku": "2902055991570",
+        "stockCode": "AEISDSYS20",
+        "productName": "İşletmelerde Mesleki Eğitim İş Dosyası (Staj Defteri) — Sınıf Paketi - 20 Adet AEISDSYS20, one size",
+        "productCode": 1664797065,
+        "contentId": 1664797065,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2350.0,
+        "lineGrossAmount": 2350.0,
+        "discount": 15.0,
+        "lineTotalDiscount": 15.0,
+        "lineSellerDiscount": 15.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6857691479",
+            "lineItemPrice": 2335.0,
+            "lineItemDiscount": 15.0,
+            "lineItemSellerDiscount": 15.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "productColor": "Yeşil",
+        "id": 6007996970,
+        "lineId": 6007996970,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2902055991570",
+        "orderLineItemStatusName": "Picking",
+        "price": 2335.0,
+        "lineUnitPrice": 2335.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1520,
+        "commission": 18,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790595517083,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790584749613,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790584760273,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790585294974,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790629140000,
+    "estimatedDeliveryEndDate": 1791061140000,
+    "totalPrice": 2335.0,
+    "packageTotalPrice": 2335.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790629140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790584749607,
+    "lastModifiedDate": 1790585613304,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10904315500,
     "is4P": false
   },
   {
