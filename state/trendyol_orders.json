@@ -1,6 +1,186 @@
 [
   {
     "shipmentAddress": {
+      "id": 9731104794,
+      "firstName": "Ayşe",
+      "lastName": "Akın",
+      "company": "",
+      "address1": "Meşrutiyet Caddesi. Güldünya Sokak. Nazım Altunkaya Apartman. No 8 Daire 10",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Avcılar",
+      "districtId": 46,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 28446,
+      "neighborhood": "Cihangir Mah",
+      "phone": null,
+      "fullAddress": "Meşrutiyet Caddesi. Güldünya Sokak. Nazım Altunkaya Apartman. No 8 Daire 10     Avcılar İstanbul",
+      "fullName": "Ayşe Akın"
+    },
+    "orderNumber": "11652027138",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 184.0,
+    "packageGrossAmount": 184.0,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9731104790,
+      "firstName": "Ayşe",
+      "lastName": "Akın",
+      "company": "",
+      "address1": "Meşrutiyet Caddesi. Güldünya Sokak. Nazım Altunkaya Apartman. No 8 Daire 10",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Avcılar",
+      "districtId": 46,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 28446,
+      "neighborhood": "Cihangir Mah",
+      "phone": null,
+      "fullAddress": "Meşrutiyet Caddesi. Güldünya Sokak. Nazım Altunkaya Apartman. No 8 Daire 10     Avcılar İstanbul",
+      "fullName": "Ayşe Akın"
+    },
+    "customerFirstName": "Ayşe",
+    "customerEmail": "pf+9yz3eaw2@trendyolmail.com",
+    "customerId": 33091807,
+    "supplierId": 0,
+    "customerLastName": "Akın",
+    "id": 4197192497,
+    "channelId": 1,
+    "shipmentPackageId": 4197192497,
+    "cargoTrackingNumber": 7270037531662526,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEHVYSHP",
+        "sku": "ATELHVYSHP001",
+        "stockCode": "AEHVYSHP",
+        "productName": "Yaylı Süngerli Metal Havya Standı AEHVYSHP, one size",
+        "productCode": 1590176715,
+        "contentId": 1590176715,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 184.0,
+        "lineGrossAmount": 184.0,
+        "discount": 15.0,
+        "lineTotalDiscount": 15.0,
+        "lineSellerDiscount": 15.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6858997332",
+            "lineItemPrice": 169.0,
+            "lineItemDiscount": 15.0,
+            "lineItemSellerDiscount": 15.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6009113825,
+        "lineId": 6009113825,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELHVYSHP001",
+        "orderLineItemStatusName": "Picking",
+        "price": 169.0,
+        "lineUnitPrice": 169.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2516,
+        "commission": 16.5,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790612890869,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790602092068,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790602094851,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790602159024,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790715540000,
+    "estimatedDeliveryEndDate": 1790888340000,
+    "totalPrice": 169.0,
+    "packageTotalPrice": 169.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790715540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790602092059,
+    "lastModifiedDate": 1790602159024,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10905227171,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9729942918,
       "firstName": "buket",
       "lastName": "özsoy",
