@@ -103,10 +103,11 @@ REKLAMLAR = [
     {
         "dosya": "meta-ogretmen-takim-cantasi.png",
         "foto": CDN + "Takimcantasi.png?v=1785258195",
-        "rozet_fiyat": "1.990 TL",
+        # 28.09.2026: sitede 2.129 TL oldu (kullanici), reklam gorseli de ayni fiyat.
+        "rozet_fiyat": "2.129 TL",
         "baslik": "Atölye dersine hazır sınıf",
         "destek": "Pense, havya, multimetre, lehim takımı",
-        "fiyatlar": [("17 parça tam set", "1.990 TL")],
+        "fiyatlar": [("17 parça tam set", "2.129 TL")],
         "toptan": TOPTAN,
     },
     {
