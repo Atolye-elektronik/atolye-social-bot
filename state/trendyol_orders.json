@@ -119,7 +119,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "ATEL3-6VMTR02",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 264.0,
         "lineUnitPrice": 264.0,
         "fastDeliveryOptions": [
@@ -144,10 +144,14 @@
       {
         "createdDate": 1790626158441,
         "status": "Created"
+      },
+      {
+        "createdDate": 1790627263086,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1790715540000,
@@ -158,7 +162,7 @@
     "agreedDeliveryDate": 1790715540000,
     "fastDelivery": true,
     "originShipmentDate": 1790626156237,
-    "lastModifiedDate": 1790626158441,
+    "lastModifiedDate": 1790627263086,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
