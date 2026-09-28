@@ -1,6 +1,183 @@
 [
   {
     "shipmentAddress": {
+      "id": 9729942918,
+      "firstName": "buket",
+      "lastName": "özsoy",
+      "company": "",
+      "address1": "Bahçelievler mahallesi mehmet akif ersoy caddesi no:116 kat:3 daire:3 kapaklı/tekirdağ",
+      "address2": "",
+      "city": "Tekirdağ",
+      "cityCode": 59,
+      "district": "Kapaklı",
+      "districtId": 1064,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "59000",
+      "countryCode": "TR",
+      "neighborhoodId": 73121,
+      "neighborhood": "Bahçelievler Mah",
+      "phone": null,
+      "fullAddress": "Bahçelievler mahallesi mehmet akif ersoy caddesi no:116 kat:3 daire:3 kapaklı/tekirdağ     Kapaklı Tekirdağ",
+      "fullName": "buket özsoy"
+    },
+    "orderNumber": "11651337877",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2233.42,
+    "packageGrossAmount": 2233.42,
+    "totalDiscount": 0.0,
+    "packageSellerDiscount": 0.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 0.0,
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9729942917,
+      "firstName": "buket",
+      "lastName": "özsoy",
+      "company": "",
+      "address1": "Bahçelievler mahallesi mehmet akif ersoy caddesi no:116 kat:3 daire:3 kapaklı/tekirdağ",
+      "address2": "",
+      "city": "Tekirdağ",
+      "cityCode": 59,
+      "district": "Kapaklı",
+      "districtId": 1064,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "59000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 73121,
+      "neighborhood": "Bahçelievler Mah",
+      "phone": null,
+      "fullAddress": "Bahçelievler mahallesi mehmet akif ersoy caddesi no:116 kat:3 daire:3 kapaklı/tekirdağ     Kapaklı Tekirdağ",
+      "fullName": "buket özsoy"
+    },
+    "customerFirstName": "buket",
+    "customerEmail": "pf+voak95zo@trendyolmail.com",
+    "customerId": 70821830,
+    "supplierId": 0,
+    "customerLastName": "özsoy",
+    "id": 4196637405,
+    "channelId": 1,
+    "shipmentPackageId": 4196637405,
+    "cargoTrackingNumber": 7270037525820475,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2233.42,
+        "lineGrossAmount": 2233.42,
+        "discount": 0.0,
+        "lineTotalDiscount": 0.0,
+        "lineSellerDiscount": 0.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6858109164",
+            "lineItemPrice": 2233.42,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6008354779,
+        "lineId": 6008354779,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2233.42,
+        "lineUnitPrice": 2233.42,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 20,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790601231462,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790590432330,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790590435569,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790590452469,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790629140000,
+    "estimatedDeliveryEndDate": 1790888340000,
+    "totalPrice": 2233.42,
+    "packageTotalPrice": 2233.42,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790629140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790590432324,
+    "lastModifiedDate": 1790590452469,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10904608632,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9728892215,
       "firstName": "hatice",
       "lastName": "in e",
