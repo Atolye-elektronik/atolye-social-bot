@@ -1,22 +1,7 @@
 {
-  "content": [
-    {
-      "creationDate": 1790709437437,
-      "customerId": 164786530,
-      "id": 454342298,
-      "imageUrl": "https://cdn.dsmcdn.com//ty1949/prod/QC_PREP/20260823/16/e2c5dcbd-40cd-38e3-8df6-f1108b92f50f/1_org_zoom.jpg",
-      "productName": "DC Motor 3V Yassı (130 Tip) - Hobi ve Fen Deney Motoru - 5'li Paket",
-      "public": true,
-      "showUserName": false,
-      "status": "WAITING_FOR_ANSWER",
-      "text": "İçinden kaç adet var",
-      "userName": "",
-      "webUrl": "https://www.trendyol.com/ty/ty-p-1190289768",
-      "productMainId": "AEDCM3V-5"
-    }
-  ],
+  "content": [],
   "page": 0,
   "size": 50,
-  "totalElements": 1,
-  "totalPages": 1
+  "totalElements": 0,
+  "totalPages": 0
 }
