@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-09-28T12:07:26+00:00",
+  "guncelleme": "2026-09-29T11:24:28+00:00",
   "gunluk": {
     "2026-08-16": {
       "begeni": 2,
@@ -289,6 +289,16 @@
       "profil_goruntulenme": 8,
       "takipci": 34,
       "tekil_izleyici": 457,
+      "yorum": 1
+    },
+    "2026-09-29": {
+      "begeni": 7,
+      "goruntulenme": 736,
+      "kaynak": "ag+dom",
+      "paylasim": 0,
+      "profil_goruntulenme": 7,
+      "takipci": 34,
+      "tekil_izleyici": 454,
       "yorum": 1
     }
   }
