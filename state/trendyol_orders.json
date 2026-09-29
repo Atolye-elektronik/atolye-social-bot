@@ -1,6 +1,376 @@
 [
   {
     "shipmentAddress": {
+      "id": 9736061267,
+      "firstName": "Şeyda ceren",
+      "lastName": "yıldız",
+      "company": "",
+      "address1": "amasya göynücek yenimahalle amasya caddesi A101 üstü no 7 kat 3",
+      "address2": "",
+      "city": "Amasya",
+      "cityCode": 5,
+      "district": "Göynücek",
+      "districtId": 151,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "05000",
+      "countryCode": "TR",
+      "neighborhoodId": 51,
+      "neighborhood": "Yeni Mah",
+      "phone": null,
+      "fullAddress": "amasya göynücek yenimahalle amasya caddesi A101 üstü no 7 kat 3     Göynücek Amasya",
+      "fullName": "Şeyda ceren yıldız"
+    },
+    "orderNumber": "11654715083",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 419.0,
+    "packageGrossAmount": 419.0,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9736061265,
+      "firstName": "Şeyda ceren",
+      "lastName": "yıldız",
+      "company": "",
+      "address1": "amasya göynücek yenimahalle amasya caddesi A101 üstü no 7 kat 3",
+      "address2": "",
+      "city": "Amasya",
+      "cityCode": 5,
+      "district": "Göynücek",
+      "districtId": 151,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "05000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 51,
+      "neighborhood": "Yeni Mah",
+      "phone": null,
+      "fullAddress": "amasya göynücek yenimahalle amasya caddesi A101 üstü no 7 kat 3     Göynücek Amasya",
+      "fullName": "Şeyda ceren yıldız"
+    },
+    "customerFirstName": "Şeyda ceren",
+    "customerEmail": "pf+2bpr4klz@trendyolmail.com",
+    "customerId": 41682962,
+    "supplierId": 0,
+    "customerLastName": "yıldız",
+    "id": 4199479599,
+    "channelId": 1,
+    "shipmentPackageId": 4199479599,
+    "cargoTrackingNumber": 7270037555087114,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE3-6VMTR4",
+        "sku": "ATEL3-6VMTR41",
+        "stockCode": "AE3-6VMTR4",
+        "productName": "3-6V Redüktürlü Arduino Uyumlu DC Sarı Motor ve Tekerlek Seti - 4 Adet Motor+Teker AE3-6VMTR4, one size",
+        "productCode": 1589543352,
+        "contentId": 1589543352,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 419.0,
+        "lineGrossAmount": 419.0,
+        "discount": 15.0,
+        "lineTotalDiscount": 15.0,
+        "lineSellerDiscount": 15.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6862720787",
+            "lineItemPrice": 404.0,
+            "lineItemDiscount": 15.0,
+            "lineItemSellerDiscount": 15.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6012356288,
+        "lineId": 6012356288,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATEL3-6VMTR41",
+        "orderLineItemStatusName": "Picking",
+        "price": 404.0,
+        "lineUnitPrice": 404.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 12,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790686625042,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790675845922,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790675849345,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790675873585,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790715540000,
+    "estimatedDeliveryEndDate": 1790974740000,
+    "totalPrice": 404.0,
+    "packageTotalPrice": 404.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790715540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790675845917,
+    "lastModifiedDate": 1790675873585,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10907874156,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9735870644,
+      "firstName": "Kardelen",
+      "lastName": "yılmaz",
+      "company": "",
+      "address1": "Hemşehri sokak no 13 üst kat (çöp yolu )",
+      "address2": "",
+      "city": "Sivas",
+      "cityCode": 58,
+      "district": "Divriği",
+      "districtId": 901,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "58000",
+      "countryCode": "TR",
+      "neighborhoodId": 52278,
+      "neighborhood": "Turabali Mah",
+      "phone": null,
+      "fullAddress": "Hemşehri sokak no 13 üst kat (çöp yolu )     Divriği Sivas",
+      "fullName": "Kardelen yılmaz"
+    },
+    "orderNumber": "11654597898",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2233.42,
+    "packageGrossAmount": 2233.42,
+    "totalDiscount": 126.67,
+    "packageSellerDiscount": 126.67,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 126.67,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 111.67
+      },
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9735870643,
+      "firstName": "Kardelen",
+      "lastName": "yılmaz",
+      "company": "",
+      "address1": "Hemşehri sokak no 13 üst kat (çöp yolu )",
+      "address2": "",
+      "city": "Sivas",
+      "cityCode": 58,
+      "district": "Divriği",
+      "districtId": 901,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "58000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 52278,
+      "neighborhood": "Turabali Mah",
+      "phone": null,
+      "fullAddress": "Hemşehri sokak no 13 üst kat (çöp yolu )     Divriği Sivas",
+      "fullName": "Kardelen yılmaz"
+    },
+    "customerFirstName": "Kardelen",
+    "customerEmail": "pf+aolavjlx@trendyolmail.com",
+    "customerId": 16807674,
+    "supplierId": 0,
+    "customerLastName": "yılmaz",
+    "id": 4199392506,
+    "channelId": 1,
+    "shipmentPackageId": 4199392506,
+    "cargoTrackingNumber": 7270037554175461,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 18 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2233.42,
+        "lineGrossAmount": 2233.42,
+        "discount": 126.67,
+        "lineTotalDiscount": 126.67,
+        "lineSellerDiscount": 126.67,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6862579506",
+            "lineItemPrice": 2106.75,
+            "lineItemDiscount": 126.67,
+            "lineItemSellerDiscount": 126.67,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6012232892,
+        "lineId": 6012232892,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2106.75,
+        "lineUnitPrice": 2106.75,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 20,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790684659995,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790673860984,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790673863717,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790674824708,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790715540000,
+    "estimatedDeliveryEndDate": 1791061140000,
+    "totalPrice": 2106.75,
+    "packageTotalPrice": 2106.75,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790715540000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790673860979,
+    "lastModifiedDate": 1790674824708,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10907774512,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9735350775,
       "firstName": "Serpil",
       "lastName": "Bakmaz",
