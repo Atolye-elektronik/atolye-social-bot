@@ -1,4 +1,383 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6abd4cc5-4d7f-5cb8-2fee-5a7206060606",
+      "status": "Open",
+      "customerId": "84cd4ca1-ab2a-4395-9a4b-dfae37ceda7a",
+      "orderDate": "2026-09-30T20:54:06",
+      "dueDate": "2026-10-01T18:30:00",
+      "barcode": "62955230230504",
+      "packageNumber": "5523023050",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "mimar sinan mah. 5/3 sok. no 5 daire 4 MİMAR SİNAN GEBZE Kocaeli",
+      "recipientName": "yakup isot",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MİMAR SİNAN",
+      "shippingTown": "GEBZE",
+      "shippingCity": "Kocaeli",
+      "email": "4080039294_5523023050@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "yakup isot",
+      "billingAddress": "mimar sinan mah. 5/3 sok. no 5 daire 4 MİMAR SİNAN GEBZE Kocaeli",
+      "billingCity": "Kocaeli",
+      "billingTown": "GEBZE",
+      "billingDistrict": "MİMAR SİNAN",
+      "billingPostalCode": "41400",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 149.8
+      },
+      "items": [
+        {
+          "lineItemId": "6abd4cc0-3035-e3fb-ceb8-0a8d06060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "vat": 24.97,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4080039294",
+          "orderDate": "2026-09-30T20:54:06",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Hüdanur İsot",
+      "estimatedArrivalDate": "2026-10-05T15:30:00Z",
+      "totalDeci": 2
+    },
+    {
+      "id": "6abd4ddc-3c44-52d6-26a0-78ed06060606",
+      "status": "Open",
+      "customerId": "9833f102-9b4d-4a89-9dcf-9c638fb9a1e9",
+      "orderDate": "2026-09-30T20:58:50",
+      "dueDate": "2026-10-01T18:30:00",
+      "barcode": "62955230245287",
+      "packageNumber": "5523024528",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Mustafapaşa Mah. 745/2. Sk. No:7 kat:1 Daire 6 Paşha konakları C Blok MUSTAFAPAŞA GEBZE Kocaeli",
+      "recipientName": "ibrahim özkul",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MUSTAFAPAŞA",
+      "shippingTown": "GEBZE",
+      "shippingCity": "Kocaeli",
+      "email": "4894202524_5523024528@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "ibrahim özkul",
+      "billingAddress": "745/2. Sk. No:7 kat:1 Daire 6 Paşha konakları C Blok MUSTAFAPAŞA GEBZE Kocaeli",
+      "billingCity": "Kocaeli",
+      "billingTown": "GEBZE",
+      "billingDistrict": "MUSTAFAPAŞA",
+      "billingPostalCode": "41400",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 108
+      },
+      "items": [
+        {
+          "lineItemId": "6abd4ddb-eb74-2b56-ac8d-fb2f06060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "vat": 18,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 4.86
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4894202524",
+          "orderDate": "2026-09-30T20:58:50",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "İbrahim Özkul",
+      "estimatedArrivalDate": "2026-10-05T15:30:00Z",
+      "totalDeci": 2.2
+    },
+    {
+      "id": "6abd4e3f-b87f-3f09-843b-ad8506060606",
+      "status": "Open",
+      "customerId": "b3753cb9-acd8-471b-a6ff-b885e2bb804f",
+      "orderDate": "2026-09-30T21:00:30",
+      "dueDate": "2026-10-01T18:30:00",
+      "barcode": "62955230250386",
+      "packageNumber": "5523025038",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "yıldız mah. emel cad. güngör insaat apt. no:61 kat:2 daire:4 YILDIZ LÜLEBURGAZ Kırklareli",
+      "recipientName": "emrah çetin",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YILDIZ",
+      "shippingTown": "LÜLEBURGAZ",
+      "shippingCity": "Kırklareli",
+      "email": "4336025632_5523025038@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Gizem çetin",
+      "billingAddress": "emel No:61 Kat:2 Daire:4 YILDIZ LÜLEBURGAZ Kırklareli",
+      "billingCity": "Kırklareli",
+      "billingTown": "LÜLEBURGAZ",
+      "billingDistrict": "YILDIZ",
+      "billingPostalCode": "",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 2404.83
+      },
+      "items": [
+        {
+          "lineItemId": "6abd4e3e-225a-a4c7-3c7d-1fd406060606",
+          "listingId": "9dabd470-f0eb-4677-b862-d8f24b98fb65",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000E9OWRF",
+          "merchantSku": "AETCS18P",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 2404.83
+          },
+          "vat": 400.8,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 2404.83
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 220.93
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 50
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 50
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 2454.83
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 2454.83
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Meslek Lisesi Takım Çantası Seti - 17 Parça Full Set",
+          "orderNumber": "4336025632",
+          "orderDate": "2026-09-30T21:00:30",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELTCS18P001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001685029413.jpg",
+          "deci": 4.7
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "EMRAH ÇETİN",
+      "estimatedArrivalDate": "2026-10-05T15:30:00Z",
+      "totalDeci": 4.7
+    }
+  ]
 }
