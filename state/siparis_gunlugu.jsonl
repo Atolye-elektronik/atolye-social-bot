@@ -588,3 +588,5 @@
 {"an": "2026-09-30T11:41", "kanal": "trendyol", "no": "11658392292", "kod": "AE2WDEKRBT-LI", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEPY18650": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": true}
 {"an": "2026-09-30T11:48", "kanal": "trendyol", "no": "11658392292", "kod": "AE2WDEKRBT-LI", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEPY18650": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
 {"an": "2026-09-30T11:51", "kanal": "n11", "no": "257713962427", "iade": {"AETC162": 1}, "durum": "Cancelled", "kuru": false}
+{"an": "2026-09-30T13:11", "kanal": "trendyol", "no": "11658836265", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": true}
+{"an": "2026-09-30T13:11", "kanal": "hepsiburada", "no": "4091931911", "kod": "AEPY18650", "adet": 2, "dusum": {"AEPY18650": 2}, "kuru": true}
