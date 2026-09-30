@@ -1,4 +1,131 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6abcb13e-0075-b31e-4d69-1e9906060606",
+      "status": "Open",
+      "customerId": "9a542dbb-1f05-44b8-bf5b-d2038c204fae",
+      "orderDate": "2026-09-30T09:50:37",
+      "dueDate": "2026-09-30T18:30:00",
+      "barcode": "62955228190364",
+      "packageNumber": "5522819036",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Vişne Cd. No:221 DUAÇINARI YILDIRIM Bursa",
+      "recipientName": "TURAN ÇİFTÇİ",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "DUAÇINARI",
+      "shippingTown": "YILDIRIM",
+      "shippingCity": "Bursa",
+      "email": "4719747105_5522819036@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Teknomaks Dar Dokuma Tekstil ihc.ith.san.tic.ltd.şti. ",
+      "billingAddress": "Duaçınarı mah.Vişne cd.no:221 YILDIRIM BURSA DUAÇINARI YILDIRIM Bursa",
+      "billingCity": "Bursa",
+      "billingTown": "YILDIRIM",
+      "billingDistrict": "DUAÇINARI",
+      "billingPostalCode": "16370",
+      "billingCountryCode": "TR",
+      "taxOffice": "YILDIRIM",
+      "taxNumber": "8360850210",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 487.56
+      },
+      "items": [
+        {
+          "lineItemId": "6abcb13e-6c2c-e5df-f9cd-88cc06060606",
+          "listingId": "d9f1dcb0-a496-42a5-ae17-38ee8b01661f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000PLEY2",
+          "merchantSku": "AEACDMMR2",
+          "quantity": 3,
+          "price": {
+            "currency": "TRY",
+            "amount": 162.52
+          },
+          "vat": 81.26,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 487.56
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 14.63
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 11.67
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35.01
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 162.52
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 487.56
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl Ac 220V 2000W Motor Hız Kontrol Kartı Dimmer",
+          "orderNumber": "4719747105",
+          "orderDate": "2026-09-30T09:50:37",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000000CNL576",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/121/{size}/110000071106017.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "ZEYNEP COŞKUN",
+      "estimatedArrivalDate": "2026-10-02T15:30:00Z",
+      "totalDeci": 3
+    }
+  ]
 }
