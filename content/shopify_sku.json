@@ -1076,7 +1076,8 @@
   "AEEAS3P",
   "AEEAS7P",
   "AETCS18P",
-  "AETCS9P"
+  "AETCS9P",
+  "AES400IGG"
  ],
  "pasif": [
   "AEESP32TC38",
