@@ -189,7 +189,9 @@ def topla_hepsiburada():
 def topla_n11():
     import n11_client as n11
     out = []
-    for st in ("Created", "Picking", "Shipped"):
+    # 30.09.2026: Cancelled/UnSupplied/Returned de cekiliyor; yoksa N11 iptalleri hic
+    # gorulmuyor ve dusulen stok geri verilmiyordu (257713962427 bos canta iptali).
+    for st in ("Created", "Picking", "Shipped", "Cancelled", "UnSupplied", "Returned"):
         r = n11.get("/rest/delivery/v1/shipmentPackages", status=st, page=0, size=100)
         if r.status_code != 200:
             print("  N11", st, r.status_code)
