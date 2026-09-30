@@ -1,22 +1,22 @@
 {
- "_not": "30.09.2026: kullanici PttAVM panelinden elle stok 0 yapti (PttAVM'de canli stok takibi yok, hizli tukenen/az kalan urunler orada satilmasin). PttAVM toplu Excel senkronunda bu kodlar 0 yazilir ya da atlanir. Diger kanallara DOKUNMAZ.",
+ "_not": "30.09.2026: PttAVM panelinden okunan stok=0 urunler (kullanici elle kapatti; PttAVM'de canli stok takibi yok). PttAVM toplu Excel senkronunda bu kodlar 0 yazilir. Diger kanallara DOKUNMAZ. Ilk okuma 'Varyant Stok Kodu: -' satiri yuzunden bir kaymisti, bu liste dogrulanmis halidir.",
  "kapali": [
   "AETTS3P",
-  "AE5IZOLE",
   "AES400IGG",
   "AEKNTKLM",
   "AE5X100YT",
-  "AEZD30C40W",
-  "AEVANTSET",
-  "AETP4056",
+  "AE5X100DT",
+  "AEYNKSK160",
+  "AEUT12D",
   "AETMRNDFTR30",
-  "AETEMDEF",
+  "AETMRNDFTR20",
   "AETCS9P",
   "AETCS18P",
-  "AEPOT10K",
-  "AEKRK10",
-  "AEENDELK",
+  "AETC162",
+  "AEPNS180",
+  "AEKB1602",
   "AEEAS7P",
-  "AEARBSES"
+  "AEEAS3P",
+  "AEACDMMR"
  ]
 }
