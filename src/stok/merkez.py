@@ -84,6 +84,10 @@ def hedef_stoklar(recete, parca):
         if v is None:
             continue
         hedef[k] = 0 if v <= KRITIK_ESIK else min(v, TAVAN)
+    # Kullanicinin elle sabitledigi stoklar: kritik esik ve set hesabindan
+    # bagimsiz, her dagitimda bu deger basilir (30.09: Temrin 10'lu paket 1).
+    for k, v in S.get("sabit", {}).items():
+        hedef[k] = int(v)
     return hedef
 
 

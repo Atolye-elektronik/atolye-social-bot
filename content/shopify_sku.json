@@ -1070,5 +1070,8 @@
   "AEESP32TC38",
   "AETYYNKSK1",
   "AEESP32TC38-2"
- ]
+ ],
+ "sabit": {
+  "AETMRNDFTR10": 1
+ }
 }
