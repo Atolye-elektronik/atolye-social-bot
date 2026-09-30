@@ -378,6 +378,218 @@
       "customerName": "EMRAH ÇETİN",
       "estimatedArrivalDate": "2026-10-05T15:30:00Z",
       "totalDeci": 4.7
+    },
+    {
+      "id": "6abd749e-a04a-9717-51e2-15fd06060606",
+      "status": "Open",
+      "customerId": "9fa76f29-c996-4f96-9d9a-74e0096be052",
+      "orderDate": "2026-09-30T23:44:11",
+      "dueDate": "2026-10-01T18:30:00",
+      "barcode": "62955230739704",
+      "packageNumber": "5523073970",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "merkez mah. 3 nolu büklüm sokak n:6 belediye ishanı altı Bayraktar elektronik   trabzon/arakli MERKEZ ARAKLI Trabzon",
+      "recipientName": "hüseyin ergün",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MERKEZ",
+      "shippingTown": "ARAKLI",
+      "shippingCity": "Trabzon",
+      "email": "4444377621_5523073970@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Hüseyin ergün",
+      "billingAddress": "merkez mah. 3 nolu büklüm sokak n:6 belediye ishanı altı Bayraktar elektronik   trabzon/arakli MERKEZ ARAKLI Trabzon",
+      "billingCity": "Trabzon",
+      "billingTown": "ARAKLI",
+      "billingDistrict": "MERKEZ",
+      "billingPostalCode": "61700",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 252
+      },
+      "items": [
+        {
+          "lineItemId": "6abd749c-2c74-5910-a32c-88a006060606",
+          "listingId": "fd59b995-e684-4370-838e-7aa26dedd56b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000FOY2RK",
+          "merchantSku": "AEDC125B",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "vat": 19,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 10.26
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 6 Adet - 2 Pin Siyah Anahtar Switch Mini Buton Kcd1 Plastik Açma Kapama On / Off",
+          "orderNumber": "4444377621",
+          "orderDate": "2026-09-30T23:44:11",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELDC125B001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001832081235.jpg",
+          "deci": 1
+        },
+        {
+          "lineItemId": "6abd749c-2c74-5910-a32c-88a506060606",
+          "listingId": "969eda22-a6ee-4e2d-8a57-458996739c62",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8L",
+          "merchantSku": "AEHB18650PY3",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 69
+          },
+          "vat": 23,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 138
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.21
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 69
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 138
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 18650 Pil Yuvası Kablolu Tutucu 3.7V 1'li Tekli Pil Kutusu Özellikli",
+          "orderNumber": "4444377621",
+          "orderDate": "2026-09-30T23:44:11",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100780",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568559.jpg",
+          "deci": 0.5
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "hüseyin ergün",
+      "estimatedArrivalDate": "2026-10-07T15:30:00Z",
+      "totalDeci": 2
     }
   ]
 }
