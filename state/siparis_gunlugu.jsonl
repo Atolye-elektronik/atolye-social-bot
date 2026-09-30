@@ -578,3 +578,6 @@
 {"an": "2026-09-30T08:39", "kanal": "trendyol", "no": "11657737520", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
 {"an": "2026-09-30T08:39", "kanal": "trendyol", "no": "11657568410", "kod": "AETEMDEF", "adet": 2, "dusum": {"AETEMDEF": 2}, "kuru": false}
 {"an": "2026-09-30T08:39", "kanal": "hepsiburada", "no": "4719747105", "kod": "AEACDMMR", "adet": 3, "dusum": {"AEACDMMR": 3}, "kuru": false}
+{"an": "2026-09-30T09:41", "kanal": "trendyol", "no": "11658214402", "kod": "AETCS18P", "adet": 1, "dusum": {"AETC162": 1, "AEYNKSK160": 1, "AEPNS180": 1, "AEKB1602": 1, "AE5X100DT": 1, "AE5X100YT": 1, "AEKNTKLM": 1, "AEZD30C40W": 1, "AEHVYSHP": 1, "AELHMPMP": 1, "AETUPLEHIM": 1, "AELEHIMPASTA": 1, "AES400IGG": 1, "AEIZOLE": 1, "AE6X13PLK": 1, "AEDT830D": 1, "AEBB830P": 1}, "kuru": true}
+{"an": "2026-09-30T09:41", "kanal": "trendyol", "no": "11658194982", "kod": "AEDUYAMP-5", "adet": 1, "dusum": {"AEDUY-1": 5, "AEAMP-1": 5}, "kuru": true}
+{"an": "2026-09-30T09:41", "kanal": "trendyol", "no": "11658124604", "kod": "AESARJKT1", "adet": 1, "dusum": {"AETP4056": 1, "AEPY18650T": 1}, "kuru": true}
