@@ -609,3 +609,4 @@
 {"an": "2026-09-30T23:47", "kanal": "elle", "no": "CANTA-59-30.09", "kod": "AETCS18P-parcalar", "adet": 59, "dusum": {"AEZD30C40W": 59, "AEHVYSHP": 59, "AELHMPMP": 59, "AETUPLEHIM": 59, "AELEHIMPASTA": 59, "AEIZOLE": 59, "AE6X13PLK": 59, "AEDT830D": 59, "AEBB830P": 59}, "not": "kullanici: cantada olan tukenmeyen urunlerden 59 dus", "kuru": false}
 {"an": "2026-09-30T20:49", "kanal": "hepsiburada", "no": "4444377621", "kod": "AEDC125B", "adet": 1, "dusum": {"AEDC125B": 1}, "kuru": false}
 {"an": "2026-09-30T20:49", "kanal": "hepsiburada", "no": "4444377621", "kod": "AEPY18650T", "adet": 2, "dusum": {"AEPY18650T": 2}, "kuru": false}
+{"an": "2026-09-30T23:53", "kanal": "elle", "no": "CANTA-59-30.09-duzeltme", "kod": "AETUPLEHIM+AE6X13PLK", "adet": -35, "dusum": {"AETUPLEHIM": -35, "AE6X13PLK": -35}, "not": "tup lehim ve 6x13 plaket 59 degil 24 dusulecekti; 35'er geri eklendi", "kuru": false}
