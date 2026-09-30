@@ -1,0 +1,22 @@
+{
+ "_not": "30.09.2026: kullanici PttAVM panelinden elle stok 0 yapti (PttAVM'de canli stok takibi yok, hizli tukenen/az kalan urunler orada satilmasin). PttAVM toplu Excel senkronunda bu kodlar 0 yazilir ya da atlanir. Diger kanallara DOKUNMAZ.",
+ "kapali": [
+  "AETTS3P",
+  "AE5IZOLE",
+  "AES400IGG",
+  "AEKNTKLM",
+  "AE5X100YT",
+  "AEZD30C40W",
+  "AEVANTSET",
+  "AETP4056",
+  "AETMRNDFTR30",
+  "AETEMDEF",
+  "AETCS9P",
+  "AETCS18P",
+  "AEPOT10K",
+  "AEKRK10",
+  "AEENDELK",
+  "AEEAS7P",
+  "AEARBSES"
+ ]
+}
