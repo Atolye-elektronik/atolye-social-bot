@@ -1,6 +1,188 @@
 [
   {
     "shipmentAddress": {
+      "id": 9751249957,
+      "firstName": "Keziban",
+      "lastName": "avsar",
+      "company": "",
+      "address1": "Şehitlik mah.no 59 akboğa apartmanı kat 4 no 8 Yeni şehir Diyarbakır ",
+      "address2": "",
+      "city": "Diyarbakır",
+      "cityCode": 21,
+      "district": "Yenişehir",
+      "districtId": 101076,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "21000",
+      "countryCode": "TR",
+      "neighborhoodId": 33534,
+      "neighborhood": "Şehitlik Mah",
+      "phone": null,
+      "fullAddress": "Şehitlik mah.no 59 akboğa apartmanı kat 4 no 8 Yeni şehir Diyarbakır     Yenişehir Diyarbakır",
+      "fullName": "Keziban avsar"
+    },
+    "orderNumber": "11663728522",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 183.0,
+    "packageGrossAmount": 183.0,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9751249956,
+      "firstName": "Keziban",
+      "lastName": "avsar",
+      "company": "",
+      "address1": "Şehitlik mah.no 59 akboğa apartmanı kat 4 no 8 Yeni şehir Diyarbakır ",
+      "address2": "",
+      "city": "Diyarbakır",
+      "cityCode": 21,
+      "district": "Yenişehir",
+      "districtId": 101076,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "21000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 33534,
+      "neighborhood": "Şehitlik Mah",
+      "phone": null,
+      "fullAddress": "Şehitlik mah.no 59 akboğa apartmanı kat 4 no 8 Yeni şehir Diyarbakır     Yenişehir Diyarbakır",
+      "fullName": "Keziban avsar"
+    },
+    "customerFirstName": "Keziban",
+    "customerEmail": "pf+brqmj28r@trendyolmail.com",
+    "customerId": 43959768,
+    "supplierId": 0,
+    "customerLastName": "avsar",
+    "id": 4206544918,
+    "channelId": 1,
+    "shipmentPackageId": 4206544918,
+    "cargoTrackingNumber": 7270037626858247,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETEMDEF",
+        "sku": "2901069996298",
+        "stockCode": "AETEMDEF",
+        "productName": "Temrin Defteri AETEMDEF, one size",
+        "productCode": 1664639329,
+        "contentId": 1664639329,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 183.0,
+        "lineGrossAmount": 183.0,
+        "discount": 15.0,
+        "lineTotalDiscount": 15.0,
+        "lineSellerDiscount": 15.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6874173628",
+            "lineItemPrice": 168.0,
+            "lineItemDiscount": 15.0,
+            "lineItemSellerDiscount": 15.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "productColor": "Yeşil",
+        "id": 6022291952,
+        "lineId": 6022291952,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901069996298",
+        "orderLineItemStatusName": "Picking",
+        "price": 168.0,
+        "lineUnitPrice": 168.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1520,
+        "commission": 18,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790890905426,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790880106309,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790880108289,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790880176449,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790974740000,
+    "estimatedDeliveryEndDate": 1791320340000,
+    "totalPrice": 168.0,
+    "packageTotalPrice": 168.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790974740000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790880106300,
+    "lastModifiedDate": 1790880176449,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10915957908,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9750645061,
       "firstName": "elmas",
       "lastName": "teke",
