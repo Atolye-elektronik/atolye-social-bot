@@ -1063,31 +1063,13 @@
    "AEBCTRANS"
   ]
  },
- "sifirla": [
-  "AEUT12D",
-  "AETC162",
-  "AEPNS180",
-  "AE5X100DT",
-  "AE5X100YT",
-  "AEKNTKLM",
-  "AEYNKSK160",
-  "AEKB1602",
-  "AETTS3P",
-  "AEEAS3P",
-  "AEEAS7P",
-  "AETCS18P",
-  "AETCS9P",
-  "AES400IGG"
- ],
+ "sifirla": ["AEUT12D", "AETC162", "AEPNS180", "AE5X100DT", "AE5X100YT", "AEKNTKLM", "AEYNKSK160", "AEKB1602", "AETTS3P", "AEEAS3P", "AEEAS7P", "AETCS18P", "AETCS9P", "AES400IGG", "AETEMDEF-10", "AETMRNDFTR10"],
  "pasif": [
   "AEESP32TC38",
   "AETYYNKSK1",
   "AEESP32TC38-2"
  ],
- "sabit": {
-  "AETMRNDFTR10": 1,
-  "AETEMDEF-10": 1
- },
+ "sabit": {},
  "esiksiz": [
   "AETEMDEF"
  ]
