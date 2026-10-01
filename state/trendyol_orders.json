@@ -1,6 +1,377 @@
 [
   {
     "shipmentAddress": {
+      "id": 9750645061,
+      "firstName": "elmas",
+      "lastName": "teke",
+      "company": "",
+      "address1": "Durali alıç mahhallesi 941 sokak 10/21 ",
+      "address2": "",
+      "city": "Ankara",
+      "cityCode": 6,
+      "district": "Mamak",
+      "districtId": 18,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "06000",
+      "countryCode": "TR",
+      "neighborhoodId": 10341,
+      "neighborhood": "Durali Alıç Mah",
+      "phone": null,
+      "fullAddress": "Durali alıç mahhallesi 941 sokak 10/21     Mamak Ankara",
+      "fullName": "elmas teke"
+    },
+    "orderNumber": "11663384349",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 366.0,
+    "packageGrossAmount": 366.0,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9750645059,
+      "firstName": "elmas",
+      "lastName": "teke",
+      "company": "",
+      "address1": "Durali alıç mahhallesi 941 sokak 10/21 ",
+      "address2": "",
+      "city": "Ankara",
+      "cityCode": 6,
+      "district": "Mamak",
+      "districtId": 18,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "06000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 10341,
+      "neighborhood": "Durali Alıç Mah",
+      "phone": null,
+      "fullAddress": "Durali alıç mahhallesi 941 sokak 10/21     Mamak Ankara",
+      "fullName": "elmas teke"
+    },
+    "customerFirstName": "elmas",
+    "customerEmail": "pf+y8ywybq3@trendyolmail.com",
+    "customerId": 4279339,
+    "supplierId": 0,
+    "customerLastName": "teke",
+    "id": 4206264904,
+    "channelId": 1,
+    "shipmentPackageId": 4206264904,
+    "cargoTrackingNumber": 7270037624150732,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 2,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETEMDEF",
+        "sku": "2901069996298",
+        "stockCode": "AETEMDEF",
+        "productName": "Temrin Defteri AETEMDEF, one size",
+        "productCode": 1664639329,
+        "contentId": 1664639329,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 183.0,
+        "lineGrossAmount": 183.0,
+        "discount": 7.5,
+        "lineTotalDiscount": 7.5,
+        "lineSellerDiscount": 7.5,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6873720395",
+            "lineItemPrice": 175.5,
+            "lineItemDiscount": 7.5,
+            "lineItemSellerDiscount": 7.5,
+            "lineItemTyDiscount": 0.0
+          },
+          {
+            "lineItemId": "6873720394",
+            "lineItemPrice": 175.5,
+            "lineItemDiscount": 7.5,
+            "lineItemSellerDiscount": 7.5,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "productColor": "Yeşil",
+        "id": 6021894984,
+        "lineId": 6021894984,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901069996298",
+        "orderLineItemStatusName": "Picking",
+        "price": 175.5,
+        "lineUnitPrice": 175.5,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1520,
+        "commission": 18,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790885597846,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790874798816,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790874803973,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790874825559,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790974740000,
+    "estimatedDeliveryEndDate": 1791233940000,
+    "totalPrice": 351.0,
+    "packageTotalPrice": 351.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790974740000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790874798807,
+    "lastModifiedDate": 1790874825559,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10915633502,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9750419864,
+      "firstName": "Nimet",
+      "lastName": "ÖNER",
+      "company": "",
+      "address1": "Gunesli 15 temmuz mah istiklal cd 1487sok no2 daire 6 gunesli bagcilar",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Bağcılar",
+      "districtId": 47,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 27027,
+      "neighborhood": "15 Temmuz Mah",
+      "phone": null,
+      "fullAddress": "Gunesli 15 temmuz mah istiklal cd 1487sok no2 daire 6 gunesli bagcilar     Bağcılar İstanbul",
+      "fullName": "Nimet ÖNER"
+    },
+    "orderNumber": "11663228194",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 183.0,
+    "packageGrossAmount": 183.0,
+    "totalDiscount": 15.0,
+    "packageSellerDiscount": 15.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 15.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9750419863,
+      "firstName": "Nimet",
+      "lastName": "ÖNER",
+      "company": "",
+      "address1": "Gunesli 15 temmuz mah istiklal cd 1487sok no2 daire 6 gunesli bagcilar",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Bağcılar",
+      "districtId": 47,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 27027,
+      "neighborhood": "15 Temmuz Mah",
+      "phone": null,
+      "fullAddress": "Gunesli 15 temmuz mah istiklal cd 1487sok no2 daire 6 gunesli bagcilar     Bağcılar İstanbul",
+      "fullName": "Nimet ÖNER"
+    },
+    "customerFirstName": "Nimet",
+    "customerEmail": "pf+5lqepmzz@trendyolmail.com",
+    "customerId": 68454621,
+    "supplierId": 0,
+    "customerLastName": "ÖNER",
+    "id": 4206158007,
+    "channelId": 1,
+    "shipmentPackageId": 4206158007,
+    "cargoTrackingNumber": 7270037623131947,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETEMDEF",
+        "sku": "2901069996298",
+        "stockCode": "AETEMDEF",
+        "productName": "Temrin Defteri AETEMDEF, one size",
+        "productCode": 1664639329,
+        "contentId": 1664639329,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 183.0,
+        "lineGrossAmount": 183.0,
+        "discount": 15.0,
+        "lineTotalDiscount": 15.0,
+        "lineSellerDiscount": 15.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6873554800",
+            "lineItemPrice": 168.0,
+            "lineItemDiscount": 15.0,
+            "lineItemSellerDiscount": 15.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "productColor": "Yeşil",
+        "id": 6021748696,
+        "lineId": 6021748696,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901069996298",
+        "orderLineItemStatusName": "Picking",
+        "price": 168.0,
+        "lineUnitPrice": 168.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1520,
+        "commission": 18,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790883286519,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790872531797,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790872534791,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1790872651260,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1790974740000,
+    "estimatedDeliveryEndDate": 1791233940000,
+    "totalPrice": 168.0,
+    "packageTotalPrice": 168.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1790974740000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790872531788,
+    "lastModifiedDate": 1790872651260,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10915513094,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9750097349,
       "firstName": "Cansu",
       "lastName": "Karataş",
@@ -114,7 +485,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "AE2WDEKRBT-LI",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 1049.0,
         "lineUnitPrice": 1049.0,
         "fastDeliveryOptions": [
@@ -139,10 +510,14 @@
       {
         "createdDate": 1790868870046,
         "status": "Created"
+      },
+      {
+        "createdDate": 1790871773108,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1790974740000,
@@ -153,7 +528,7 @@
     "agreedDeliveryDate": 1790974740000,
     "fastDelivery": true,
     "originShipmentDate": 1790868864759,
-    "lastModifiedDate": 1790868870046,
+    "lastModifiedDate": 1790871773108,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
