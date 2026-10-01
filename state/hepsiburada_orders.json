@@ -590,6 +590,132 @@
       "customerName": "Vahap Tatar",
       "estimatedArrivalDate": "2026-10-06T15:30:00Z",
       "totalDeci": 2.2
+    },
+    {
+      "id": "6abeeb57-4524-d247-8ec4-c77c06060606",
+      "status": "Open",
+      "customerId": "e16faa15-9e63-4a74-8f44-cac4e8fe2ba0",
+      "orderDate": "2026-10-02T02:23:01",
+      "dueDate": "2026-10-02T18:30:00",
+      "barcode": "62955234140838",
+      "packageNumber": "5523414083",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Çınarlı mah. Ak Sok. No:3 ÇINARLI DERİNCE Kocaeli",
+      "recipientName": "Cihan Mert Erdem",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ÇINARLI",
+      "shippingTown": "DERİNCE",
+      "shippingCity": "Kocaeli",
+      "email": "4889330045_5523414083@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Cihan Mert Erdem",
+      "billingAddress": "Çınarlı mah. Ak Sok. No:3 ÇINARLI DERİNCE Kocaeli",
+      "billingCity": "Kocaeli",
+      "billingTown": "DERİNCE",
+      "billingDistrict": "ÇINARLI",
+      "billingPostalCode": "41900",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 289.8
+      },
+      "items": [
+        {
+          "lineItemId": "6abeeb55-f549-f5bc-0014-cd5006060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "vat": 48.3,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 289.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.04
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 289.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4889330045",
+          "orderDate": "2026-10-02T02:23:01",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Cihan Erdem",
+      "estimatedArrivalDate": "2026-10-06T15:30:00Z",
+      "totalDeci": 2
     }
   ]
 }
