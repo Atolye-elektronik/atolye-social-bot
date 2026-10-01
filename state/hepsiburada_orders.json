@@ -1,4 +1,343 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6abe6e17-556d-a3f2-e4cd-362c06060606",
+      "status": "Open",
+      "customerId": "c3a6ac51-9843-441a-8926-86b35d4d0f65",
+      "orderDate": "2026-10-01T17:28:38",
+      "dueDate": "2026-10-02T18:30:00",
+      "barcode": "62955232936842",
+      "packageNumber": "5523293684",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Konya/karapınar Sandıklı mah. Kadınhanı Cad. F11A kat 4 numara 8 (sonkat) SANDIKLI KARAPINAR Konya",
+      "recipientName": "Necati Aykaç",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "SANDIKLI",
+      "shippingTown": "KARAPINAR",
+      "shippingCity": "Konya",
+      "email": "4661741880_5523293684@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Necati Aykaç",
+      "billingAddress": "Konya/karapınar Sandıklı mah. Kadınhanı Cad. F11A kat 4 numara 8  SANDIKLI KARAPINAR Konya",
+      "billingCity": "Konya",
+      "billingTown": "KARAPINAR",
+      "billingDistrict": "SANDIKLI",
+      "billingPostalCode": "42400",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1391
+      },
+      "items": [
+        {
+          "lineItemId": "6abe6e16-6f0d-4678-d31c-10f306060606",
+          "listingId": "3b6c4e12-982f-401e-8789-3db2d198fedd",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000I2N6VA",
+          "merchantSku": "AEISDP10",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 1239.75
+          },
+          "vat": 206.62,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 1239.75
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 120.53
+          },
+          "commissionRate": 8.5,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 178.25
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 178.25
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1418
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1418
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Işletmelerde Mesleki Eğitim Iş Dosyası (Staj Defteri) 10'lu Sınıf Paketi",
+          "orderNumber": "4661741880",
+          "orderDate": "2026-10-01T17:28:38",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2909990002019",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002074557070.jpg",
+          "deci": 1
+        },
+        {
+          "lineItemId": "6abe6e16-6f0d-4678-d31c-10f206060606",
+          "listingId": "84aac006-0748-4014-ba25-562b89d3424b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPD033",
+          "merchantSku": "AESTJDFTR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 151.25
+          },
+          "vat": 25.21,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 151.25
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 14.71
+          },
+          "commissionRate": 8.5,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 21.75
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 21.75
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 173
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 173
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Meslek Lisesi ve Mesem Öğrencileri Için Işletmelerde Mesleki Eğitim Iş Dosyası(Staj Defteri)- 1 Adet",
+          "orderNumber": "4661741880",
+          "orderDate": "2026-10-01T17:28:38",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901611068909",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033336864.jpg",
+          "deci": 0.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "rtkyyzf rtkyyzf",
+      "estimatedArrivalDate": "2026-10-06T15:30:00Z",
+      "totalDeci": 1.1
+    },
+    {
+      "id": "6abe7291-3f15-84ad-da89-fae006060606",
+      "status": "Open",
+      "customerId": "ff375927-cc75-488e-adfe-ffa500113198",
+      "orderDate": "2026-10-01T17:47:43",
+      "dueDate": "2026-10-02T18:30:00",
+      "barcode": "62955232981170",
+      "packageNumber": "5523298117",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Efrail tüylüoğlu \nbağlık mah.fırın sok no.59 \nkdz.ereğli BAĞLIK EREĞLİ Zonguldak",
+      "recipientName": "Efrail Tüylüoğlu",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BAĞLIK",
+      "shippingTown": "EREĞLİ",
+      "shippingCity": "Zonguldak",
+      "email": "4376221600_5523298117@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Efrail Tüylüoğlu",
+      "billingAddress": "Efrail tüylüoğlu \nbağlık mah.fırın sok no.59 \nkdz.ereğli BAĞLIK EREĞLİ Zonguldak",
+      "billingCity": "Zonguldak",
+      "billingTown": "EREĞLİ",
+      "billingDistrict": "BAĞLIK",
+      "billingPostalCode": "67300",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 149.8
+      },
+      "items": [
+        {
+          "lineItemId": "6abe7290-fa74-ce69-4ded-594c06060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "vat": 24.97,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4376221600",
+          "orderDate": "2026-10-01T17:47:43",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Efrail Tüylüoğlu",
+      "estimatedArrivalDate": "2026-10-06T15:30:00Z",
+      "totalDeci": 2
+    }
+  ]
 }
