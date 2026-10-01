@@ -80,8 +80,14 @@ def hedef_stoklar(recete, parca):
     # urunlerin fiyat stogu guncellenemez" hatasi veriyor (13.09). Listeden cikar.
     for k in S.get("pasif", []):
         hedef.pop(k, None)
+    # Kritik esikten muaf kodlar: son adetler de satilsin, siparisle dusup
+    # 0'da kapansin (01.10: Temrin defteri tekli 2 adet).
+    esiksiz = set(S.get("esiksiz", []))
     for k, v in list(hedef.items()):
         if v is None:
+            continue
+        if k in esiksiz:
+            hedef[k] = max(0, min(v, TAVAN))
             continue
         hedef[k] = 0 if v <= KRITIK_ESIK else min(v, TAVAN)
     # Kullanicinin elle sabitledigi stoklar: kritik esik ve set hesabindan

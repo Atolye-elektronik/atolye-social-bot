@@ -59,7 +59,7 @@
   "AEUNOR3": {
    "variant": 48378119225573,
    "item": 50483049070821,
-   "qty": 67,
+   "qty": 66,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -101,7 +101,7 @@
   "AEJK2040DE": {
    "variant": 48773514133733,
    "item": 50879705678053,
-   "qty": 232,
+   "qty": 231,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -157,7 +157,7 @@
   "AESG90": {
    "variant": 48913042800869,
    "item": 51019867291877,
-   "qty": 96,
+   "qty": 95,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -185,7 +185,7 @@
   "AEL298NMTRT": {
    "variant": 48995570680037,
    "item": 51102764105957,
-   "qty": 35,
+   "qty": 34,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -220,7 +220,7 @@
   "AEL298N": {
    "variant": 48995595911397,
    "item": 51102789337317,
-   "qty": 35,
+   "qty": 34,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -234,7 +234,7 @@
   "AEHCSR04": {
    "variant": 48995598565605,
    "item": 51102791991525,
-   "qty": 134,
+   "qty": 133,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -248,7 +248,7 @@
   "AEHVYST6P": {
    "variant": 48995603316965,
    "item": 51102796742885,
-   "qty": 10,
+   "qty": 33,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -325,14 +325,14 @@
   "AETEMDEF": {
    "variant": 49039183085797,
    "item": 51146610442469,
-   "qty": 15,
+   "qty": 2,
    "status": "ACTIVE",
    "tracked": true
   },
   "AET2WDRBT": {
    "variant": 49062024315109,
    "item": 51169512030437,
-   "qty": 8,
+   "qty": 7,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -367,7 +367,7 @@
   "AEJK2040222": {
    "variant": 49247046533349,
    "item": 51355210055909,
-   "qty": 116,
+   "qty": 115,
    "status": "ARCHIVED",
    "tracked": true
   },
@@ -430,28 +430,28 @@
   "AE6X13PLK5": {
    "variant": 49248706298085,
    "item": 51356869820645,
-   "qty": 0,
+   "qty": 9,
    "status": "DRAFT",
    "tracked": true
   },
   "AEJK2040EE3": {
    "variant": 49248843890917,
    "item": 51357007413477,
-   "qty": 232,
+   "qty": 231,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AE2WDEKRBT": {
    "variant": 49494853157093,
    "item": 51603390038245,
-   "qty": 8,
+   "qty": 7,
    "status": "ACTIVE",
    "tracked": true
   },
   "AESTJDFTR": {
    "variant": 49882313720037,
    "item": 51992755634405,
-   "qty": 740,
+   "qty": 728,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -465,7 +465,7 @@
   "AEACDMMR": {
    "variant": 49896381055205,
    "item": 52006871728357,
-   "qty": 43,
+   "qty": 42,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -486,7 +486,7 @@
   "AETP4056": {
    "variant": 49896410317029,
    "item": 52006901448933,
-   "qty": 113,
+   "qty": 110,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -500,7 +500,7 @@
   "AEPY18650": {
    "variant": 50362958250213,
    "item": 52474039075045,
-   "qty": 194,
+   "qty": 189,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -514,7 +514,7 @@
   "AEHC06RAK": {
    "variant": 50755593666789,
    "item": 52866836791525,
-   "qty": 8,
+   "qty": 7,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -528,7 +528,7 @@
   "AEIRRAK": {
    "variant": 50755606315237,
    "item": 52866849439973,
-   "qty": 8,
+   "qty": 7,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -556,7 +556,7 @@
   "AESTEPPS": {
    "variant": 50755609821413,
    "item": 52866852946149,
-   "qty": 67,
+   "qty": 66,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -584,7 +584,7 @@
   "AEPROTOTIPKIT": {
    "variant": 50755670671589,
    "item": 52866913861861,
-   "qty": 10,
+   "qty": 28,
    "status": "ARCHIVED",
    "tracked": true
   },
@@ -598,7 +598,7 @@
   "AESARJKT": {
    "variant": 50755682533605,
    "item": 52866925723877,
-   "qty": 113,
+   "qty": 110,
    "status": "DRAFT",
    "tracked": true
   },
@@ -619,7 +619,7 @@
   "AE3IN1ROBOT": {
    "variant": 51103305400549,
    "item": 53214832165093,
-   "qty": 8,
+   "qty": 7,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -661,35 +661,35 @@
   "AET2WDRBT-LI": {
    "variant": 52037951881445,
    "item": 54150018892005,
-   "qty": 8,
+   "qty": 7,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE2WDEKRBT-LI": {
    "variant": 52037973967077,
    "item": 54150040977637,
-   "qty": 8,
+   "qty": 7,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEHC06RAK-LI": {
    "variant": 52037982814437,
    "item": 54150049824997,
-   "qty": 8,
+   "qty": 7,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEIRRAK-LI": {
    "variant": 52037997297893,
    "item": 54150064308453,
-   "qty": 8,
+   "qty": 7,
    "status": "ACTIVE",
    "tracked": true
   },
   "AE3IN1ROBOT-LI": {
    "variant": 52038010536165,
    "item": 54150077546725,
-   "qty": 8,
+   "qty": 7,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -717,14 +717,14 @@
   "AESTJDFTR-10": {
    "variant": 52076215042277,
    "item": 54188366954725,
-   "qty": 74,
+   "qty": 72,
    "status": "ACTIVE",
    "tracked": false
   },
   "AESTJDFTR-20": {
    "variant": 52076215075045,
    "item": 54188366987493,
-   "qty": 37,
+   "qty": 36,
    "status": "ACTIVE",
    "tracked": false
   },
@@ -885,35 +885,35 @@
   "AEMYNK": {
    "variant": 52756076331237,
    "item": 54869121695973,
-   "qty": 41,
+   "qty": 35,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEMYNK3": {
    "variant": 52756076462309,
    "item": 54869121827045,
-   "qty": 13,
+   "qty": 11,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AEPY18650T": {
    "variant": 52756076495077,
    "item": 54869121859813,
-   "qty": 169,
+   "qty": 161,
    "status": "ACTIVE",
    "tracked": true
   },
   "AEPY18650T5": {
    "variant": 52756076658917,
    "item": 54869122023653,
-   "qty": 33,
+   "qty": 32,
    "status": "ARCHIVED",
    "tracked": true
   },
   "AESARJKT1": {
    "variant": 52756076986597,
    "item": 54869122351333,
-   "qty": 113,
+   "qty": 110,
    "status": "ACTIVE",
    "tracked": true
   },
@@ -1084,5 +1084,11 @@
   "AETYYNKSK1",
   "AEESP32TC38-2"
  ],
- "sabit": {"AETMRNDFTR10": 1, "AETEMDEF-10": 1, "AETEMDEF": 2}
+ "sabit": {
+  "AETMRNDFTR10": 1,
+  "AETEMDEF-10": 1
+ },
+ "esiksiz": [
+  "AETEMDEF"
+ ]
 }
