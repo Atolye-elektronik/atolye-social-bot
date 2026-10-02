@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/2026-10-02-video-2wd-govde-montaj.mp4
-publish_at: 2026-10-02 13:05
+publish_at: 2026-10-02 12:55
 youtube_title: 2WD Robot Araba Govdesi Kurulumu - Adim Adim Montaj
 ---
 Robot araba gövdesi adım adım kuruluyor 🤖🔧
