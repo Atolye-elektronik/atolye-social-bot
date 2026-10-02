@@ -700,3 +700,5 @@
 {"an": "2026-10-02T17:45", "kanal": "shopify", "no": "#1052", "kod": "AESTJDFTR-30", "adet": 2, "dusum": {"AESTJDFTR": 60}, "kuru": false}
 {"an": "2026-10-02T18:31", "kanal": "trendyol", "no": "11666974774", "kod": "AEDUY-10", "adet": 2, "dusum": {"AEDUY-1": 20}, "kuru": false}
 {"an": "2026-10-02T20:49", "kanal": "hepsiburada", "no": "4643821534", "kod": "AEACDMMR", "adet": 2, "dusum": {"AEACDMMR": 2}, "kuru": false}
+{"an": "2026-10-02T21:13", "kanal": "trendyol", "no": "11667534301", "kod": "AESTJDFTR-10", "adet": 1, "dusum": {"AESTJDFTR": 10}, "kuru": false}
+{"an": "2026-10-02T21:13", "kanal": "trendyol", "no": "11667534301", "kod": "AESTJDFTR", "adet": 1, "dusum": {"AESTJDFTR": 1}, "kuru": false}
