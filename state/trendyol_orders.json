@@ -1,6 +1,194 @@
 [
   {
     "shipmentAddress": {
+      "id": 9756696874,
+      "firstName": "Orhan",
+      "lastName": "Pala",
+      "company": "",
+      "address1": "635. sk. serin life sit. A Blok No 27",
+      "address2": "",
+      "city": "Diyarbakır",
+      "cityCode": 21,
+      "district": "Kayapınar",
+      "districtId": 1049,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "21000",
+      "countryCode": "TR",
+      "neighborhoodId": 24326,
+      "neighborhood": "Medya Mah",
+      "phone": null,
+      "fullAddress": "635. sk. serin life sit. A Blok No 27     Kayapınar Diyarbakır",
+      "fullName": "Orhan Pala"
+    },
+    "orderNumber": "11666974774",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 520.0,
+    "packageGrossAmount": 520.0,
+    "totalDiscount": 25.4,
+    "packageSellerDiscount": 25.4,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 25.4,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 10.4
+      },
+      {
+        "displayName": "Atölye Elektronik Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 15
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9756696873,
+      "firstName": "Orhan",
+      "lastName": "Pala",
+      "company": "",
+      "address1": "635. sk. serin life sit. A Blok No 27",
+      "address2": "",
+      "city": "Diyarbakır",
+      "cityCode": 21,
+      "district": "Kayapınar",
+      "districtId": 1049,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "21000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 24326,
+      "neighborhood": "Medya Mah",
+      "phone": null,
+      "fullAddress": "635. sk. serin life sit. A Blok No 27     Kayapınar Diyarbakır",
+      "fullName": "Orhan Pala"
+    },
+    "customerFirstName": "Orhan",
+    "customerEmail": "pf+259o6mre@trendyolmail.com",
+    "customerId": 55460384,
+    "supplierId": 0,
+    "customerLastName": "Pala",
+    "id": 4209080475,
+    "channelId": 1,
+    "shipmentPackageId": 4209080475,
+    "cargoTrackingNumber": 7270037652891676,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 2,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEDUY-10",
+        "sku": "2907418862238",
+        "stockCode": "AEDUY-10",
+        "productName": "Mini Duy (2,5V Ampul Uyumlu) - Fen Deney Lamba Duyu - Renkli Duy - 10'lu Paket AEDUY-10, one size",
+        "productCode": 1670258126,
+        "contentId": 1670258126,
+        "productOrigin": "CN",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 260.0,
+        "lineGrossAmount": 260.0,
+        "discount": 12.7,
+        "lineTotalDiscount": 12.7,
+        "lineSellerDiscount": 12.7,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6878289479",
+            "lineItemPrice": 247.3,
+            "lineItemDiscount": 12.7,
+            "lineItemSellerDiscount": 12.7,
+            "lineItemTyDiscount": 0.0
+          },
+          {
+            "lineItemId": "6878289480",
+            "lineItemPrice": 247.3,
+            "lineItemDiscount": 12.7,
+            "lineItemSellerDiscount": 12.7,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6025861232,
+        "lineId": 6025861232,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2907418862238",
+        "orderLineItemStatusName": "ReadyToShip",
+        "price": 247.3,
+        "lineUnitPrice": 247.3,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 12,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1790975448205,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1790964684178,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1790964689915,
+        "status": "Created"
+      }
+    ],
+    "shipmentPackageStatus": "ReadyToShip",
+    "status": "Created",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1791061140000,
+    "estimatedDeliveryEndDate": 1791406740000,
+    "totalPrice": 494.6,
+    "packageTotalPrice": 494.6,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1791061140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1790964684170,
+    "lastModifiedDate": 1790964689915,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10918858634,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9755538308,
       "firstName": "Tamer",
       "lastName": "Sancak",
