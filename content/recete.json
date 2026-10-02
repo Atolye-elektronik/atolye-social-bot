@@ -177,6 +177,10 @@
   "AE150LED": {
    "parca": "AELED5K",
    "adet": 150
+  },
+  "AEISD30": {
+   "parca": "AESTJDFTR",
+   "adet": 30
   }
  },
  "setler": {
