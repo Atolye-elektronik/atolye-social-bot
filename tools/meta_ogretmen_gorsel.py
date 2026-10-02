@@ -68,11 +68,11 @@ REKLAMLAR = [
         # egitimi ogrencilerinin hepsi ayni is dosyasini tutuyor.
         "serit": "MESLEK LİSESİ · MESEM · ÇIRAKLIK İÇİN",
         "foto": "kaynak/staj-defteri.jpg",
-        "rozet_fiyat": "10+ adette tanesi 85 TL",
+        "rozet_fiyat": "10+ adette tanesi 90 TL",   # 03.10: tekli 100, paketler adet basi 90
         "baslik": "Staj defteri, tek siparişte",
         "destek": "Tek fatura · tek kargo · aynı gün gönderim",
-        "fiyatlar": [("1 adet", "90 TL"), ("10 adet", "850 TL"),
-                     ("20 adet", "1.700 TL"), ("30 adet", "2.550 TL")],
+        "fiyatlar": [("1 adet", "100 TL"), ("10 adet", "900 TL"),
+                     ("20 adet", "1.800 TL"), ("30 adet", "2.700 TL")],
         "toptan": None,
     },
     {
@@ -137,11 +137,11 @@ REKLAMLAR = [
         "dosya": "meta-mesem-staj-defteri.png",
         "serit": "MESLEKİ EĞİTİM MERKEZİ · MESEM İÇİN",
         "foto": "kaynak/staj-defteri.jpg",
-        "rozet_fiyat": "10+ adette tanesi 85 TL",
+        "rozet_fiyat": "10+ adette tanesi 90 TL",   # 03.10: tekli 100, paketler adet basi 90
         "baslik": "MESEM staj defteri",
         "destek": "İşletmelerde mesleki eğitim iş dosyası",
-        "fiyatlar": [("1 adet", "90 TL"), ("10 adet", "850 TL"),
-                     ("20 adet", "1.700 TL"), ("30 adet", "2.550 TL")],
+        "fiyatlar": [("1 adet", "100 TL"), ("10 adet", "900 TL"),
+                     ("20 adet", "1.800 TL"), ("30 adet", "2.700 TL")],
         "toptan": None,
     },
 ]
