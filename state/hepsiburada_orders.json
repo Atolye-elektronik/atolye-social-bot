@@ -1,4 +1,131 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ac01676-230d-3acc-c781-d3fa06060606",
+      "status": "Open",
+      "customerId": "381f4ce6-e156-4bbd-90b1-ea77aace9c9c",
+      "orderDate": "2026-10-02T23:39:16",
+      "dueDate": "2026-10-03T18:30:00",
+      "barcode": "62955236969918",
+      "packageNumber": "5523696991",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Şenol Sokak. No:11 Kat:5 Daire:6 CEVİZLİ MALTEPE İstanbul",
+      "recipientName": "İlkay Sürücü",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "CEVİZLİ",
+      "shippingTown": "MALTEPE",
+      "shippingCity": "İstanbul",
+      "email": "4643821534_5523696991@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "İlkay Sürücü",
+      "billingAddress": "Şenol Sokak. No:11 Kat:5 Daire:6 CEVİZLİ MALTEPE İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "MALTEPE",
+      "billingDistrict": "CEVİZLİ",
+      "billingPostalCode": "34846",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 289.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ac01675-362c-9559-6c3c-5a8906060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "vat": 48.3,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 289.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.04
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 289.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4643821534",
+          "orderDate": "2026-10-02T23:39:16",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "ilkay sürücü",
+      "estimatedArrivalDate": "2026-10-07T15:30:00Z",
+      "totalDeci": 2
+    }
+  ]
 }
