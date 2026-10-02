@@ -26,6 +26,11 @@ KRITIK_ESIK = int(os.environ.get("STOK_KRITIK_ESIK", "2"))   # bu ve alti -> dig
 # parca stoguna uygulamak 13.09'da Arduino setlerini yanlis kisitlamisti
 # (24.425 direnc 500'e kirpilinca 20 dirençli set 25 adede dusuyordu).
 TAVAN = int(os.environ.get("STOK_TAVAN", "500"))
+# 02.10.2026: ayni adet 7 kanala birden basildigi icin az kalan parcada kanallar
+# ayni anda satip stogu asiyordu (takim cantasi: elde olmayan pense satildi).
+# AZ_STOK ve alti adetlerde kanallara GUVENLIK_PAYI kadar eksik basilir (en az 1).
+AZ_STOK = int(os.environ.get("STOK_AZ_STOK", "8"))
+GUVENLIK_PAYI = int(os.environ.get("STOK_GUVENLIK_PAYI", "2"))
 DURUM = os.path.join(KOK, "state", "stok_dagitim.json")
 
 
@@ -89,7 +94,12 @@ def hedef_stoklar(recete, parca):
         if k in esiksiz:
             hedef[k] = max(0, min(v, TAVAN))
             continue
-        hedef[k] = 0 if v <= KRITIK_ESIK else min(v, TAVAN)
+        if v <= KRITIK_ESIK:
+            hedef[k] = 0
+        elif v <= AZ_STOK:
+            hedef[k] = max(1, v - GUVENLIK_PAYI)
+        else:
+            hedef[k] = min(v, TAVAN)
     # Kullanicinin elle sabitledigi stoklar: kritik esik ve set hesabindan
     # bagimsiz, her dagitimda bu deger basilir (30.09: Temrin 10'lu paket 1).
     for k, v in S.get("sabit", {}).items():
