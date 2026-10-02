@@ -38,7 +38,7 @@ KAYIT = KOK / "state" / "nobetci.json"
 # bu yuzden tolerans genis; aylik is icin cok daha genis.
 VARSAYILAN_TOLERANS_DK = 90
 TOLERANS_DK = {
-    "stok-siparis.yml": 45,            # siparis bildirimi: 15 dk'da bir donuyor, 45 dk sessizlik zaten fazla
+    "stok-siparis.yml": 20,            # 02.10: 5 dk tetikleniyor; 20 dk sessizlik sorun
     "threads-token.yml": 24 * 60,      # ayda bir, gecikmesi kritik degil
     "haftalik-rapor.yml": 6 * 60,      # haftalik
     "tiktok-zamanla.yml": 6 * 60,      # haftada iki
@@ -233,7 +233,12 @@ def main() -> int:
             print(f"   {akis['dosya']}: workflow_dispatch yok, elle bakilmali")
             continue
         try:
-            gh("workflow", "run", akis["dosya"], "--repo", DEPO)
+            ek = []
+            if akis["dosya"] == "stok-siparis.yml":
+                # 02.10: girdisiz tetikleme inputs.mod varsayilanini ("kuru") kullaniyordu,
+                # siparisler dusulmuyordu. Stok isi her zaman uygula modunda tetiklenir.
+                ek = ["-f", "mod=uygula"]
+            gh("workflow", "run", akis["dosya"], "--repo", DEPO, *ek)
             print(f"   tetiklendi: {akis['ad']}")
         except RuntimeError as e:
             print(f"   TETIKLENEMEDI {akis['dosya']}: {e}")

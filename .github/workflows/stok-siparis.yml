@@ -14,8 +14,10 @@ on:
     # KOR NOKTA birakiyordu; pazaryerleri o saatlerde de siparis aliyor.
     # AEACDMMR (dimmer) tam bu araliktaki 2 siparisle stok -1'e dustu ve
     # hicbir kanala 0 basilamadi cunku is o saatlerde hic calismiyordu.
-    # Artik 7/24 15 dakikada bir calisiyor.
-    - cron: "*/15 * * * *"
+    # Artik 7/24 calisiyor. 02.10: 5 dakikaya indirildi (kullanici istegi); GitHub
+    # cron'u gecikip atlayabildigi icin asil tetikleyici Windows gorevi
+    # AtolyeStokTetik (tools/stok_tetik.py, 5 dk, mod=uygula).
+    - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
       mod:
