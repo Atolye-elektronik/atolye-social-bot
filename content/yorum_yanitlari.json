@@ -12,35 +12,93 @@
   ],
   "kurallar": [
     {
-      "anahtarlar": ["fiyat", "kaç para", "kac para", "ne kadar", "ücret", "ucret"],
+      "anahtarlar": [
+        "2WDGOVDE",
+        "2wdgovde",
+        "2wd govde",
+        "2wd gövde"
+      ],
+      "yanit": "2WD Robot Araba Kiti (demonte gövde) burada 👉 atolyeelektronik.com/products/2wd-robot-araba-kiti-demonte-robotik-govde — ATOLYE10 koduyla %10 indirim! 🤖"
+    },
+    {
+      "anahtarlar": [
+        "fiyat",
+        "kaç para",
+        "kac para",
+        "ne kadar",
+        "ücret",
+        "ucret"
+      ],
       "yanit": "Güncel fiyatı atolyeelektronik.com üzerinden görebilirsin, kampanyalarda değişebiliyor. 🙌"
     },
     {
-      "anahtarlar": ["kargo", "gönderim", "gonderim", "ne zaman gelir", "teslimat"],
+      "anahtarlar": [
+        "kargo",
+        "gönderim",
+        "gonderim",
+        "ne zaman gelir",
+        "teslimat"
+      ],
       "yanit": "Siparişler aynı gün kargoya veriliyor, Türkiye geneli 1-3 iş gününde teslim ediliyor. 📦"
     },
     {
-      "anahtarlar": ["stok", "var mı", "var mi", "mevcut", "tükendi", "tukendi"],
+      "anahtarlar": [
+        "stok",
+        "var mı",
+        "var mi",
+        "mevcut",
+        "tükendi",
+        "tukendi"
+      ],
       "yanit": "Stok durumunu atolyeelektronik.com'daki ürün sayfasından anlık görebilirsin."
     },
     {
-      "anahtarlar": ["link", "nereden", "nerden", "nasıl alırım", "nasil alirim", "sipariş", "siparis"],
+      "anahtarlar": [
+        "link",
+        "nereden",
+        "nerden",
+        "nasıl alırım",
+        "nasil alirim",
+        "sipariş",
+        "siparis"
+      ],
       "yanit": "Profildeki bağlantıdan ya da atolyeelektronik.com üzerinden sipariş verebilirsin. 🔗"
     },
     {
-      "anahtarlar": ["arduino", "uyumlu mu", "çalışır mı", "calisir mi"],
+      "anahtarlar": [
+        "arduino",
+        "uyumlu mu",
+        "çalışır mı",
+        "calisir mi"
+      ],
       "yanit": "Evet, Arduino ile uyumlu. Kutudan çıkan örnek kodlarla ilk projeni kısa sürede kurabilirsin."
     },
     {
-      "anahtarlar": ["kaç yaş", "kac yas", "çocuk", "cocuk", "yaş grubu", "yas grubu"],
+      "anahtarlar": [
+        "kaç yaş",
+        "kac yas",
+        "çocuk",
+        "cocuk",
+        "yaş grubu",
+        "yas grubu"
+      ],
       "yanit": "Set 12 yaş ve üzeri için uygun; küçük yaşlarda bir yetişkin eşliğinde kullanılmasını öneririz."
     },
     {
-      "anahtarlar": ["fatura", "garanti", "iade"],
+      "anahtarlar": [
+        "fatura",
+        "garanti",
+        "iade"
+      ],
       "yanit": "Tüm siparişlerde fatura kesiliyor, 14 gün içinde koşulsuz iade hakkın var."
     },
     {
-      "anahtarlar": ["okul", "toplu", "kurumsal", "bayilik"],
+      "anahtarlar": [
+        "okul",
+        "toplu",
+        "kurumsal",
+        "bayilik"
+      ],
       "yanit": "Okul ve kurumsal toplu alımlar için bize atolyeelektronik07@gmail.com adresinden yazabilirsin. 🏫"
     }
   ]
