@@ -38,7 +38,7 @@ SITE = "https://atolyeelektronik.com"
 # Tekli staj defteri. Bilerek en ucuz ve her zaman stokta olan urun secildi;
 # sinif paketlerinde stok takibi kapali oldugu icin onlar hatayi yakalamaz.
 VARYANT = 49882313720037
-BEKLENEN_FIYAT = 90.00
+BEKLENEN_FIYAT = 100.00   # 03.10: tekli 90 -> 100
 URUN_YOLU = "/products/meslek-lisesi-ve-mesem-ogrencileri-icin-isletmelerde-mesleki-egitim-is-dosyasi"
 
 # Odeme sayfasinda bunlardan en az biri gorunmeli
