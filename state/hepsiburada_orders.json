@@ -9,7 +9,7 @@
       "dueDate": "2026-10-03T18:30:00",
       "barcode": "62955236969918",
       "packageNumber": "5523696991",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Şenol Sokak. No:11 Kat:5 Daire:6 CEVİZLİ MALTEPE İstanbul",
       "recipientName": "İlkay Sürücü",
       "shippingCountryCode": "TR",
@@ -126,6 +126,132 @@
       "customerName": "ilkay sürücü",
       "estimatedArrivalDate": "2026-10-07T15:30:00Z",
       "totalDeci": 2
+    },
+    {
+      "id": "6ac09c8f-9e49-d1a8-2c49-d33c06060606",
+      "status": "Open",
+      "customerId": "176fb0de-6e7f-4131-95f8-65dbbf8b07d5",
+      "orderDate": "2026-10-03T09:11:26",
+      "dueDate": "2026-10-03T18:30:00",
+      "barcode": "62955237451285",
+      "packageNumber": "5523745128",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Yalova Üniversitesi Merkez Kampüsü BAHÇELİEVLER MERKEZ Yalova",
+      "recipientName": "Gamze Atalay",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BAHÇELİEVLER",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Yalova",
+      "email": "4357339591_5523745128@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Gamze Atalay",
+      "billingAddress": "Gazi Hasan Sağlık sok. No:4 Yalova City      A/Blok  Daire:6 GAZİ OSMAN PAŞA MERKEZ Yalova",
+      "billingCity": "Yalova",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "GAZİ OSMAN PAŞA",
+      "billingPostalCode": "77200",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 166
+      },
+      "items": [
+        {
+          "lineItemId": "6ac09c8f-7a57-cc3b-718c-ea0306060606",
+          "listingId": "84aac006-0748-4014-ba25-562b89d3424b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPD033",
+          "merchantSku": "AESTJDFTR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 166
+          },
+          "vat": 27.67,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 166
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 14.11
+          },
+          "commissionRate": 8.5,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 166
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 166
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Meslek Lisesi ve Mesem Öğrencileri Için Işletmelerde Mesleki Eğitim Iş Dosyası(Staj Defteri)- 1 Adet",
+          "orderNumber": "4357339591",
+          "orderDate": "2026-10-03T09:11:26",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901611068909",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033336864.jpg",
+          "deci": 0.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "GAMZE ATALAY",
+      "estimatedArrivalDate": "2026-10-06T15:30:00Z",
+      "totalDeci": 0.1
     }
   ]
 }
