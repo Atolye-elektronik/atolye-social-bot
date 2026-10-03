@@ -73,8 +73,12 @@ def video_hikaye(kaynak: str | pathlib.Path, hedef: str | pathlib.Path | None = 
 
 
 def hikaye_surumu(kaynak: str | pathlib.Path, video: bool = False) -> pathlib.Path:
-    """Varsa hazir hikaye surumunu, yoksa uretip dondurur; uretemezse kaynagi."""
-    kaynak = pathlib.Path(kaynak)
+    """Varsa hazir hikaye surumunu, yoksa uretip dondurur; uretemezse kaynagi.
+
+    03.10.2026: post dosyalarinda Windows'ta yazilmis ters egik cizgili yollar var
+    (Windows ayiraci). Linux runner'da bunlar tek dosya adi sayiliyor,
+    exists() False donuyordu ve ham kare gorsel hikayeye gidip kirpiliyordu."""
+    kaynak = pathlib.Path(str(kaynak).replace("\\", "/"))
     hazir = hikaye_yolu(kaynak)
     if hazir.exists():
         return hazir
@@ -97,7 +101,10 @@ def eksikleri_uret(kok: str | pathlib.Path = "posts/media") -> int:
     """
     kok = pathlib.Path(kok)
     hedefler = [p for p in sorted(kok.glob("*")) if p.suffix.lower() in (".jpg", ".jpeg", ".png")]
-    hedefler += sorted(kok.glob("carousel/*/01-kapak.jpg"))
+    # 03.10.2026: yalniz 01-kapak.jpg aliniyordu; senaryo carousel'lerinin ilk slaydi
+    # 01-kanca.jpg oldugu icin hikaye surumu hic uretilmedi ve hikaye kirpildi.
+    # Her carousel klasorunun ILK slaydi (01-*) hikayeye gider.
+    hedefler += sorted(p for p in kok.glob("carousel/*/01-*") if p.suffix.lower() in (".jpg", ".jpeg", ".png"))
     n = 0
     for p in hedefler:
         if EK in p.stem or hikaye_yolu(p).exists():
