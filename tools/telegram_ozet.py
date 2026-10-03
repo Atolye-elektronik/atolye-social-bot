@@ -33,7 +33,8 @@ for _p in (os.path.join(KOK, ".env"),):          # yerelde calistirinca anahtarl
 from stok import bildirim, siparis  # noqa: E402
 
 # Bu kelimeler durumda geciyorsa is bitmis demektir; gerisi "kargoya verilmedi".
-KAPALI = ("ship", "deliver", "teslim", "fulfil", "cancel", "iptal", "iade", "return", "unsupplied", "refund")
+KAPALI = ("ship", "deliver", "teslim", "fulfil", "cancel", "iptal", "iade", "return", "unsupplied", "refund",
+          "tamamlan", "gonderil", "kargoya_ver")  # son ucu PttAVM siparisDurumu
 ACIK_ZORLA = ("unfulfilled", "unshipped", "unpacked", "partially_fulfilled", "partially fulfilled",
               "shipment_picking", "picking", "hazirlan", "hazırlan")  # Idefix "shipment_picking" icinde "ship" geciyor
 DURUM_AD = {"picking": "etiket basildi, kargo almadi", "created": "yeni, hazirlanmadi",
@@ -41,9 +42,10 @@ DURUM_AD = {"picking": "etiket basildi, kargo almadi", "created": "yeni, hazirla
             "partially_fulfilled": "kismen kargolandi", "get_packages": "paketlendi, kargo almadi",
             "get_new_order_items": "yeni, hazirlanmadi", "get_unpacked_packages": "paketlenmedi",
             "open": "yeni, hazirlanmadi", "processing": "hazirlaniyor", "readytoship": "kargoya hazir",
-            "shipment_picking": "hazirlaniyor, kargo almadi"}
+            "shipment_picking": "hazirlaniyor, kargo almadi",
+            "kargo_yapilmasi_bekleniyor": "hazirlaniyor, kargo almadi"}
 KANAL_AD = {"shopify": "Site", "trendyol": "Trendyol", "hepsiburada": "Hepsiburada", "n11": "N11",
-            "pazarama": "Pazarama", "idefix": "Idefix", "amazon": "Amazon"}
+            "pazarama": "Pazarama", "idefix": "Idefix", "amazon": "Amazon", "pttavm": "PttAVM"}
 
 
 def acik_mi(o):
@@ -91,21 +93,6 @@ def gunun_satisi(hepsi, gun_str):
     return adet, tutar, kanal
 
 
-def pttavm_acik():
-    """PttAVM'nin siparis API'si yok: Gmail'deki siparis mailleri Apps Script ile Sheet'e yazilir,
-    ayni web uygulamasi ?tip=pttavm ile 'yeni' olanlari JSON dondurur (docs/pttavm_gmail_appsscript.gs)."""
-    url = os.environ.get("STOK_SHEET_WEBHOOK", "").strip()
-    if not url:
-        return []
-    try:
-        import requests
-        r = requests.get(url, params={"tip": "pttavm"}, timeout=30)
-        d = r.json()
-        return d if isinstance(d, list) else []
-    except Exception:
-        return []
-
-
 def metin_kargo():
     """14:00 TR: su an kargoya verilmemis TUM siparisler (kanal kirilimi + liste)."""
     an = bildirim.simdi_tr()
@@ -128,11 +115,7 @@ def metin_kargo():
         if len(liste) > 20:
             sat.append("• ... +%d sipariş daha" % (len(liste) - 20))
 
-    ptt = pttavm_acik()
-    if ptt:
-        sat += ["", "<b>PttAVM (%d) — panelden kontrol et</b>" % len(ptt)]
-        for o in ptt[:10]:
-            sat.append("• %s — %s %s" % (o.get("no") or "?", str(o.get("urun") or "")[:50], o.get("tutar") or ""))
+    # 03.10.2026: PttAVM artik siparis.TOPLAYICI'da (API /orders/search); Gmail tabanli pttavm_acik() eksik kaliyordu.
 
     if hata:
         sat += ["", "❗ Okunamadı: " + " | ".join(hata)]

@@ -58,6 +58,8 @@ jobs:
       N11_API_SECRET: ${{ secrets.N11_API_SECRET }}
       PAZARAMA_API_KEY: ${{ secrets.PAZARAMA_API_KEY }}
       PAZARAMA_SECRET_KEY: ${{ secrets.PAZARAMA_SECRET_KEY }}
+      PTTAVM_API_KEY: ${{ secrets.PTTAVM_API_KEY }}
+      PTTAVM_ACCESS_TOKEN: ${{ secrets.PTTAVM_ACCESS_TOKEN }}
       IDEFIX_API_KEY: ${{ secrets.IDEFIX_API_KEY }}
       IDEFIX_SECRET: ${{ secrets.IDEFIX_SECRET }}
       IDEFIX_SATICI_ID: ${{ secrets.IDEFIX_SATICI_ID }}

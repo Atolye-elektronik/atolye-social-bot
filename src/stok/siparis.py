@@ -275,9 +275,38 @@ def topla_amazon(gun=14):
     return out
 
 
+def topla_pttavm(gun=14):
+    """PttAVM: GET /orders/search — startDate, endDate, isActiveOrders UCU DE sart (biri eksikse
+    bos govdeli 400). true = acik/gonderilmemis, false = gonderilmis/kapanmis; ikisi birlestirilir.
+    03.10.2026: Gmail bildirimi eksik kalabiliyor (DT830D siparisinde mail hic gelmedi), tek
+    guvenilir kaynak bu uc. Stok kodu kalemdeki urunBarkod (bizim satici stok kodumuz)."""
+    from marketplaces import pttavm_client as pt
+    bas = (datetime.now(timezone.utc) + timedelta(hours=3) - timedelta(days=gun)).strftime("%Y-%m-%dT00:00:00")
+    son = (datetime.now(timezone.utc) + timedelta(hours=3, days=1)).strftime("%Y-%m-%dT00:00:00")
+    tum = {}
+    for aktif in ("true", "false"):
+        r = pt.get("/orders/search", startDate=bas, endDate=son, isActiveOrders=aktif)
+        if r.status_code != 200:
+            raise RuntimeError("PTT /orders/search %s: %s" % (r.status_code, r.text[:120]))
+        for o in r.json() or []:
+            tum[o["siparisNo"]] = o
+    out = []
+    for no, o in tum.items():
+        U = o.get("siparisUrunler") or []
+        durumlar = [str(u.get("siparisDurumu") or "").lower() for u in U]
+        if any("odeme" in d for d in durumlar):
+            continue                                   # odemesi beklenen: sonraki turda gelir
+        iptal = bool(durumlar) and all("iptal" in d or "iade" in d or _iptal_mi(d) for d in durumlar)
+        kl = [{"kod": u.get("urunBarkod") or u.get("variantBarkod"), "barkod": None, "adet": int(u.get("toplamIslemAdedi") or 1)}
+              for u in U if not ("iptal" in str(u.get("siparisDurumu")).lower() or "iade" in str(u.get("siparisDurumu")).lower())]
+        out.append({"no": no, "tarih": o.get("islemTarihi"), "durum": "iptal" if iptal else ",".join(sorted(set(durumlar))),
+                    "kalemler": kl, "tutar": round(sum(float(u.get("kdvDahilToplamTutar") or 0) for u in U), 2),
+                    "musteri": ""})
+    return out
+
+
 TOPLAYICI = {"shopify": topla_shopify, "trendyol": topla_trendyol, "hepsiburada": topla_hepsiburada, "n11": topla_n11,
-             "pazarama": topla_pazarama, "idefix": topla_idefix, "amazon": topla_amazon}
-# pttavm: Api-Key/Access-Token gelince (EN-5313) eklenecek
+             "pazarama": topla_pazarama, "idefix": topla_idefix, "amazon": topla_amazon, "pttavm": topla_pttavm}
 
 
 # ---------------- durum ----------------
