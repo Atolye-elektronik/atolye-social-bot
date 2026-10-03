@@ -1,6 +1,186 @@
 [
   {
     "shipmentAddress": {
+      "id": 9761008062,
+      "firstName": "ceyda",
+      "lastName": "tuygun",
+      "company": "",
+      "address1": "lütfi bostanoğlu CAD seyirtepe konakları 64B b blok daire 2",
+      "address2": "",
+      "city": "Konya",
+      "cityCode": 42,
+      "district": "Akşehir",
+      "districtId": 671,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "42000",
+      "countryCode": "TR",
+      "neighborhoodId": 42758,
+      "neighborhood": "Gazi Mah",
+      "phone": null,
+      "fullAddress": "lütfi bostanoğlu CAD seyirtepe konakları 64B b blok daire 2     Akşehir Konya",
+      "fullName": "ceyda tuygun"
+    },
+    "orderNumber": "11669504400",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 161.0,
+    "packageGrossAmount": 161.0,
+    "totalDiscount": 3.22,
+    "packageSellerDiscount": 3.22,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 3.22,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 3.22
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9761008060,
+      "firstName": "ceyda",
+      "lastName": "tuygun",
+      "company": "",
+      "address1": "lütfi bostanoğlu CAD seyirtepe konakları 64B b blok daire 2",
+      "address2": "",
+      "city": "Konya",
+      "cityCode": 42,
+      "district": "Akşehir",
+      "districtId": 671,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "42000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 42758,
+      "neighborhood": "Gazi Mah",
+      "phone": null,
+      "fullAddress": "lütfi bostanoğlu CAD seyirtepe konakları 64B b blok daire 2     Akşehir Konya",
+      "fullName": "ceyda tuygun"
+    },
+    "customerFirstName": "ceyda",
+    "customerEmail": "pf+kn32wepo@trendyolmail.com",
+    "customerId": 73681323,
+    "supplierId": 0,
+    "customerLastName": "tuygun",
+    "id": 4211065241,
+    "channelId": 1,
+    "shipmentPackageId": 4211065241,
+    "cargoTrackingNumber": 7270037673028099,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEHCSR04",
+        "sku": "TX10FD179278",
+        "stockCode": "AEHCSR04",
+        "productName": "HC-SR04 5V Ultrasonik Mesafe Sensör Modülü RD100103, one size",
+        "productCode": 163937422,
+        "contentId": 163937422,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 161.0,
+        "lineGrossAmount": 161.0,
+        "discount": 3.22,
+        "lineTotalDiscount": 3.22,
+        "lineSellerDiscount": 3.22,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6881533301",
+            "lineItemPrice": 157.78,
+            "lineItemDiscount": 3.22,
+            "lineItemSellerDiscount": 3.22,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6028686608,
+        "lineId": 6028686608,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "TX10FD179278",
+        "orderLineItemStatusName": "Picking",
+        "price": 157.78,
+        "lineUnitPrice": 157.78,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 12,
+        "businessUnit": "Computer & Tablet",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1791049580809,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1791038782012,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1791038785489,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1791038798272,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1791233940000,
+    "estimatedDeliveryEndDate": 1791406740000,
+    "totalPrice": 157.78,
+    "packageTotalPrice": 157.78,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1791233940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1791038782003,
+    "lastModifiedDate": 1791038798272,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10921156819,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9759785100,
       "firstName": "sevgi",
       "lastName": "ayar",
