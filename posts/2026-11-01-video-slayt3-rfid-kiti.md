@@ -10,6 +10,4 @@ RC522 + Uno + servo — bitirme projesi hazır.
 
 Sipariş 👉 https://atolyeelektronik.com/products/rfid-kartli-akilli-kilit-sistemi-kiti-rc522-arduino-uno-servo-motor
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #arduino #rfid #bitirmeprojesi #Shorts

@@ -384,17 +384,17 @@ def kapanis(cikti, baslik_satirlari: list[str] | None = None,
     fo = _normal(38)
     d.text(((W - d.textlength(alt_yazi, font=fo)) / 2, 800), alt_yazi, font=fo, fill=GRI)
 
-    # --- ATOLYE10 kupon kutusu ---
+    # --- avantaj kutusu (04.10: ATOLYE10 kapatildi, kupon yerine kargo) ---
     kw, kh = 640, 150
     kx0, ky0 = (W - kw) / 2, 880
     d.rounded_rectangle([kx0, ky0, kx0 + kw, ky0 + kh], radius=20,
                         fill=ZEMIN_ACIK, outline=TURKUAZ, width=3)
     fk2 = _mono(26)
-    etiket = "İLK ALIŞVERİŞE ÖZEL %10 İNDİRİM"
+    etiket = "1.200 TL ÜZERİ SİPARİŞLERDE"
     gen2 = _aralikli_genislik(d, etiket, fk2, aralik=4)
     _aralikli(d, ((W - gen2) / 2, ky0 + 22), etiket, fk2, TURUNCU, aralik=4)
     fkod = _bold(56)
-    kod = "ATOLYE10"
+    kod = "KARGO BEDAVA"
     d.text(((W - d.textlength(kod, font=fkod)) / 2, ky0 + 66), kod, font=fkod, fill=BEYAZ)
 
     _pill(d, SITE, 1120)

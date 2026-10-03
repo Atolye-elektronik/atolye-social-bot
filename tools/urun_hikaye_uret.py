@@ -86,12 +86,6 @@ HIKAYELER = [
          foto="isdosyasi1_377200c3-0c47-452a-9bde-8c9dcd1ac333.webp",
          maddeler=["Okullara proforma fatura", "Havale/EFT ile ödeme",
                    "1.200 TL üzeri kargo bedava"]),
-    # --- KAMPANYA ---
-    dict(slug="kampanya-atolye10", kategori="KAMPANYA",
-         baslik="İlk siparişe %10 indirim",
-         foto=None, buyuk="ATOLYE10",
-         maddeler=["Sepette kodu yaz: ATOLYE10", "Tüm ürünlerde geçerli",
-                   "1.200 TL üzeri kargo bedava"]),
 ]
 
 # Öne çıkarılan kapak görselleri (telefon galerisinden kapak seçmek için)

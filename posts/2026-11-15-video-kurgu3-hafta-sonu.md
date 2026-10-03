@@ -10,6 +10,4 @@ Engelden kaçan robot, 3'ü 1 arada kit ya da alarm kiti: kutudan çıkar, kur, 
 
 Sipariş 👉 https://atolyeelektronik.com/products/arduino-2wd-servolu-engelden-kacan-robot-araba-kiti-3-7v-li-ion-sarjli-set
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #robotik #arduino #haftasonu #Shorts

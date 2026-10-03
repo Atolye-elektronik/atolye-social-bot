@@ -10,6 +10,4 @@ Robot yapmak için 3 parça 🛠️
 
 Sipariş 👉 https://atolyeelektronik.com/products/l298n-motor-surucu-ve-2-adet-3-6v-dc-reduktorlu-motor-tekerlek-seti
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #robotik #arduino #l298n #Shorts

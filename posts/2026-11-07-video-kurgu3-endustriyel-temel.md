@@ -10,6 +10,4 @@ Endüstriyel Elektronik Uygulama Seti + Temel Elektronik Deney Seti, MEB müfred
 
 Sipariş 👉 https://atolyeelektronik.com/products/meslek-lisesi-11-sinif-endustriyel-elektronik-uygulama-seti
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #mesleklisesi #endustriyelelektronik #ogretmen #Shorts

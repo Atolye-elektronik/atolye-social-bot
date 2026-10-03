@@ -10,6 +10,4 @@ youtube_title: 2WD Robot Araba Kiti - Demonte
 
 Sipariş 👉 https://atolyeelektronik.com/products/2wd-robot-araba-kiti-demonte-robotik-govde
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #robotik #arduino #2wd #robotaraba #Shorts

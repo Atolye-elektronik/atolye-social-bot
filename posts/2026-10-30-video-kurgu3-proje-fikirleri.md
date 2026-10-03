@@ -10,6 +10,4 @@ Dijital saat, sıcaklık-nem ekranı, RFID kilit, step motor — hepsi Arduino d
 
 Sipariş 👉 https://atolyeelektronik.com/products/dijital-saat-takvim-projesi-kiti-ds1302-lcd-arduino
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #arduino #projekiti #odev #Shorts

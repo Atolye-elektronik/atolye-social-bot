@@ -12,6 +12,4 @@ Tüm detaylar fotoğraflarda 👇
 
 Sipariş için 👉 https://atolyeelektronik.com/products/rfid-kartli-akilli-kilit-sistemi-kiti-rc522-arduino-uno-servo-motor
 
-🎁 İlk alışverişine özel: ATOLYE10 koduyla sepette %10 indirim!
-
 #atolyeelektronik #elektronik #arduino #maker #hobi #antalya

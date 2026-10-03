@@ -10,6 +10,4 @@ Bluetooth Kontrollü Robot Kiti, tam set, Arduino dahil.
 
 Sipariş 👉 https://atolyeelektronik.com/products/bluetooth-kontrollu-robot-kiti-3-7v-li-ion-sarjli-tam-set-arduino-motor-surucu-dahil
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #robotik #bluetooth #arduino #Shorts

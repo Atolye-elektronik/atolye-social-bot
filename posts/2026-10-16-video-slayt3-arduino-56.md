@@ -10,6 +10,4 @@ Proje ve Uygulama Geliştirme Seti — içindekiler videoda.
 
 Sipariş 👉 https://atolyeelektronik.com/products/arduino-proje-ve-uygulama-gelistirme-seti-56-parca
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #arduino #arduinoseti #Shorts

@@ -10,6 +10,4 @@ Dijital saat (RTC+LCD), sıcaklık-nem ekranı (DHT11+LCD), hareket alarmı (PIR
 
 Sipariş 👉 https://atolyeelektronik.com/products/dijital-saat-takvim-projesi-kiti-ds1302-lcd-arduino
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #arduino #projekiti #elektronik #odev #Shorts

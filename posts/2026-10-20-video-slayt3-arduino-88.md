@@ -10,6 +10,4 @@ Arduino İleri Seviye Eğitim Seti: sensör, ekran, motor, kablo… liste videod
 
 Sipariş 👉 https://atolyeelektronik.com/products/arduino-ileri-seviye-kutulu-egitim-seti-88-parca
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #arduino #arduinoseti #maker #Shorts

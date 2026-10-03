@@ -10,6 +10,4 @@ Servo + ultrasonik sensörlü engelden kaçan robot kiti, demonte.
 
 Sipariş 👉 https://atolyeelektronik.com/products/arduino-2wd-servolu-engelden-kacan-robot-araba-kiti-3-7v-li-ion-sarjli-set
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #robotik #arduino #ultrasonik #Shorts

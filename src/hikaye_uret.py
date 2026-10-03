@@ -199,7 +199,7 @@ def hikaye_fiyat(urun: dict, cikti: pathlib.Path) -> None:
         d.text(((W - tw) / 2, y + 30), fiyat, font=f, fill=TURUNCU)
         y += 190
     f2 = _bold(44)
-    kod = "ATOLYE10 ile sepette %10 indirim"
+    kod = "1.200 TL üzeri kargo bedava"
     tw = d.textlength(kod, font=f2)
     d.rounded_rectangle([(W - tw) / 2 - 40, y + 10, (W + tw) / 2 + 40, y + 96],
                         radius=26, fill=KOYU)

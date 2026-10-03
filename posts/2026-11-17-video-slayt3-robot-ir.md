@@ -10,6 +10,4 @@ Kumandalı robot: kutuda ne var? 🎮
 
 Sipariş 👉 https://atolyeelektronik.com/products/ir-kumandali-robot-araba-kiti-3-7v-li-ion-sarjli-set-2wd-arduino-motor-surucu-kumanda
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #robotik #arduino #kumandali #Shorts

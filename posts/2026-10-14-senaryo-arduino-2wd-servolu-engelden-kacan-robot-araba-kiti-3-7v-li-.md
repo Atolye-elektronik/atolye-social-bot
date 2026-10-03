@@ -12,6 +12,4 @@ Cevabı fotoğraflarda 👇
 
 Sipariş için 👉 https://atolyeelektronik.com/products/arduino-2wd-servolu-engelden-kacan-robot-araba-kiti-3-7v-li-ion-sarjli-set
 
-🎁 İlk alışverişine özel: ATOLYE10 koduyla sepette %10 indirim!
-
 #atolyeelektronik #elektronik #arduino #maker #hobi #antalya

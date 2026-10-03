@@ -10,6 +10,4 @@ RFID akıllı kilit kiti ve 28BYJ-48 step motor konumlandırma kiti, Arduino Uno
 
 Sipariş 👉 https://atolyeelektronik.com/products/rfid-kartli-akilli-kilit-sistemi-kiti-rc522-arduino-uno-servo-motor
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #arduino #rfid #stepmotor #bitirmeprojesi #Shorts

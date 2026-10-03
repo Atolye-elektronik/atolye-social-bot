@@ -10,6 +10,4 @@ Multimetre, havya seti ve malzeme kutusu — başlangıç için bu kadarı yeter
 
 Sipariş 👉 https://atolyeelektronik.com/products/dijital-multimetre-dt830d
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #multimetre #havya #atolye #elektronik #Shorts

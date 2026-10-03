@@ -10,6 +10,4 @@ Hangi robot kiti sana göre? 4 seçenek 🤖
 
 Sipariş 👉 https://atolyeelektronik.com/products/2wd-robot-araba-kiti-3-7v-li-ion-sarjli-set-tp4056-18650-pil-yuvasi-dahil
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #robotik #arduino #robotaraba #Shorts

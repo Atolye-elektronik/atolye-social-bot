@@ -10,6 +10,4 @@ Akıllı Proje Sensör Seti + Arduino Uno: projelerin sınırı yok.
 
 Sipariş 👉 https://atolyeelektronik.com/products/akilli-proje-ve-sensor-modulleri-seti-10-parca
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #arduino #sensor #iot #Shorts

@@ -10,6 +10,4 @@ Arduino seti alacaksan bunu izle ⚡
 
 Sipariş 👉 https://atolyeelektronik.com/products/arduino-proje-ve-uygulama-gelistirme-seti-56-parca
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #arduino #arduinoseti #kodlama #Shorts

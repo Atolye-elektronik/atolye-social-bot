@@ -10,6 +10,4 @@ Temrin defteri, iş dosyası ve havya seti — hepsi tek siparişte, öğrenciye
 
 Sipariş 👉 https://atolyeelektronik.com/products/temrin-defteri
 
-🎁 İlk siparişe ATOLYE10 koduyla %10 indirim!
-
 #atolyeelektronik #mesleklisesi #okuladonus #temrindefteri #havya #Shorts

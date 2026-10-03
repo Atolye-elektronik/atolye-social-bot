@@ -12,6 +12,4 @@ Cevabı fotoğraflarda 👇
 
 Sipariş için 👉 https://atolyeelektronik.com/products/arduino-proje-ve-uygulama-gelistirme-seti-56-parca
 
-🎁 İlk alışverişine özel: ATOLYE10 koduyla sepette %10 indirim!
-
 #atolyeelektronik #elektronik #arduino #maker #hobi #antalya
