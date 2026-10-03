@@ -1,0 +1,39 @@
+name: IG tek hikaye paylas
+
+# Elle tetiklenir: depodaki bir gorseli/videoyu Instagram hikayesi olarak atar.
+# Kullanim: kirpik/hatali giden bir hikaye silinip dogru surumu yeniden atilacaksa.
+# Feed postuna DOKUNMAZ, published.json'a yazmaz.
+on:
+  workflow_dispatch:
+    inputs:
+      medya:
+        description: "Depodaki medya yolu (orn. posts/media/carousel/.../01-kanca-hikaye.jpg)"
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  hikaye:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet -r requirements.txt
+      - name: Hikayeyi paylas
+        run: |
+          python - <<'EOF'
+          import os
+          from src import instagram
+          p = os.environ["MEDYA"]
+          video = p.lower().endswith((".mp4", ".mov", ".m4v"))
+          print("hikaye id:", instagram.hikaye_yayinla(p, video))
+          EOF
+        env:
+          MEDYA: ${{ inputs.medya }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          PYTHONIOENCODING: utf-8
