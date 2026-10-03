@@ -1,6 +1,187 @@
 [
   {
     "shipmentAddress": {
+      "id": 9762418312,
+      "firstName": "mehmet",
+      "lastName": "doğan",
+      "company": "",
+      "address1": "cumhuriyet cad.no:178/c",
+      "address2": "",
+      "city": "Tokat",
+      "cityCode": 60,
+      "district": "Niksar",
+      "districtId": 951,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "60000",
+      "countryCode": "TR",
+      "neighborhoodId": 66091,
+      "neighborhood": "Şair Emrah Mah",
+      "phone": null,
+      "fullAddress": "cumhuriyet cad.no:178/c     Niksar Tokat",
+      "fullName": "mehmet doğan"
+    },
+    "orderNumber": "11670487378",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 419.0,
+    "packageGrossAmount": 419.0,
+    "totalDiscount": 8.38,
+    "packageSellerDiscount": 8.38,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 8.38,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 8.38
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9762418311,
+      "firstName": "mehmet",
+      "lastName": "doğan",
+      "company": "",
+      "address1": "cumhuriyet cad.no:178/c",
+      "address2": "",
+      "city": "Tokat",
+      "cityCode": 60,
+      "district": "Niksar",
+      "districtId": 951,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "60000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 66091,
+      "neighborhood": "Şair Emrah Mah",
+      "phone": null,
+      "fullAddress": "cumhuriyet cad.no:178/c     Niksar Tokat",
+      "fullName": "mehmet doğan"
+    },
+    "customerFirstName": "mehmet",
+    "customerEmail": "pf+n9r9jplr@trendyolmail.com",
+    "customerId": 45286585,
+    "supplierId": 0,
+    "customerLastName": "doğan",
+    "id": 4211704368,
+    "channelId": 1,
+    "shipmentPackageId": 4211704368,
+    "cargoTrackingNumber": 7270037679167853,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEMYNK3",
+        "sku": "2901613165361",
+        "stockCode": "AEMYNK3",
+        "productName": "Mini Yankeski 3'lü Set - Elektronikçi Tipi Dip Yankeski Hassas Kesim AEMYNK3STD, one size",
+        "productCode": 1678253580,
+        "contentId": 1678253580,
+        "productOrigin": "CN",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 419.0,
+        "lineGrossAmount": 419.0,
+        "discount": 8.38,
+        "lineTotalDiscount": 8.38,
+        "lineSellerDiscount": 8.38,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6882587607",
+            "lineItemPrice": 410.62,
+            "lineItemDiscount": 8.38,
+            "lineItemSellerDiscount": 8.38,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6029604371,
+        "lineId": 6029604371,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901613165361",
+        "orderLineItemStatusName": "Picking",
+        "price": 410.62,
+        "lineUnitPrice": 410.62,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2504,
+        "commission": 16.5,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1791065149942,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1791054350882,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1791054356979,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1791054408469,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1791233940000,
+    "estimatedDeliveryEndDate": 1791579540000,
+    "totalPrice": 410.62,
+    "packageTotalPrice": 410.62,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1791233940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1791054350873,
+    "lastModifiedDate": 1791054408469,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10921910106,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9761682536,
       "firstName": "MOHAMED",
       "lastName": "ALHAJ AHMAD AL KHLAF",
