@@ -121,7 +121,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "2901069996298",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 195.9,
         "lineUnitPrice": 195.9,
         "fastDeliveryOptions": [
@@ -130,7 +130,7 @@
           }
         ],
         "productCategoryId": 1520,
-        "commission": null,
+        "commission": 18,
         "businessUnit": "Stationery & Office",
         "defectiveClaimListingInsight": ""
       }
@@ -146,10 +146,14 @@
       {
         "createdDate": 1791024881953,
         "status": "Created"
+      },
+      {
+        "createdDate": 1791028243043,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1791233940000,
@@ -160,7 +164,7 @@
     "agreedDeliveryDate": 1791233940000,
     "fastDelivery": true,
     "originShipmentDate": 1791024878580,
-    "lastModifiedDate": 1791024881953,
+    "lastModifiedDate": 1791028243043,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
