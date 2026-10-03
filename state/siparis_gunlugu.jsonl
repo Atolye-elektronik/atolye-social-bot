@@ -703,3 +703,5 @@
 {"an": "2026-10-02T21:13", "kanal": "trendyol", "no": "11667534301", "kod": "AESTJDFTR-10", "adet": 1, "dusum": {"AESTJDFTR": 10}, "kuru": false}
 {"an": "2026-10-02T21:13", "kanal": "trendyol", "no": "11667534301", "kod": "AESTJDFTR", "adet": 1, "dusum": {"AESTJDFTR": 1}, "kuru": false}
 {"an": "2026-10-03T06:13", "kanal": "hepsiburada", "no": "4357339591", "kod": "AESTJDFTR", "adet": 1, "dusum": {"AESTJDFTR": 1}, "kuru": false}
+{"an": "2026-10-03T09:27", "kanal": "trendyol", "no": "11661874798", "iade": {"AETP4056": 3}, "durum": "UnDelivered", "kuru": false}
+{"an": "2026-10-03T09:27", "kanal": "hepsiburada", "no": "4019232779", "kod": "AEIRKMND", "adet": 1, "dusum": {"AEIRKMND": 1}, "kuru": false}
