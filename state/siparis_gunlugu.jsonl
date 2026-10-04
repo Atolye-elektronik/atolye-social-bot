@@ -716,3 +716,4 @@
 {"an": "2026-10-03T20:08", "kanal": "trendyol", "no": "11670665881", "kod": "AERTCPS", "adet": 1, "dusum": {"AERTC1302": 1, "AE16X2LCD": 1, "AEUNOR3": 1, "AEJK2040DE": 1}, "kuru": false}
 {"an": "2026-10-03T20:48", "kanal": "trendyol", "no": "11670806514", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
 {"an": "2026-10-04T06:48", "kanal": "trendyol", "no": "11671288494", "kod": "AE2WDEKRBT-LI", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEPY18650": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
+{"an": "2026-10-04T08:22", "kanal": "trendyol", "no": "11671463518", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
