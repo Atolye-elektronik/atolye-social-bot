@@ -1,0 +1,39 @@
+name: IG permalink listesi
+
+# Elle tetiklenir: published.json'daki Instagram medya id'lerinin instagram.com linklerini log'a yazar.
+# Kullanim: silinecek/duzenlenecek gonderileri tarayicida bulmak icin (API silme/duzenleme desteklemiyor).
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "Virgulle ayrilmis IG medya id listesi"
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  permalink:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet requests
+      - name: Linkleri cek
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          IDS: ${{ inputs.ids }}
+          PYTHONIOENCODING: utf-8
+        run: |
+          python - <<'EOF'
+          import os, requests
+          tok = os.environ["META_ACCESS_TOKEN"]
+          for i in os.environ["IDS"].split(","):
+              i = i.strip()
+              if not i: continue
+              r = requests.get(f"https://graph.facebook.com/v21.0/{i}", params={"fields": "permalink,media_type,timestamp", "access_token": tok}, timeout=30).json()
+              print("LINK", i, r.get("media_type"), (r.get("timestamp") or "")[:10], r.get("permalink") or r.get("error", {}).get("message"))
+          EOF
