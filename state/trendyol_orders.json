@@ -1,6 +1,188 @@
 [
   {
     "shipmentAddress": {
+      "id": 9767200720,
+      "firstName": "Ergun",
+      "lastName": "KILIÇ",
+      "company": "",
+      "address1": "Söğüt cad. 44/4 palmiye apt. ",
+      "address2": "",
+      "city": "Ankara",
+      "cityCode": 6,
+      "district": "Etimesgut",
+      "districtId": 22,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "06000",
+      "countryCode": "TR",
+      "neighborhoodId": 10790,
+      "neighborhood": "Altay Mah",
+      "phone": null,
+      "fullAddress": "Söğüt cad. 44/4 palmiye apt.     Etimesgut Ankara",
+      "fullName": "Ergun KILIÇ"
+    },
+    "orderNumber": "11673418732",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 199.9,
+    "packageGrossAmount": 199.9,
+    "totalDiscount": 4.0,
+    "packageSellerDiscount": 4.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 4.0,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 4
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9767200719,
+      "firstName": "Ergun",
+      "lastName": "KILIÇ",
+      "company": "",
+      "address1": "Söğüt cad. 44/4 palmiye apt. ",
+      "address2": "",
+      "city": "Ankara",
+      "cityCode": 6,
+      "district": "Etimesgut",
+      "districtId": 22,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "06000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 10790,
+      "neighborhood": "Altay Mah",
+      "phone": null,
+      "fullAddress": "Söğüt cad. 44/4 palmiye apt.     Etimesgut Ankara",
+      "fullName": "Ergun KILIÇ"
+    },
+    "customerFirstName": "Ergun",
+    "customerEmail": "pf+y8mn2l83@trendyolmail.com",
+    "customerId": 40850942,
+    "supplierId": 0,
+    "customerLastName": "KILIÇ",
+    "id": 4213805728,
+    "channelId": 1,
+    "shipmentPackageId": 4213805728,
+    "cargoTrackingNumber": 7270037699859592,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETEMDEF",
+        "sku": "2901069996298",
+        "stockCode": "AETEMDEF",
+        "productName": "Temrin Defteri AETEMDEF, one size",
+        "productCode": 1664639329,
+        "contentId": 1664639329,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 199.9,
+        "lineGrossAmount": 199.9,
+        "discount": 4.0,
+        "lineTotalDiscount": 4.0,
+        "lineSellerDiscount": 4.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6886180812",
+            "lineItemPrice": 195.9,
+            "lineItemDiscount": 4.0,
+            "lineItemSellerDiscount": 4.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "productColor": "Yeşil",
+        "id": 6032749375,
+        "lineId": 6032749375,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901069996298",
+        "orderLineItemStatusName": "Picking",
+        "price": 195.9,
+        "lineUnitPrice": 195.9,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1520,
+        "commission": 18,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1791145240836,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1791134441683,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1791134447564,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1791134483559,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1791233940000,
+    "estimatedDeliveryEndDate": 1791406740000,
+    "totalPrice": 195.9,
+    "packageTotalPrice": 195.9,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1791233940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1791134441674,
+    "lastModifiedDate": 1791134483559,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10924468146,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9766043795,
       "firstName": "Halim",
       "lastName": "Çifçi",

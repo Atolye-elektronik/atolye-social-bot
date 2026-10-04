@@ -756,6 +756,258 @@
       "customerName": "Altan Sahin",
       "estimatedArrivalDate": "2026-10-08T15:30:00Z",
       "totalDeci": 0.3
+    },
+    {
+      "id": "6ac28761-362c-9559-6c8a-890d06060606",
+      "status": "Open",
+      "customerId": "03eb293c-48fd-4a33-930e-322ee6114a30",
+      "orderDate": "2026-10-04T20:05:36",
+      "dueDate": "2026-10-05T18:30:00",
+      "barcode": "62955241272588",
+      "packageNumber": "5524127258",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "ömerbey MH çırna sok no 10 boncuk evleri b blok K2 d6 Mudanya bursa ÖMERBEY MUDANYA Bursa",
+      "recipientName": "seda şahin",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ÖMERBEY",
+      "shippingTown": "MUDANYA",
+      "shippingCity": "Bursa",
+      "email": "4145951888_5524127258@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "seda şahin",
+      "billingAddress": "ömerbey MH çırna sok no 10 boncuk evleri b blok K2 d6 Mudanya bursa ÖMERBEY MUDANYA Bursa",
+      "billingCity": "Bursa",
+      "billingTown": "MUDANYA",
+      "billingDistrict": "ÖMERBEY",
+      "billingPostalCode": "16940",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 109.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ac28760-9e49-d1a8-2cdb-409d06060606",
+          "listingId": "0066aaa5-3276-4378-b634-dc25f8bab1e8",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV000066JI28",
+          "merchantSku": "AEBZZR5V",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 54.9
+          },
+          "vat": 18.3,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 109.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 4.94
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 54.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 109.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Teknolog Hanım 5 Adet 5V Aktif Buzzer Ses Bileşeni",
+          "orderNumber": "4145951888",
+          "orderDate": "2026-10-04T20:05:36",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "TKNLGHNM-1052",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000663924743.jpg",
+          "deci": 1.7
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Sarpişko Sarpişko",
+      "estimatedArrivalDate": "2026-10-07T15:30:00Z",
+      "totalDeci": 3.4
+    },
+    {
+      "id": "6ac28d8a-e94c-a5a0-a7f8-1c5806060606",
+      "status": "Open",
+      "customerId": "8854bf30-70ce-453f-9418-dcfab91d4809",
+      "orderDate": "2026-10-04T20:31:52",
+      "dueDate": "2026-10-05T18:30:00",
+      "barcode": "62955241346643",
+      "packageNumber": "5524134664",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Cumhuriyet mah. Barış sokak No:32 daire:3 İzmir/Selçuk CUMHURİYET SELÇUK İzmir",
+      "recipientName": "Umut Güldiken",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "CUMHURİYET",
+      "shippingTown": "SELÇUK",
+      "shippingCity": "İzmir",
+      "email": "4703313437_5524134664@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Umut Güldiken",
+      "billingAddress": "Cumhuriyet mah. Barış sokak No:32 daire:3 İzmir/Selçuk CUMHURİYET SELÇUK İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "SELÇUK",
+      "billingDistrict": "CUMHURİYET",
+      "billingPostalCode": "35920",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 149.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ac28d89-bf0f-ea0a-f339-cc3806060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "vat": 24.97,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4703313437",
+          "orderDate": "2026-10-04T20:31:52",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "UMUT GÜLDİKEN",
+      "estimatedArrivalDate": "2026-10-07T15:30:00Z",
+      "totalDeci": 2
     }
   ]
 }
