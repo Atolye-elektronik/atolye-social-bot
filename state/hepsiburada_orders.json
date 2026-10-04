@@ -252,6 +252,132 @@
       "customerName": "Hatice Yel",
       "estimatedArrivalDate": "2026-10-07T15:30:00Z",
       "totalDeci": 2
+    },
+    {
+      "id": "6ac213b0-7d78-a9f1-34e1-a04c06060606",
+      "status": "Open",
+      "customerId": "5d104f77-107e-488d-9129-c234ffb65c4a",
+      "orderDate": "2026-10-04T11:51:58",
+      "dueDate": "2026-10-05T18:30:00",
+      "barcode": "62955240163609",
+      "packageNumber": "5524016360",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "uluoymak mahallesi 72.sokak karadağ apt n0 4 daire 1 gediz kütahya ULUOYMAK GEDİZ Kütahya",
+      "recipientName": "HAYRETTİN ŞENTÜRK",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ULUOYMAK",
+      "shippingTown": "GEDİZ",
+      "shippingCity": "Kütahya",
+      "email": "4205183632_5524016360@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "HAYRETTİN ŞENTÜRK",
+      "billingAddress": "uluoymak mahallesi 72.sokak karadağ apt n0 4 daire 1 gediz kütahya ULUOYMAK GEDİZ Kütahya",
+      "billingCity": "Kütahya",
+      "billingTown": "GEDİZ",
+      "billingDistrict": "ULUOYMAK",
+      "billingPostalCode": "43600",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 136
+      },
+      "items": [
+        {
+          "lineItemId": "6ac213af-b407-1483-04ad-918606060606",
+          "listingId": "d37424da-f0ca-4f1c-85e5-a8f08cbac13f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EBASJD",
+          "merchantSku": "AE6X13PLK",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 136
+          },
+          "vat": 22.67,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 136
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 12.24
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 136
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 136
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Delikli Bakır Plaket -6X13",
+          "orderNumber": "4205183632",
+          "orderDate": "2026-10-04T11:51:58",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL6X13PLK01",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001690439600.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "HAYRETTİN ŞENTÜRK",
+      "estimatedArrivalDate": "2026-10-07T15:30:00Z",
+      "totalDeci": 1
     }
   ]
 }
