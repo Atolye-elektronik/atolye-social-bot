@@ -1,6 +1,373 @@
 [
   {
     "shipmentAddress": {
+      "id": 9766043795,
+      "firstName": "Halim",
+      "lastName": "Çifçi",
+      "company": "",
+      "address1": "Erkilet Camiikebir Mah. Zihniye baykan Cad. Açelya Apt. Kat 6 Daire No 21 Kocasinan/Kayseri",
+      "address2": "",
+      "city": "Kayseri",
+      "cityCode": 38,
+      "district": "Kocasinan",
+      "districtId": 626,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "38000",
+      "countryCode": "TR",
+      "neighborhoodId": 40207,
+      "neighborhood": "Camiikebir Mah",
+      "phone": null,
+      "fullAddress": "Erkilet Camiikebir Mah. Zihniye baykan Cad. Açelya Apt. Kat 6 Daire No 21 Kocasinan/Kayseri     Kocasinan Kayseri",
+      "fullName": "Halim Çifçi"
+    },
+    "orderNumber": "11672547281",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 1088.0,
+    "packageGrossAmount": 1088.0,
+    "totalDiscount": 96.76,
+    "packageSellerDiscount": 96.76,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 96.76,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 21.76
+      },
+      {
+        "displayName": " - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 75
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9766043794,
+      "firstName": "Halim",
+      "lastName": "Çifçi",
+      "company": "",
+      "address1": "Erkilet Camiikebir Mah. Zihniye baykan Cad. Açelya Apt. Kat 6 Daire No 21 Kocasinan/Kayseri",
+      "address2": "",
+      "city": "Kayseri",
+      "cityCode": 38,
+      "district": "Kocasinan",
+      "districtId": 626,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "38000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 40207,
+      "neighborhood": "Camiikebir Mah",
+      "phone": null,
+      "fullAddress": "Erkilet Camiikebir Mah. Zihniye baykan Cad. Açelya Apt. Kat 6 Daire No 21 Kocasinan/Kayseri     Kocasinan Kayseri",
+      "fullName": "Halim Çifçi"
+    },
+    "customerFirstName": "Halim",
+    "customerEmail": "pf+j3wzpjmn@trendyolmail.com",
+    "customerId": 183475213,
+    "supplierId": 0,
+    "customerLastName": "Çifçi",
+    "id": 4213284662,
+    "channelId": 1,
+    "shipmentPackageId": 4213284662,
+    "cargoTrackingNumber": 7270037694676804,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE2WDEKRBT-LI",
+        "sku": "AE2WDEKRBT-LI",
+        "stockCode": "AE2WDEKRBT-LI",
+        "productName": "2WD Servolu Engelden Kaçan Robot Araba Kiti (Demonte Robot Araba Kiti) AE2WDEKRBT, one size",
+        "productCode": 1617156276,
+        "contentId": 1617156276,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 1088.0,
+        "lineGrossAmount": 1088.0,
+        "discount": 96.76,
+        "lineTotalDiscount": 96.76,
+        "lineSellerDiscount": 96.76,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6885317231",
+            "lineItemPrice": 991.24,
+            "lineItemDiscount": 96.76,
+            "lineItemSellerDiscount": 96.76,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6031994959,
+        "lineId": 6031994959,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "AE2WDEKRBT-LI",
+        "orderLineItemStatusName": "Picking",
+        "price": 991.24,
+        "lineUnitPrice": 991.24,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 12,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1791132422277,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1791121644468,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1791121649069,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1791121729818,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1791233940000,
+    "estimatedDeliveryEndDate": 1791493140000,
+    "totalPrice": 991.24,
+    "packageTotalPrice": 991.24,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1791233940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1791121644459,
+    "lastModifiedDate": 1791121729818,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10923846043,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9765686242,
+      "firstName": "Ayşegül",
+      "lastName": "Güleç",
+      "company": "",
+      "address1": "Kızılcıklı Mahallesi Hasanağa TOKİ konutları Mehmet Akif Ersoy Caddesi 2 bölge B2 Daire 20",
+      "address2": "",
+      "city": "Bursa",
+      "cityCode": 16,
+      "district": "Nilüfer",
+      "districtId": 326,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "16000",
+      "countryCode": "TR",
+      "neighborhoodId": 31455,
+      "neighborhood": "Kızılcıklı Mah",
+      "phone": null,
+      "fullAddress": "Kızılcıklı Mahallesi Hasanağa TOKİ konutları Mehmet Akif Ersoy Caddesi 2 bölge B2 Daire 20     Nilüfer Bursa",
+      "fullName": "Ayşegül Güleç"
+    },
+    "orderNumber": "11672296726",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 199.9,
+    "packageGrossAmount": 199.9,
+    "totalDiscount": 4.0,
+    "packageSellerDiscount": 4.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 4.0,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 4
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9765686233,
+      "firstName": "Ayşegül",
+      "lastName": "Güleç",
+      "company": "",
+      "address1": "Kızılcıklı Mahallesi Hasanağa TOKİ konutları Mehmet Akif Ersoy Caddesi 2 bölge B2 Daire 20",
+      "address2": "",
+      "city": "Bursa",
+      "cityCode": 16,
+      "district": "Nilüfer",
+      "districtId": 326,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "16000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 31455,
+      "neighborhood": "Kızılcıklı Mah",
+      "phone": null,
+      "fullAddress": "Kızılcıklı Mahallesi Hasanağa TOKİ konutları Mehmet Akif Ersoy Caddesi 2 bölge B2 Daire 20     Nilüfer Bursa",
+      "fullName": "Ayşegül Güleç"
+    },
+    "customerFirstName": "Ayşegül",
+    "customerEmail": "pf+3px6aj29@trendyolmail.com",
+    "customerId": 149827337,
+    "supplierId": 0,
+    "customerLastName": "Güleç",
+    "id": 4213122967,
+    "channelId": 1,
+    "shipmentPackageId": 4213122967,
+    "cargoTrackingNumber": 7270037693075448,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETEMDEF",
+        "sku": "2901069996298",
+        "stockCode": "AETEMDEF",
+        "productName": "Temrin Defteri AETEMDEF, one size",
+        "productCode": 1664639329,
+        "contentId": 1664639329,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 199.9,
+        "lineGrossAmount": 199.9,
+        "discount": 4.0,
+        "lineTotalDiscount": 4.0,
+        "lineSellerDiscount": 4.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6885048932",
+            "lineItemPrice": 195.9,
+            "lineItemDiscount": 4.0,
+            "lineItemSellerDiscount": 4.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "productColor": "Yeşil",
+        "id": 6031759816,
+        "lineId": 6031759816,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901069996298",
+        "orderLineItemStatusName": "Picking",
+        "price": 195.9,
+        "lineUnitPrice": 195.9,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1520,
+        "commission": 18,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1791128312764,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1791117564015,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1791117568791,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1791118409786,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1791233940000,
+    "estimatedDeliveryEndDate": 1791406740000,
+    "totalPrice": 195.9,
+    "packageTotalPrice": 195.9,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1791233940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1791117564007,
+    "lastModifiedDate": 1791118409786,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10923653391,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9764716210,
       "firstName": "Nazan",
       "lastName": "Kurt",

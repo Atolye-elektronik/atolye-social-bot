@@ -378,6 +378,384 @@
       "customerName": "HAYRETTİN ŞENTÜRK",
       "estimatedArrivalDate": "2026-10-07T15:30:00Z",
       "totalDeci": 1
+    },
+    {
+      "id": "6ac2692f-362c-9559-6c50-ed2006060606",
+      "status": "Open",
+      "customerId": "195f7c7d-15f3-4a4d-97a4-0df388814285",
+      "orderDate": "2026-10-04T17:56:45",
+      "dueDate": "2026-10-05T18:30:00",
+      "barcode": "62955240977482",
+      "packageNumber": "5524097748",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "elvan mh 1836. sk 9/6 Etimesgut Ankara ELVAN ETİMESGUT Ankara",
+      "recipientName": "kadir seneger",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ELVAN",
+      "shippingTown": "ETİMESGUT",
+      "shippingCity": "Ankara",
+      "email": "4734069073_5524097748@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "kadir seneger",
+      "billingAddress": "elvan mh 1836. sk 9/6 Etimesgut Ankara ELVAN ETİMESGUT Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "ETİMESGUT",
+      "billingDistrict": "ELVAN",
+      "billingPostalCode": "06794",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 149.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ac2692d-057f-1f24-a495-f8e706060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "vat": 24.97,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4734069073",
+          "orderDate": "2026-10-04T17:56:45",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Kadir Seneger",
+      "estimatedArrivalDate": "2026-10-07T15:30:00Z",
+      "totalDeci": 2
+    },
+    {
+      "id": "6ac26a7c-4751-4a8a-680b-aa7f06060606",
+      "status": "Open",
+      "customerId": "9a002db5-85b1-45b5-9f19-d7b04e79a488",
+      "orderDate": "2026-10-04T18:02:18",
+      "dueDate": "2026-10-05T18:30:00",
+      "barcode": "62955240988512",
+      "packageNumber": "5524098851",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Kaya Sokak No:117 KARAELMAS MERKEZ Zonguldak",
+      "recipientName": "Ahmet Albayrak",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KARAELMAS",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Zonguldak",
+      "email": "4766249949_5524098851@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Ahmet Albayrak",
+      "billingAddress": "Kaya sokak no:117 KARAELMAS MERKEZ Zonguldak",
+      "billingCity": "Zonguldak",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "KARAELMAS",
+      "billingPostalCode": "67100",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 149.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ac26a7b-b408-1abf-3f8b-737e06060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "vat": 24.97,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.74
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4766249949",
+          "orderDate": "2026-10-04T18:02:18",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "AHMET ALBAYRAK",
+      "estimatedArrivalDate": "2026-10-08T15:30:00Z",
+      "totalDeci": 2
+    },
+    {
+      "id": "6ac273af-bf0f-ea0a-f309-7e9106060606",
+      "status": "Open",
+      "customerId": "eca5ffd8-c4e9-42ff-be12-cc49ec5e69d3",
+      "orderDate": "2026-10-04T18:41:27",
+      "dueDate": "2026-10-05T18:30:00",
+      "barcode": "62955241079820",
+      "packageNumber": "5524107982",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "İmes sanayi sitesi b blok 206 sokak no 8 Ümraniye  İstanbul ESENŞEHİR ÜMRANİYE İstanbul",
+      "recipientName": "Altan Sahin",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ESENŞEHİR",
+      "shippingTown": "ÜMRANİYE",
+      "shippingCity": "İstanbul",
+      "email": "4417350721_5524107982@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Mkm otomotiv ",
+      "billingAddress": "Mecidiye mahallesi fatih bulvarı no 355 Sultanbeyli İstanbul MECİDİYE SULTANBEYLİ İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "SULTANBEYLİ",
+      "billingDistrict": "MECİDİYE",
+      "billingPostalCode": "34930",
+      "billingCountryCode": "TR",
+      "taxOffice": "Sultanbeyli",
+      "taxNumber": "34535204534",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 187
+      },
+      "items": [
+        {
+          "lineItemId": "6ac273a9-7d78-a9f1-3495-be3906060606",
+          "listingId": "6e958f8f-c621-4768-87f4-1366f2429559",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000E9Q2DJ",
+          "merchantSku": "AEHVYSHP",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 187
+          },
+          "vat": 31.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 187
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 16.82999
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 187
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 187
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Yaylı Süngerli Metal Havya Standı",
+          "orderNumber": "4417350721",
+          "orderDate": "2026-10-04T18:41:27",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELHVYSHP001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001685156313.jpg",
+          "deci": 0.3
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Altan Sahin",
+      "estimatedArrivalDate": "2026-10-08T15:30:00Z",
+      "totalDeci": 0.3
     }
   ]
 }
