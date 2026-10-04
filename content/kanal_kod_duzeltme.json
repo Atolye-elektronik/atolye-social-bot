@@ -1,0 +1,6 @@
+{
+ "_not": "Kanaldaki ilanin stok kodu bizim koddan FARKLI bir urunu/adedi gosteriyor ve merchantSku degistirilemiyor. Kanal bazli: {kanal: {ilandaki kod: gercek kod}}. Hem siparis toplarken (dusum) hem stok basarken kullanilir. 05.10.2026: HB'de HBCV000066JI28 'Teknolog Hanim 5 Adet 5V Aktif Buzzer' ortak ilani AEBZZR5V (tekli) koduyla bagliydi; 2 paket satildi, 2 buzzer dustu (10 olmaliydi).",
+ "hepsiburada": {
+  "AEBZZR5V": "AEBZZR5V-5"
+ }
+}

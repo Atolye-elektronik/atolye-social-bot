@@ -49,7 +49,20 @@ def _barkod_alias():
 
 
 BARKOD_ALIAS = _barkod_alias()
-IPTAL = {"cancelled", "canceled", "iptal", "returned", "unsupplied", "undelivered", "iade"}
+
+
+def _kanal_kod():
+    """kanal -> {ilandaki kod: gercek kod}. 05.10.2026: HB'deki ortak '5 Adet Buzzer' ilani
+    AEBZZR5V (tekli) koduyla bagli; satista 1 yerine 5 dusmeli (content/kanal_kod_duzeltme.json)."""
+    try:
+        d = json.load(open(os.path.join(KOK, "content", "kanal_kod_duzeltme.json"), encoding="utf-8"))
+    except FileNotFoundError:
+        return {}
+    return {k: v for k, v in d.items() if not k.startswith("_")}
+
+
+KANAL_KOD = _kanal_kod()
+IPTAL ={"cancelled", "canceled", "iptal", "returned", "unsupplied", "undelivered", "iade"}
 
 
 def _iptal_mi(durum):
@@ -572,6 +585,7 @@ def main():
         for kl in o["kalemler"]:
             # Barkod alias once: TY bazi urunlere yanlis stockCode veriyor (orn. Mini Duy 2920000600056 -> "AEDUYAMP-1")
             kod = BARKOD_ALIAS.get(str(kl.get("barkod"))) or kl["kod"] or bh.get(str(kl["barkod"]))
+            kod = KANAL_KOD.get(o["kanal"], {}).get(kod, kod)
             if not kod:
                 print("  ! %s %s: kod cozulemedi %s" % (o["kanal"], o["no"], kl))
                 continue

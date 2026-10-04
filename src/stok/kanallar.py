@@ -145,9 +145,23 @@ def stok_bas_trendyol(hedef, kuru=True):
 
 
 # ---------------- Hepsiburada: merchantSku + availableStock ----------------
+def kanal_kod_duzeltme(kanal):
+    """Kanaldaki ilan kodu -> gercek kod (content/kanal_kod_duzeltme.json). Stok basarken
+    ilan koduna gercek kodun stogu gider (05.10: HB AEBZZR5V ilani aslinda 5'li paket)."""
+    try:
+        d = json.load(open(os.path.join(KOK, "content", "kanal_kod_duzeltme.json"), encoding="utf-8"))
+    except FileNotFoundError:
+        return {}
+    return d.get(kanal, {})
+
+
 def stok_bas_hepsiburada(hedef, kuru=True):
     import hepsiburada_client as hb
-    items = [{"merchantSku": k, "availableStock": int(v)} for k, v in _kanal_kodlari(hedef).items()]
+    kodlar = _kanal_kodlari(hedef)
+    for ilan_kodu, gercek in kanal_kod_duzeltme("hepsiburada").items():
+        if gercek in kodlar:
+            kodlar[ilan_kodu] = kodlar[gercek]
+    items = [{"merchantSku": k, "availableStock": int(v)} for k, v in kodlar.items()]
     if kuru:
         return "kuru: %d sku" % len(items)
     return hb.update_stock(items)
