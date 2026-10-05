@@ -749,3 +749,4 @@
 {"an": "2026-10-05T21:25", "kanal": "pazarama", "no": "624556031", "kod": "AEMOTPRV-10", "adet": 1, "dusum": {"AEDCM3V-1": 10, "AEPRV-1": 10}, "kuru": true}
 {"an": "2026-10-05T21:31", "kanal": "trendyol", "no": "11677892907", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
 {"an": "2026-10-05T21:31", "kanal": "pazarama", "no": "624556031", "kod": "AEMOTPRV-10", "adet": 1, "dusum": {"AEDCM3V-1": 10, "AEPRV-1": 10}, "kuru": false}
+{"an": "2026-10-05T22:13", "kanal": "n11", "no": "236159292426", "kod": "AEACDMMR", "adet": 1, "dusum": {"AEACDMMR": 1}, "kuru": false}
