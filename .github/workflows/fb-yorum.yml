@@ -1,0 +1,66 @@
+name: FB yorum listele / sil
+
+# Elle tetiklenir. Sayfanin son gonderilerindeki yorumlari log'a yazar (mod=listele)
+# ya da verilen yorum id'sini siler (mod=sil). Jeton yerelde olmadigi icin Actions'ta calisir.
+on:
+  workflow_dispatch:
+    inputs:
+      mod:
+        description: "listele | sil"
+        type: choice
+        options: [listele, sil]
+        default: listele
+      yorum_id:
+        description: "mod=sil icin yorum id (ornegin 122110..._123...)"
+        type: string
+        required: false
+      gun:
+        description: "listele: son kac gunun yorumlari"
+        type: string
+        default: "3"
+
+permissions:
+  contents: read
+
+jobs:
+  yorum:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet requests
+      - name: Calistir
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ vars.FB_PAGE_ID || '1161089677097271' }}
+          MOD: ${{ inputs.mod }}
+          YORUM_ID: ${{ inputs.yorum_id }}
+          GUN: ${{ inputs.gun }}
+          PYTHONIOENCODING: utf-8
+        run: |
+          python - <<'EOF'
+          import os, requests, datetime
+          G = "https://graph.facebook.com/v21.0"
+          tok = os.environ["META_ACCESS_TOKEN"]; sayfa = os.environ["FB_PAGE_ID"]
+          r = requests.get(f"{G}/{sayfa}", params={"fields": "access_token", "access_token": tok}, timeout=60).json()
+          ptok = r.get("access_token") or tok
+          mod = os.environ["MOD"]
+          if mod == "sil":
+              yid = os.environ["YORUM_ID"].strip()
+              assert yid, "yorum_id bos"
+              r = requests.delete(f"{G}/{yid}", params={"access_token": ptok}, timeout=60)
+              print("SIL", yid, r.status_code, r.text[:300])
+              raise SystemExit(0 if r.ok else 1)
+          gun = int(os.environ.get("GUN") or 3)
+          esik = (datetime.datetime.utcnow() - datetime.timedelta(days=gun)).strftime("%Y-%m-%dT%H:%M:%S")
+          posts = requests.get(f"{G}/{sayfa}/posts", params={"fields": "id,created_time,message", "limit": 40, "access_token": ptok}, timeout=60).json().get("data", [])
+          for p in posts:
+              c = requests.get(f"{G}/{p['id']}/comments", params={"fields": "id,created_time,from,message,comment_count", "filter": "stream", "limit": 100, "access_token": ptok}, timeout=60).json()
+              for y in c.get("data", []):
+                  if y.get("created_time", "") >= esik:
+                      kim = (y.get("from") or {}).get("name", "?")
+                      print("YORUM", y["id"], y["created_time"][:16], "|", kim, "|", (y.get("message") or "").replace("\n", " ")[:160], "| post:", (p.get("message") or "")[:50].replace("\n", " "))
+          print("tarandi:", len(posts), "gonderi")
+          EOF
