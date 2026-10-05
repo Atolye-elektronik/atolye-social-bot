@@ -55,7 +55,12 @@ jobs:
               raise SystemExit(0 if r.ok else 1)
           gun = int(os.environ.get("GUN") or 3)
           esik = (datetime.datetime.utcnow() - datetime.timedelta(days=gun)).strftime("%Y-%m-%dT%H:%M:%S")
-          posts = requests.get(f"{G}/{sayfa}/posts", params={"fields": "id,created_time,message", "limit": 40, "access_token": ptok}, timeout=60).json().get("data", [])
+          posts = []
+          for uc, ek in (("posts", {}), ("ads_posts", {"include_inline_create": "true"}), ("feed", {})):
+              r = requests.get(f"{G}/{sayfa}/{uc}", params={"fields": "id,created_time,message", "limit": 50, "access_token": ptok, **ek}, timeout=60).json()
+              print(uc, "->", len(r.get("data", [])), "gonderi", (r.get("error") or {}).get("message", ""))
+              posts += r.get("data", [])
+          gorulen = set(); posts = [p for p in posts if not (p["id"] in gorulen or gorulen.add(p["id"]))]
           for p in posts:
               c = requests.get(f"{G}/{p['id']}/comments", params={"fields": "id,created_time,from,message,comment_count", "filter": "stream", "limit": 100, "access_token": ptok}, timeout=60).json()
               for y in c.get("data", []):
