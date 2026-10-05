@@ -739,3 +739,4 @@
 {"an": "2026-10-05T12:33", "kanal": "shopify", "no": "#1055", "kod": "AESTJDFTR-20", "adet": 1, "dusum": {"AESTJDFTR": 20}, "kuru": false}
 {"an": "2026-10-05T12:53", "kanal": "hepsiburada", "no": "4773832954", "kod": "AEPY18650", "adet": 2, "dusum": {"AEPY18650": 2}, "kuru": false}
 {"an": "2026-10-05T13:23", "kanal": "hepsiburada", "no": "4452303807", "kod": "AEPY18650-2", "adet": 2, "dusum": {"AEPY18650": 4}, "kuru": false}
+{"an": "2026-10-02T20:43", "kanal": "elden", "no": "IBAN-021026", "kod": "AESTJDFTR", "adet": 25, "dusum": {"AESTJDFTR": 25}, "kuru": false, "not": "Elden satis, odeme IBAN ile; Shopify stogundan 02.10 20:43 elle dusuldu (kullanici teyidi 05.10)"}
