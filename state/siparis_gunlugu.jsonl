@@ -742,3 +742,4 @@
 {"an": "2026-10-02T20:43", "kanal": "elden", "no": "IBAN-021026", "kod": "AESTJDFTR", "adet": 25, "dusum": {"AESTJDFTR": 25}, "kuru": false, "not": "Elden satis, odeme IBAN ile; Shopify stogundan 02.10 20:43 elle dusuldu (kullanici teyidi 05.10)"}
 {"an": "2026-10-05T16:08", "kanal": "n11", "no": "251284292422", "kod": "AEMYNK3", "adet": 1, "dusum": {"AEMYNK": 3}, "kuru": false}
 {"an": "2026-10-05T17:03", "kanal": "hepsiburada", "no": "4607759866", "kod": "AEACDMMR", "adet": 1, "dusum": {"AEACDMMR": 1}, "kuru": false}
+{"an": "2026-10-05T18:23", "kanal": "n11", "no": "262196292423", "kod": "AEACDMMR", "adet": 1, "dusum": {"AEACDMMR": 1}, "kuru": false}
