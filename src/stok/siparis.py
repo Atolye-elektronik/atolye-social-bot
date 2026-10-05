@@ -90,9 +90,13 @@ def _kalemler(o):
                 durum = str(_ilk(x, "orderLineItemStatusName", "status", "lineStatus", vars="") or "").lower()
                 if _iptal_mi(durum):
                     continue
+                # 06.10.2026: Pazarama kalemde kodu ic nesnede veriyor (product.stockCode / product.code);
+                # ust seviyede bulunamazsa oraya bak (624556031 "kod cozulemedi" diye dusulmemisti).
+                urun = x.get("product") if isinstance(x.get("product"), dict) else {}
                 out.append({
-                    "kod": _ilk(x, "merchantSku", "merchantSKU", "stockCode", "sellerStockCode", "vendorStockCode", "productCode", "code", "sku"),
-                    "barkod": _ilk(x, "barcode", "Barcode", "ean", "gtin"),
+                    "kod": _ilk(x, "merchantSku", "merchantSKU", "stockCode", "sellerStockCode", "vendorStockCode", "productCode", "code", "sku")
+                           or _ilk(urun, "stockCode", "sellerStockCode", "sku"),
+                    "barkod": _ilk(x, "barcode", "Barcode", "ean", "gtin") or _ilk(urun, "barcode", "code", "ean"),
                     "adet": int(_ilk(x, "quantity", "Quantity", "amount", "count", vars=1) or 1),
                 })
             return out
