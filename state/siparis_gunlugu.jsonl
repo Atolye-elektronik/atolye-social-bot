@@ -759,3 +759,4 @@
 {"an": "2026-10-06T20:20", "kanal": "elle", "no": "CANTA-20-06.10", "kod": "AETCS18P-parcalar", "adet": 20, "dusum": {"AEZD30C40W": 20, "AEHVYSHP": 20, "AELHMPMP": 20, "AELEHIMPASTA": 20, "AEIZOLE": 20, "AEDT830D": 20, "AEBB830P": 20}, "kuru": false, "not": "kullanici: 30.09da 59 dusulen malzemelerden 20 daha dus (tup lehim ve 6x13 plaket haric); Shopify inventoryAdjustQuantities ile dusuldu"}
 {"an": "2026-10-06T20:35", "kanal": "elle", "no": "CANTA-20-06.10-ek", "kod": "AETUPLEHIM+AE6X13PLK", "adet": 20, "dusum": {"AETUPLEHIM": 20, "AE6X13PLK": 20}, "kuru": false, "not": "kullanici: tum canta malzemelerinden 20 dusulecekti; tup lehim ve 6x13 plaket de 20 dusuldu"}
 {"an": "2026-10-06T17:38", "kanal": "n11", "no": "211526692426", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
+{"an": "2026-10-06T17:54", "kanal": "trendyol", "no": "11680846849", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
