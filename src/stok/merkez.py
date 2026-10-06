@@ -20,7 +20,10 @@ sys.path.insert(0, os.path.join(KOK, "src"))
 
 from stok.recete import Recete  # noqa: E402
 
-KRITIK_ESIK = int(os.environ.get("STOK_KRITIK_ESIK", "2"))   # bu ve alti -> diger kanallarda 0
+KRITIK_ESIK = int(os.environ.get("STOK_KRITIK_ESIK", "2"))   # bu ve alti -> diger kanallarda 0 (TEKLI parcalar)
+# 06.10.2026 kullanici: "3'un altina dusunce tekli malzemeyi kapat, setin icindeyse setler kalsin. Set kritik esigi 1."
+# Setler/paketler parca stogundan hesaplanir; son adede kadar satista kalir, 0'da kapanir.
+SET_KRITIK_ESIK = int(os.environ.get("STOK_SET_KRITIK_ESIK", "0"))
 # Pazaryerinde 500'den fazla stok gostermenin faydasi yok. DIKKAT: tavan yalniz
 # YAYINLANAN sayiya uygulanir; set hesabi GERCEK parca stoguyla yapilir. Tavani
 # parca stoguna uygulamak 13.09'da Arduino setlerini yanlis kisitlamisti
@@ -94,7 +97,8 @@ def hedef_stoklar(recete, parca):
         if k in esiksiz:
             hedef[k] = max(0, min(v, TAVAN))
             continue
-        if v <= KRITIK_ESIK:
+        esik = SET_KRITIK_ESIK if k in recete.setler else KRITIK_ESIK
+        if v <= esik:
             hedef[k] = 0
         elif v <= AZ_STOK:
             hedef[k] = max(1, v - GUVENLIK_PAYI)
@@ -163,7 +167,7 @@ def main():
     parca = parca_stoklari()
     hedef = hedef_stoklar(recete, parca)
     setler = {s: hedef.get(s) for s in recete.setler}
-    print("parca: %d | set: %d | kritik esik: %d" % (len(parca), len(setler), KRITIK_ESIK))
+    print("parca: %d | set: %d | kritik esik: parca %d, set %d" % (len(parca), len(setler), KRITIK_ESIK, SET_KRITIK_ESIK))
     bilinmeyen = [s for s, v in setler.items() if v is None]
     if bilinmeyen:
         print("hesaplanamayan setler (eksik parca stogu):", ", ".join(bilinmeyen))
