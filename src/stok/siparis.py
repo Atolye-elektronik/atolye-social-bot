@@ -230,8 +230,27 @@ def topla_pazarama(gun=14):
         return out
     for o in (r.json().get("data") or []):
         out.append({"no": str(_ilk(o, "orderNumber", "orderId", "id")), "tarih": _ilk(o, "orderDate", "createdDate"),
-                    "durum": _ilk(o, "orderStatus", "status"), "kalemler": _kalemler(o)})
+                    "durum": _pazarama_durum(o), "kalemler": _kalemler(o),
+                    "tutar": _ilk(o, "orderAmount")})
     return out
+
+
+def _pazarama_durum(o):
+    """07.10.2026: Pazarama ust 'orderStatus' kargolandiktan sonra da 3 (alindi) kaliyor; gercek durum
+    kalemlerde (orderItemStatusName: 'Siparisiniz Kargoya Verildi' vb.). Telegram 624556031'i kargolanmis
+    oldugu halde 'verilmedi' gosteriyordu; iptal de bu yuzden hic algilanmiyordu."""
+    adlar = [str(it.get("orderItemStatusName") or "").lower() for it in (o.get("items") or [])]
+    if not adlar:
+        return _ilk(o, "orderStatus", "status")
+    if all("iptal" in a for a in adlar):
+        return "iptal"
+    if all("iade" in a for a in adlar):
+        return "iade"
+    if all(("kargo" in a and "ver" in a) or "teslim" in a for a in adlar):
+        return "teslim" if all("teslim" in a for a in adlar) else "shipped"
+    if any("hazırlan" in a or "hazirlan" in a for a in adlar):
+        return "hazirlaniyor"
+    return "created"
 
 
 def topla_idefix():
