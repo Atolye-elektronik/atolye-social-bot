@@ -49,3 +49,4 @@ content/muzik-tiktok/*.mp3
 # yerel yedekler ve loglar
 .env.yedek-*
 state/*.log
+state/paylasim_tetik.json
