@@ -303,7 +303,9 @@ def topla_amazon(gun=14):
         durum = o.get("OrderStatus")
         kl = []
         if durum not in ("Canceled", "Pending"):
-            kl = [{"kod": it.get("SellerSKU"), "barkod": None, "adet": int(it.get("QuantityOrdered") or 0)}
+            # Ilan SKU'lari "AEMZN-<bizim kod>" (kanallar.stok_bas_amazon); onek atilmazsa
+            # siparis "bilinmeyen kod" olur ve stok dusmez (24.09 step motor siparisi boyle kacti).
+            kl = [{"kod": it["SellerSKU"].removeprefix("AEMZN-"), "barkod": None, "adet": int(it.get("QuantityOrdered") or 0)}
                   for it in az.order_items(no) if it.get("SellerSKU") and int(it.get("QuantityOrdered") or 0) > 0]
         out.append({"no": no, "tarih": o.get("PurchaseDate"), "durum": durum, "kalemler": kl,
                     "tutar": (o.get("OrderTotal") or {}).get("Amount"), "musteri": "",
