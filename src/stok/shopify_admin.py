@@ -19,6 +19,11 @@ CLIENT_SECRET = os.environ.get("SHOPIFY_CLIENT_SECRET", "").strip()
 SURUM = "2025-07"
 URL = "https://%s.myshopify.com/admin/api/%s/graphql.json" % (MAGAZA, SURUM)
 HARITA = os.path.join(KOK, "content", "shopify_sku.json")
+# Ayni SKU'yu paylasan renk varyantlari: harita yalniz ilk varyanti tutar, digerleri
+# guncellenmez kalir. Buradaki SKU'larda stok_yaz ayni adedi TUM varyantlara yazar.
+# 08.10.2026: Endustriyel set Mavi kutu 19 gosteriyordu (breadboard 7). AEPLSTKKT
+# (tekli kutu) BILEREK yok: sari/mavi kutu fiziksel olarak ayri stok.
+ESLE_YAZ = {"AEENDELKSET"}
 
 
 _TOKEN_CACHE = {"token": TOKEN, "son": 0.0}
@@ -71,6 +76,8 @@ def haritayi_yenile():
         d = gql(q, {"after": after})["products"]
         for p in d["nodes"]:
             for v in p["variants"]["nodes"]:
+                if v["sku"] in sku and v["sku"] in ESLE_YAZ:
+                    sku[v["sku"]].setdefault("esler", []).append(int(v["inventoryItem"]["id"].split("/")[-1]))
                 if not v["sku"] or v["sku"] in sku:
                     continue
                 sku[v["sku"]] = {"variant": int(v["id"].split("/")[-1]),
@@ -99,6 +106,8 @@ def stok_yaz(degisiklikler, sebep="correction"):
     sonuc = []
     kalemler = [{"inventoryItemId": "gid://shopify/InventoryItem/%d" % S[k]["item"],
                  "locationId": loc, "quantity": int(v)} for k, v in degisiklikler.items() if k in S]
+    kalemler += [{"inventoryItemId": "gid://shopify/InventoryItem/%d" % e, "locationId": loc, "quantity": int(v)}
+                 for k, v in degisiklikler.items() if k in S for e in S[k].get("esler", [])]
     for i in range(0, len(kalemler), 100):
         d = gql(q, {"input": {"name": "available", "reason": sebep, "ignoreCompareQuantity": True,
                               "quantities": kalemler[i:i + 100]}})
