@@ -378,6 +378,258 @@
       "customerName": "erol serbes",
       "estimatedArrivalDate": "2026-10-09T15:30:00Z",
       "totalDeci": 2
+    },
+    {
+      "id": "6ac63322-ac4b-2db7-061c-147706060606",
+      "status": "Open",
+      "customerId": "f486c19c-5612-442e-a8a8-deac0d09b24a",
+      "orderDate": "2026-10-07T14:55:13",
+      "dueDate": "2026-10-08T18:30:00",
+      "barcode": "62955256267517",
+      "packageNumber": "5525626751",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Erbakır Cd. No:13 Daire:13 Kat:4 GÜMÜŞÇAY MERKEZEFENDİ Denizli",
+      "recipientName": "Çağlar Avgan",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "GÜMÜŞÇAY",
+      "shippingTown": "MERKEZEFENDİ",
+      "shippingCity": "Denizli",
+      "email": "4797138286_5525626751@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "çağlar avgan ",
+      "billingAddress": "SIRAKAPILAR MAH. PROF. DR. NUSRET H.FİŞEK SK. MESTAŞ İŞHANI NO:3 B MERKEZEFENDİ/DENİZLİ\n SIRAKAPILAR MERKEZEFENDİ Denizli",
+      "billingCity": "Denizli",
+      "billingTown": "MERKEZEFENDİ",
+      "billingDistrict": "SIRAKAPILAR",
+      "billingPostalCode": "20010",
+      "billingCountryCode": "TR",
+      "taxOffice": "pamukkale",
+      "taxNumber": "38059506860",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 229
+      },
+      "items": [
+        {
+          "lineItemId": "6ac63322-d338-f94d-c5ba-63ce06060606",
+          "listingId": "d9f1dcb0-a496-42a5-ae17-38ee8b01661f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000PLEY2",
+          "merchantSku": "AEACDMMR2",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 229
+          },
+          "vat": 38.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 229
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 20.61
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 229
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 229
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl Ac 220V 2000W Motor Hız Kontrol Kartı Dimmer",
+          "orderNumber": "4797138286",
+          "orderDate": "2026-10-07T14:55:13",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000000CNL576",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/121/{size}/110000071106017.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Çağlar Avgan",
+      "estimatedArrivalDate": "2026-10-12T15:30:00Z",
+      "totalDeci": 1
+    },
+    {
+      "id": "6ac636a0-8a14-f17b-45e7-0ce806060606",
+      "status": "Open",
+      "customerId": "838f118b-e413-49f1-8c60-d857889f8b03",
+      "orderDate": "2026-10-07T15:10:07",
+      "dueDate": "2026-10-08T18:30:00",
+      "barcode": "62955256342049",
+      "packageNumber": "5525634204",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Çetin Cd. No:18 A Blok Daire:5 MEHMET AKİF ÜMRANİYE İstanbul",
+      "recipientName": "fatma özdal",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MEHMET AKİF",
+      "shippingTown": "ÜMRANİYE",
+      "shippingCity": "İstanbul",
+      "email": "4131482819_5525634204@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "zeliha gürgen",
+      "billingAddress": "Şahika sokak. No:49 daire:29 kat:9 mecidiyeköy GÜLBAHAR ŞİŞLİ İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "ŞİŞLİ",
+      "billingDistrict": "GÜLBAHAR",
+      "billingPostalCode": "34394",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 289.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ac6369f-7744-2f1a-a95b-8d0506060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "vat": 48.3,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 289.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.04
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 144.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 289.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4131482819",
+          "orderDate": "2026-10-07T15:10:07",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "ömür özdal",
+      "estimatedArrivalDate": "2026-10-13T15:30:00Z",
+      "totalDeci": 2
     }
   ]
 }
