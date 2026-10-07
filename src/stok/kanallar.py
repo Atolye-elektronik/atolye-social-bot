@@ -243,13 +243,29 @@ def _pazarama_barkodlari():
     """
     from marketplaces import pazarama_client as pc
     yol = os.path.join(KOK, "state", "pazarama_katalog.json")
+    duz = barkod_duzeltme()
     try:
         d = json.load(open(yol, encoding="utf-8"))
         if d and all(isinstance(v, list) for v in d.values()):
+            # 08.10.2026: onbellek bir kez kurulup hic tazelenmiyordu; sonradan acilan 30 ilan
+            # (AEBB830P 100 gosteriyordu, gercek 7) stok almiyordu. Canli listeyle birlestir.
+            try:
+                for appr in ("true", "false"):
+                    for p in range(1, 12):
+                        l = (pc.get("/product/products", Approved=appr, Page=p, Size=100).json() or {}).get("data") or []
+                        for x in l:
+                            if x.get("stockCode") and x.get("code"):
+                                liste = d.setdefault(duz.get(x["code"]) or x["stockCode"], [])
+                                if x["code"] not in liste:
+                                    liste.append(x["code"])
+                        if len(l) < 100:
+                            break
+                json.dump(d, open(yol, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+            except Exception as e:
+                print("  Pazarama katalog tazelenemedi, onbellek kullaniliyor:", str(e)[:120])
             return d
     except FileNotFoundError:
         pass
-    duz = barkod_duzeltme()
     g = {}
     for y in ("/product/products/approved", "/product/products/unapproved"):
         for p in range(8):
