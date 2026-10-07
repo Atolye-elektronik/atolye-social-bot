@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-09-03-urun_tanitim-ir-kumandali-robot-araba-kiti-3-7v-li-ion-sarjli-set-2wd-ard.jpg
+media: posts/media/slayt/2026-10-12-urun_tanitim-ir-kumandali-robot-araba-kiti-3-7v-li-ion-sarjli-set-2wd-ard.mp4
+kapak_gorsel: posts/media/2026-09-03-urun_tanitim-ir-kumandali-robot-araba-kiti-3-7v-li-ion-sarjli-set-2wd-ard.jpg
 publish_at: 2026-10-12 11:00
 tema: urun_tanitim
 ---

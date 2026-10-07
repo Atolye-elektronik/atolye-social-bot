@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-11-17-ipucu-12v-1a-adaptor.jpg
+media: posts/media/slayt/2026-11-17-ipucu-12v-1a-adaptor.mp4
+kapak_gorsel: posts/media/2026-11-17-ipucu-12v-1a-adaptor.jpg
 publish_at: 2026-11-17 19:30
 tema: ipucu
 ---

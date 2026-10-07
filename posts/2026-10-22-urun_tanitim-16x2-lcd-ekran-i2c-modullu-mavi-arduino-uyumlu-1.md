@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-10-22-urun_tanitim-16x2-lcd-ekran-i2c-modullu-mavi-arduino-uyumlu-1.jpg
+media: posts/media/slayt/2026-10-22-urun_tanitim-16x2-lcd-ekran-i2c-modullu-mavi-arduino-uyumlu-1.mp4
+kapak_gorsel: posts/media/2026-10-22-urun_tanitim-16x2-lcd-ekran-i2c-modullu-mavi-arduino-uyumlu-1.jpg
 publish_at: 2026-10-22 11:00
 tema: urun_tanitim
 ---

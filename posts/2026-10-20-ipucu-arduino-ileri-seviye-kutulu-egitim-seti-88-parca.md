@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-10-20-ipucu-arduino-ileri-seviye-kutulu-egitim-seti-88-parca.jpg
+media: posts/media/slayt/2026-10-20-ipucu-arduino-ileri-seviye-kutulu-egitim-seti-88-parca.mp4
+kapak_gorsel: posts/media/2026-10-20-ipucu-arduino-ileri-seviye-kutulu-egitim-seti-88-parca.jpg
 publish_at: 2026-10-20 19:30
 tema: ipucu
 ---

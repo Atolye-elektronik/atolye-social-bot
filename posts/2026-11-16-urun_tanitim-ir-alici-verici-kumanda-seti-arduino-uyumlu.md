@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-11-16-urun_tanitim-ir-alici-verici-kumanda-seti-arduino-uyumlu.jpg
+media: posts/media/slayt/2026-11-16-urun_tanitim-ir-alici-verici-kumanda-seti-arduino-uyumlu.mp4
+kapak_gorsel: posts/media/2026-11-16-urun_tanitim-ir-alici-verici-kumanda-seti-arduino-uyumlu.jpg
 publish_at: 2026-11-16 11:00
 tema: urun_tanitim
 ---

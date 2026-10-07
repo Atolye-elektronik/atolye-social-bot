@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-09-21-urun_tanitim-2li-aa-kalem-pil-kutusu-yuvasi-3v-kablolu-kalem-pil-yuvasi.jpg
+media: posts/media/slayt/2026-11-01-urun_tanitim-2li-aa-kalem-pil-kutusu-yuvasi-3v-kablolu-kalem-pil-yuvasi.mp4
+kapak_gorsel: posts/media/2026-09-21-urun_tanitim-2li-aa-kalem-pil-kutusu-yuvasi-3v-kablolu-kalem-pil-yuvasi.jpg
 publish_at: 2026-11-01 13:00
 tema: urun_tanitim
 ---

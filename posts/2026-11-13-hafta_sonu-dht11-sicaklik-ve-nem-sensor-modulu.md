@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-11-13-hafta_sonu-dht11-sicaklik-ve-nem-sensor-modulu.jpg
+media: posts/media/slayt/2026-11-13-hafta_sonu-dht11-sicaklik-ve-nem-sensor-modulu.mp4
+kapak_gorsel: posts/media/2026-11-13-hafta_sonu-dht11-sicaklik-ve-nem-sensor-modulu.jpg
 publish_at: 2026-11-13 18:00
 tema: hafta_sonu
 ---

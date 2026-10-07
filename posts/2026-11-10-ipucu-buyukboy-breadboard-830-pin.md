@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-11-10-ipucu-buyukboy-breadboard-830-pin.jpg
+media: posts/media/slayt/2026-11-10-ipucu-buyukboy-breadboard-830-pin.mp4
+kapak_gorsel: posts/media/2026-11-10-ipucu-buyukboy-breadboard-830-pin.jpg
 publish_at: 2026-11-10 19:30
 tema: ipucu
 ---

@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-10-27-ipucu-hc-sr04-ultrasonik-mesafe-sensoru-arduino-uyumlu-temassiz-ol.jpg
+media: posts/media/slayt/2026-10-27-ipucu-hc-sr04-ultrasonik-mesafe-sensoru-arduino-uyumlu-temassiz-ol.mp4
+kapak_gorsel: posts/media/2026-10-27-ipucu-hc-sr04-ultrasonik-mesafe-sensoru-arduino-uyumlu-temassiz-ol.jpg
 publish_at: 2026-10-27 19:30
 tema: ipucu
 ---

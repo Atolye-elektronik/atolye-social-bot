@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-11-08-magaza-lehim-pompasi-metal.jpg
+media: posts/media/slayt/2026-11-08-magaza-lehim-pompasi-metal.mp4
+kapak_gorsel: posts/media/2026-11-08-magaza-lehim-pompasi-metal.jpg
 publish_at: 2026-11-08 13:00
 tema: magaza
 ---

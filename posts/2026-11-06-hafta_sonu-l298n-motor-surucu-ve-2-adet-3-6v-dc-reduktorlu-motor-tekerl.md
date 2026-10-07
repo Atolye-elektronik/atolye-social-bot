@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-11-06-hafta_sonu-l298n-motor-surucu-ve-2-adet-3-6v-dc-reduktorlu-motor-tekerl.jpg
+media: posts/media/slayt/2026-11-06-hafta_sonu-l298n-motor-surucu-ve-2-adet-3-6v-dc-reduktorlu-motor-tekerl.mp4
+kapak_gorsel: posts/media/2026-11-06-hafta_sonu-l298n-motor-surucu-ve-2-adet-3-6v-dc-reduktorlu-motor-tekerl.jpg
 publish_at: 2026-11-06 18:00
 tema: hafta_sonu
 ---

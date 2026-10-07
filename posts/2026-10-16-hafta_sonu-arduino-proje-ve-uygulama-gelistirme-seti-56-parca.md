@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-10-16-hafta_sonu-arduino-proje-ve-uygulama-gelistirme-seti-56-parca.jpg
+media: posts/media/slayt/2026-10-16-hafta_sonu-arduino-proje-ve-uygulama-gelistirme-seti-56-parca.mp4
+kapak_gorsel: posts/media/2026-10-16-hafta_sonu-arduino-proje-ve-uygulama-gelistirme-seti-56-parca.jpg
 publish_at: 2026-10-16 18:00
 tema: hafta_sonu
 ---

@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-10-15-urun_tanitim-akilli-proje-ve-sensor-modulleri-seti-10-parca.jpg
+media: posts/media/slayt/2026-10-15-urun_tanitim-akilli-proje-ve-sensor-modulleri-seti-10-parca.mp4
+kapak_gorsel: posts/media/2026-10-15-urun_tanitim-akilli-proje-ve-sensor-modulleri-seti-10-parca.jpg
 publish_at: 2026-10-15 11:00
 tema: urun_tanitim
 ---

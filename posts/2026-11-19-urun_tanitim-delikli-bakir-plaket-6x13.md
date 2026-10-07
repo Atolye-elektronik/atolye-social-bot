@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-11-19-urun_tanitim-delikli-bakir-plaket-6x13.jpg
+media: posts/media/slayt/2026-11-19-urun_tanitim-delikli-bakir-plaket-6x13.mp4
+kapak_gorsel: posts/media/2026-11-19-urun_tanitim-delikli-bakir-plaket-6x13.jpg
 publish_at: 2026-11-19 11:00
 tema: urun_tanitim
 ---

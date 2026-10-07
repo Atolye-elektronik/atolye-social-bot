@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-11-12-urun_tanitim-sg90-servo-motor-9gr-180-derece.jpg
+media: posts/media/slayt/2026-11-12-urun_tanitim-sg90-servo-motor-9gr-180-derece.mp4
+kapak_gorsel: posts/media/2026-11-12-urun_tanitim-sg90-servo-motor-9gr-180-derece.jpg
 publish_at: 2026-11-12 11:00
 tema: urun_tanitim
 ---

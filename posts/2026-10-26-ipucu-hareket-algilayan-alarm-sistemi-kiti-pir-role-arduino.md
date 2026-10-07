@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-09-15-ipucu-hareket-algilayan-alarm-sistemi-kiti-pir-role-arduino.jpg
+media: posts/media/slayt/2026-10-26-ipucu-hareket-algilayan-alarm-sistemi-kiti-pir-role-arduino.mp4
+kapak_gorsel: posts/media/2026-09-15-ipucu-hareket-algilayan-alarm-sistemi-kiti-pir-role-arduino.jpg
 publish_at: 2026-10-26 11:00
 tema: ipucu
 ---

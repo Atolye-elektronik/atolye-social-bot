@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-10-30-hafta_sonu-l298n-dual-motor-surucu-modulu.jpg
+media: posts/media/slayt/2026-10-30-hafta_sonu-l298n-dual-motor-surucu-modulu.mp4
+kapak_gorsel: posts/media/2026-10-30-hafta_sonu-l298n-dual-motor-surucu-modulu.jpg
 publish_at: 2026-10-30 18:00
 tema: hafta_sonu
 ---

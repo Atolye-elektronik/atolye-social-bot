@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-10-09-hafta_sonu-hc-sr501-ayarlanabilir-hareket-sensoru.jpg
+media: posts/media/slayt/2026-10-09-hafta_sonu-hc-sr501-ayarlanabilir-hareket-sensoru.mp4
+kapak_gorsel: posts/media/2026-10-09-hafta_sonu-hc-sr501-ayarlanabilir-hareket-sensoru.jpg
 publish_at: 2026-10-09 18:00
 tema: hafta_sonu
 ---

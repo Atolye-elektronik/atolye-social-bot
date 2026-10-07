@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-11-02-urun_tanitim-yankeski-160-mm.jpg
+media: posts/media/slayt/2026-11-02-urun_tanitim-yankeski-160-mm.mp4
+kapak_gorsel: posts/media/2026-11-02-urun_tanitim-yankeski-160-mm.jpg
 publish_at: 2026-11-02 11:00
 tema: urun_tanitim
 ---

@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-09-20-magaza-bluetooth-kontrollu-robot-kiti-2wd-robot-govde-hc-06-bluetoo.jpg
+media: posts/media/slayt/2026-10-23-magaza-bluetooth-kontrollu-robot-kiti-2wd-robot-govde-hc-06-bluetoo.mp4
+kapak_gorsel: posts/media/2026-09-20-magaza-bluetooth-kontrollu-robot-kiti-2wd-robot-govde-hc-06-bluetoo.jpg
 publish_at: 2026-10-23 18:00
 tema: magaza
 ---

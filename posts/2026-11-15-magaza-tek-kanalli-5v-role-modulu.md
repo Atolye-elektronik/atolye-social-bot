@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-11-15-magaza-tek-kanalli-5v-role-modulu.jpg
+media: posts/media/slayt/2026-11-15-magaza-tek-kanalli-5v-role-modulu.mp4
+kapak_gorsel: posts/media/2026-11-15-magaza-tek-kanalli-5v-role-modulu.jpg
 publish_at: 2026-11-15 13:00
 tema: magaza
 ---

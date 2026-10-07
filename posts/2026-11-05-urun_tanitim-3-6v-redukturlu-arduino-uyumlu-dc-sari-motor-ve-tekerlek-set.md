@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-11-05-urun_tanitim-3-6v-redukturlu-arduino-uyumlu-dc-sari-motor-ve-tekerlek-set.jpg
+media: posts/media/slayt/2026-11-05-urun_tanitim-3-6v-redukturlu-arduino-uyumlu-dc-sari-motor-ve-tekerlek-set.mp4
+kapak_gorsel: posts/media/2026-11-05-urun_tanitim-3-6v-redukturlu-arduino-uyumlu-dc-sari-motor-ve-tekerlek-set.jpg
 publish_at: 2026-11-05 11:00
 tema: urun_tanitim
 ---

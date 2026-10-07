@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-10-19-urun_tanitim-rc522-rfid-okuyucu-13-56-mhz.jpg
+media: posts/media/slayt/2026-10-19-urun_tanitim-rc522-rfid-okuyucu-13-56-mhz.mp4
+kapak_gorsel: posts/media/2026-10-19-urun_tanitim-rc522-rfid-okuyucu-13-56-mhz.jpg
 publish_at: 2026-10-19 11:00
 tema: urun_tanitim
 ---

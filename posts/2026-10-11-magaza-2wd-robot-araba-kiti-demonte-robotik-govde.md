@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-10-11-magaza-2wd-robot-araba-kiti-demonte-robotik-govde.jpg
+media: posts/media/slayt/2026-10-11-magaza-2wd-robot-araba-kiti-demonte-robotik-govde.mp4
+kapak_gorsel: posts/media/2026-10-11-magaza-2wd-robot-araba-kiti-demonte-robotik-govde.jpg
 publish_at: 2026-10-11 13:00
 tema: magaza
 ---

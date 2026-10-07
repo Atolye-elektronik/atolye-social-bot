@@ -1,6 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
-media: posts/media/2026-09-18-hafta_sonu-rfid-kartli-akilli-kilit-sistemi-kiti-rc522-arduino-uno-serv.jpg
+media: posts/media/slayt/2026-10-28-hafta_sonu-rfid-kartli-akilli-kilit-sistemi-kiti-rc522-arduino-uno-serv.mp4
+kapak_gorsel: posts/media/2026-09-18-hafta_sonu-rfid-kartli-akilli-kilit-sistemi-kiti-rc522-arduino-uno-serv.jpg
 publish_at: 2026-10-28 20:00
 tema: hafta_sonu
 ---
