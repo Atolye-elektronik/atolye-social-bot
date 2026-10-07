@@ -776,3 +776,4 @@
 {"an": "2026-10-07T17:05", "kanal": "amazon", "no": "407-7944670-6021144", "kod": "AE28BYJ48", "adet": 3, "dusum": {"AE28BYJ48": 3}, "kuru": false, "not": "24.09 siparisi AEMZN- oneki yuzunden bilinmeyen kod olup dusulmemisti; 07.10 Shopify 88->85 elle dusuldu, topla_amazon onek atacak sekilde duzeltildi"}
 {"an": "2026-10-07T20:04", "kanal": "n11", "no": "282947992424", "kod": "AEACDMMR", "adet": 1, "dusum": {"AEACDMMR": 1}, "kuru": false}
 {"an": "2026-10-07T20:08", "kanal": "trendyol", "no": "11685167374", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
+{"an": "2026-10-07T21:03", "kanal": "trendyol", "no": "11685341460", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
