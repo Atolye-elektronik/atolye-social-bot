@@ -1,4 +1,217 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ac7f96e-7621-5a25-1074-a09806060606",
+      "status": "Open",
+      "customerId": "ca4d91bd-680f-4119-844b-5abfdbf1875b",
+      "orderDate": "2026-10-08T23:13:31",
+      "dueDate": "2026-10-09T18:30:00",
+      "barcode": "62955264346536",
+      "packageNumber": "5526434653",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Yeni Mah .3077.Sok.Ada Aprt No:10 Kat:1 Daire:3 YENİMAHALLE ATAKUM Samsun",
+      "recipientName": "Fatih Kaya",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YENİMAHALLE",
+      "shippingTown": "ATAKUM",
+      "shippingCity": "Samsun",
+      "email": "4368512277_5526434653@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Fatih Kaya",
+      "billingAddress": "Çize Gıda Paz.19 Mayıs San.Sit.Şabanoğlu Mah. 62 Sok. No:47 Samsun/Tekkeköy ŞABANOĞLU TEKKEKÖY Samsun",
+      "billingCity": "Samsun",
+      "billingTown": "TEKKEKÖY",
+      "billingDistrict": "ŞABANOĞLU",
+      "billingPostalCode": "55330",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 382.79999
+      },
+      "items": [
+        {
+          "lineItemId": "6ac7f96c-be04-a174-c796-3ef206060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 68.63
+          },
+          "vat": 22.88,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 137.26
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.18
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 6.27
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 12.54
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 68.63
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 137.26
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4368512277",
+          "orderDate": "2026-10-08T23:13:31",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        },
+        {
+          "lineItemId": "6ac7f96c-be04-a174-c796-3ef306060606",
+          "listingId": "0b6f11ca-e023-4707-a327-d3e879456836",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000IAAFB1",
+          "merchantSku": "AESARJKT1",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 122.77
+          },
+          "vat": 40.92,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 245.54
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 11.05
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 11.22999
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 22.45999
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 122.77
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 245.54
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Şarj Edilebilir Güç Seti - TP4056 Type-C Şarj Modülü + 18650 Tekli Pil Yuvası",
+          "orderNumber": "4368512277",
+          "orderDate": "2026-10-08T23:13:31",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901325169558",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002101911829.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Fatih Kaya",
+      "estimatedArrivalDate": "2026-10-13T15:30:00Z",
+      "totalDeci": 4
+    }
+  ]
 }
