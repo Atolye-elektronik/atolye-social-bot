@@ -1579,18 +1579,6 @@
       "id": "18012336038971642"
     }
   },
-  "2026-10-08-video-kurgu2-proje-kitleri": {
-    "tiktok_studio": {
-      "at": "2026-10-01T22:43:11+00:00",
-      "id": "studio:2026-10-08 20:00"
-    }
-  },
-  "2026-10-10-video-kurgu2-rfid-step": {
-    "tiktok_studio": {
-      "at": "2026-10-05T12:05:58+00:00",
-      "id": "studio:2026-10-10 20:00"
-    }
-  },
   "2026-10-08-urun_tanitim-endustriyel-elektronik-egitim-seti-meslek-lisesi-11-sinif-de": {
     "facebook": {
       "at": "2026-10-08T08:10:42+00:00",
@@ -1607,6 +1595,18 @@
     "threads": {
       "at": "2026-10-08T08:11:15+00:00",
       "id": "18126751963894595"
+    }
+  },
+  "2026-10-08-video-kurgu2-proje-kitleri": {
+    "tiktok_studio": {
+      "at": "2026-10-01T22:43:11+00:00",
+      "id": "studio:2026-10-08 20:00"
+    }
+  },
+  "2026-10-10-video-kurgu2-rfid-step": {
+    "tiktok_studio": {
+      "at": "2026-10-05T12:05:58+00:00",
+      "id": "studio:2026-10-10 20:00"
     }
   }
 }
