@@ -504,6 +504,132 @@
       "customerName": "Şemsettin Arslan",
       "estimatedArrivalDate": "2026-10-14T15:30:00Z",
       "totalDeci": 1
+    },
+    {
+      "id": "6ac93046-2811-a8a1-67b4-1ad806060606",
+      "status": "Open",
+      "customerId": "81d040b3-13a3-41ab-8ab5-9d67f81b2133",
+      "orderDate": "2026-10-09T21:19:49",
+      "dueDate": "2026-10-10T18:30:00",
+      "barcode": "62955269081953",
+      "packageNumber": "5526908195",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "SANAYİ MAH 2055 SOK.NO:3  YILMAZ TİCARET SANAYİ MANAVGAT Antalya",
+      "recipientName": "DİLEK YILMAZ",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "SANAYİ",
+      "shippingTown": "MANAVGAT",
+      "shippingCity": "Antalya",
+      "email": "4222159096_5526908195@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "YILMAZ MANAVGAT İNŞAAT LTD.ŞTİ ",
+      "billingAddress": "SANAYİ MAH 2055 SOK NO:3  YILMAZ TİCARET SANAYİ MANAVGAT Antalya",
+      "billingCity": "Antalya",
+      "billingTown": "MANAVGAT",
+      "billingDistrict": "SANAYİ",
+      "billingPostalCode": "07600",
+      "billingCountryCode": "TR",
+      "taxOffice": "MANAVGAT",
+      "taxNumber": "9660302106",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 188
+      },
+      "items": [
+        {
+          "lineItemId": "6ac93045-707c-627f-0612-ea2c06060606",
+          "listingId": "dbb4549e-5ceb-4923-b2f5-eca2ae52e1a2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPD07X",
+          "merchantSku": "AETEMDEF",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "vat": 31.33,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 15.98
+          },
+          "commissionRate": 8.5,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Temrin Defteri",
+          "orderNumber": "4222159096",
+          "orderDate": "2026-10-09T21:19:49",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901069996298",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033336619.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "dilek yılmaz",
+      "estimatedArrivalDate": "2026-10-13T15:30:00Z",
+      "totalDeci": 1
     }
   ]
 }
