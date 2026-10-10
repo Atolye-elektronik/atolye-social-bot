@@ -126,6 +126,132 @@
       "customerName": "Muhammed Ali varıcı",
       "estimatedArrivalDate": "2026-10-16T15:30:00Z",
       "totalDeci": 2.2
+    },
+    {
+      "id": "6aca987a-e97a-eb19-1519-74ca06060606",
+      "status": "Open",
+      "customerId": "c1d22329-e4e8-463b-89fa-e7d0eeec99b6",
+      "orderDate": "2026-10-10T22:56:41",
+      "dueDate": "2026-10-12T18:30:00",
+      "barcode": "62955274547912",
+      "packageNumber": "5527454791",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "517 nolu sokak B blok No:3/1. AYD Otomotiv Endüstri Fren Grubu Fren Disk Fabrikası Mühendislik birimi BÜYÜKKAYACIK OSB SELÇUKLU Konya",
+      "recipientName": "Mevlüt Yasin İĞDELİ",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BÜYÜKKAYACIK OSB",
+      "shippingTown": "SELÇUKLU",
+      "shippingCity": "Konya",
+      "email": "4865534491_5527454791@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Mevlüt Yasin İĞDELİ",
+      "billingAddress": "19048 sokak No: 8/1 ÖLMEZ ALTINEKİN Konya",
+      "billingCity": "Konya",
+      "billingTown": "ALTINEKİN",
+      "billingDistrict": "ÖLMEZ",
+      "billingPostalCode": "42450",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 229
+      },
+      "items": [
+        {
+          "lineItemId": "6aca9879-5b3b-7c34-bb6c-606106060606",
+          "listingId": "d9f1dcb0-a496-42a5-ae17-38ee8b01661f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000PLEY2",
+          "merchantSku": "AEACDMMR2",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 229
+          },
+          "vat": 38.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 229
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 20.61
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 229
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 229
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl Ac 220V 2000W Motor Hız Kontrol Kartı Dimmer",
+          "orderNumber": "4865534491",
+          "orderDate": "2026-10-10T22:56:41",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000000CNL576",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/121/{size}/110000071106017.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Yasin İĞDELİ",
+      "estimatedArrivalDate": "2026-10-15T15:30:00Z",
+      "totalDeci": 1
     }
   ]
 }
