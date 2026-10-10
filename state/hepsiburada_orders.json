@@ -2,31 +2,31 @@
   "newOrderItems": [],
   "packages": [
     {
-      "id": "6ac8e948-5f34-7058-52e6-90be06060606",
+      "id": "6aca49be-522c-c17f-2769-359906060606",
       "status": "Open",
-      "customerId": "ac8e639a-ad10-4624-b421-e79b227dfee1",
-      "orderDate": "2026-10-09T16:16:54",
-      "dueDate": "2026-10-10T18:30:00",
-      "barcode": "62955267954947",
-      "packageNumber": "5526795494",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "cumhuriyet mahallesi 408sok no 6d CUMHURİYET İNCİRLİOVA Aydın",
-      "recipientName": "emine çakırer",
+      "customerId": "0c43b86f-ac6b-4dd2-a9c1-b54f13bccbd7",
+      "orderDate": "2026-10-10T17:20:45",
+      "dueDate": "2026-10-12T18:30:00",
+      "barcode": "62955273346194",
+      "packageNumber": "5527334619",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Hürriyet mahallesi termo benzinlik  HÜRRİYET ÇAMOLUK Giresun",
+      "recipientName": "Muhammed Ali Varıcı",
       "shippingCountryCode": "TR",
-      "shippingDistrict": "CUMHURİYET",
-      "shippingTown": "İNCİRLİOVA",
-      "shippingCity": "Aydın",
-      "email": "4490627340_5526795494@hepsifatura.com",
+      "shippingDistrict": "HÜRRİYET",
+      "shippingTown": "ÇAMOLUK",
+      "shippingCity": "Giresun",
+      "email": "4861044836_5527334619@hepsifatura.com",
       "phoneNumber": "",
-      "companyName": "efeelektronik ",
-      "billingAddress": "cumhuriyet mahallesi 408sok no 6d CUMHURİYET İNCİRLİOVA Aydın",
-      "billingCity": "Aydın",
-      "billingTown": "İNCİRLİOVA",
-      "billingDistrict": "CUMHURİYET",
-      "billingPostalCode": "09600",
+      "companyName": "Muhammed Ali varıcı",
+      "billingAddress": "Hürriyet mahallesi termo benzinlik HÜRRİYET ÇAMOLUK Giresun",
+      "billingCity": "Giresun",
+      "billingTown": "ÇAMOLUK",
+      "billingDistrict": "HÜRRİYET",
+      "billingPostalCode": "28712",
       "billingCountryCode": "TR",
-      "taxOffice": "İncirliova vergi dairesi",
-      "taxNumber": "2230487131",
+      "taxOffice": null,
+      "taxNumber": "",
       "identityNo": "11111111111",
       "shippingTotalPrice": null,
       "customsTotalPrice": null,
@@ -36,7 +36,7 @@
       },
       "items": [
         {
-          "lineItemId": "6ac8e947-6520-0528-205c-b53d06060606",
+          "lineItemId": "6aca49bd-8424-03f9-e4f6-6fc806060606",
           "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
           "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
           "hbSku": "HBCV00000S5AX0",
@@ -91,8 +91,8 @@
           "customizedText04": "",
           "properties": [],
           "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
-          "orderNumber": "4490627340",
-          "orderDate": "2026-10-09T16:16:54",
+          "orderNumber": "4861044836",
+          "orderDate": "2026-10-10T17:20:45",
           "deliveryType": "Standart Teslimat",
           "customerDelivery": "",
           "pickupTime": null,
@@ -123,135 +123,9 @@
         }
       ],
       "isCargoChangable": true,
-      "customerName": "selim cakirer",
-      "estimatedArrivalDate": "2026-10-15T15:30:00Z",
+      "customerName": "Muhammed Ali varıcı",
+      "estimatedArrivalDate": "2026-10-16T15:30:00Z",
       "totalDeci": 2.2
-    },
-    {
-      "id": "6ac90c1c-b249-b0af-81be-455906060606",
-      "status": "Open",
-      "customerId": "2078b645-d625-40a9-98c9-04c9054a332d",
-      "orderDate": "2026-10-09T18:45:28",
-      "dueDate": "2026-10-10T18:30:00",
-      "barcode": "62955268510449",
-      "packageNumber": "5526851044",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Yeşildere mahalesi 518.sokak no :17   Atakum/Samsun YEŞİLDERE ATAKUM Samsun",
-      "recipientName": "Muhammet Kaan Uzun",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "YEŞİLDERE",
-      "shippingTown": "ATAKUM",
-      "shippingCity": "Samsun",
-      "email": "4688252746_5526851044@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Muhammet Kaan Uzun",
-      "billingAddress": "Yeşildere mahalesi 518.sokak no :17   Atakum/Samsun YEŞİLDERE ATAKUM Samsun",
-      "billingCity": "Samsun",
-      "billingTown": "ATAKUM",
-      "billingDistrict": "YEŞİLDERE",
-      "billingPostalCode": "55200",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 216
-      },
-      "items": [
-        {
-          "lineItemId": "6ac90c1a-c564-909b-0b3a-7a4306060606",
-          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00000S5AX0",
-          "merchantSku": "AEHB18650TK",
-          "quantity": 4,
-          "price": {
-            "currency": "TRY",
-            "amount": 54
-          },
-          "vat": 36,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 216
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 4.86
-          },
-          "commissionRate": 9,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 54
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 216
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
-          "orderNumber": "4688252746",
-          "orderDate": "2026-10-09T18:45:28",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "950300870000",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "0000722973923",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
-          "deci": 1.1
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "Kaan Uzun",
-      "estimatedArrivalDate": "2026-10-13T15:30:00Z",
-      "totalDeci": 4.4
     }
   ]
 }
