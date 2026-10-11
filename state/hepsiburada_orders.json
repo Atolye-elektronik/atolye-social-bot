@@ -9,7 +9,7 @@
       "dueDate": "2026-10-12T18:30:00",
       "barcode": "62955273346194",
       "packageNumber": "5527334619",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Hürriyet mahallesi termo benzinlik  HÜRRİYET ÇAMOLUK Giresun",
       "recipientName": "Muhammed Ali Varıcı",
       "shippingCountryCode": "TR",
@@ -135,7 +135,7 @@
       "dueDate": "2026-10-12T18:30:00",
       "barcode": "62955274547912",
       "packageNumber": "5527454791",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "517 nolu sokak B blok No:3/1. AYD Otomotiv Endüstri Fren Grubu Fren Disk Fabrikası Mühendislik birimi BÜYÜKKAYACIK OSB SELÇUKLU Konya",
       "recipientName": "Mevlüt Yasin İĞDELİ",
       "shippingCountryCode": "TR",
@@ -387,7 +387,7 @@
       "dueDate": "2026-10-12T18:30:00",
       "barcode": "62955276260503",
       "packageNumber": "5527626050",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Güneşevler mah. 47.cad. no:11 daire:33 saruhan elit evleri sitesi  Altındağ/Ankara GÜNEŞEVLER ALTINDAĞ Ankara",
       "recipientName": "Fatih Sadıç",
       "shippingCountryCode": "TR",
@@ -599,7 +599,7 @@
       "dueDate": "2026-10-12T18:30:00",
       "barcode": "62955277296417",
       "packageNumber": "5527729641",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "OSMANGAZİ MAHALLESİ ALSANCAK CADDESİ BAYRAK SOKAK NUMARA:45 D:4 OSMANGAZİ SANCAKTEPE İstanbul",
       "recipientName": "SİNAN ÇİÇEK",
       "shippingCountryCode": "TR",
@@ -716,6 +716,132 @@
       "customerName": "SİNAN ÇİÇEK",
       "estimatedArrivalDate": "2026-10-15T15:30:00Z",
       "totalDeci": 2.2
+    },
+    {
+      "id": "6acbaaf7-1b7b-41ad-f52b-565e06060606",
+      "status": "Open",
+      "customerId": "b1609a7f-bc4a-48c9-9ae6-d50912101f4a",
+      "orderDate": "2026-10-11T18:27:48",
+      "dueDate": "2026-10-12T18:30:00",
+      "barcode": "62955278273875",
+      "packageNumber": "5527827387",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Gün Sazak bulvarı Ordu caddesi No.32 Sefa apt. Kat.5 Daire.9 35600 Karşıyaka İzmir BAHÇELİEVLER KARŞIYAKA İzmir",
+      "recipientName": "Fatma Battal",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BAHÇELİEVLER",
+      "shippingTown": "KARŞIYAKA",
+      "shippingCity": "İzmir",
+      "email": "4788904261_5527827387@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Fatma Battal",
+      "billingAddress": "Gün Sazak bulvarı Ordu caddesi No.32 Sefa apt. Kat.5 Daire.9 35600 Karşıyaka İzmir BAHÇELİEVLER KARŞIYAKA İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "KARŞIYAKA",
+      "billingDistrict": "BAHÇELİEVLER",
+      "billingPostalCode": "35600",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 356
+      },
+      "items": [
+        {
+          "lineItemId": "6acbaaf5-d430-5b25-2e03-846c06060606",
+          "listingId": "353b5f2f-e329-4cf2-86b0-2a536ededae2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EATWVS",
+          "merchantSku": "AE3-6VMTR5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 356
+          },
+          "vat": 59.33,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 356
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 32.04
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 356
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 356
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Dc Sarı Motor + Tekerlek / 4 Adet",
+          "orderNumber": "4788904261",
+          "orderDate": "2026-10-11T18:27:48",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR45",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001688556195.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Fatma Battal",
+      "estimatedArrivalDate": "2026-10-14T15:30:00Z",
+      "totalDeci": 1.1
     }
   ]
 }
