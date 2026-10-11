@@ -1,13 +1,13 @@
 {
-  "kontrol": "2026-10-11T09:18:07.726717+00:00",
+  "kontrol": "2026-10-11T15:57:42.543693+00:00",
   "akislar": [
     {
       "dosya": "bayram.yml",
       "ad": "Resmi bayram postu (otomatik kuyruk)",
       "beklenen": "2026-10-11T05:00:00+00:00",
-      "son_basarili": "2026-10-11T06:40:15+00:00",
-      "son_kosu": "2026-10-11T06:40:15+00:00",
-      "gecikme_dk": 258,
+      "son_basarili": "2026-10-11T11:20:19+00:00",
+      "son_kosu": "2026-10-11T11:20:19+00:00",
+      "gecikme_dk": 657,
       "kacti": false,
       "hatali": false
     },
@@ -17,7 +17,7 @@
       "beklenen": "2026-10-11T01:00:00+00:00",
       "son_basarili": null,
       "son_kosu": "2026-10-11T06:55:31+00:00",
-      "gecikme_dk": 498,
+      "gecikme_dk": 897,
       "kacti": false,
       "hatali": true
     },
@@ -27,18 +27,18 @@
       "beklenen": "2026-10-05T04:30:00+00:00",
       "son_basarili": "2026-10-05T11:45:23+00:00",
       "son_kosu": "2026-10-05T11:45:23+00:00",
-      "gecikme_dk": 8928,
+      "gecikme_dk": 9327,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "pazaryeri-sync.yml",
       "ad": "Pazaryeri siparis senkronu",
-      "beklenen": "2026-10-11T06:13:00+00:00",
-      "son_basarili": "2026-10-11T08:10:16+00:00",
-      "son_kosu": "2026-10-11T08:10:16+00:00",
-      "gecikme_dk": 185,
-      "kacti": false,
+      "beklenen": "2026-10-11T14:13:00+00:00",
+      "son_basarili": "2026-10-11T12:41:30+00:00",
+      "son_kosu": "2026-10-11T12:41:30+00:00",
+      "gecikme_dk": 104,
+      "kacti": true,
       "hatali": false
     },
     {
@@ -47,37 +47,37 @@
       "beklenen": "2026-10-10T18:37:00+00:00",
       "son_basarili": "2026-10-10T21:56:38+00:00",
       "son_kosu": "2026-10-10T21:56:38+00:00",
-      "gecikme_dk": 881,
+      "gecikme_dk": 1280,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "publish.yml",
       "ad": "Sosyal medya paylasimi",
-      "beklenen": "2026-10-10T17:30:00+00:00",
-      "son_basarili": "2026-10-10T20:37:11+00:00",
-      "son_kosu": "2026-10-10T20:37:11+00:00",
-      "gecikme_dk": 948,
+      "beklenen": "2026-10-11T09:00:00+00:00",
+      "son_basarili": "2026-10-11T15:22:01+00:00",
+      "son_kosu": "2026-10-11T15:22:01+00:00",
+      "gecikme_dk": 417,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "stok-siparis.yml",
       "ad": "Stok merkezi - siparis toplama",
-      "beklenen": "2026-10-11T08:55:00+00:00",
-      "son_basarili": "2026-10-11T09:17:04+00:00",
-      "son_kosu": "2026-10-11T09:17:04+00:00",
-      "gecikme_dk": 23,
+      "beklenen": "2026-10-11T15:35:00+00:00",
+      "son_basarili": "2026-10-11T15:57:04+00:00",
+      "son_kosu": "2026-10-11T15:57:04+00:00",
+      "gecikme_dk": 22,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "telegram-ozet.yml",
       "ad": "Telegram gunluk ozet",
-      "beklenen": "2026-10-10T20:55:00+00:00",
-      "son_basarili": "2026-10-10T23:55:15+00:00",
-      "son_kosu": "2026-10-10T23:55:15+00:00",
-      "gecikme_dk": 743,
+      "beklenen": "2026-10-11T11:00:00+00:00",
+      "son_basarili": "2026-10-11T12:40:15+00:00",
+      "son_kosu": "2026-10-11T12:40:15+00:00",
+      "gecikme_dk": 297,
       "kacti": false,
       "hatali": false
     },
@@ -87,17 +87,17 @@
       "beklenen": "2026-10-01T04:00:00+00:00",
       "son_basarili": "2026-10-01T04:05:27+00:00",
       "son_kosu": "2026-10-01T04:05:27+00:00",
-      "gecikme_dk": 14718,
+      "gecikme_dk": 15117,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "tiktok-zamanla.yml",
       "ad": "TikTok kuyruk zamanlama",
-      "beklenen": "2026-10-10T05:15:00+00:00",
-      "son_basarili": "2026-10-10T11:11:58+00:00",
-      "son_kosu": "2026-10-10T11:11:58+00:00",
-      "gecikme_dk": 1683,
+      "beklenen": "2026-10-11T05:15:00+00:00",
+      "son_basarili": "2026-10-11T11:25:12+00:00",
+      "son_kosu": "2026-10-11T11:25:12+00:00",
+      "gecikme_dk": 642,
       "kacti": false,
       "hatali": false
     }
