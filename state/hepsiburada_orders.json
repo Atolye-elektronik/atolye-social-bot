@@ -851,7 +851,7 @@
       "dueDate": "2026-10-12T18:30:00",
       "barcode": "62955278766940",
       "packageNumber": "5527876694",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": " Umutlu sk B BLOK 4435 daire 3 AYDINLI TUZLA İstanbul",
       "recipientName": "Hasan sağnak toptaş",
       "shippingCountryCode": "TR",
@@ -977,7 +977,7 @@
       "dueDate": "2026-10-12T18:30:00",
       "barcode": "62955279093780",
       "packageNumber": "5527909378",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Yakacik Yeni mah. Demirkapı Cad.  No:10 Panorama Towers A Blok Daire:10 YAKACIK YENİ KARTAL İstanbul",
       "recipientName": "Burcu Adıyaman Kılıç",
       "shippingCountryCode": "TR",
@@ -1094,6 +1094,132 @@
       "customerName": "Burcu Adıyaman Kılıç",
       "estimatedArrivalDate": "2026-10-15T15:30:00Z",
       "totalDeci": 2
+    },
+    {
+      "id": "6acc04e3-707c-627f-0683-995d06060606",
+      "status": "Open",
+      "customerId": "4c565f79-f307-4fb5-bf84-9a32f2c62991",
+      "orderDate": "2026-10-12T00:51:28",
+      "dueDate": "2026-10-12T18:30:00",
+      "barcode": "62955279863569",
+      "packageNumber": "5527986356",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Koru Sk. No:2 Beyza Ap. A Blk. Kat:2 D:9 MERKEZ KAĞITHANE İstanbul",
+      "recipientName": "Betül Bardakçı",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MERKEZ",
+      "shippingTown": "KAĞITHANE",
+      "shippingCity": "İstanbul",
+      "email": "4338863560_5527986356@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Betül Bardakçı",
+      "billingAddress": "Merkez Mah. Koru Sk. No:2 Beyza Ap. A-Blk. Kat2 D9 MERKEZ KAĞITHANE İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "KAĞITHANE",
+      "billingDistrict": "MERKEZ",
+      "billingPostalCode": "34406",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 356
+      },
+      "items": [
+        {
+          "lineItemId": "6acc04e2-f407-cf87-c390-efa506060606",
+          "listingId": "353b5f2f-e329-4cf2-86b0-2a536ededae2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EATWVS",
+          "merchantSku": "AE3-6VMTR5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 356
+          },
+          "vat": 59.33,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 356
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 32.04
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 356
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 356
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Dc Sarı Motor + Tekerlek / 4 Adet",
+          "orderNumber": "4338863560",
+          "orderDate": "2026-10-12T00:51:28",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR45",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001688556195.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Cemal Bardakçı",
+      "estimatedArrivalDate": "2026-10-15T15:30:00Z",
+      "totalDeci": 1.1
     }
   ]
 }
