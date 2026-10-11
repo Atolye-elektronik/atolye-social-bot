@@ -252,6 +252,344 @@
       "customerName": "Yasin İĞDELİ",
       "estimatedArrivalDate": "2026-10-15T15:30:00Z",
       "totalDeci": 1
+    },
+    {
+      "id": "6acb3509-4213-ad40-ab21-e84206060606",
+      "status": "Open",
+      "customerId": "2b5cd5eb-643c-40ec-9be5-2ef6d018383d",
+      "orderDate": "2026-10-11T10:04:40",
+      "dueDate": "2026-10-12T18:30:00",
+      "barcode": "62755276260499",
+      "packageNumber": "5527626049",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Güneşevler mah. 47.cad. no:11 daire:33 saruhan elit evleri sitesi  Altındağ/Ankara GÜNEŞEVLER ALTINDAĞ Ankara",
+      "recipientName": "Fatih Sadıç",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "GÜNEŞEVLER",
+      "shippingTown": "ALTINDAĞ",
+      "shippingCity": "Ankara",
+      "email": "4644290277_5527626049@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Fatih Sadıç",
+      "billingAddress": "Güneşevler mah. 47.cad. no:11 daire:33 Altındağ/Ankara GÜNEŞEVLER ALTINDAĞ Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "ALTINDAĞ",
+      "billingDistrict": "GÜNEŞEVLER",
+      "billingPostalCode": "06140",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 132.22
+      },
+      "items": [
+        {
+          "lineItemId": "6acb3508-af1c-92e4-2a06-204d06060606",
+          "listingId": "c760cc36-5d8a-4ebd-8bbd-0f76aa3159a5",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000L4O20X",
+          "merchantSku": "AEDCM3V-6",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 132.22
+          },
+          "vat": 22.04,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 132.22
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 11.9
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 12.78
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 12.78
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 132.22
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 132.22
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Dc Motor 3V Yassı 130 Tip 6'lı Paket Hobi ve Fen Deney Motoru",
+          "orderNumber": "4644290277",
+          "orderDate": "2026-10-11T10:04:40",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901880000655",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002444669798.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Fatih Sadıç",
+      "estimatedArrivalDate": "2026-10-14T16:30:00Z",
+      "totalDeci": 1
+    },
+    {
+      "id": "6acb350a-f407-cf87-c31a-8b9706060606",
+      "status": "Open",
+      "customerId": "2b5cd5eb-643c-40ec-9be5-2ef6d018383d",
+      "orderDate": "2026-10-11T10:04:40",
+      "dueDate": "2026-10-12T18:30:00",
+      "barcode": "62955276260503",
+      "packageNumber": "5527626050",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Güneşevler mah. 47.cad. no:11 daire:33 saruhan elit evleri sitesi  Altındağ/Ankara GÜNEŞEVLER ALTINDAĞ Ankara",
+      "recipientName": "Fatih Sadıç",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "GÜNEŞEVLER",
+      "shippingTown": "ALTINDAĞ",
+      "shippingCity": "Ankara",
+      "email": "4644290277_5527626050@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Fatih Sadıç",
+      "billingAddress": "Güneşevler mah. 47.cad. no:11 daire:33 Altındağ/Ankara GÜNEŞEVLER ALTINDAĞ Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "ALTINDAĞ",
+      "billingDistrict": "GÜNEŞEVLER",
+      "billingPostalCode": "06140",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 229.58
+      },
+      "items": [
+        {
+          "lineItemId": "6acb3508-af1c-92e4-2a06-204f06060606",
+          "listingId": "7541d32d-fc77-44f1-9c21-0db403279f95",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBV000013B7RC",
+          "merchantSku": "AETP4056",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 52.79
+          },
+          "vat": 17.6,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 105.58
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 4.75
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 5.11
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 10.22
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 52.79
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 105.58
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Arduino TP4056 Type-C 1s 3.7V Lipo, Li-Ion Pil Şarj Devresi",
+          "orderNumber": "4644290277",
+          "orderDate": "2026-10-11T10:04:40",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "853690950000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0691002365874",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001065034161.jpg",
+          "deci": 1.9
+        },
+        {
+          "lineItemId": "6acb3508-af1c-92e4-2a06-204e06060606",
+          "listingId": "7e620cb9-700d-4d7a-a910-45515c0ce938",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000E8UNYL",
+          "merchantSku": "AEJK2040",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 124
+          },
+          "vat": 20.67,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 124
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 11.16
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 12
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 12
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 124
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 124
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Jumper Kablo - 20CM - 40 Pin - Erkek/erkek",
+          "orderNumber": "4644290277",
+          "orderDate": "2026-10-11T10:04:40",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELJK2040001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001681750887.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Fatih Sadıç",
+      "estimatedArrivalDate": "2026-10-14T15:30:00Z",
+      "totalDeci": 4.8
     }
   ]
 }
