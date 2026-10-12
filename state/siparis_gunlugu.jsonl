@@ -823,3 +823,5 @@
 {"an": "2026-10-12T08:03", "kanal": "hepsiburada", "no": "4782130960", "kod": "AEPY18650T", "adet": 2, "dusum": {"AEPY18650T": 2}, "kuru": false}
 {"an": "2026-10-12T08:13", "kanal": "hepsiburada", "no": "4782130960", "iade": {"AEPY18650T": 2}, "durum": "CancelledByCustomer", "kuru": false}
 {"an": "2026-10-12T13:53", "kanal": "hepsiburada", "no": "4339622682", "kod": "AEACDMMR", "adet": 10, "dusum": {"AEACDMMR": 10}, "kuru": false}
+{"an": "2026-10-12T14:58", "kanal": "hepsiburada", "no": "4607879345", "kod": "AE9VPILSKT", "adet": 1, "dusum": {"AE9VPILSKT1": 10}, "kuru": false}
+{"an": "2026-10-12T14:58", "kanal": "hepsiburada", "no": "4607879345", "kod": "AE9VPIL10", "adet": 1, "dusum": {"AEPIL9V": 10}, "kuru": false}
