@@ -1675,12 +1675,6 @@
       "id": "18200441662384591"
     }
   },
-  "2026-10-14-video-kurgu3-meslek-listesi": {
-    "tiktok_studio": {
-      "at": "2026-10-08T12:05:57+00:00",
-      "id": "studio:2026-10-14 20:00"
-    }
-  },
   "2026-10-12-urun_tanitim-ir-kumandali-robot-araba-kiti-3-7v-li-ion-sarjli-set-2wd-ard": {
     "facebook": {
       "at": "2026-10-12T08:10:37+00:00",
@@ -1697,6 +1691,12 @@
     "threads": {
       "at": "2026-10-12T08:11:09+00:00",
       "id": "17916464910261038"
+    }
+  },
+  "2026-10-14-video-kurgu3-meslek-listesi": {
+    "tiktok_studio": {
+      "at": "2026-10-08T12:05:57+00:00",
+      "id": "studio:2026-10-14 20:00"
     }
   }
 }
