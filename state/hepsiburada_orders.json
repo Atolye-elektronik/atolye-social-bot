@@ -130,6 +130,222 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6accf4bd-d36f-c5b8-e51d-ec5906060606",
+      "status": "Open",
+      "customerId": "c3d99360-7640-4446-9c15-fed8977c81f2",
+      "orderDate": "2026-10-12T17:54:48",
+      "dueDate": "2026-10-13T18:30:00",
+      "barcode": "62955284122484",
+      "packageNumber": "5528412248",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "1844 Cadde Mutek Sites 9. Blok / 8. Kat / 35 Numara BATIKENT/ANKARA KENTKOOP YENİMAHALLE Ankara",
+      "recipientName": "Dilek Başak",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KENTKOOP",
+      "shippingTown": "YENİMAHALLE",
+      "shippingCity": "Ankara",
+      "email": "4607879345_5528412248@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Dilek Başak",
+      "billingAddress": "9. Blok / 8. Kat / 35 Numara KENTKOOP YENİMAHALLE Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "YENİMAHALLE",
+      "billingDistrict": "KENTKOOP",
+      "billingPostalCode": "06370",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 776.83
+      },
+      "items": [
+        {
+          "lineItemId": "6accf4ba-f070-3c82-fb71-4cfb06060606",
+          "listingId": "274b2f4c-2a32-4ced-91cb-a238d34f8fa5",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000ETJQ3F",
+          "merchantSku": "AE9VPILSKT",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 265.85
+          },
+          "vat": 44.31,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 265.85
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 47.01
+          },
+          "commissionRate": 16.67,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 16.176
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 16.176
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 11.97999
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 11.97999
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 282.026
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 282.026
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Dc Jack Çıkışlı - 9V Pil Soketi - Arduino Uyumlu 10 Adet",
+          "orderNumber": "4607879345",
+          "orderDate": "2026-10-12T17:54:48",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL9VPILSKT1",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001750937328.jpg",
+          "deci": 1
+        },
+        {
+          "lineItemId": "6accf4ba-f070-3c82-fb71-4cfc06060606",
+          "listingId": "1e00180e-9d7b-4540-a079-78c74265ae3d",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EI25M0",
+          "merchantSku": "AE9VPIL10",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 510.98
+          },
+          "vat": 85.16,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 510.98
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 34.64
+          },
+          "commissionRate": 6.78,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 23.02
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 23.02
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 510.98
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 510.98
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 9V Pil- 10'lu",
+          "orderNumber": "4607879345",
+          "orderDate": "2026-10-12T17:54:48",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL9VPIL1001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001716512342.jpg",
+          "deci": 0.5
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Eymen Başak",
+      "estimatedArrivalDate": "2026-10-15T15:30:00Z",
+      "totalDeci": 1.5,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
