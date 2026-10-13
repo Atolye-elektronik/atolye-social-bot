@@ -17,7 +17,7 @@ UTC+3 - Turkiye DST uygulamiyor) kullaniliyor.
 import io
 import os
 import sys
-from datetime import timedelta
+from datetime import datetime, timedelta
 
 KOK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path[:0] = [KOK, os.path.join(KOK, "src"), os.path.join(KOK, "src", "marketplaces")]
@@ -122,11 +122,16 @@ def metin_kargo():
     return "\n".join(sat)
 
 
-def metin_ciro():
-    """23:55 TR: gunun tum siparisleri, toplam ciro olarak."""
-    an = bildirim.simdi_tr()
-    # 5 dk pay: is gece yarisindan sonra gec tetiklenirse yine biten gun sayilsin
-    gun = (an - timedelta(minutes=5)).date()
+def metin_ciro(gun=None):
+    """23:55 TR: gunun tum siparisleri, toplam ciro olarak.
+
+    14.10.2026: GitHub zamanlayicisi bu isi saatlerce geciktiriyor (02:16 UTC = 05:16 TR'de
+    kostu). Eski 5 dakikalik pay yuzunden gece yarisindan sonra kosan is YENI gunu raporluyordu;
+    biten gunun siparisleri Telegram'a hic gitmiyordu. Artik ogleden once kosarsa onceki gun
+    raporlanir; --gun YYYY-MM-DD ile istenen gun elle gonderilebilir."""
+    if gun is None:
+        an = bildirim.simdi_tr()
+        gun = an.date() if an.hour >= 12 else (an - timedelta(days=1)).date()
     hepsi, hata = siparisleri_topla()
     adet, tutar, kanal = gunun_satisi(hepsi, gun.strftime("%Y-%m-%d"))
     sat = ["💰 <b>Günün cirosu</b> — %s" % gun.strftime("%d.%m.%Y"), "",
@@ -141,7 +146,10 @@ def metin_ciro():
 def main():
     a = sys.argv[1:]
     if "--ciro" in a:
-        metin = metin_ciro()
+        gun = None
+        if "--gun" in a and len(a) > a.index("--gun") + 1 and a[a.index("--gun") + 1]:
+            gun = datetime.strptime(a[a.index("--gun") + 1], "%Y-%m-%d").date()
+        metin = metin_ciro(gun)
     else:
         metin = metin_kargo()  # varsayilan / --kargo
     try:
