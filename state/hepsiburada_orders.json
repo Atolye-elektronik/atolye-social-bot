@@ -2,404 +2,58 @@
   "newOrderItems": [],
   "packages": [
     {
-      "id": "6acce56e-b41f-d096-dba7-a95506060606",
+      "id": "6ace19e4-db75-7870-d9f0-d6f906060606",
       "status": "Open",
-      "customerId": "4d63b4a3-014a-4503-a5f0-bd282d2e520a",
-      "orderDate": "2026-10-12T16:49:33",
-      "dueDate": "2026-10-13T18:30:00",
-      "barcode": "62955283901334",
-      "packageNumber": "5528390133",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Sümer yeni mah 6.cad fatih apt 18/3 YENİ KOCASİNAN Kayseri",
-      "recipientName": "Hayrullah Kayhan",
+      "customerId": "aaaa8450-38df-426c-a546-669fbdb051cd",
+      "orderDate": "2026-10-13T14:45:37",
+      "dueDate": "2026-10-14T18:30:00",
+      "barcode": "62955287993892",
+      "packageNumber": "5528799389",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Sakarya cad No:1/E  Sultanveli Organik   KAZIMDİRİK BORNOVA İzmir",
+      "recipientName": "ALI CEYLAN",
       "shippingCountryCode": "TR",
-      "shippingDistrict": "YENİ",
-      "shippingTown": "KOCASİNAN",
-      "shippingCity": "Kayseri",
-      "email": "4339622682_5528390133@hepsifatura.com",
+      "shippingDistrict": "KAZIMDİRİK",
+      "shippingTown": "BORNOVA",
+      "shippingCity": "İzmir",
+      "email": "4548883894_5528799389@hepsifatura.com",
       "phoneNumber": "",
-      "companyName": "Zehra butik ",
-      "billingAddress": "Sümer yeni mah 6.cad fatih apt 18/3 YENİ KOCASİNAN Kayseri",
-      "billingCity": "Kayseri",
-      "billingTown": "KOCASİNAN",
-      "billingDistrict": "YENİ",
-      "billingPostalCode": "38040",
+      "companyName": "Hakan Cakmak ",
+      "billingAddress": "oksijen life sitesi C Blok D:7 KEMALPAŞA GÖMEÇ Balıkesir",
+      "billingCity": "Balıkesir",
+      "billingTown": "GÖMEÇ",
+      "billingDistrict": "KEMALPAŞA",
+      "billingPostalCode": "10715",
       "billingCountryCode": "TR",
-      "taxOffice": "Gevher Nesibe",
-      "taxNumber": "15260255534",
+      "taxOffice": "gomec",
+      "taxNumber": "2240066863",
       "identityNo": "11111111111",
       "shippingTotalPrice": null,
       "customsTotalPrice": null,
       "totalPrice": {
         "currency": "TRY",
-        "amount": 1196.65
+        "amount": 147
       },
       "items": [
         {
-          "lineItemId": "6acce56e-d16e-9e82-e0d7-149806060606",
-          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "lineItemId": "6ace19e3-800e-c2d2-6cf7-18f106060606",
+          "listingId": "b192e250-5772-46ac-8c4c-515499321179",
           "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00003Z3U77",
-          "merchantSku": "AEACDMMR",
-          "quantity": 10,
-          "price": {
-            "currency": "TRY",
-            "amount": 119.665
-          },
-          "vat": 199.44,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 1196.65
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 12.73
-          },
-          "commissionRate": 9,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 21.735
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 217.35
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 3.5
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 35
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 141.4
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 1414
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
-          "orderNumber": "4339622682",
-          "orderDate": "2026-10-12T16:49:33",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "HBCC138FA6619",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
-          "deci": 1
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "Hayrullah Hayrullah",
-      "estimatedArrivalDate": "2026-10-15T15:30:00Z",
-      "totalDeci": 10,
-      "warehouse": {
-        "shippingModel": "Standard",
-        "shippingAddressLabel": "BIRINCIL"
-      }
-    },
-    {
-      "id": "6accf4bd-d36f-c5b8-e51d-ec5906060606",
-      "status": "Open",
-      "customerId": "c3d99360-7640-4446-9c15-fed8977c81f2",
-      "orderDate": "2026-10-12T17:54:48",
-      "dueDate": "2026-10-13T18:30:00",
-      "barcode": "62955284122484",
-      "packageNumber": "5528412248",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "1844 Cadde Mutek Sites 9. Blok / 8. Kat / 35 Numara BATIKENT/ANKARA KENTKOOP YENİMAHALLE Ankara",
-      "recipientName": "Dilek Başak",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "KENTKOOP",
-      "shippingTown": "YENİMAHALLE",
-      "shippingCity": "Ankara",
-      "email": "4607879345_5528412248@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Dilek Başak",
-      "billingAddress": "9. Blok / 8. Kat / 35 Numara KENTKOOP YENİMAHALLE Ankara",
-      "billingCity": "Ankara",
-      "billingTown": "YENİMAHALLE",
-      "billingDistrict": "KENTKOOP",
-      "billingPostalCode": "06370",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 776.83
-      },
-      "items": [
-        {
-          "lineItemId": "6accf4ba-f070-3c82-fb71-4cfb06060606",
-          "listingId": "274b2f4c-2a32-4ced-91cb-a238d34f8fa5",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV0000ETJQ3F",
-          "merchantSku": "AE9VPILSKT",
+          "hbSku": "HBCV00003Z3XH1",
+          "merchantSku": "AEVHM314",
           "quantity": 1,
           "price": {
             "currency": "TRY",
-            "amount": 265.85
+            "amount": 147
           },
-          "vat": 44.31,
+          "vat": 24.5,
           "totalPrice": {
             "currency": "TRY",
-            "amount": 265.85
+            "amount": 147
           },
           "commission": {
             "currency": "TRY",
-            "amount": 47.01
-          },
-          "commissionRate": 16.67,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 16.176
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 16.176
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 11.97999
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 11.97999
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 282.026
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 282.026
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Atölye Elektronik Dc Jack Çıkışlı - 9V Pil Soketi - Arduino Uyumlu 10 Adet",
-          "orderNumber": "4607879345",
-          "orderDate": "2026-10-12T17:54:48",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "ATEL9VPILSKT1",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001750937328.jpg",
-          "deci": 1
-        },
-        {
-          "lineItemId": "6accf4ba-f070-3c82-fb71-4cfc06060606",
-          "listingId": "1e00180e-9d7b-4540-a079-78c74265ae3d",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV0000EI25M0",
-          "merchantSku": "AE9VPIL10",
-          "quantity": 1,
-          "price": {
-            "currency": "TRY",
-            "amount": 510.98
-          },
-          "vat": 85.16,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 510.98
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 34.64
-          },
-          "commissionRate": 6.78,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 23.02
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 23.02
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 510.98
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 510.98
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Atölye Elektronik 9V Pil- 10'lu",
-          "orderNumber": "4607879345",
-          "orderDate": "2026-10-12T17:54:48",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "ATEL9VPIL1001",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001716512342.jpg",
-          "deci": 0.5
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "Eymen Başak",
-      "estimatedArrivalDate": "2026-10-15T15:30:00Z",
-      "totalDeci": 1.5,
-      "warehouse": {
-        "shippingModel": "Standard",
-        "shippingAddressLabel": "BIRINCIL"
-      }
-    },
-    {
-      "id": "6acd9ff2-9b54-2dfd-e0ec-bc5006060606",
-      "status": "Open",
-      "customerId": "2a247171-48aa-4707-b462-76249e1781c6",
-      "orderDate": "2026-10-13T06:05:18",
-      "dueDate": "2026-10-13T18:30:00",
-      "barcode": "62955285872036",
-      "packageNumber": "5528587203",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Adatepe Sk.  Zehiroğlu park sitesi No:7/A kat:1 daire:1 1 NOLU BEŞİRLİ ORTAHİSAR Trabzon",
-      "recipientName": "tarık fırat kolcu",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "1 NOLU BEŞİRLİ",
-      "shippingTown": "ORTAHİSAR",
-      "shippingCity": "Trabzon",
-      "email": "4136721326_5528587203@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "tarık fırat kolcu",
-      "billingAddress": "fatih mah. ayasofya cad. no:24 kat:2 FATİH ORTAHİSAR Trabzon",
-      "billingCity": "Trabzon",
-      "billingTown": "ORTAHİSAR",
-      "billingDistrict": "FATİH",
-      "billingPostalCode": "61040",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 108
-      },
-      "items": [
-        {
-          "lineItemId": "6acd9ff0-273b-1ff8-2dfe-526806060606",
-          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00000S5AX0",
-          "merchantSku": "AEHB18650TK",
-          "quantity": 2,
-          "price": {
-            "currency": "TRY",
-            "amount": 54
-          },
-          "vat": 18,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 108
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 4.86
+            "amount": 13.23
           },
           "commissionRate": 9,
           "unitHBDiscount": {
@@ -420,11 +74,11 @@
           },
           "merchantUnitPrice": {
             "currency": "TRY",
-            "amount": 54
+            "amount": 147
           },
           "merchantTotalPrice": {
             "currency": "TRY",
-            "amount": 108
+            "amount": 147
           },
           "unitLaborCost": {
             "currency": "TRY",
@@ -436,13 +90,13 @@
           "customizedText03": "",
           "customizedText04": "",
           "properties": [],
-          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
-          "orderNumber": "4136721326",
-          "orderDate": "2026-10-13T06:05:18",
+          "productName": "Robo Dünya VHM-314 Bluetooth Amfi Kablosuz Ses Alıcı Modülü Siyah 1 Adet Yüksek Ses Kalitesi",
+          "orderNumber": "4548883894",
+          "orderDate": "2026-10-13T14:45:37",
           "deliveryType": "Standart Teslimat",
           "customerDelivery": "",
           "pickupTime": null,
-          "gtip": "950300870000",
+          "gtip": "",
           "weight": 0,
           "vatRate": 20,
           "warehouse": {
@@ -455,7 +109,7 @@
             "amount": 0
           },
           "discountToBeBilledToHB": 0,
-          "productBarcode": "0000722973923",
+          "productBarcode": "HBCC138FA6846",
           "bnplCommissionAmount": {
             "currency": "TRY",
             "amount": 0
@@ -464,14 +118,14 @@
           "isMicroExport": false,
           "releatedLineIndexesWithCampaign": null,
           "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869040.jpg",
           "deci": 1.1
         }
       ],
       "isCargoChangable": true,
-      "customerName": "TARIK FIRAT KOLCU",
-      "estimatedArrivalDate": "2026-10-19T15:30:00Z",
-      "totalDeci": 2.2,
+      "customerName": "hakan cakmak",
+      "estimatedArrivalDate": "2026-10-16T15:30:00Z",
+      "totalDeci": 1.1,
       "warehouse": {
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
