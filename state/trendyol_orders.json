@@ -1,6 +1,442 @@
 [
   {
     "shipmentAddress": {
+      "id": 9824267664,
+      "firstName": "Gamze",
+      "lastName": "Uslu ildiz",
+      "company": "",
+      "address1": "Organize emlak konutları palmiye 5 daire 9 ",
+      "address2": "",
+      "city": "Tekirdağ",
+      "cityCode": 59,
+      "district": "Kapaklı",
+      "districtId": 1064,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "59000",
+      "countryCode": "TR",
+      "neighborhoodId": 73126,
+      "neighborhood": "İsmet Paşa Mah",
+      "phone": null,
+      "fullAddress": "Organize emlak konutları palmiye 5 daire 9     Kapaklı Tekirdağ",
+      "fullName": "Gamze Uslu ildiz"
+    },
+    "orderNumber": "11705193631",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 744.0,
+    "packageGrossAmount": 744.0,
+    "totalDiscount": 0.0,
+    "packageSellerDiscount": 0.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 0.0,
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9824267662,
+      "firstName": "Gamze",
+      "lastName": "Uslu ildiz",
+      "company": "",
+      "address1": "Organize emlak konutları palmiye 5 daire 9 ",
+      "address2": "",
+      "city": "Tekirdağ",
+      "cityCode": 59,
+      "district": "Kapaklı",
+      "districtId": 1064,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "59000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 73126,
+      "neighborhood": "İsmet Paşa Mah",
+      "phone": null,
+      "fullAddress": "Organize emlak konutları palmiye 5 daire 9     Kapaklı Tekirdağ",
+      "fullName": "Gamze Uslu ildiz"
+    },
+    "customerFirstName": "Gamze",
+    "customerEmail": "pf+v65pw5nn@trendyolmail.com",
+    "customerId": 12340319,
+    "supplierId": 0,
+    "customerLastName": "Uslu ildiz",
+    "id": 4240514529,
+    "channelId": 1,
+    "shipmentPackageId": 4240514529,
+    "cargoTrackingNumber": 7270037974975146,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEMOTPRV-5",
+        "sku": "2901463317217",
+        "stockCode": "AEMOTPRV-5",
+        "productName": "DC Motor + Pervane Seti (3V) - Mini Vantilatör Motoru - 5 Motor + 5 Pervane AEMOTPRV-5, one size",
+        "productCode": 1670396891,
+        "contentId": 1670396891,
+        "productOrigin": "CN",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 312.0,
+        "lineGrossAmount": 312.0,
+        "discount": 0.0,
+        "lineTotalDiscount": 0.0,
+        "lineSellerDiscount": 0.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6928277961",
+            "lineItemPrice": 312.0,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6069619833,
+        "lineId": 6069619833,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901463317217",
+        "orderLineItemStatusName": "Picking",
+        "price": 312.0,
+        "lineUnitPrice": 312.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 12,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      },
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETY4LUMTRST",
+        "sku": "TYBKQ211SENZEFX002",
+        "stockCode": "AETY4LUMTRST",
+        "productName": "(4 Adet) Akıllı Robot Arduino 6V 250 Rpm DC Motor Ve Tekerlek Seti TYCDC5C82849FA3170, one size",
+        "productCode": 1096943000,
+        "contentId": 1096943000,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 432.0,
+        "lineGrossAmount": 432.0,
+        "discount": 0.0,
+        "lineTotalDiscount": 0.0,
+        "lineSellerDiscount": 0.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6928277960",
+            "lineItemPrice": 432.0,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6069619832,
+        "lineId": 6069619832,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "TYBKQ211SENZEFX002",
+        "orderLineItemStatusName": "Picking",
+        "price": 432.0,
+        "lineUnitPrice": 432.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 12,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1791886952868,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1791876154098,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1791876157479,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1791876219338,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1791925140000,
+    "estimatedDeliveryEndDate": 1792097940000,
+    "totalPrice": 744.0,
+    "packageTotalPrice": 744.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1791925140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1791876154094,
+    "lastModifiedDate": 1791876219338,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10954665564,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9824267664,
+      "firstName": "Gamze",
+      "lastName": "Uslu ildiz",
+      "company": "",
+      "address1": "Organize emlak konutları palmiye 5 daire 9 ",
+      "address2": "",
+      "city": "Tekirdağ",
+      "cityCode": 59,
+      "district": "Kapaklı",
+      "districtId": 1064,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "59000",
+      "countryCode": "TR",
+      "neighborhoodId": 73126,
+      "neighborhood": "İsmet Paşa Mah",
+      "phone": null,
+      "fullAddress": "Organize emlak konutları palmiye 5 daire 9     Kapaklı Tekirdağ",
+      "fullName": "Gamze Uslu ildiz"
+    },
+    "orderNumber": "11705193631",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 107.6,
+    "packageGrossAmount": 107.6,
+    "totalDiscount": 0.0,
+    "packageSellerDiscount": 0.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 0.0,
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9824267662,
+      "firstName": "Gamze",
+      "lastName": "Uslu ildiz",
+      "company": "",
+      "address1": "Organize emlak konutları palmiye 5 daire 9 ",
+      "address2": "",
+      "city": "Tekirdağ",
+      "cityCode": 59,
+      "district": "Kapaklı",
+      "districtId": 1064,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "59000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 73126,
+      "neighborhood": "İsmet Paşa Mah",
+      "phone": null,
+      "fullAddress": "Organize emlak konutları palmiye 5 daire 9     Kapaklı Tekirdağ",
+      "fullName": "Gamze Uslu ildiz"
+    },
+    "customerFirstName": "Gamze",
+    "customerEmail": "pf+y8nrwnja@trendyolmail.com",
+    "customerId": 12340319,
+    "supplierId": 0,
+    "customerLastName": "Uslu ildiz",
+    "id": 4240514528,
+    "channelId": 1,
+    "shipmentPackageId": 4240514528,
+    "cargoTrackingNumber": 7270037974975016,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 4,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEDC125B",
+        "sku": "TYBW805DFS3U8DIC36",
+        "stockCode": "AEDC125B",
+        "productName": "2 Pin Siyah Anahtar Switch Mini Buton Kcd1 Plastik Açma Kapama On / Off KCD1 2 Pin Anahtar, one size",
+        "productCode": 425655882,
+        "contentId": 425655882,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 26.9,
+        "lineGrossAmount": 26.9,
+        "discount": 0.0,
+        "lineTotalDiscount": 0.0,
+        "lineSellerDiscount": 0.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6928277965",
+            "lineItemPrice": 26.9,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          },
+          {
+            "lineItemId": "6928277963",
+            "lineItemPrice": 26.9,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          },
+          {
+            "lineItemId": "6928277964",
+            "lineItemPrice": 26.9,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          },
+          {
+            "lineItemId": "6928277962",
+            "lineItemPrice": 26.9,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6069619834,
+        "lineId": 6069619834,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "TYBW805DFS3U8DIC36",
+        "orderLineItemStatusName": "Picking",
+        "price": 26.9,
+        "lineUnitPrice": 26.9,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2677,
+        "commission": 16.5,
+        "businessUnit": "Computer & Tablet",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1791886952868,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1791876154093,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1791876157735,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1791876201685,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1791925140000,
+    "estimatedDeliveryEndDate": 1792184340000,
+    "totalPrice": 107.6,
+    "packageTotalPrice": 107.6,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1791925140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1791876154088,
+    "lastModifiedDate": 1791876201685,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10954665559,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9823039584,
       "firstName": "Aysel",
       "lastName": "varol",
@@ -117,7 +553,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "2901613165361",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 419.0,
         "lineUnitPrice": 419.0,
         "fastDeliveryOptions": [
@@ -142,10 +578,14 @@
       {
         "createdDate": 1791838837226,
         "status": "Created"
+      },
+      {
+        "createdDate": 1791863582717,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1791925140000,
@@ -156,7 +596,7 @@
     "agreedDeliveryDate": 1792011540000,
     "fastDelivery": true,
     "originShipmentDate": 1791838834456,
-    "lastModifiedDate": 1791838837226,
+    "lastModifiedDate": 1791863582717,
     "commercial": true,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
