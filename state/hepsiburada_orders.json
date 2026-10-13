@@ -9,7 +9,7 @@
       "dueDate": "2026-10-14T18:30:00",
       "barcode": "62955287993892",
       "packageNumber": "5528799389",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Sakarya cad No:1/E  Sultanveli Organik   KAZIMDİRİK BORNOVA İzmir",
       "recipientName": "ALI CEYLAN",
       "shippingCountryCode": "TR",
@@ -126,6 +126,136 @@
       "customerName": "hakan cakmak",
       "estimatedArrivalDate": "2026-10-16T15:30:00Z",
       "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ace3dda-ee20-e3a8-617d-9de106060606",
+      "status": "Open",
+      "customerId": "aa5bb7fc-f0e5-4352-9f37-0f6af5a087c1",
+      "orderDate": "2026-10-13T17:19:03",
+      "dueDate": "2026-10-14T18:30:00",
+      "barcode": "62955288570591",
+      "packageNumber": "5528857059",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Meva Şehir Sitesi  A13  Blok  Kat 13 Daire 55 YEŞİLOVA ETİMESGUT Ankara",
+      "recipientName": "Agah Eymen Eyimaya",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YEŞİLOVA",
+      "shippingTown": "ETİMESGUT",
+      "shippingCity": "Ankara",
+      "email": "4032901089_5528857059@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Agah Eymen Eyimaya",
+      "billingAddress": "4048. Cd.  YEŞİLOVA ETİMESGUT Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "ETİMESGUT",
+      "billingDistrict": "YEŞİLOVA",
+      "billingPostalCode": "06796",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 498.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ace3dd8-0972-b251-b352-424e06060606",
+          "listingId": "f889ca5f-05ce-4471-9e67-dd2cbdff23ba",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000E9EX84",
+          "merchantSku": "AE3-6VMTR",
+          "quantity": 4,
+          "price": {
+            "currency": "TRY",
+            "amount": 124.7
+          },
+          "vat": 83.13,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 498.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.34
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 23.55
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 94.2
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 8.75
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 148.25
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 593
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Arduino Uyumlu Dc Sarı Motor ve Teker Seti",
+          "orderNumber": "4032901089",
+          "orderDate": "2026-10-13T17:19:03",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR01",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001683844352.jpg",
+          "deci": 0.3
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Agah Eymen Eyimaya",
+      "estimatedArrivalDate": "2026-10-19T15:30:00Z",
+      "totalDeci": 1.2,
       "warehouse": {
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
