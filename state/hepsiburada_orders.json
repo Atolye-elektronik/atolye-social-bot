@@ -260,6 +260,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ace61a5-6b56-8fc6-fa23-81fb06060606",
+      "status": "Open",
+      "customerId": "85bed39e-4675-4290-99b1-58ccc123a094",
+      "orderDate": "2026-10-13T19:51:47",
+      "dueDate": "2026-10-14T18:30:00",
+      "barcode": "62955289045658",
+      "packageNumber": "5528904565",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Riza sokak No:17 Kat:3 Daire:6 ORHANGAZİ PENDİK İstanbul",
+      "recipientName": "Erdal Kırık",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ORHANGAZİ",
+      "shippingTown": "PENDİK",
+      "shippingCity": "İstanbul",
+      "email": "4729277936_5528904565@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Erdal Kırık",
+      "billingAddress": "Riza sokak No:17 Kat:3 Daire:6 ORHANGAZİ PENDİK İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "PENDİK",
+      "billingDistrict": "ORHANGAZİ",
+      "billingPostalCode": "34903",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 719.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ace61a4-3153-c942-154f-84f606060606",
+          "listingId": "81f7452f-be40-40ff-9d6c-4d9269ca0b1d",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUUSCD",
+          "merchantSku": "AEENDELK",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 719.8
+          },
+          "vat": 119.97,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 719.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 76.77
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 133.19999
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 133.19999
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 35
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 852.99999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 852.99999
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi",
+          "orderNumber": "4729277936",
+          "orderDate": "2026-10-13T19:51:47",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELENDELK001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754823330.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Erdal Kırık",
+      "estimatedArrivalDate": "2026-10-19T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
