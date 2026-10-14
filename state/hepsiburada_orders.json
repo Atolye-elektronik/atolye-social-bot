@@ -1,4 +1,265 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6acfbb33-093b-2042-64ad-e8f706060606",
+      "status": "Open",
+      "customerId": "ad2b2398-52b8-4518-bf1d-8fa52af95771",
+      "orderDate": "2026-10-14T20:26:02",
+      "dueDate": "2026-10-15T18:30:00",
+      "barcode": "62955293324400",
+      "packageNumber": "5529332440",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Meksika Caddesi 2433. Sokak Ümitkent Sitesi B3 Daire 8 ÜMİT ÇANKAYA Ankara",
+      "recipientName": "Cenk Turgay",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ÜMİT",
+      "shippingTown": "ÇANKAYA",
+      "shippingCity": "Ankara",
+      "email": "4002759540_5529332440@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Cenk Turgay",
+      "billingAddress": "Meksika Caddesi 2433. Sokak Ümitkent Sitesi B3 Daire 8 ÜMİT ÇANKAYA Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "ÇANKAYA",
+      "billingDistrict": "ÜMİT",
+      "billingPostalCode": "06810",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 113.05
+      },
+      "items": [
+        {
+          "lineItemId": "6acfbb2d-de09-cf7c-8f0b-3add06060606",
+          "listingId": "5678558d-4d80-42ac-b9f2-eacfb8b916df",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000E8UKVB",
+          "merchantSku": "AEHCSR04",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 113.05
+          },
+          "vat": 18.84,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 113.05
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 11.97
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 19.95
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 19.95
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 133
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 133
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik HC-SR04 Ultrasonic Mesafe Sensörü Endüstriyel Kullanım için Hassas Tasarımlı Devre Modülü",
+          "orderNumber": "4002759540",
+          "orderDate": "2026-10-14T20:26:02",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELHCSR04001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001681743711.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Cenk Turgay",
+      "estimatedArrivalDate": "2026-10-19T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6acfc1cd-f137-405a-0158-9f7506060606",
+      "status": "Open",
+      "customerId": "0a2b4b50-d8b7-4af1-97b0-49e0b53455b9",
+      "orderDate": "2026-10-14T20:54:19",
+      "dueDate": "2026-10-15T18:30:00",
+      "barcode": "62955293420856",
+      "packageNumber": "5529342085",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "DÖĞÜŞBELEN MAH MERKEZ 43 SK NO 17A KÖYCEĞİZ MUĞLA DÖĞÜŞBELEN KÖYCEĞİZ Muğla",
+      "recipientName": "hakan yıldırım",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "DÖĞÜŞBELEN",
+      "shippingTown": "KÖYCEĞİZ",
+      "shippingCity": "Muğla",
+      "email": "4059282690_5529342085@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "hakan yıldırım",
+      "billingAddress": "DÖĞÜŞBELEN MAH MERKEZ 43 SK NO 17A KÖYCEĞİZ MUĞLA DÖĞÜŞBELEN KÖYCEĞİZ Muğla",
+      "billingCity": "Muğla",
+      "billingTown": "KÖYCEĞİZ",
+      "billingDistrict": "DÖĞÜŞBELEN",
+      "billingPostalCode": "48800",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 229
+      },
+      "items": [
+        {
+          "lineItemId": "6acfc1cc-440a-9bde-11ff-4dc606060606",
+          "listingId": "d9f1dcb0-a496-42a5-ae17-38ee8b01661f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000PLEY2",
+          "merchantSku": "AEACDMMR2",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 229
+          },
+          "vat": 38.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 229
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 20.61
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 229
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 229
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl Ac 220V 2000W Motor Hız Kontrol Kartı Dimmer",
+          "orderNumber": "4059282690",
+          "orderDate": "2026-10-14T20:54:19",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000000CNL576",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/121/{size}/110000071106017.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Hakan Yıldırım",
+      "estimatedArrivalDate": "2026-10-21T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
