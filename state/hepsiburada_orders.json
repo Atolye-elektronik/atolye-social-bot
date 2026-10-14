@@ -1038,6 +1038,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6acf61c7-0a72-319c-544b-022606060606",
+      "status": "Open",
+      "customerId": "ccd9b026-20be-40b4-be88-575473a80551",
+      "orderDate": "2026-10-14T14:04:26",
+      "dueDate": "2026-10-15T18:30:00",
+      "barcode": "62955292033307",
+      "packageNumber": "5529203330",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "AKZON GIDA Büyükkayacık OSB mahallesi 101.cadde no 17 Selçuklu Konya BÜYÜKKAYACIK OSB SELÇUKLU Konya",
+      "recipientName": "Yüksel cevcek",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BÜYÜKKAYACIK OSB",
+      "shippingTown": "SELÇUKLU",
+      "shippingCity": "Konya",
+      "email": "4503382291_5529203330@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "yüksel cevcek",
+      "billingAddress": "Aşkan mahallesi Akçaabat sokak Fazilet siteleri A1Blok No 5. Meram / Konya AŞKAN MERAM Konya",
+      "billingCity": "Konya",
+      "billingTown": "MERAM",
+      "billingDistrict": "AŞKAN",
+      "billingPostalCode": "42090",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 123.92
+      },
+      "items": [
+        {
+          "lineItemId": "6acf61be-440a-9bde-11cc-cc0006060606",
+          "listingId": "42b3499d-ee46-4188-80a5-6c698989f20a",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV000003BIVB",
+          "merchantSku": "AEPY186502",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 61.96
+          },
+          "vat": 20.64999,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 123.92
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 6.56
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 10.94
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 21.88
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 72.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 145.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "CDM 18650 Pil Yuvası 2'li Yüksek Performanslı Pil Kutusu Hassas Tasarım ile Elektronik Projeler İçin",
+          "orderNumber": "4503382291",
+          "orderDate": "2026-10-14T14:04:26",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "853690950000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2254527005101",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/67/{size}/110000009284102.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "YÜKSEL CEVCEK",
+      "estimatedArrivalDate": "2026-10-20T15:30:00Z",
+      "totalDeci": 2.2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
