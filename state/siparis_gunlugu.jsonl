@@ -854,3 +854,4 @@
 {"an": "2026-10-14T04:28", "kanal": "trendyol", "no": "11708401328", "kod": "AERFIDPS", "adet": 1, "dusum": {"AERC522RFID": 1, "AEUNOR3": 1, "AESG90": 1, "AEJK2040DE": 1, "AEJK2040": 1}, "kuru": false}
 {"an": "2026-10-14T07:13", "kanal": "trendyol", "no": "11708606633", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
 {"an": "2026-10-14T08:49", "kanal": "hepsiburada", "no": "4450164149", "kod": "AEPY18650T", "adet": 2, "dusum": {"AEPY18650T": 2}, "kuru": false}
+{"an": "2026-10-14T09:13", "kanal": "idefix", "no": "IDE6acf46cd0e809", "kod": "AE150LED", "adet": 1, "dusum": {"AELED5K": 150}, "kuru": false}
