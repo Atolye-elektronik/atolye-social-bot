@@ -606,6 +606,438 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6acf40c7-db75-7870-d9fd-de4706060606",
+      "status": "Open",
+      "customerId": "aa56e3ff-77c3-4432-b9c6-b3c6fff50db6",
+      "orderDate": "2026-10-14T11:43:49",
+      "dueDate": "2026-10-14T18:30:00",
+      "barcode": "62955291394131",
+      "packageNumber": "5529139413",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Üç Şehitler Cd. Maviçam Sitesi  12/D Blok 25 numara TUNAHAN ETİMESGUT Ankara",
+      "recipientName": "Sefa TOPLU",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "TUNAHAN",
+      "shippingTown": "ETİMESGUT",
+      "shippingCity": "Ankara",
+      "email": "4450164149_5529139413@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "AYŞEGÜL YÜCEL",
+      "billingAddress": "ERYAMAN Mah. 285. Sokak Bina No : 3 Daire No : - Kat : -1 ETİMESGUT / Ankara ERYAMAN ETİMESGUT Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "ETİMESGUT",
+      "billingDistrict": "ERYAMAN",
+      "billingPostalCode": "06824",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 108
+      },
+      "items": [
+        {
+          "lineItemId": "6acf40c6-9803-37a9-ff52-5c0106060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "vat": 18,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 4.86
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4450164149",
+          "orderDate": "2026-10-14T11:43:49",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "SEFA BATUHAN TOPLU",
+      "estimatedArrivalDate": "2026-10-19T15:30:00Z",
+      "totalDeci": 2.2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6acf5284-5556-8994-4e61-dbd006060606",
+      "status": "Open",
+      "customerId": "112ba1f9-5ab9-456f-8669-759632e4e0bf",
+      "orderDate": "2026-10-14T12:59:16",
+      "dueDate": "2026-10-14T18:30:00",
+      "barcode": "62955291740978",
+      "packageNumber": "5529174097",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "ER SOKAK DİLEK SİTESİ B BLOK ZEMİN KAT NO:3 İHSANİYE NİLÜFER Bursa",
+      "recipientName": "YUNUS BAYINDIR",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "İHSANİYE",
+      "shippingTown": "NİLÜFER",
+      "shippingCity": "Bursa",
+      "email": "4807430729_5529174097@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "YUNUS BAYINDIR",
+      "billingAddress": "BALAT MAHALLESİ SANAYİ CADDESİ KIRATLI İŞ MERKEZİ NO:433 KAT:4/45 NİLÜFER BURSA NİLÜFER / Bursa BALAT NİLÜFER Bursa",
+      "billingCity": "Bursa",
+      "billingTown": "NİLÜFER",
+      "billingDistrict": "BALAT",
+      "billingPostalCode": "16225",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 923.98
+      },
+      "items": [
+        {
+          "lineItemId": "6acf5279-093b-2042-6455-3ee306060606",
+          "listingId": "f2a7544d-cb60-4b13-977b-93e0c374832b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPAK0G",
+          "merchantSku": "AET2WDRBT-LI",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 499.83
+          },
+          "vat": 83.3,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 499.83
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 52.92
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 88.16999
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 88.16999
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 587.99999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 587.99999
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 2WD Robot Araba Kiti - 18650 Pil Yuvalı Set",
+          "orderNumber": "4807430729",
+          "orderDate": "2026-10-14T12:59:16",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901520222751",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033151255.jpg",
+          "deci": 2
+        },
+        {
+          "lineItemId": "6acf5279-093b-2042-6455-3ed806060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 45.9
+          },
+          "vat": 15.3,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 91.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 4.86
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 8.1
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 16.2
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4807430729",
+          "orderDate": "2026-10-14T12:59:16",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        },
+        {
+          "lineItemId": "6acf5279-093b-2042-6455-3ee206060606",
+          "listingId": "353b5f2f-e329-4cf2-86b0-2a536ededae2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EATWVS",
+          "merchantSku": "AE3-6VMTR5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 332.35
+          },
+          "vat": 55.39,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 332.35
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 35.19
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 58.65
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 58.65
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 391
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 391
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Dc Sarı Motor + Tekerlek / 4 Adet",
+          "orderNumber": "4807430729",
+          "orderDate": "2026-10-14T12:59:16",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR45",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001688556195.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "baymimar bay mimar",
+      "estimatedArrivalDate": "2026-10-16T15:30:00Z",
+      "totalDeci": 5.3,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }

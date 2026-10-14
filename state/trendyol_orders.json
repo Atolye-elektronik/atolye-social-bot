@@ -115,7 +115,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "2901069996298",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 199.9,
         "lineUnitPrice": 199.9,
         "fastDeliveryOptions": [
@@ -143,10 +143,14 @@
       {
         "createdDate": 1791961780807,
         "status": "Created"
+      },
+      {
+        "createdDate": 1791964977615,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1792011540000,
@@ -157,7 +161,7 @@
     "agreedDeliveryDate": 1792011540000,
     "fastDelivery": true,
     "originShipmentDate": 1791961778100,
-    "lastModifiedDate": 1791961780807,
+    "lastModifiedDate": 1791964977615,
     "commercial": false,
     "fastDeliveryType": "SameDayShipping",
     "deliveredByService": false,
