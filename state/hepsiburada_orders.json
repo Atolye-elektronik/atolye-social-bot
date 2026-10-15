@@ -2,28 +2,28 @@
   "newOrderItems": [],
   "packages": [
     {
-      "id": "6acfbb33-093b-2042-64ad-e8f706060606",
+      "id": "6ad0ed14-1643-cc77-36ee-b2fb06060606",
       "status": "Open",
-      "customerId": "ad2b2398-52b8-4518-bf1d-8fa52af95771",
-      "orderDate": "2026-10-14T20:26:02",
-      "dueDate": "2026-10-15T18:30:00",
-      "barcode": "62955293324400",
-      "packageNumber": "5529332440",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Meksika Caddesi 2433. Sokak Ümitkent Sitesi B3 Daire 8 ÜMİT ÇANKAYA Ankara",
-      "recipientName": "Cenk Turgay",
+      "customerId": "809801af-3497-4afe-9166-bcbc23ac428f",
+      "orderDate": "2026-10-15T18:11:14",
+      "dueDate": "2026-10-16T18:30:00",
+      "barcode": "62955297101348",
+      "packageNumber": "5529710134",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Polonez yolu Acarblue Rezidans B Blok Kat:3 D:31 ACARLAR BEYKOZ İstanbul",
+      "recipientName": "Taskin Bekar",
       "shippingCountryCode": "TR",
-      "shippingDistrict": "ÜMİT",
-      "shippingTown": "ÇANKAYA",
-      "shippingCity": "Ankara",
-      "email": "4002759540_5529332440@hepsifatura.com",
+      "shippingDistrict": "ACARLAR",
+      "shippingTown": "BEYKOZ",
+      "shippingCity": "İstanbul",
+      "email": "4193521448_5529710134@hepsifatura.com",
       "phoneNumber": "",
-      "companyName": "Cenk Turgay",
-      "billingAddress": "Meksika Caddesi 2433. Sokak Ümitkent Sitesi B3 Daire 8 ÜMİT ÇANKAYA Ankara",
-      "billingCity": "Ankara",
-      "billingTown": "ÇANKAYA",
-      "billingDistrict": "ÜMİT",
-      "billingPostalCode": "06810",
+      "companyName": "taskin bekar",
+      "billingAddress": "Acarkent Polonez yolu Acarblue rezidans b blok kat 3 daire 31 ACARLAR BEYKOZ İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "BEYKOZ",
+      "billingDistrict": "ACARLAR",
+      "billingPostalCode": "34800",
       "billingCountryCode": "TR",
       "taxOffice": null,
       "taxNumber": "",
@@ -32,158 +32,28 @@
       "customsTotalPrice": null,
       "totalPrice": {
         "currency": "TRY",
-        "amount": 113.05
+        "amount": 188
       },
       "items": [
         {
-          "lineItemId": "6acfbb2d-de09-cf7c-8f0b-3add06060606",
-          "listingId": "5678558d-4d80-42ac-b9f2-eacfb8b916df",
+          "lineItemId": "6ad0ed13-3529-8f04-5ea2-032706060606",
+          "listingId": "dbb4549e-5ceb-4923-b2f5-eca2ae52e1a2",
           "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV0000E8UKVB",
-          "merchantSku": "AEHCSR04",
+          "hbSku": "HBCV0000HPD07X",
+          "merchantSku": "AETEMDEF",
           "quantity": 1,
           "price": {
             "currency": "TRY",
-            "amount": 113.05
+            "amount": 188
           },
-          "vat": 18.84,
+          "vat": 31.33,
           "totalPrice": {
             "currency": "TRY",
-            "amount": 113.05
+            "amount": 188
           },
           "commission": {
             "currency": "TRY",
-            "amount": 11.97
-          },
-          "commissionRate": 9,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 19.95
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 19.95
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 133
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 133
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Atölye Elektronik HC-SR04 Ultrasonic Mesafe Sensörü Endüstriyel Kullanım için Hassas Tasarımlı Devre Modülü",
-          "orderNumber": "4002759540",
-          "orderDate": "2026-10-14T20:26:02",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "ATELHCSR04001",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001681743711.jpg",
-          "deci": 1.1
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "Cenk Turgay",
-      "estimatedArrivalDate": "2026-10-19T15:30:00Z",
-      "totalDeci": 1.1,
-      "warehouse": {
-        "shippingModel": "Standard",
-        "shippingAddressLabel": "BIRINCIL"
-      }
-    },
-    {
-      "id": "6ad07b8c-e43f-ac8f-e8c1-02b906060606",
-      "status": "Open",
-      "customerId": "ebe26316-fd7c-4f9c-ade4-bd20893a695f",
-      "orderDate": "2026-10-15T10:06:51",
-      "dueDate": "2026-10-15T18:30:00",
-      "barcode": "62955295077913",
-      "packageNumber": "5529507791",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Kulu mesleki ve teknik anadolu lisesi YENİ KULU Konya",
-      "recipientName": "Fatih yıldırım",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "YENİ",
-      "shippingTown": "KULU",
-      "shippingCity": "Konya",
-      "email": "4581794768_5529507791@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Fatih yıldırım",
-      "billingAddress": "Kulu mesleki ve teknik anadolu lisesi YENİ KULU Konya",
-      "billingCity": "Konya",
-      "billingTown": "KULU",
-      "billingDistrict": "YENİ",
-      "billingPostalCode": "42770",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 4368
-      },
-      "items": [
-        {
-          "lineItemId": "6ad07b8b-3367-01b2-3920-0fca06060606",
-          "listingId": "3b6c4e12-982f-401e-8789-3db2d198fedd",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV0000I2N6VA",
-          "merchantSku": "AEISDP10",
-          "quantity": 4,
-          "price": {
-            "currency": "TRY",
-            "amount": 1092
-          },
-          "vat": 728,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 4368
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 92.82
+            "amount": 15.98
           },
           "commissionRate": 8.5,
           "unitHBDiscount": {
@@ -204,11 +74,11 @@
           },
           "merchantUnitPrice": {
             "currency": "TRY",
-            "amount": 1092
+            "amount": 188
           },
           "merchantTotalPrice": {
             "currency": "TRY",
-            "amount": 4368
+            "amount": 188
           },
           "unitLaborCost": {
             "currency": "TRY",
@@ -220,9 +90,9 @@
           "customizedText03": "",
           "customizedText04": "",
           "properties": [],
-          "productName": "Atölye Elektronik Işletmelerde Mesleki Eğitim Iş Dosyası (Staj Defteri) 10'lu Sınıf Paketi",
-          "orderNumber": "4581794768",
-          "orderDate": "2026-10-15T10:06:51",
+          "productName": "Atölye Elektronik Temrin Defteri",
+          "orderNumber": "4193521448",
+          "orderDate": "2026-10-15T18:11:14",
           "deliveryType": "Standart Teslimat",
           "customerDelivery": "",
           "pickupTime": null,
@@ -239,7 +109,7 @@
             "amount": 0
           },
           "discountToBeBilledToHB": 0,
-          "productBarcode": "2909990002019",
+          "productBarcode": "2901069996298",
           "bnplCommissionAmount": {
             "currency": "TRY",
             "amount": 0
@@ -248,274 +118,14 @@
           "isMicroExport": false,
           "releatedLineIndexesWithCampaign": null,
           "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002074557070.jpg",
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033336619.jpg",
           "deci": 1
         }
       ],
       "isCargoChangable": true,
-      "customerName": "Fatih Yıldırım",
-      "estimatedArrivalDate": "2026-10-20T15:30:00Z",
-      "totalDeci": 4,
-      "warehouse": {
-        "shippingModel": "Standard",
-        "shippingAddressLabel": "BIRINCIL"
-      }
-    },
-    {
-      "id": "6ad09588-c624-bd45-26ee-75cd06060606",
-      "status": "Open",
-      "customerId": "feffc3df-a2e0-4ca3-8fa8-08c9a3301ea9",
-      "orderDate": "2026-10-15T11:57:43",
-      "dueDate": "2026-10-15T18:30:00",
-      "barcode": "62955295580930",
-      "packageNumber": "5529558093",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Zeki Eren Sk. Malkara Nihan İlgün Aile Sağlığı Merkezi No:2 CAMİ ATİK MALKARA Tekirdağ",
-      "recipientName": "Nevin Ayhan yüce",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "CAMİ ATİK",
-      "shippingTown": "MALKARA",
-      "shippingCity": "Tekirdağ",
-      "email": "4853625208_5529558093@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Ufuk Ayhan",
-      "billingAddress": "Mimar Sinan mah fatih sultan Mehmet caddesi Kiptaş 3 no14 daire 25 MİMAR SİNAN SİLİVRİ İstanbul",
-      "billingCity": "İstanbul",
-      "billingTown": "SİLİVRİ",
-      "billingDistrict": "MİMAR SİNAN",
-      "billingPostalCode": "34570",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 168
-      },
-      "items": [
-        {
-          "lineItemId": "6ad09587-fa12-2d1f-2218-ae0b06060606",
-          "listingId": "5b02b1a6-45f3-4499-aeb0-c610b73be56c",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV0000HXKZHC",
-          "merchantSku": "AEVANTSET",
-          "quantity": 1,
-          "price": {
-            "currency": "TRY",
-            "amount": 168
-          },
-          "vat": 28,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 168
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 15.12
-          },
-          "commissionRate": 9,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 168
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 168
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Atölye Elektronik Mini Vantilatör Seti - Pil Kutusu + Dc Motor + Anahtar + Pervane",
-          "orderNumber": "4853625208",
-          "orderDate": "2026-10-15T11:57:43",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "2901720999712",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002057902420.jpg",
-          "deci": 1
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "UFUK AYHAN",
-      "estimatedArrivalDate": "2026-10-19T15:30:00Z",
-      "totalDeci": 1,
-      "warehouse": {
-        "shippingModel": "Standard",
-        "shippingAddressLabel": "BIRINCIL"
-      }
-    },
-    {
-      "id": "6ad0c7bd-cf03-7801-0d77-147906060606",
-      "status": "Open",
-      "customerId": "a901d415-8fd1-4e41-8eac-3304b2eba76d",
-      "orderDate": "2026-10-15T15:31:56",
-      "dueDate": "2026-10-16T18:30:00",
-      "barcode": "62955296528122",
-      "packageNumber": "5529652812",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "kocaeli izmit kozluk mahallesi sait faik sokak no:29 kat:2 daire:8 (babadağ apartman)  KOZLUK İZMİT Kocaeli",
-      "recipientName": "Emre Aytaş",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "KOZLUK",
-      "shippingTown": "İZMİT",
-      "shippingCity": "Kocaeli",
-      "email": "4664352399_5529652812@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Emre Aytaş",
-      "billingAddress": "kocaeli izmit kozluk mahallesi sait faik sokak no:29 kat:2 daire:8 (babadağ apartman)  KOZLUK İZMİT Kocaeli",
-      "billingCity": "Kocaeli",
-      "billingTown": "İZMİT",
-      "billingDistrict": "KOZLUK",
-      "billingPostalCode": "41200",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 173.7
-      },
-      "items": [
-        {
-          "lineItemId": "6ad0c7bc-2204-3d47-04a5-e76506060606",
-          "listingId": "7541d32d-fc77-44f1-9c21-0db403279f95",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBV000013B7RC",
-          "merchantSku": "AETP4056",
-          "quantity": 3,
-          "price": {
-            "currency": "TRY",
-            "amount": 57.9
-          },
-          "vat": 28.95,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 173.7
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 5.21
-          },
-          "commissionRate": 9,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 57.9
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 173.7
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Arduino TP4056 Type-C 1s 3.7V Lipo, Li-Ion Pil Şarj Devresi",
-          "orderNumber": "4664352399",
-          "orderDate": "2026-10-15T15:31:56",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "853690950000",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "0691002365874",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001065034161.jpg",
-          "deci": 1.9
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "emre aytaş",
+      "customerName": "taskin bekar",
       "estimatedArrivalDate": "2026-10-21T15:30:00Z",
-      "totalDeci": 5.7,
+      "totalDeci": 1,
       "warehouse": {
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
