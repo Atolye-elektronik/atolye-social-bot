@@ -9,7 +9,7 @@
       "dueDate": "2026-10-15T18:30:00",
       "barcode": "62955293324400",
       "packageNumber": "5529332440",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Meksika Caddesi 2433. Sokak Ümitkent Sitesi B3 Daire 8 ÜMİT ÇANKAYA Ankara",
       "recipientName": "Cenk Turgay",
       "shippingCountryCode": "TR",
@@ -139,7 +139,7 @@
       "dueDate": "2026-10-15T18:30:00",
       "barcode": "62955293420856",
       "packageNumber": "5529342085",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "PTT Kargo",
       "shippingAddressDetail": "DÖĞÜŞBELEN MAH MERKEZ 43 SK NO 17A KÖYCEĞİZ MUĞLA DÖĞÜŞBELEN KÖYCEĞİZ Muğla",
       "recipientName": "hakan yıldırım",
       "shippingCountryCode": "TR",
@@ -255,6 +255,396 @@
       "isCargoChangable": true,
       "customerName": "Hakan Yıldırım",
       "estimatedArrivalDate": "2026-10-21T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ad07b8c-e43f-ac8f-e8c1-02b906060606",
+      "status": "Open",
+      "customerId": "ebe26316-fd7c-4f9c-ade4-bd20893a695f",
+      "orderDate": "2026-10-15T10:06:51",
+      "dueDate": "2026-10-15T18:30:00",
+      "barcode": "62955295077913",
+      "packageNumber": "5529507791",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Kulu mesleki ve teknik anadolu lisesi YENİ KULU Konya",
+      "recipientName": "Fatih yıldırım",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YENİ",
+      "shippingTown": "KULU",
+      "shippingCity": "Konya",
+      "email": "4581794768_5529507791@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Fatih yıldırım",
+      "billingAddress": "Kulu mesleki ve teknik anadolu lisesi YENİ KULU Konya",
+      "billingCity": "Konya",
+      "billingTown": "KULU",
+      "billingDistrict": "YENİ",
+      "billingPostalCode": "42770",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 4368
+      },
+      "items": [
+        {
+          "lineItemId": "6ad07b8b-3367-01b2-3920-0fca06060606",
+          "listingId": "3b6c4e12-982f-401e-8789-3db2d198fedd",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000I2N6VA",
+          "merchantSku": "AEISDP10",
+          "quantity": 4,
+          "price": {
+            "currency": "TRY",
+            "amount": 1092
+          },
+          "vat": 728,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 4368
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 92.82
+          },
+          "commissionRate": 8.5,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1092
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 4368
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Işletmelerde Mesleki Eğitim Iş Dosyası (Staj Defteri) 10'lu Sınıf Paketi",
+          "orderNumber": "4581794768",
+          "orderDate": "2026-10-15T10:06:51",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2909990002019",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002074557070.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Fatih Yıldırım",
+      "estimatedArrivalDate": "2026-10-20T15:30:00Z",
+      "totalDeci": 4,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ad086a9-8468-854b-86d2-ace506060606",
+      "status": "Open",
+      "customerId": "512f561a-439b-405d-8d0f-c679b4e8692c",
+      "orderDate": "2026-10-15T10:54:15",
+      "dueDate": "2026-10-15T18:30:00",
+      "barcode": "62955295292390",
+      "packageNumber": "5529529239",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "75. YIL MAH. O.S.B. 33 CAD. NO:18 (KEMSAN) 75. YIL OSB ODUNPAZARI Eskişehir",
+      "recipientName": "AHMET ÖNCÜER",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "75. YIL OSB",
+      "shippingTown": "ODUNPAZARI",
+      "shippingCity": "Eskişehir",
+      "email": "4178918664_5529529239@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "AHMET ÖNCÜER",
+      "billingAddress": "75.YIL MAH. OSB.33 CADDE NO:18 (KEMSAN) 75. YIL OSB ODUNPAZARI Eskişehir",
+      "billingCity": "Eskişehir",
+      "billingTown": "ODUNPAZARI",
+      "billingDistrict": "75. YIL OSB",
+      "billingPostalCode": "26250",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 108
+      },
+      "items": [
+        {
+          "lineItemId": "6ad086a8-ed7a-e3ac-7976-1cfe06060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "vat": 18,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 4.86
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4178918664",
+          "orderDate": "2026-10-15T10:54:15",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "AHMET ÖNCÜER",
+      "estimatedArrivalDate": "2026-10-16T15:30:00Z",
+      "totalDeci": 2.2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ad09588-c624-bd45-26ee-75cd06060606",
+      "status": "Open",
+      "customerId": "feffc3df-a2e0-4ca3-8fa8-08c9a3301ea9",
+      "orderDate": "2026-10-15T11:57:43",
+      "dueDate": "2026-10-15T18:30:00",
+      "barcode": "62955295580930",
+      "packageNumber": "5529558093",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Zeki Eren Sk. Malkara Nihan İlgün Aile Sağlığı Merkezi No:2 CAMİ ATİK MALKARA Tekirdağ",
+      "recipientName": "Nevin Ayhan yüce",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "CAMİ ATİK",
+      "shippingTown": "MALKARA",
+      "shippingCity": "Tekirdağ",
+      "email": "4853625208_5529558093@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Ufuk Ayhan",
+      "billingAddress": "Mimar Sinan mah fatih sultan Mehmet caddesi Kiptaş 3 no14 daire 25 MİMAR SİNAN SİLİVRİ İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "SİLİVRİ",
+      "billingDistrict": "MİMAR SİNAN",
+      "billingPostalCode": "34570",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 168
+      },
+      "items": [
+        {
+          "lineItemId": "6ad09587-fa12-2d1f-2218-ae0b06060606",
+          "listingId": "5b02b1a6-45f3-4499-aeb0-c610b73be56c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HXKZHC",
+          "merchantSku": "AEVANTSET",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 168
+          },
+          "vat": 28,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 168
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 15.12
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 168
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 168
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Mini Vantilatör Seti - Pil Kutusu + Dc Motor + Anahtar + Pervane",
+          "orderNumber": "4853625208",
+          "orderDate": "2026-10-15T11:57:43",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901720999712",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002057902420.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "UFUK AYHAN",
+      "estimatedArrivalDate": "2026-10-19T15:30:00Z",
       "totalDeci": 1,
       "warehouse": {
         "shippingModel": "Standard",
