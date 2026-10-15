@@ -130,6 +130,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ad0ff56-5252-6165-83f8-91f106060606",
+      "status": "Open",
+      "customerId": "ad48919a-31e1-45e1-9140-40c2c3c5fb44",
+      "orderDate": "2026-10-15T19:29:09",
+      "dueDate": "2026-10-16T18:30:00",
+      "barcode": "62955297332559",
+      "packageNumber": "5529733255",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Barış mah. Özlem sok. No:51  BARIŞ LÜLEBURGAZ Kırklareli",
+      "recipientName": "Mert Kahraman",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BARIŞ",
+      "shippingTown": "LÜLEBURGAZ",
+      "shippingCity": "Kırklareli",
+      "email": "4869327266_5529733255@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Hasan Kahraman",
+      "billingAddress": "Sakızköy Hürriyet mevkii manolya 4. Sokağı no:2 Lüleburgaz/Kırklareli HÜRRİYET (SAKIZKÖY KÖYÜ) LÜLEBURGAZ Kırklareli",
+      "billingCity": "Kırklareli",
+      "billingTown": "LÜLEBURGAZ",
+      "billingDistrict": "HÜRRİYET (SAKIZKÖY KÖYÜ)",
+      "billingPostalCode": "39752",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 114.9
+      },
+      "items": [
+        {
+          "lineItemId": "6ad0ff55-9631-37e0-c2a8-fd6d06060606",
+          "listingId": "0066aaa5-3276-4378-b634-dc25f8bab1e8",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV000066JI28",
+          "merchantSku": "AEBZZR5V",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 114.9
+          },
+          "vat": 19.14999,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 114.9
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 10.34
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 114.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 114.9
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Teknolog Hanım 5 Adet 5V Aktif Buzzer Ses Bileşeni",
+          "orderNumber": "4869327266",
+          "orderDate": "2026-10-15T19:29:09",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "TKNLGHNM-1052",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000663924743.jpg",
+          "deci": 1.7
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Mert Kahraman",
+      "estimatedArrivalDate": "2026-10-22T15:30:00Z",
+      "totalDeci": 1.7,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
