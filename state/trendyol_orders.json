@@ -74,10 +74,10 @@
     "id": 4246879198,
     "channelId": 1,
     "shipmentPackageId": 4246879198,
-    "cargoTrackingNumber": 7270038043808457,
+    "cargoTrackingNumber": 7330038044963859,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 1,
@@ -115,7 +115,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "2901069996298",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 199.9,
         "lineUnitPrice": 199.9,
         "fastDeliveryOptions": [
@@ -143,10 +143,14 @@
       {
         "createdDate": 1792061248494,
         "status": "Created"
+      },
+      {
+        "createdDate": 1792063409018,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1792097940000,
@@ -157,7 +161,7 @@
     "agreedDeliveryDate": 1792097940000,
     "fastDelivery": true,
     "originShipmentDate": 1792061246344,
-    "lastModifiedDate": 1792061248494,
+    "lastModifiedDate": 1792063418878,
     "commercial": false,
     "fastDeliveryType": "SameDayShipping",
     "deliveredByService": false,
@@ -177,190 +181,6 @@
     "createdBy": "order-creation",
     "originPackageIds": null,
     "shipmentNumber": 10961771965,
-    "is4P": false
-  },
-  {
-    "shipmentAddress": {
-      "id": 9837094009,
-      "firstName": "Irmak",
-      "lastName": "Samur",
-      "company": "",
-      "address1": "7398/5 sk no:39 kat:2 daire:2 onur mahallesi bayraklı izmir",
-      "address2": "",
-      "city": "İzmir",
-      "cityCode": 35,
-      "district": "Bayraklı",
-      "districtId": 1040,
-      "countyId": 0,
-      "countyName": "",
-      "shortAddress": "",
-      "stateName": "",
-      "addressLines": {
-        "addressLine1": "",
-        "addressLine2": ""
-      },
-      "postalCode": "35000",
-      "countryCode": "TR",
-      "neighborhoodId": 32661,
-      "neighborhood": "Onur Mah",
-      "phone": null,
-      "fullAddress": "7398/5 sk no:39 kat:2 daire:2 onur mahallesi bayraklı izmir     Bayraklı İzmir",
-      "fullName": "Irmak Samur"
-    },
-    "orderNumber": "11712265847",
-    "paymentMethod": "Banka Kartı",
-    "orderCountryCode": "TR",
-    "grossAmount": 248.0,
-    "packageGrossAmount": 248.0,
-    "totalDiscount": 0.0,
-    "packageSellerDiscount": 0.0,
-    "totalTyDiscount": 0.0,
-    "packageTyDiscount": 0.0,
-    "packageTotalDiscount": 0.0,
-    "taxNumber": null,
-    "invoiceAddress": {
-      "id": 9837094008,
-      "firstName": "Irmak",
-      "lastName": "Samur",
-      "company": "",
-      "address1": "7398/5 sk no:39 kat:2 daire:2 onur mahallesi bayraklı izmir",
-      "address2": "",
-      "city": "İzmir",
-      "cityCode": 35,
-      "district": "Bayraklı",
-      "districtId": 1040,
-      "countyId": 0,
-      "countyName": "",
-      "shortAddress": "",
-      "stateName": "",
-      "addressLines": {
-        "addressLine1": "",
-        "addressLine2": ""
-      },
-      "postalCode": "35000",
-      "sector": "",
-      "countryCode": "TR",
-      "neighborhoodId": 32661,
-      "neighborhood": "Onur Mah",
-      "phone": null,
-      "fullAddress": "7398/5 sk no:39 kat:2 daire:2 onur mahallesi bayraklı izmir     Bayraklı İzmir",
-      "fullName": "Irmak Samur"
-    },
-    "customerFirstName": "Irmak",
-    "customerEmail": "pf+9jnb2bjo@trendyolmail.com",
-    "customerId": 60197768,
-    "supplierId": 0,
-    "customerLastName": "Samur",
-    "id": 4246640601,
-    "channelId": 1,
-    "shipmentPackageId": 4246640601,
-    "cargoTrackingNumber": 7270038041426455,
-    "sellerDeliveryMethod": "",
-    "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
-    "lines": [
-      {
-        "quantity": 1,
-        "salesCampaignId": 61,
-        "productSize": "Tek Ebat",
-        "merchantSku": "AESTJDFTR",
-        "sku": "2901611068909",
-        "stockCode": "AESTJDFTR",
-        "productName": "Meslek Lisesi ve MESEM Öğrencileri için İşletmelerde Mesleki Eğitim İş Dosyası AESTJDFTR, one size",
-        "productCode": 1665534973,
-        "contentId": 1665534973,
-        "productOrigin": "TR",
-        "merchantId": 1258869,
-        "sellerId": 1258869,
-        "amount": 248.0,
-        "lineGrossAmount": 248.0,
-        "discount": 0.0,
-        "lineTotalDiscount": 0.0,
-        "lineSellerDiscount": 0.0,
-        "tyDiscount": 0.0,
-        "lineTyDiscount": 0.0,
-        "discountDetails": [
-          {
-            "lineItemId": "6937914782",
-            "lineItemPrice": 248.0,
-            "lineItemDiscount": 0.0,
-            "lineItemSellerDiscount": 0.0,
-            "lineItemTyDiscount": 0.0
-          }
-        ],
-        "currencyCode": "TRY",
-        "productColor": "Yeşil",
-        "id": 6077967202,
-        "lineId": 6077967202,
-        "vatBaseAmount": 20.0,
-        "vatRate": 20.0,
-        "barcode": "2901611068909",
-        "orderLineItemStatusName": "Picking",
-        "price": 248.0,
-        "lineUnitPrice": 248.0,
-        "fastDeliveryOptions": [
-          {
-            "type": "SameDayShipping"
-          },
-          {
-            "type": "FastDelivery"
-          }
-        ],
-        "productCategoryId": 1520,
-        "commission": 18,
-        "businessUnit": "Stationery & Office",
-        "defectiveClaimListingInsight": ""
-      }
-    ],
-    "orderDate": 1792067532201,
-    "identityNumber": "11111111111",
-    "currencyCode": "TRY",
-    "packageHistories": [
-      {
-        "createdDate": 1792056734113,
-        "status": "Awaiting"
-      },
-      {
-        "createdDate": 1792056750930,
-        "status": "Created"
-      },
-      {
-        "createdDate": 1792058935856,
-        "status": "Picking"
-      }
-    ],
-    "shipmentPackageStatus": "Picking",
-    "status": "Picking",
-    "deliveryType": "normal",
-    "timeSlotId": 0,
-    "estimatedDeliveryStartDate": 1792097940000,
-    "estimatedDeliveryEndDate": 1792270740000,
-    "totalPrice": 248.0,
-    "packageTotalPrice": 248.0,
-    "deliveryAddressType": "Shipment",
-    "agreedDeliveryDate": 1792097940000,
-    "fastDelivery": true,
-    "originShipmentDate": 1792056734107,
-    "lastModifiedDate": 1792058935856,
-    "commercial": false,
-    "fastDeliveryType": "SameDayShipping",
-    "deliveredByService": false,
-    "warehouseId": 8012721,
-    "invoiceStatus": "NotInvoiced",
-    "invoiceNumber": "",
-    "micro": false,
-    "giftBoxRequested": false,
-    "3pByTrendyol": false,
-    "containsDangerousProduct": false,
-    "boxQuantity": 0,
-    "deci": 0,
-    "width": null,
-    "length": null,
-    "height": null,
-    "isCod": false,
-    "createdBy": "order-creation",
-    "originPackageIds": null,
-    "shipmentNumber": 10961510777,
     "is4P": false
   },
   {
