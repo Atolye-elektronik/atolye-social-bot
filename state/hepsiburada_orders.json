@@ -390,6 +390,266 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ad1e483-b14b-171f-d6c2-b17506060606",
+      "status": "Open",
+      "customerId": "b67f46af-2fb2-4bde-beb4-3ba18d78a167",
+      "orderDate": "2026-10-16T11:46:58",
+      "dueDate": "2026-10-16T18:30:00",
+      "barcode": "62955299849707",
+      "packageNumber": "5529984970",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "5778. Sk. Göktürkler Sitesi b blok daire:3  GÜZELYURT YUNUSEMRE Manisa",
+      "recipientName": "sezgin akkanlı",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "GÜZELYURT",
+      "shippingTown": "YUNUSEMRE",
+      "shippingCity": "Manisa",
+      "email": "4206022787_5529984970@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "sezgin akkanlı",
+      "billingAddress": "5780. Sk No:a Kat:7 Daire:14 GÜZELYURT YUNUSEMRE Manisa",
+      "billingCity": "Manisa",
+      "billingTown": "YUNUSEMRE",
+      "billingDistrict": "GÜZELYURT",
+      "billingPostalCode": "45030",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 188
+      },
+      "items": [
+        {
+          "lineItemId": "6ad1e482-5252-6165-834c-e70606060606",
+          "listingId": "dbb4549e-5ceb-4923-b2f5-eca2ae52e1a2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPD07X",
+          "merchantSku": "AETEMDEF",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "vat": 31.33,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 15.98
+          },
+          "commissionRate": 8.5,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Temrin Defteri",
+          "orderNumber": "4206022787",
+          "orderDate": "2026-10-16T11:46:58",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901069996298",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033336619.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "sezgin akkanli",
+      "estimatedArrivalDate": "2026-10-20T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ad1f436-9760-a100-e799-cf6206060606",
+      "status": "Open",
+      "customerId": "caa71447-a517-44a7-bc70-2a199e874886",
+      "orderDate": "2026-10-16T12:53:57",
+      "dueDate": "2026-10-16T18:30:00",
+      "barcode": "62955300145507",
+      "packageNumber": "5530014550",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Osmangazi mahallesi Çay kenarı sokak No:22 kat:2 taksim:2 Meram/konya OSMAN GAZİ MERAM Konya",
+      "recipientName": "Mustafa Akıncı",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "OSMAN GAZİ",
+      "shippingTown": "MERAM",
+      "shippingCity": "Konya",
+      "email": "4819715268_5530014550@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Mustafa Akıncı",
+      "billingAddress": "Osmangazi mahallesi Çay kenarı sokak No:22 kat:2 taksim:2 Meram/konya OSMAN GAZİ MERAM Konya",
+      "billingCity": "Konya",
+      "billingTown": "MERAM",
+      "billingDistrict": "OSMAN GAZİ",
+      "billingPostalCode": "42140",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 108
+      },
+      "items": [
+        {
+          "lineItemId": "6ad1f436-5f29-e087-6713-d45406060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "vat": 18,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 4.86
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4819715268",
+          "orderDate": "2026-10-16T12:53:57",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Mustafa Akıncı",
+      "estimatedArrivalDate": "2026-10-21T15:30:00Z",
+      "totalDeci": 2.2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
