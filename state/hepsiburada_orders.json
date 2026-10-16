@@ -529,7 +529,7 @@
       "dueDate": "2026-10-16T18:30:00",
       "barcode": "62955300145507",
       "packageNumber": "5530014550",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Osmangazi mahallesi Çay kenarı sokak No:22 kat:2 taksim:2 Meram/konya OSMAN GAZİ MERAM Konya",
       "recipientName": "Mustafa Akıncı",
       "shippingCountryCode": "TR",
@@ -644,6 +644,266 @@
       ],
       "isCargoChangable": true,
       "customerName": "Mustafa Akıncı",
+      "estimatedArrivalDate": "2026-10-21T15:30:00Z",
+      "totalDeci": 2.2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ad2162f-310b-d64c-7c3f-234f06060606",
+      "status": "Open",
+      "customerId": "638a1d6b-2e20-427f-b072-95e9942ffde8",
+      "orderDate": "2026-10-16T15:18:53",
+      "dueDate": "2026-10-17T18:30:00",
+      "barcode": "62955300784050",
+      "packageNumber": "5530078405",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Kurtuluş Mah Fikret Bey Sok. A8 Blok kat:3 NO:15 KURTULUŞ YAKUTİYE Erzurum",
+      "recipientName": "Erol CEBECİ",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KURTULUŞ",
+      "shippingTown": "YAKUTİYE",
+      "shippingCity": "Erzurum",
+      "email": "4722748424_5530078405@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "EROL CEBECİ",
+      "billingAddress": "Kurtuluş Mah Fikret Bey Sok. A8 Blok kat:3 NO:15 KURTULUŞ YAKUTİYE Erzurum",
+      "billingCity": "Erzurum",
+      "billingTown": "YAKUTİYE",
+      "billingDistrict": "KURTULUŞ",
+      "billingPostalCode": "25100",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 391
+      },
+      "items": [
+        {
+          "lineItemId": "6ad2162e-8723-4c08-74ea-f32d06060606",
+          "listingId": "353b5f2f-e329-4cf2-86b0-2a536ededae2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EATWVS",
+          "merchantSku": "AE3-6VMTR5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 391
+          },
+          "vat": 65.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 391
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 35.19
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 391
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 391
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Dc Sarı Motor + Tekerlek / 4 Adet",
+          "orderNumber": "4722748424",
+          "orderDate": "2026-10-16T15:18:53",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR45",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001688556195.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "erol cebeci",
+      "estimatedArrivalDate": "2026-10-20T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ad22ff8-2219-a3de-c1ef-5eff06060606",
+      "status": "Open",
+      "customerId": "3a18a1a6-d9ad-463a-9be9-2a03c8fa46c6",
+      "orderDate": "2026-10-16T17:08:55",
+      "dueDate": "2026-10-17T18:30:00",
+      "barcode": "62955301201004",
+      "packageNumber": "5530120100",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "barış mah. ali çebi cad. cahit sıtkı tarancı sok. yeşilvadi ap. no:6 d:9 kat:2 BARIŞ BEYLİKDÜZÜ İstanbul",
+      "recipientName": "seden çakınlar",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BARIŞ",
+      "shippingTown": "BEYLİKDÜZÜ",
+      "shippingCity": "İstanbul",
+      "email": "4462244998_5530120100@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "seden çakınlar",
+      "billingAddress": "barış mah. ali çebi cad. cahit sıtkı tarancı sok. yeşilvadi ap. no:6 d:9 kat:2 BARIŞ BEYLİKDÜZÜ İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "BEYLİKDÜZÜ",
+      "billingDistrict": "BARIŞ",
+      "billingPostalCode": "34520",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 108
+      },
+      "items": [
+        {
+          "lineItemId": "6ad22ff7-9760-a100-e77f-421206060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "vat": 18,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 4.86
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 108
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4462244998",
+          "orderDate": "2026-10-16T17:08:55",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "seden çakınlar",
       "estimatedArrivalDate": "2026-10-21T15:30:00Z",
       "totalDeci": 2.2,
       "warehouse": {
