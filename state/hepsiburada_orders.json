@@ -130,6 +130,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ad258ff-b14b-171f-d64d-cc8506060606",
+      "status": "Open",
+      "customerId": "eea86c77-0f76-456a-9912-86584b0002fb",
+      "orderDate": "2026-10-16T20:03:56",
+      "dueDate": "2026-10-17T18:30:00",
+      "barcode": "62955301731930",
+      "packageNumber": "5530173193",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Bağcılar mahallesi 1135.sokak Bahoz sitesi A blok NO:6 BAĞCILAR BAĞLAR Diyarbakır",
+      "recipientName": "Süleyman BEŞGİ",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BAĞCILAR",
+      "shippingTown": "BAĞLAR",
+      "shippingCity": "Diyarbakır",
+      "email": "4543211208_5530173193@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Süleyman BEŞGİ",
+      "billingAddress": "Bağcılar mahallesi 1135.sokak Bahoz sitesi A blok NO:6 BAĞCILAR BAĞLAR Diyarbakır",
+      "billingCity": "Diyarbakır",
+      "billingTown": "BAĞLAR",
+      "billingDistrict": "BAĞCILAR",
+      "billingPostalCode": "21050",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 98.42
+      },
+      "items": [
+        {
+          "lineItemId": "6ad258fd-2204-3d47-0431-a86a06060606",
+          "listingId": "7541d32d-fc77-44f1-9c21-0db403279f95",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBV000013B7RC",
+          "merchantSku": "AETP4056",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 49.21
+          },
+          "vat": 16.39999,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 98.42
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 5.21
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 8.69
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 17.38
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 57.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 115.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Arduino TP4056 Type-C 1s 3.7V Lipo, Li-Ion Pil Şarj Devresi",
+          "orderNumber": "4543211208",
+          "orderDate": "2026-10-16T20:03:56",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "853690950000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0691002365874",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001065034161.jpg",
+          "deci": 1.9
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Süleyman Beşgi",
+      "estimatedArrivalDate": "2026-10-21T15:30:00Z",
+      "totalDeci": 3.8,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
