@@ -895,3 +895,5 @@
 {"an": "2026-10-17T07:23", "kanal": "trendyol", "no": "11718775091", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
 {"an": "2026-10-17T14:42", "kanal": "hepsiburada", "no": "4362971057", "kod": "AETP4056", "adet": 3, "dusum": {"AETP4056": 3}, "kuru": false}
 {"an": "2026-10-17T14:42", "kanal": "hepsiburada", "no": "4867240990", "kod": "AETP4056", "adet": 2, "dusum": {"AETP4056": 2}, "kuru": false}
+{"an": "2026-10-17T16:19", "kanal": "trendyol", "no": "11720572973", "kod": "AE2WDEKRBT", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
+{"an": "2026-10-17T16:19", "kanal": "hepsiburada", "no": "4936686666", "kod": "AEHC06RAK-LI", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEPY18650": 1, "AEHC06BT": 1, "AEUNOR3": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
