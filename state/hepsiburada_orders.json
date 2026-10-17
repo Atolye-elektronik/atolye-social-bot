@@ -260,6 +260,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ad39a7c-444c-2e71-ca73-6c2006060606",
+      "status": "Open",
+      "customerId": "144ed7bb-c2a4-4bd5-9a54-acb2017beb0a",
+      "orderDate": "2026-10-17T18:55:39",
+      "dueDate": "2026-10-19T18:30:00",
+      "barcode": "62955305224580",
+      "packageNumber": "5530522458",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "352 sokak no 4 kapı şifresi 2 kat 1 daire 2 ( asansör kapısı karşısı) İNÖNÜ ESENYURT İstanbul",
+      "recipientName": "cevher geşgin",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "İNÖNÜ",
+      "shippingTown": "ESENYURT",
+      "shippingCity": "İstanbul",
+      "email": "4936686666_5530522458@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "cevher geşgin",
+      "billingAddress": "352 sokak no 4 kapı şifresi 2 kat 1 daire 2 ( asansör kapısı karşısı) İNÖNÜ ESENYURT İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "ESENYURT",
+      "billingDistrict": "İNÖNÜ",
+      "billingPostalCode": "34510",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1038.7
+      },
+      "items": [
+        {
+          "lineItemId": "6ad39a7b-e822-91ea-0130-0d9506060606",
+          "listingId": "0fa60994-9c9e-4ea4-95d6-f798f8c5d97f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPA5S1",
+          "merchantSku": "AEHC06RAK-LI",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 1038.7
+          },
+          "vat": 173.12,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 1038.7
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 109.98
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 183.3
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 183.3
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1222
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1222
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Bluetooth Kontrollü Robot Kiti - 18650 Pil Yuvalı Tam Set (Arduino + Motor Sürücü)",
+          "orderNumber": "4936686666",
+          "orderDate": "2026-10-17T18:55:39",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901611519487",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033127953.jpg",
+          "deci": 2
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "cevher gesgin",
+      "estimatedArrivalDate": "2026-10-22T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
