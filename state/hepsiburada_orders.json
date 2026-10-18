@@ -9,7 +9,7 @@
       "dueDate": "2026-10-19T18:30:00",
       "barcode": "62955304977348",
       "packageNumber": "5530497734",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "BARBAROS HAYRETTİN PAŞA MAH. 1036/1 SK. NO:5 D:4 BARBAROS HAYRETTİNPAŞA GAZİOSMANPAŞA İstanbul",
       "recipientName": "ELİF GÜNAYDIN",
       "shippingCountryCode": "TR",
@@ -139,7 +139,7 @@
       "dueDate": "2026-10-19T18:30:00",
       "barcode": "62955304977454",
       "packageNumber": "5530497745",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Su Sokak No:3B Daire:11 Pınar Sitesi A2 Blok YENİŞEHİR ATAŞEHİR İstanbul",
       "recipientName": "Demir Aktimur",
       "shippingCountryCode": "TR",
@@ -269,7 +269,7 @@
       "dueDate": "2026-10-19T18:30:00",
       "barcode": "62955305224580",
       "packageNumber": "5530522458",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "352 sokak no 4 kapı şifresi 2 kat 1 daire 2 ( asansör kapısı karşısı) İNÖNÜ ESENYURT İstanbul",
       "recipientName": "cevher geşgin",
       "shippingCountryCode": "TR",
@@ -399,7 +399,7 @@
       "dueDate": "2026-10-19T18:30:00",
       "barcode": "62955308001175",
       "packageNumber": "5530800117",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "5732. Sk. Esila Confort Ayakkabı No:4A GÜZELYURT YUNUSEMRE Manisa",
       "recipientName": "SERHAT GÜZEL",
       "shippingCountryCode": "TR",
@@ -516,6 +516,136 @@
       "customerName": "SERHAT GÜZEL",
       "estimatedArrivalDate": "2026-10-21T15:30:00Z",
       "totalDeci": 2.2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ad4fc1a-da0c-df67-504a-eb0306060606",
+      "status": "Open",
+      "customerId": "f76ee2ff-2f10-42c1-99b9-e08f32caae9f",
+      "orderDate": "2026-10-18T20:04:25",
+      "dueDate": "2026-10-19T18:30:00",
+      "barcode": "62955308371676",
+      "packageNumber": "5530837167",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "KUZEY YILDIZI MAH. ÇİFTLİK CAD. 95B G6 BLOK KAT:7 DAİRE:22  KUZEY YILDIZI CANİK Samsun",
+      "recipientName": "musa BAYRAM",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KUZEY YILDIZI",
+      "shippingTown": "CANİK",
+      "shippingCity": "Samsun",
+      "email": "4284153053_5530837167@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "MUSA BAYRAM",
+      "billingAddress": "KUZEY YILDIZI MAH. ÇİFTLİK CAD. 95B G6 BLOK KAT:7 DAİRE:22 KUZEY YILDIZI CANİK Samsun",
+      "billingCity": "Samsun",
+      "billingTown": "CANİK",
+      "billingDistrict": "KUZEY YILDIZI",
+      "billingPostalCode": "55080",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 115.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ad4fc1a-7f6c-041d-10bb-0d4806060606",
+          "listingId": "7541d32d-fc77-44f1-9c21-0db403279f95",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBV000013B7RC",
+          "merchantSku": "AETP4056",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 57.9
+          },
+          "vat": 19.3,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 115.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 5.21
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 57.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 115.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Arduino TP4056 Type-C 1s 3.7V Lipo, Li-Ion Pil Şarj Devresi",
+          "orderNumber": "4284153053",
+          "orderDate": "2026-10-18T20:04:25",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "853690950000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0691002365874",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001065034161.jpg",
+          "deci": 1.9
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "MUSA BAYRAM",
+      "estimatedArrivalDate": "2026-10-21T15:30:00Z",
+      "totalDeci": 3.8,
       "warehouse": {
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
