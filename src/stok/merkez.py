@@ -125,13 +125,21 @@ def shopify_geri_yaz(recete, parca, hedef):
       1) havuz uyeleri: satis kanonikten dusuyor, uyeler geride kalmasin
       2) hesaplanan SET stoklari: web sitesi Shopify envanterinden satiyor;
          yazilmazsa site, parcasi bitmis seti satmaya devam eder (13.09).
+
+    18.10.2026 kullanici: Shopify setin GERCEK adedini gostersin. Guvenlik payi
+    (AZ_STOK/GUVENLIK_PAYI) yalniz pazaryerlerine; Shopify'a yazilinca 23 motorda
+    4'lu set 5 yerine 3, 14 yankeskide 3'lu set 4 yerine 2 gorunuyordu.
+    Elle sabitlenen ('sabit') ve sifirlanan kodlar hedefteki gibi kalir.
     """
     try:
         from stok import shopify_admin
+        S = json.load(open(os.path.join(KOK, "content", "shopify_sku.json"), encoding="utf-8"))
+        elle = set(S.get("sabit", {})) | set(S.get("sifirla", []))
         geri = {u: hedef[u] for uy in havuzlar().values() for u in uy if u in hedef}
         for s in recete.setler:
             if s in parca and hedef.get(s) is not None:
-                geri[s] = hedef[s]
+                gercek = recete.set_stogu(s, parca)
+                geri[s] = hedef[s] if s in elle or gercek is None else max(0, min(gercek, TAVAN))
         fark = {k: v for k, v in geri.items() if parca.get(k) != v}
         if fark:
             shopify_admin.stok_yaz(fark, sebep="correction")
