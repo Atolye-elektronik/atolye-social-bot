@@ -780,6 +780,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ad5e8b3-032b-d600-50c9-d6d606060606",
+      "status": "Open",
+      "customerId": "d2fbbaf0-9d99-4f06-a717-acc396ac5992",
+      "orderDate": "2026-10-19T12:53:53",
+      "dueDate": "2026-10-19T18:30:00",
+      "barcode": "62955311892823",
+      "packageNumber": "5531189282",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Üçhisar Sk, no 10 SELİMİYE MELİKGAZİ Kayseri",
+      "recipientName": "Mustafa Gür",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "SELİMİYE",
+      "shippingTown": "MELİKGAZİ",
+      "shippingCity": "Kayseri",
+      "email": "4449641261_5531189282@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Mustafa Gür",
+      "billingAddress": "Üçhisar Sk, no 10 SELİMİYE MELİKGAZİ Kayseri",
+      "billingCity": "Kayseri",
+      "billingTown": "MELİKGAZİ",
+      "billingDistrict": "SELİMİYE",
+      "billingPostalCode": "38170",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 162
+      },
+      "items": [
+        {
+          "lineItemId": "6ad5e8b2-1643-cc77-367d-243006060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 3,
+          "price": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "vat": 27,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 162
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 4.86
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 162
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4449641261",
+          "orderDate": "2026-10-19T12:53:53",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Madde Gaming",
+      "estimatedArrivalDate": "2026-10-21T15:30:00Z",
+      "totalDeci": 3.3,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
