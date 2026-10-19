@@ -910,3 +910,4 @@
 {"an": "2026-10-18T18:48", "kanal": "pazarama", "no": "882821005", "kod": "AE2WDEKRBT", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
 {"an": "2026-10-18T20:03", "kanal": "pttavm", "no": "PTT-UEVF8J41N-181026", "kod": "AEUNOR3", "adet": 2, "dusum": {"AEUNOR3": 2}, "kuru": false}
 {"an": "2026-10-18T20:03", "kanal": "pttavm", "no": "PTT-UEVF8J41N-181026", "kod": "AE150LED", "adet": 1, "dusum": {"AELED5K": 150}, "kuru": false}
+{"an": "2026-10-19T05:48", "kanal": "hepsiburada", "no": "4493809766", "kod": "AE9VPIL10", "adet": 1, "dusum": {"AEPIL9V": 10}, "kuru": false}
