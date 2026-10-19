@@ -133,7 +133,7 @@ def stok_bas_trendyol(hedef, kuru=True):
     import trendyol_client as tc
     bk = _barkodlar()
     items = [{"barcode": bar, "quantity": int(v)}
-             for k, v in _kanal_kodlari(hedef).items()
+             for k, v in _kanal_kodlari_duzeltilmis(hedef, "trendyol").items()
              if k in bk
              for bar in (bk[k].get("ty_hepsi") or ([bk[k]["ty"]] if bk[k].get("ty") else []))]
     if kuru:
@@ -155,12 +155,21 @@ def kanal_kod_duzeltme(kanal):
     return d.get(kanal, {})
 
 
+def _kanal_kodlari_duzeltilmis(hedef, kanal):
+    """_kanal_kodlari + kanal_kod_duzeltme. 19.10.2026: once yalniz HB uyguluyordu; TY/Pazarama/
+    N11/Idefix/PttAVM'deki 2WD sasi ilani (kod AE2WDEKRBT) tam kitin stogunu aliyordu.
+    Eslemeler zincirlenmez: AE2WDEKRBT-LI -> AE2WDEKRBT, duzeltilmemis AE2WDEKRBT degerini alir."""
+    kodlar = _kanal_kodlari(hedef)
+    ilk = dict(kodlar)
+    for ilan_kodu, gercek in kanal_kod_duzeltme(kanal).items():
+        if gercek in ilk:
+            kodlar[ilan_kodu] = ilk[gercek]
+    return kodlar
+
+
 def stok_bas_hepsiburada(hedef, kuru=True):
     import hepsiburada_client as hb
-    kodlar = _kanal_kodlari(hedef)
-    for ilan_kodu, gercek in kanal_kod_duzeltme("hepsiburada").items():
-        if gercek in kodlar:
-            kodlar[ilan_kodu] = kodlar[gercek]
+    kodlar = _kanal_kodlari_duzeltilmis(hedef, "hepsiburada")
     items = [{"merchantSku": k, "availableStock": int(v)} for k, v in kodlar.items()]
     if kuru:
         return "kuru: %d sku" % len(items)
@@ -192,7 +201,7 @@ def _n11_kodlari():
 def stok_bas_n11(hedef, kuru=True):
     import n11_client as n11
     kod = _n11_kodlari()
-    istek = _kanal_kodlari(hedef)
+    istek = _kanal_kodlari_duzeltilmis(hedef, "n11")
     items = [{"stockCode": kod[k], "quantity": int(v)} for k, v in istek.items() if k in kod]
     if kuru:
         return "kuru: %d stok kodu (%d kod N11'de yok)" % (len(items), len(istek) - len(items))
@@ -207,7 +216,7 @@ def stok_bas_n11(hedef, kuru=True):
 def stok_bas_idefix(hedef, kuru=True):
     from marketplaces import idefix_client as ix
     bk = _barkodlar()
-    items = [{"barcode": bk[k]["ean"], "inventoryQuantity": int(v)} for k, v in _kanal_kodlari(hedef).items()
+    items = [{"barcode": bk[k]["ean"], "inventoryQuantity": int(v)} for k, v in _kanal_kodlari_duzeltilmis(hedef, "idefix").items()
              if k in bk and bk[k].get("ean")]
     if kuru:
         return "kuru: %d barkod" % len(items)
@@ -219,7 +228,7 @@ def stok_bas_pttavm(hedef, kuru=True):
     import uuid
     import requests
     bk = _barkodlar()
-    items = [{"barcode": bk[k]["ean"], "stock": int(v)} for k, v in _kanal_kodlari(hedef).items()
+    items = [{"barcode": bk[k]["ean"], "stock": int(v)} for k, v in _kanal_kodlari_duzeltilmis(hedef, "pttavm").items()
              if k in bk and bk[k].get("ean")]
     if kuru:
         return "kuru: %d barkod" % len(items)
@@ -290,7 +299,7 @@ def stok_bas_pazarama(hedef, kuru=True):
     from marketplaces import pazarama_client as pc
     bk = _pazarama_barkodlari()
     items = [{"code": c, "stockCount": int(v)}
-             for k, v in _kanal_kodlari(hedef).items() if k in bk
+             for k, v in _kanal_kodlari_duzeltilmis(hedef, "pazarama").items() if k in bk
              for c in bk[k]]
     if kuru:
         return "kuru: %d barkod" % len(items)
