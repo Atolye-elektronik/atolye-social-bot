@@ -650,6 +650,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ad5ae86-914b-bb8e-566f-cff206060606",
+      "status": "Open",
+      "customerId": "13108b2e-30ae-4b6f-b6aa-d6a35b28655a",
+      "orderDate": "2026-10-19T08:45:41",
+      "dueDate": "2026-10-19T18:30:00",
+      "barcode": "62955310341368",
+      "packageNumber": "5531034136",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Şehit Ahmet Sk. Mecidiyeköy iş Merkezi No:4 Dükkan:42 Bortek Bilişim Sis. MECİDİYEKÖY ŞİŞLİ İstanbul",
+      "recipientName": "Hakkı Oskay",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MECİDİYEKÖY",
+      "shippingTown": "ŞİŞLİ",
+      "shippingCity": "İstanbul",
+      "email": "4493809766_5531034136@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Bortek bilişim sis. san. tic. ltd. Şti ",
+      "billingAddress": "Şehit Ahmet Sk. Mecidiyeköy iş Merkezi No:4 Dükkan:42 MECİDİYEKÖY ŞİŞLİ İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "ŞİŞLİ",
+      "billingDistrict": "MECİDİYEKÖY",
+      "billingPostalCode": "34000",
+      "billingCountryCode": "TR",
+      "taxOffice": "Zincirlikuyu",
+      "taxNumber": "1800160949",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 534
+      },
+      "items": [
+        {
+          "lineItemId": "6ad5ae85-f97d-deac-c320-817606060606",
+          "listingId": "1e00180e-9d7b-4540-a079-78c74265ae3d",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EI25M0",
+          "merchantSku": "AE9VPIL10",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 534
+          },
+          "vat": 89,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 534
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 36.21
+          },
+          "commissionRate": 6.78,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 534
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 534
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 9V Pil- 10'lu",
+          "orderNumber": "4493809766",
+          "orderDate": "2026-10-19T08:45:41",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL9VPIL1001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001716512342.jpg",
+          "deci": 0.5
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Hakkı Oskay",
+      "estimatedArrivalDate": "2026-10-22T15:30:00Z",
+      "totalDeci": 0.5,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
