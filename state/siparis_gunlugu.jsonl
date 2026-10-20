@@ -921,3 +921,6 @@
 {"an": "2026-10-20T09:08", "kanal": "hepsiburada", "no": "4116693453", "kod": "AEENDELK", "adet": 1, "dusum": {"AEENDELK": 1}, "kuru": false}
 {"an": "2026-10-20T09:28", "kanal": "pttavm", "no": "PTT-VN49R6U3S-201026", "kod": "AEDHT11PS", "adet": 2, "dusum": {"AEDHT11": 2, "AE16X2LCD": 2, "AEUNOR3": 2, "AEJK2040DE": 2}, "kuru": false}
 {"an": "2026-10-20T09:48", "kanal": "shopify", "no": "#1061", "kod": "AERFIDPS", "adet": 1, "dusum": {"AERC522RFID": 1, "AEUNOR3": 1, "AESG90": 1, "AEJK2040DE": 1, "AEJK2040": 1}, "kuru": false}
+{"an": "2026-10-20T10:43", "kanal": "hepsiburada", "no": "4575781029", "kod": "AE3-6VMTR5", "adet": 1, "dusum": {"AE3-6VMTR": 5}, "kuru": false}
+{"an": "2026-10-20T10:43", "kanal": "hepsiburada", "no": "4575781029", "kod": "AEPRV-10", "adet": 1, "dusum": {"AEPRV-1": 10}, "kuru": false}
+{"an": "2026-10-20T10:43", "kanal": "hepsiburada", "no": "4575781029", "kod": "AEMOTPRV-10", "adet": 1, "dusum": {"AEDCM3V-1": 10, "AEPRV-1": 10}, "kuru": false}
