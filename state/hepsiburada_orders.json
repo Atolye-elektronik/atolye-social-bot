@@ -130,6 +130,266 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ad7cd80-7005-d898-cd82-f1f906060606",
+      "status": "Open",
+      "customerId": "05570956-51a2-4e18-b57a-3f18439db7c1",
+      "orderDate": "2026-10-20T18:41:59",
+      "dueDate": "2026-10-21T18:30:00",
+      "barcode": "62955318510052",
+      "packageNumber": "5531851005",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "IdealData Finansal Teknolojiler A.Ş.\nIhlamur Blv. N3, Ağaoğlu My Newwork, 14. Kat, BARBAROS ATAŞEHİR İstanbul",
+      "recipientName": "Tahir ERGEÇ",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BARBAROS",
+      "shippingTown": "ATAŞEHİR",
+      "shippingCity": "İstanbul",
+      "email": "4091657767_5531851005@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Tahir ERGEÇ",
+      "billingAddress": "Elmalı Köyü Toygar Caddesi Lazanya Sokak No:21/3 MERKEZ BEYKOZ İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "BEYKOZ",
+      "billingDistrict": "MERKEZ",
+      "billingPostalCode": "34820",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 332.35
+      },
+      "items": [
+        {
+          "lineItemId": "6ad78bc8-386e-93c7-0396-795406060606",
+          "listingId": "353b5f2f-e329-4cf2-86b0-2a536ededae2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EATWVS",
+          "merchantSku": "AE3-6VMTR5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 332.35
+          },
+          "vat": 55.39,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 332.35
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 35.19
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 58.65
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 58.65
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 391
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 391
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Dc Sarı Motor + Tekerlek / 4 Adet",
+          "orderNumber": "4091657767",
+          "orderDate": "2026-10-20T18:41:59",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR45",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001688556195.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Tahir ERGEÇ",
+      "estimatedArrivalDate": "2026-10-26T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ad7d781-bf0e-cdbd-b9c4-05b106060606",
+      "status": "Open",
+      "customerId": "c3afe387-9ba0-4df5-81db-d3fc419cdbdc",
+      "orderDate": "2026-10-21T00:05:04",
+      "dueDate": "2026-10-21T18:30:00",
+      "barcode": "62955318643642",
+      "packageNumber": "5531864364",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "huzur sokak no 8a sistem elektrik MERKEZ ŞİŞLİ İstanbul",
+      "recipientName": "kemal taş",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MERKEZ",
+      "shippingTown": "ŞİŞLİ",
+      "shippingCity": "İstanbul",
+      "email": "4277326515_5531864364@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "sistem elektrik ve sıhhi tesisat ",
+      "billingAddress": "huzur sokak no 8a sistem elektrik MERKEZ ŞİŞLİ İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "ŞİŞLİ",
+      "billingDistrict": "MERKEZ",
+      "billingPostalCode": "34384",
+      "billingCountryCode": "TR",
+      "taxOffice": "şişli",
+      "taxNumber": "35750173292",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 166
+      },
+      "items": [
+        {
+          "lineItemId": "6ad7d781-1038-4c1c-c6bb-e34806060606",
+          "listingId": "84aac006-0748-4014-ba25-562b89d3424b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPD033",
+          "merchantSku": "AESTJDFTR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 166
+          },
+          "vat": 27.67,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 166
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 14.11
+          },
+          "commissionRate": 8.5,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 166
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 166
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Meslek Lisesi ve Mesem Öğrencileri Için Işletmelerde Mesleki Eğitim Iş Dosyası(Staj Defteri)- 1 Adet",
+          "orderNumber": "4277326515",
+          "orderDate": "2026-10-21T00:05:04",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901611068909",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033336864.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "sistem elektrik ve sıhhi tesisat taş",
+      "estimatedArrivalDate": "2026-10-26T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
