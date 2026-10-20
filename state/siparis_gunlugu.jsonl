@@ -924,3 +924,4 @@
 {"an": "2026-10-20T10:43", "kanal": "hepsiburada", "no": "4575781029", "kod": "AE3-6VMTR5", "adet": 1, "dusum": {"AE3-6VMTR": 5}, "kuru": false}
 {"an": "2026-10-20T10:43", "kanal": "hepsiburada", "no": "4575781029", "kod": "AEPRV-10", "adet": 1, "dusum": {"AEPRV-1": 10}, "kuru": false}
 {"an": "2026-10-20T10:43", "kanal": "hepsiburada", "no": "4575781029", "kod": "AEMOTPRV-10", "adet": 1, "dusum": {"AEDCM3V-1": 10, "AEPRV-1": 10}, "kuru": false}
+{"an": "2026-10-20T14:43", "kanal": "trendyol", "no": "11730589860", "kod": "AE2WDEKRBT", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
