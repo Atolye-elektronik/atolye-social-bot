@@ -1,4 +1,135 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ad77efb-6949-f282-60af-322606060606",
+      "status": "Open",
+      "customerId": "889376b8-8b7e-43ce-be2c-4d958e42f330",
+      "orderDate": "2026-10-20T17:47:22",
+      "dueDate": "2026-10-21T18:30:00",
+      "barcode": "62955317406691",
+      "packageNumber": "5531740669",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "merkez mah. 29.ekim cad. ihlas yuva sitesi. c.4 blok. kat. 7 daire. 31 yenibosna/bahcelievler/istanbul YENİBOSNA MERKEZ BAHÇELİEVLER İstanbul",
+      "recipientName": "özlem akyüz",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YENİBOSNA MERKEZ",
+      "shippingTown": "BAHÇELİEVLER",
+      "shippingCity": "İstanbul",
+      "email": "4853559814_5531740669@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Emine Yumaksan",
+      "billingAddress": "SÜLEYMAN BEY Mah. İstanbul caddesi Bina No : 113 Daire No : 9 Kat : 5 MERKEZ / Yalova SÜLEYMAN BEY MERKEZ Yalova",
+      "billingCity": "Yalova",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "SÜLEYMAN BEY",
+      "billingPostalCode": "77200",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 754.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ad77efa-e93c-2a7f-93b8-102e06060606",
+          "listingId": "81f7452f-be40-40ff-9d6c-4d9269ca0b1d",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUUSCD",
+          "merchantSku": "AEENDELK",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 754.8
+          },
+          "vat": 125.8,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 754.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 79.92
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 133.19999
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 133.19999
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 887.99999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 887.99999
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi",
+          "orderNumber": "4853559814",
+          "orderDate": "2026-10-20T17:47:22",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELENDELK001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754823330.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "celalettin akyüz",
+      "estimatedArrivalDate": "2026-10-26T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
