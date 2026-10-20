@@ -1,7 +1,8 @@
 {
  "_not": "Kanaldaki ilanin stok kodu bizim koddan FARKLI bir urunu/adedi gosteriyor ve merchantSku degistirilemiyor. Kanal bazli: {kanal: {ilandaki kod: gercek kod}}. Hem siparis toplarken (dusum) hem stok basarken kullanilir. 05.10.2026: HB'de HBCV000066JI28 'Teknolog Hanim 5 Adet 5V Aktif Buzzer' ortak ilani AEBZZR5V (tekli) koduyla bagliydi; 2 paket satildi, 2 buzzer dustu (10 olmaliydi).",
  "hepsiburada": {
-  "AEBZZR5V": "AEBZZR5V-5"
+  "AEBZZR5V": "AEBZZR5V-5",
+  "AE3-6VMTR5": "AE3-6VMTR4"
  },
  "_not_19ekim": "19.10.2026: 2WD ailesinde TY/Pazarama/N11/Idefix/PttAVM ilan kodlari Shopify/HB'den farkli urunu gosteriyor (bkz. memory 2wd-robot-kod-karisikligi). AE2WDEKRBT bu kanallarda SASI ilani (TY ortak katalog TYBI5ROIBSN7I8O010), AE2WDEKRBT-LI ise pilsiz demonte engelden kacan kit. Pazarama 882821005 siparisinde sasi yerine tam kit dusulmustu.",
  "trendyol": {
@@ -25,5 +26,6 @@
   "AE2WDEKRBT-LI": "AE2WDEKRBT",
   "AE2WDEKRBT-N11": "AET2WDRBT",
   "AE2WDEKRBT-LI-N11": "AE2WDEKRBT"
- }
+ },
+ "_not_20ekim": "20.10.2026: HB HBCV0000EATWVS ilani '3-6V Sari Motor + Tekerlek / 4 Adet' ama merchantSku AE3-6VMTR5 (5'li). 19.09'dan beri 10 satista 5 motor dusuldu (4 olmaliydi)."
 }
