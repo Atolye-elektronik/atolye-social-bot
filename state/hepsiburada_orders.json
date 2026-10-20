@@ -1,4 +1,265 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ad72abb-a742-605e-a786-3bc206060606",
+      "status": "Open",
+      "customerId": "5ddac691-4ec8-45bf-b5d8-d9eda18762eb",
+      "orderDate": "2026-10-20T11:47:53",
+      "dueDate": "2026-10-20T18:30:00",
+      "barcode": "62955315942311",
+      "packageNumber": "5531594231",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Belediye Cd. Ünye Belediyesi  KALEDERE ÜNYE Ordu",
+      "recipientName": "İlhan Kartal",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KALEDERE",
+      "shippingTown": "ÜNYE",
+      "shippingCity": "Ordu",
+      "email": "4322131117_5531594231@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "İlhan Kartal",
+      "billingAddress": "Belediye Cd. Ünye Belediyesi  KALEDERE ÜNYE Ordu",
+      "billingCity": "Ordu",
+      "billingTown": "ÜNYE",
+      "billingDistrict": "KALEDERE",
+      "billingPostalCode": "52300",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 313
+      },
+      "items": [
+        {
+          "lineItemId": "6ad72aba-8444-e0ef-08b4-255506060606",
+          "listingId": "07ec0d9b-2a64-4cb0-92cb-d5c3036a1d41",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUVVDX",
+          "merchantSku": "AETMLELKDS",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 313
+          },
+          "vat": 52.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 313
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 28.17
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 313
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 313
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Temel Elektronik Deney Seti",
+          "orderNumber": "4322131117",
+          "orderDate": "2026-10-20T11:47:53",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELTMLELKDS1",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754943110.jpg",
+          "deci": 2
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "İlhan Kartal",
+      "estimatedArrivalDate": "2026-10-23T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ad72e8f-e93c-2a7f-9390-9c3606060606",
+      "status": "Open",
+      "customerId": "e32b4532-6705-4f81-a803-90ecec9e3162",
+      "orderDate": "2026-10-20T12:04:06",
+      "dueDate": "2026-10-20T18:30:00",
+      "barcode": "62955316021068",
+      "packageNumber": "5531602106",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "İvedik Cd. 59/18, 6. kat, Demetgül mah. Yenimahalle/Ankara DEMETGÜL YENİMAHALLE Ankara",
+      "recipientName": "UTKU TOPUZ",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "DEMETGÜL",
+      "shippingTown": "YENİMAHALLE",
+      "shippingCity": "Ankara",
+      "email": "4116693453_5531602106@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "UTKU TOPUZ",
+      "billingAddress": "Zirvekent mah. Osmanlı Cd. Liderkent Konutları, 53-3, Daire 38. Mamak/Ankara ZİRVEKENT MAMAK Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "MAMAK",
+      "billingDistrict": "ZİRVEKENT",
+      "billingPostalCode": "06270",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 754.77
+      },
+      "items": [
+        {
+          "lineItemId": "6ad72e8a-df78-a556-3196-633406060606",
+          "listingId": "81f7452f-be40-40ff-9d6c-4d9269ca0b1d",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUUSCD",
+          "merchantSku": "AEENDELK",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 754.77
+          },
+          "vat": 125.8,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 754.77
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 79.92
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 133.23
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 133.23
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 888
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 888
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi",
+          "orderNumber": "4116693453",
+          "orderDate": "2026-10-20T12:04:06",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELENDELK001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754823330.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "utku topuz",
+      "estimatedArrivalDate": "2026-10-22T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
