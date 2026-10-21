@@ -940,3 +940,4 @@
 {"an": "2026-10-21T13:28", "kanal": "hepsiburada", "no": "4077072717", "iade": {"AET2WDRBT": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1}, "durum": "CancelledByCustomer", "kuru": false}
 {"an": "2026-10-21T15:48", "kanal": "hepsiburada", "no": "4332673787", "kod": "AETMLELKDS", "adet": 1, "dusum": {"AEBB830P": 1, "AEJK2040": 1, "AELED5K": 15, "AEDIR330": 15, "AEBTN6X6": 4, "AEPIL9V": 1, "AE9VPILSKT1": 1}, "kuru": false}
 {"an": "2026-10-21T17:34", "kanal": "trendyol", "no": "11734884357", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
+{"an": "2026-10-21T19:08", "kanal": "trendyol", "no": "11735239499", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
