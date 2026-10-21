@@ -130,6 +130,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ad91f6a-800c-e391-5d2a-009f06060606",
+      "status": "Open",
+      "customerId": "18612242-0e22-4e9b-8b0c-e2b2f6a32961",
+      "orderDate": "2026-10-21T23:24:09",
+      "dueDate": "2026-10-22T18:30:00",
+      "barcode": "62955321996942",
+      "packageNumber": "5532199694",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "fevzi çakmak Mahallesi balıkçı sok no 16/1 FEVZİ ÇAKMAK ÜNYE Ordu",
+      "recipientName": "Buglemsu uysal",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "FEVZİ ÇAKMAK",
+      "shippingTown": "ÜNYE",
+      "shippingCity": "Ordu",
+      "email": "4293240177_5532199694@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Buglemsu uysal",
+      "billingAddress": "fevzi çakmak Mahallesi balıkçı sok no 16/1 FEVZİ ÇAKMAK ÜNYE Ordu",
+      "billingCity": "Ordu",
+      "billingTown": "ÜNYE",
+      "billingDistrict": "FEVZİ ÇAKMAK",
+      "billingPostalCode": "52300",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 313
+      },
+      "items": [
+        {
+          "lineItemId": "6ad91f69-c676-1dce-b7c7-e4d906060606",
+          "listingId": "07ec0d9b-2a64-4cb0-92cb-d5c3036a1d41",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUVVDX",
+          "merchantSku": "AETMLELKDS",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 313
+          },
+          "vat": 52.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 313
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 56.34
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 313
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 313
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Temel Elektronik Deney Seti",
+          "orderNumber": "4293240177",
+          "orderDate": "2026-10-21T23:24:09",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELTMLELKDS1",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754943110.jpg",
+          "deci": 2
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Buglemsu uysal",
+      "estimatedArrivalDate": "2026-10-27T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
