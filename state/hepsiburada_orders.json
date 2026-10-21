@@ -269,7 +269,7 @@
       "dueDate": "2026-10-21T18:30:00",
       "barcode": "62955318643642",
       "packageNumber": "5531864364",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "huzur sokak no 8a sistem elektrik MERKEZ ŞİŞLİ İstanbul",
       "recipientName": "kemal taş",
       "shippingCountryCode": "TR",
@@ -386,6 +386,136 @@
       "customerName": "sistem elektrik ve sıhhi tesisat taş",
       "estimatedArrivalDate": "2026-10-26T15:30:00Z",
       "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ad865b6-d401-33c1-7acd-64ea06060606",
+      "status": "Open",
+      "customerId": "b4ec40b1-c417-4d98-ab02-9fa5e69ed5c5",
+      "orderDate": "2026-10-21T10:11:49",
+      "dueDate": "2026-10-21T18:30:00",
+      "barcode": "62955319599931",
+      "packageNumber": "5531959993",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Devlet Sahil Yolu Cd. 861/4 GÖLEVİ ÜNYE Ordu",
+      "recipientName": "emine beşli",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "GÖLEVİ",
+      "shippingTown": "ÜNYE",
+      "shippingCity": "Ordu",
+      "email": "4329987782_5531959993@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "emine beşli",
+      "billingAddress": "Devlet Sahil Yolu Cd. 861/4 GÖLEVİ ÜNYE Ordu",
+      "billingCity": "Ordu",
+      "billingTown": "ÜNYE",
+      "billingDistrict": "GÖLEVİ",
+      "billingPostalCode": "52300",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 313
+      },
+      "items": [
+        {
+          "lineItemId": "6ad865b6-9812-2a41-5b64-f3c706060606",
+          "listingId": "07ec0d9b-2a64-4cb0-92cb-d5c3036a1d41",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUVVDX",
+          "merchantSku": "AETMLELKDS",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 313
+          },
+          "vat": 52.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 313
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 28.17
+          },
+          "commissionRate": 9,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 313
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 313
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Temel Elektronik Deney Seti",
+          "orderNumber": "4329987782",
+          "orderDate": "2026-10-21T10:11:49",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELTMLELKDS1",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754943110.jpg",
+          "deci": 2
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "eminebesli eminebesli",
+      "estimatedArrivalDate": "2026-10-26T15:30:00Z",
+      "totalDeci": 2,
       "warehouse": {
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
