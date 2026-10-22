@@ -1,4 +1,135 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ada53bc-c71c-2ce5-91a7-a26106060606",
+      "status": "Open",
+      "customerId": "26cf9081-5ba4-457c-9ef9-c47084c2bab2",
+      "orderDate": "2026-10-22T21:19:38",
+      "dueDate": "2026-10-23T18:30:00",
+      "barcode": "62755324747631",
+      "packageNumber": "5532474763",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Mimar Sinan Blv. Güneykent Polis Merkezi Amirliği GÜNEYKENT TOROSLAR Mersin",
+      "recipientName": "ali can elbay",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "GÜNEYKENT",
+      "shippingTown": "TOROSLAR",
+      "shippingCity": "Mersin",
+      "email": "4475373354_5532474763@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "ali can elbay",
+      "billingAddress": "Mimar Sinan Blv. GÜNEYKENT TOROSLAR Mersin",
+      "billingCity": "Mersin",
+      "billingTown": "TOROSLAR",
+      "billingDistrict": "GÜNEYKENT",
+      "billingPostalCode": "33240",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 133
+      },
+      "items": [
+        {
+          "lineItemId": "6ada53bb-823a-e128-5db7-4bb306060606",
+          "listingId": "fe348248-9339-4d7a-9d4f-5bc36da765d6",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000L4N4AM",
+          "merchantSku": "AEBZZR5V-6",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 133
+          },
+          "vat": 22.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 133
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 23.94
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 133
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 133
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 5V Aktif Buzzer 6'lı Paket Arduino Uyumlu Sesli Uyarı Elemanı",
+          "orderNumber": "4475373354",
+          "orderDate": "2026-10-22T21:19:38",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901880000617",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002444525588.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "ALİ CAN ELBAY",
+      "estimatedArrivalDate": "2026-10-26T16:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
