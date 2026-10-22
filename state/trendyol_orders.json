@@ -1,1 +1,196 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9881214150,
+      "firstName": "Doğan",
+      "lastName": "Hızlı",
+      "company": "",
+      "address1": "Ayazma cd. Yılmaz yapı koop. No.1/6 İrem apt. k.5 d.18",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Pendik",
+      "districtId": 36,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 28525,
+      "neighborhood": "Çınardere Mah",
+      "phone": null,
+      "fullAddress": "Ayazma cd. Yılmaz yapı koop. No.1/6 İrem apt. k.5 d.18     Pendik İstanbul",
+      "fullName": "Doğan Hızlı"
+    },
+    "orderNumber": "11737342616",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 131.7,
+    "packageGrossAmount": 131.7,
+    "totalDiscount": 0.0,
+    "packageSellerDiscount": 0.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 0.0,
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9881214149,
+      "firstName": "Doğan",
+      "lastName": "Hızlı",
+      "company": "",
+      "address1": "Ayazma cd. Yılmaz yapı koop. No.1/6 İrem apt. k.5 d.18",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Pendik",
+      "districtId": 36,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 28525,
+      "neighborhood": "Çınardere Mah",
+      "phone": null,
+      "fullAddress": "Ayazma cd. Yılmaz yapı koop. No.1/6 İrem apt. k.5 d.18     Pendik İstanbul",
+      "fullName": "Doğan Hızlı"
+    },
+    "customerFirstName": "Doğan",
+    "customerEmail": "pf+xrmrwnvp@trendyolmail.com",
+    "customerId": 64980737,
+    "supplierId": 0,
+    "customerLastName": "Hızlı",
+    "id": 4267388363,
+    "channelId": 1,
+    "shipmentPackageId": 4267388363,
+    "cargoTrackingNumber": 7270038249336839,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 3,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEMOTPRV-1",
+        "sku": "2901193165614",
+        "stockCode": "AEMOTPRV-1",
+        "productName": "DC Motor Pervane Seti - 1 Motor + 1 Pervane AEMOTPRV-1, one size",
+        "productCode": 1670718498,
+        "contentId": 1670718498,
+        "productOrigin": "CN",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 43.9,
+        "lineGrossAmount": 43.9,
+        "discount": 0.0,
+        "lineTotalDiscount": 0.0,
+        "lineSellerDiscount": 0.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6971053693",
+            "lineItemPrice": 43.9,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          },
+          {
+            "lineItemId": "6971053691",
+            "lineItemPrice": 43.9,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          },
+          {
+            "lineItemId": "6971053692",
+            "lineItemPrice": 43.9,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6106738069,
+        "lineId": 6106738069,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901193165614",
+        "orderLineItemStatusName": "Picking",
+        "price": 43.9,
+        "lineUnitPrice": 43.9,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 6,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1792687393103,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1792676594157,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1792676598254,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1792677737196,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1792789140000,
+    "estimatedDeliveryEndDate": 1793048340000,
+    "totalPrice": 131.7,
+    "packageTotalPrice": 131.7,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1792789140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1792676594147,
+    "lastModifiedDate": 1792677737196,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 10984841536,
+    "is4P": false
+  }
+]
