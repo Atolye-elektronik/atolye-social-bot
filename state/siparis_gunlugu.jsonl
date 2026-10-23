@@ -966,3 +966,5 @@
 {"an": "2026-10-23T07:08", "kanal": "shopify", "no": "#1063", "kod": "AEHC06RAK-LI", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEPY18650": 1, "AEHC06BT": 1, "AEUNOR3": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
 {"an": "2026-10-23T08:28", "kanal": "pttavm", "no": "PTT-23DJN0B1V-231026", "kod": "AESG905", "adet": 1, "dusum": {"AESG90": 5}, "kuru": false}
 {"an": "2026-10-23T11:13", "kanal": "trendyol", "no": "11732088059", "iade": {"AE3-6VMTR": 2}, "durum": "UnDelivered", "kuru": false}
+{"an": "2026-10-23T11:38", "kanal": "pttavm", "no": "PTT-26NKB8S3U-231026", "kod": "AEDT830D", "adet": 1, "dusum": {"AEDT830D": 1}, "kuru": false}
+{"an": "2026-10-23T11:38", "kanal": "pttavm", "no": "PTT-26NKB8S3U-231026", "kod": "AEPY18650T5", "adet": 1, "dusum": {"AEPY18650T": 5}, "kuru": false}
