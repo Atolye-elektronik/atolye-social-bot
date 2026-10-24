@@ -1,4 +1,135 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6adcf160-4d0f-d50c-ea35-372206060606",
+      "status": "Open",
+      "customerId": "0a8c794f-d29f-409f-9c24-e4c4609fe0dc",
+      "orderDate": "2026-10-24T20:56:47",
+      "dueDate": "2026-10-26T18:30:00",
+      "barcode": "62955329561423",
+      "packageNumber": "5532956142",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "14020 SK. No. 8 Daire 7 BAĞLAR MERKEZ Burdur",
+      "recipientName": "Mehmet Zeybek",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BAĞLAR",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Burdur",
+      "email": "4262500798_5532956142@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Mehmet Zeybek",
+      "billingAddress": "14020 SK. No. 8 Daire 7  BAĞLAR MERKEZ Burdur",
+      "billingCity": "Burdur",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "BAĞLAR",
+      "billingPostalCode": "15100",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 188
+      },
+      "items": [
+        {
+          "lineItemId": "6adcf160-3a0d-7719-8a4a-00a706060606",
+          "listingId": "dbb4549e-5ceb-4923-b2f5-eca2ae52e1a2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPD07X",
+          "merchantSku": "AETEMDEF",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "vat": 31.33,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 31.96
+          },
+          "commissionRate": 17,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Temrin Defteri",
+          "orderNumber": "4262500798",
+          "orderDate": "2026-10-24T20:56:47",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901069996298",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033336619.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "mehmet zeybek",
+      "estimatedArrivalDate": "2026-10-30T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
