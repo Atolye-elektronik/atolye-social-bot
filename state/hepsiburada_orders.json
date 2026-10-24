@@ -130,6 +130,308 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6add144c-1f3c-4083-a283-89bc06060606",
+      "status": "Open",
+      "customerId": "6b51d8f8-3396-4f69-b199-ced7726d0f57",
+      "orderDate": "2026-10-24T23:25:47",
+      "dueDate": "2026-10-26T18:30:00",
+      "barcode": "62955329839607",
+      "packageNumber": "5532983960",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Yakacık yeni mahalle üst sokak no:46 d:52 k:13 Kartal Hıll One sitesi  YAKACIK YENİ KARTAL İstanbul",
+      "recipientName": "Betül Çiner",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YAKACIK YENİ",
+      "shippingTown": "KARTAL",
+      "shippingCity": "İstanbul",
+      "email": "4155566589_5532983960@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Betül Çiner",
+      "billingAddress": "Yakacık yeni mahalle üst sok no:46 d:52 kat:13 YAKACIK YENİ KARTAL İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "KARTAL",
+      "billingDistrict": "YAKACIK YENİ",
+      "billingPostalCode": "34882",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1934
+      },
+      "items": [
+        {
+          "lineItemId": "6add144b-9729-abf6-9a9b-561a06060606",
+          "listingId": "5eb66012-85dd-4a5f-956a-7a49ab44c25f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EBB0GS",
+          "merchantSku": "AESG90",
+          "quantity": 3,
+          "price": {
+            "currency": "TRY",
+            "amount": 150
+          },
+          "vat": 75,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 450
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 27
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 150
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 450
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik SG90 9gr Servo Motor 180 Derece Yüksek Performans ve Uzun Ömürlü Elektronik Proje Uyumlu",
+          "orderNumber": "4155566589",
+          "orderDate": "2026-10-24T23:25:47",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELSG9000001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001690458968.jpg",
+          "deci": 1
+        },
+        {
+          "lineItemId": "6add144b-9729-abf6-9a9b-561b06060606",
+          "listingId": "1bcb08cb-a9b8-4621-8733-0902592a6dec",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUUT5T",
+          "merchantSku": "AEHCSR045",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 509
+          },
+          "vat": 84.83,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 509
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 91.62
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 509
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 509
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 5 Adet HC-SR04 Ultrasonik Mesafe Sensörü - Arduino Uyumlu Temassız Ölçüm Modülü",
+          "orderNumber": "4155566589",
+          "orderDate": "2026-10-24T23:25:47",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELHCSR04055",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754824563.jpg",
+          "deci": 0.5
+        },
+        {
+          "lineItemId": "6add144b-9729-abf6-9a9b-561c06060606",
+          "listingId": "454f736c-b358-4b79-b665-353df02d3f65",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000FDFK1X",
+          "merchantSku": "AE2WDEKRBT",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 975
+          },
+          "vat": 162.5,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 975
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 175.5
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 975
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 975
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Arduino 2WD Servolu Engelden Kaçan Robot Araba Kiti (Demonte Robot Araba Kiti)",
+          "orderNumber": "4155566589",
+          "orderDate": "2026-10-24T23:25:47",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL2WDEKRBT1",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001800035577.jpg",
+          "deci": 0.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "betül çiner",
+      "estimatedArrivalDate": "2026-10-30T15:30:00Z",
+      "totalDeci": 3.6,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
