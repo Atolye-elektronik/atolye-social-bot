@@ -1,5 +1,5 @@
 {
- "_not": "30.09.2026: PttAVM panelinden okunan stok=0 urunler (kullanici elle kapatti; PttAVM'de canli stok takibi yok). PttAVM toplu Excel senkronunda bu kodlar 0 yazilir. Diger kanallara DOKUNMAZ. Ilk okuma 'Varyant Stok Kodu: -' satiri yuzunden bir kaymisti, bu liste dogrulanmis halidir. 20.10.2026: AETMRNDFTR30/20 listeden cikarildi (kullanici 'hepsini yap'), stoklari sistemle (AETEMDEF-30/20) senkron. 21.10.2026: AETCS18P listeden cikarildi (kullanici 'Takim cantasi seti 20 adet stok ac'), PttAVM 20 adet / 2.569 TL.",
+ "_not": "30.09.2026: PttAVM panelinden okunan stok=0 urunler (kullanici elle kapatti; PttAVM'de canli stok takibi yok). PttAVM toplu Excel senkronunda bu kodlar 0 yazilir. Diger kanallara DOKUNMAZ. Ilk okuma 'Varyant Stok Kodu: -' satiri yuzunden bir kaymisti, bu liste dogrulanmis halidir. 20.10.2026: AETMRNDFTR30/20 listeden cikarildi (kullanici 'hepsini yap'), stoklari sistemle (AETEMDEF-30/20) senkron. 21.10.2026: AETCS18P listeden cikarildi (kullanici 'Takim cantasi seti 20 adet stok ac'), PttAVM 20 adet / 2.569 TL. 24.10.2026: AEACDMMR (dimmer) listeden cikarildi (kullanici 'PTT AVM'de dimmeri ac'), Turnafor +50 stok geldi.",
  "kapali": [
   "AETTS3P",
   "AES400IGG",
@@ -13,7 +13,6 @@
   "AEPNS180",
   "AEKB1602",
   "AEEAS7P",
-  "AEEAS3P",
-  "AEACDMMR"
+  "AEEAS3P"
  ]
 }
