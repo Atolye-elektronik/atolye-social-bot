@@ -9,7 +9,7 @@
       "dueDate": "2026-10-26T18:30:00",
       "barcode": "62955329561423",
       "packageNumber": "5532956142",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "14020 SK. No. 8 Daire 7 BAĞLAR MERKEZ Burdur",
       "recipientName": "Mehmet Zeybek",
       "shippingCountryCode": "TR",
@@ -139,7 +139,7 @@
       "dueDate": "2026-10-26T18:30:00",
       "barcode": "62955329839607",
       "packageNumber": "5532983960",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Yakacık yeni mahalle üst sokak no:46 d:52 k:13 Kartal Hıll One sitesi  YAKACIK YENİ KARTAL İstanbul",
       "recipientName": "Betül Çiner",
       "shippingCountryCode": "TR",
@@ -441,7 +441,7 @@
       "dueDate": "2026-10-26T18:30:00",
       "barcode": "62955330053142",
       "packageNumber": "5533005314",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Bahçelievler mh. Yıldız Sk. yüksek apt. no 34 kat1 daire 2 BAHÇELİEVLER MERKEZ Zonguldak",
       "recipientName": "Utku küçükkaya",
       "shippingCountryCode": "TR",
@@ -558,6 +558,136 @@
       "customerName": "Utku Küçükkaya",
       "estimatedArrivalDate": "2026-10-30T15:30:00Z",
       "totalDeci": 2.2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ade3d59-ae45-6218-9560-364206060606",
+      "status": "Open",
+      "customerId": "dc2f8b1c-2443-4146-a9d4-b38195ccc7c3",
+      "orderDate": "2026-10-25T20:33:12",
+      "dueDate": "2026-10-26T18:30:00",
+      "barcode": "62955331357780",
+      "packageNumber": "5533135778",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Orhangazi mahallesi profesör doktor funda SİVRİKAYA sokağı üniversite vadi a blok no:13/5 kat:6 daire no:24 MERKEZ/DÜZCE ORHANGAZİ MERKEZ Düzce",
+      "recipientName": "Ali İşIKER",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ORHANGAZİ",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Düzce",
+      "email": "4244443044_5533135778@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Ali İşIKER",
+      "billingAddress": "Orhangazi mahallesi profesör doktor funda SİVRİKAYA sokağı üniversite vadi a blok no:13/5 kat:6 daire no:24 MERKEZ/DÜZCE ORHANGAZİ MERKEZ Düzce",
+      "billingCity": "Düzce",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "ORHANGAZİ",
+      "billingPostalCode": "81620",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 2029
+      },
+      "items": [
+        {
+          "lineItemId": "6ade3d58-6318-5dd5-299e-0a0206060606",
+          "listingId": "2b87e318-957a-4631-b47a-8630c443fd00",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EHBVWH",
+          "merchantSku": "AEARISES",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 2029
+          },
+          "vat": 338.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 2029
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 365.22
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 2029
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 2029
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Arduino İleri Seviye Kutulu Eğitim Seti - 88 Parça",
+          "orderNumber": "4244443044",
+          "orderDate": "2026-10-25T20:33:12",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELARISES001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001800002270.jpg",
+          "deci": 0.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Ali İşıker",
+      "estimatedArrivalDate": "2026-10-30T15:30:00Z",
+      "totalDeci": 0.1,
       "warehouse": {
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
