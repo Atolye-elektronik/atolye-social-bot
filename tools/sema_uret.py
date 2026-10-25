@@ -438,8 +438,31 @@ def sema_temel():
                         "Ampul duya çevrilerek takılır; duy vidalı terminalli.", "Jumper kablolu sette bağlantılar jumper ile yapılır.", "Piller dahil değildir (2 x AA)."], lamba=True, motor=True, iki_anahtar=True, breadboard=True)
 
 
+def sema_cizgi():
+    s = Sema("Çizgi İzleyen Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + 4 Kanal Çizgi Sensörü + " + ("4'lü AA (6V)" if AA else "18650 (7.4V)") + " — blog koduyla uyumlu", "AECIZGIRBT" if AA else "AECIZGIRBT-LI",
+             ["Kod pinleri: IN1→D5, IN2→D6, IN3→D9, IN4→D10; OUT1→A0 … OUT4→A3 (S1 en sol).",
+              "Sensör kartı Arduino 5V'tan beslenir; problar renkli kablolarla takılır.",
+              "Trimpotla ayarlayın: beyazda prob LED'i yanar, siyah bantta söner.",
+              "Pil + → VIN (" + ("6V" if AA else "7.4V") + ") ve L298N +12V; GND'ler ortak.",
+              "ENA, ENB ve 5V jumper'ları takılı kalmalı; kod yüklerken pili kapatın."])
+    robot_govde(s)
+    s.kutu("cz", 30, 290, 190, 270, RENK["lacivert"], "", "", pins=(("VCC", "t", 0.5), ("GND", "b", 0.5), ("OUT1", "r", 0.2), ("OUT2", "r", 0.4), ("OUT3", "r", 0.6), ("OUT4", "r", 0.8)), font=22)
+    s.yazi(80, 330, "4 KANAL", "#fff", 22, True, "middle"); s.yazi(80, 356, "ÇİZGİ", "#fff", 22, True, "middle"); s.yazi(80, 380, "SENSÖRÜ", "#cfd8e3", 16, anchor="middle")
+    s.yazi(80, 520, "4x TCRT5000", "#cfd8e3", 14, anchor="middle")
+    for n, o in (("A0", 0.55), ("A1", 0.65), ("A2", 0.75), ("A3", 0.85)):
+        y = 280 + 380 * o
+        s.pins[("ard", n)] = (ARD_X, y, "l"); s.parts.append(f'<text x="{ARD_X + 14}" y="{y + 7}" font-size="21" font-weight="700" fill="#fff">{n}</text>'); s.parts.append(f'<circle cx="{ARD_X}" cy="{y}" r="5" fill="#fff" stroke="#14213d" stroke-width="2"/>')
+    for (out, a, renk, lane) in (("OUT1", "A0", "ylw", 280), ("OUT2", "A1", "cyan", 266), ("OUT3", "A2", "pnk", 252), ("OUT4", "A3", "brn", 238)):
+        ox, oy, _ = s.pins[("cz", out)]; ax, ay, _ = s.pins[("ard", a)]
+        s.bagla(renk, ("cz", out), ("ard", a), via=[(lane, oy), (lane, ay)])
+    s.tel("red", [(125, 290), (125, 170), (ARD_X + 90, 170), (ARD_X + 90, 280)]); s.dugum(ARD_X + 90, 280, "red"); s.dugum(125, 290, "red")
+    s.yazi(40, 150, "+5V", RENK["red"], 22, True); s.yazi(ARD_X + 130, 176, "Arduino 5V çıkışı → sensör kartı VCC", RENK["red"], 17)
+    s.tel("blk", [(125, 560), (125, 905)]); s.dugum(125, 560, "blk")
+    return s
+
+
 SEMALAR = {
-    "ir-robot": sema_ir,
+    "ir-robot": sema_ir, "cizgi-robot": sema_cizgi,
     "bluetooth-robot": sema_bt, "engelden-kacan-robot": sema_engel, "3u1-robot": sema_3u1,
     "dht11-lcd-kiti": sema_dht, "rtc-lcd-kiti": sema_rtc, "pir-alarm-kiti": sema_alarm,
     "rfid-kilit-kiti": sema_rfid, "step-motor-kiti": sema_step,
