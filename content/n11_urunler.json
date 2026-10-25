@@ -2397,5 +2397,55 @@
    "https://cdn.dsmcdn.com/ty1905/prod/QC_ENRICHMENT/20260816/14/ee437457-0cd5-3eed-9c2b-ed35ccffebeb/1_org_zoom.jpg"
   ],
   "tyFiyat": 356.0
+ },
+ {
+  "tyStokKodu": "AECIZGIRBT",
+  "stokKodu": "AECIZGIRBT-N11",
+  "barkod": "2920000600117",
+  "ad": "Çizgi İzleyen Robot Araba Kiti (2WD + Arduino + Motor Sürücü + 4 Kanal Sensör) - Jumper Kablo Hediyeli",
+  "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak adım adım kurulum anlatımına ve koda ulaşırsınız.</p><p><strong>Siyah çizgiyi kendi kendine takip eden robot!</strong> Bu set, 2WD robot gövdesine 4 kanallı kızılötesi çizgi sensörü takarak klasik \"line follower\" robot yarışma projesini kurmanız için gereken tüm bileşenleri içerir. Kumanda veya telefon gerekmez.</p><h3>Pakette Neler Var?</h3><ul><li>2WD Robot Araba Kiti (demonte robotik gövde, 2 adet DC motor, tekerlekler)</li><li>4'lü AA pil kutusu (gövde kitiyle birlikte) — piller dahil değildir</li><li>4 Kanal Çizgi İzleme Sensörü (kontrol kartı + 4 adet TCRT5000 kızılötesi prob, renkli bağlantı kabloları)</li><li>Arduino Uno R3 Klon (CH340, USB kablo dahil)</li><li>L298N Dual Motor Sürücü Modülü</li><li>Dişi-Erkek Jumper Kablo (40'lı)</li><li>Erkek-Erkek Jumper Kablo (40'lı)</li><li>A4 Renkli Bağlantı Şeması + Eğitim Rehberi</li></ul><h3>Nasıl Çalışır?</h3><ul><li>4 prob zemindeki siyah çizgiyi kızılötesi ışıkla algılar; her probun hassasiyeti trimpotla ayarlanır.</li><li>Arduino sensör bilgisine göre L298N üzerinden iki motoru sürer; robot çizgiden sapınca kendini düzeltir.</li><li>4 sensör sayesinde keskin dönüşleri de algılar.</li></ul><h3>Kimler İçin?</h3><ul><li>Robot yarışmalarına (çizgi izleyen kategorisi) hazırlanan öğrenciler</li><li>Meslek lisesi ve teknik lise öğrencileri, TÜBİTAK ve STEM projeleri</li><li>Sensör ve motor kontrolünü öğrenmek isteyen yeni başlayanlar</li></ul>",
+  "kategoriId": 1132100,
+  "tyKategori": "Robotik Malzeme",
+  "fiyat": 949.0,
+  "stok": 25,
+  "desi": 3,
+  "kdv": 20,
+  "buybox": false,
+  "gorseller": [
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/cizgi/cizgi-izleyen-robot-set.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/cizgi/cizgi-izleyen-robot-kutu-icerigi.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/cizgi/4-kanal-cizgi-izleme-sensoru.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/sema/cizgi-robot-aa.jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/robotkiti1.webp?v=1784791618",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduinouno3.png?v=1777661095",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-3_68e20ac5-ca54-4b6d-bdf6-eef7c31a55cb.jpg?v=1778320005",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperee.png?v=1779563373"
+  ],
+  "tyFiyat": 1254.0
+ },
+ {
+  "tyStokKodu": "AECIZGIRBT-LI",
+  "stokKodu": "AECIZGIRBT-LI-N11",
+  "barkod": "2920000600124",
+  "ad": "Çizgi İzleyen Robot Araba Kiti - 18650 Pil Yuvalı Set (2WD + Arduino + Motor Sürücü + 4 Kanal Sensör)",
+  "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak adım adım kurulum anlatımına ve koda ulaşırsınız.</p><p><strong>Şarj edilebilir 18650 pille çalışan, siyah çizgiyi kendi kendine takip eden robot!</strong> Bu set, 2WD robot gövdesine 4 kanallı kızılötesi çizgi sensörü takarak klasik \"line follower\" robot yarışma projesini kurmanız için gereken tüm bileşenleri içerir. Kumanda veya telefon gerekmez.</p><h3>Pakette Neler Var?</h3><ul><li>2WD Robot Araba Kiti (demonte robotik gövde, 2 adet DC motor, tekerlekler)</li><li>2'li 18650 Pil Yuvası (7,4V) — piller dahil değildir</li><li>4 Kanal Çizgi İzleme Sensörü (kontrol kartı + 4 adet TCRT5000 kızılötesi prob, renkli bağlantı kabloları)</li><li>Arduino Uno R3 Klon (CH340, USB kablo dahil)</li><li>L298N Dual Motor Sürücü Modülü</li><li>Dişi-Erkek Jumper Kablo (40'lı)</li><li>Erkek-Erkek Jumper Kablo (40'lı)</li><li>A4 Renkli Bağlantı Şeması + Eğitim Rehberi</li></ul><h3>Nasıl Çalışır?</h3><ul><li>4 prob zemindeki siyah çizgiyi kızılötesi ışıkla algılar; her probun hassasiyeti trimpotla ayarlanır.</li><li>Arduino sensör bilgisine göre L298N üzerinden iki motoru sürer; robot çizgiden sapınca kendini düzeltir.</li><li>4 sensör sayesinde keskin dönüşleri de algılar.</li></ul><h3>Kimler İçin?</h3><ul><li>Robot yarışmalarına (çizgi izleyen kategorisi) hazırlanan öğrenciler</li><li>Meslek lisesi ve teknik lise öğrencileri, TÜBİTAK ve STEM projeleri</li><li>Sensör ve motor kontrolünü öğrenmek isteyen yeni başlayanlar</li></ul>",
+  "kategoriId": 1132100,
+  "tyKategori": "Robotik Malzeme",
+  "fiyat": 979.0,
+  "stok": 25,
+  "desi": 2,
+  "kdv": 20,
+  "buybox": false,
+  "gorseller": [
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/cizgi/cizgi-izleyen-robot-18650-set.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/cizgi/cizgi-izleyen-robot-18650-kutu-icerigi.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/cizgi/4-kanal-cizgi-izleme-sensoru.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/sema/cizgi-robot.jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/robotkiti1.webp?v=1784791618",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/arduinouno3.png?v=1777661095",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298n-3_68e20ac5-ca54-4b6d-bdf6-eef7c31a55cb.jpg?v=1778320005",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperee.png?v=1779563373"
+  ],
+  "tyFiyat": 1317.0
  }
 ]
