@@ -997,3 +997,4 @@
 {"an": "2026-10-26T13:33", "kanal": "trendyol", "no": "11752474750", "kod": "AETEMDEF-20", "adet": 1, "dusum": {"AETEMDEF": 20}, "kuru": false}
 {"an": "2026-10-26T13:33", "kanal": "hepsiburada", "no": "4297984744", "kod": "AESTJDFTR-20", "adet": 1, "dusum": {"AESTJDFTR": 20}, "kuru": false}
 {"an": "2026-10-26T16:42", "kanal": "elden", "no": "IBAN-26.10-AESTJDFTR120", "kod": "AESTJDFTR", "adet": 120, "dusum": {"AESTJDFTR": 120}, "kuru": false, "not": "120 adet Is Dosyasi, IBAN ile odendi; Shopify'a elle dusuldu"}
+{"an": "2026-10-26T14:38", "kanal": "trendyol", "no": "11752700603", "kod": "AEUNOR3", "adet": 1, "dusum": {"AEUNOR3": 1}, "kuru": false}
