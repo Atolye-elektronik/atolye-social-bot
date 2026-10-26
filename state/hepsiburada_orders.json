@@ -2,28 +2,28 @@
   "newOrderItems": [],
   "packages": [
     {
-      "id": "6adf2cd0-f75e-d5ab-6f5b-2fae06060606",
+      "id": "6adf5616-9a6e-7e92-9a81-535306060606",
       "status": "Open",
-      "customerId": "be78b7d3-1f28-44e9-a97a-ed699fe316b8",
-      "orderDate": "2026-10-26T13:34:55",
-      "dueDate": "2026-10-26T18:30:00",
-      "barcode": "62955334009796",
-      "packageNumber": "5533400979",
-      "cargoCompany": "Sürat Kargo",
-      "shippingAddressDetail": "GESİ FATİH MAH. ŞEHİT FAZLI ALTUNTAŞ. SOK. BARIŞ APT NO:9/33 İLDEM FATİH GESİ FATİH MELİKGAZİ Kayseri",
-      "recipientName": "RÜŞTÜ BALOKO",
+      "customerId": "f72975cf-06fb-49ce-bcb7-d03ec6b24e5d",
+      "orderDate": "2026-10-26T16:31:01",
+      "dueDate": "2026-10-27T18:30:00",
+      "barcode": "62955334893663",
+      "packageNumber": "5533489366",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Kurtuluş mahallesi Hazar Sokak no:3/24 KURTULUŞ ALAŞEHİR Manisa",
+      "recipientName": "Mehmet Çolak",
       "shippingCountryCode": "TR",
-      "shippingDistrict": "GESİ FATİH",
-      "shippingTown": "MELİKGAZİ",
-      "shippingCity": "Kayseri",
-      "email": "4576825798_5533400979@hepsifatura.com",
+      "shippingDistrict": "KURTULUŞ",
+      "shippingTown": "ALAŞEHİR",
+      "shippingCity": "Manisa",
+      "email": "4297984744_5533489366@hepsifatura.com",
       "phoneNumber": "",
-      "companyName": "RÜŞTÜ BALOKO",
-      "billingAddress": "GESİ FATİH MAH. ŞEHİT FAZLI ALTUNTAŞ. SOK. BARIŞ APT NO:9/33 İLDEM FATİH GESİ FATİH MELİKGAZİ Kayseri",
-      "billingCity": "Kayseri",
-      "billingTown": "MELİKGAZİ",
-      "billingDistrict": "GESİ FATİH",
-      "billingPostalCode": "38180",
+      "companyName": "Mehmet Çolak",
+      "billingAddress": "Kurtuluş mahallesi Hazar Sokak no:3/24 KURTULUŞ ALAŞEHİR Manisa",
+      "billingCity": "Manisa",
+      "billingTown": "ALAŞEHİR",
+      "billingDistrict": "KURTULUŞ",
+      "billingPostalCode": "45600",
       "billingCountryCode": "TR",
       "taxOffice": null,
       "taxNumber": "",
@@ -32,37 +32,37 @@
       "customsTotalPrice": null,
       "totalPrice": {
         "currency": "TRY",
-        "amount": 2888
+        "amount": 1860
       },
       "items": [
         {
-          "lineItemId": "6adf2ccf-fb11-af33-a532-bd1806060606",
-          "listingId": "a19f66b0-5098-40d1-a1dd-ebed3d77d356",
+          "lineItemId": "6adf5615-d05f-bbd4-e041-339206060606",
+          "listingId": "88bf9093-429e-4435-8de8-88dee2c8142f",
           "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV0000I1OFMT",
-          "merchantSku": "AEISD30",
+          "hbSku": "HBCV0000I2UXBM",
+          "merchantSku": "AEISDP20",
           "quantity": 1,
           "price": {
             "currency": "TRY",
-            "amount": 2888
+            "amount": 1860
           },
-          "vat": 481.33,
+          "vat": 310,
           "totalPrice": {
             "currency": "TRY",
-            "amount": 2888
+            "amount": 1860
           },
           "commission": {
             "currency": "TRY",
-            "amount": 490.96
+            "amount": 324.7
           },
           "commissionRate": 17,
           "unitHBDiscount": {
             "currency": "TRY",
-            "amount": 0
+            "amount": 50
           },
           "totalHBDiscount": {
             "currency": "TRY",
-            "amount": 0
+            "amount": 50
           },
           "unitMerchantDiscount": {
             "currency": "TRY",
@@ -74,11 +74,11 @@
           },
           "merchantUnitPrice": {
             "currency": "TRY",
-            "amount": 2888
+            "amount": 1910
           },
           "merchantTotalPrice": {
             "currency": "TRY",
-            "amount": 2888
+            "amount": 1910
           },
           "unitLaborCost": {
             "currency": "TRY",
@@ -90,9 +90,9 @@
           "customizedText03": "",
           "customizedText04": "",
           "properties": [],
-          "productName": "Atölye Elektronik Işletmelerde Mesleki Eğitim Iş Dosyası (Staj Defteri) 30'lu Sınıf Paketi",
-          "orderNumber": "4576825798",
-          "orderDate": "2026-10-26T13:34:55",
+          "productName": "Atölye Elektronik Işletmelerde Mesleki Eğitim Iş Dosyası (Staj Defteri) 20'li Sınıf Paketi",
+          "orderNumber": "4297984744",
+          "orderDate": "2026-10-26T16:31:01",
           "deliveryType": "Standart Teslimat",
           "customerDelivery": "",
           "pickupTime": null,
@@ -109,7 +109,7 @@
             "amount": 0
           },
           "discountToBeBilledToHB": 0,
-          "productBarcode": "2909990001029",
+          "productBarcode": "2909990002026",
           "bnplCommissionAmount": {
             "currency": "TRY",
             "amount": 0
@@ -118,14 +118,14 @@
           "isMicroExport": false,
           "releatedLineIndexesWithCampaign": null,
           "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002071027085.jpg",
-          "deci": 3
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002075500221.jpg",
+          "deci": 2
         }
       ],
       "isCargoChangable": true,
-      "customerName": "Rüştü Baloko",
-      "estimatedArrivalDate": "2026-10-28T15:30:00Z",
-      "totalDeci": 3,
+      "customerName": "Mehmet Çolak",
+      "estimatedArrivalDate": "2026-11-02T15:30:00Z",
+      "totalDeci": 2,
       "warehouse": {
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
