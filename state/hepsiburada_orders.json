@@ -1,4 +1,135 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ae0dcad-cc78-a72c-bbab-00a506060606",
+      "status": "Open",
+      "customerId": "5de6abc8-04ac-4251-a1ce-fa4b13a3e822",
+      "orderDate": "2026-10-27T20:17:32",
+      "dueDate": "2026-10-28T18:30:00",
+      "barcode": "62955340519285",
+      "packageNumber": "5534051928",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Kınık ptt şubesi  (ptt çalışanı) KINIK KAŞ Antalya",
+      "recipientName": "Huriye Değirmenci",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KINIK",
+      "shippingTown": "KAŞ",
+      "shippingCity": "Antalya",
+      "email": "4391890879_5534051928@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Mehmet ali Değirmenci",
+      "billingAddress": "Kınık ptt şubesi  KINIK KAŞ Antalya",
+      "billingCity": "Antalya",
+      "billingTown": "KAŞ",
+      "billingDistrict": "KINIK",
+      "billingPostalCode": "07970",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 145.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ae0dcac-c56b-6cd7-e5a4-f9c806060606",
+          "listingId": "42b3499d-ee46-4188-80a5-6c698989f20a",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV000003BIVB",
+          "merchantSku": "AEPY186502",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 72.9
+          },
+          "vat": 24.3,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 145.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.12
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 72.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 145.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "CDM 18650 Pil Yuvası 2'li Yüksek Performanslı Pil Kutusu Hassas Tasarım ile Elektronik Projeler İçin",
+          "orderNumber": "4391890879",
+          "orderDate": "2026-10-27T20:17:32",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "853690950000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2254527005101",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/67/{size}/110000009284102.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "mehmet ali değirmenci",
+      "estimatedArrivalDate": "2026-11-05T15:30:00Z",
+      "totalDeci": 2.2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
