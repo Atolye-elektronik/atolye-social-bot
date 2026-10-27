@@ -1,1 +1,196 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9913675906,
+      "firstName": "Mehmet",
+      "lastName": "Budak",
+      "company": "",
+      "address1": "Yeni Cemil meriç erkek yurdu alahan köy yolu ",
+      "address2": "",
+      "city": "Hatay",
+      "cityCode": 31,
+      "district": "Antakya",
+      "districtId": 526,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "31000",
+      "countryCode": "TR",
+      "neighborhoodId": 32453,
+      "neighborhood": "Zülüflühan Mah",
+      "phone": null,
+      "fullAddress": "Yeni Cemil meriç erkek yurdu alahan köy yolu     Antakya Hatay",
+      "fullName": "Mehmet Budak"
+    },
+    "orderNumber": "11756850214",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 119.7,
+    "packageGrossAmount": 119.7,
+    "totalDiscount": 0.0,
+    "packageSellerDiscount": 0.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 0.0,
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9913674595,
+      "firstName": "Mehmet",
+      "lastName": "Budak",
+      "company": "",
+      "address1": "Yeni Cemil meriç erkek yurdu alahan köy yolu ",
+      "address2": "",
+      "city": "Hatay",
+      "cityCode": 31,
+      "district": "Antakya",
+      "districtId": 526,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "31000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 32453,
+      "neighborhood": "Zülüflühan Mah",
+      "phone": null,
+      "fullAddress": "Yeni Cemil meriç erkek yurdu alahan köy yolu     Antakya Hatay",
+      "fullName": "Mehmet Budak"
+    },
+    "customerFirstName": "Mehmet",
+    "customerEmail": "pf+468p8oe9@trendyolmail.com",
+    "customerId": 26335673,
+    "supplierId": 0,
+    "customerLastName": "Budak",
+    "id": 4282693616,
+    "channelId": 1,
+    "shipmentPackageId": 4282693616,
+    "cargoTrackingNumber": 7270038408025352,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 3,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE9VPILSKT1",
+        "sku": "2920000600094",
+        "stockCode": "AE9VPILSKT1",
+        "productName": "DC Jack Çıkışlı 9V Pil Soketi - Arduino Uyumlu (1 Adet) AE9VPILSKT1, one size",
+        "productCode": 1681158662,
+        "contentId": 1681158662,
+        "productOrigin": "CN",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 39.9,
+        "lineGrossAmount": 39.9,
+        "discount": 0.0,
+        "lineTotalDiscount": 0.0,
+        "lineSellerDiscount": 0.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6994626415",
+            "lineItemPrice": 39.9,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          },
+          {
+            "lineItemId": "6994626416",
+            "lineItemPrice": 39.9,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          },
+          {
+            "lineItemId": "6994626414",
+            "lineItemPrice": 39.9,
+            "lineItemDiscount": 0.0,
+            "lineItemSellerDiscount": 0.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6127155251,
+        "lineId": 6127155251,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2920000600094",
+        "orderLineItemStatusName": "Picking",
+        "price": 39.9,
+        "lineUnitPrice": 39.9,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1841,
+        "commission": 15,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1793137473332,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1793126710963,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1793126715223,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1793127698848,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1793221140000,
+    "estimatedDeliveryEndDate": 1793653140000,
+    "totalPrice": 119.7,
+    "packageTotalPrice": 119.7,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1793221140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1793126710954,
+    "lastModifiedDate": 1793127698848,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": true,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 11001631223,
+    "is4P": false
+  }
+]
