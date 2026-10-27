@@ -390,6 +390,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ae07833-2672-88f8-363f-657a06060606",
+      "status": "Open",
+      "customerId": "13bb40d5-756d-4ebe-8a0c-953041943390",
+      "orderDate": "2026-10-27T13:08:50",
+      "dueDate": "2026-10-27T18:30:00",
+      "barcode": "62955338816468",
+      "packageNumber": "5533881646",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Yakacık Aile Sağlığı Merkezi  3970. Sk No:1\n YAKACIK YENİMAHALLE Ankara",
+      "recipientName": "Muhammed Ali Tuzcu",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YAKACIK",
+      "shippingTown": "YENİMAHALLE",
+      "shippingCity": "Ankara",
+      "email": "4125010831_5533881646@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Muhammed Ali Tuzcu",
+      "billingAddress": "Yakacık Aile Sağlığı Merkezi  3970. Sk No:1 YAKACIK YENİMAHALLE Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "YENİMAHALLE",
+      "billingDistrict": "YAKACIK",
+      "billingPostalCode": "06105",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 114
+      },
+      "items": [
+        {
+          "lineItemId": "6ae07832-1a49-3c6c-f6d5-59d106060606",
+          "listingId": "fd59b995-e684-4370-838e-7aa26dedd56b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000FOY2RK",
+          "merchantSku": "AEDC125B",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "vat": 19,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 20.52
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 6 Adet - 2 Pin Siyah Anahtar Switch Mini Buton Kcd1 Plastik Açma Kapama On / Off",
+          "orderNumber": "4125010831",
+          "orderDate": "2026-10-27T13:08:50",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELDC125B001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001832081235.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "MUHAMMED ALİ TUZCU",
+      "estimatedArrivalDate": "2026-11-06T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
