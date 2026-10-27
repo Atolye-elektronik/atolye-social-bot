@@ -260,6 +260,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ae11015-0865-7837-b2c5-a6f906060606",
+      "status": "Open",
+      "customerId": "b395f6fb-ca95-4fd4-bb5b-afe33ed48ac3",
+      "orderDate": "2026-10-27T23:56:51",
+      "dueDate": "2026-10-28T18:30:00",
+      "barcode": "62955341328671",
+      "packageNumber": "5534132867",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Koru mah.Şahin sitesi 2565 sk.blok 1- C daire 17  Çayyolu  Ankara KORU ÇANKAYA Ankara",
+      "recipientName": "Hikmet Türk",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KORU",
+      "shippingTown": "ÇANKAYA",
+      "shippingCity": "Ankara",
+      "email": "4801837472_5534132867@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Hikmet Türk",
+      "billingAddress": "Koru mah.Şahin sit. 2565 sk. No:1-C daire no:17 ÇAYYOLU ÇANKAYA Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "ÇANKAYA",
+      "billingDistrict": "ÇAYYOLU",
+      "billingPostalCode": "06810",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 216
+      },
+      "items": [
+        {
+          "lineItemId": "6ae11014-f573-9f83-0f0f-d59906060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 4,
+          "price": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "vat": 36,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 216
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 9.72
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 54
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 216
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4801837472",
+          "orderDate": "2026-10-27T23:56:51",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Hikmet Türk",
+      "estimatedArrivalDate": "2026-11-02T15:30:00Z",
+      "totalDeci": 4.4,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
