@@ -390,6 +390,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ae1de09-8a55-d0d9-7a0d-71fc06060606",
+      "status": "Open",
+      "customerId": "171edc21-49f5-41d4-832e-0a4b06025dbf",
+      "orderDate": "2026-10-28T14:35:36",
+      "dueDate": "2026-10-30T18:30:00",
+      "barcode": "62955343564949",
+      "packageNumber": "5534356494",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Ali nihat tarlan caddesi 104 İÇERENKÖY ATAŞEHİR İstanbul",
+      "recipientName": "Fatih Erol",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "İÇERENKÖY",
+      "shippingTown": "ATAŞEHİR",
+      "shippingCity": "İstanbul",
+      "email": "4447962438_5534356494@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "ZAVADOCK YAZILIM ELEKTRONİK OTOMOTİV TİCARET LİMİTED ŞİRKETİ ",
+      "billingAddress": "ALİ NİHAT TARLAN CADDESİ 104  İÇERENKÖY ATAŞEHİR İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "ATAŞEHİR",
+      "billingDistrict": "İÇERENKÖY",
+      "billingPostalCode": "34638",
+      "billingCountryCode": "TR",
+      "taxOffice": "KOZYATAĞI",
+      "taxNumber": "9972021593",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 114.9
+      },
+      "items": [
+        {
+          "lineItemId": "6ae1de08-ac5d-65eb-5a77-213f06060606",
+          "listingId": "0066aaa5-3276-4378-b634-dc25f8bab1e8",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV000066JI28",
+          "merchantSku": "AEBZZR5V",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 114.9
+          },
+          "vat": 19.14999,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 114.9
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 20.68
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 114.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 114.9
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Teknolog Hanım 5 Adet 5V Aktif Buzzer Ses Bileşeni",
+          "orderNumber": "4447962438",
+          "orderDate": "2026-10-28T14:35:36",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "TKNLGHNM-1052",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000663924743.jpg",
+          "deci": 1.7
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Fatih Erol",
+      "estimatedArrivalDate": "2026-11-04T15:30:00Z",
+      "totalDeci": 1.7,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
