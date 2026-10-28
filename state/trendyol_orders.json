@@ -1,6 +1,196 @@
 [
   {
     "shipmentAddress": {
+      "id": 9915535079,
+      "firstName": "Mehmet",
+      "lastName": "Çolak",
+      "company": "",
+      "address1": "Kurtuluş mahallesi. Hazar sok. NO:3 Kat:4 Daire: 24",
+      "address2": "",
+      "city": "Manisa",
+      "cityCode": 45,
+      "district": "Alaşehir",
+      "districtId": 730,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "45000",
+      "countryCode": "TR",
+      "neighborhoodId": 46568,
+      "neighborhood": "Kurtuluş Mah",
+      "phone": null,
+      "fullAddress": "Kurtuluş mahallesi. Hazar sok. NO:3 Kat:4 Daire: 24     Alaşehir Manisa",
+      "fullName": "Mehmet Çolak"
+    },
+    "orderNumber": "11757750805",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2383.0,
+    "packageGrossAmount": 2383.0,
+    "totalDiscount": 75.0,
+    "packageSellerDiscount": 75.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 75.0,
+    "discountDisplays": [
+      {
+        "displayName": " - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 75
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9915535078,
+      "firstName": "Mehmet",
+      "lastName": "Çolak",
+      "company": "",
+      "address1": "Kurtuluş mahallesi. Hazar sok. NO:3 Kat:4 Daire: 24",
+      "address2": "",
+      "city": "Manisa",
+      "cityCode": 45,
+      "district": "Alaşehir",
+      "districtId": 730,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "45000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 46568,
+      "neighborhood": "Kurtuluş Mah",
+      "phone": null,
+      "fullAddress": "Kurtuluş mahallesi. Hazar sok. NO:3 Kat:4 Daire: 24     Alaşehir Manisa",
+      "fullName": "Mehmet Çolak"
+    },
+    "customerFirstName": "Mehmet",
+    "customerEmail": "pf+ej8jj5ko@trendyolmail.com",
+    "customerId": 11498131,
+    "supplierId": 0,
+    "customerLastName": "Çolak",
+    "id": 4283538536,
+    "channelId": 1,
+    "shipmentPackageId": 4283538536,
+    "cargoTrackingNumber": 7330038417330837,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETMRNDFTR20",
+        "sku": "2901312614412",
+        "stockCode": "AETMRNDFTR20",
+        "productName": "Temrin Defteri — Sınıf Paketi - 20 Adet AETMRNDFTR20, one size",
+        "productCode": 1664789573,
+        "contentId": 1664789573,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2383.0,
+        "lineGrossAmount": 2383.0,
+        "discount": 75.0,
+        "lineTotalDiscount": 75.0,
+        "lineSellerDiscount": 75.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6996031628",
+            "lineItemPrice": 2308.0,
+            "lineItemDiscount": 75.0,
+            "lineItemSellerDiscount": 75.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "productColor": "Yeşil",
+        "id": 6128372238,
+        "lineId": 6128372238,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2901312614412",
+        "orderLineItemStatusName": "Picking",
+        "price": 2308.0,
+        "lineUnitPrice": 2308.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1520,
+        "commission": 18,
+        "businessUnit": "Stationery & Office",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1793182744244,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1793171945571,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1793171953633,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1793171974361,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1793221140000,
+    "estimatedDeliveryEndDate": 1793653140000,
+    "totalPrice": 2308.0,
+    "packageTotalPrice": 2308.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1793221140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1793171945566,
+    "lastModifiedDate": 1793173082005,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 11002618299,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9913675906,
       "firstName": "Mehmet",
       "lastName": "Budak",
@@ -74,10 +264,10 @@
     "id": 4282693616,
     "channelId": 1,
     "shipmentPackageId": 4282693616,
-    "cargoTrackingNumber": 7270038408025352,
+    "cargoTrackingNumber": 7330038416262993,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 3,
@@ -171,7 +361,7 @@
     "agreedDeliveryDate": 1793221140000,
     "fastDelivery": true,
     "originShipmentDate": 1793126710954,
-    "lastModifiedDate": 1793127698848,
+    "lastModifiedDate": 1793169883676,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
