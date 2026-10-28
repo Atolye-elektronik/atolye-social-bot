@@ -1,4 +1,135 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ae2321b-b617-13f8-558e-5b4d06060606",
+      "status": "Open",
+      "customerId": "0a29b21e-1d8c-4958-bc36-94205460f42e",
+      "orderDate": "2026-10-28T20:34:17",
+      "dueDate": "2026-10-30T18:30:00",
+      "barcode": "62955344778895",
+      "packageNumber": "5534477889",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Godene Mah. Hanedan Cad. Seyirtepe Konutları 1. Etap  O Blok, No:10 D:24  Meram/Konya GÖDENE MERAM Konya",
+      "recipientName": "Bülent Bağcı",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "GÖDENE",
+      "shippingTown": "MERAM",
+      "shippingCity": "Konya",
+      "email": "4128346374_5534477889@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "GÖDENE SEYIRTEPE 1. ETAP O BLOK YÖNETİCLİĞİ ",
+      "billingAddress": "GÖDENE MH.  HANEDAN  CAD. SEYIRTEPE 1. ETAP O BLOK NO 10 MERAM / KONYA GÖDENE MERAM Konya",
+      "billingCity": "Konya",
+      "billingTown": "MERAM",
+      "billingDistrict": "GÖDENE",
+      "billingPostalCode": "42190",
+      "billingCountryCode": "TR",
+      "taxOffice": "MEVLANA",
+      "taxNumber": "7671174462",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 187
+      },
+      "items": [
+        {
+          "lineItemId": "6ae23219-b617-13f8-558e-57f606060606",
+          "listingId": "6e958f8f-c621-4768-87f4-1366f2429559",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000E9Q2DJ",
+          "merchantSku": "AEHVYSHP",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 187
+          },
+          "vat": 31.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 187
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 33.65999
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 187
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 187
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Yaylı Süngerli Metal Havya Standı",
+          "orderNumber": "4128346374",
+          "orderDate": "2026-10-28T20:34:17",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELHVYSHP001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001685156313.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "BÜLENT BAĞCI",
+      "estimatedArrivalDate": "2026-11-04T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
