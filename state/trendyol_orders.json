@@ -1,1 +1,183 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9920144798,
+      "firstName": "Polatcan",
+      "lastName": "ulu",
+      "company": "",
+      "address1": "Bağlarçeşme mahallesi 1135 sokak no 4 daire 8 Esenyurt İstanbul ",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Esenyurt",
+      "districtId": 66,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 27942,
+      "neighborhood": "Bağlarçeşme Mah",
+      "phone": null,
+      "fullAddress": "Bağlarçeşme mahallesi 1135 sokak no 4 daire 8 Esenyurt İstanbul     Esenyurt İstanbul",
+      "fullName": "Polatcan ulu"
+    },
+    "orderNumber": "11760712013",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 1254.0,
+    "packageGrossAmount": 1254.0,
+    "totalDiscount": 75.0,
+    "packageSellerDiscount": 75.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 75.0,
+    "discountDisplays": [
+      {
+        "displayName": " - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 75
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9920144797,
+      "firstName": "Polatcan",
+      "lastName": "ulu",
+      "company": "",
+      "address1": "Bağlarçeşme mahallesi 1135 sokak no 4 daire 8 Esenyurt İstanbul ",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Esenyurt",
+      "districtId": 66,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 27942,
+      "neighborhood": "Bağlarçeşme Mah",
+      "phone": null,
+      "fullAddress": "Bağlarçeşme mahallesi 1135 sokak no 4 daire 8 Esenyurt İstanbul     Esenyurt İstanbul",
+      "fullName": "Polatcan ulu"
+    },
+    "customerFirstName": "Polatcan",
+    "customerEmail": "pf+zqp4p2pq@trendyolmail.com",
+    "customerId": 68802073,
+    "supplierId": 0,
+    "customerLastName": "ulu",
+    "id": 4285690246,
+    "channelId": 1,
+    "shipmentPackageId": 4285690246,
+    "cargoTrackingNumber": 7270038438271118,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AECIZGIRBT",
+        "sku": "2920000600117",
+        "stockCode": "AECIZGIRBT",
+        "productName": "Çizgi İzleyen Robot Araba Kiti (2WD + Arduino + Motor Sürücü + 4 Kanal Sensör) - Jumper Kablo Hediye AECIZGIRBT, one size",
+        "productCode": 1719885426,
+        "contentId": 1719885426,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 1254.0,
+        "lineGrossAmount": 1254.0,
+        "discount": 75.0,
+        "lineTotalDiscount": 75.0,
+        "lineSellerDiscount": 75.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "6999508843",
+            "lineItemPrice": 1179.0,
+            "lineItemDiscount": 75.0,
+            "lineItemSellerDiscount": 75.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6131358205,
+        "lineId": 6131358205,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "2920000600117",
+        "orderLineItemStatusName": "ReadyToShip",
+        "price": 1179.0,
+        "lineUnitPrice": 1179.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 4391,
+        "commission": null,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1793238805434,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1793228006354,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1793228012433,
+        "status": "Created"
+      }
+    ],
+    "shipmentPackageStatus": "ReadyToShip",
+    "status": "Created",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1793393940000,
+    "estimatedDeliveryEndDate": 1793653140000,
+    "totalPrice": 1179.0,
+    "packageTotalPrice": 1179.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1793393940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1793228006345,
+    "lastModifiedDate": 1793228012433,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 11005069634,
+    "is4P": false
+  }
+]
