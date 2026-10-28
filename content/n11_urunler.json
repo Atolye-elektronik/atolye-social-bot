@@ -2447,5 +2447,24 @@
    "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/jumperee.png?v=1779563373"
   ],
   "tyFiyat": 1317.0
+ },
+ {
+  "tyStokKodu": "AELAMBASET",
+  "stokKodu": "AELAMBASET-N11",
+  "barkod": "2920000600148",
+  "ad": "Lamba Devre Seti - Duy + Ampul + Anahtar + Kablo + 2'li Pil Kutusu (Fen Deney Seti)",
+  "aciklama": "<p><strong>Fen dersinin ilk elektrik devresi:</strong> pil, anahtar ve ampulden oluşan basit devreyi kendin kur. Anahtarı aç, ampul yansın. İlkokul ve ortaokul fen deneyleri ve proje ödevleri için hazır set. Bağlantı şeması ile gönderilir.</p><h3>Pakette Neler Var?</h3><ul><li>Mini duy (vidalı terminal, lehim gerektirmez)</li><li>Mini ampul (2,5V)</li><li>On-off (rocker) anahtar</li><li>Kırmızı-siyah bağlantı kablosu</li><li>2'li AA pil kutusu (kablolu)</li></ul><p>Piller dahil değildir (2 adet AA). Kablolar duyun vidalı terminallerine sıkıştırılarak bağlanır.</p>",
+  "kategoriId": 1132100,
+  "tyKategori": "Elektronik Devre Elemanı",
+  "fiyat": 279.0,
+  "stok": 25,
+  "desi": 1,
+  "kdv": 20,
+  "buybox": false,
+  "gorseller": [
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/fen-yeni/lamba-seti.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/fen-yeni/duy-ampul-1-adet.jpg"
+  ],
+  "tyFiyat": 279.0
  }
 ]
