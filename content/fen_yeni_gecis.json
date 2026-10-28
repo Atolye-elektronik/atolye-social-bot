@@ -1,33 +1,88 @@
 {
  "_not": "28.10.2026 - Fen deney urunlerinde YENI tip parcaya gecis plani. 24.10'da eklenen 200'er motor/pervane/duy YENI tip (yuvarlak gumus DC motor, sari 3 kanat pervane, turuncu duy); setlere kirmizi-siyah baglanti kablosu eklendi. Kullanici karari: ESKI stok (yassi 130 motor, kirmizi pervane, renkli duy) BITINCE gecilecek. Eski kalan ~ toplam - 200 (28.10: motor 19, pervane 15, duy 25). Gorseller posts/media/urun-foto/fen-yeni/.",
- "esik": {"AEDCM3V-1": 200, "AEPRV-1": 200, "AEDUY-1": 200},
+ "esik": {
+  "AEDCM3V-1": 200,
+  "AEPRV-1": 200,
+  "AEDUY-1": 200
+ },
  "gorsel": {
-  "AEDCM3V-1": ["dc-motor-1-adet.jpg"],
-  "AEDCM3V-5": ["dc-motor-5-adet.jpg"],
-  "AEDCM3V-6": ["dc-motor-6-adet.jpg"],
-  "AEDCM3V-10": ["dc-motor-10-adet.jpg"],
-  "AEPRV-1": ["pervane-1-adet.jpg"],
-  "AEPRV-5": ["pervane-5-adet.jpg"],
-  "AEPRV-10": ["pervane-10-adet.jpg"],
-  "AEMOTPRV-1": ["motor-pervane-1-adet.jpg", "motor-pervane-takili.jpg"],
-  "AEMOTPRV-5": ["motor-pervane-5-adet.jpg", "motor-pervane-takili.jpg"],
-  "AEMOTPRV-10": ["motor-pervane-10-adet.jpg", "motor-pervane-takili.jpg"],
-  "AEDUY-1": ["duy-ampul-1-adet.jpg"],
-  "AEDUYAMP-1": ["duy-ampul-1-adet.jpg"],
-  "AEDUYAMP-5": ["duy-ampul-5-adet.jpg"],
-  "AEDUY-10": ["duy-ampul-10-adet.jpg"],
-  "AEDUYAMP-10": ["duy-ampul-10-adet.jpg"],
-  "AEVANTSET": ["vantilator-seti.jpg", "motor-pervane-takili.jpg"],
-  "AEFENSET": ["fen-deney-seti.jpg"],
-  "AETEMELSET": ["temel-devre-seti.jpg"],
-  "AETEMELSET-J": ["temel-devre-seti-jumper.jpg"],
-  "YENI-LAMBA-SETI": ["lamba-seti.jpg"]
+  "AEDCM3V-1": [
+   "dc-motor-1-adet.jpg"
+  ],
+  "AEDCM3V-5": [
+   "dc-motor-5-adet.jpg"
+  ],
+  "AEDCM3V-6": [
+   "dc-motor-6-adet.jpg"
+  ],
+  "AEDCM3V-10": [
+   "dc-motor-10-adet.jpg"
+  ],
+  "AEPRV-1": [
+   "pervane-1-adet.jpg"
+  ],
+  "AEPRV-5": [
+   "pervane-5-adet.jpg"
+  ],
+  "AEPRV-10": [
+   "pervane-10-adet.jpg"
+  ],
+  "AEMOTPRV-1": [
+   "motor-pervane-1-adet.jpg",
+   "motor-pervane-takili.jpg"
+  ],
+  "AEMOTPRV-5": [
+   "motor-pervane-5-adet.jpg",
+   "motor-pervane-takili.jpg"
+  ],
+  "AEMOTPRV-10": [
+   "motor-pervane-10-adet.jpg",
+   "motor-pervane-takili.jpg"
+  ],
+  "AEDUY-1": [
+   "duy-ampul-1-adet.jpg"
+  ],
+  "AEDUYAMP-1": [
+   "duy-ampul-1-adet.jpg"
+  ],
+  "AEDUYAMP-5": [
+   "duy-ampul-5-adet.jpg"
+  ],
+  "AEDUY-10": [
+   "duy-ampul-10-adet.jpg"
+  ],
+  "AEDUYAMP-10": [
+   "duy-ampul-10-adet.jpg"
+  ],
+  "AEVANTSET": [
+   "vantilator-seti.jpg",
+   "motor-pervane-takili.jpg"
+  ],
+  "AEFENSET": [
+   "fen-deney-seti.jpg"
+  ],
+  "AETEMELSET": [
+   "temel-devre-seti.jpg"
+  ],
+  "AETEMELSET-J": [
+   "temel-devre-seti-jumper.jpg"
+  ],
+  "YENI-LAMBA-SETI": [
+   "lamba-seti.jpg"
+  ]
  },
  "metin": {
-  "motor": "'Yassi (130 Tip)' ifadesi kalkacak; yeni yuvarlak motor tipi kullanicidan alinacak. Mil 2 mm / 3V bilgisi teyit edilecek.",
+  "motor": "Yeni baslik: '3V DC Motor Yuvarlak' (kullanici 28.10). 'Yassi (130 Tip)' kalkacak.",
   "pervane": "'(Kirmizi)' -> '(Sari)'; '130 tip motor' atfi kalkacak.",
   "duy": "'Renkli duy govdesi (kirmizi, sari, turuncu, yesil, mavi - karisik)' -> 'turuncu duy govdesi'.",
   "setler": "Vantilator, fen deney, temel devre setlerinin icerik listesine 'kirmizi-siyah baglanti kablosu' eklenecek."
  },
- "bekleyen_bilgi": ["yeni motor tipi/modeli", "lamba seti fiyati ve SKU onayi", "kablo uzunlugu ve maliyeti"]
+ "bekleyen_bilgi": [],
+ "kablo_maliyet_tl": 5,
+ "_kablo": "Setlerdeki kirmizi-siyah kablo maliyeti 5 TL (kullanici). Vantilator/fen/temel set maliyetlerine +5 eklenecek.",
+ "lamba_seti": {
+  "sku": "AELAMBASET",
+  "acildi": "28.10 Shopify 154,90 TL (maliyet 19,79 = duy 3,47 + ampul 5,00 + anahtar 2,32 + pil kutusu 4,00 + kablo 5; web kari 100 TL)",
+  "pazaryeri": "100 TL kar hedefiyle acilacak"
+ }
 }
