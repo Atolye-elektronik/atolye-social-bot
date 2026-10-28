@@ -416,6 +416,26 @@ def dusulen_kalemler(kanal, no):
     return out
 
 
+def dusulen_kalemler_kismi(kanal, no, kismi):
+    """Kismi iade: yalniz iade edilen kodlarin dusumunu, iade adedi / satilan adet oraninda geri verir."""
+    out = {}
+    try:
+        for l in open(GUNLUK, encoding="utf-8"):
+            l = l.strip()
+            if not l:
+                continue
+            k = json.loads(l)
+            if (k.get("kanal") != kanal or str(k.get("no")) != str(no) or k.get("kuru")
+                    or not k.get("dusum") or k.get("kod") not in kismi):
+                continue
+            oran = min(1.0, kismi[k["kod"]] / float(k.get("adet") or 1))
+            for p, n in k["dusum"].items():
+                out[p] = out.get(p, 0) + int(round(n * oran))
+    except FileNotFoundError:
+        pass
+    return {p: n for p, n in out.items() if n}
+
+
 def yeni_siparisler(kanallar):
     """Yeni siparisleri ve IPTAL/IADE olanlari birlikte dondurur.
 
@@ -450,8 +470,50 @@ def yeni_siparisler(kanallar):
             o["kanal"] = k
             yeni.append(o)
             n_yeni += 1
+        if k == "trendyol":
+            # 28.10.2026: teslimattan sonra gelen iadeler siparis listesinde (son 14 gun)
+            # gorunmuyordu; 3 kabul edilmis iade stoga hic donmemisti. Talep (claims)
+            # kayitlarindan "Accepted" olanlar da iade sayilir, yalniz iade edilen adet kadar.
+            try:
+                for t in ty_iade_talepleri():
+                    if t["no"] in gk and t["no"] not in ik:
+                        t["kanal"] = k
+                        iptaller.append(t)
+                        n_ipt += 1
+            except Exception as e:
+                print("  trendyol iade talepleri okunamadi: %s" % str(e)[:160])
         print("  %-12s %3d siparis, %d yeni, %d iptal/iade" % (k, len(L), n_yeni, n_ipt))
     return yeni, g, iptaller, iade
+
+
+def ty_iade_talepleri(gun=45):
+    """Trendyol iade talepleri: kabul edilmis (Accepted) kalemler -> [{no, durum, kismi:{kod: adet}}]."""
+    import requests
+    import trendyol_client as tc
+    from stok.recete import Recete
+    R = Recete()
+    son = int(time.time() * 1000)
+    out = {}
+    for p in range(20):
+        r = requests.get("%s/order/sellers/%s/claims" % (tc.BASE_URL, tc.SUPPLIER_ID), headers=tc._auth_header(),
+                         params={"startDate": son - gun * 86400000, "endDate": son, "page": p, "size": 50}, timeout=60)
+        r.raise_for_status()
+        C = r.json().get("content") or []
+        for c in C:
+            no = str(c.get("orderNumber"))
+            for ci in c.get("items") or []:
+                ol = ci.get("orderLine") or {}
+                n = sum(1 for it in ci.get("claimItems") or []
+                        if (it.get("claimItemStatus") or {}).get("name") == "Accepted")
+                if not n:
+                    continue
+                kod = BARKOD_ALIAS.get(str(ol.get("barcode"))) or ol.get("merchantSku")
+                kod = R.kanonik(KANAL_KOD.get("trendyol", {}).get(kod, kod))
+                t = out.setdefault(no, {"no": no, "durum": "iade talebi (Accepted)", "kismi": {}})
+                t["kismi"][kod] = t["kismi"].get(kod, 0) + n
+        if len(C) < 50:
+            break
+    return list(out.values())
 
 
 def _zaman(t):
@@ -567,7 +629,8 @@ def main():
     geri = {}
     iade_degisti = False
     for o in iptaller:
-        d = dusulen_kalemler(o["kanal"], o["no"])
+        d = (dusulen_kalemler_kismi(o["kanal"], o["no"], o["kismi"]) if o.get("kismi")
+             else dusulen_kalemler(o["kanal"], o["no"]))
         if not d:
             print("  ~ %s %s iptal ama dusum kaydi yok, atlandi" % (o["kanal"], o["no"]))
             iade.setdefault(o["kanal"], {})[o["no"]] = "dusum yok"
