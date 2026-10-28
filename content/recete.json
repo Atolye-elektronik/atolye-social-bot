@@ -1298,76 +1298,6 @@
     1
    ]
   ],
-  "AETCS18P": [
-   [
-    "AETC162",
-    1
-   ],
-   [
-    "AEYNKSK160",
-    1
-   ],
-   [
-    "AEPNS180",
-    1
-   ],
-   [
-    "AEKB1602",
-    1
-   ],
-   [
-    "AE5X100DT",
-    1
-   ],
-   [
-    "AE5X100YT",
-    1
-   ],
-   [
-    "AEKNTKLM",
-    1
-   ],
-   [
-    "AEZD30C40W",
-    1
-   ],
-   [
-    "AEHVYSHP",
-    1
-   ],
-   [
-    "AELHMPMP",
-    1
-   ],
-   [
-    "AETUPLEHIM",
-    1
-   ],
-   [
-    "AELEHIMPASTA",
-    1
-   ],
-   [
-    "AES400IGG",
-    1
-   ],
-   [
-    "AEIZOLE",
-    1
-   ],
-   [
-    "AE6X13PLK",
-    1
-   ],
-   [
-    "AEDT830D",
-    1
-   ],
-   [
-    "AEBB830P",
-    1
-   ]
-  ],
   "AETTS3P": [
    [
     "AE5X100YT",
@@ -1462,6 +1392,7 @@
   "AE3-6VMTR": "sari motor + tekerlek ikilisi",
   "AEUNOR3": "Uno + USB kablo",
   "AENANOTC": "Nano + Type-C kablo",
-  "AET2WDRBT": "2WD robot kiti poseti: sasi + 2 sari motor + tekerler + sarhos teker + enkoder + 4'lu AA kutusu + vida — TEK KALEM (kullanici karari 05.09). Serbest sari motor stogu (AE3-6VMTR) ayri sayilir."
+  "AET2WDRBT": "2WD robot kiti poseti: sasi + 2 sari motor + tekerler + sarhos teker + enkoder + 4'lu AA kutusu + vida — TEK KALEM (kullanici karari 05.09). Serbest sari motor stogu (AE3-6VMTR) ayri sayilir.",
+  "AETCS18P": "17 parca takim cantasi - 28.10.2026 kullanici: tekli havya/stand/pompa/tup lehim stoklarindan BAGIMSIZ, stok kendisinde tutulur (eski recete: AETC162, AEYNKSK160, AEPNS180, AEKB1602, AE5X100DT, AE5X100YT, AEKNTKLM, AEZD30C40W, AEHVYSHP, AELHMPMP, AETUPLEHIM, AELEHIMPASTA, AES400IGG, AEIZOLE, AE6X13PLK, AEDT830D, AEBB830P)"
  }
 }
