@@ -1014,3 +1014,4 @@
 {"an": "2026-10-28T07:18", "kanal": "trendyol", "no": "11752474750", "iade": {"AETEMDEF": 20}, "durum": "UnDelivered", "kuru": false}
 {"an": "2026-10-28T07:23", "kanal": "trendyol", "no": "11757750805", "kod": "AETEMDEF-20", "adet": 1, "dusum": {"AETEMDEF": 20}, "kuru": false}
 {"an": "2026-10-28T11:38", "kanal": "hepsiburada", "no": "4447962438", "kod": "AEBZZR5V-5", "adet": 1, "dusum": {"AEBZZR5V": 5}, "kuru": false}
+{"an": "2026-10-28T13:33", "kanal": "shopify", "no": "#1068", "kod": "AETMLELKDS", "adet": 1, "dusum": {"AEBB830P": 1, "AEJK2040": 1, "AELED5K": 15, "AEDIR330": 15, "AEBTN6X6": 4, "AEPIL9V": 1, "AE9VPILSKT1": 1}, "kuru": false}
