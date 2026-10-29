@@ -37,6 +37,8 @@ PLATFORMLAR = ["instagram"]
 
 STATE_PATH = pathlib.Path("state/kanca_carousel_seen.json")
 KANCA_YOLU = pathlib.Path("content/kancalar.json")
+# Urune ozel kanca/madde/kisa ad/etiket; otomatik cikarim bozuk sonuc verdiginde.
+OZEL_YOLU = pathlib.Path("content/kanca_ozel.json")
 POSTS_DIR = pathlib.Path("posts")
 MEDIA_DIR = pathlib.Path("posts/media/kanca")
 
@@ -72,6 +74,12 @@ def _tl(deger) -> str:
     return f"{tam},{kurus:02d} ₺" if kurus else f"{tam} ₺"
 
 
+def _ozel(urun: dict) -> dict:
+    if not OZEL_YOLU.exists():
+        return {}
+    return json.loads(OZEL_YOLU.read_text(encoding="utf-8")).get(urun.get("handle") or "", {})
+
+
 def kanca_sec(urun: dict) -> dict:
     """Ürüne uygun kancalardan birini seçer.
 
@@ -85,6 +93,10 @@ def kanca_sec(urun: dict) -> dict:
     — 27 ürün tek bir kancaya yığılmıştı. Kimliğin özetini almak dağılımı
     düzeltiyor, belirliliği bozmuyor.
     """
+    ozel = _ozel(urun)
+    if ozel.get("kanca"):
+        return {"etiket": ozel.get("etiket", ""), "kanca": ozel["kanca"], "alt": ozel.get("alt", "")}
+
     veri = json.loads(KANCA_YOLU.read_text(encoding="utf-8"))
     kancalar = veri["kancalar"]
     baslik = (urun.get("title") or "").lower()
@@ -99,12 +111,15 @@ def kanca_sec(urun: dict) -> dict:
 
 def maddeler_cikar(urun: dict) -> list[str]:
     """Ürün açıklamasından slayta uygun kısa maddeler çıkarır."""
+    if _ozel(urun).get("maddeler"):
+        return _ozel(urun)["maddeler"][:MAX_MADDE]
     metin = ozet(urun.get("body_html", ""))
     if not metin:
         return []
 
     # Cumlelere bol; slaytta iki satiri gecmeyecek kadar kisa olanlari al.
-    cumleler = [c.strip() for c in re.split(r"(?<=[.!?])\s+", metin) if c.strip()]
+    # "9. sinif" gibi sira sayilarinda bolme: rakamdan sonraki nokta cumle sonu degil.
+    cumleler = [c.strip() for c in re.split(r"(?<!\d\.)(?<=[.!?])\s+", metin) if c.strip()]
     secilen = [c for c in cumleler if 25 <= len(c) <= 115]
     return secilen[:MAX_MADDE]
 
@@ -116,7 +131,7 @@ def fiyat_satirlari(urun: dict) -> list[dict]:
     for v in varyantlar[:4]:
         ad = (v.get("title") or "").strip()
         if ad.lower() in ("default title", ""):
-            ad = urun.get("title", "")[:38]
+            ad = _ozel(urun).get("kisa_ad") or urun.get("title", "")[:38]
         satirlar.append({
             "ad": ad,
             "aciklama": "stokta" if v.get("available") else "",
@@ -239,7 +254,9 @@ def altyazi_kur(urun: dict, kanca: dict) -> str:
 
     satirlar = [kanca["kanca"].format(urun=baslik, fiyat=_tl((urun.get("variants") or [{}])[0].get("price")))]
     satirlar += ["", kanca["alt"], "", f"👉 {baslik}"]
-    if aciklama:
+    if _ozel(urun).get("maddeler"):
+        satirlar += [""] + [f"✔️ {m}" for m in _ozel(urun)["maddeler"]]
+    elif aciklama:
         satirlar += ["", aciklama]
     satirlar += [
         "",
@@ -250,7 +267,8 @@ def altyazi_kur(urun: dict, kanca: dict) -> str:
         satirlar += ["", f"🔗 {STORE_URL}/products/{urun['handle']}"]
     satirlar += [
         "",
-        "#mesleklisesi #elektrikelektronik #bilisimteknolojileri #arduino #robotik "
+        _ozel(urun).get("etiketler")
+        or "#mesleklisesi #elektrikelektronik #bilisimteknolojileri #arduino #robotik "
         "#stem #atolyeelektronik #ogretmen #meslekiegitim #mtal",
     ]
     return "\n".join(satirlar)

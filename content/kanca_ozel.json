@@ -1,0 +1,38 @@
+{
+  "_aciklama": "kanca_carousel.py icin urune ozel metinler (Shopify handle -> alanlar). Bos birakilan alan otomatik uretilir. Adet/toplu indirim vaadi YAZMA.",
+  "cizgi-izleyen-robot-araba-kiti": {
+    "etiket": "ROBOT PROJESİ",
+    "kanca": "Robot siyah çizgiyi nasıl görür?",
+    "alt": "4 kızılötesi sensör, bir Arduino ve iki motor. Cevabı bu kutuda.",
+    "kisa_ad": "Çizgi İzleyen Robot Kiti",
+    "maddeler": [
+      "2WD robot şasi, 2 redüktörlü motor ve tekerlek",
+      "Arduino Uno + L298N motor sürücü",
+      "4 kanal çizgi izleme sensörü ve jumper kablolar",
+      "Renkli bağlantı şeması, QR ile hazır Arduino kodu"
+    ],
+    "etiketler": "#robotik #arduino #cizgiizleyenrobot #robotkiti #kodlama #stem #tubitak #mesleklisesi #atolyeelektronik"
+  },
+  "lamba-devre-seti-duy-ampul-anahtar-kablo-pil-kutusu": {
+    "etiket": "FEN DERSİ",
+    "kanca": "Basit elektrik devresini tahtada mı anlatıyorsun, masada mı?",
+    "alt": "Pil, anahtar, duy ve ampul: öğrenci devreyi kendi eliyle kurar.",
+    "kisa_ad": "Lamba Devre Seti",
+    "maddeler": [
+      "Mini duy ve ampul",
+      "Açma-kapama anahtarı ve bağlantı kablosu",
+      "2'li kalem pil kutusu",
+      "Bağlantı şeması ile gönderilir"
+    ],
+    "etiketler": "#fenbilimleri #elektrikdevresi #fendeneyi #deneyseti #ortaokul #ogretmen #stem #atolyeelektronik"
+  },
+  "takim-cantasi-seti-ogrenci-dostu": {
+    "kisa_ad": "Takım Çantası Seti - 17 Parça",
+    "maddeler": [
+      "16\" organizerli takım çantası",
+      "Pense, yan keski, kargaburun, düz ve yıldız tornavida, kontrol kalemi",
+      "Havya, havya sehpası, lehim pompası ve lehim",
+      "DT830D multimetre, breadboard, pertinaks, iş gözlüğü, izolebant"
+    ]
+  }
+}

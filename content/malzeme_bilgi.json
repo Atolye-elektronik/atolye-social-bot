@@ -1,0 +1,400 @@
+{
+  "_aciklama": "malzeme_bilgi.py icin bilgilendirici 'Bu nedir?' serisi. Her kayit bir carousel. handle = Shopify urunu (foto + link). setler = recete.json'dan, kisa adlar. Adet indirimi / kampanya vaadi YAZMA.",
+  "malzemeler": [
+    {
+      "id": "hcsr04",
+      "handle": "hc-sr04-ultrasonik-mesafe-sensoru-arduino-uyumlu-temassiz-olcum-modulu",
+      "ad": "HC-SR04 Ultrasonik Mesafe Sensörü",
+      "soru": "Robot önündeki duvarı nasıl görür?",
+      "alt": "Yarasa gibi: ses gönderir, yankısını dinler.",
+      "nedir": [
+        "**40 kHz** ultrasonik ses ile mesafe ölçen sensör",
+        "Ölçüm aralığı yaklaşık **2 cm – 4 m**",
+        "4 pin: VCC, Trig, Echo, GND (5 V)"
+      ],
+      "nasil": [
+        "**Trig** pinine 10 µs'lik darbe verilir, sensör ses yollar",
+        "**Echo** pini yankı dönene kadar HIGH kalır",
+        "Süre (µs) ÷ 58 = mesafe (cm)"
+      ],
+      "projeler": [
+        "Engelden kaçan robot",
+        "Park sensörü ve mesafe ölçer",
+        "Su deposu seviye ölçümü"
+      ],
+      "setler": [
+        "Engelden Kaçan Robot Kiti",
+        "3'ü 1 Arada Robot Kiti",
+        "Arduino Başlangıç Seti",
+        "Akıllı Proje ve Sensör Seti"
+      ],
+      "etiketler": "#arduino #hcsr04 #ultrasonik #sensor #robotik #elektronik #mesleklisesi #atolyeelektronik"
+    },
+    {
+      "id": "sg90",
+      "handle": "sg90-servo-motor-9gr-180-derece",
+      "ad": "SG90 Servo Motor",
+      "soru": "Motor nasıl tam 90 derecede durur?",
+      "alt": "Sıradan motor döner durur; servo istenen açıya gider ve orada kalır.",
+      "nedir": [
+        "**0–180°** arasında konum alabilen 9 gramlık mini servo",
+        "İçinde DC motor, dişli kutusu ve konum ölçen potansiyometre var",
+        "Besleme 4,8–6 V"
+      ],
+      "nasil": [
+        "Kablolar: **turuncu** sinyal, **kırmızı** +5 V, **kahverengi** GND",
+        "50 Hz PWM sinyalinde darbe genişliği açıyı belirler (≈1–2 ms)",
+        "Arduino'da Servo kütüphanesiyle tek satırda açı verilir"
+      ],
+      "projeler": [
+        "RFID kartlı kapı kilidi",
+        "Engelden kaçan robotun dönen 'kafası'",
+        "Robot kol ve otomatik bariyer"
+      ],
+      "setler": [
+        "RFID Kartlı Kilit Kiti",
+        "Engelden Kaçan Robot Kiti",
+        "3'ü 1 Arada Robot Kiti",
+        "Arduino Proje Seti (56 parça)"
+      ],
+      "etiketler": "#arduino #servo #sg90 #robotik #robotkol #elektronik #mesleklisesi #atolyeelektronik"
+    },
+    {
+      "id": "hc06",
+      "handle": "hc-06-bluetooth-kablosuz-seri-haberlesme-modulu",
+      "ad": "HC-06 Bluetooth Modülü",
+      "soru": "Robotu telefondan nasıl yönetirsin?",
+      "alt": "Kablosuz seri haberleşmenin en kolay yolu.",
+      "nedir": [
+        "Bluetooth ile **kablosuz seri haberleşme** modülü",
+        "Telefonla eşleşir, gelen veriyi Arduino'ya aktarır",
+        "Varsayılan hız 9600 baud, eşleşme şifresi genelde 1234"
+      ],
+      "nasil": [
+        "Modülün **TX** ucu Arduino RX'e, **RX** ucu Arduino TX'e bağlanır",
+        "Modülün RX girişine 5 V yerine gerilim bölücüyle ~3,3 V verilmesi önerilir",
+        "Telefondaki Bluetooth terminal uygulamasından harf gönderilir, Arduino karşılığını yapar"
+      ],
+      "projeler": [
+        "Bluetooth kontrollü robot araba",
+        "Telefondan lamba/röle açıp kapatma",
+        "Sensör verisini telefona gönderme"
+      ],
+      "setler": [
+        "Bluetooth Robot Kiti",
+        "3'ü 1 Arada Robot Kiti",
+        "Akıllı Proje ve Sensör Seti",
+        "Arduino İleri Seviye Set (88 parça)"
+      ],
+      "etiketler": "#arduino #bluetooth #hc06 #robotik #akilliev #elektronik #mesleklisesi #atolyeelektronik"
+    },
+    {
+      "id": "dht11",
+      "handle": "dht11-sicaklik-ve-nem-sensor-modulu",
+      "ad": "DHT11 Sıcaklık ve Nem Sensörü",
+      "soru": "Sınıfın nemi kaç?",
+      "alt": "Tek kablo, iki ölçüm: sıcaklık ve bağıl nem.",
+      "nedir": [
+        "Sıcaklık (**0–50 °C**, ±2 °C) ve nem (**%20–90**, ±%5) ölçen sensör",
+        "Tek veri hattıyla dijital haberleşir",
+        "Modül tipinde pull-up direnci kart üzerindedir"
+      ],
+      "nasil": [
+        "VCC, DATA ve GND olmak üzere 3 bağlantı",
+        "DHT kütüphanesiyle sıcaklık ve nem tek komutla okunur",
+        "Saniyede en fazla bir ölçüm alınması önerilir"
+      ],
+      "projeler": [
+        "LCD ekranlı termometre",
+        "Sera ve saksı izleme",
+        "Nem artınca fanı çalıştıran akıllı oda"
+      ],
+      "setler": [
+        "Sıcaklık-Nem Ekran Kiti",
+        "Arduino Proje Seti (56 parça)",
+        "Akıllı Proje ve Sensör Seti",
+        "Arduino İleri Seviye Set (88 parça)"
+      ],
+      "etiketler": "#arduino #dht11 #sicaklik #nem #sensor #akilliev #mesleklisesi #atolyeelektronik"
+    },
+    {
+      "id": "hcsr501",
+      "handle": "hc-sr501-ayarlanabilir-hareket-sensoru",
+      "ad": "HC-SR501 PIR Hareket Sensörü",
+      "soru": "Koridor ışığı seni nasıl fark eder?",
+      "alt": "Vücut ısısının yaydığı kızılötesindeki değişimi yakalar.",
+      "nedir": [
+        "**Pasif kızılötesi (PIR)** hareket sensörü",
+        "İnsan ve hayvan hareketini birkaç metreden algılar",
+        "Hareket görünce çıkışı HIGH yapar, Arduino'ya tek pin yeter"
+      ],
+      "nasil": [
+        "Üstteki beyaz kubbe (Fresnel lens) görüş alanını genişletir",
+        "Bir trimpot **hassasiyeti/mesafeyi**, diğeri **çıkış süresini** ayarlar",
+        "Açıldıktan sonra kendini ayarlaması için ~1 dakika beklenir"
+      ],
+      "projeler": [
+        "Hırsız alarmı (buzzer + röle)",
+        "Hareketle yanan merdiven ışığı",
+        "Ziyaretçi sayacı"
+      ],
+      "setler": [
+        "Hareket Algılayan Alarm Kiti"
+      ],
+      "etiketler": "#arduino #pir #hcsr501 #hareketsensoru #alarm #akilliev #mesleklisesi #atolyeelektronik"
+    },
+    {
+      "id": "rc522",
+      "handle": "rc522-rfid-okuyucu-13-56-mhz",
+      "ad": "RC522 RFID Okuyucu",
+      "soru": "Kartı okuttuğunda kapı nasıl açılır?",
+      "alt": "Her kartın kendine ait bir kimlik numarası (UID) var.",
+      "nedir": [
+        "**13,56 MHz** RFID/NFC kart okuyucu modül",
+        "Kart ve anahtarlıktaki çipin kimliğini (UID) temassız okur",
+        "Arduino ile **SPI** üzerinden haberleşir"
+      ],
+      "nasil": [
+        "Modül **3,3 V** ile beslenir, 5 V verilmez",
+        "MFRC522 kütüphanesiyle kart UID'si okunur",
+        "Okunan UID kayıtlı listede varsa servo kilidi açar"
+      ],
+      "projeler": [
+        "Kartlı kapı kilidi",
+        "Sınıf yoklama sistemi",
+        "Kartla çalışan makine/dolap"
+      ],
+      "setler": [
+        "RFID Kartlı Kilit Kiti",
+        "Arduino Proje Seti (56 parça)",
+        "Akıllı Proje ve Sensör Seti",
+        "Arduino İleri Seviye Set (88 parça)"
+      ],
+      "etiketler": "#arduino #rfid #rc522 #nfc #akillikilit #elektronik #mesleklisesi #atolyeelektronik"
+    },
+    {
+      "id": "lcd16x2",
+      "handle": "16x2-lcd-ekran-i2c-modullu-mavi-arduino-uyumlu-1",
+      "ad": "16x2 LCD Ekran (I2C Modüllü)",
+      "soru": "Arduino ölçtüğünü sana nasıl söyler?",
+      "alt": "16 karakter, 2 satır. I2C modülüyle sadece 4 kablo.",
+      "nedir": [
+        "2 satırda 16'şar karakter gösteren mavi arka ışıklı ekran",
+        "Arkasındaki **I2C modülü** bağlantıyı 4 kabloya indirir",
+        "Sensör değerini, saati, menüyü yazdırmak için kullanılır"
+      ],
+      "nasil": [
+        "Bağlantı: VCC, GND, **SDA → A4**, **SCL → A5** (Arduino Uno)",
+        "Yazı görünmüyorsa arkadaki mavi trimpotla kontrast ayarlanır",
+        "I2C adresi genelde **0x27** ya da **0x3F**"
+      ],
+      "projeler": [
+        "Termometre ve nem göstergesi",
+        "Dijital saat ve takvim",
+        "Sayaç, skor tabelası, menülü cihaz"
+      ],
+      "setler": [
+        "Sıcaklık-Nem Ekran Kiti",
+        "Dijital Saat Takvim Kiti",
+        "Akıllı Proje ve Sensör Seti",
+        "Arduino İleri Seviye Set (88 parça)"
+      ],
+      "etiketler": "#arduino #lcd #i2c #ekran #elektronik #kodlama #mesleklisesi #atolyeelektronik"
+    },
+    {
+      "id": "role",
+      "handle": "tek-kanalli-5v-role-modulu",
+      "ad": "5V Tek Kanallı Röle Modülü",
+      "soru": "5 voltluk Arduino büyük bir yükü nasıl açar?",
+      "alt": "Küçük sinyal bobini çeker, kontak büyük devreyi anahtarlar.",
+      "nedir": [
+        "Elektromekanik **anahtar**: küçük sinyalle ayrı bir devreyi açıp kapatır",
+        "Kontak uçları: **COM**, **NO** (normalde açık), **NC** (normalde kapalı)",
+        "Modülde sürücü transistör, diyot ve durum LED'i hazır"
+      ],
+      "nasil": [
+        "VCC, GND ve **IN** pini Arduino'ya bağlanır",
+        "IN pini tetiklenince bobin enerjilenir, COM–NO kapanır",
+        "Şebeke gerilimiyle çalışma yalnız öğretmen gözetiminde ve izoleli yapılmalı"
+      ],
+      "projeler": [
+        "Hareket algılayınca lamba yakan alarm",
+        "Toprak kuruyunca çalışan sulama pompası",
+        "Telefondan kontrol edilen priz"
+      ],
+      "setler": [
+        "Hareket Algılayan Alarm Kiti",
+        "Akıllı Proje ve Sensör Seti"
+      ],
+      "etiketler": "#arduino #role #otomasyon #akilliev #elektrik #elektronik #mesleklisesi #atolyeelektronik"
+    },
+    {
+      "id": "28byj48",
+      "handle": "28bjy-48-reduktorlu-step-motor-seti",
+      "ad": "28BYJ-48 Step Motor + ULN2003 Sürücü",
+      "soru": "Motoru tam 45 derece döndürmek mümkün mü?",
+      "alt": "Step motor adım adım döner; kaç adım attığını sen söylersin.",
+      "nedir": [
+        "**5 V** redüktörlü (dişli kutulu) step motor",
+        "**ULN2003** sürücü kartıyla birlikte gelir",
+        "Yarım adım modunda tam tur yaklaşık **4096 adım**"
+      ],
+      "nasil": [
+        "Sürücünün IN1–IN4 pinleri Arduino'nun 4 dijital pinine bağlanır",
+        "Bobinler sırayla enerjilenir, mil her seferinde küçük bir açı döner",
+        "Yavaş ama torklu ve konumu hassastır"
+      ],
+      "projeler": [
+        "Döner sergi tablası",
+        "Otomatik perde / panjur",
+        "Analog ibreli saat ve gösterge"
+      ],
+      "setler": [
+        "Step Motor Konumlandırma Kiti",
+        "Akıllı Proje ve Sensör Seti",
+        "Arduino İleri Seviye Set (88 parça)"
+      ],
+      "etiketler": "#arduino #stepmotor #28byj48 #uln2003 #robotik #elektronik #mesleklisesi #atolyeelektronik"
+    },
+    {
+      "id": "tp4056",
+      "handle": "tp4056-type-c-1s-3-7v-li-po-li-ion-pil-sarj-devresi",
+      "ad": "TP4056 Type-C Şarj Modülü",
+      "soru": "Robotunun pilini her seferinde değiştiriyor musun?",
+      "alt": "Telefon şarj aletiyle 18650 pili doldur.",
+      "nedir": [
+        "Tek hücre **Li-ion / Li-Po** pil şarj modülü",
+        "Pili **4,2 V**'a kadar güvenli şekilde doldurur",
+        "Type-C girişli: telefon şarj aletiyle çalışır"
+      ],
+      "nasil": [
+        "**B+ / B−** uçlarına pil bağlanır",
+        "Şarj sürerken kırmızı LED, dolunca diğer LED yanar",
+        "Pil yuvasıyla birlikte kullanılınca şarjlı güç kaynağı olur"
+      ],
+      "projeler": [
+        "Şarj edilebilir robot araba",
+        "Taşınabilir sensör ve ölçüm cihazı",
+        "El feneri ve mini powerbank"
+      ],
+      "setler": [
+        "Şarj Edilebilir Güç Seti",
+        "Robot kitlerinin 18650'li versiyonları"
+      ],
+      "etiketler": "#tp4056 #18650 #liion #sarj #arduino #robotik #elektronik #atolyeelektronik"
+    },
+    {
+      "id": "rtc1302",
+      "handle": "ds1302-rtc-gercek-zamanli-saat-modulu-pil-dahil",
+      "ad": "DS1302 RTC Saat Modülü",
+      "soru": "Elektrik kesilince Arduino saati nasıl unutmaz?",
+      "alt": "Kendi pili olan küçük bir saat kartı.",
+      "nedir": [
+        "**Gerçek zamanlı saat** (RTC) modülü",
+        "Saniye, dakika, saat, gün, ay ve yılı tutar",
+        "Üzerindeki düğme pil sayesinde enerji kesilse de saymaya devam eder"
+      ],
+      "nasil": [
+        "3 veri hattı: **CE (RST)**, **I/O (DAT)**, **SCLK (CLK)**",
+        "Saat bir kez ayarlanır, sonra Arduino istediğinde okur",
+        "LCD ekranla birleşince dijital saat olur"
+      ],
+      "projeler": [
+        "Dijital saat ve takvim",
+        "Belirli saatte çalışan sulama veya zil",
+        "Tarih-saatli veri kaydı"
+      ],
+      "setler": [
+        "Dijital Saat Takvim Kiti"
+      ],
+      "etiketler": "#arduino #rtc #ds1302 #saat #elektronik #kodlama #mesleklisesi #atolyeelektronik"
+    },
+    {
+      "id": "breadboard830",
+      "handle": "buyukboy-breadboard-830-pin",
+      "ad": "Breadboard 830 Delik",
+      "soru": "Lehim yapmadan devre kurulur mu?",
+      "alt": "Kur, dene, sök, yeniden kur. Breadboard tam bunun için.",
+      "nedir": [
+        "**Lehimsiz** devre kurma tahtası (830 delik)",
+        "Delikler içeriden metal şeritlerle gruplar halinde bağlıdır",
+        "Deneme ve ders devreleri için tekrar tekrar kullanılır"
+      ],
+      "nasil": [
+        "Kenardaki **+ / −** rayları boydan boya besleme taşır",
+        "Ortadaki 5'li dikey gruplar kendi içinde birbirine bağlıdır",
+        "Orta kanal, entegrenin iki sırasını birbirinden ayırır"
+      ],
+      "projeler": [
+        "İlk LED ve buton devresi",
+        "Sensörleri Arduino'ya bağlama",
+        "Lehimden önce devreyi deneme"
+      ],
+      "setler": [
+        "Arduino Proje Seti (56 parça)",
+        "Temel Elektronik Deney Seti",
+        "Endüstriyel Elektronik Uygulama Seti",
+        "Fen Deney Seti"
+      ],
+      "etiketler": "#breadboard #elektronik #devre #arduino #stem #fen #mesleklisesi #atolyeelektronik"
+    },
+    {
+      "id": "irkumanda",
+      "handle": "ir-alici-verici-kumanda-seti-arduino-uyumlu",
+      "ad": "IR Alıcı ve Kumanda Seti",
+      "soru": "Televizyon kumandası Arduino'ya da komut verir mi?",
+      "alt": "Her tuş kızılötesi ışıkla kendine ait bir kod yollar.",
+      "nedir": [
+        "Kızılötesi (**IR**) kumanda ve alıcı modülü",
+        "Kumandadaki her tuş farklı bir sayısal kod gönderir",
+        "Alıcı modül bu kodu çözüp Arduino'ya iletir"
+      ],
+      "nasil": [
+        "Alıcının sinyal pini Arduino'nun dijital pinine bağlanır",
+        "IRremote kütüphanesiyle tuş kodu okunur",
+        "Her koda bir görev atanır: ileri, geri, aç, kapat"
+      ],
+      "projeler": [
+        "Kumandalı robot araba",
+        "Kumandayla açılıp kapanan LED/röle",
+        "Kumandalı servo ve motor kontrolü"
+      ],
+      "setler": [
+        "IR Kumandalı Robot Kiti",
+        "3'ü 1 Arada Robot Kiti",
+        "Arduino Proje Seti (56 parça)",
+        "Akıllı Proje ve Sensör Seti"
+      ],
+      "etiketler": "#arduino #ir #kumanda #kizilotesi #robotik #elektronik #mesleklisesi #atolyeelektronik"
+    },
+    {
+      "id": "l298n",
+      "handle": "l298n-dual-motor-surucu-modulu",
+      "ad": "L298N Motor Sürücü",
+      "soru": "Arduino motoru neden doğrudan çeviremez?",
+      "alt": "Pin başına ~40 mA verir, motor ise yüzlerce mA ister. Aradaki köprü: L298N.",
+      "nedir": [
+        "Çift **H-köprüsü** içeren motor sürücü modülü",
+        "Aynı anda **2 DC motoru** ya da 1 step motoru sürer",
+        "Motor beslemesi 5–35 V, kanal başına ~2 A"
+      ],
+      "nasil": [
+        "**IN1-IN4** pinleri motorun dönüş yönünü belirler",
+        "**ENA / ENB** pinlerine PWM verilerek hız ayarlanır",
+        "Arduino yalnız sinyal gönderir, gücü pil kutusu sağlar"
+      ],
+      "projeler": [
+        "Robot araba ve çizgi izleyen robot",
+        "Bluetooth veya kumandayla yönetilen araç",
+        "Küçük konveyör bant ve vinç modelleri"
+      ],
+      "setler": [
+        "Çizgi İzleyen Robot Kiti",
+        "Engelden Kaçan Robot Kiti",
+        "Bluetooth Robot Kiti",
+        "IR Kumandalı Robot Kiti"
+      ],
+      "etiketler": "#arduino #l298n #motorsurucu #robotik #robotaraba #elektronik #mesleklisesi #atolyeelektronik"
+    }
+  ]
+}
