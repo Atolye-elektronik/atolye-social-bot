@@ -1030,3 +1030,4 @@
 {"an": "2026-10-29T11:38", "kanal": "pttavm", "no": "PTT-7136M842H-291026", "kod": "AESG905", "adet": 1, "dusum": {"AESG90": 5}, "kuru": false}
 {"an": "2026-10-29T11:48", "kanal": "hepsiburada", "no": "4782777940", "kod": "AEPY18650-2", "adet": 5, "dusum": {"AEPY18650": 10}, "kuru": false}
 {"an": "2026-10-29T11:58", "kanal": "hepsiburada", "no": "4724247450", "kod": "AEPOT10K-6", "adet": 1, "dusum": {"AEPOT10K": 6}, "kuru": false}
+{"an": "2026-10-29T12:58", "kanal": "hepsiburada", "no": "4208169176", "kod": "AE3-6VMTR4", "adet": 1, "dusum": {"AE3-6VMTR": 4}, "kuru": false}
