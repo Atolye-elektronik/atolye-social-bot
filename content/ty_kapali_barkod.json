@@ -1,5 +1,7 @@
 {
  "_not": "19.09.2026: kapatma geri alindi, liste bos. Barkod eklenirse kanallar._barkodlar o ilana stok basmaz.",
  "TYBPT2Q0O7Y1KGYG90": "04.10.2026 Lodose buzzer (AEBZZR5V ortak, min adet yok, tek adette -31 TL) kullanici karari: pasif",
- "TYBRAWXK3UZY5HUP72": "25.10.2026 ROBIZ markasi ortak ilani (AEPYAA2 2'li AA pil kutusu) - IPR marka hakki ihlali bildirimi; kullanici karari: cekil, kendi markali ilan acildi"
+ "TYBRAWXK3UZY5HUP72": "25.10.2026 ROBIZ markasi ortak ilani (AEPYAA2 2'li AA pil kutusu) - IPR marka hakki ihlali bildirimi; kullanici karari: cekil, kendi markali ilan acildi",
+ "869TIEE736171": "29.10.2026 ESP32 30 PIN ortak ilan (stockCode AEESP32TC38-2); bizdeki urun 38 pin, dogru ilan 2920000600100. Stok 0 basildi, dagitim dokunmaz.",
+ "8680618401486": "29.10.2026 Powermaster ESP32 ilani (AEESP32TC38), 11.09 SPM marka ihlali ile kapali/arsivde; stok basilmaz."
 }

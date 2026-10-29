@@ -170,6 +170,16 @@ def _kanal_kodlari_duzeltilmis(hedef, kanal):
 def stok_bas_hepsiburada(hedef, kuru=True):
     import hepsiburada_client as hb
     kodlar = _kanal_kodlari_duzeltilmis(hedef, "hepsiburada")
+    # Yanlis urune bagli HB ilanlari: merchantSku bizim kodla ayni ama ilan baska urun.
+    # Her dagitimda 0 basilir (29.10: AEESP32TC = 30 pin ilan, bizdeki 38 pin; stok
+    # 11.09'da elle 0'lanmisti, dagitim geri acti ve 30 pin siparis geldi).
+    try:
+        kapali = json.load(open(os.path.join(KOK, "content", "hb_kapali_sku.json"), encoding="utf-8"))
+    except FileNotFoundError:
+        kapali = {}
+    for k in kapali:
+        if not k.startswith("_"):
+            kodlar[k] = 0
     items = [{"merchantSku": k, "availableStock": int(v)} for k, v in kodlar.items()]
     if kuru:
         return "kuru: %d sku" % len(items)
