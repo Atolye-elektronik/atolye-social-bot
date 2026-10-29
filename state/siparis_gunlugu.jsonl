@@ -1028,3 +1028,4 @@
 {"an": "2026-10-29T10:58", "kanal": "hepsiburada", "no": "4160140729", "kod": "AEESP32TC", "adet": 1, "dusum": {"AEESP32TC": 1}, "kuru": false}
 {"an": "2026-10-29T11:13", "kanal": "hepsiburada", "no": "4416123624", "kod": "AEPY18650T", "adet": 2, "dusum": {"AEPY18650T": 2}, "kuru": false}
 {"an": "2026-10-29T11:38", "kanal": "pttavm", "no": "PTT-7136M842H-291026", "kod": "AESG905", "adet": 1, "dusum": {"AESG90": 5}, "kuru": false}
+{"an": "2026-10-29T11:48", "kanal": "hepsiburada", "no": "4782777940", "kod": "AEPY18650-2", "adet": 5, "dusum": {"AEPY18650": 10}, "kuru": false}
