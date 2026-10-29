@@ -1,6 +1,191 @@
 [
   {
     "shipmentAddress": {
+      "id": 9920867875,
+      "firstName": "hakan ahmet",
+      "lastName": "kök",
+      "company": "",
+      "address1": "Kırıkkale pınar sitesi D block no6 ",
+      "address2": "",
+      "city": "Muğla",
+      "cityCode": 48,
+      "district": "Fethiye",
+      "districtId": 758,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "48000",
+      "countryCode": "TR",
+      "neighborhoodId": 68138,
+      "neighborhood": "Karagedik Mah",
+      "phone": null,
+      "fullAddress": "Kırıkkale pınar sitesi D block no6     Fethiye Muğla",
+      "fullName": "hakan ahmet kök"
+    },
+    "orderNumber": "11761084108",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2949.0,
+    "packageGrossAmount": 2949.0,
+    "totalDiscount": 75.0,
+    "packageSellerDiscount": 75.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 75.0,
+    "discountDisplays": [
+      {
+        "displayName": " - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 75
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9920867874,
+      "firstName": "hakan ahmet",
+      "lastName": "kök",
+      "company": "",
+      "address1": "Kırıkkale pınar sitesi D block no6 ",
+      "address2": "",
+      "city": "Muğla",
+      "cityCode": 48,
+      "district": "Fethiye",
+      "districtId": 758,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "48000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 68138,
+      "neighborhood": "Karagedik Mah",
+      "phone": null,
+      "fullAddress": "Kırıkkale pınar sitesi D block no6     Fethiye Muğla",
+      "fullName": "hakan ahmet kök"
+    },
+    "customerFirstName": "hakan ahmet",
+    "customerEmail": "pf+46wq8nxl@trendyolmail.com",
+    "customerId": 69692562,
+    "supplierId": 0,
+    "customerLastName": "kök",
+    "id": 4286019288,
+    "channelId": 1,
+    "shipmentPackageId": 4286019288,
+    "cargoTrackingNumber": 7270038441785459,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 17 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2949.0,
+        "lineGrossAmount": 2949.0,
+        "discount": 75.0,
+        "lineTotalDiscount": 75.0,
+        "lineSellerDiscount": 75.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "7000050008",
+            "lineItemPrice": 2874.0,
+            "lineItemDiscount": 75.0,
+            "lineItemSellerDiscount": 75.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6131825246,
+        "lineId": 6131825246,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2874.0,
+        "lineUnitPrice": 2874.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 20,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1793272772911,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1793261973845,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1793261976096,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1793262236453,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1793393940000,
+    "estimatedDeliveryEndDate": 1793739540000,
+    "totalPrice": 2874.0,
+    "packageTotalPrice": 2874.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1793393940000,
+    "fastDelivery": true,
+    "originShipmentDate": 1793261973836,
+    "lastModifiedDate": 1793262236453,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 11005454457,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9920144798,
       "firstName": "Polatcan",
       "lastName": "ulu",
