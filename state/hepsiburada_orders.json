@@ -910,6 +910,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ae341a5-e63c-adfc-078e-e49606060606",
+      "status": "Open",
+      "customerId": "3640cfff-0490-4fd6-84dd-48411b313a8b",
+      "orderDate": "2026-10-29T15:52:51",
+      "dueDate": "2026-10-30T18:30:00",
+      "barcode": "62955347325445",
+      "packageNumber": "5534732544",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": " 2863 Sk. S.S. KUZEY AKDENİZ KOOP. No:21 (Kırkgöz Sanayi Sitesi)  KÖMÜRCÜLER DÖŞEMEALTI Antalya",
+      "recipientName": "Çağdan Ercan",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KÖMÜRCÜLER",
+      "shippingTown": "DÖŞEMEALTI",
+      "shippingCity": "Antalya",
+      "email": "4208169176_5534732544@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Çağdan Ercan",
+      "billingAddress": "2863. Sk. Hegza Tasarım No:21 KÖMÜRCÜLER DÖŞEMEALTI Antalya",
+      "billingCity": "Antalya",
+      "billingTown": "DÖŞEMEALTI",
+      "billingDistrict": "KÖMÜRCÜLER",
+      "billingPostalCode": "07190",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 384.2
+      },
+      "items": [
+        {
+          "lineItemId": "6ae341a4-1521-82e6-529f-f33506060606",
+          "listingId": "353b5f2f-e329-4cf2-86b0-2a536ededae2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EATWVS",
+          "merchantSku": "AE3-6VMTR5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 384.2
+          },
+          "vat": 64.03,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 384.2
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 81.36
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 67.8
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 67.8
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 452
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 452
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Dc Sarı Motor + Tekerlek / 4 Adet",
+          "orderNumber": "4208169176",
+          "orderDate": "2026-10-29T15:52:51",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR45",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001688556195.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "ÇAĞDAN ERCAN",
+      "estimatedArrivalDate": "2026-11-04T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
