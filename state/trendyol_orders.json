@@ -119,7 +119,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "2920000600117",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 1179.0,
         "lineUnitPrice": 1179.0,
         "fastDeliveryOptions": [
@@ -128,7 +128,7 @@
           }
         ],
         "productCategoryId": 4391,
-        "commission": null,
+        "commission": 20,
         "businessUnit": "Hobby",
         "defectiveClaimListingInsight": ""
       }
@@ -144,10 +144,14 @@
       {
         "createdDate": 1793228012433,
         "status": "Created"
+      },
+      {
+        "createdDate": 1793253733962,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1793393940000,
@@ -158,7 +162,7 @@
     "agreedDeliveryDate": 1793393940000,
     "fastDelivery": true,
     "originShipmentDate": 1793228006345,
-    "lastModifiedDate": 1793228012433,
+    "lastModifiedDate": 1793253733962,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
