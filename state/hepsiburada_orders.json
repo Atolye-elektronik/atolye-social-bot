@@ -130,6 +130,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ae38a0e-2364-764b-dea6-786406060606",
+      "status": "Open",
+      "customerId": "5be23eca-580b-440e-9936-0ce164e37310",
+      "orderDate": "2026-10-29T21:01:48",
+      "dueDate": "2026-10-30T18:30:00",
+      "barcode": "62955348311917",
+      "packageNumber": "5534831191",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "mimarsinan sinan mahhellesi tepe sokak no35 kat2 MİMAR SİNAN SİLİVRİ İstanbul",
+      "recipientName": "Gülay şekerci",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MİMAR SİNAN",
+      "shippingTown": "SİLİVRİ",
+      "shippingCity": "İstanbul",
+      "email": "4336095678_5534831191@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Gülay şekerci",
+      "billingAddress": "mimarsinan sinan mahhellesi tepe sokak no35 kat2 MİMAR SİNAN SİLİVRİ İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "SİLİVRİ",
+      "billingDistrict": "MİMAR SİNAN",
+      "billingPostalCode": "34570",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 188
+      },
+      "items": [
+        {
+          "lineItemId": "6ae38a0d-1c2d-a034-6ca1-d16606060606",
+          "listingId": "dbb4549e-5ceb-4923-b2f5-eca2ae52e1a2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPD07X",
+          "merchantSku": "AETEMDEF",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "vat": 31.33,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 31.96
+          },
+          "commissionRate": 17,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 188
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Temrin Defteri",
+          "orderNumber": "4336095678",
+          "orderDate": "2026-10-29T21:01:48",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901069996298",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033336619.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Gülay şekerci",
+      "estimatedArrivalDate": "2026-11-04T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
