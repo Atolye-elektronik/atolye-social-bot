@@ -1034,3 +1034,4 @@
 {"an": "2026-10-29T13:29", "kanal": "trendyol", "no": "11762056752", "kod": "AETEMDEF", "adet": 2, "dusum": {"AETEMDEF": 2}, "kuru": false}
 {"an": "2026-10-29T13:43", "kanal": "trendyol", "no": "11762101968", "kod": "AEPY18650-2", "adet": 1, "dusum": {"AEPY18650": 2}, "kuru": false}
 {"an": "2026-10-29T15:03", "kanal": "idefix", "no": "IDE6ae3234310932", "kod": "AETTS3P", "adet": 1, "dusum": {"AE5X100YT": 1, "AE5X100DT": 1, "AEKNTKLM": 1}, "kuru": false}
+{"an": "2026-10-29T15:23", "kanal": "n11", "no": "228749172422", "kod": "AE2WDEKRBT", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
