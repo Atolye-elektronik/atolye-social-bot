@@ -1,4 +1,135 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ae50319-7c57-29a3-9c03-3a1d06060606",
+      "status": "Open",
+      "customerId": "6b55cec3-bedc-43b3-a5ea-3fbcecbf3663",
+      "orderDate": "2026-10-30T23:50:31",
+      "dueDate": "2026-10-31T18:30:00",
+      "barcode": "62955353033369",
+      "packageNumber": "5535303336",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Camikebir mah. Harman sok. No:4 CAMİKEBİR BAYRAMİÇ Çanakkale",
+      "recipientName": "Berkay Yıldız",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "CAMİKEBİR",
+      "shippingTown": "BAYRAMİÇ",
+      "shippingCity": "Çanakkale",
+      "email": "4335534073_5535303336@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Berkay Yıldız",
+      "billingAddress": "Camikebir mah. Harman sok. No:4 CAMİKEBİR BAYRAMİÇ Çanakkale",
+      "billingCity": "Çanakkale",
+      "billingTown": "BAYRAMİÇ",
+      "billingDistrict": "CAMİKEBİR",
+      "billingPostalCode": "17700",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 114
+      },
+      "items": [
+        {
+          "lineItemId": "6ae50317-6d61-03c8-9ebf-eb8b06060606",
+          "listingId": "fd59b995-e684-4370-838e-7aa26dedd56b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000FOY2RK",
+          "merchantSku": "AEDC125B",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "vat": 19,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 20.52
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 114
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 6 Adet - 2 Pin Siyah Anahtar Switch Mini Buton Kcd1 Plastik Açma Kapama On / Off",
+          "orderNumber": "4335534073",
+          "orderDate": "2026-10-30T23:50:31",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELDC125B001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001832081235.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Berkay Yıldız",
+      "estimatedArrivalDate": "2026-11-07T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
