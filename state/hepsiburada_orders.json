@@ -390,6 +390,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ae461d4-3549-f923-70c9-f5da06060606",
+      "status": "Open",
+      "customerId": "a8b13e81-689a-4cdb-bb67-d9b3dc694744",
+      "orderDate": "2026-10-30T12:22:26",
+      "dueDate": "2026-10-30T18:30:00",
+      "barcode": "62955350734069",
+      "packageNumber": "5535073406",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Alıçdağ Sk. Park Armoni sitesi No 25 A Daire 36 PAMUKLAR YENİMAHALLE Ankara",
+      "recipientName": "Ali Rıza ŞEN",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "PAMUKLAR",
+      "shippingTown": "YENİMAHALLE",
+      "shippingCity": "Ankara",
+      "email": "4645397978_5535073406@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Ali Rıza ŞEN",
+      "billingAddress": "Alıçdağ Sk.Park Armoni sitesi Daire 36 PAMUKLAR YENİMAHALLE Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "YENİMAHALLE",
+      "billingDistrict": "PAMUKLAR",
+      "billingPostalCode": "06210",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1222
+      },
+      "items": [
+        {
+          "lineItemId": "6ae461d3-854f-cff7-db31-577606060606",
+          "listingId": "0fa60994-9c9e-4ea4-95d6-f798f8c5d97f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPA5S1",
+          "merchantSku": "AEHC06RAK-LI",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 1222
+          },
+          "vat": 203.67,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 1222
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 219.96
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1222
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1222
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Bluetooth Kontrollü Robot Kiti - 18650 Pil Yuvalı Tam Set (Arduino + Motor Sürücü)",
+          "orderNumber": "4645397978",
+          "orderDate": "2026-10-30T12:22:26",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901611519487",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033127953.jpg",
+          "deci": 2
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "ALİ RIZA ŞEN",
+      "estimatedArrivalDate": "2026-11-02T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
