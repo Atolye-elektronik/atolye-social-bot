@@ -105,6 +105,12 @@ def eksikleri_uret(kok: str | pathlib.Path = "posts/media") -> int:
     # 01-kanca.jpg oldugu icin hikaye surumu hic uretilmedi ve hikaye kirpildi.
     # Her carousel klasorunun ILK slaydi (01-*) hikayeye gider.
     hedefler += sorted(p for p in kok.glob("carousel/*/01-*") if p.suffix.lower() in (".jpg", ".jpeg", ".png"))
+    # 01.11.2026: kanca/, bilgi/ ve bayram/ klasorleri taranmiyordu. Hikaye surumu
+    # publish sirasinda runner'da uretiliyor ama depoya itilmedigi icin raw URL 404
+    # veriyordu -> Instagram "Only photo or video can be accepted" (29-31.10 hikayeleri).
+    for alt in ("kanca", "bilgi", "video-slayt"):
+        hedefler += sorted(p for p in kok.glob(f"{alt}/*/01-*") if p.suffix.lower() in (".jpg", ".jpeg", ".png"))
+    hedefler += sorted(p for p in kok.glob("bayram/*") if p.suffix.lower() in (".jpg", ".jpeg", ".png"))
     n = 0
     for p in hedefler:
         if EK in p.stem or hikaye_yolu(p).exists():
