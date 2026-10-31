@@ -1,1 +1,381 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 9934546842,
+      "firstName": "yaman",
+      "lastName": "samiroglu",
+      "company": "",
+      "address1": "KAYABAŞI MAH. KAYAŞEHİR BUL. NO: 40C İÇ KAPI NO: 98 BAŞAKŞEHİR",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Başakşehir",
+      "districtId": 42,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 28670,
+      "neighborhood": "Başak Mah",
+      "phone": null,
+      "fullAddress": "KAYABAŞI MAH. KAYAŞEHİR BUL. NO: 40C İÇ KAPI NO: 98 BAŞAKŞEHİR     Başakşehir İstanbul",
+      "fullName": "yaman samiroglu"
+    },
+    "orderNumber": "11769792058",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 577.0,
+    "packageGrossAmount": 577.0,
+    "totalDiscount": 51.54,
+    "packageSellerDiscount": 51.54,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 51.54,
+    "discountDisplays": [
+      {
+        "displayName": " Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 40
+      },
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 11.54
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9934546836,
+      "firstName": "yaman",
+      "lastName": "samiroglu",
+      "company": "",
+      "address1": "KAYABAŞI MAH. KAYAŞEHİR BUL. NO: 40C İÇ KAPI NO: 98 BAŞAKŞEHİR",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Başakşehir",
+      "districtId": 42,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 28670,
+      "neighborhood": "Başak Mah",
+      "phone": null,
+      "fullAddress": "KAYABAŞI MAH. KAYAŞEHİR BUL. NO: 40C İÇ KAPI NO: 98 BAŞAKŞEHİR     Başakşehir İstanbul",
+      "fullName": "yaman samiroglu"
+    },
+    "customerFirstName": "yaman",
+    "customerEmail": "pf+25w3o42k@trendyolmail.com",
+    "customerId": 41604214,
+    "supplierId": 0,
+    "customerLastName": "samiroglu",
+    "id": 4292387203,
+    "channelId": 1,
+    "shipmentPackageId": 4292387203,
+    "cargoTrackingNumber": 7270038506481098,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AET2WDRBT-LI",
+        "sku": "AET2WDRBT-LI",
+        "stockCode": "AET2WDRBT-LI",
+        "productName": "2WD Robot Araba Kiti - 18650 Pil Yuvalı Set AET2WDRBT-LI, one size",
+        "productCode": 1659951802,
+        "contentId": 1659951802,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 577.0,
+        "lineGrossAmount": 577.0,
+        "discount": 51.54,
+        "lineTotalDiscount": 51.54,
+        "lineSellerDiscount": 51.54,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "7010326344",
+            "lineItemPrice": 525.46,
+            "lineItemDiscount": 51.54,
+            "lineItemSellerDiscount": 51.54,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6140680088,
+        "lineId": 6140680088,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "AET2WDRBT-LI",
+        "orderLineItemStatusName": "Picking",
+        "price": 525.46,
+        "lineUnitPrice": 525.46,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 1011,
+        "commission": 19,
+        "businessUnit": "Toys",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1793491285331,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1793480508933,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1793480515540,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1793480546678,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1793653140000,
+    "estimatedDeliveryEndDate": 1793912340000,
+    "totalPrice": 525.46,
+    "packageTotalPrice": 525.46,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1793653140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1793480508922,
+    "lastModifiedDate": 1793480546678,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 11012695939,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
+      "id": 9933888307,
+      "firstName": "Arzu",
+      "lastName": "Karaman",
+      "company": "",
+      "address1": "961 Sokak No:23 Kat:2 İç Kapı No: 4 52200",
+      "address2": "",
+      "city": "Ordu",
+      "cityCode": 52,
+      "district": "Altınordu",
+      "districtId": 101087,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "52000",
+      "countryCode": "TR",
+      "neighborhoodId": 69026,
+      "neighborhood": "Karşıyaka Mah",
+      "phone": null,
+      "fullAddress": "961 Sokak No:23 Kat:2 İç Kapı No: 4 52200     Altınordu Ordu",
+      "fullName": "Arzu Karaman"
+    },
+    "orderNumber": "11769431132",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 2949.0,
+    "packageGrossAmount": 2949.0,
+    "totalDiscount": 98.98,
+    "packageSellerDiscount": 98.98,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 98.98,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 58.98
+      },
+      {
+        "displayName": " Mağazasını Takip Ettin, Kuponun Hazır! 🧑‍🤝‍🧑🌟",
+        "discountAmount": 40
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9933888306,
+      "firstName": "Arzu",
+      "lastName": "Karaman",
+      "company": "",
+      "address1": "961 Sokak No:23 Kat:2 İç Kapı No: 4 52200",
+      "address2": "",
+      "city": "Ordu",
+      "cityCode": 52,
+      "district": "Altınordu",
+      "districtId": 101087,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "52000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 69026,
+      "neighborhood": "Karşıyaka Mah",
+      "phone": null,
+      "fullAddress": "961 Sokak No:23 Kat:2 İç Kapı No: 4 52200     Altınordu Ordu",
+      "fullName": "Arzu Karaman"
+    },
+    "customerFirstName": "Arzu",
+    "customerEmail": "pf+rvo26eko@trendyolmail.com",
+    "customerId": 76510828,
+    "supplierId": 0,
+    "customerLastName": "Karaman",
+    "id": 4292093459,
+    "channelId": 1,
+    "shipmentPackageId": 4292093459,
+    "cargoTrackingNumber": 7330038503669674,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AETCS18P",
+        "sku": "ATELTCS18P001",
+        "stockCode": "AETCS18P",
+        "productName": "Meslek Lisesi Takım Çantası Seti - 17 Parça Full Set AETCS18P, one size",
+        "productCode": 1587773511,
+        "contentId": 1587773511,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 2949.0,
+        "lineGrossAmount": 2949.0,
+        "discount": 98.98,
+        "lineTotalDiscount": 98.98,
+        "lineSellerDiscount": 98.98,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "7009826451",
+            "lineItemPrice": 2850.02,
+            "lineItemDiscount": 98.98,
+            "lineItemSellerDiscount": 98.98,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6140248884,
+        "lineId": 6140248884,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELTCS18P001",
+        "orderLineItemStatusName": "Picking",
+        "price": 2850.02,
+        "lineUnitPrice": 2850.02,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 2538,
+        "commission": 20,
+        "businessUnit": "Bathroom Construction & Home Improvement",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1793484359963,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1793473573953,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1793473578295,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1793473600631,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1793653140000,
+    "estimatedDeliveryEndDate": 1793912340000,
+    "totalPrice": 2850.02,
+    "packageTotalPrice": 2850.02,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1793653140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1793473573944,
+    "lastModifiedDate": 1793473642912,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 11012349120,
+    "is4P": false
+  }
+]

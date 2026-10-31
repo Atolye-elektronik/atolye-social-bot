@@ -520,6 +520,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ae6572d-d909-ed6a-c39e-e26806060606",
+      "status": "Open",
+      "customerId": "43cd38dc-b5fd-4601-8c83-d45f0dfc5a36",
+      "orderDate": "2026-11-01T00:01:31",
+      "dueDate": "2026-11-02T18:30:00",
+      "barcode": "62955356371020",
+      "packageNumber": "5535637102",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "KOÇYAZI MH. 2220.SK ERDEM SİTESİ E BLOK DAİRE 1 YADA 9 KOÇYAZI MERKEZ Düzce",
+      "recipientName": "AYŞE KAZANCIOĞLU",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KOÇYAZI",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Düzce",
+      "email": "4603512765_5535637102@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Ayşe kazancıoğlu",
+      "billingAddress": "Düzce Valilik Kampüsü F Blok  No:17 il milli eğitim mudurluğu temel eğitim bürosu CAMİKEBİR MERKEZ Düzce",
+      "billingCity": "Düzce",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "CAMİKEBİR",
+      "billingPostalCode": "81010",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 714.79
+      },
+      "items": [
+        {
+          "lineItemId": "6ae6572c-f976-dac4-c37a-adb206060606",
+          "listingId": "81f7452f-be40-40ff-9d6c-4d9269ca0b1d",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUUSCD",
+          "merchantSku": "AEENDELK",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 714.79
+          },
+          "vat": 119.13,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 714.79
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 152.63999
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 133.21
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 133.21
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 848
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 848
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi",
+          "orderNumber": "4603512765",
+          "orderDate": "2026-11-01T00:01:31",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELENDELK001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754823330.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Ayşe kazancıoğlu",
+      "estimatedArrivalDate": "2026-11-05T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
