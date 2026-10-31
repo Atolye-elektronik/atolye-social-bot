@@ -9,7 +9,7 @@
       "dueDate": "2026-10-31T18:30:00",
       "barcode": "62955353033369",
       "packageNumber": "5535303336",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Camikebir mah. Harman sok. No:4 CAMİKEBİR BAYRAMİÇ Çanakkale",
       "recipientName": "Berkay Yıldız",
       "shippingCountryCode": "TR",
@@ -126,6 +126,136 @@
       "customerName": "Berkay Yıldız",
       "estimatedArrivalDate": "2026-11-07T15:30:00Z",
       "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ae5a0b3-f976-dac4-c38a-307206060606",
+      "status": "Open",
+      "customerId": "7317c181-bb83-4488-91ac-14fa59ef00e3",
+      "orderDate": "2026-10-31T11:02:55",
+      "dueDate": "2026-10-31T18:30:00",
+      "barcode": "62955353948089",
+      "packageNumber": "5535394808",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Nilüferköy mh 20. Şirin sk. No:11 aslanlar club karşısı GEÇİT OSMANGAZİ Bursa",
+      "recipientName": "Mustafa Yılmaztepe",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "GEÇİT",
+      "shippingTown": "OSMANGAZİ",
+      "shippingCity": "Bursa",
+      "email": "4137424446_5535394808@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Mustafa Yılmaztepe",
+      "billingAddress": "Nilüferköy mah 20. Şirin sk no:11 GEÇİT OSMANGAZİ Bursa",
+      "billingCity": "Bursa",
+      "billingTown": "OSMANGAZİ",
+      "billingDistrict": "GEÇİT",
+      "billingPostalCode": "16180",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1341.28
+      },
+      "items": [
+        {
+          "lineItemId": "6ae5a0b0-2a18-1c72-ff0a-8e3606060606",
+          "listingId": "33d965a2-c1ae-4c35-8bcc-7d7870ba9b8f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPBMM8",
+          "merchantSku": "AE3IN1ROBOT-LI",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 1341.28
+          },
+          "vat": 223.55,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 1341.28
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 284.04
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 236.72
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 236.72
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1578
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1578
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 3'ü 1 Arada Çok Fonksiyonlu Robot Araba Kiti - 18650 Pil Yuvalı",
+          "orderNumber": "4137424446",
+          "orderDate": "2026-10-31T11:02:55",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901920664748",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033216710.jpg",
+          "deci": 2
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Mustafa adem Yılmaztepe",
+      "estimatedArrivalDate": "2026-11-03T15:30:00Z",
+      "totalDeci": 2,
       "warehouse": {
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
