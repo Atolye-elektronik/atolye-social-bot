@@ -1,5 +1,5 @@
 {
-  "kontrol": "2026-10-31T15:52:24.673992+00:00",
+  "kontrol": "2026-10-31T20:17:53.425388+00:00",
   "akislar": [
     {
       "dosya": "bayram.yml",
@@ -7,7 +7,7 @@
       "beklenen": "2026-10-31T05:00:00+00:00",
       "son_basarili": "2026-10-31T10:49:40+00:00",
       "son_kosu": "2026-10-31T10:49:40+00:00",
-      "gecikme_dk": 652,
+      "gecikme_dk": 917,
       "kacti": false,
       "hatali": false
     },
@@ -17,7 +17,7 @@
       "beklenen": "2026-10-31T01:00:00+00:00",
       "son_basarili": null,
       "son_kosu": "2026-10-31T06:48:08+00:00",
-      "gecikme_dk": 892,
+      "gecikme_dk": 1157,
       "kacti": false,
       "hatali": true
     },
@@ -27,46 +27,46 @@
       "beklenen": "2026-10-26T04:30:00+00:00",
       "son_basarili": "2026-10-26T10:23:28+00:00",
       "son_kosu": "2026-10-26T10:23:28+00:00",
-      "gecikme_dk": 7882,
+      "gecikme_dk": 8147,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "pazaryeri-sync.yml",
       "ad": "Pazaryeri siparis senkronu",
-      "beklenen": "2026-10-31T14:13:00+00:00",
-      "son_basarili": "2026-10-31T12:16:08+00:00",
-      "son_kosu": "2026-10-31T12:16:08+00:00",
-      "gecikme_dk": 99,
-      "kacti": true,
+      "beklenen": "2026-10-31T18:13:00+00:00",
+      "son_basarili": "2026-10-31T18:29:10+00:00",
+      "son_kosu": "2026-10-31T18:29:10+00:00",
+      "gecikme_dk": 124,
+      "kacti": false,
       "hatali": false
     },
     {
       "dosya": "pinterest-pin.yml",
       "ad": "Pinterest gunluk pin",
-      "beklenen": "2026-10-30T18:37:00+00:00",
-      "son_basarili": "2026-10-31T12:04:06+00:00",
-      "son_kosu": "2026-10-31T12:04:06+00:00",
-      "gecikme_dk": 1275,
+      "beklenen": "2026-10-31T18:37:00+00:00",
+      "son_basarili": "2026-10-31T20:10:16+00:00",
+      "son_kosu": "2026-10-31T20:10:16+00:00",
+      "gecikme_dk": 100,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "publish.yml",
       "ad": "Sosyal medya paylasimi",
-      "beklenen": "2026-10-31T09:00:00+00:00",
-      "son_basarili": "2026-10-31T15:07:41+00:00",
-      "son_kosu": "2026-10-31T15:07:41+00:00",
-      "gecikme_dk": 412,
+      "beklenen": "2026-10-31T17:30:00+00:00",
+      "son_basarili": "2026-10-31T19:10:17+00:00",
+      "son_kosu": "2026-10-31T19:10:17+00:00",
+      "gecikme_dk": 167,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "stok-siparis.yml",
       "ad": "Stok merkezi - siparis toplama",
-      "beklenen": "2026-10-31T15:30:00+00:00",
-      "son_basarili": "2026-10-31T15:52:05+00:00",
-      "son_kosu": "2026-10-31T15:52:05+00:00",
+      "beklenen": "2026-10-31T19:55:00+00:00",
+      "son_basarili": "2026-10-31T20:17:05+00:00",
+      "son_kosu": "2026-10-31T20:17:05+00:00",
       "gecikme_dk": 22,
       "kacti": false,
       "hatali": false
@@ -75,9 +75,9 @@
       "dosya": "telegram-ozet.yml",
       "ad": "Telegram gunluk ozet",
       "beklenen": "2026-10-31T11:00:00+00:00",
-      "son_basarili": "2026-10-31T12:40:17+00:00",
-      "son_kosu": "2026-10-31T12:40:17+00:00",
-      "gecikme_dk": 292,
+      "son_basarili": "2026-10-31T15:57:24+00:00",
+      "son_kosu": "2026-10-31T15:57:24+00:00",
+      "gecikme_dk": 557,
       "kacti": false,
       "hatali": false
     },
@@ -87,7 +87,7 @@
       "beklenen": "2026-10-01T04:00:00+00:00",
       "son_basarili": "2026-10-01T04:05:27+00:00",
       "son_kosu": "2026-10-01T04:05:27+00:00",
-      "gecikme_dk": 43912,
+      "gecikme_dk": 44177,
       "kacti": false,
       "hatali": false
     },
@@ -97,7 +97,7 @@
       "beklenen": "2026-10-31T05:15:00+00:00",
       "son_basarili": "2026-10-31T10:56:16+00:00",
       "son_kosu": "2026-10-31T10:56:16+00:00",
-      "gecikme_dk": 637,
+      "gecikme_dk": 902,
       "kacti": false,
       "hatali": false
     }
