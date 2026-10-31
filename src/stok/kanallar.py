@@ -226,8 +226,26 @@ def stok_bas_n11(hedef, kuru=True):
 def stok_bas_idefix(hedef, kuru=True):
     from marketplaces import idefix_client as ix
     bk = _barkodlar()
-    items = [{"barcode": bk[k]["ean"], "inventoryQuantity": int(v)} for k, v in _kanal_kodlari_duzeltilmis(hedef, "idefix").items()
+    istek = _kanal_kodlari_duzeltilmis(hedef, "idefix")
+    items = [{"barcode": bk[k]["ean"], "inventoryQuantity": int(v)} for k, v in istek.items()
              if k in bk and bk[k].get("ean")]
+    # 31.10.2026: TY ilani kapali/arsivli kodlarin barkodu TY katalogundan gelmiyordu;
+    # Idefix'te AETTS3P ve AEYNKSK160 'sifirla' listesindeyken 50 stokla satista kaldi
+    # ve siparis geldi. Eksik kodlarin barkodu Idefix havuzundan (vendorStockCode) alinir.
+    gonderilen = {i["barcode"] for i in items}
+    try:
+        v_id = os.environ["IDEFIX_SATICI_ID"]
+        for pg in range(10):
+            pr = ix.get(f"/pim/pool/{v_id}/list", page=pg, size=100).json().get("products") or []
+            for x in pr:
+                kod, bar = x.get("vendorStockCode") or "", x.get("barcode")
+                if kod in istek and bar and bar not in gonderilen and not (kod in bk and bk[kod].get("ean")):
+                    items.append({"barcode": bar, "inventoryQuantity": int(istek[kod])})
+                    gonderilen.add(bar)
+            if len(pr) < 100:
+                break
+    except Exception as e:  # havuz okunamazsa eski davranis
+        print("! Idefix havuzu okunamadi (%s)" % str(e)[:90])
     if kuru:
         return "kuru: %d barkod" % len(items)
     return ix.post("/pim/catalog/%s/inventory-upload" % os.environ["IDEFIX_SATICI_ID"], {"items": items}).json()
