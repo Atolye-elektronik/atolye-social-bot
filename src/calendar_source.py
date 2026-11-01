@@ -101,7 +101,7 @@ def generate(days: int = 7, dry_run: bool = False) -> list[pathlib.Path]:
         print("Takvimde slot yok.")
         return []
 
-    products = [p for p in shopify_source.fetch_products() if (p.get("images") or [])]
+    products = [p for p in shopify_source.fetch_products() if (p.get("images") or []) and shopify_source.satista_mi(p)]
     if not products:
         print("Gorseli olan urun bulunamadi.")
         return []

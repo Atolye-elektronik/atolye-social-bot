@@ -88,6 +88,39 @@ def fetch_products(limit: int = 250) -> list[dict]:
     return response.json().get("products", [])
 
 
+def satista_mi(product: dict) -> bool:
+    """En az bir varyanti stokta mi (acik API'de variants[].available).
+
+    01.11.2026: stogu sifirlanmis yankeski/kargaburun icin post kuyruga girmisti;
+    kullanici: "stokta olmayan, satisi olmayan postlari atma"."""
+    return any(v.get("available") for v in product.get("variants") or [])
+
+
+def handle_satista_mi(handle: str) -> bool | None:
+    """Urun sayfasi yayinda ve stokta mi. True/False; ag hatasinda None."""
+    import time
+    r = None
+    for bekle in (0, 5, 15):   # magaza sik istekte 429 local_rate_limited donuyor
+        time.sleep(bekle)
+        try:
+            r = requests.get(f"{STORE_URL}/products/{handle}.js",
+                             headers={"User-Agent": "atolye-social-bot"}, timeout=30)
+        except requests.RequestException:
+            continue
+        if r.status_code != 429:
+            break
+    if r is None:
+        return None
+    if r.status_code == 404:
+        return False          # taslak/arsivlenmis urun: link de olu
+    if not r.ok:
+        return None
+    try:
+        return bool(r.json().get("available"))
+    except ValueError:
+        return None
+
+
 def build_caption(product: dict) -> str:
     title = product.get("title", "").strip()
     description = ozet(product.get("body_html", ""))
@@ -107,7 +140,7 @@ def generate(count: int = 3, start_in_hours: int = 24, spacing_hours: int = 24) 
 
     fresh = [
         p for p in products
-        if str(p.get("id")) not in seen and (p.get("images") or [])
+        if str(p.get("id")) not in seen and (p.get("images") or []) and satista_mi(p)
     ]
     if not fresh:
         print("Yeni post üretilecek ürün bulunamadı.")

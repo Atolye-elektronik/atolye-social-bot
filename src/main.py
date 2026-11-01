@@ -20,6 +20,7 @@ from . import (
     pinterest,
     pinterest_studio,
     posts,
+    shopify_source,
     state,
     threads,
     tiktok,
@@ -110,6 +111,20 @@ def _anma_gunu_mu() -> bool:
     return any(g.get("tur") == "anma" and g.get("tarih") == bugun for g in gunler)
 
 
+def _urun_satista_degil(post) -> bool:
+    """Postun linkledigi urunlerin HICBIRI satista degilse True.
+
+    01.11.2026 kullanici kurali: stokta olmayan / satisi olmayan urunun postu
+    atilmaz. Birden fazla urun linkleyen postlar (bilgi serisi) en az biri
+    satistaysa gider. Ag hatasinda engellemez."""
+    import re as _re
+    handles = list(dict.fromkeys(_re.findall(r"atolyeelektronik\.com/products/([A-Za-z0-9_-]+)", post.caption or "")))
+    if not handles:
+        return False
+    sonuclar = [shopify_source.handle_satista_mi(h) for h in handles]
+    return all(x is False for x in sonuclar)
+
+
 def run(only: str | None = None, force: bool = False, max_per_run: int | None = None) -> int:
     all_posts = posts.load_all()
     if not all_posts:
@@ -146,6 +161,12 @@ def run(only: str | None = None, force: bool = False, max_per_run: int | None = 
         # bekleyen kuyruk saatlere yayılarak paylaşılır, akış spam'e dönmez.
         if not only and max_per_run > 0 and yayinlanan >= max_per_run:
             print(f"⏸️  {post.slug} — bu çalışmanın sınırı doldu, sonraki tura kaldı")
+            continue
+
+        bekleyen = [pl for pl in post.platforms
+                     if pl not in SKIP_PLATFORMS and not state.already_published(published_state, post.slug, pl)]
+        if not force and bekleyen and _urun_satista_degil(post):
+            print(f"🚫 {post.slug} — ürün satışta değil / stokta yok, paylaşılmadı")
             continue
 
         gonderildi = False
