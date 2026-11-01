@@ -11,7 +11,8 @@
  },
  "pazarama": {
   "AE2WDEKRBT": "AET2WDRBT",
-  "AE2WDEKRBT-LI": "AE2WDEKRBT"
+  "AE2WDEKRBT-LI": "AE2WDEKRBT",
+  "AEPZRM18650PY": "AEPY18650T"
  },
  "idefix": {
   "AE2WDEKRBT": "AET2WDRBT",
@@ -27,5 +28,6 @@
   "AE2WDEKRBT-N11": "AET2WDRBT",
   "AE2WDEKRBT-LI-N11": "AE2WDEKRBT"
  },
- "_not_20ekim": "20.10.2026: HB HBCV0000EATWVS ilani '3-6V Sari Motor + Tekerlek / 4 Adet' ama merchantSku AE3-6VMTR5 (5'li). 19.09'dan beri 10 satista 5 motor dusuldu (4 olmaliydi)."
+ "_not_20ekim": "20.10.2026: HB HBCV0000EATWVS ilani '3-6V Sari Motor + Tekerlek / 4 Adet' ama merchantSku AE3-6VMTR5 (5'li). 19.09'dan beri 10 satista 5 motor dusuldu (4 olmaliydi).",
+ "_not_01kasim": "01.11.2026: Pazarama ARGEROBO markali eski ilan (code ARGEROBOBarkod284, AEPZRM18650PY) aslinda tekli 18650 pil yuvasi; kod taninmadigi icin stok 50de donuktu, satisi da dusulmuyordu."
 }
