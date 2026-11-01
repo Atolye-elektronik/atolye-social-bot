@@ -93,6 +93,32 @@ def gunun_satisi(hepsi, gun_str):
     return adet, tutar, kanal
 
 
+FEN_AD = {"AEDCM3V-1": "DC motor", "AEPRV-1": "pervane", "AEDUY-1": "duy"}
+
+
+def fen_gecis_uyarisi():
+    """01.11.2026 kullanici istegi: eski tip fen parcalari (yassi motor, kirmizi
+    pervane, renkli duy) bitince haber ver. Toplam stok esigin (200 = yeni tip
+    alim) altina inince eski parca bitti demektir; o gun gorsel+metin gecisi
+    yapilir (content/fen_yeni_gecis.json). Gecis yapilinca dosyaya
+    "gecildi": true yazilir ve uyari susar."""
+    import json
+    try:
+        plan = json.load(open(os.path.join(KOK, "content", "fen_yeni_gecis.json"), encoding="utf-8"))
+        if plan.get("gecildi"):
+            return ""
+        from stok import shopify_admin
+        stok = shopify_admin.stoklari_oku()
+    except Exception as e:  # noqa: BLE001
+        return "❗ Fen parça kontrolü okunamadı: %s" % str(e)[:60]
+    biten = ["%s %d" % (FEN_AD.get(k, k), stok.get(k, 0))
+             for k, esik in plan.get("esik", {}).items() if stok.get(k, esik + 1) <= esik]
+    if not biten:
+        return ""
+    return ("🔁 <b>Fen setlerinde eski parça bitti</b> (%s). Görsel ve metinleri yeni parçalara "
+            "geçirme zamanı." % ", ".join(biten))
+
+
 def metin_kargo():
     """14:00 TR: su an kargoya verilmemis TUM siparisler (kanal kirilimi + liste)."""
     an = bildirim.simdi_tr()
