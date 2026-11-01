@@ -34,5 +34,18 @@
       "Havya, havya sehpası, lehim pompası ve lehim",
       "DT830D multimetre, breadboard, pertinaks, iş gözlüğü, izolebant"
     ]
+  },
+  "4u-1-arada-robot-araba-kiti-bluetooth-ir-engelden-kacan-cizgi-izleyen": {
+    "etiket": "ROBOT PROJESİ",
+    "kanca": "Tek robot, 4 farklı görev. Hangisini önce denersin?",
+    "alt": "Telefonla sür, kumandayla sür, engelden kaç, çizgiyi takip et. Tek kodla.",
+    "kisa_ad": "4'ü 1 Arada Robot Kiti",
+    "maddeler": [
+      "Bluetooth ile telefondan ve IR kumandayla kontrol",
+      "HC-SR04 + servo ile engelden kaçan otonom mod",
+      "4 kanal sensörle siyah çizgiyi takip eden mod",
+      "Renkli bağlantı şeması, QR ile 4 modlu hazır kod"
+    ],
+    "etiketler": "#robotik #arduino #robotkiti #cizgiizleyenrobot #engeldenkacanrobot #kodlama #stem #tubitak #mesleklisesi #atolyeelektronik"
   }
 }
