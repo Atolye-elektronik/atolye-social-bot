@@ -1085,7 +1085,9 @@
  "pasif": [
   "AEESP32TC38",
   "AETYYNKSK1",
-  "AEESP32TC38-2"
+  "AEESP32TC38-2",
+  "AE4KROLE",
+  "AELCDKPAD"
  ],
  "sabit": {},
  "esiksiz": [
@@ -1096,5 +1098,6 @@
   "AELCDKPAD",
   "AE4KROLE-BB",
   "AELCDKPAD-BB"
- ]
+ ],
+ "_not_01kasim_ortak": "AE4KROLE/AELCDKPAD: 3'er adet; kullanici: daha satilabilir kanala 2, digerine 1. Kanal stogu ELLE (TY 2, HB 1); otomatik dagitim disi (pasif). Siparis yine ana stoktan duser."
 }
