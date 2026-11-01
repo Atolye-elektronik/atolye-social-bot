@@ -173,9 +173,10 @@ ARD_X = 300   # robot semalarinda Arduino sol kenari
 L298_X = 800
 
 
-def robot_govde(s, ek_l=(), bes_kullan=False):
+def robot_govde(s, ek_l=(), bes_kullan=False, ek_b=()):
     """IR/BT/engel ortak iskelet: Arduino + L298N + motorlar + pil"""
-    arduino(s, x=ARD_X, pins_r=(("D5", 0.2), ("D6", 0.31), ("D9", 0.42), ("D10", 0.53)) + tuple(ek_l))
+    arduino(s, x=ARD_X, pins_r=(("D5", 0.2), ("D6", 0.31), ("D9", 0.42), ("D10", 0.53)) + tuple(ek_l),
+            pins_b=(("GND", 0.5),) + tuple(ek_b))
     l298n(s, x=L298_X, bes_kullan=bes_kullan)
     motorlar(s, x=L298_X + 430)
     if AA:
@@ -267,15 +268,23 @@ def sema_engel():
     return s
 
 
-def sema_3u1():
-    s = Sema("3'ü 1 Arada Robot Araba Kiti", "Bluetooth + IR Kumanda + Engelden Kaçan — " + ("4'lü AA Pil Kutusu (6V)" if AA else "18650 Pil Yuvası (7.4V)") + "; tek şasi, tek kod", "AE3IN1ROBOT" if AA else "AE3IN1ROBOT-LI",
+def sema_3u1(dort=False):
+    if dort:
+        s = Sema("4'ü 1 Arada Robot Araba Kiti", "Bluetooth + IR Kumanda + Engelden Kaçan + Çizgi İzleyen — " + ("4'lü AA (6V)" if AA else "18650 (7.4V)") + "; tek şasi, tek kod", "AE4IN1ROBOT" if AA else "AE4IN1ROBOT-LI",
+             ["L298N: IN1→D5, IN2→D6, IN3→D9, IN4→D10.",
+              "HC-06: TXD→D0, RXD→D1 (yüklerken çıkarın). IR OUT→D11.",
+              "HC-SR04: TRIG→A0, ECHO→A1. Servo→D3.",
+              "Çizgi sensörü: OUT1…OUT4 → A2…A5 (S1 en sol).",
+              "Mod: telefon A/C/M, kumanda OK/*/#. GND'ler ortak."])
+    else:
+      s = Sema("3'ü 1 Arada Robot Araba Kiti", "Bluetooth + IR Kumanda + Engelden Kaçan — " + ("4'lü AA Pil Kutusu (6V)" if AA else "18650 Pil Yuvası (7.4V)") + "; tek şasi, tek kod", "AE3IN1ROBOT" if AA else "AE3IN1ROBOT-LI",
              ["L298N: IN1→D5, IN2→D6, IN3→D9, IN4→D10 (ENA/ENB jumper takılı).",
               "HC-06: TXD→D0, RXD→D1 (kod yüklerken çıkarın). IR alıcı OUT→D11.",
               "HC-SR04: TRIG→A0, ECHO→A1. SG90 servo sinyal→D3.",
               "HC-06 ve IR alıcı Arduino 5V'tan; HC-SR04 ve servo L298N 5V çıkışından beslenir. Arduino VIN pilden (" + ("6V" if AA else "7.4V") + ").",
               "Tüm GND'ler ortak olmalı. Kod yüklerken pil şalteri kapalı.",
               "Blogdaki 3'ü 1 arada kod: IR tuşuyla ya da telefondan 'A' ile otonom mod."])
-    robot_govde(s, bes_kullan=True)
+    robot_govde(s, bes_kullan=True, ek_b=(("A2", 0.06), ("A3", 0.16), ("A4", 0.26), ("A5", 0.36)) if dort else ())
     s.kutu("sr", 40, 215, 170, 95, RENK["lacivert"], "HC-SR04", "TRIG A0 · ECHO A1", pins=(("", "r", 0.35), (" ", "r", 0.65), ("5V", "l", 0.5)), font=22)
     s.kutu("bt", 40, 345, 170, 95, RENK["lacivert"], "HC-06", "TXD D0 · RXD D1", pins=(("", "r", 0.35), (" ", "r", 0.65)), font=22)
     s.kutu("ir", 40, 475, 170, 90, RENK["lacivert"], "IR ALICI", "OUT D11", pins=(("", "r", 0.5),), font=22)
@@ -294,8 +303,19 @@ def sema_3u1():
     s.yazi(40, 150, "+5V Arduino → HC-06, IR alıcı", RENK["red"], 19, True)
     s.tel("red", [(40, 262.5), (28, 262.5), (28, 300), (8, 300), (8, 705), (230, 705), (230, 676.5), (40, 676.5)]); s.dugum(40, 262.5, "red"); s.dugum(40, 676.5, "red")
     s.tel("red", [(230, 705), (L298_X + 229.6, 705), (L298_X + 229.6, 590)]); s.dugum(230, 705, "red"); s.dugum(L298_X + 229.6, 590, "red")
-    s.yazi(640, 697, "L298N 5V çıkışı → HC-SR04 ve servo beslemesi", RENK["red"], 17)
-    s.tel("blk", [(20, 905), (100, 905)]); s.yazi(40, 770, "GND: tüm modüllerin GND'si ortak hatta", RENK["gri"], 16)
+    s.yazi(640, 697, ("L298N 5V çıkışı → HC-SR04, servo ve çizgi sensörü" if dort else "L298N 5V çıkışı → HC-SR04 ve servo beslemesi"), RENK["red"], 17)
+    s.tel("blk", [(20, 905), (100, 905)])
+    if not dort:
+        s.yazi(40, 770, "GND: tüm modüllerin GND'si ortak hatta", RENK["gri"], 16)
+        return s
+    # 4 kanal çizgi sensörü kartı (sol alt) -> Arduino alt kenarındaki A2-A5
+    s.kutu("cz", 50, 745, 220, 135, RENK["lacivert"], "", "", pins=(("VCC", "t", 0.5), ("GND", "b", 0.75), ("OUT1", "r", 0.15), ("OUT2", "r", 0.38), ("OUT3", "r", 0.62), ("OUT4", "r", 0.85)), font=18)
+    s.yazi(125, 790, "4 KANAL ÇİZGİ", "#fff", 19, True, "middle"); s.yazi(125, 815, "SENSÖRÜ", "#fff", 19, True, "middle"); s.yazi(125, 845, "4x TCRT5000", "#cfd8e3", 14, anchor="middle")
+    for (out, a, renk) in (("OUT1", "A2", "ylw"), ("OUT2", "A3", "cyan"), ("OUT3", "A4", "pnk"), ("OUT4", "A5", "brn")):
+        ox, oy, _ = s.pins[("cz", out)]; ax, ay, _ = s.pins[("ard", a)]
+        s.bagla(renk, ("cz", out), ("ard", a), via=[(ax, oy)])
+    s.tel("red", [(160, 745), (160, 705), (230, 705)]); s.dugum(160, 745, "red")
+    s.tel("blk", [(215, 880), (215, 905), (100, 905)]); s.dugum(215, 880, "blk"); s.dugum(215, 905, "blk")
     return s
 
 
@@ -463,7 +483,7 @@ def sema_cizgi():
 
 SEMALAR = {
     "ir-robot": sema_ir, "cizgi-robot": sema_cizgi,
-    "bluetooth-robot": sema_bt, "engelden-kacan-robot": sema_engel, "3u1-robot": sema_3u1,
+    "bluetooth-robot": sema_bt, "engelden-kacan-robot": sema_engel, "3u1-robot": sema_3u1, "4u1-robot": lambda: sema_3u1(dort=True),
     "dht11-lcd-kiti": sema_dht, "rtc-lcd-kiti": sema_rtc, "pir-alarm-kiti": sema_alarm,
     "rfid-kilit-kiti": sema_rfid, "step-motor-kiti": sema_step,
     "mini-vantilator-seti": sema_vantilator, "fen-deney-seti": sema_fen, "temel-devre-seti": sema_temel,
