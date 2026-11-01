@@ -14,6 +14,16 @@ from .session import OturumDustu, StudioError, saglik_kontrol
 PLATFORM = "tiktok_studio"
 
 
+def _anma_tarihi(ne_zaman) -> bool:
+    import json as _json
+    import pathlib as _pl
+    try:
+        gunler = _json.loads(_pl.Path("content/bayramlar.json").read_text(encoding="utf-8"))["gunler"]
+    except Exception:  # noqa: BLE001
+        return False
+    return any(g.get("tur") == "anma" and g.get("tarih") == ne_zaman.strftime("%m-%d") for g in gunler)
+
+
 def zamanla(gun: int, maks: int) -> int:
     """Yaklaşan postları şimdiden TikTok'un zamanlayıcısına bırakır.
 
@@ -41,6 +51,10 @@ def zamanla(gun: int, maks: int) -> int:
             print(f"⏭️  {post.slug} — publish_at yok, zamanlanamaz (main.py paylaşır)")
             continue
         if not (simdi + upload.EN_ERKEN <= post.publish_at <= sinir):
+            continue
+        # Anma gunlerine (10 Kasim, 15 Temmuz) urun videosu zamanlanmaz (01.11.2026).
+        if "-bayram-" not in post.slug and _anma_tarihi(post.publish_at):
+            print(f"🕯️  {post.slug} — anma gününe denk geliyor, zamanlanmadı")
             continue
         if not post.is_video:
             print(f"⚠️  {post.slug} — TikTok için video gerekiyor, atlandı")
