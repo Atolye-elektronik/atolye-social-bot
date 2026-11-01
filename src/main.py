@@ -65,6 +65,37 @@ def _call(publisher, post):
     return publisher(post.caption, post.media, post.is_video)
 
 
+def _hikaye_bekliyor(post, published_state) -> bool:
+    """IG feed postu son 24 saatte paylasildi ama hikayesi henuz gitmedi mi."""
+    import datetime as _dt
+    if not config.IG_STORY_AUTO:
+        return False
+    if state.already_published(published_state, post.slug, "instagram_story"):
+        return False
+    kayit = published_state.get(post.slug, {}).get("instagram") or {}
+    try:
+        zaman = _dt.datetime.fromisoformat(str(kayit.get("at")))
+    except (TypeError, ValueError):
+        return False
+    return _dt.datetime.now(_dt.timezone.utc) - zaman < _dt.timedelta(hours=24)
+
+
+def _hikaye_dene(post, published_state) -> None:
+    if not config.IG_STORY_AUTO or state.already_published(published_state, post.slug, "instagram_story"):
+        return
+    print(f"→ {post.slug} → instagram hikaye")
+    try:
+        # Feed gorseli 4:5, hikaye 9:16. Ham gorseli hikayeye verince
+        # Instagram saga-sola KIRPIYOR; 9:16 surumunu uretip onu atiyoruz.
+        ham = post.media[0] if isinstance(post.media, list) else post.media
+        hikaye_medya = str(hikaye_gorsel.hikaye_surumu(ham, post.is_video))
+        story_id = instagram.hikaye_yayinla(hikaye_medya, post.is_video)
+        state.mark_published(published_state, post.slug, "instagram_story", str(story_id))
+        print(f"  ✅ hikaye paylaşıldı (id: {story_id})")
+    except Exception as exc:  # noqa: BLE001
+        print(f"  ⚠️  hikaye atılamadı: {exc}")
+
+
 def _anma_gunu_mu() -> bool:
     """Bugun (TR saatiyle) content/bayramlar.json'da tur=anma olan bir gun mu."""
     import datetime as _dt
@@ -131,6 +162,11 @@ def run(only: str | None = None, force: bool = False, max_per_run: int | None = 
                 print(f"⚠️  {post.slug} — {platform} carousel desteklemiyor, atlandı")
                 continue
             if not force and state.already_published(published_state, post.slug, platform):
+                # 01.11.2026: feed postu gitmis ama hikayesi kalmissa yeniden dene.
+                # Eskiden bu 'continue' hikaye adimini da atliyordu; 31.10 hikayeleri
+                # hic tekrar denenmedi. Yalniz son 24 saatte paylasilan postlar icin.
+                if platform == "instagram" and _hikaye_bekliyor(post, published_state):
+                    _hikaye_dene(post, published_state)
                 continue
             if not only and platform in turda_kullanilan:
                 print(f"⏸️  {post.slug} → {platform} — bu turda bu platforma gönderildi, sonraki tura kaldı")
@@ -152,24 +188,8 @@ def run(only: str | None = None, force: bool = False, max_per_run: int | None = 
             # Instagram'a giden her post ayrıca hikaye olarak da paylaşılır.
             # Hikaye hatası postu başarısız saymaz; ayrı anahtarla kaydedilir
             # ki sonraki turda yeniden denensin, feed postu tekrar atılmasın.
-            if (
-                platform == "instagram"
-                and config.IG_STORY_AUTO
-                and not state.already_published(published_state, post.slug, "instagram_story")
-            ):
-                print(f"→ {post.slug} → instagram hikaye")
-                try:
-                    # Feed gorseli 4:5, hikaye 9:16. Ham gorseli hikayeye verince
-                    # Instagram saga-sola KIRPIYOR; 9:16 surumunu uretip onu atiyoruz.
-                    ham = post.media[0] if isinstance(post.media, list) else post.media
-                    hikaye_medya = str(hikaye_gorsel.hikaye_surumu(ham, post.is_video))
-                    story_id = instagram.hikaye_yayinla(hikaye_medya, post.is_video)
-                    state.mark_published(
-                        published_state, post.slug, "instagram_story", str(story_id)
-                    )
-                    print(f"  ✅ hikaye paylaşıldı (id: {story_id})")
-                except Exception as exc:  # noqa: BLE001
-                    print(f"  ⚠️  hikaye atılamadı: {exc}")
+            if platform == "instagram":
+                _hikaye_dene(post, published_state)
 
         # Post en az bir platforma gittiyse bu turun kotasından düşer.
         if gonderildi:
