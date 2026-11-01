@@ -1300,6 +1300,956 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ae78be9-8d43-68e5-5960-0f9306060606",
+      "status": "Open",
+      "customerId": "68e633a5-31b2-439b-9e80-f89097181f10",
+      "orderDate": "2026-11-01T21:58:48",
+      "dueDate": "2026-11-02T18:30:00",
+      "barcode": "62955359784076",
+      "packageNumber": "5535978407",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Bahçelievler mahallesi 1388 sokak no 1 kat:1 BAHÇELİEVLER YÜREĞİR Adana",
+      "recipientName": "Ipek Bolat",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BAHÇELİEVLER",
+      "shippingTown": "YÜREĞİR",
+      "shippingCity": "Adana",
+      "email": "4480186487_5535978407@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Derman Bolat",
+      "billingAddress": "Karacaoğlan mahallesi 3783 sokak no 49 daire 1 kat 1 Yüreğir KARACAOĞLAN YÜREĞİR Adana",
+      "billingCity": "Adana",
+      "billingTown": "YÜREĞİR",
+      "billingDistrict": "KARACAOĞLAN",
+      "billingPostalCode": "01240",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 485.98
+      },
+      "items": [
+        {
+          "lineItemId": "6ae78be8-fd41-7552-3359-174906060606",
+          "listingId": "f5f659b8-af1a-4b31-b735-c4ea981ca045",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003LJ2GF",
+          "merchantSku": "AE16X2LCD-BB",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 222.26
+          },
+          "vat": 37.04,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 222.26
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 47.65
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 42.45
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 42.45
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 18.29
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 18.29
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 264.70999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 264.70999
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roba Iıc I2C Seri 1602A 2X16 Mavi Karakter LCD Modül Display Ekran 5V Beyaz Arka Işık 16X2",
+          "orderNumber": "4480186487",
+          "orderDate": "2026-11-01T21:58:48",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ROBALEIS11146",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/345/{size}/110000353081500.jpg",
+          "deci": 1.1
+        },
+        {
+          "lineItemId": "6ae78be8-fd41-7552-3359-174706060606",
+          "listingId": "de9f679b-7742-4b28-a08c-3611893e3006",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000E8UTAN",
+          "merchantSku": "AEL298N",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 146.08
+          },
+          "vat": 24.35,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 146.08
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 31.32
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 27.9
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 27.9
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 12.02
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 12.02
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 173.98
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 173.98
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik L298N Dual Motor Sürücü Modülü Yüksek Performanslı Elektronik Proje Uyumlu Uzun Ömürlü",
+          "orderNumber": "4480186487",
+          "orderDate": "2026-11-01T21:58:48",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELL298N00001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001681760870.jpg",
+          "deci": 1
+        },
+        {
+          "lineItemId": "6ae78be8-fd41-7552-3359-174a06060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 58.82
+          },
+          "vat": 19.61,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 117.64
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 12.61
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 11.235
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 22.47
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 4.845
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 9.69
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 70.055
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 140.11
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4480186487",
+          "orderDate": "2026-11-01T21:58:48",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Derman Bolat",
+      "estimatedArrivalDate": "2026-11-04T15:30:00Z",
+      "totalDeci": 4.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ae79016-f45e-2976-8a3e-252606060606",
+      "status": "Open",
+      "customerId": "7d60d937-68a6-41fd-85fd-01513405361d",
+      "orderDate": "2026-11-01T22:16:36",
+      "dueDate": "2026-11-02T18:30:00",
+      "barcode": "62955359890474",
+      "packageNumber": "5535989047",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Vatan Cad, Çağla Apt No:37 Dai:5 ATATÜRK ATAŞEHİR İstanbul",
+      "recipientName": "Murat Güreci",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ATATÜRK",
+      "shippingTown": "ATAŞEHİR",
+      "shippingCity": "İstanbul",
+      "email": "4327172542_5535989047@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Dinamika Teknoloji Bilişim Sistemleri San.Tic.Ltd.Şti. ",
+      "billingAddress": "Vatan Cad, Çağla Apt No37 Dai:5  ATATÜRK ATAŞEHİR İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "ATAŞEHİR",
+      "billingDistrict": "ATATÜRK",
+      "billingPostalCode": "34758",
+      "billingCountryCode": "TR",
+      "taxOffice": "Kozyatağı ",
+      "taxNumber": "2970620293",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 229.5
+      },
+      "items": [
+        {
+          "lineItemId": "6ae79015-5644-43fa-53c9-c5ca06060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 5,
+          "price": {
+            "currency": "TRY",
+            "amount": 45.9
+          },
+          "vat": 38.25,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 229.5
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 9.72
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 8.102
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 40.51
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 54.00199
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 270.01
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4327172542",
+          "orderDate": "2026-11-01T22:16:36",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Murat Güreci",
+      "estimatedArrivalDate": "2026-11-05T15:30:00Z",
+      "totalDeci": 5.5,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ae79879-fd41-7552-3383-dada06060606",
+      "status": "Open",
+      "customerId": "ccc1c566-59b1-4593-8b58-5d22ff8f9491",
+      "orderDate": "2026-11-01T22:52:22",
+      "dueDate": "2026-11-02T18:30:00",
+      "barcode": "62955360099956",
+      "packageNumber": "5536009995",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Yuvaköy, Batıkent yolu , cadde no 75 , bina blok : D , Daire no: 94 . (Natura Batıkent) YUVAKÖY YENİMAHALLE Ankara",
+      "recipientName": "Salih Ortakaya",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YUVAKÖY",
+      "shippingTown": "YENİMAHALLE",
+      "shippingCity": "Ankara",
+      "email": "4312350858_5536009995@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Salih Ortakaya",
+      "billingAddress": "Yuva Köyü Küme Evleri Natura Batıkent Sitesi  YUVAKÖY YENİMAHALLE Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "YENİMAHALLE",
+      "billingDistrict": "YUVAKÖY",
+      "billingPostalCode": "06105",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 236.28
+      },
+      "items": [
+        {
+          "lineItemId": "6ae79878-3120-0d3d-d2bf-981006060606",
+          "listingId": "f54ab0f2-9989-4f3c-9dfe-9ca85b08744c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBV00000R1TT6",
+          "merchantSku": "AEXL6009",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 118.14
+          },
+          "vat": 39.38,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 236.28
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 25.02
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 20.86
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 41.72
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 139
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 278
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Arduino Akıl Oyunları  Uyumlu Ayarlanabilir Step Up Boost Voltaj Regülatör Kartı XL6009 4A Dayanıklı PCB Devre",
+          "orderNumber": "4312350858",
+          "orderDate": "2026-11-01T22:52:22",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0.5,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0ACKRDN000050",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/35/{size}/10493445308466.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Salih Ortakaya",
+      "estimatedArrivalDate": "2026-11-04T15:30:00Z",
+      "totalDeci": 2.2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ae7b1f5-fd41-7552-33d9-2c9f06060606",
+      "status": "Open",
+      "customerId": "819c3efe-f87d-439e-a5f3-3e9a8c191e71",
+      "orderDate": "2026-11-02T00:41:04",
+      "dueDate": "2026-11-02T18:30:00",
+      "barcode": "62955360640802",
+      "packageNumber": "5536064080",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "2783. Cd. No:3 Yağmur Apartmanı Kat 2 No 7 BAHÇELİEVLER BURHANİYE Balıkesir",
+      "recipientName": "Bora Dağteke",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BAHÇELİEVLER",
+      "shippingTown": "BURHANİYE",
+      "shippingCity": "Balıkesir",
+      "email": "4784242106_5536064080@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Bora Dağteke",
+      "billingAddress": "2783. Cd. No:3 Yağmur Apartmanı Kat 2 No 7 BAHÇELİEVLER BURHANİYE Balıkesir",
+      "billingCity": "Balıkesir",
+      "billingTown": "BURHANİYE",
+      "billingDistrict": "BAHÇELİEVLER",
+      "billingPostalCode": "10700",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 429.2
+      },
+      "items": [
+        {
+          "lineItemId": "6ae7b1f2-d00a-c4a4-5115-117f06060606",
+          "listingId": "832474f0-dc2e-4220-95a6-9df4fc4f1f1d",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000EKOLZ",
+          "merchantSku": "AEDHT11-BB",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 120.52
+          },
+          "vat": 20.09,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 120.52
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 25.88
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 23.25
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 23.25
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 11.22999
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 11.22999
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 143.76999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 143.76999
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Arduino DHT11 Sıcaklık Nem Sensör Modülü Hassas Ölçüm ve Kolay Entegrasyon 1 Adet",
+          "orderNumber": "4784242106",
+          "orderDate": "2026-11-02T00:41:04",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "9999880000072",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/99/{size}/110000042135500.jpg",
+          "deci": 1.1
+        },
+        {
+          "lineItemId": "6ae7b1f2-d00a-c4a4-5115-118006060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 41.98
+          },
+          "vat": 13.99,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 83.96
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 9.01
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 8.1
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 16.2
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 3.92
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 7.84
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 50.08
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 100.16
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4784242106",
+          "orderDate": "2026-11-02T00:41:04",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        },
+        {
+          "lineItemId": "6ae7b1f2-d00a-c4a4-5115-117806060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 111.97
+          },
+          "vat": 18.66,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 111.97
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 24.04
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 21.6
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 21.6
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 10.43
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 10.43
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 133.57
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 133.57
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4784242106",
+          "orderDate": "2026-11-02T00:41:04",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        },
+        {
+          "lineItemId": "6ae7b1f2-d00a-c4a4-5115-117e06060606",
+          "listingId": "51b074bb-e93e-4f7b-9e39-a5a4145a7196",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EBAPLD",
+          "merchantSku": "AEIRKMND",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 112.75
+          },
+          "vat": 18.79,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 112.75
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 24.21
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 21.75
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 21.75
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 10.5
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 10.5
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 134.5
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 134.5
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Ir Alıcı Verici Kumanda Seti - Arduino Uyumlu",
+          "orderNumber": "4784242106",
+          "orderDate": "2026-11-02T00:41:04",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELIRKMND001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001690431557.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Bora Dağteke",
+      "estimatedArrivalDate": "2026-11-05T15:30:00Z",
+      "totalDeci": 5.3,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
