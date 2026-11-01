@@ -2466,5 +2466,55 @@
    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/fen-yeni/duy-ampul-1-adet.jpg"
   ],
   "tyFiyat": 279.0
+ },
+ {
+  "tyStokKodu": "AE4IN1ROBOT",
+  "stokKodu": "AE4IN1ROBOT-N11",
+  "barkod": "2920000600155",
+  "ad": "4'ü 1 Arada Robot Araba Kiti (Bluetooth + IR Kumanda + Engelden Kaçan + Çizgi İzleyen) - Arduino Uyumlu",
+  "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak 4 modu da içeren koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>4 ayrı proje, tek kutuda!</strong> Aynı 2WD robot gövdesiyle dört farklı robot: telefondan Bluetooth ile kontrol, IR kumandayla kontrol, HC-SR04 sensörle engelden kaçan otonom robot ve 4 kanal sensörle siyah çizgiyi takip eden robot. Tüm modüller aynı anda takılı kalır; tek kod yüklenir, modlar arasında telefondan ya da kumandadan geçilir.</p><h3>Pakette Neler Var?</h3><ul><li>2WD Robot Araba Kiti (demonte gövde, 2 adet DC motor, tekerlekler, sarhoş teker)</li><li>4'lü AA pil kutusu (gövde kitiyle birlikte) — piller dahil değildir</li><li>Arduino Uno R3 Klon (CH340, USB kablo dahil)</li><li>L298N Dual Motor Sürücü Modülü</li><li>HC-06 Bluetooth Modülü (Proje 1: telefonla kontrol)</li><li>IR Kumanda Seti - 17 tuşlu kumanda + alıcı (Proje 2: kumandayla kontrol)</li><li>HC-SR04 Ultrasonik Sensör + SG90 Servo Motor (Proje 3: engelden kaçan robot)</li><li>4 Kanal Çizgi İzleme Sensörü - kontrol kartı + 4 TCRT5000 prob + kablolar (Proje 4: çizgi izleyen robot)</li><li>Dişi-Erkek ve Erkek-Erkek Jumper Kablo</li><li>A4 Renkli Bağlantı Şeması + Eğitim Rehberi</li></ul><h3>Modlar</h3><ul><li>Telefondan: F/B/L/R/S ile sür; A engelden kaçma, C çizgi izleme, M elle kontrol.</li><li>Kumandadan: yön tuşlarıyla sür; OK engelden kaçma, * çizgi izleme, # dur.</li></ul><h3>Kimler İçin?</h3><ul><li>Robot yarışmalarının engelden kaçan ve çizgi izleyen kategorilerine aynı robotla hazırlanmak isteyenler</li><li>Meslek lisesi ve teknik lise öğrencileri, TÜBİTAK ve STEM projeleri</li><li>Dört ayrı set almak yerine tasarruflu bir kombo arayanlar</li></ul>",
+  "kategoriId": 1132100,
+  "tyKategori": "Robotik Malzeme",
+  "fiyat": 1784.0,
+  "stok": 24,
+  "desi": 3,
+  "kdv": 20,
+  "buybox": false,
+  "gorseller": [
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/robot4/4u1-robot-set.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/robot4/4u1-robot-kutu-icerigi.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/cizgi/4-kanal-cizgi-izleme-sensoru.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/sema/4u1-robot-aa.jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/2wdrobotkiti.png?v=1785074879",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ir1_1aecb4d6-edae-40ac-a8a8-4b3aecdd90ed.png?v=1785261066",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hc06_86cc68e4-ee77-41a7-a105-baea9463fc4c.webp?v=1785333565",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-1_48b986ed-8735-4baa-9854-f30b7df03604.webp?v=1782336334"
+  ],
+  "tyFiyat": 1899.0
+ },
+ {
+  "tyStokKodu": "AE4IN1ROBOT-LI",
+  "stokKodu": "AE4IN1ROBOT-LI-N11",
+  "barkod": "2920000600162",
+  "ad": "4'ü 1 Arada Robot Araba Kiti - 18650 Pil Yuvalı (Bluetooth + IR + Engelden Kaçan + Çizgi İzleyen)",
+  "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak 4 modu da içeren koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>4 ayrı proje, tek kutuda!</strong> Aynı 2WD robot gövdesiyle dört farklı robot: telefondan Bluetooth ile kontrol, IR kumandayla kontrol, HC-SR04 sensörle engelden kaçan otonom robot ve 4 kanal sensörle siyah çizgiyi takip eden robot. Tüm modüller aynı anda takılı kalır; tek kod yüklenir, modlar arasında telefondan ya da kumandadan geçilir.</p><h3>Pakette Neler Var?</h3><ul><li>2WD Robot Araba Kiti (demonte gövde, 2 adet DC motor, tekerlekler, sarhoş teker)</li><li>2'li 18650 Pil Yuvası (7,4V) — piller dahil değildir</li><li>Arduino Uno R3 Klon (CH340, USB kablo dahil)</li><li>L298N Dual Motor Sürücü Modülü</li><li>HC-06 Bluetooth Modülü (Proje 1: telefonla kontrol)</li><li>IR Kumanda Seti - 17 tuşlu kumanda + alıcı (Proje 2: kumandayla kontrol)</li><li>HC-SR04 Ultrasonik Sensör + SG90 Servo Motor (Proje 3: engelden kaçan robot)</li><li>4 Kanal Çizgi İzleme Sensörü - kontrol kartı + 4 TCRT5000 prob + kablolar (Proje 4: çizgi izleyen robot)</li><li>Dişi-Erkek ve Erkek-Erkek Jumper Kablo</li><li>A4 Renkli Bağlantı Şeması + Eğitim Rehberi</li></ul><h3>Modlar</h3><ul><li>Telefondan: F/B/L/R/S ile sür; A engelden kaçma, C çizgi izleme, M elle kontrol.</li><li>Kumandadan: yön tuşlarıyla sür; OK engelden kaçma, * çizgi izleme, # dur.</li></ul><h3>Kimler İçin?</h3><ul><li>Robot yarışmalarının engelden kaçan ve çizgi izleyen kategorilerine aynı robotla hazırlanmak isteyenler</li><li>Meslek lisesi ve teknik lise öğrencileri, TÜBİTAK ve STEM projeleri</li><li>Dört ayrı set almak yerine tasarruflu bir kombo arayanlar</li></ul>",
+  "kategoriId": 1132100,
+  "tyKategori": "Robotik Malzeme",
+  "fiyat": 1839.0,
+  "stok": 24,
+  "desi": 2,
+  "kdv": 20,
+  "buybox": false,
+  "gorseller": [
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/robot4/4u1-robot-set.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/robot4/4u1-robot-kutu-icerigi.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/cizgi/4-kanal-cizgi-izleme-sensoru.jpg",
+   "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/sema/4u1-robot.jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/2wdrobotkiti.png?v=1785074879",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/ir1_1aecb4d6-edae-40ac-a8a8-4b3aecdd90ed.png?v=1785261066",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hc06_86cc68e4-ee77-41a7-a105-baea9463fc4c.webp?v=1785333565",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-1_48b986ed-8735-4baa-9854-f30b7df03604.webp?v=1782336334"
+  ],
+  "tyFiyat": 1962.0
  }
 ]
