@@ -65,6 +65,20 @@ def _call(publisher, post):
     return publisher(post.caption, post.media, post.is_video)
 
 
+def _anma_gunu_mu() -> bool:
+    """Bugun (TR saatiyle) content/bayramlar.json'da tur=anma olan bir gun mu."""
+    import datetime as _dt
+    import json as _json
+    import pathlib as _pl
+    from zoneinfo import ZoneInfo
+    try:
+        gunler = _json.loads(_pl.Path("content/bayramlar.json").read_text(encoding="utf-8"))["gunler"]
+    except Exception:  # noqa: BLE001
+        return False
+    bugun = _dt.datetime.now(ZoneInfo("Europe/Istanbul")).strftime("%m-%d")
+    return any(g.get("tur") == "anma" and g.get("tarih") == bugun for g in gunler)
+
+
 def run(only: str | None = None, force: bool = False, max_per_run: int | None = None) -> int:
     all_posts = posts.load_all()
     if not all_posts:
@@ -88,6 +102,13 @@ def run(only: str | None = None, force: bool = False, max_per_run: int | None = 
             continue
         if not force and not post.is_due():
             print(f"⏳ {post.slug} — zamanı gelmedi ({post.publish_at})")
+            continue
+
+        # Anma gunlerinde (10 Kasim, 15 Temmuz) bayram postu disinda paylasim yok;
+        # urun/bilgi postu ertesi gunun turuna kalir (01.11.2026: 10.11'e iki post
+        # planlanmisti, engelleyen kontrol yoktu).
+        if not force and not only and "-bayram-" not in post.slug and _anma_gunu_mu():
+            print(f"🕯️  {post.slug} — bugün anma günü, yarına kaldı")
             continue
 
         # Birikmiş postları tek seferde boşaltma: bot saat başı çalıştığı için
