@@ -1063,3 +1063,5 @@
 {"an": "2026-10-31T20:23", "kanal": "n11", "no": "293113372428", "iade": {"AESG90": 5}, "durum": "Cancelled", "kuru": false}
 {"an": "2026-10-31T21:03", "kanal": "trendyol", "no": "11769792058", "kod": "AET2WDRBT-LI", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEPY18650": 1}, "kuru": false}
 {"an": "2026-10-31T21:03", "kanal": "hepsiburada", "no": "4603512765", "kod": "AEENDELK", "adet": 1, "dusum": {"AEENDELK": 1}, "kuru": false}
+{"an": "2026-11-01T08:08", "kanal": "trendyol", "no": "11770388774", "kod": "AEDUYAMP-5", "adet": 1, "dusum": {"AEDUY-1": 5, "AEAMP-1": 5}, "kuru": false}
+{"an": "2026-11-01T08:08", "kanal": "trendyol", "no": "11770388774", "kod": "AETEMDEF", "adet": 1, "dusum": {"AETEMDEF": 1}, "kuru": false}
