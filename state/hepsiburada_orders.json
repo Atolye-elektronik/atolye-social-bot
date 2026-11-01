@@ -919,7 +919,7 @@
       "dueDate": "2026-11-02T18:30:00",
       "barcode": "62955357954112",
       "packageNumber": "5535795411",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "İncirtepe mah.257 sokak Bina 10 daire 4 \nNazara apartmanı\n İNCİRTEPE ESENYURT İstanbul",
       "recipientName": "Ahmet Mirza",
       "shippingCountryCode": "TR",
@@ -1034,6 +1034,136 @@
       ],
       "isCargoChangable": true,
       "customerName": "Ahmet Mirza",
+      "estimatedArrivalDate": "2026-11-05T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6ae76fb5-dd59-f819-a108-ce5f06060606",
+      "status": "Open",
+      "customerId": "647d8c8c-1a62-447b-81f3-50d72a4bade3",
+      "orderDate": "2026-11-01T19:58:28",
+      "dueDate": "2026-11-02T18:30:00",
+      "barcode": "62955359032900",
+      "packageNumber": "5535903290",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "P Özel harekat şubesi teyyareduzüzü Giresun merkez  TEYYAREDÜZÜ MERKEZ Giresun",
+      "recipientName": "Abdulbaki Acer",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "TEYYAREDÜZÜ",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Giresun",
+      "email": "4718864059_5535903290@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Abdulbaki Acer",
+      "billingAddress": "Teyyare düzü mahallesi şehit Temel kuğu olgu sokak gül apt 15 kat 2 daire 1 merkez Giresun  TEYYAREDÜZÜ MERKEZ Giresun",
+      "billingCity": "Giresun",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "TEYYAREDÜZÜ",
+      "billingPostalCode": "28200",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 714.8
+      },
+      "items": [
+        {
+          "lineItemId": "6ae76fb5-df49-6658-d927-227e06060606",
+          "listingId": "81f7452f-be40-40ff-9d6c-4d9269ca0b1d",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUUSCD",
+          "merchantSku": "AEENDELK",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 714.8
+          },
+          "vat": 119.13,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 714.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 152.63999
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 133.19999
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 133.19999
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 847.99999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 847.99999
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi",
+          "orderNumber": "4718864059",
+          "orderDate": "2026-11-01T19:58:28",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELENDELK001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754823330.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "abdulbaki acer",
       "estimatedArrivalDate": "2026-11-05T15:30:00Z",
       "totalDeci": 1.1,
       "warehouse": {
