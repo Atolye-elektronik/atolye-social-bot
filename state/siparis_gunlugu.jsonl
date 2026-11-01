@@ -1071,3 +1071,4 @@
 {"an": "2026-11-01T13:22", "kanal": "hepsiburada", "no": "4233713507", "kod": "AE2WDEKRBT-LI", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEPY18650": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
 {"an": "2026-11-01T13:22", "kanal": "hepsiburada", "no": "4310244916", "kod": "AEHCSR04", "adet": 1, "dusum": {"AEHCSR04": 1}, "kuru": false}
 {"an": "2026-11-01T17:03", "kanal": "hepsiburada", "no": "4718864059", "kod": "AEENDELK", "adet": 1, "dusum": {"AEENDELK": 1}, "kuru": false}
+{"an": "2026-11-01T18:13", "kanal": "hepsiburada", "no": "4277306781", "kod": "AEPY18650T", "adet": 2, "dusum": {"AEPY18650T": 2}, "kuru": false}
