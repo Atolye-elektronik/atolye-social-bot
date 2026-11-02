@@ -1,6 +1,194 @@
 [
   {
     "shipmentAddress": {
+      "id": 9942104904,
+      "firstName": "Adem",
+      "lastName": "Kahraman",
+      "company": "",
+      "address1": "3217sk.no11/9 ",
+      "address2": "",
+      "city": "Manisa",
+      "cityCode": 45,
+      "district": "Şehzadeler",
+      "districtId": 101080,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "45000",
+      "countryCode": "TR",
+      "neighborhoodId": 46168,
+      "neighborhood": "Arda Mah",
+      "phone": null,
+      "fullAddress": "3217sk.no11/9     Şehzadeler Manisa",
+      "fullName": "Adem Kahraman"
+    },
+    "orderNumber": "11773885421",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 313.0,
+    "packageGrossAmount": 313.0,
+    "totalDiscount": 6.26,
+    "packageSellerDiscount": 6.26,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 6.26,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 6.26
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9942103598,
+      "firstName": "Adem",
+      "lastName": "Kahraman",
+      "company": "",
+      "address1": "3217sk.no11/9 ",
+      "address2": "",
+      "city": "Manisa",
+      "cityCode": 45,
+      "district": "Şehzadeler",
+      "districtId": 101080,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "45000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 46168,
+      "neighborhood": "Arda Mah",
+      "phone": null,
+      "fullAddress": "3217sk.no11/9     Şehzadeler Manisa",
+      "fullName": "Adem Kahraman"
+    },
+    "customerFirstName": "Adem",
+    "customerEmail": "pf+3pwwv5ob@trendyolmail.com",
+    "customerId": 30405761,
+    "supplierId": 0,
+    "customerLastName": "Kahraman",
+    "id": 4295764243,
+    "channelId": 1,
+    "shipmentPackageId": 4295764243,
+    "cargoTrackingNumber": 7270038541898660,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE3-6VMTR2",
+        "sku": "ATEL3-6VMTR02",
+        "stockCode": "AE3-6VMTR2",
+        "productName": "3-6V Redüktörlü Arduino Uyumlu DC Sarı Motor ve Tekerlek - 2'li Set AE3-6VMTR2, one size",
+        "productCode": 1603558406,
+        "contentId": 1603558406,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 313.0,
+        "lineGrossAmount": 313.0,
+        "discount": 6.26,
+        "lineTotalDiscount": 6.26,
+        "lineSellerDiscount": 6.26,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "7016091509",
+            "lineItemPrice": 306.74,
+            "lineItemDiscount": 6.26,
+            "lineItemSellerDiscount": 6.26,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6145644640,
+        "lineId": 6145644640,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATEL3-6VMTR02",
+        "orderLineItemStatusName": "Picking",
+        "price": 306.74,
+        "lineUnitPrice": 306.74,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 12,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1793613444010,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1793602646634,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1793602651391,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1793602862944,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1793653140000,
+    "estimatedDeliveryEndDate": 1793825940000,
+    "totalPrice": 306.74,
+    "packageTotalPrice": 306.74,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1793653140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1793602646629,
+    "lastModifiedDate": 1793602862944,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 11016686811,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9937127105,
       "firstName": "Hasan",
       "lastName": "Güneş",
