@@ -1,4 +1,135 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6ae8f9b3-d00a-c4a4-5103-db0806060606",
+      "status": "Open",
+      "customerId": "f7097015-1985-4d79-894a-c9ccc0cff7e4",
+      "orderDate": "2026-11-02T23:59:30",
+      "dueDate": "2026-11-03T18:30:00",
+      "barcode": "62755366759256",
+      "packageNumber": "5536675925",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "50.yil mahallesi 2146.sokak No 21-23 Daire 3 Gündüz Apt Sultangazi/ Istanbul  50. YIL SULTANGAZİ İstanbul",
+      "recipientName": "Begüm Sarıgöl",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "50. YIL",
+      "shippingTown": "SULTANGAZİ",
+      "shippingCity": "İstanbul",
+      "email": "4813741096_5536675925@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Begüm Sarıgöl",
+      "billingAddress": "50.yil mahallesi 2146.sokak No 21-23 Daire 3 Gündüz Apt Sultangazi/ Istanbul  50. YIL SULTANGAZİ İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "SULTANGAZİ",
+      "billingDistrict": "50. YIL",
+      "billingPostalCode": "34265",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1013.15
+      },
+      "items": [
+        {
+          "lineItemId": "6ae8f9b2-8d43-68e5-59d4-aa0506060606",
+          "listingId": "b4c059bb-c165-46f8-a95a-aba38d251b9b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000O9URWL",
+          "merchantSku": "AECIZGIRBT",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 1013.15
+          },
+          "vat": 168.86,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 1013.15
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 215.82
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 185.85
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 185.85
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1199
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1199
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Çizgi Izleyen Robot Araba Kiti (2WD + Arduino + Motor Sürücü + 4 Kanal Sensör)",
+          "orderNumber": "4813741096",
+          "orderDate": "2026-11-02T23:59:30",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2920000600117",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002903252652.jpg",
+          "deci": 3
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "BEGÜM SARIGÖL",
+      "estimatedArrivalDate": "2026-11-05T16:30:00Z",
+      "totalDeci": 3,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
