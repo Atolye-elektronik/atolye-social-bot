@@ -1,6 +1,195 @@
 [
   {
     "shipmentAddress": {
+      "id": 9943138826,
+      "firstName": "Göksu",
+      "lastName": "ay",
+      "company": "",
+      "address1": "Nizamettin mahallesi Nizamettin caddesi A77 hanzade konakları A blok kat 5 daire 36",
+      "address2": "",
+      "city": "Ordu",
+      "cityCode": 52,
+      "district": "Altınordu",
+      "districtId": 101087,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "52000",
+      "countryCode": "TR",
+      "neighborhoodId": 69036,
+      "neighborhood": "Nizamettin Mah",
+      "phone": null,
+      "fullAddress": "Nizamettin mahallesi Nizamettin caddesi A77 hanzade konakları A blok kat 5 daire 36     Altınordu Ordu",
+      "fullName": "Göksu ay"
+    },
+    "orderNumber": "11774413873",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 1188.0,
+    "packageGrossAmount": 1188.0,
+    "totalDiscount": 23.76,
+    "packageSellerDiscount": 23.76,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 23.76,
+    "discountDisplays": [
+      {
+        "displayName": "Sepette %2 İndirim",
+        "discountAmount": 23.76
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 9943138825,
+      "firstName": "Göksu",
+      "lastName": "ay",
+      "company": "",
+      "address1": "Nizamettin mahallesi Nizamettin caddesi A77 hanzade konakları A blok kat 5 daire 36",
+      "address2": "",
+      "city": "Ordu",
+      "cityCode": 52,
+      "district": "Altınordu",
+      "districtId": 101087,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "52000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 69036,
+      "neighborhood": "Nizamettin Mah",
+      "phone": null,
+      "fullAddress": "Nizamettin mahallesi Nizamettin caddesi A77 hanzade konakları A blok kat 5 daire 36     Altınordu Ordu",
+      "fullName": "Göksu ay"
+    },
+    "customerFirstName": "Göksu",
+    "customerEmail": "pf+ejeywmpk@trendyolmail.com",
+    "customerId": 169094446,
+    "supplierId": 0,
+    "customerLastName": "ay",
+    "id": 4296243860,
+    "channelId": 1,
+    "shipmentPackageId": 4296243860,
+    "cargoTrackingNumber": 7270038547045532,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE2WDEKRBT-LI",
+        "sku": "AE2WDEKRBT-LI",
+        "stockCode": "AE2WDEKRBT-LI",
+        "productName": "2WD Servolu Engelden Kaçan Robot Araba Kiti (Demonte Robot Araba Kiti) AE2WDEKRBT, one size",
+        "productCode": 1617156276,
+        "contentId": 1617156276,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 1188.0,
+        "lineGrossAmount": 1188.0,
+        "discount": 23.76,
+        "lineTotalDiscount": 23.76,
+        "lineSellerDiscount": 23.76,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "7016891503",
+            "lineItemPrice": 1164.24,
+            "lineItemDiscount": 23.76,
+            "lineItemSellerDiscount": 23.76,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6146333331,
+        "lineId": 6146333331,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "AE2WDEKRBT-LI",
+        "orderLineItemStatusName": "Picking",
+        "price": 1164.24,
+        "lineUnitPrice": 1164.24,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 12,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1793623587510,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1793612824015,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1793612827042,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1793613420791,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1793653140000,
+    "estimatedDeliveryEndDate": 1793825940000,
+    "totalPrice": 1164.24,
+    "packageTotalPrice": 1164.24,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1793653140000,
+    "fastDelivery": true,
+    "originShipmentDate": 1793612824011,
+    "lastModifiedDate": 1793613420791,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 11017201551,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 9942104904,
       "firstName": "Adem",
       "lastName": "Kahraman",
