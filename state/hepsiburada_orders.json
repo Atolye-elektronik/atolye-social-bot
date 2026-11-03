@@ -130,6 +130,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ae98af7-2f6a-32c6-7b2e-bb2c06060606",
+      "status": "Open",
+      "customerId": "9f624e9a-75c6-4b65-8b20-2dd8c3c0a534",
+      "orderDate": "2026-11-03T10:19:18",
+      "dueDate": "2026-11-04T18:30:00",
+      "barcode": "62755368409443",
+      "packageNumber": "5536840944",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "SAKARYA Mah. Namık Kemal cad. Bina No : 1 Daire No : 5 Kat : 3 FATSA / Ordu SAKARYA FATSA Ordu",
+      "recipientName": "Emel Varol",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "SAKARYA",
+      "shippingTown": "FATSA",
+      "shippingCity": "Ordu",
+      "email": "4899376337_5536840944@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Emel Varol",
+      "billingAddress": "SAKARYA Mah. Namık Kemal cad. Bina No : 1 Daire No : 5 Kat : 3 FATSA / Ordu SAKARYA FATSA Ordu",
+      "billingCity": "Ordu",
+      "billingTown": "FATSA",
+      "billingDistrict": "SAKARYA",
+      "billingPostalCode": "52400",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1013.15
+      },
+      "items": [
+        {
+          "lineItemId": "6ae98af7-d909-ed6a-c3e5-7b3506060606",
+          "listingId": "b4c059bb-c165-46f8-a95a-aba38d251b9b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000O9URWL",
+          "merchantSku": "AECIZGIRBT",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 1013.15
+          },
+          "vat": 168.86,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 1013.15
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 215.82
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 185.85
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 185.85
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1199
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1199
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Çizgi Izleyen Robot Araba Kiti (2WD + Arduino + Motor Sürücü + 4 Kanal Sensör)",
+          "orderNumber": "4899376337",
+          "orderDate": "2026-11-03T10:19:18",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2920000600117",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002903252652.jpg",
+          "deci": 3
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Eml Vrl",
+      "estimatedArrivalDate": "2026-11-07T16:30:00Z",
+      "totalDeci": 3,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
