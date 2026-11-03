@@ -260,6 +260,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6ae9c0d6-4b34-4192-5293-53f106060606",
+      "status": "Open",
+      "customerId": "a1b3858f-07d3-4003-a14a-f173ca851c44",
+      "orderDate": "2026-11-03T14:09:09",
+      "dueDate": "2026-11-04T18:30:00",
+      "barcode": "62955369863284",
+      "packageNumber": "5536986328",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "ŞİMŞEK MAKİNA ve Yedek Parça İmalatı ITOB OSB MAHALLESI 10036 sokak no:12 (posta kodu:35471) İTOB OSB MENDERES İzmir",
+      "recipientName": "ŞİMŞEK BÜYÜKÖZTEKİN",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "İTOB OSB",
+      "shippingTown": "MENDERES",
+      "shippingCity": "İzmir",
+      "email": "4168999120_5536986328@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "ŞİMŞEK BÜYÜKÖZTEKİN ",
+      "billingAddress": "ITOB OSB MAH. 10036 sokak no:12 posta:35471 İTOB OSB MENDERES İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "MENDERES",
+      "billingDistrict": "İTOB OSB",
+      "billingPostalCode": "35471",
+      "billingCountryCode": "TR",
+      "taxOffice": "MENDERES",
+      "taxNumber": "19189491530",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 199
+      },
+      "items": [
+        {
+          "lineItemId": "6ae9c0d5-ad6c-b231-d3da-0b6006060606",
+          "listingId": "84aac006-0748-4014-ba25-562b89d3424b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPD033",
+          "merchantSku": "AESTJDFTR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 199
+          },
+          "vat": 33.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 199
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 33.83
+          },
+          "commissionRate": 17,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 199
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 199
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Meslek Lisesi ve Mesem Öğrencileri Için Işletmelerde Mesleki Eğitim Iş Dosyası(Staj Defteri)- 1 Adet",
+          "orderNumber": "4168999120",
+          "orderDate": "2026-11-03T14:09:09",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901611068909",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033336864.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "TARIK BÜYÜKÖZTEKİN",
+      "estimatedArrivalDate": "2026-11-06T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
