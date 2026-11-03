@@ -1103,3 +1103,6 @@
 {"an": "2026-11-02T23:38", "kanal": "n11", "no": "295953952425", "iade": {"AEXL6009": 1}, "durum": "Cancelled", "kuru": false}
 {"an": "2026-11-03T05:53", "kanal": "trendyol", "no": "11777650847", "kod": "AEIRRAK", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEIRKMND": 1, "AEUNOR3": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
 {"an": "2026-11-03T07:03", "kanal": "n11", "no": "226234852428", "kod": "AEXL6009", "adet": 1, "dusum": {"AEXL6009": 1}, "kuru": false}
+{"an": "2026-11-03T07:23", "kanal": "trendyol", "no": "11777834885", "kod": "AEPYAA2", "adet": 2, "dusum": {"AEPYAA2": 2}, "kuru": false}
+{"an": "2026-11-03T07:23", "kanal": "trendyol", "no": "11777834885", "kod": "AETY4LUMTRST", "adet": 1, "dusum": {"AE3-6VMTR": 4}, "kuru": false}
+{"an": "2026-11-03T07:23", "kanal": "hepsiburada", "no": "4899376337", "kod": "AECIZGIRBT", "adet": 1, "dusum": {"AET2WDRBT": 1, "AECIZGI4": 1, "AEUNOR3": 1, "AEL298N": 1, "AEJK2040DE": 1, "AEJK2040": 1}, "kuru": false}
