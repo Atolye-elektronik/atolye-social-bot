@@ -260,6 +260,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6aeaedf8-9d02-787e-147c-5a1106060606",
+      "status": "Open",
+      "customerId": "ee141c79-2d50-4d56-b327-1b609ac3e818",
+      "orderDate": "2026-11-04T11:33:59",
+      "dueDate": "2026-11-04T18:30:00",
+      "barcode": "62955374963241",
+      "packageNumber": "5537496324",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "talatpaşa mah.saraclar cad.2.vakif iş hani giris kat no Z/01 TALATPAŞA MERKEZ Edirne",
+      "recipientName": "Serdal Makul",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "TALATPAŞA",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Edirne",
+      "email": "4298841845_5537496324@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "nilüfer makul",
+      "billingAddress": "Şehit Cengiz Karaca Sk.fatih mahallesi özserhat kuş evleri kanarya apartmanı. kat. 5daire 22 Merkez Edirne Nilüfer Makul FATİH MERKEZ Edirne",
+      "billingCity": "Edirne",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "FATİH",
+      "billingPostalCode": "22100",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 287.3
+      },
+      "items": [
+        {
+          "lineItemId": "6aeaedf8-e631-d80d-d921-e97306060606",
+          "listingId": "f547a71a-a31e-4889-b8ef-730d67c7a7ab",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003Z3U77",
+          "merchantSku": "AEACDMMR",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 143.65
+          },
+          "vat": 47.88,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 287.3
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 30.42
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 25.35
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 50.7
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 169
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 338
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robo Dünya Robo AC 220V-2000W Dimmer Kontrol Devresi Özellikli Güç Kontrol Cihazı",
+          "orderNumber": "4298841845",
+          "orderDate": "2026-11-04T11:33:59",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBCC138FA6619",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/377/{size}/110000395869019.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "nilüfer çalışkan",
+      "estimatedArrivalDate": "2026-11-09T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
