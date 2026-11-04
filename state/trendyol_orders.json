@@ -80,10 +80,10 @@
     "id": 4301335681,
     "channelId": 1,
     "shipmentPackageId": 4301335681,
-    "cargoTrackingNumber": 7270038599284880,
+    "cargoTrackingNumber": 7330038607450833,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 10,
@@ -227,7 +227,7 @@
     "agreedDeliveryDate": 1793825940000,
     "fastDelivery": true,
     "originShipmentDate": 1793727473349,
-    "lastModifiedDate": 1793731782524,
+    "lastModifiedDate": 1793739068605,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
@@ -330,10 +330,10 @@
     "id": 4301027393,
     "channelId": 1,
     "shipmentPackageId": 4301027393,
-    "cargoTrackingNumber": 7270038596298194,
+    "cargoTrackingNumber": 7330038607450758,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 6,
@@ -447,7 +447,7 @@
     "agreedDeliveryDate": 1793825940000,
     "fastDelivery": true,
     "originShipmentDate": 1793722396132,
-    "lastModifiedDate": 1793723667489,
+    "lastModifiedDate": 1793739068263,
     "commercial": false,
     "fastDeliveryType": "FastDelivery",
     "deliveredByService": false,
