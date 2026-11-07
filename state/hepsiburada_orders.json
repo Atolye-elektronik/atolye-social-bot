@@ -1,4 +1,135 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6aef4f65-9e5b-bcba-2e41-ceb606060606",
+      "status": "Open",
+      "customerId": "c79f3e98-c920-483c-bb94-b2aafae7cdaa",
+      "orderDate": "2026-11-07T19:18:44",
+      "dueDate": "2026-11-09T18:30:00",
+      "barcode": "62955393349813",
+      "packageNumber": "5539334981",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Bahçelievler mahallesiyanardağ sokak Çınar evler sitesi C1 blok no 6 /1 daire 2 BAHÇELİEVLER TOSYA Kastamonu",
+      "recipientName": "nurbanu kaba",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BAHÇELİEVLER",
+      "shippingTown": "TOSYA",
+      "shippingCity": "Kastamonu",
+      "email": "4598422029_5539334981@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Emrah Kaba",
+      "billingAddress": "Yavansu mahallesi yeşil site karanfil sokak yeşil site Koop.no12/12 kuşadası aydın\n YAVANSU KUŞADASI Aydın",
+      "billingCity": "Aydın",
+      "billingTown": "KUŞADASI",
+      "billingDistrict": "YAVANSU",
+      "billingPostalCode": "09400",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 199
+      },
+      "items": [
+        {
+          "lineItemId": "6aef4f64-6857-b28c-945b-842a06060606",
+          "listingId": "a9bf6692-045a-40c4-b33a-b407c725df7e",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EB35S0",
+          "merchantSku": "AEBB830P",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 199
+          },
+          "vat": 33.17,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 199
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 35.82
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 199
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 199
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Büyükboy Breadboard -830 Pin",
+          "orderNumber": "4598422029",
+          "orderDate": "2026-11-07T19:18:44",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELBB830P001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002892607043.jpg",
+          "deci": 0.5
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Nurbanu Kaba",
+      "estimatedArrivalDate": "2026-11-11T15:30:00Z",
+      "totalDeci": 0.5,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
