@@ -39,7 +39,7 @@
   "AELED5Y": "AELED5K",
   "AEBCTRANS": "AEGUCELEMAN",
   "AEACDMMR2": "AEACDMMR",
-  "AEESP32TC38-2": "AEESP32TC",
+  "AEESP32TC38-2": "AEESP32-30",
   "AE4KROLE-BB": "AE4KROLE",
   "AELCDKPAD-BB": "AELCDKPAD"
  },
@@ -1043,6 +1043,27 @@
    "item": 54917159059685,
    "qty": 10,
    "status": "ACTIVE",
+   "tracked": true
+  },
+  "AEESP32-30": {
+   "variant": 68043884036325,
+   "item": 70034645156069,
+   "qty": 10,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AELM2596": {
+   "variant": 68043884101861,
+   "item": 70034645221605,
+   "qty": 50,
+   "status": "DRAFT",
+   "tracked": true
+  },
+  "AEBBKUCUK": {
+   "variant": 68043923128549,
+   "item": 70034686443749,
+   "qty": 100,
+   "status": "DRAFT",
    "tracked": true
   }
  },
