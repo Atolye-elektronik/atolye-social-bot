@@ -130,6 +130,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6af00c7e-821d-69bb-6da1-e5fa06060606",
+      "status": "Open",
+      "customerId": "4f96eec8-33a0-4f62-bf47-0478416714c1",
+      "orderDate": "2026-11-08T08:45:32",
+      "dueDate": "2026-11-09T18:30:00",
+      "barcode": "62955395078715",
+      "packageNumber": "5539507871",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "1468. Sk. No:6  Daire:1 İSTASYON GEBZE Kocaeli",
+      "recipientName": "Ayşe çakar Ayşe çakar",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "İSTASYON",
+      "shippingTown": "GEBZE",
+      "shippingCity": "Kocaeli",
+      "email": "4603383930_5539507871@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Hüseyin çakar",
+      "billingAddress": "Aydınlı Yolu Cd.    spor salonuna AYDINLI TUZLA İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "TUZLA",
+      "billingDistrict": "AYDINLI",
+      "billingPostalCode": "34953",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1004.65
+      },
+      "items": [
+        {
+          "lineItemId": "6af00c7d-1f5a-9e58-afad-f8d606060606",
+          "listingId": "5abc1eac-4e06-4956-a1ea-fa6b1a7a3e1f",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPB91L",
+          "merchantSku": "AE2WDEKRBT-LI",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 1004.65
+          },
+          "vat": 167.44,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 1004.65
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 214.02
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 184.35
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 184.35
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1189
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1189
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Arduino 2WD Servolu Engelden Kaçan Robot Araba Kiti - Li-On 18650 Pil Yuvalı Set",
+          "orderNumber": "4603383930",
+          "orderDate": "2026-11-08T08:45:32",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2907696815230",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033192845.jpg",
+          "deci": 2
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Hüseyin Çakar",
+      "estimatedArrivalDate": "2026-11-12T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
