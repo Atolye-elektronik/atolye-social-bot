@@ -260,6 +260,266 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6af05a13-1f5a-9e58-afa1-29b306060606",
+      "status": "Open",
+      "customerId": "e5364eec-28b9-4b47-b07d-615929bd8c61",
+      "orderDate": "2026-11-08T14:16:33",
+      "dueDate": "2026-11-09T18:30:00",
+      "barcode": "62955396091388",
+      "packageNumber": "5539609138",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Yaşamkent Mh 1533 sokak D3 Blok Daire1 no:10/1 \nTepebaşı Eskişehir  YAŞAMKENT TEPEBAŞI Eskişehir",
+      "recipientName": "Canan Gürbüz Kara",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YAŞAMKENT",
+      "shippingTown": "TEPEBAŞI",
+      "shippingCity": "Eskişehir",
+      "email": "4040624086_5539609138@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "ŞENOL GÜRBÜZ",
+      "billingAddress": "NİLGÜN SOKAK NO:120/1 AYDOĞANLAR İŞ MERKEZİ KAT:6/35 GÖKMEYDAN ODUNPAZARI Eskişehir",
+      "billingCity": "Eskişehir",
+      "billingTown": "ODUNPAZARI",
+      "billingDistrict": "GÖKMEYDAN",
+      "billingPostalCode": "26100",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 401.14
+      },
+      "items": [
+        {
+          "lineItemId": "6af05a12-370d-cd4c-6081-5b2e06060606",
+          "listingId": "353b5f2f-e329-4cf2-86b0-2a536ededae2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EATWVS",
+          "merchantSku": "AE3-6VMTR5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 401.14
+          },
+          "vat": 66.86,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 401.14
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 86.22
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 77.86
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 77.86
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 479
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 479
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Dc Sarı Motor + Tekerlek / 4 Adet",
+          "orderNumber": "4040624086",
+          "orderDate": "2026-11-08T14:16:33",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR45",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001688556195.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Canan GÜRBÜZ KARA",
+      "estimatedArrivalDate": "2026-11-11T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6af07168-ea3e-18a7-fc42-9bb806060606",
+      "status": "Open",
+      "customerId": "c12dfb39-b15c-4b6d-941d-71eae27b160c",
+      "orderDate": "2026-11-08T15:56:08",
+      "dueDate": "2026-11-09T18:30:00",
+      "barcode": "62755396519071",
+      "packageNumber": "5539651907",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Konutkent mahallesi avrupa mahallesi sitesi hırvatistan blok daire 3 KONUTKENT ÇANKAYA Ankara",
+      "recipientName": "Cansu Koçak",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KONUTKENT",
+      "shippingTown": "ÇANKAYA",
+      "shippingCity": "Ankara",
+      "email": "4495701671_5539651907@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "MARMARİS BELEDİYESİ",
+      "billingAddress": "Amiral Orhan Aydın Kapalı Spor Salonu Sarıana Mahallesi 18. sokak No:32 SARIANA MARMARİS Muğla",
+      "billingCity": "Muğla",
+      "billingTown": "MARMARİS",
+      "billingDistrict": "SARIANA",
+      "billingPostalCode": "",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1030.15
+      },
+      "items": [
+        {
+          "lineItemId": "6af07168-3d77-fd48-8752-68f206060606",
+          "listingId": "288f6cbc-60f5-4966-a48b-5d624daca627",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000O9UO3S",
+          "merchantSku": "AECIZGIRBT-LI",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 1030.15
+          },
+          "vat": 171.69,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 1030.15
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 219.42
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 188.85
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 188.85
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1219
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1219
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Çizgi Izleyen Robot Araba Kiti - 18650 Pil Yuvalı Set",
+          "orderNumber": "4495701671",
+          "orderDate": "2026-11-08T15:56:08",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2920000600124",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002903244206.jpg",
+          "deci": 2
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "cansu eroğlu",
+      "estimatedArrivalDate": "2026-11-11T16:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
