@@ -9,7 +9,7 @@
       "dueDate": "2026-11-09T18:30:00",
       "barcode": "62955393349813",
       "packageNumber": "5539334981",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Bahçelievler mahallesiyanardağ sokak Çınar evler sitesi C1 blok no 6 /1 daire 2 BAHÇELİEVLER TOSYA Kastamonu",
       "recipientName": "nurbanu kaba",
       "shippingCountryCode": "TR",
@@ -139,7 +139,7 @@
       "dueDate": "2026-11-09T18:30:00",
       "barcode": "62955395078715",
       "packageNumber": "5539507871",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "1468. Sk. No:6  Daire:1 İSTASYON GEBZE Kocaeli",
       "recipientName": "Ayşe çakar Ayşe çakar",
       "shippingCountryCode": "TR",
@@ -269,7 +269,7 @@
       "dueDate": "2026-11-09T18:30:00",
       "barcode": "62955396091388",
       "packageNumber": "5539609138",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Yaşamkent Mh 1533 sokak D3 Blok Daire1 no:10/1 \nTepebaşı Eskişehir  YAŞAMKENT TEPEBAŞI Eskişehir",
       "recipientName": "Canan Gürbüz Kara",
       "shippingCountryCode": "TR",
@@ -516,6 +516,266 @@
       "customerName": "cansu eroğlu",
       "estimatedArrivalDate": "2026-11-11T16:30:00Z",
       "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6af0918e-187a-011c-0a22-afbd06060606",
+      "status": "Open",
+      "customerId": "6405a0ae-9abd-4d65-9986-6420c4018ec7",
+      "orderDate": "2026-11-08T18:13:13",
+      "dueDate": "2026-11-09T18:30:00",
+      "barcode": "62955397087674",
+      "packageNumber": "5539708767",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Güneşevler mahallesi yıldıztepe caddesi iki kule sitesi no:13 B blok daire no:7  Altındağ/ANKARA GÜNEŞEVLER ALTINDAĞ Ankara",
+      "recipientName": "talip ergin",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "GÜNEŞEVLER",
+      "shippingTown": "ALTINDAĞ",
+      "shippingCity": "Ankara",
+      "email": "4784771112_5539708767@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "talip ergin",
+      "billingAddress": "Güneşevler mahallesi yıldıztepe caddesi iki kule sitesi no:13 B.blok daire:7 altındağ/ Ankara GÜNEŞEVLER ALTINDAĞ Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "ALTINDAĞ",
+      "billingDistrict": "GÜNEŞEVLER",
+      "billingPostalCode": "06140",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 120.54
+      },
+      "items": [
+        {
+          "lineItemId": "6af0918a-4776-d689-6513-d97a06060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 60.27
+          },
+          "vat": 20.09,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 120.54
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 12.76
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 10.63
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 21.26
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 70.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 141.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4784771112",
+          "orderDate": "2026-11-08T18:13:13",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "talip ergin",
+      "estimatedArrivalDate": "2026-11-11T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6af094c0-8557-efbd-44dc-366f06060606",
+      "status": "Open",
+      "customerId": "ed03c370-51f0-4e51-8e53-c1837059e778",
+      "orderDate": "2026-11-08T18:26:55",
+      "dueDate": "2026-11-09T18:30:00",
+      "barcode": "62955397146870",
+      "packageNumber": "5539714687",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "7399/15/19 ONUR BAYRAKLI İzmir",
+      "recipientName": "mesut çelik",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ONUR",
+      "shippingTown": "BAYRAKLI",
+      "shippingCity": "İzmir",
+      "email": "4524545312_5539714687@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "mesut çelik",
+      "billingAddress": "7399/15/19 ONUR BAYRAKLI İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "BAYRAKLI",
+      "billingDistrict": "ONUR",
+      "billingPostalCode": "35520",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 199
+      },
+      "items": [
+        {
+          "lineItemId": "6af094c0-2f3e-e4f0-fab1-1dc506060606",
+          "listingId": "84aac006-0748-4014-ba25-562b89d3424b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000HPD033",
+          "merchantSku": "AESTJDFTR",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 199
+          },
+          "vat": 18.09,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 199
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 33.83
+          },
+          "commissionRate": 17,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 199
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 199
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Meslek Lisesi ve Mesem Öğrencileri Için Işletmelerde Mesleki Eğitim Iş Dosyası(Staj Defteri)- 1 Adet",
+          "orderNumber": "4524545312",
+          "orderDate": "2026-11-08T18:26:55",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 10,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901611068909",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002033336864.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Mesut Mesut",
+      "estimatedArrivalDate": "2026-11-10T15:30:00Z",
+      "totalDeci": 1,
       "warehouse": {
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
