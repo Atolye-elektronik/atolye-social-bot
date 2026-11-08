@@ -780,6 +780,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6af10230-9428-229c-9bbd-72f106060606",
+      "status": "Open",
+      "customerId": "ce1045dc-53c6-4cf2-be25-c826e435e29b",
+      "orderDate": "2026-11-09T02:13:51",
+      "dueDate": "2026-11-09T18:30:00",
+      "barcode": "62955399272337",
+      "packageNumber": "5539927233",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Koca Sinan Cd. No:B blok Kat:13 Daire:23 DENİZ MEZİTLİ Mersin",
+      "recipientName": "Murat Erkan Uçan",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "DENİZ",
+      "shippingTown": "MEZİTLİ",
+      "shippingCity": "Mersin",
+      "email": "4692528443_5539927233@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Murat Erkan Uçan",
+      "billingAddress": "Koca Sinan Cd. No:B blok Kat:13 Daire:23 DENİZ MEZİTLİ Mersin",
+      "billingCity": "Mersin",
+      "billingTown": "MEZİTLİ",
+      "billingDistrict": "DENİZ",
+      "billingPostalCode": "33180",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 141.8
+      },
+      "items": [
+        {
+          "lineItemId": "6af1022f-c16b-b25f-9bb1-04ea06060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 70.9
+          },
+          "vat": 23.63,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 141.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 12.76
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 70.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 141.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4692528443",
+          "orderDate": "2026-11-09T02:13:51",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Murat Erkan Uçan",
+      "estimatedArrivalDate": "2026-11-12T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
