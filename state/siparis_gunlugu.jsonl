@@ -1163,3 +1163,4 @@
 {"an": "2026-11-09T18:32", "kanal": "hepsiburada", "no": "4287756652", "kod": "AEDC125B", "adet": 1, "dusum": {"AEDC125B": 1}, "kuru": false}
 {"an": "2026-11-09T19:18", "kanal": "n11", "no": "274282512423", "kod": "AETCS18P", "adet": 1, "dusum": {"AETCS18P": 1}, "kuru": false}
 {"an": "2026-11-09T20:13", "kanal": "trendyol", "no": "11808719910", "kod": "AE150LED", "adet": 1, "dusum": {"AELED5K": 150}, "kuru": false}
+{"an": "2026-11-09T21:03", "kanal": "shopify", "no": "#1074", "kod": "AE2WDEKRBT", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
