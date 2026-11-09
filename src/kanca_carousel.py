@@ -27,7 +27,7 @@ import pathlib
 import re
 
 from . import karusel_gorsel, posts
-from .shopify_source import STORE_URL, _slugify, fetch_products, ozet
+from .shopify_source import STORE_URL, _slugify, fetch_products, ozet, satista_mi
 
 # Bilerek yalnizca Instagram. Kanca slaydinin altbilgisindeki "Kaydir →"
 # ibaresi gorselin icine gomulu ve kaydirma jesti Instagram carousel'ine ait;
@@ -312,10 +312,41 @@ def _bos_gun(bugun: dt.date) -> dt.date:
     return gun
 
 
+def _postu_var(handle: str) -> bool:
+    """Bu urune baglantili bir post zaten kuyrukta/yayinda mi (elle uretilenler dahil)."""
+    hedef = f"/products/{handle}"
+    for yol in POSTS_DIR.glob("*.md"):
+        try:
+            if hedef in yol.read_text(encoding="utf-8"):
+                return True
+        except OSError:
+            continue
+    return False
+
+
+def _yeni_mi(urun: dict, gun: int) -> bool:
+    """Son `gun` gunde yayinlanan/olusturulan urun mu (acik API published_at/created_at)."""
+    zaman = urun.get("published_at") or urun.get("created_at")
+    if not zaman:
+        return False
+    try:
+        t = dt.datetime.fromisoformat(zaman.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    return t >= dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=gun)
+
+
 def uret(count: int = 1, start_in_hours: int = 24, spacing_hours: int = 24,
-         handle: str | None = None, onizleme: bool = False) -> list[pathlib.Path]:
+         handle: str | None = None, onizleme: bool = False,
+         yeni_gun: int | None = None) -> list[pathlib.Path]:
     seen = _seen_oku()
     urunler = fetch_products()
+    if yeni_gun:
+        # 09.11.2026: yeni urunler (ESP32 30 pin, LM2596...) sosyal medyaya otomatik
+        # girmiyordu; kanca postlari elle uretiliyordu. Gunluk is bu modla calisir:
+        # yalniz son N gunde eklenen, stokta olan ve postu olmayan urunler.
+        urunler = [u for u in urunler if _yeni_mi(u, yeni_gun) and satista_mi(u)
+                   and not _postu_var(u.get("handle") or "")]
 
     if handle:
         secilen = [u for u in urunler if u.get("handle") == handle]
@@ -372,8 +403,10 @@ def main() -> None:
     ayristirici.add_argument("--handle", help="Sadece bu ürün (Shopify handle)")
     ayristirici.add_argument("--onizleme", action="store_true",
                              help="Slaytları üret ama post dosyası yazma")
+    ayristirici.add_argument("--yeni", type=int, metavar="GUN",
+                             help="Yalnız son GUN günde eklenen, stokta ve postu olmayan ürünler")
     args = ayristirici.parse_args()
-    uret(args.count, args.start_in_hours, args.spacing_hours, args.handle, args.onizleme)
+    uret(args.count, args.start_in_hours, args.spacing_hours, args.handle, args.onizleme, args.yeni)
 
 
 if __name__ == "__main__":
