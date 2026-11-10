@@ -1170,3 +1170,4 @@
 {"an": "2026-11-10T09:02", "kanal": "n11", "no": "258931512427", "kod": "AEACDMMR", "adet": 3, "dusum": {"AEACDMMR": 3}, "kuru": false}
 {"an": "2026-11-10T09:28", "kanal": "hepsiburada", "no": "4108304870", "kod": "AEPY18650T", "adet": 3, "dusum": {"AEPY18650T": 3}, "kuru": false}
 {"an": "2026-11-10T11:28", "kanal": "trendyol", "no": "11810684478", "kod": "AEJK2040EE3", "adet": 1, "dusum": {"AEJK2040": 1, "AEJK2040DD": 1, "AEJK2040DE": 1}, "kuru": false}
+{"an": "2026-11-10T13:18", "kanal": "trendyol", "no": "11811155394", "kod": "AEDUYAMP-10", "adet": 1, "dusum": {"AEDUY-1": 10, "AEAMP-1": 10}, "kuru": false}
