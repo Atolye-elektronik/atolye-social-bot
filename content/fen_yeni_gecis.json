@@ -84,5 +84,8 @@
   "sku": "AELAMBASET",
   "acildi": "28.10 Shopify 154,90 TL (maliyet 19,79 = duy 3,47 + ampul 5,00 + anahtar 2,32 + pil kutusu 4,00 + kablo 5; web kari 100 TL)",
   "pazaryeri": "100 TL kar hedefiyle acilacak"
- }
+ },
+ "gecildi": true,
+ "gecis_tarihi": "2026-11-10",
+ "_gecis_notu": "10.11: motor/pervane/setler site+TY+N11+PTT+HB(metin) gecti; duy urunleri ayni kaldi (kullanici: duy farkli degil). HB gorselleri ve Pazarama/Idefix bekliyor."
 }
