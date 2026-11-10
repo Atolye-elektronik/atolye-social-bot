@@ -260,6 +260,396 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6af35ffe-ad66-ac48-1c46-060806060606",
+      "status": "Open",
+      "customerId": "3503eceb-f90d-4c50-b5cd-51db5ba2b023",
+      "orderDate": "2026-11-10T21:18:36",
+      "dueDate": "2026-11-11T18:30:00",
+      "barcode": "62955410763053",
+      "packageNumber": "5541076305",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Alacaatlı Mahallesi Zümrütköy Sitesi 3308.Sokak No:16 Çayyolu Çankaya Ankara ÇAYYOLU ÇANKAYA Ankara",
+      "recipientName": "Eren Süzen",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ÇAYYOLU",
+      "shippingTown": "ÇANKAYA",
+      "shippingCity": "Ankara",
+      "email": "4914527138_5541076305@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Duygu Süzen",
+      "billingAddress": "Alacaatlı Mahallesi Zümrütköy Sitesi 3308.Sokak No:16 Çayyolu Çankaya Ankara ÇAYYOLU ÇANKAYA Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "ÇANKAYA",
+      "billingDistrict": "ÇAYYOLU",
+      "billingPostalCode": "06810",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 375.2
+      },
+      "items": [
+        {
+          "lineItemId": "6af35ffd-9b43-3302-6038-187406060606",
+          "listingId": "353b5f2f-e329-4cf2-86b0-2a536ededae2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EATWVS",
+          "merchantSku": "AE3-6VMTR5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 375.2
+          },
+          "vat": 62.53,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 375.2
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 86.22
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 103.8
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 103.8
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 479
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 479
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Dc Sarı Motor + Tekerlek / 4 Adet",
+          "orderNumber": "4914527138",
+          "orderDate": "2026-11-10T21:18:36",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR45",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001688556195.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Eren Süzen",
+      "estimatedArrivalDate": "2026-11-13T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6af360d9-ad66-ac48-1c49-3d1206060606",
+      "status": "Open",
+      "customerId": "4ace2c49-e62c-44f5-a44e-0595a2ac6f54",
+      "orderDate": "2026-11-10T21:22:15",
+      "dueDate": "2026-11-11T18:30:00",
+      "barcode": "62955410792426",
+      "packageNumber": "5541079242",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Derekır Sokak Birlik Apt. 4/8 Tarabya Sarıyer İstanbul  TARABYA SARIYER İstanbul",
+      "recipientName": "Talha Günata",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "TARABYA",
+      "shippingTown": "SARIYER",
+      "shippingCity": "İstanbul",
+      "email": "4920025950_5541079242@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Talha Günata",
+      "billingAddress": "Derekır Sokak Birlik Apt. 4/8 Tarabya Sarıyer İstanbul  TARABYA SARIYER İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "SARIYER",
+      "billingDistrict": "TARABYA",
+      "billingPostalCode": "34457",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1155.2
+      },
+      "items": [
+        {
+          "lineItemId": "6af360d8-4103-d475-8840-445b06060606",
+          "listingId": "2ea8096a-dcde-4499-92ff-68a7cfb918a4",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000GX4SA8",
+          "merchantSku": "AE3IN1ROBOT",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 1155.2
+          },
+          "vat": 192.53,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 1155.2
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 261.72
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 298.8
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 298.8
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1454
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1454
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 3'ü 1 Arada Çok Fonksiyonlu Robot Araba Kiti (Bluetooth + Ir Kumanda + Engelden Kaçan)",
+          "orderNumber": "4920025950",
+          "orderDate": "2026-11-10T21:22:15",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3IN1RBT01",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001953039447.jpg",
+          "deci": 0.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "TALHA GÜNATA",
+      "estimatedArrivalDate": "2026-11-16T15:30:00Z",
+      "totalDeci": 0.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6af36ebf-0724-3768-ba2d-25fa06060606",
+      "status": "Open",
+      "customerId": "77a869d7-eb75-436d-b654-eabb3a71e267",
+      "orderDate": "2026-11-10T22:21:31",
+      "dueDate": "2026-11-11T18:30:00",
+      "barcode": "62955411320527",
+      "packageNumber": "5541132052",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "fatih mah. 1601 sokak demirezen konutları A blok ,kat 4 no :8 FATİH BUCAK Burdur",
+      "recipientName": "Kübra Bilgen",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "FATİH",
+      "shippingTown": "BUCAK",
+      "shippingCity": "Burdur",
+      "email": "4012187336_5541132052@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "kadir bilgen",
+      "billingAddress": "Bucak İlçe Devlet Hastanesi İçi Yolu YETMİŞ EVLER BUCAK Burdur",
+      "billingCity": "Burdur",
+      "billingTown": "BUCAK",
+      "billingDistrict": "YETMİŞ EVLER",
+      "billingPostalCode": "15300",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 502.4
+      },
+      "items": [
+        {
+          "lineItemId": "6af36ebc-e012-43df-59c9-eddf06060606",
+          "listingId": "b2f6f6d5-7a6a-43bf-9e74-1e1ac325a3c9",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV000071XAEU",
+          "merchantSku": "AEESP32TC",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 502.4
+          },
+          "vat": 83.73,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 502.4
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 116.82
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 146.6
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 146.6
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 649
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 649
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "TLS Robotik ESP-WROOM-32 Geliştirme Kartı (CH340 - 30 Pin - Type-C) WiFi ve Bluetooth Bağlantısı Özellikli",
+          "orderNumber": "4012187336",
+          "orderDate": "2026-11-10T22:21:31",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0171020232357",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000807538794.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "kadir bilgen",
+      "estimatedArrivalDate": "2026-11-16T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
