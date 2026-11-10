@@ -1,4 +1,265 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6af350d8-4868-6d29-d9ec-034d06060606",
+      "status": "Open",
+      "customerId": "cd077d56-70a7-4897-8f21-9efb9f1fec93",
+      "orderDate": "2026-11-10T20:13:59",
+      "dueDate": "2026-11-11T18:30:00",
+      "barcode": "62955410238539",
+      "packageNumber": "5541023853",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "1434 sokak no 5 A yeniyol apartmanı kat 0 - daire 0  Kültür  mahallesi/ Konak / izmir KÜLTÜR KONAK İzmir",
+      "recipientName": "Barış Coşkun",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KÜLTÜR",
+      "shippingTown": "KONAK",
+      "shippingCity": "İzmir",
+      "email": "4451317594_5541023853@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Barış Coşkun",
+      "billingAddress": "1434 sokak no 5 a  yeniyol apartmanı Kültür mahallesi  konak İzmir kat 0 daire 0 KÜLTÜR KONAK İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "KONAK",
+      "billingDistrict": "KÜLTÜR",
+      "billingPostalCode": "35220",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 396.16
+      },
+      "items": [
+        {
+          "lineItemId": "6af350d7-e012-43df-595e-ca8d06060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 8,
+          "price": {
+            "currency": "TRY",
+            "amount": 49.52
+          },
+          "vat": 66.03,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 396.16
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 11.14
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 12.38
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 99.04
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 61.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 495.2
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4451317594",
+          "orderDate": "2026-11-10T20:13:59",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "BARIŞ COŞKUN",
+      "estimatedArrivalDate": "2026-11-12T15:30:00Z",
+      "totalDeci": 8.8,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6af35b27-0854-15eb-b69c-fb9106060606",
+      "status": "Open",
+      "customerId": "533a2ff6-b7da-4f7f-baa3-bf9a0b8583ac",
+      "orderDate": "2026-11-10T20:57:56",
+      "dueDate": "2026-11-11T18:30:00",
+      "barcode": "62955410605519",
+      "packageNumber": "5541060551",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Güventepe Mah. Veysel Şatıroğlu Cad. 5A A Blok kat 8 daire 33 GÜVENTEPE YENİMAHALLE Ankara",
+      "recipientName": "Ali Yazar",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "GÜVENTEPE",
+      "shippingTown": "YENİMAHALLE",
+      "shippingCity": "Ankara",
+      "email": "4383630804_5541060551@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Ali Yazar",
+      "billingAddress": "Emniyet mahallesi abant2 cad no6/6 Yenimahalle Ankara EMNİYET YENİMAHALLE Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "YENİMAHALLE",
+      "billingDistrict": "EMNİYET",
+      "billingPostalCode": "06560",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 141.8
+      },
+      "items": [
+        {
+          "lineItemId": "6af35b25-8d47-b416-d41f-b41406060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 70.9
+          },
+          "vat": 23.63,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 141.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 12.76
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 70.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 141.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4383630804",
+          "orderDate": "2026-11-10T20:57:56",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "ALİ YAZAR",
+      "estimatedArrivalDate": "2026-11-13T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
