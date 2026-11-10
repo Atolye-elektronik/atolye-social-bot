@@ -1,5 +1,5 @@
 ---
-platforms: [instagram, facebook, threads]
+platforms: [instagram, facebook]
 media: posts/media/bayram/2026-11-10-10-kasim-ataturk-post.jpg
 publish_at: 2026-11-10 09:05
 ---
