@@ -1184,3 +1184,5 @@
 {"an": "2026-11-11T10:48", "kanal": "hepsiburada", "no": "4275752014", "kod": "AEPY18650", "adet": 4, "dusum": {"AEPY18650": 4}, "kuru": false}
 {"an": "2026-11-11T10:48", "kanal": "n11", "no": "271957432426", "kod": "AEXL6009", "adet": 2, "dusum": {"AEXL6009": 2}, "kuru": false}
 {"an": "2026-11-11T10:48", "kanal": "n11", "no": "268569432427", "kod": "AEACDMMR", "adet": 1, "dusum": {"AEACDMMR": 1}, "kuru": false}
+{"an": "2026-11-11T11:08", "kanal": "n11", "no": "271957432426", "iade": {"AEXL6009": 2}, "durum": "Cancelled", "kuru": false}
+{"an": "2026-11-11T11:08", "kanal": "n11", "no": "232953432425", "kod": "AEACDMMR", "adet": 1, "dusum": {"AEACDMMR": 1}, "kuru": false}
