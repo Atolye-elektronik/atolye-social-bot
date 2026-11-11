@@ -780,6 +780,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6af46d47-7753-72aa-bd02-70e406060606",
+      "status": "Open",
+      "customerId": "6ced1334-2f1c-4001-bc30-b519789a6119",
+      "orderDate": "2026-11-11T16:27:29",
+      "dueDate": "2026-11-12T18:30:00",
+      "barcode": "62955418052184",
+      "packageNumber": "5541805218",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "İlkbahar Mah. Güneypark Evleri P Blok Kat:23 Daire:115 İLKBAHAR ÇANKAYA Ankara",
+      "recipientName": "Ahmet ŞEN",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "İLKBAHAR",
+      "shippingTown": "ÇANKAYA",
+      "shippingCity": "Ankara",
+      "email": "4437369558_5541805218@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Ahmet ŞEN",
+      "billingAddress": "4. Güneş Sk. Güneş Apt. No:14 Kat:14 Daire No:56 CUMHURİYET MERKEZ Uşak",
+      "billingCity": "Uşak",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "CUMHURİYET",
+      "billingPostalCode": "64200",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 198.08
+      },
+      "items": [
+        {
+          "lineItemId": "6af46d44-8d47-b416-d48b-88d806060606",
+          "listingId": "ce774985-b490-43dc-843e-821b9ed12f40",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00000S5AX0",
+          "merchantSku": "AEHB18650TK",
+          "quantity": 4,
+          "price": {
+            "currency": "TRY",
+            "amount": 49.52
+          },
+          "vat": 33.01,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 198.08
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 11.14
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 12.38
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 49.52
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 61.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 247.6
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Cnl 18650 Pil Tutucu Kablolu Tekli Li-On Pil Yuvası ABS Plastik ve Metal Malzeme ile Kolay Taşınabilir",
+          "orderNumber": "4437369558",
+          "orderDate": "2026-11-11T16:27:29",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "950300870000",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "0000722973923",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/126/{size}/110000076883301.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "AHMET ŞEN",
+      "estimatedArrivalDate": "2026-11-16T15:30:00Z",
+      "totalDeci": 4.4,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
