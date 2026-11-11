@@ -1187,3 +1187,4 @@
 {"an": "2026-11-11T11:08", "kanal": "n11", "no": "271957432426", "iade": {"AEXL6009": 2}, "durum": "Cancelled", "kuru": false}
 {"an": "2026-11-11T11:08", "kanal": "n11", "no": "232953432425", "kod": "AEACDMMR", "adet": 1, "dusum": {"AEACDMMR": 1}, "kuru": false}
 {"an": "2026-11-11T12:13", "kanal": "n11", "no": "254542232427", "kod": "AEDUYAMP-10", "adet": 2, "dusum": {"AEDUY-1": 20, "AEAMP-1": 20}, "kuru": false}
+{"an": "2026-11-11T13:28", "kanal": "hepsiburada", "no": "4437369558", "kod": "AEPY18650T", "adet": 4, "dusum": {"AEPY18650T": 4}, "kuru": false}
