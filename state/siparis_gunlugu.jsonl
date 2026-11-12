@@ -1207,3 +1207,6 @@
 {"an": "2026-11-12T11:51", "kanal": "idefix", "no": "IDE6af59ce0163df", "kod": "AENANOTC", "adet": 1, "dusum": {"AENANOTC": 1}, "kuru": false}
 {"an": "2026-11-12T11:51", "kanal": "idefix", "no": "IDE6af59ce0163df", "kod": "AENANOTC", "adet": 1, "dusum": {"AENANOTC": 1}, "kuru": false}
 {"an": "2026-11-12T11:51", "kanal": "idefix", "no": "IDE6af59ce0163df", "kod": "AERTC13025", "adet": 1, "dusum": {"AERTC1302": 5}, "kuru": false}
+{"an": "2026-11-12T13:13", "kanal": "hepsiburada", "no": "4592621694", "kod": "AE4IN1ROBOT-LI", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEPY18650": 1, "AEUNOR3": 1, "AEL298N": 1, "AEHC06BT": 1, "AEIRKMND": 1, "AEHCSR04": 1, "AESG90": 1, "AEJK2040DE": 1, "AEJK2040": 1, "AECIZGI4": 1}, "kuru": false}
+{"an": "2026-11-12T13:13", "kanal": "hepsiburada", "no": "4594885186", "kod": "AEPY18650", "adet": 2, "dusum": {"AEPY18650": 2}, "kuru": false}
+{"an": "2026-11-12T13:13", "kanal": "hepsiburada", "no": "4594885186", "kod": "AEPY18650T", "adet": 2, "dusum": {"AEPY18650T": 2}, "kuru": false}
