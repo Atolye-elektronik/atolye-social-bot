@@ -1,4 +1,135 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6af71eab-835d-f7cb-6d7f-e84206060606",
+      "status": "Open",
+      "customerId": "c160f1f8-0c90-484b-9fe5-95ce05a0978f",
+      "orderDate": "2026-11-13T17:28:57",
+      "dueDate": "2026-11-14T18:30:00",
+      "barcode": "62955435267534",
+      "packageNumber": "5543526753",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Fesleğen sokak Yağcıoğlu Zafer Konutları B blok No 16 Kat 4 Daire13  ZAFER SÜLEYMANPAŞA Tekirdağ",
+      "recipientName": "Sabit Gürcan",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ZAFER",
+      "shippingTown": "SÜLEYMANPAŞA",
+      "shippingCity": "Tekirdağ",
+      "email": "4521735514_5543526753@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Sabit Gürcan",
+      "billingAddress": "İsmail Hakkı Güngör sokak Altaş Apt. No:36  ALTINOVA SÜLEYMANPAŞA Tekirdağ",
+      "billingCity": "Tekirdağ",
+      "billingTown": "SÜLEYMANPAŞA",
+      "billingDistrict": "ALTINOVA",
+      "billingPostalCode": "59100",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 226.88
+      },
+      "items": [
+        {
+          "lineItemId": "6af71eaa-b50d-ab56-fbc8-74c006060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 4,
+          "price": {
+            "currency": "TRY",
+            "amount": 56.72
+          },
+          "vat": 37.81,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 226.88
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 12.76
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 14.18
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 56.72
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 70.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 283.6
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4521735514",
+          "orderDate": "2026-11-13T17:28:57",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Sabit Gürcan",
+      "estimatedArrivalDate": "2026-11-18T15:30:00Z",
+      "totalDeci": 4,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
