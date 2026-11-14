@@ -88,15 +88,15 @@
             {%- assign inv_tip = cart.attributes['Fatura tipi'] | default: 'Bireysel' -%}
             <div class="cart-inv" data-cart-inv>
               <p class="cart-inv__title">Teslimat ve fatura bilgileri</p>
-              <p class="cart-inv__note">Faturanın doğru kesilmesi için il, ilçe ve mahalleyi seç. Ödeme sayfasındaki adreste de aynı bilgileri yaz.</p>
+              <p class="cart-inv__note">Faturanın doğru kesilmesi için il ve mahalleyi gir, ilçeyi de seçebilirsin. Ödeme sayfasındaki adreste de aynı bilgileri yaz.</p>
               <div class="cart-inv__row">
                 <label>İl
                   <select name="attributes[Il]" data-inv-il data-value="{{ cart.attributes['Il'] | escape }}" required>
                     <option value="">İl seçin</option>
                   </select>
                 </label>
-                <label>İlçe
-                  <select name="attributes[Ilce]" data-inv-ilce data-value="{{ cart.attributes['Ilce'] | escape }}" required disabled>
+                <label>İlçe <span style="font-weight:400;color:#6b7280">(isteğe bağlı)</span>
+                  <select name="attributes[Ilce]" data-inv-ilce data-value="{{ cart.attributes['Ilce'] | escape }}" disabled>
                     <option value="">Önce il seçin</option>
                   </select>
                 </label>
@@ -195,7 +195,7 @@
             ilce.innerHTML = '';
             var first = document.createElement('option');
             first.value = '';
-            first.textContent = il.value ? 'İlçe seçin' : 'Önce il seçin';
+            first.textContent = il.value ? 'İlçe seçin (isteğe bağlı)' : 'Önce il seçin';
             ilce.appendChild(first);
             list.forEach(function (n) {
               var o = document.createElement('option');
@@ -227,7 +227,7 @@
           function invCheck() {
             if (!inv) return true;
             var bad = [];
-            [il, ilce].forEach(function (s) { if (!s.value) bad.push(s); });
+            if (!il.value) bad.push(il);
             if (mah.value.trim().length < 3) bad.push(mah);
             var kurumsal = !corp.hidden;
             corp.querySelectorAll('[data-inv-req]').forEach(function (f) {
@@ -243,8 +243,8 @@
             bad.forEach(function (f) { f.classList.add('is-invalid'); });
             if (bad.length) {
               invErr.textContent = kurumsal
-                ? 'İl, ilçe, mahalle ve kurumsal fatura bilgilerini (unvan, vergi dairesi, 10 haneli vergi no ya da 11 haneli TC) doldur.'
-                : 'Ödemeye geçmek için il, ilçe ve mahalleyi doldur.';
+                ? 'İl, mahalle ve kurumsal fatura bilgilerini (unvan, vergi dairesi, 10 haneli vergi no ya da 11 haneli TC) doldur.'
+                : 'Ödemeye geçmek için il ve mahalleyi doldur.';
               invErr.hidden = false;
               bad[0].focus();
               return false;
