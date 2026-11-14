@@ -1,0 +1,288 @@
+{{ 'cart-mobile.css' | asset_url | stylesheet_tag }}
+<section class="section">
+  <div class="container">
+    <h1>Sepetin</h1>
+    <div class="band-divider" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+    {%- if cart.item_count == 0 -%}
+      <div class="cart-empty">
+        <p>Sepetin şu an boş. Hadi bir projeye başlayalım!</p>
+        <a href="{{ routes.all_products_collection_url }}" class="btn btn--primary">Ürünlere göz at</a>
+      </div>
+    {%- else -%}
+      {%- assign shipping_threshold = 120000 -%}
+      {%- assign shipping_remaining = shipping_threshold | minus: cart.items_subtotal_price -%}
+      {%- if shipping_remaining > 0 -%}
+        {%- assign shipping_percent = cart.items_subtotal_price | times: 1.0 | divided_by: shipping_threshold | times: 100 -%}
+      {%- else -%}
+        {%- assign shipping_percent = 100 -%}
+      {%- endif -%}
+      <div class="shipping-progress {% if shipping_remaining <= 0 %}is-complete{% endif %}" data-shipping-bar data-threshold="{{ shipping_threshold }}">
+        <p class="shipping-progress__text" data-shipping-text>
+          {%- if shipping_remaining > 0 -%}
+            Ücretsiz kargoya <strong>{{ shipping_remaining | money }}</strong> kaldı! 🚚
+          {%- else -%}
+            Tebrikler, kargon ücretsiz! 🎉
+          {%- endif -%}
+        </p>
+        <div class="shipping-progress__track">
+          <div class="shipping-progress__fill" data-shipping-fill style="width: {{ shipping_percent }}%"></div>
+        </div>
+      </div>
+
+      <form action="{{ routes.cart_url }}" method="post" novalidate>
+        <table class="cart-table">
+          <thead>
+            <tr><th>Ürün</th><th>Adet</th><th>Toplam</th></tr>
+          </thead>
+          <tbody>
+            {%- for item in cart.items -%}
+              <tr>
+                <td>
+                  <div class="cart-item">
+                    {%- if item.image -%}
+                      <img src="{{ item.image | image_url: width: 144 }}" alt="" width="72" height="72">
+                    {%- endif -%}
+                    <div>
+                      <a href="{{ item.url }}">{{ item.product.title }}</a>
+                      {%- unless item.variant.title == 'Default Title' -%}<div>{{ item.variant.title }}</div>{%- endunless -%}
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="qty-stepper qty-stepper--sm" data-qty-stepper>
+                    <button type="button" class="qty-stepper__btn" data-qty-minus aria-label="Adedi azalt">&minus;</button>
+                    <input class="qty-input" type="number" name="updates[{{ item.key }}]" value="{{ item.quantity }}" min="0" inputmode="numeric" data-key="{{ item.key }}" data-prev="{{ item.quantity }}" data-name="{{ item.product.title | escape }}" aria-label="{{ item.product.title }} adedi">
+                    <button type="button" class="qty-stepper__btn" data-qty-plus aria-label="Adedi artır">+</button>
+                  </div>
+                </td>
+                <td data-line-total>{{ item.final_line_price | money }}</td>
+              </tr>
+            {%- endfor -%}
+          </tbody>
+        </table>
+
+        <div class="cart-footer">
+          <div class="cart-summary">
+            <div class="cart-summary__row"><span>Ara toplam</span><span data-cart-subtotal>{{ cart.items_subtotal_price | money }}</span></div>
+            <small>KDV dahil. Kargo ödeme adımında hesaplanır.</small>
+
+            <style>
+              .cart-inv{margin:16px 0 4px;padding:14px;border:1px solid #e1e3ec;border-radius:10px;background:#fafbfd;display:grid;gap:10px}
+              .cart-inv__title{margin:0;font-size:14px;font-weight:700;color:#1b2a4a}
+              .cart-inv__note{margin:-4px 0 0;font-size:12px;color:#6b7280;line-height:1.4}
+              .cart-inv__row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+              .cart-inv label{display:grid;gap:4px;font-size:12.5px;font-weight:600;color:#1b2a4a}
+              .cart-inv select,.cart-inv input[type=text]{width:100%;box-sizing:border-box;padding:9px 10px;border:1px solid #c9cdd9;border-radius:7px;font:inherit;font-size:14px;font-weight:400;background:#fff;color:#1b2a4a}
+              .cart-inv select:disabled{background:#f1f2f6;color:#9aa0ad}
+              .cart-inv .is-invalid{border-color:#c0392b;box-shadow:0 0 0 2px rgba(192,57,43,.12)}
+              .cart-inv__type{display:flex;gap:8px}
+              .cart-inv__type label{flex:1;display:flex;align-items:center;gap:8px;padding:9px 10px;border:1px solid #c9cdd9;border-radius:7px;background:#fff;cursor:pointer;font-weight:600}
+              .cart-inv__type input{accent-color:#17204D;margin:0}
+              .cart-inv__type label:has(input:checked){border-color:#17204D;box-shadow:inset 0 0 0 1px #17204D}
+              .cart-inv__corp{display:grid;gap:10px}
+              .cart-inv__corp[hidden]{display:none}
+              .cart-inv__error{margin:0;font-size:12.5px;color:#c0392b}
+              @media (max-width:520px){.cart-inv__row{grid-template-columns:1fr}}
+            </style>
+            {%- assign inv_tip = cart.attributes['Fatura tipi'] | default: 'Bireysel' -%}
+            <div class="cart-inv" data-cart-inv>
+              <p class="cart-inv__title">Teslimat ve fatura bilgileri</p>
+              <p class="cart-inv__note">Faturanın doğru kesilmesi için il, ilçe ve mahalleyi seç. Ödeme sayfasındaki adreste de aynı bilgileri yaz.</p>
+              <div class="cart-inv__row">
+                <label>İl
+                  <select name="attributes[Il]" data-inv-il data-value="{{ cart.attributes['Il'] | escape }}" required>
+                    <option value="">İl seçin</option>
+                  </select>
+                </label>
+                <label>İlçe
+                  <select name="attributes[Ilce]" data-inv-ilce data-value="{{ cart.attributes['Ilce'] | escape }}" required disabled>
+                    <option value="">Önce il seçin</option>
+                  </select>
+                </label>
+              </div>
+              <label>Mahalle
+                <input type="text" name="attributes[Mahalle]" value="{{ cart.attributes['Mahalle'] | escape }}" data-inv-mahalle maxlength="80" autocomplete="off" placeholder="Örn. Tomalar Mahallesi" required>
+              </label>
+              <div class="cart-inv__type" role="radiogroup" aria-label="Fatura tipi">
+                <label><input type="radio" name="attributes[Fatura tipi]" value="Bireysel" data-inv-tip {% if inv_tip != 'Kurumsal' %}checked{% endif %}> Bireysel fatura</label>
+                <label><input type="radio" name="attributes[Fatura tipi]" value="Kurumsal" data-inv-tip {% if inv_tip == 'Kurumsal' %}checked{% endif %}> Kurumsal fatura</label>
+              </div>
+              <div class="cart-inv__corp" data-inv-corp {% if inv_tip != 'Kurumsal' %}hidden{% endif %}>
+                <label>Firma / kurum unvanı
+                  <input type="text" name="attributes[Firma unvani]" value="{{ cart.attributes['Firma unvani'] | escape }}" data-inv-req maxlength="150">
+                </label>
+                <div class="cart-inv__row">
+                  <label>Vergi dairesi
+                    <input type="text" name="attributes[Vergi dairesi]" value="{{ cart.attributes['Vergi dairesi'] | escape }}" data-inv-req maxlength="60">
+                  </label>
+                  <label>Vergi no / TC kimlik no
+                    <input type="text" name="attributes[Vergi no]" value="{{ cart.attributes['Vergi no'] | escape }}" data-inv-req data-inv-vkn inputmode="numeric" maxlength="11" placeholder="10 veya 11 hane">
+                  </label>
+                </div>
+              </div>
+              <p class="cart-inv__error" data-inv-error hidden></p>
+            </div>
+            <script type="application/json" data-inv-data>{"Adana":["Aladağ","Ceyhan","Çukurova","Feke","İmamoğlu","Karaisalı","Karataş","Kozan","Pozantı","Saimbeyli","Sarıçam","Seyhan","Tufanbeyli","Yumurtalık","Yüreğir"],"Adıyaman":["Merkez","Besni","Çelikhan","Gerger","Gölbaşı","Kahta","Samsat","Sincik","Tut"],"Afyonkarahisar":["Merkez","Bayat","Başmakçı","Bolvadin","Çay","Çobanlar","Dazkırı","Dinar","Emirdağ","Evciler","Hocalar","İhsaniye","İscehisar","Kızılören","Sandıklı","Sinanpaşa","Sultandağı","Şuhut"],"Ağrı":["Merkez","Diyadin","Doğubayazıt","Eleşkirt","Hamur","Patnos","Taşlıçay","Tutak"],"Amasya":["Merkez","Göynücek","Gümüşhacıköy","Hamamözü","Merzifon","Suluova","Taşova"],"Ankara":["Akyurt","Altındağ","Amak","Ayaş","Bala","Beypazarı","Çamlıdere","Çankaya","Çubuk","Elmadağ","Etimesgut","Evren","Gölbaşı","Güdül","Haymana","Kahramankazan","Kalecik","Keçiören","Kızılcahamam","Nallıhan","Polatlı","Pursaklar","Sincan","Şereflikoçhisar","Yenimahalle"],"Antalya":["Akseki","Aksu","Alanya","Demre","Döşemealtı","Elmalı","Finike","Gazipaşa","Gündoğmuş","İbradı","Kaş","Kemer","Kepez","Konyaaltı","Korkuteli","Kumluca","Manavgat","Muratpaşa","Serik"],"Artvin":["Merkez","Ardanuç","Arhavi","Borçka","Hopa","Kemalpaşa","Murgul","Şavşat","Yusufeli"],"Aydın":["Bozdoğan","Buharkent","Çine","Didim","Efeler","Germencik","İncirliova","Karacasu","Karpuzlu","Koçarlı","Kuyucak","Kuşadası","Köşk","Nazilli","Sultanhisar","Söke","Yenipazar"],"Balıkesir":["Altıeylül","Ayvalık","Balya","Bandırma","Bigadiç","Burhaniye","Dursunbey","Edremit","Erdek","Gömeç","Gönen","Havran","İvrindi","Karesi","Kepsut","Manyas","Marmara","Savaştepe","Susurluk","Sındırgı"],"Bilecik":["Merkez","Bozüyük","Gölpazarı","İnhisar","Osmaneli","Pazaryeri","Söğüt","Yenipazar"],"Bingöl":["Merkez","Adaklı","Genç","Karlıova","Kiğı","Solhan","Yayladere","Yedisu"],"Bitlis":["Merkez","Adilcevaz","Ahlat","Güroymak","Hizan","Mutki","Tatvan"],"Bolu":["Merkez","Dörtdivan","Gerede","Göynük","Kıbrıscık","Mengen","Mudurnu","Seben","Yeniçağa"],"Burdur":["Merkez","Altınyayla","Ağlasun","Bucak","Çavdır","Çeltikçi","Gölhisar","Karamanlı","Kemer","Tefenni","Yeşilova"],"Bursa":["Büyükorhan","Gemlik","Gürsu","Harmancık","İnegöl","İznik","Karacabey","Keles","Kestel","Mudanya","Mustafakemalpaşa","Nilüfer","Orhaneli","Orhangazi","Osmangazi","Yenişehir","Yıldırım"],"Çanakkale":["Merkez","Ayvacık","Bayramiç","Biga","Bozcaada","Çan","Eceabat","Ezine","Gelibolu","Gökçeada","Lapseki","Yenice"],"Çankırı":["Merkez","Atkaracalar","Bayramören","Çerkeş","Eldivan","Ilgaz","Korgun","Kurşunlu","Kızılırmak","Orta","Şabanözü","Yapraklı"],"Çorum":["Merkez","Alaca","Bayat","Boğazkale","Dodurga","İskilip","Kargı","Laçin","Mecitözü","Ortaköy","Osmancık","Oğuzlar","Sungurlu","Uğurludağ"],"Denizli":["Acıpayam","Babadağ","Baklan","Bekilli","Beyağaç","Bozkurt","Buldan","Çal","Çameli","Çardak","Çivril","Güney","Honaz","Kale","Merkezefendi","Pamukkale","Sarayköy","Serinhisar","Tavas"],"Diyarbakır":["Bağlar","Bismil","Çermik","Çüngüş","Çınar","Dicle","Ergani","Eğil","Hani","Hazro","Kayapınar","Kocaköy","Kulp","Lice","Silvan","Sur","Yenişehir"],"Edirne":["Merkez","Enez","Havsa","İpsala","Keşan","Lalapaşa","Meriç","Süloğlu","Uzunköprü"],"Elazığ":["Merkez","Alacakaya","Arıcak","Ağın","Baskil","Karakoçan","Keban","Kovancılar","Maden","Palu","Sivrice"],"Erzincan":["Merkez","Çayırlı","İliç","Kemah","Kemaliye","Otlukbeli","Refahiye","Tercan","Üzümlü"],"Erzurum":["Aziziye","Aşkale","Çat","Horasan","Hınıs","İspir","Karayazı","Karaçoban","Köprüköy","Narman","Oltu","Olur","Palandöken","Pasinler","Pazaryolu","Şenkaya","Tekman","Tortum","Uzundere","Yakutiye"],"Eskişehir":["Alpu","Beylikova","Çifteler","Günyüzü","Han","İnönü","Mahmudiye","Mihalgazi","Mihalıççık","Odunpazarı","Sarıcakaya","Seyitgazi","Sivrihisar","Tepebaşı"],"Gaziantep":["Araban","İslahiye","Karkamış","Nizip","Nurdağı","Oğuzeli","Şahinbey","Şehitkamil","Yavuzeli"],"Giresun":["Merkez","Alucra","Bulancak","Çamoluk","Çanakçı","Dereli","Doğankent","Espiye","Eynesil","Görele","Güce","Keşap","Piraziz","Şebinkarahisar","Tirebolu","Yağlıdere"],"Gümüşhane":["Merkez","Kelkit","Köse","Kürtün","Şiran","Torul"],"Hakkari":["Merkez","Çukurca","Derecik","Şemdinli","Yüksekova"],"Hatay":["Altınözü","Antakya","Arsuz","Belen","Defne","Dörtyol","Erzin","Hassa","İskenderun","Kumlu","Kırıkhan","Payas","Reyhanlı","Samandağ","Yayladağı"],"Isparta":["Merkez","Aksu","Atabey","Eğirdir","Gelendost","Gönen","Keçiborlu","Senirkent","Şarkikaraağaç","Sütçüler","Uluborlu","Yalvaç","Yenişarbademli"],"Mersin":["Akdeniz","Anamur","Aydıncık","Bozyazı","Çamlıyayla","Erdemli","Gülnar","Mezitli","Mut","Silifke","Tarsus","Toroslar","Yenişehir"],"İstanbul":["Adalar","Arnavutköy","Ataşehir","Avcılar","Bahçelievler","Bakırköy","Bayrampaşa","Bağcılar","Başakşehir","Beykoz","Beylikdüzü","Beyoğlu","Beşiktaş","Büyükçekmece","Çatalca","Çekmeköy","Esenler","Esenyurt","Eyüpsultan","Fatih","Gaziosmanpaşa","Güngören","Kadıköy","Kartal","Kağıthane","Küçükçekmece","Maltepe","Pendik","Sancaktepe","Sarıyer","Silivri","Sultanbeyli","Sultangazi","Şile","Şişli","Tuzla","Ümraniye","Üsküdar","Zeytinburnu"],"İzmir":["Aliağa","Balçova","Bayraklı","Bayındır","Bergama","Beydağ","Bornova","Buca","Çeşme","Çiğli","Dikili","Foça","Gaziemir","Güzelbahçe","Karabağlar","Karaburun","Karşıyaka","Kemalpaşa","Kiraz","Konak","Kınık","Menderes","Menemen","Narlıdere","Ödemiş","Seferihisar","Selçuk","Tire","Torbalı","Urla"],"Kars":["Merkez","Akyaka","Arpaçay","Digor","Kağızman","Sarıkamış","Selim","Susuz"],"Kastamonu":["Merkez","Abana","Araç","Azdavay","Ağlı","Bozkurt","Cide","Çatalzeytin","Daday","Devrekani","Doğanyurt","Hanönü","İhsangazi","İnebolu","Küre","Pınarbaşı","Seydiler","Şenpazar","Taşköprü","Tosya"],"Kayseri":["Akkışla","Bünyan","Develi","Felahiye","Hacılar","İncesu","Kocasinan","Melikgazi","Özvatan","Pınarbaşı","Sarıoğlan","Sarız","Talas","Tomarza","Yahyalı","Yeşilhisar"],"Kırklareli":["Merkez","Babaeski","Demirköy","Kofçaz","Lüleburgaz","Pehlivanköy","Pınarhisar","Vize"],"Kırşehir":["Merkez","Akpınar","Akçakent","Boztepe","Çiçekdağı","Kaman","Mucur"],"Kocaeli":["Başiskele","Çayırova","Darıca","Derince","Dilovası","Gebze","Gölcük","İzmit","Kandıra","Karamürsel","Kartepe","Körfez"],"Konya":["Ahırlı","Akören","Akşehir","Altınekin","Beyşehir","Bozkır","Cihanbeyli","Çeltik","Çumra","Derbent","Derebucak","Doğanhisar","Emirgazi","Ereğli","Güneysınır","Hadim","Halkapınar","Hüyük","Ilgın","Kadınhanı","Karapınar","Karatay","Kulu","Meram","Sarayönü","Selçuklu","Seydişehir","Taşkent","Tuzlukçu","Yalıhüyük","Yunak"],"Kütahya":["Merkez","Altıntaş","Aslanapa","Çavdarhisar","Domaniç","Dumlupınar","Emet","Gediz","Hisarcık","Pazarlar","Simav","Şaphane","Tavşanlı"],"Malatya":["Akçadağ","Arapgir","Arguvan","Battalgazi","Darende","Doğanyol","Doğanşehir","Hekimhan","Kale","Kuluncak","Pütürge","Yazıhan","Yeşilyurt"],"Manisa":["Ahmetli","Akhisar","Alaşehir","Demirci","Gölmarmara","Gördes","Kula","Köprübaşı","Kırkağaç","Salihli","Saruhanlı","Sarıgöl","Selendi","Soma","Şehzadeler","Turgutlu","Yunusemre"],"Kahramanmaraş":["Merkez","Afşin","Andırın","Çağlayancerit","Dulkadiroğlu","Ekinözü","Elbistan","Göksun","Nurhak","Onikişubat","Pazarcık","Türkoğlu"],"Mardin":["Artuklu","Dargeçit","Derik","Kızıltepe","Mazıdağı","Midyat","Nusaybin","Ömerli","Savur","Yeşilli"],"Muğla":["Bodrum","Dalaman","Datça","Fethiye","Kavaklıdere","Köyceğiz","Marmaris","Menteşe","Milas","Ortaca","Seydikemer","Ula","Yatağan"],"Muş":["Merkez","Bulanık","Hasköy","Korkut","Malazgirt","Varto"],"Nevşehir":["Merkez","Acıgöl","Avanos","Derinkuyu","Gülşehir","Hacıbektaş","Kozaklı","Ürgüp"],"Niğde":["Merkez","Altunhisar","Bor","Çamardı","Çiftlik","Ulukışla"],"Ordu":["Akkuş","Altınordu","Aybastı","Çamaş","Çatalpınar","Çaybaşı","Fatsa","Gölköy","Gülyalı","Gürgentepe","İkizce","Kabadüz","Kabataş","Korgan","Kumru","Mesudiye","Perşembe","Ulubey","Ünye"],"Rize":["Merkez","Ardeşen","Çamlıhemşin","Çayeli","Derepazarı","Fındıklı","Güneysu","Hemşin","İkizdere","İyidere","Kalkandere","Pazar"],"Sakarya":["Adapazarı","Akyazı","Arifiye","Erenler","Ferizli","Geyve","Hendek","Karapürçek","Karasu","Kaynarca","Kocaali","Pamukova","Sapanca","Serdivan","Söğütlü","Taraklı"],"Samsun":["19 Mayıs","Alaçam","Asarcık","Atakum","Ayvacık","Bafra","Canik","Çarşamba","Havza","İlkadım","Kavak","Ladik","Salıpazarı","Tekkeköy","Terme","Vezirköprü","Yakakent"],"Siirt":["Merkez","Baykan","Eruh","Kurtalan","Pervari","Şirvan","Tillo"],"Sinop":["Merkez","Ayancık","Boyabat","Dikmen","Durağan","Erfelek","Gerze","Saraydüzü","Türkeli"],"Sivas":["Merkez","Akıncılar","Altınyayla","Divriği","Doğanşar","Gemerek","Gölova","Gürün","Hafik","İmranlı","Kangal","Koyulhisar","Suşehri","Şarkışla","Ulaş","Yıldızeli","Zara"],"Tekirdağ":["Çerkezköy","Çorlu","Ergene","Hayrabolu","Kapaklı","Malkara","Marmaraereğlisi","Muratlı","Saray","Şarköy","Süleymanpaşa"],"Tokat":["Merkez","Almus","Artova","Başçiftlik","Erbaa","Niksar","Pazar","Reşadiye","Sulusaray","Turhal","Yeşilyurt","Zile"],"Trabzon":["Akçaabat","Araklı","Arsin","Beşikdüzü","Çarşıbaşı","Çaykara","Dernekpazarı","Düzköy","Hayrat","Köprübaşı","Maçka","Of","Ortahisar","Şalpazarı","Sürmene","Tonya","Vakfıkebir","Yomra"],"Tunceli":["Merkez","Çemişgezek","Hozat","Mazgirt","Nazımiye","Ovacık","Pertek","Pülümür"],"Şanlıurfa":["Akçakale","Birecik","Bozova","Ceylanpınar","Eyyübiye","Halfeti","Haliliye","Harran","Hilvan","Karaköprü","Siverek","Suruç","Viranşehir"],"Uşak":["Merkez","Banaz","Eşme","Karahallı","Sivaslı","Ulubey"],"Van":["Bahçesaray","Başkale","Çaldıran","Çatak","Edremit","Erciş","Gevaş","Gürpınar","İpekyolu","Muradiye","Özalp","Saray","Tuşba"],"Yozgat":["Merkez","Akdağmadeni","Aydıncık","Boğazlıyan","Çandır","Çayıralan","Çekerek","Kadışehri","Saraykent","Sarıkaya","Sorgun","Şefaatli","Yenifakılı","Yerköy"],"Zonguldak":["Alaplı","Çaycuma","Devrek","Ereğli","Gökçebey","Kilimli","Kozlu"],"Aksaray":["Merkez","Ağaçören","Eskil","Gülağaç","Güzelyurt","Ortaköy","Sarıyahşi","Sultanhanı"],"Bayburt":["Merkez","Aydıntepe","Demirözü"],"Karaman":["Merkez","Ayrancı","Başyayla","Ermenek","Kazımkarabekir","Sarıveliler"],"Kırıkkale":["Merkez","Bahşılı","Balışeyh","Çelebi","Delice","Karakeçili","Keskin","Sulakyurt","Yahşihan"],"Batman":["Merkez","Beşiri","Gercüş","Hasankeyf","Kozluk","Sason"],"Şırnak":["Merkez","Beytüşşebap","Cizre","Güçlükonak","İdil","Silopi","Uludere"],"Bartın":["Merkez","Amasra","Kurucaşile","Ulus"],"Ardahan":["Merkez","Çıldır","Damal","Göle","Hanak","Posof"],"Iğdır":["Merkez","Aralık","Karakoyunlu","Tuzluca"],"Yalova":["Merkez","Altınova","Armutlu","Çiftlikköy","Çınarcık","Termal"],"Karabük":["Merkez","Eflani","Eskipazar","Ovacık","Safranbolu","Yenice"],"Kilis":["Merkez","Elbeyli","Musabeyli","Polateli"],"Osmaniye":["Merkez","Bahçe","Düziçi","Hasanbeyli","Kadirli","Sumbas","Toprakkale"],"Düzce":["Merkez","Akçakoca","Cumayeri","Çilimli","Gölyaka","Gümüşova","Kaynaşlı","Yığılca"]}</script>
+            <style>
+              .cart-terms{display:flex;gap:10px;align-items:flex-start;margin:14px 0 4px;font-size:13px;line-height:1.45;color:#1b2a4a;cursor:pointer}
+              .cart-terms input{width:18px;height:18px;margin:1px 0 0;flex:none;accent-color:#17204D}
+              .cart-terms a{color:#17204D;text-decoration:underline}
+              .cart-terms__error{margin:0 0 8px;font-size:12.5px;color:#c0392b}
+            </style>
+            <label class="cart-terms" for="cart-terms">
+              <input type="checkbox" id="cart-terms" data-cart-terms>
+              <span><a href="/pages/on-bilgilendirme-formu" target="_blank" rel="noopener">Ön Bilgilendirme Formu</a>'nu ve <a href="/pages/mesafeli-satis-sozlesmesi" target="_blank" rel="noopener">Mesafeli Satış Sözleşmesi</a>'ni okudum, onaylıyorum.</span>
+            </label>
+            <input type="hidden" name="attributes[Sozlesme onayi]" value="" data-cart-terms-value>
+            <p class="cart-terms__error" data-cart-terms-error hidden>Ödemeye geçmek için ön bilgilendirme formunu ve sözleşmeyi onaylaman gerekiyor.</p>
+
+            <button type="submit" name="checkout" class="btn btn--primary btn--full">Ödemeye geç</button>
+            <div class="cart-payment-note">
+              <small>Güvenli ödeme — 256-bit SSL</small>
+              {% render 'payment-icons' %}
+            </div>
+
+            <style>
+              .cart-trust{margin-top:14px;border-top:1px solid #ececf1;padding-top:14px}
+              .cart-trust__grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 14px}
+              .cart-trust__grid li{display:flex;gap:8px;align-items:flex-start}
+              .cart-trust__ic{font-size:18px;line-height:1.2;flex:none}
+              .cart-trust__grid strong{display:block;font-size:13px;color:#1b2a4a;font-weight:600;line-height:1.3}
+              .cart-trust__grid em{font-style:normal;font-size:12px;color:#6b7280}
+              .cart-trust__social{margin:12px 0 0;text-align:center;font-size:13px;color:#1b2a4a}
+              .cart-trust__social a{color:#1b2a4a;text-decoration:none;border-bottom:1px dotted #b7bcd0;white-space:nowrap}
+              .cart-trust__social .star{color:#f5a623}
+              .cart-trust__wa{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;padding:10px;border-radius:8px;background:#e8f6ee;color:#128c4b;font-size:13px;font-weight:600;text-decoration:none}
+            </style>
+            <div class="cart-trust">
+              <ul class="cart-trust__grid">
+                <li><span class="cart-trust__ic">🔒</span><div><strong>Güvenli ödeme</strong><em>256-bit SSL · kart bilgin bize ulaşmaz</em></div></li>
+                <li><span class="cart-trust__ic">🚚</span><div><strong>Hızlı kargo</strong><em>Aynı/ertesi iş günü kargoda</em></div></li>
+                <li><span class="cart-trust__ic">↩️</span><div><strong>Kolay iade</strong><em>14 gün içinde cayma hakkı</em></div></li>
+                <li><span class="cart-trust__ic">🧾</span><div><strong>Faturalı satış</strong><em>Her siparişte e-arşiv fatura</em></div></li>
+              </ul>
+              <p class="cart-trust__social">
+                <a href="https://www.trendyol.com/magaza/atolye-elektronik-m-1258869" target="_blank" rel="noopener"><span class="star">★</span> Trendyol 9.7/10</a>
+                &nbsp;·&nbsp;
+                <a href="https://www.hepsiburada.com/magaza/atolye-elektronik" target="_blank" rel="noopener">Hepsiburada'da yüzlerce olumlu yorum</a>
+              </p>
+              <a class="cart-trust__wa" href="https://wa.me/905468253210?text=Merhaba,%20sipari%C5%9F%20%C3%B6ncesi%20bir%20sorum%20var" target="_blank" rel="noopener">💬 Sipariş öncesi soru? WhatsApp'tan yaz</a>
+            </div>
+          </div>
+        </div>
+      </form>
+      <script>
+        (function () {
+          var btn = document.querySelector('button[name="checkout"]');
+          var box = document.querySelector('[data-cart-terms]');
+          var val = document.querySelector('[data-cart-terms-value]');
+          var err = document.querySelector('[data-cart-terms-error]');
+          if (!btn || !box) return;
+
+          var inv = document.querySelector('[data-cart-inv]');
+          var il = inv && inv.querySelector('[data-inv-il]');
+          var ilce = inv && inv.querySelector('[data-inv-ilce]');
+          var mah = inv && inv.querySelector('[data-inv-mahalle]');
+          var corp = inv && inv.querySelector('[data-inv-corp]');
+          var invErr = inv && inv.querySelector('[data-inv-error]');
+          var data = {};
+          try { data = JSON.parse(document.querySelector('[data-inv-data]').textContent); } catch (e) {}
+          var trSort = function (a, b) { return a.localeCompare(b, 'tr'); };
+
+          function fillIlce(keep) {
+            var list = data[il.value] || [];
+            ilce.innerHTML = '';
+            var first = document.createElement('option');
+            first.value = '';
+            first.textContent = il.value ? 'İlçe seçin' : 'Önce il seçin';
+            ilce.appendChild(first);
+            list.forEach(function (n) {
+              var o = document.createElement('option');
+              o.value = n; o.textContent = n;
+              ilce.appendChild(o);
+            });
+            ilce.disabled = !list.length;
+            ilce.value = keep && list.indexOf(keep) > -1 ? keep : '';
+          }
+
+          if (il) {
+            Object.keys(data).sort(trSort).forEach(function (n) {
+              var o = document.createElement('option');
+              o.value = n; o.textContent = n;
+              il.appendChild(o);
+            });
+            if (il.dataset.value && data[il.dataset.value]) il.value = il.dataset.value;
+            fillIlce(ilce.dataset.value);
+            il.addEventListener('change', function () { fillIlce(''); });
+            inv.querySelectorAll('[data-inv-tip]').forEach(function (r) {
+              r.addEventListener('change', function () {
+                corp.hidden = !(r.checked && r.value === 'Kurumsal');
+              });
+            });
+            inv.addEventListener('input', function (e) { e.target.classList.remove('is-invalid'); });
+            inv.addEventListener('change', function (e) { e.target.classList.remove('is-invalid'); });
+          }
+
+          function invCheck() {
+            if (!inv) return true;
+            var bad = [];
+            [il, ilce].forEach(function (s) { if (!s.value) bad.push(s); });
+            if (mah.value.trim().length < 3) bad.push(mah);
+            var kurumsal = !corp.hidden;
+            corp.querySelectorAll('[data-inv-req]').forEach(function (f) {
+              if (!kurumsal) { f.value = ''; return; }
+              var v = f.value.trim();
+              if (f.hasAttribute('data-inv-vkn')) {
+                v = v.replace(/\D/g, '');
+                f.value = v;
+                if (v.length !== 10 && v.length !== 11) bad.push(f);
+              } else if (v.length < 2) bad.push(f);
+            });
+            inv.querySelectorAll('.is-invalid').forEach(function (f) { f.classList.remove('is-invalid'); });
+            bad.forEach(function (f) { f.classList.add('is-invalid'); });
+            if (bad.length) {
+              invErr.textContent = kurumsal
+                ? 'İl, ilçe, mahalle ve kurumsal fatura bilgilerini (unvan, vergi dairesi, 10 haneli vergi no ya da 11 haneli TC) doldur.'
+                : 'Ödemeye geçmek için il, ilçe ve mahalleyi doldur.';
+              invErr.hidden = false;
+              bad[0].focus();
+              return false;
+            }
+            invErr.hidden = true;
+            mah.value = mah.value.trim();
+            return true;
+          }
+
+          btn.addEventListener('click', function (ev) {
+            if (!invCheck()) {
+              ev.preventDefault();
+              ev.stopImmediatePropagation();
+              return;
+            }
+            if (!box.checked) {
+              ev.preventDefault();
+              ev.stopImmediatePropagation();
+              err.hidden = false;
+              box.focus();
+              return;
+            }
+            val.value = 'Onaylandı - ' + new Date().toLocaleString('tr-TR');
+          }, true);
+          box.addEventListener('change', function () { if (box.checked) err.hidden = true; });
+        })();
+      </script>
+
+      <div class="cart-confirm-overlay" data-cart-confirm hidden>
+        <div class="cart-confirm-box">
+          <h3>Ürünü sepetten kaldır?</h3>
+          <p data-cart-confirm-text>Bu ürünü sepetten kaldırmak istediğine emin misin?</p>
+          <div class="cart-confirm-actions">
+            <button type="button" class="btn cart-confirm-danger" data-cart-confirm-ok>Evet, kaldır</button>
+            <button type="button" class="btn btn--ghost" data-cart-confirm-cancel>Vazgeç, sepette kalsın</button>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
