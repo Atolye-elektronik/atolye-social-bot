@@ -260,6 +260,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6af83013-e56b-24c1-ad8b-f32c06060606",
+      "status": "Open",
+      "customerId": "507e0a7d-bb1f-4b02-8aee-d96c082f8d82",
+      "orderDate": "2026-11-14T12:55:29",
+      "dueDate": "2026-11-14T18:30:00",
+      "barcode": "62955438952208",
+      "packageNumber": "5543895220",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "5088 cad 5112 sok no 6 A blok daire no 20 Lion city  SİTESİ ÇANKAYA  DODURGA ÇANKAYA Ankara",
+      "recipientName": "taner ataeri",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "DODURGA",
+      "shippingTown": "ÇANKAYA",
+      "shippingCity": "Ankara",
+      "email": "4504650345_5543895220@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "taner ataeri",
+      "billingAddress": "5088 cad 5112 sok no 6 A blok daire no 20 Lion city  SİTESİ ÇANKAYA  DODURGA ÇANKAYA Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "ÇANKAYA",
+      "billingDistrict": "DODURGA",
+      "billingPostalCode": "06810",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 427.1
+      },
+      "items": [
+        {
+          "lineItemId": "6af83012-2576-daa8-d94b-37c506060606",
+          "listingId": "353b5f2f-e329-4cf2-86b0-2a536ededae2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EATWVS",
+          "merchantSku": "AE3-6VMTR5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 427.1
+          },
+          "vat": 71.18,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 427.1
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 86.22
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 51.9
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 51.9
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 479
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 479
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Dc Sarı Motor + Tekerlek / 4 Adet",
+          "orderNumber": "4504650345",
+          "orderDate": "2026-11-14T12:55:29",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR45",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001688556195.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "taner ataeri",
+      "estimatedArrivalDate": "2026-11-17T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
