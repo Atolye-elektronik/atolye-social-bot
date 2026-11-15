@@ -520,6 +520,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6af96df0-e104-0e1f-5aa6-e80e06060606",
+      "status": "Open",
+      "customerId": "42ce3843-7fcb-4b81-adb3-ee1095859f70",
+      "orderDate": "2026-11-15T11:31:42",
+      "dueDate": "2026-11-16T18:30:00",
+      "barcode": "62955441943574",
+      "packageNumber": "5544194357",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "D-100 karayolu cad no:41b özgaziantep baklava FEVZİÇAKMAK MERKEZ Düzce",
+      "recipientName": "arzu sarıal",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "FEVZİÇAKMAK",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Düzce",
+      "email": "4435098858_5544194357@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Özgür Sarıal",
+      "billingAddress": "Aydınpınar cad no37 AZMİMİLLİ MERKEZ Düzce",
+      "billingCity": "Düzce",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "AZMİMİLLİ",
+      "billingPostalCode": "81020",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 877.1
+      },
+      "items": [
+        {
+          "lineItemId": "6af96def-bd34-94bb-0476-2bc006060606",
+          "listingId": "81f7452f-be40-40ff-9d6c-4d9269ca0b1d",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUUSCD",
+          "merchantSku": "AEENDELK",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 877.1
+          },
+          "vat": 146.18,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 877.1
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 176.22
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 101.91
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 101.91
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 979.01
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 979.01
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi",
+          "orderNumber": "4435098858",
+          "orderDate": "2026-11-15T11:31:42",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELENDELK001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754823330.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Ozgur sarial",
+      "estimatedArrivalDate": "2026-11-19T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
