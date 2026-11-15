@@ -1,6 +1,191 @@
 [
   {
     "shipmentAddress": {
+      "id": 10063449377,
+      "firstName": "Esma",
+      "lastName": "Ünal",
+      "company": "",
+      "address1": "Ovacık mahallesi İzmir caddesi öğretmen apartmanı 86/4",
+      "address2": "",
+      "city": "Kırıkkale",
+      "cityCode": 71,
+      "district": "Merkez",
+      "districtId": 631,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "71000",
+      "countryCode": "TR",
+      "neighborhoodId": 36909,
+      "neighborhood": "Ovacık Mah",
+      "phone": null,
+      "fullAddress": "Ovacık mahallesi İzmir caddesi öğretmen apartmanı 86/4     Merkez Kırıkkale",
+      "fullName": "Esma Ünal"
+    },
+    "orderNumber": "11832694732",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 1307.0,
+    "packageGrossAmount": 1307.0,
+    "totalDiscount": 75.0,
+    "packageSellerDiscount": 75.0,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 75.0,
+    "discountDisplays": [
+      {
+        "displayName": "Atölye Elektronik - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 75
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 10063449376,
+      "firstName": "Esma",
+      "lastName": "Ünal",
+      "company": "",
+      "address1": "Ovacık mahallesi İzmir caddesi öğretmen apartmanı 86/4",
+      "address2": "",
+      "city": "Kırıkkale",
+      "cityCode": 71,
+      "district": "Merkez",
+      "districtId": 631,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "71000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 36909,
+      "neighborhood": "Ovacık Mah",
+      "phone": null,
+      "fullAddress": "Ovacık mahallesi İzmir caddesi öğretmen apartmanı 86/4     Merkez Kırıkkale",
+      "fullName": "Esma Ünal"
+    },
+    "customerFirstName": "Esma",
+    "customerEmail": "pf+j3aepjby@trendyolmail.com",
+    "customerId": 108376310,
+    "supplierId": 0,
+    "customerLastName": "Ünal",
+    "id": 4351303514,
+    "channelId": 1,
+    "shipmentPackageId": 4351303514,
+    "cargoTrackingNumber": 7270039123346913,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Sürat Kargo Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEHC06RAK",
+        "sku": "ATELHC06RAK01",
+        "stockCode": "AEHC06RAK",
+        "productName": "Bluetooth Kontrollü Robot Kiti - Tam Set (Arduino + Motor Sürücü Dahil) - Jumper Kablo Hediyeli AEHC06RAK, one size",
+        "productCode": 1650000012,
+        "contentId": 1650000012,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 1307.0,
+        "lineGrossAmount": 1307.0,
+        "discount": 75.0,
+        "lineTotalDiscount": 75.0,
+        "lineSellerDiscount": 75.0,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "7110603153",
+            "lineItemPrice": 1232.0,
+            "lineItemDiscount": 75.0,
+            "lineItemSellerDiscount": 75.0,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6227436567,
+        "lineId": 6227436567,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELHC06RAK01",
+        "orderLineItemStatusName": "Picking",
+        "price": 1232.0,
+        "lineUnitPrice": 1232.0,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 4391,
+        "commission": 20,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1794767822725,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1794757024050,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1794757027008,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1794757398369,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1794862740000,
+    "estimatedDeliveryEndDate": 1795208340000,
+    "totalPrice": 1232.0,
+    "packageTotalPrice": 1232.0,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1794862740000,
+    "fastDelivery": true,
+    "originShipmentDate": 1794757024040,
+    "lastModifiedDate": 1794757398369,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 11080128026,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 10059004868,
       "firstName": "Ahmet",
       "lastName": "Yeşilçimen",
