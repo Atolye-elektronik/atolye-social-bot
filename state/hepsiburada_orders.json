@@ -650,6 +650,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6af9a9eb-243a-37b0-7b05-02ec06060606",
+      "status": "Open",
+      "customerId": "44d13591-feaf-4d33-9a81-24276d344975",
+      "orderDate": "2026-11-15T15:47:36",
+      "dueDate": "2026-11-16T18:30:00",
+      "barcode": "62955442732328",
+      "packageNumber": "5544273232",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Doğukent mahallesi 4661. Sokak no:6 daire:4 bahçe kent sitesi A blok DOĞU KENT MERKEZ Elazığ",
+      "recipientName": "Haydar Gedik",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "DOĞU KENT",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Elazığ",
+      "email": "4406918735_5544273232@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Haydar Gedik",
+      "billingAddress": "Doğukent mahallesi 4661. Sokak no:6 daire:4 bahçe kent sitesi A blok DOĞU KENT MERKEZ Elazığ",
+      "billingCity": "Elazığ",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "DOĞU KENT",
+      "billingPostalCode": "23280",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 127.62
+      },
+      "items": [
+        {
+          "lineItemId": "6af9a9e9-2f64-c538-8356-7c8506060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 63.81
+          },
+          "vat": 21.27,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 127.62
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 12.76
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 7.09
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 14.18
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 70.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 141.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4406918735",
+          "orderDate": "2026-11-15T15:47:36",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Haydar Gedik",
+      "estimatedArrivalDate": "2026-11-19T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
