@@ -1,4 +1,135 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6afc950d-0141-bd3e-a858-93eb06060606",
+      "status": "Open",
+      "customerId": "c5852dcb-6fee-4008-90c7-0fb058c75082",
+      "orderDate": "2026-11-17T20:55:24",
+      "dueDate": "2026-11-18T18:30:00",
+      "barcode": "62955454234351",
+      "packageNumber": "5545423435",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Kahramandere Mahallesi, Güzelbahçe Evleri Sitesi (Doğa Koleji Karşısı), 701 sk. No:12/27  KAHRAMANDERE GÜZELBAHÇE İzmir",
+      "recipientName": "Ata Şehirali",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KAHRAMANDERE",
+      "shippingTown": "GÜZELBAHÇE",
+      "shippingCity": "İzmir",
+      "email": "4615359720_5545423435@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Ata Şehirali",
+      "billingAddress": "Kazımdirik Mahallesi, Sanayi Caddesi, No:31, Myvia 414, B Blok, Kat:2, Daire:210 KAZIMDİRİK BORNOVA İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "BORNOVA",
+      "billingDistrict": "KAZIMDİRİK",
+      "billingPostalCode": "35100",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1183.09999
+      },
+      "items": [
+        {
+          "lineItemId": "6afc950d-db6b-d3cb-35ed-df5206060606",
+          "listingId": "ab08c6bf-c9e9-49fe-a43d-cfb6ad13332c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EI06WD",
+          "merchantSku": "AEAROSES",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 1183.09999
+          },
+          "vat": 197.18,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 1183.09999
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 237.42
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 135.9
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 135.9
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1319
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1319
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Arduino Proje Geliştirme Seti 56 Parça 134 Adet - İleri Seviye - Türkçe Proje Kitabı + Örnek Kod - STEM",
+          "orderNumber": "4615359720",
+          "orderDate": "2026-11-17T20:55:24",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELAROSES001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001716370824.jpg",
+          "deci": 2
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Ata Şehirali",
+      "estimatedArrivalDate": "2026-11-20T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
