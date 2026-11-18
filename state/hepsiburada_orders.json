@@ -2,28 +2,28 @@
   "newOrderItems": [],
   "packages": [
     {
-      "id": "6afc950d-0141-bd3e-a858-93eb06060606",
+      "id": "6afd7a12-e56b-24c1-ad1b-43eb06060606",
       "status": "Open",
-      "customerId": "c5852dcb-6fee-4008-90c7-0fb058c75082",
-      "orderDate": "2026-11-17T20:55:24",
+      "customerId": "dbea3382-7192-487e-b418-5cd0af96fb86",
+      "orderDate": "2026-11-18T13:12:33",
       "dueDate": "2026-11-18T18:30:00",
-      "barcode": "62955454234351",
-      "packageNumber": "5545423435",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Kahramandere Mahallesi, Güzelbahçe Evleri Sitesi (Doğa Koleji Karşısı), 701 sk. No:12/27  KAHRAMANDERE GÜZELBAHÇE İzmir",
-      "recipientName": "Ata Şehirali",
+      "barcode": "62955456735155",
+      "packageNumber": "5545673515",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Ahmet Efendi Mahallesi 3401.Sokak İnci Sitesi No: 1 A Blok Kat:7 Daire:28 AHMETEFENDİ SORGUN Yozgat",
+      "recipientName": "Cevat ÖNEN",
       "shippingCountryCode": "TR",
-      "shippingDistrict": "KAHRAMANDERE",
-      "shippingTown": "GÜZELBAHÇE",
-      "shippingCity": "İzmir",
-      "email": "4615359720_5545423435@hepsifatura.com",
+      "shippingDistrict": "AHMETEFENDİ",
+      "shippingTown": "SORGUN",
+      "shippingCity": "Yozgat",
+      "email": "4745225292_5545673515@hepsifatura.com",
       "phoneNumber": "",
-      "companyName": "Ata Şehirali",
-      "billingAddress": "Kazımdirik Mahallesi, Sanayi Caddesi, No:31, Myvia 414, B Blok, Kat:2, Daire:210 KAZIMDİRİK BORNOVA İzmir",
-      "billingCity": "İzmir",
-      "billingTown": "BORNOVA",
-      "billingDistrict": "KAZIMDİRİK",
-      "billingPostalCode": "35100",
+      "companyName": "Cevat Önen",
+      "billingAddress": "Şeyh Şamil Mahallesi Hamza Yerlikaya Caddesi Furkan Apt No 15 Kat 2 Daire 4 ŞEYH ŞAMİL MERKEZ Sivas",
+      "billingCity": "Sivas",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "ŞEYH ŞAMİL",
+      "billingPostalCode": "58050",
       "billingCountryCode": "TR",
       "taxOffice": null,
       "taxNumber": "",
@@ -32,53 +32,53 @@
       "customsTotalPrice": null,
       "totalPrice": {
         "currency": "TRY",
-        "amount": 1183.09999
+        "amount": 305.1
       },
       "items": [
         {
-          "lineItemId": "6afc950d-db6b-d3cb-35ed-df5206060606",
-          "listingId": "ab08c6bf-c9e9-49fe-a43d-cfb6ad13332c",
+          "lineItemId": "6afd7a12-e56b-24c1-ad1b-42ba06060606",
+          "listingId": "1e711ab1-fff2-4628-b5d7-f7aa3f90c8af",
           "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV0000EI06WD",
-          "merchantSku": "AEAROSES",
+          "hbSku": "HBCV0000HXL2KX",
+          "merchantSku": "AEDUYAMP-10",
           "quantity": 1,
           "price": {
             "currency": "TRY",
-            "amount": 1183.09999
+            "amount": 305.1
           },
-          "vat": 197.18,
+          "vat": 50.85,
           "totalPrice": {
             "currency": "TRY",
-            "amount": 1183.09999
+            "amount": 305.1
           },
           "commission": {
             "currency": "TRY",
-            "amount": 237.42
+            "amount": 61.02
           },
           "commissionRate": 18,
           "unitHBDiscount": {
             "currency": "TRY",
-            "amount": 135.9
+            "amount": 33.9
           },
           "totalHBDiscount": {
             "currency": "TRY",
-            "amount": 135.9
+            "amount": 33.9
           },
           "unitMerchantDiscount": {
             "currency": "TRY",
-            "amount": 40
+            "amount": 0
           },
           "totalMerchantDiscount": {
             "currency": "TRY",
-            "amount": 40
+            "amount": 0
           },
           "merchantUnitPrice": {
             "currency": "TRY",
-            "amount": 1319
+            "amount": 339
           },
           "merchantTotalPrice": {
             "currency": "TRY",
-            "amount": 1319
+            "amount": 339
           },
           "unitLaborCost": {
             "currency": "TRY",
@@ -90,9 +90,9 @@
           "customizedText03": "",
           "customizedText04": "",
           "properties": [],
-          "productName": "Atölye Elektronik Arduino Proje Geliştirme Seti 56 Parça 134 Adet - İleri Seviye - Türkçe Proje Kitabı + Örnek Kod - STEM",
-          "orderNumber": "4615359720",
-          "orderDate": "2026-11-17T20:55:24",
+          "productName": "Atölye Elektronik Mini Duy ve Ampul (2,5V) - Fen Deney Lamba Seti - Duy + Ampul - 10'lu Paket",
+          "orderNumber": "4745225292",
+          "orderDate": "2026-11-18T13:12:33",
           "deliveryType": "Standart Teslimat",
           "customerDelivery": "",
           "pickupTime": null,
@@ -109,7 +109,7 @@
             "amount": 0
           },
           "discountToBeBilledToHB": 0,
-          "productBarcode": "ATELAROSES001",
+          "productBarcode": "2902512906970",
           "bnplCommissionAmount": {
             "currency": "TRY",
             "amount": 0
@@ -118,13 +118,143 @@
           "isMicroExport": false,
           "releatedLineIndexesWithCampaign": null,
           "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001716370824.jpg",
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002059490421.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Cevat Önen",
+      "estimatedArrivalDate": "2026-11-20T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6afd97d8-6433-16e9-99a9-8e1c06060606",
+      "status": "Open",
+      "customerId": "e33864f0-18ac-4bab-a0c6-11ed2ef0a5c1",
+      "orderDate": "2026-11-18T15:19:35",
+      "dueDate": "2026-11-19T18:30:00",
+      "barcode": "62955457278736",
+      "packageNumber": "5545727873",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Konya Teknik Üniversitesi Mühendislik ve Doğa Bilimleri Fakültesi Rauf Orbay Cad.42250  ARDIÇLI SELÇUKLU Konya",
+      "recipientName": "Dilek Uzer",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ARDIÇLI",
+      "shippingTown": "SELÇUKLU",
+      "shippingCity": "Konya",
+      "email": "4283082893_5545727873@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Dilek Uzer",
+      "billingAddress": "Konya Teknik Üniversitesi Mühendislik ve Doğa Bilimleri Fakültesi Rauf Orbay Cad.42250  ARDIÇLI SELÇUKLU Konya",
+      "billingCity": "Konya",
+      "billingTown": "SELÇUKLU",
+      "billingDistrict": "ARDIÇLI",
+      "billingPostalCode": "42280",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 994.1
+      },
+      "items": [
+        {
+          "lineItemId": "6afd97d7-9412-6bfb-7dd8-9c7006060606",
+          "listingId": "28d4b7ea-e18d-4b82-80dc-1a959e8e9a89",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000GZW65D",
+          "merchantSku": "AEIRRAK",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 994.1
+          },
+          "vat": 165.68,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 994.1
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 199.62
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 114.9
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 114.9
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1109
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1109
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Ir Kumandalı Robot Araba Kiti (2WD + Arduino + Motor Sürücü + Kumanda) - Jumper Kablo Hediyeli",
+          "orderNumber": "4283082893",
+          "orderDate": "2026-11-18T15:19:35",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELIRRAK0001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001961809975.jpg",
           "deci": 2
         }
       ],
       "isCargoChangable": true,
-      "customerName": "Ata Şehirali",
-      "estimatedArrivalDate": "2026-11-20T15:30:00Z",
+      "customerName": "Dilek Uzer",
+      "estimatedArrivalDate": "2026-11-23T15:30:00Z",
       "totalDeci": 2,
       "warehouse": {
         "shippingModel": "Standard",
