@@ -1269,3 +1269,8 @@
 {"an": "2026-11-17T21:09", "kanal": "n11", "no": "222634446426", "kod": "AEACDMMR", "adet": 1, "dusum": {"AEACDMMR": 1}, "kuru": false}
 {"an": "2026-11-17T21:09", "kanal": "amazon", "no": "405-7874191-7561107", "kod": "AETP4056", "adet": 1, "dusum": {"AETP4056": 1}, "kuru": false}
 {"an": "2026-11-17T22:40", "kanal": "trendyol", "no": "11841424724", "kod": "AE2WDEKRBT5230-LI", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEPY18650": 1, "AEUNOR3": 1, "AEHCSR04": 1, "AESG90": 1, "AEL298N": 1, "AEJK2040DE": 1, "AEJK2040": 1}, "kuru": false}
+{"an": "2026-11-18T10:54", "kanal": "shopify", "no": "#1083", "kod": "AEIRRAK", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEIRKMND": 1, "AEUNOR3": 1, "AEL298N": 1, "AEJK2040DE": 1}, "kuru": false}
+{"an": "2026-11-18T10:54", "kanal": "shopify", "no": "#1082", "kod": "AECIZGIRBT-LI", "adet": 1, "dusum": {"AET2WDRBT": 1, "AEPY18650": 1, "AECIZGI4": 1, "AEUNOR3": 1, "AEL298N": 1, "AEJK2040DE": 1, "AEJK2040": 1}, "kuru": false}
+{"an": "2026-11-18T10:54", "kanal": "trendyol", "no": "11842695724", "kod": "AESARJKT1", "adet": 1, "dusum": {"AETP4056": 1, "AEPY18650T": 1}, "kuru": false}
+{"an": "2026-11-18T10:54", "kanal": "trendyol", "no": "11842179537", "kod": "AE9VPILSKT1", "adet": 3, "dusum": {"AE9VPILSKT1": 3}, "kuru": false}
+{"an": "2026-11-18T10:54", "kanal": "hepsiburada", "no": "4745225292", "kod": "AEDUYAMP-10", "adet": 1, "dusum": {"AEDUY-1": 10, "AEAMP-1": 10}, "kuru": false}
