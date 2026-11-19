@@ -1,14 +1,14 @@
 {
-  "kontrol": "2026-11-19T12:08:07.436001+00:00",
+  "kontrol": "2026-11-19T20:58:07.596272+00:00",
   "akislar": [
     {
       "dosya": "bayram.yml",
       "ad": "Resmi bayram postu (otomatik kuyruk)",
       "beklenen": "2026-11-19T05:00:00+00:00",
-      "son_basarili": "2026-11-18T13:45:23+00:00",
-      "son_kosu": "2026-11-18T13:45:23+00:00",
-      "gecikme_dk": 428,
-      "kacti": true,
+      "son_basarili": "2026-11-19T14:14:45+00:00",
+      "son_kosu": "2026-11-19T14:14:45+00:00",
+      "gecikme_dk": 958,
+      "kacti": false,
       "hatali": false
     },
     {
@@ -17,7 +17,7 @@
       "beklenen": "2026-11-19T01:00:00+00:00",
       "son_basarili": null,
       "son_kosu": "2026-11-19T08:31:36+00:00",
-      "gecikme_dk": 668,
+      "gecikme_dk": 1198,
       "kacti": false,
       "hatali": true
     },
@@ -27,46 +27,46 @@
       "beklenen": "2026-11-16T04:30:00+00:00",
       "son_basarili": "2026-11-16T13:02:33+00:00",
       "son_kosu": "2026-11-16T13:02:33+00:00",
-      "gecikme_dk": 4778,
+      "gecikme_dk": 5308,
       "kacti": false,
       "hatali": false
     },
     {
       "dosya": "pazaryeri-sync.yml",
       "ad": "Pazaryeri siparis senkronu",
-      "beklenen": "2026-11-19T10:13:00+00:00",
-      "son_basarili": "2026-11-18T22:55:33+00:00",
-      "son_kosu": "2026-11-18T22:55:33+00:00",
-      "gecikme_dk": 115,
+      "beklenen": "2026-11-19T18:13:00+00:00",
+      "son_basarili": "2026-11-19T15:39:07+00:00",
+      "son_kosu": "2026-11-19T15:39:07+00:00",
+      "gecikme_dk": 165,
       "kacti": true,
       "hatali": false
     },
     {
       "dosya": "pinterest-pin.yml",
       "ad": "Pinterest gunluk pin",
-      "beklenen": "2026-11-18T18:37:00+00:00",
+      "beklenen": "2026-11-19T18:37:00+00:00",
       "son_basarili": "2026-11-19T00:40:49+00:00",
       "son_kosu": "2026-11-19T00:40:49+00:00",
-      "gecikme_dk": 1051,
-      "kacti": false,
+      "gecikme_dk": 141,
+      "kacti": true,
       "hatali": false
     },
     {
       "dosya": "publish.yml",
       "ad": "Sosyal medya paylasimi",
-      "beklenen": "2026-11-19T09:00:00+00:00",
-      "son_basarili": "2026-11-18T23:28:10+00:00",
-      "son_kosu": "2026-11-18T23:28:10+00:00",
-      "gecikme_dk": 188,
-      "kacti": true,
+      "beklenen": "2026-11-19T17:30:00+00:00",
+      "son_basarili": "2026-11-19T17:59:30+00:00",
+      "son_kosu": "2026-11-19T17:59:30+00:00",
+      "gecikme_dk": 208,
+      "kacti": false,
       "hatali": false
     },
     {
       "dosya": "stok-siparis.yml",
       "ad": "Stok merkezi - siparis toplama",
-      "beklenen": "2026-11-19T11:45:00+00:00",
-      "son_basarili": "2026-11-19T08:51:17+00:00",
-      "son_kosu": "2026-11-19T08:51:17+00:00",
+      "beklenen": "2026-11-19T20:35:00+00:00",
+      "son_basarili": "2026-11-19T17:46:47+00:00",
+      "son_kosu": "2026-11-19T17:46:47+00:00",
       "gecikme_dk": 23,
       "kacti": true,
       "hatali": false
@@ -74,10 +74,10 @@
     {
       "dosya": "telegram-ozet.yml",
       "ad": "Telegram gunluk ozet",
-      "beklenen": "2026-11-18T20:55:00+00:00",
-      "son_basarili": "2026-11-19T02:04:41+00:00",
-      "son_kosu": "2026-11-19T02:04:41+00:00",
-      "gecikme_dk": 913,
+      "beklenen": "2026-11-19T11:00:00+00:00",
+      "son_basarili": "2026-11-19T19:22:12+00:00",
+      "son_kosu": "2026-11-19T19:22:12+00:00",
+      "gecikme_dk": 598,
       "kacti": false,
       "hatali": false
     },
@@ -87,7 +87,7 @@
       "beklenen": "2026-11-01T04:00:00+00:00",
       "son_basarili": "2026-11-01T10:53:15+00:00",
       "son_kosu": "2026-11-01T10:53:15+00:00",
-      "gecikme_dk": 26408,
+      "gecikme_dk": 26938,
       "kacti": false,
       "hatali": false
     },
@@ -95,20 +95,20 @@
       "dosya": "tiktok-zamanla.yml",
       "ad": "TikTok kuyruk zamanlama",
       "beklenen": "2026-11-19T05:15:00+00:00",
-      "son_basarili": "2026-11-18T14:01:22+00:00",
-      "son_kosu": "2026-11-18T14:01:22+00:00",
-      "gecikme_dk": 413,
-      "kacti": true,
+      "son_basarili": "2026-11-19T14:27:23+00:00",
+      "son_kosu": "2026-11-19T14:27:23+00:00",
+      "gecikme_dk": 943,
+      "kacti": false,
       "hatali": false
     },
     {
       "dosya": "yeni-urun-kanca.yml",
       "ad": "Yeni urun kanca postu",
       "beklenen": "2026-11-19T05:30:00+00:00",
-      "son_basarili": "2026-11-18T14:27:42+00:00",
-      "son_kosu": "2026-11-18T14:27:42+00:00",
-      "gecikme_dk": 398,
-      "kacti": true,
+      "son_basarili": "2026-11-19T14:38:54+00:00",
+      "son_kosu": "2026-11-19T14:38:54+00:00",
+      "gecikme_dk": 928,
+      "kacti": false,
       "hatali": false
     }
   ]
