@@ -1,1 +1,192 @@
-[]
+[
+  {
+    "shipmentAddress": {
+      "id": 10089859745,
+      "firstName": "Nurican",
+      "lastName": "çakır",
+      "company": "",
+      "address1": "Başıbüyük mahallesi candostum sokak no:1",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Maltepe",
+      "districtId": 27,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "countryCode": "TR",
+      "neighborhoodId": 29291,
+      "neighborhood": "Başıbüyük Mah",
+      "phone": null,
+      "fullAddress": "Başıbüyük mahallesi candostum sokak no:1     Maltepe İstanbul",
+      "fullName": "Nurican çakır"
+    },
+    "orderNumber": "11847874373",
+    "paymentMethod": "Banka Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 1188.0,
+    "packageGrossAmount": 1188.0,
+    "totalDiscount": 53.88,
+    "packageSellerDiscount": 53.88,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 53.88,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 11.88
+      },
+      {
+        "displayName": "Atölye Elektronik - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 42
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 10089859744,
+      "firstName": "Nurican",
+      "lastName": "çakır",
+      "company": "",
+      "address1": "Başıbüyük mahallesi candostum sokak no:1",
+      "address2": "",
+      "city": "İstanbul",
+      "cityCode": 34,
+      "district": "Maltepe",
+      "districtId": 27,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "34000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 29291,
+      "neighborhood": "Başıbüyük Mah",
+      "phone": null,
+      "fullAddress": "Başıbüyük mahallesi candostum sokak no:1     Maltepe İstanbul",
+      "fullName": "Nurican çakır"
+    },
+    "customerFirstName": "Nurican",
+    "customerEmail": "pf+y8kmk8pa@trendyolmail.com",
+    "customerId": 70467904,
+    "supplierId": 0,
+    "customerLastName": "çakır",
+    "id": 4364139176,
+    "channelId": 1,
+    "shipmentPackageId": 4364139176,
+    "cargoTrackingNumber": 7330039255641529,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AE2WDEKRBT-LI",
+        "sku": "AE2WDEKRBT-LI",
+        "stockCode": "AE2WDEKRBT-LI",
+        "productName": "2WD Servolu Engelden Kaçan Robot Araba Kiti (Demonte Robot Araba Kiti) AE2WDEKRBT, one size",
+        "productCode": 1617156276,
+        "contentId": 1617156276,
+        "productOrigin": "TR",
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 1188.0,
+        "lineGrossAmount": 1188.0,
+        "discount": 53.88,
+        "lineTotalDiscount": 53.88,
+        "lineSellerDiscount": 53.88,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "7130599635",
+            "lineItemPrice": 1134.12,
+            "lineItemDiscount": 53.88,
+            "lineItemSellerDiscount": 53.88,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6244607049,
+        "lineId": 6244607049,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "AE2WDEKRBT-LI",
+        "orderLineItemStatusName": "Picking",
+        "price": 1134.12,
+        "lineUnitPrice": 1134.12,
+        "fastDeliveryOptions": [
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 3094,
+        "commission": 12,
+        "businessUnit": "Electronic Accessories",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1795122385030,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1795111586088,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1795111590858,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1795111812690,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1795208340000,
+    "estimatedDeliveryEndDate": 1795553940000,
+    "totalPrice": 1134.12,
+    "packageTotalPrice": 1134.12,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1795208340000,
+    "fastDelivery": true,
+    "originShipmentDate": 1795111586079,
+    "lastModifiedDate": 1795111825520,
+    "commercial": false,
+    "fastDeliveryType": "FastDelivery",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 11094185471,
+    "is4P": false
+  }
+]

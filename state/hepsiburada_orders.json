@@ -1,4 +1,265 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6aff1cd5-fd6c-23b7-e16d-29ae06060606",
+      "status": "Open",
+      "customerId": "cfa259b5-3c9c-4765-8f6c-8c3450536f4c",
+      "orderDate": "2026-11-19T18:59:16",
+      "dueDate": "2026-11-20T18:30:00",
+      "barcode": "62755462301359",
+      "packageNumber": "5546230135",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "MERKEZ Mah. Milli Egemenlik Caddesi  Ağaoğlu Apartman Bina No : 25 Daire No : 1 Kat : 1 POSOF / Ardahan MERKEZ POSOF Ardahan",
+      "recipientName": "Nur Şalvarcıoğlu",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MERKEZ",
+      "shippingTown": "POSOF",
+      "shippingCity": "Ardahan",
+      "email": "4845130005_5546230135@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Nurten ÇELİK",
+      "billingAddress": "Malazgirt mahallesi Başkale sokak Çağlayan Fırat apartmanı no 12 daire 20 Konya Selçuklu MALAZGİRT SELÇUKLU Konya",
+      "billingCity": "Konya",
+      "billingTown": "SELÇUKLU",
+      "billingDistrict": "MALAZGİRT",
+      "billingPostalCode": "42070",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1115.09999
+      },
+      "items": [
+        {
+          "lineItemId": "6aff1cd4-b63f-1d20-f849-9d6806060606",
+          "listingId": "b4c059bb-c165-46f8-a95a-aba38d251b9b",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000O9URWL",
+          "merchantSku": "AECIZGIRBT",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 1115.09999
+          },
+          "vat": 185.85,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 1115.09999
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 223.02
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 123.9
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 123.9
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1239
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1239
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Çizgi Izleyen Robot Araba Kiti (2WD + Arduino + Motor Sürücü + 4 Kanal Sensör)",
+          "orderNumber": "4845130005",
+          "orderDate": "2026-11-19T18:59:16",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2920000600117",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002903252652.jpg",
+          "deci": 3
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Nur Şalvarcıoğlu",
+      "estimatedArrivalDate": "2026-11-25T16:30:00Z",
+      "totalDeci": 3,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6aff4c15-e653-a5e2-8de6-fde006060606",
+      "status": "Open",
+      "customerId": "0fad1121-7650-402b-8fd9-d09f3d92037e",
+      "orderDate": "2026-11-19T22:20:52",
+      "dueDate": "2026-11-20T18:30:00",
+      "barcode": "62955463008633",
+      "packageNumber": "5546300863",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Şemsettin günaltay caddesi no:187/d\nerenköy / istanbul ERENKÖY KADIKÖY İstanbul",
+      "recipientName": "oktay uysal",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ERENKÖY",
+      "shippingTown": "KADIKÖY",
+      "shippingCity": "İstanbul",
+      "email": "4260776644_5546300863@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "oktay UYSAL",
+      "billingAddress": "Saracoglu eczanesi Eğitim Mahallesi, Fahrettin Kerim Gökay Caddesi No:115/A Kadıköy / İstanbul EĞİTİM KADIKÖY İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "KADIKÖY",
+      "billingDistrict": "EĞİTİM",
+      "billingPostalCode": "34722",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 427.1
+      },
+      "items": [
+        {
+          "lineItemId": "6aff4c14-fb3e-0f25-6091-1a8f06060606",
+          "listingId": "353b5f2f-e329-4cf2-86b0-2a536ededae2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EATWVS",
+          "merchantSku": "AE3-6VMTR5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 427.1
+          },
+          "vat": 71.18,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 427.1
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 86.22
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 51.9
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 51.9
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 479
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 479
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Dc Sarı Motor + Tekerlek / 4 Adet",
+          "orderNumber": "4260776644",
+          "orderDate": "2026-11-19T22:20:52",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR45",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001688556195.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "OKTAY UYSAL",
+      "estimatedArrivalDate": "2026-11-25T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
