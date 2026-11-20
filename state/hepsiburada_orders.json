@@ -260,6 +260,396 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6b000497-7a08-6de6-03f1-c52906060606",
+      "status": "Open",
+      "customerId": "144ed7bb-c2a4-4bd5-9a54-acb2017beb0a",
+      "orderDate": "2026-11-20T11:28:06",
+      "dueDate": "2026-11-20T18:30:00",
+      "barcode": "62955464632880",
+      "packageNumber": "5546463288",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "352 sokak no 4 kapı şifresi 2 kat 1 daire 2 ( asansör kapısı karşısı) İNÖNÜ ESENYURT İstanbul",
+      "recipientName": "cevher geşgin",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "İNÖNÜ",
+      "shippingTown": "ESENYURT",
+      "shippingCity": "İstanbul",
+      "email": "4869429922_5546463288@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "cevher geşgin",
+      "billingAddress": "352 sokak no 4 kapı şifresi 2 kat 1 daire 2 ( asansör kapısı karşısı) İNÖNÜ ESENYURT İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "ESENYURT",
+      "billingDistrict": "İNÖNÜ",
+      "billingPostalCode": "34510",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 724.1
+      },
+      "items": [
+        {
+          "lineItemId": "6b000497-3071-591f-30ea-672206060606",
+          "listingId": "c5d278fb-08ef-4419-895b-38f6c3430f92",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000H3P4R6",
+          "merchantSku": "AEHSPS",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 724.1
+          },
+          "vat": 120.68,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 724.1
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 145.62
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 84.9
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 84.9
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 809
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 809
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Hareket Algılayan Sesli Alarm Sistemi Kiti (Pır + Röle + Buzzer + Arduino) - Jumper Kablo Hediyeli",
+          "orderNumber": "4869429922",
+          "orderDate": "2026-11-20T11:28:06",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELHSPS00001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001971894023.jpg",
+          "deci": 2
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "cevher gesgin",
+      "estimatedArrivalDate": "2026-11-25T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6b001de9-5b40-f8b3-87a7-a4a106060606",
+      "status": "Open",
+      "customerId": "e345a307-f460-41be-926c-6a99ff390d3b",
+      "orderDate": "2026-11-20T13:16:08",
+      "dueDate": "2026-11-20T18:30:00",
+      "barcode": "62955465072757",
+      "packageNumber": "5546507275",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Değirmenönu mahallesi 1709 sokak no 13 zemin kat daire 4 DEĞİRMENÖNÜ MERKEZEFENDİ Denizli",
+      "recipientName": "Bayram Emrah Çalışkan",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "DEĞİRMENÖNÜ",
+      "shippingTown": "MERKEZEFENDİ",
+      "shippingCity": "Denizli",
+      "email": "4568484027_5546507275@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Bayram Emrah Çalışkan",
+      "billingAddress": "Değirmenönu mahallesi 1597 sokak no 4 kat 2 daire 5 çınar apartmani DEĞİRMENÖNÜ MERKEZEFENDİ Denizli",
+      "billingCity": "Denizli",
+      "billingTown": "MERKEZEFENDİ",
+      "billingDistrict": "DEĞİRMENÖNÜ",
+      "billingPostalCode": "20010",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 149.8
+      },
+      "items": [
+        {
+          "lineItemId": "6b001de8-475c-67f3-8442-b74906060606",
+          "listingId": "90e73cd7-13d7-4a96-9861-3db9c7ba6d15",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000698PMC",
+          "merchantSku": "AEPYAA2",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "vat": 24.97,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 13.48
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 74.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 149.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Robiz 2'li Aa Kalem Pil Kutusu Yuvası 3V Kablolu Kalem Pil Tutucu",
+          "orderNumber": "4568484027",
+          "orderDate": "2026-11-20T13:16:08",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "HBRBZ.100.172",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000674792657.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "BAYRAM EMRAH ÇALIŞKAN",
+      "estimatedArrivalDate": "2026-11-24T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6b001e57-b565-42a3-9ca6-ab4906060606",
+      "status": "Open",
+      "customerId": "b77c97d1-0fe5-414f-918e-2ab2f04ddc77",
+      "orderDate": "2026-11-20T13:17:58",
+      "dueDate": "2026-11-20T18:30:00",
+      "barcode": "62955465079909",
+      "packageNumber": "5546507990",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Kayakent Sitesi Numune Evler Mah. 1 Nolu Sok. 15G Kat :3 Daire :5 NUMUNE EVLER DÖRTYOL Hatay",
+      "recipientName": "Umut Odabaşı",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "NUMUNE EVLER",
+      "shippingTown": "DÖRTYOL",
+      "shippingCity": "Hatay",
+      "email": "4090070131_5546507990@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Umut Odabaşı",
+      "billingAddress": "Kayakent Sitesi Numune Evler Mah. 1 Nolu Sok. 15G Kat :3 Daire :5 NUMUNE EVLER DÖRTYOL Hatay",
+      "billingCity": "Hatay",
+      "billingTown": "DÖRTYOL",
+      "billingDistrict": "NUMUNE EVLER",
+      "billingPostalCode": "31600",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 427.1
+      },
+      "items": [
+        {
+          "lineItemId": "6b001e56-490e-07ab-380e-a1e406060606",
+          "listingId": "353b5f2f-e329-4cf2-86b0-2a536ededae2",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EATWVS",
+          "merchantSku": "AE3-6VMTR5",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 427.1
+          },
+          "vat": 71.18,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 427.1
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 86.22
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 51.9
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 51.9
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 40
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 479
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 479
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "3-6V Redüktörlü Dc Sarı Motor + Tekerlek / 4 Adet",
+          "orderNumber": "4090070131",
+          "orderDate": "2026-11-20T13:17:58",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATEL3-6VMTR45",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001688556195.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Umut Odabaşı",
+      "estimatedArrivalDate": "2026-11-24T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
