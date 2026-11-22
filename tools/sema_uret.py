@@ -640,6 +640,27 @@ def sema_4wd(ad):
     return s
 
 
+def sema_genel(ad):
+    """Blog için pil türünden bağımsız tek şema (AA ve 18650 setler aynı bağlanır): gerilim yazmaz."""
+    global AA
+    AA = False
+    s = SEMALAR[ad]()
+    import re as _re
+    s.altbaslik = (s.altbaslik.replace("18650 Pil Yuvası", "Pil Grubu").replace("+ 18650 ", "+ Pil Grubu ")
+                   .replace("— 18650;", "— Pil Grubu;"))
+    s.model = s.model[:-3] + " / " + s.model if s.model.endswith("-LI") else s.model
+    s.notlar = [_re.sub(r"\s*\((?:6V|7\.4V)[^)]*\)", "", n) for n in s.notlar]
+    import textwrap
+    kalan, satir = [], 0
+    for n in s.notlar:          # notlar kutusu taşmasın: en fazla 10 satır
+        k = len(textwrap.wrap(n, 52))
+        if satir + k > 10:
+            break
+        kalan.append(n); satir += k
+    s.notlar = kalan
+    return s
+
+
 async def render(adlar):
     from playwright.async_api import async_playwright
     async with async_playwright() as p:
@@ -650,6 +671,8 @@ async def render(adlar):
             AA = ad.endswith("-aa")
             if ad.endswith("-4wd"):
                 svg = sema_4wd(ad[:-4]).svg()
+            elif ad.endswith("-genel"):
+                svg = sema_genel(ad[:-6]).svg()
             else:
                 svg = SEMALAR[ad[:-3] if AA else ad]().svg()
             (OUT / f"{ad}.svg").write_text(svg, encoding="utf-8")
