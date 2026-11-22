@@ -144,9 +144,9 @@ def filigran():
 
 
 # ============================ ŞEMALAR =====================================
-def arduino(s, x=250, y=280, pins_r=(), pins_l=(), pins_t=(("5V", 0.3), ("VIN", 0.52)), pins_b=(("GND", 0.5),)):
+def arduino(s, x=250, y=280, pins_r=(), pins_l=(), pins_t=(("5V", 0.3), ("VIN", 0.52)), pins_b=(("GND", 0.5),), kart="UNO R3"):
     p = [(n, "r", o) for n, o in pins_r] + [(n, "l", o) for n, o in pins_l] + [(n, "t", o) for n, o in pins_t] + [(n, "b", o) for n, o in pins_b]
-    s.kutu("ard", x, y, 300, 380, RENK["teal"], "Arduino", "UNO R3", pins=p, font=34, alt_renk="#ffffff")
+    s.kutu("ard", x, y, 300, 380, RENK["teal"], "Arduino", kart, pins=p, font=34, alt_renk="#ffffff")
     s.parts.append(f'<rect x="{x + 20}" y="{y + 20}" width="56" height="40" rx="6" fill="#cfd8e3"/>')
 
 
@@ -159,11 +159,23 @@ def l298n(s, x=760, y=270, ins=("IN1", "IN2", "IN3", "IN4"), bes_kullan=False):
     s.parts.append(f'<rect x="{x + 20}" y="{y + 300}" width="240" height="22" rx="4" fill="#2e7d32"/>')
     s.etiket(x - 190, y + 28, "JUMPER TAKILI", 170)
     s.etiket(x - 190, y + 248, "JUMPER TAKILI", 170)
-    s.etiket(x + 300, y + 280, "5V jumper takılı olmalı", 200)
+    if W4:
+        s.etiket(x - 210, y + 298, "5V jumper takılı olmalı", 200)
+    else:
+        s.etiket(x + 300, y + 280, "5V jumper takılı olmalı", 200)
     s.yazi(x + 230, y + 352, "(sensör beslemesi)" if bes_kullan else "(kullanılmıyor)", boyut=15, anchor="middle")
 
 
+W4 = False  # True: 4WD şasi (4 motor, aynı taraftakiler paralel)
+
+
 def motorlar(s, x=1190):
+    if W4:
+        s.motor("mA", x, 222, "SOL ÖN", "(Motor A)")
+        s.motor("mA2", x, 334, "SOL ARKA", "(A'ya paralel)")
+        s.motor("mB", x, 456, "SAĞ ÖN", "(Motor B)")
+        s.motor("mB2", x, 568, "SAĞ ARKA", "(B'ye paralel)")
+        return
     s.motor("mA", x, 280, "SOL MOTOR", "(Motor A)")
     s.motor("mB", x, 440, "SAĞ MOTOR", "(Motor B)")
 
@@ -188,6 +200,12 @@ def robot_govde(s, ek_l=(), bes_kullan=False, ek_b=()):
     # motorlar
     s.bagla("red", ("l298", "OUT1"), ("mA", ""), via=[]); s.bagla("blk", ("l298", "OUT2"), ("mA", " "), via=[])
     s.bagla("red", ("l298", "OUT3"), ("mB", ""), via=[]); s.bagla("blk", ("l298", "OUT4"), ("mB", " "), via=[])
+    if W4:
+        for ana, ikinci in (("mA", "mA2"), ("mB", "mB2")):
+            for pin, renk, dx in (("", "red", -22), (" ", "blk", -10)):
+                ax, ay, _ = s.pins[(ana, pin)]; bx, by, _ = s.pins[(ikinci, pin)]
+                s.tel(renk, [(ax, ay), (ax + dx, ay), (ax + dx, by), (bx, by)])
+                s.dugum(bx, by, renk); s.dugum(ax + dx, ay, renk)
     # güç
     px, py, _ = s.pins[("pil", "+")]
     s.tel("red", [(px, py), (px, 720), (L298_X + 50, 720), (L298_X + 50, 590)]); s.dugum(L298_X + 50, 590, "red")
@@ -385,8 +403,9 @@ def sema_step():
 def guc_hatti(s, v5, gnd, v33=()):
     """Arduino 5V/3.3V/GND -> modül pinleri (sağ blok)."""
     ax5 = s.pins[("ard", "5V")][0]; ay = 260
-    s.tel("red", [(ax5, ay), (ax5, 180), (740, 180)])
-    s.yazi(ax5 + 20, 172, "+5V", RENK["red"], 20, True)
+    if v5:
+        s.tel("red", [(ax5, ay), (ax5, 180), (740, 180)])
+        s.yazi(ax5 + 20, 172, "+5V", RENK["red"], 20, True)
     for m, p in v5:
         x, y, _ = s.pins[(m, p)]
         s.tel("red", [(x, y), (740, y), (740, 180)]); s.dugum(740, 180, "red"); s.dugum(x, y, "red")
@@ -481,13 +500,147 @@ def sema_cizgi():
     return s
 
 
+def proje_kiti_oto(baslik, alt, model, notlar, moduller, teller, kart="UNO R3", y0=150, y1=905):
+    """proje_kiti gibi; modüller otomatik dikey dizilir, pin aralığı sığacak kadar daralır.
+    moduller: [(ad, baslik, alt, pins[...])]; teller: [(renk, ard_pin, (mod, pin))]."""
+    s = Sema(baslik, alt, model, notlar)
+    n = len(teller)
+    pins_r = tuple((ap, 0.1 + 0.85 * (i + 0.5) / n) for i, (_, ap, _) in enumerate(teller))
+    arduino(s, x=200, y=260, pins_r=pins_r, pins_t=(("5V", 0.3), ("3.3V", 0.52)), pins_b=(("GND", 0.5),), kart=kart)
+    toplam_pin = sum(len(m[3]) for m in moduller)
+    bosluk = 18
+    adim = min(36, (y1 - y0 - bosluk * (len(moduller) - 1) - 40 * len(moduller)) / toplam_pin)
+    y = y0
+    for ad, bas, altm, pins in moduller:
+        h = 40 + adim * len(pins)
+        s.kutu(ad, 780, y, 300, h, RENK["lacivert"], bas, altm, pins=tuple((p, "l", (i + 1) / (len(pins) + 1)) for i, p in enumerate(pins)), font=24 if adim < 32 else 26, hiza="sag")
+        y += h + bosluk
+    serit = min(24, 215 / max(1, n))
+    for i, (renk, ap, (m, mp)) in enumerate(teller):
+        s.bagla(renk, ("ard", ap), (m, mp), via=[(540 + i * serit, s.pins[("ard", ap)][1]), (540 + i * serit, s.pins[(m, mp)][1])])
+    return s
+
+
+def sema_park():
+    s = proje_kiti_oto("Park Sensörü Proje Kiti", "Arduino UNO + HC-SR04 + Buzzer + 3 LED — blogdaki kodla birebir uyumludur", "AEPARKPS",
+                       ["HC-SR04: TRIG→D9, ECHO→D10. Buzzer (+)→D8.", "LED'ler 330 Ω dirençle seri: yeşil→D5, mavi→D6, kırmızı→D7.",
+                        "LED'in uzun bacağı (+) dirence/pine, kısa bacağı GND'ye.", "Mesafe azaldıkça buzzer sıklaşır; 10 cm altında sürekli öter.", "Tüm GND'ler ortak hatta."],
+                       [("hc", "HC-SR04", "Mesafe Sensörü", ["VCC", "TRIG", "ECHO", "GND"]), ("buz", "Buzzer", "5V Aktif", ["+", "−"]),
+                        ("led", "LED'ler", "330 Ω ile seri", ["YEŞİL", "MAVİ", "KIRMIZI", "GND"])],
+                       [("org", "D9", ("hc", "TRIG")), ("cyan", "D10", ("hc", "ECHO")), ("pnk", "D8", ("buz", "+")),
+                        ("grn", "D5", ("led", "YEŞİL")), ("blu", "D6", ("led", "MAVİ")), ("red", "D7", ("led", "KIRMIZI"))])
+    guc_hatti(s, [("hc", "VCC")], [("hc", "GND"), ("buz", "−"), ("led", "GND")])
+    return s
+
+
+def sema_radar():
+    s = proje_kiti_oto("Radar ve Akıllı Çöp Kutusu Kiti", "Arduino UNO + HC-SR04 + SG90 Servo — iki proje aynı bağlantıyla", "AERADARPS",
+                       ["HC-SR04: TRIG→D10, ECHO→D11. Servo sinyal→D9.", "Radar: sensör servo kolunun üstüne bantlanır; ekran için Processing kodu blogda.",
+                        "Çöp kutusu: sensör kapağın önüne, servo menteşe tarafına.", "Servo kırmızı→5V, kahverengi→GND, turuncu→D9.", "Kütüphane: Servo (IDE ile gelir)."],
+                       [("hc", "HC-SR04", "Mesafe Sensörü", ["VCC", "TRIG", "ECHO", "GND"]), ("sv", "SG90 Servo", "Tarama / kapak", ["SIG", "5V", "GND"])],
+                       [("org", "D10", ("hc", "TRIG")), ("cyan", "D11", ("hc", "ECHO")), ("pnk", "D9", ("sv", "SIG"))])
+    guc_hatti(s, [("hc", "VCC"), ("sv", "5V")], [("hc", "GND"), ("sv", "GND")])
+    return s
+
+
+def sema_fan():
+    s = proje_kiti_oto("Akıllı Fan / Termostat Kiti", "Arduino UNO + DHT11 + 16x2 LCD (I2C) + Röle + DC Motor — blogdaki kodla birebir uyumludur", "AEFANPS",
+                       ["DHT11 DATA→D7; LCD SDA→A4, SCL→A5; Röle IN→D8.", "Fan devresi: pil + → röle COM, röle NO → motor, motor diğer ucu → pil −.",
+                        "Sıcaklık eşiği kodda (varsayılan 28 °C) değiştirilebilir.", "LCD adresi 0x27 değilse 0x3F deneyin.", "Kütüphaneler: DHT sensor library, LiquidCrystal I2C. Piller dahil değildir."],
+                       [("dht", "DHT11", "Sıcaklık-Nem", ["VCC", "DATA", "GND"]), ("lcd", "16x2 LCD", "I2C Modüllü", ["GND", "VCC", "SDA", "SCL"]),
+                        ("rol", "Röle Modülü", "COM/NO → fan", ["VCC", "IN", "GND"])],
+                       [("org", "D7", ("dht", "DATA")), ("blu", "A4", ("lcd", "SDA")), ("grn", "A5", ("lcd", "SCL")), ("pnk", "D8", ("rol", "IN"))])
+    guc_hatti(s, [("dht", "VCC"), ("lcd", "VCC"), ("rol", "VCC")], [("dht", "GND"), ("lcd", "GND"), ("rol", "GND")])
+    return s
+
+
+def sema_gunes():
+    s = proje_kiti_oto("Güneş Takip Sistemi Kiti", "Arduino UNO + 4 LDR + 2 SG90 Servo — blogdaki kodla birebir uyumludur", "AEGUNESPS",
+                       ["Her LDR 10 kΩ dirençle gerilim bölücü: LDR 5V'a, direnç GND'ye, orta nokta analog pine.",
+                        "LDR: sol üst→A0, sağ üst→A1, sol alt→A2, sağ alt→A3.", "Yatay servo→D9, dikey servo→D10.",
+                        "LDR'ler artı şeklinde bir ayırıcıyla (karton) birbirinden ayrılmalı.", "İki servo birlikte zorlanırsa Arduino'yu adaptörle besleyin."],
+                       [("ldr", "4x LDR", "10 kΩ bölücü ile", ["SOL ÜST", "SAĞ ÜST", "SOL ALT", "SAĞ ALT", "5V", "GND"]),
+                        ("sv1", "Servo 1", "Yatay eksen", ["SIG", "5V", "GND"]), ("sv2", "Servo 2", "Dikey eksen", ["SIG", "5V", "GND"])],
+                       [("org", "A0", ("ldr", "SOL ÜST")), ("ylw", "A1", ("ldr", "SAĞ ÜST")), ("cyan", "A2", ("ldr", "SOL ALT")), ("brn", "A3", ("ldr", "SAĞ ALT")),
+                        ("pnk", "D9", ("sv1", "SIG")), ("pur", "D10", ("sv2", "SIG"))])
+    guc_hatti(s, [("ldr", "5V"), ("sv1", "5V"), ("sv2", "5V")], [("ldr", "GND"), ("sv1", "GND"), ("sv2", "GND")])
+    return s
+
+
+def sema_btev():
+    s = proje_kiti_oto("Bluetooth Ev Otomasyonu Kiti", "Arduino UNO + HC-06 + 2 Röle + 3 LED — blogdaki kodla birebir uyumludur", "AEBTEVPS",
+                       ["HC-06 TXD→D2, RXD→D3 (SoftwareSerial; kod yüklerken modülü sökmeye gerek yok).", "Röle 1 IN→D7, Röle 2 IN→D8. LED'ler 330 Ω ile: D4, D5, D6.",
+                        "Telefonda Bluetooth terminal uygulamasıyla eşleşin (şifre 1234 / 0000).", "Komutlar kodda: 1/0 röle 1, 2/3 röle 2, K/Y/M LED'ler.", "Röle çıkışına 220 V bağlantı yalnız eğitmen gözetiminde."],
+                       [("bt", "HC-06", "Bluetooth Modülü", ["VCC", "GND", "TXD", "RXD"]), ("r1", "Röle 1", "Lamba / cihaz", ["VCC", "IN", "GND"]),
+                        ("r2", "Röle 2", "Lamba / cihaz", ["VCC", "IN", "GND"]), ("led", "LED'ler", "330 Ω ile seri", ["KIRMIZI", "YEŞİL", "MAVİ", "GND"])],
+                       [("org", "D2", ("bt", "TXD")), ("cyan", "D3", ("bt", "RXD")), ("pnk", "D7", ("r1", "IN")), ("pur", "D8", ("r2", "IN")),
+                        ("red", "D4", ("led", "KIRMIZI")), ("grn", "D5", ("led", "YEŞİL")), ("blu", "D6", ("led", "MAVİ"))])
+    guc_hatti(s, [("bt", "VCC"), ("r1", "VCC"), ("r2", "VCC")], [("bt", "GND"), ("r1", "GND"), ("r2", "GND"), ("led", "GND")])
+    return s
+
+
+def sema_rfidlcd():
+    s = proje_kiti_oto("RFID Kartlı Geçiş ve Yoklama Kiti", "Arduino UNO + RC522 + 16x2 LCD (I2C) + Servo + Buzzer + LED — blogdaki kodla uyumlu", "AERFIDLCD",
+                       ["RC522: SDA→D10, SCK→D13, MOSI→D11, MISO→D12, RST→D9; 3.3V ile beslenir!", "LCD SDA→A4, SCL→A5. Servo→D6.",
+                        "Buzzer (+)→D5; yeşil LED→D3, kırmızı LED→D4 (330 Ω ile).", "Kart UID'lerini Seri Monitör'den okuyup koddaki listeye isimle yazın.", "Kütüphaneler: MFRC522, LiquidCrystal I2C, Servo."],
+                       [("rc", "RC522", "RFID Okuyucu", ["3.3V", "RST", "GND", "MISO", "MOSI", "SCK", "SDA"]), ("lcd", "16x2 LCD", "I2C Modüllü", ["GND", "VCC", "SDA", "SCL"]),
+                        ("sv", "SG90 Servo", "Kapı kilidi", ["SIG", "5V", "GND"]), ("uy", "Uyarı", "Buzzer + LED", ["BUZ +", "YEŞİL", "KIRMIZI", "GND"])],
+                       [("pur", "D9", ("rc", "RST")), ("grn", "D12", ("rc", "MISO")), ("pnk", "D11", ("rc", "MOSI")), ("blu", "D13", ("rc", "SCK")), ("org", "D10", ("rc", "SDA")),
+                        ("cyan", "A4", ("lcd", "SDA")), ("brn", "A5", ("lcd", "SCL")), ("ylw", "D6", ("sv", "SIG")),
+                        ("pnk", "D5", ("uy", "BUZ +")), ("grn", "D3", ("uy", "YEŞİL")), ("red", "D4", ("uy", "KIRMIZI"))])
+    guc_hatti(s, [("lcd", "VCC"), ("sv", "5V")], [("rc", "GND"), ("lcd", "GND"), ("sv", "GND"), ("uy", "GND")], v33=[("rc", "3.3V")])
+    return s
+
+
+def sema_trafik():
+    s = proje_kiti_oto("Trafik Lambası ve Yaya Butonu Kiti", "Arduino Nano + LED'ler + Buton + Buzzer — blogdaki kodla birebir uyumludur", "AETRAFIKPS",
+                       ["Araç: kırmızı→D2, sarı (RGB R+G)→D3+D4, yeşil→D5. Yaya: kırmızı→D6, yeşil→D7.", "Her LED 330 Ω dirençle seri; RGB LED'in en uzun bacağı GND (ortak katot).",
+                        "Buton D8 ile GND arasında (INPUT_PULLUP, direnç gerekmez).", "Buzzer (+)→D9: yaya geçişinde sesli uyarı.", "Nano breadboard'un ortasına, iki yarıya basacak şekilde takılır."],
+                       [("arac", "Araç Lambası", "Kırmızı · Sarı · Yeşil", ["KIRMIZI", "SARI-R", "SARI-G", "YEŞİL", "GND"]), ("yaya", "Yaya Lambası", "Kırmızı · Yeşil", ["KIRMIZI", "YEŞİL", "GND"]),
+                        ("btn", "Buton", "Yaya isteği", ["SİNYAL", "GND"]), ("buz", "Buzzer", "5V Aktif", ["+", "−"])],
+                       [("red", "D2", ("arac", "KIRMIZI")), ("org", "D3", ("arac", "SARI-R")), ("ylw", "D4", ("arac", "SARI-G")), ("grn", "D5", ("arac", "YEŞİL")),
+                        ("pnk", "D6", ("yaya", "KIRMIZI")), ("cyan", "D7", ("yaya", "YEŞİL")), ("blu", "D8", ("btn", "SİNYAL")), ("pur", "D9", ("buz", "+"))], kart="NANO")
+    guc_hatti(s, [], [("arac", "GND"), ("yaya", "GND"), ("btn", "GND"), ("buz", "−")])
+    return s
+
+
 SEMALAR = {
     "ir-robot": sema_ir, "cizgi-robot": sema_cizgi,
     "bluetooth-robot": sema_bt, "engelden-kacan-robot": sema_engel, "3u1-robot": sema_3u1, "4u1-robot": lambda: sema_3u1(dort=True),
     "dht11-lcd-kiti": sema_dht, "rtc-lcd-kiti": sema_rtc, "pir-alarm-kiti": sema_alarm,
     "rfid-kilit-kiti": sema_rfid, "step-motor-kiti": sema_step,
+    "park-sensoru-kiti": sema_park, "radar-cop-kutusu-kiti": sema_radar, "akilli-fan-kiti": sema_fan,
+    "gunes-takip-kiti": sema_gunes, "bluetooth-ev-kiti": sema_btev, "rfid-yoklama-kiti": sema_rfidlcd, "trafik-lambasi-kiti": sema_trafik,
     "mini-vantilator-seti": sema_vantilator, "fen-deney-seti": sema_fen, "temel-devre-seti": sema_temel,
 }
+
+
+MODEL4 = {"ir-robot": "AE4WDIRRAK-LI", "bluetooth-robot": "AE4WDHC06-LI", "engelden-kacan-robot": "AE4WDEKRBT-LI",
+          "cizgi-robot": "AE4WDCIZGI-LI", "3u1-robot": "AE4WD3IN1-LI", "4u1-robot": "AE4WD4IN1-LI"}
+
+
+def sema_4wd(ad):
+    global W4, AA
+    W4, AA = True, False
+    try:
+        s = SEMALAR[ad]()
+    finally:
+        W4 = False
+    s.baslik = "4WD " + s.baslik
+    s.altbaslik = s.altbaslik.replace("2WD Şasi", "4WD Şasi")
+    if "4WD" not in s.altbaslik:
+        s.altbaslik = "4WD Şasi · " + s.altbaslik
+    s.model = MODEL4[ad]
+    s.notlar = ["4WD: aynı taraftaki iki motor L298N'in aynı çıkışına paralel bağlanır; kod 2WD ile aynıdır."] + list(s.notlar)
+    import textwrap
+    kalan, satir = [], 0
+    for n in s.notlar:          # notlar kutusu taşmasın: en fazla 10 satır
+        k = len(textwrap.wrap(n, 52))
+        if satir + k > 10:
+            break
+        kalan.append(n); satir += k
+    s.notlar = kalan
+    return s
 
 
 async def render(adlar):
@@ -498,7 +651,10 @@ async def render(adlar):
         global AA
         for ad in adlar:
             AA = ad.endswith("-aa")
-            svg = SEMALAR[ad[:-3] if AA else ad]().svg()
+            if ad.endswith("-4wd"):
+                svg = sema_4wd(ad[:-4]).svg()
+            else:
+                svg = SEMALAR[ad[:-3] if AA else ad]().svg()
             (OUT / f"{ad}.svg").write_text(svg, encoding="utf-8")
             html = f'<html><body style="margin:0">{svg}</body></html>'
             await pg.set_content(html)
