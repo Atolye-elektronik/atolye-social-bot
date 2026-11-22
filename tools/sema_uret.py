@@ -65,12 +65,16 @@ class Sema:
         self.parts.append(f'<circle cx="{x + 235}" cy="{y + 50}" r="36" fill="#2b2f36"/><circle cx="{x + 235}" cy="{y + 50}" r="12" fill="#f39c35"/>')
 
     def pil(self, ad, x, y, w, h, etiket, hucre=("18650", "18650"), alt=""):
-        self.parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" fill="{RENK["koyu"]}"/>')
-        n = len(hucre)
-        for i, hh in enumerate(hucre):
-            yy = y + 16 + i * ((h - 32) / n)
-            self.parts.append(f'<rect x="{x + 22}" y="{yy + 4}" width="{w - 44}" height="{(h - 32) / n - 10}" rx="8" fill="#3d7a4a"/>')
-            self.parts.append(f'<text x="{x + w / 2}" y="{yy + (h - 32) / n / 2 + 6}" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">{esc(hh)}</text>')
+        """Tek bir PİL GRUBU (batarya) simgesi: hücre sayısı ne olursa olsun tek gövde + kutup başı.
+        Gövdede toplam gerilim yazar (ör. 2×18650 → 7.4V, 4×AA → 6V, 2×AA → 3V)."""
+        hucre_v = {"18650": 3.7, "AA": 1.5, "AA 1.5V": 1.5}
+        toplam = sum(hucre_v.get(c, 0) for c in hucre)
+        v = ("%.1f" % toplam).rstrip("0").rstrip(".") + "V" if toplam else ""
+        nub = 14
+        self.parts.append(f'<rect x="{x}" y="{y}" width="{w - nub}" height="{h}" rx="14" fill="#fff" stroke="{RENK["koyu"]}" stroke-width="5"/>')
+        self.parts.append(f'<rect x="{x + w - nub - 2}" y="{y + h * 0.3}" width="{nub}" height="{h * 0.4}" rx="4" fill="{RENK["koyu"]}"/>')
+        self.parts.append(f'<text x="{x + (w - nub) / 2}" y="{y + h / 2 + 4}" text-anchor="middle" font-size="34" font-weight="800" fill="{RENK["koyu"]}">{esc(v)}</text>')
+        self.parts.append(f'<text x="{x + (w - nub) / 2}" y="{y + h / 2 + 30}" text-anchor="middle" font-size="16" font-weight="700" fill="{RENK["gri"]}">PİL GRUBU</text>')
         self.parts.append(f'<text x="{x + 36}" y="{y - 8}" font-size="22" font-weight="700" fill="{RENK["red"]}">+</text>')
         self.parts.append(f'<text x="{x + w - 36}" y="{y + h + 24}" font-size="22" font-weight="700" fill="{RENK["blk"]}">−</text>')
         self.parts.append(f'<text x="{x + w / 2}" y="{y + h + 30}" text-anchor="middle" font-size="20" font-weight="700" fill="{RENK["baslik"]}">{esc(etiket)}</text>')
@@ -593,13 +597,13 @@ def sema_rfidlcd():
 
 
 def sema_trafik():
-    s = proje_kiti_oto("Trafik Lambası ve Yaya Butonu Kiti", "Arduino Nano + LED'ler + Buton + Buzzer — blogdaki kodla birebir uyumludur", "AETRAFIKPS",
-                       ["Araç: kırmızı→D2, sarı (RGB R+G)→D3+D4, yeşil→D5. Yaya: kırmızı→D6, yeşil→D7.", "Her LED 330 Ω dirençle seri; RGB LED'in en uzun bacağı GND (ortak katot).",
-                        "Buton D8 ile GND arasında (INPUT_PULLUP, direnç gerekmez).", "Buzzer (+)→D9: yaya geçişinde sesli uyarı.", "Nano breadboard'un ortasına, iki yarıya basacak şekilde takılır."],
-                       [("arac", "Araç Lambası", "Kırmızı · Sarı · Yeşil", ["KIRMIZI", "SARI-R", "SARI-G", "YEŞİL", "GND"]), ("yaya", "Yaya Lambası", "Kırmızı · Yeşil", ["KIRMIZI", "YEŞİL", "GND"]),
+    s = proje_kiti_oto("Trafik Lambası ve Yaya Butonu Kiti", "Arduino Nano + 5 LED + Buton + Buzzer — blogdaki kodla birebir uyumludur", "AETRAFIKPS",
+                       ["Araç: kırmızı→D2, sarı→D3, yeşil→D4. Yaya: kırmızı→D5, yeşil→D6.", "Her LED 330 Ω dirençle seri; LED'in kısa bacağı GND'ye.",
+                        "Buton D7 ile GND arasında: INPUT_PULLUP kullanıldığı için 10 kΩ direnç GEREKMEZ.", "Buzzer (+)→D8: yaya geçişinde sesli uyarı.", "Nano breadboard'un ortasına, iki yarıya basacak şekilde takılır."],
+                       [("arac", "Araç Lambası", "Kırmızı · Sarı · Yeşil", ["KIRMIZI", "SARI", "YEŞİL", "GND"]), ("yaya", "Yaya Lambası", "Kırmızı · Yeşil", ["KIRMIZI", "YEŞİL", "GND"]),
                         ("btn", "Buton", "Yaya isteği", ["SİNYAL", "GND"]), ("buz", "Buzzer", "5V Aktif", ["+", "−"])],
-                       [("red", "D2", ("arac", "KIRMIZI")), ("org", "D3", ("arac", "SARI-R")), ("ylw", "D4", ("arac", "SARI-G")), ("grn", "D5", ("arac", "YEŞİL")),
-                        ("pnk", "D6", ("yaya", "KIRMIZI")), ("cyan", "D7", ("yaya", "YEŞİL")), ("blu", "D8", ("btn", "SİNYAL")), ("pur", "D9", ("buz", "+"))], kart="NANO")
+                       [("red", "D2", ("arac", "KIRMIZI")), ("ylw", "D3", ("arac", "SARI")), ("grn", "D4", ("arac", "YEŞİL")),
+                        ("pnk", "D5", ("yaya", "KIRMIZI")), ("cyan", "D6", ("yaya", "YEŞİL")), ("blu", "D7", ("btn", "SİNYAL")), ("pur", "D8", ("buz", "+"))], kart="NANO")
     guc_hatti(s, [], [("arac", "GND"), ("yaya", "GND"), ("btn", "GND"), ("buz", "−")])
     return s
 

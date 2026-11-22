@@ -15,7 +15,8 @@
   "AELEHIMPASTA": "Lehim Pastasi",
   "AEIZOLE": "Izole Bant (tekli)",
   "AEPOT10K": "Potansiyometre 10K (TY'de var, Shopify'da urun karti yok)",
-  "AEKRK1": "Krokodil kablo (tekli)"
+  "AEKRK1": "Krokodil kablo (tekli)",
+  "AELED5S": "LED 5mm Sari (22.11 trafik lambasi seti icin; Shopify DRAFT stok parcasi)"
  },
  "coklu_paket": {
   "AEKRK5": {
@@ -1716,7 +1717,7 @@
     2
    ],
    [
-    "AELEDRGB",
+    "AELED5S",
     1
    ],
    [
@@ -1733,7 +1734,7 @@
    ],
    [
     "AEDIR330",
-    6
+    5
    ],
    [
     "AEBB830P",
