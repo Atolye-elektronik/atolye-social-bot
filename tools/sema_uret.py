@@ -64,22 +64,15 @@ class Sema:
         self.kutu(ad, x, y, 180, 100, RENK["lacivert"], etiket, alt, pins=(("", "l", 0.35), (" ", "l", 0.65)), font=24)
         self.parts.append(f'<circle cx="{x + 235}" cy="{y + 50}" r="36" fill="#2b2f36"/><circle cx="{x + 235}" cy="{y + 50}" r="12" fill="#f39c35"/>')
 
-    def pil(self, ad, x, y, w, h, etiket, hucre=("18650", "18650"), alt=""):
-        """Tek bir PİL GRUBU (batarya) simgesi: hücre sayısı ne olursa olsun tek gövde + kutup başı.
-        Gövdede toplam gerilim yazar (ör. 2×18650 → 7.4V, 4×AA → 6V, 2×AA → 3V)."""
-        hucre_v = {"18650": 3.7, "AA": 1.5, "AA 1.5V": 1.5}
-        toplam = sum(hucre_v.get(c, 0) for c in hucre)
-        v = ("%.1f" % toplam).rstrip("0").rstrip(".") + "V" if toplam else ""
+    def pil(self, ad, x, y, w, h, etiket="", hucre=(), alt=""):
+        """Tek bir PİL GRUBU (batarya) simgesi. Kullanıcı 22.11: gerilim yazılmaz, yalnız "PİL GRUBU".
+        (etiket/hucre/alt parametreleri geriye uyumluluk için duruyor, çizilmiyor.)"""
         nub = 14
         self.parts.append(f'<rect x="{x}" y="{y}" width="{w - nub}" height="{h}" rx="14" fill="#fff" stroke="{RENK["koyu"]}" stroke-width="5"/>')
         self.parts.append(f'<rect x="{x + w - nub - 2}" y="{y + h * 0.3}" width="{nub}" height="{h * 0.4}" rx="4" fill="{RENK["koyu"]}"/>')
-        self.parts.append(f'<text x="{x + (w - nub) / 2}" y="{y + h / 2 + 4}" text-anchor="middle" font-size="34" font-weight="800" fill="{RENK["koyu"]}">{esc(v)}</text>')
-        self.parts.append(f'<text x="{x + (w - nub) / 2}" y="{y + h / 2 + 30}" text-anchor="middle" font-size="16" font-weight="700" fill="{RENK["gri"]}">PİL GRUBU</text>')
+        self.parts.append(f'<text x="{x + (w - nub) / 2}" y="{y + h / 2 + 10}" text-anchor="middle" font-size="{min(28, (w - nub - 40) / 6.6):.0f}" font-weight="800" fill="{RENK["koyu"]}">PİL GRUBU</text>')
         self.parts.append(f'<text x="{x + 36}" y="{y - 8}" font-size="22" font-weight="700" fill="{RENK["red"]}">+</text>')
         self.parts.append(f'<text x="{x + w - 36}" y="{y + h + 24}" font-size="22" font-weight="700" fill="{RENK["blk"]}">−</text>')
-        self.parts.append(f'<text x="{x + w / 2}" y="{y + h + 30}" text-anchor="middle" font-size="20" font-weight="700" fill="{RENK["baslik"]}">{esc(etiket)}</text>')
-        if alt:
-            self.parts.append(f'<text x="{x + w / 2}" y="{y + h + 54}" text-anchor="middle" font-size="17" fill="{RENK["gri"]}">{esc(alt)}</text>')
         self.pins[(ad, "+")] = (x + 36, y, "t")
         self.pins[(ad, "-")] = (x + w - 36, y + h, "b")
 
@@ -214,7 +207,7 @@ def robot_govde(s, ek_l=(), bes_kullan=False, ek_b=()):
     px, py, _ = s.pins[("pil", "+")]
     s.tel("red", [(px, py), (px, 720), (L298_X + 50, 720), (L298_X + 50, 590)]); s.dugum(L298_X + 50, 590, "red")
     s.tel("red", [(L298_X + 50, 720), (1585, 720), (1585, 130), (ARD_X + 156, 130), (ARD_X + 156, 280)], w=5); s.dugum(ARD_X + 156, 280, "red")
-    s.yazi(900, 112, ("Pil + (6V) → Arduino VIN" if AA else "Pil + (7.4V) → Arduino VIN"), RENK["red"], 19, True, "middle")
+    s.yazi(900, 112, "Pil + → Arduino VIN", RENK["red"], 19, True, "middle")
     nx, ny, _ = s.pins[("pil", "-")]
     s.tel("blk", [(nx, ny), (nx, 905), (100, 905)]); s.tel("blk", [(nx, 905), (L298_X + 140, 905), (L298_X + 140, 590)]); s.dugum(L298_X + 140, 590, "blk")
     s.tel("blk", [(ARD_X + 150, 660), (ARD_X + 150, 905)]); s.dugum(ARD_X + 150, 905, "blk"); s.dugum(L298_X + 140, 905, "blk")
@@ -222,7 +215,7 @@ def robot_govde(s, ek_l=(), bes_kullan=False, ek_b=()):
 
 
 def sema_ir():
-    s = Sema("IR Kumandalı Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + IR Alıcı + " + ("4'lü AA Pil Kutusu (6V)" if AA else "18650 Pil Yuvası (7.4V)") + " — blogdaki hazır kodla birebir uyumludur", "AEIRRAK" if AA else "AEIRRAK-LI",
+    s = Sema("IR Kumandalı Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + IR Alıcı + " + ("4'lü AA Pil Kutusu" if AA else "18650 Pil Yuvası") + " — blogdaki hazır kodla birebir uyumludur", "AEIRRAK" if AA else "AEIRRAK-LI",
              ["Kod pinleri: IN1→D5, IN2→D6, IN3→D9, IN4→D10, IR alıcı OUT→D11.",
               ("Arduino, pilden VIN ile beslenir (6V: VIN için alt sınır, yeni piller kullanın). 5V pinine güç verilmez." if AA else "Arduino, pilden VIN pini ile beslenir (7.4V; VIN 7-12V kabul eder). 5V pinine güç verilmez."),
               "ENA, ENB ve 5V jumper'ları takılı kalmalı.",
@@ -242,7 +235,7 @@ def sema_ir():
 
 
 def sema_bt():
-    s = Sema("Bluetooth Kontrollü Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + HC-06 Bluetooth + " + ("4'lü AA Pil Kutusu (6V)" if AA else "18650 Pil Yuvası (7.4V)") + " — blogdaki hazır kodla birebir uyumludur", "AEHC06RAK" if AA else "AEHC06RAK-LI",
+    s = Sema("Bluetooth Kontrollü Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + HC-06 Bluetooth + " + ("4'lü AA Pil Kutusu" if AA else "18650 Pil Yuvası") + " — blogdaki hazır kodla birebir uyumludur", "AEHC06RAK" if AA else "AEHC06RAK-LI",
              ["Kod pinleri: IN1→D5, IN2→D6, IN3→D9, IN4→D10; HC-06 TXD→D0 (RX), RXD→D1 (TX).",
               "KOD YÜKLERKEN HC-06'nın TX/RX kablolarını çıkarın (USB ile çakışır).",
               "HC-06 RXD 3.3V'tur: D1→RXD hattına 1kΩ + 2kΩ gerilim bölücü önerilir.",
@@ -267,7 +260,7 @@ def sema_bt():
 
 
 def sema_engel():
-    s = Sema("Engelden Kaçan Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + HC-SR04 + SG90 Servo + " + ("4'lü AA Pil Kutusu (6V)" if AA else "18650 Pil Yuvası (7.4V)") + " — blogdaki kodla uyumludur", "AE2WDEKRBT" if AA else "AE2WDEKRBT-LI",
+    s = Sema("Engelden Kaçan Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + HC-SR04 + SG90 Servo + " + ("4'lü AA Pil Kutusu" if AA else "18650 Pil Yuvası") + " — blogdaki kodla uyumludur", "AE2WDEKRBT" if AA else "AE2WDEKRBT-LI",
              ["Kod pinleri: IN1→D5, IN2→D6, IN3→D9, IN4→D10; TRIG→A0, ECHO→A1; Servo→D3.",
               "HC-SR04 ve servo, L298N'in 5V çıkışından beslenir (Arduino regülatörü yorulmaz); GND ortak.",
               "Servo sinyal kablosu (turuncu) D3'e, kırmızı 5V'a, kahverengi GND'ye.",
@@ -292,14 +285,14 @@ def sema_engel():
 
 def sema_3u1(dort=False):
     if dort:
-        s = Sema("4'ü 1 Arada Robot Araba Kiti", "Bluetooth + IR Kumanda + Engelden Kaçan + Çizgi İzleyen — " + ("4'lü AA (6V)" if AA else "18650 (7.4V)") + "; tek şasi, tek kod", "AE4IN1ROBOT" if AA else "AE4IN1ROBOT-LI",
+        s = Sema("4'ü 1 Arada Robot Araba Kiti", "Bluetooth + IR Kumanda + Engelden Kaçan + Çizgi İzleyen — " + ("4'lü AA" if AA else "18650") + "; tek şasi, tek kod", "AE4IN1ROBOT" if AA else "AE4IN1ROBOT-LI",
              ["L298N: IN1→D5, IN2→D6, IN3→D9, IN4→D10.",
               "HC-06: TXD→D0, RXD→D1 (yüklerken çıkarın). IR OUT→D11.",
               "HC-SR04: TRIG→A0, ECHO→A1. Servo→D3.",
               "Çizgi sensörü: OUT1…OUT4 → A2…A5 (S1 en sol).",
               "Mod: telefon A/C/M, kumanda OK/*/#. GND'ler ortak."])
     else:
-      s = Sema("3'ü 1 Arada Robot Araba Kiti", "Bluetooth + IR Kumanda + Engelden Kaçan — " + ("4'lü AA Pil Kutusu (6V)" if AA else "18650 Pil Yuvası (7.4V)") + "; tek şasi, tek kod", "AE3IN1ROBOT" if AA else "AE3IN1ROBOT-LI",
+      s = Sema("3'ü 1 Arada Robot Araba Kiti", "Bluetooth + IR Kumanda + Engelden Kaçan — " + ("4'lü AA Pil Kutusu" if AA else "18650 Pil Yuvası") + "; tek şasi, tek kod", "AE3IN1ROBOT" if AA else "AE3IN1ROBOT-LI",
              ["L298N: IN1→D5, IN2→D6, IN3→D9, IN4→D10 (ENA/ENB jumper takılı).",
               "HC-06: TXD→D0, RXD→D1 (kod yüklerken çıkarın). IR alıcı OUT→D11.",
               "HC-SR04: TRIG→A0, ECHO→A1. SG90 servo sinyal→D3.",
@@ -452,7 +445,7 @@ def basit_devre(baslik, alt, model, notlar, lamba=True, motor=True, iki_anahtar=
         y = 500
         if iki_anahtar:
             s.kutu("sw2", 440, 470, 150, 90, RENK["koyu"], "ANAHTAR 2", "on / off", pins=(("", "l", 0.5), (" ", "r", 0.5)), font=22)
-            s.tel("red", [(px, 295), (px, 515), (440, 515)]); s.dugum(px, 295, "red")
+            s.tel("red", [(px, 295), (90, 295), (90, 610), (400, 610), (400, 515), (440, 515)]); s.dugum(px, 295, "red")   # pil gövdesinin etrafından
             s.tel("red", [(590, 515), (1150, 515)])
         else:
             s.tel("red", [(590, 295), (700, 295), (700, 515), (1150, 515)]); s.dugum(700, 295, "red")
@@ -482,7 +475,7 @@ def sema_temel():
 
 
 def sema_cizgi():
-    s = Sema("Çizgi İzleyen Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + 4 Kanal Çizgi Sensörü + " + ("4'lü AA (6V)" if AA else "18650 (7.4V)") + " — blog koduyla uyumlu", "AECIZGIRBT" if AA else "AECIZGIRBT-LI",
+    s = Sema("Çizgi İzleyen Robot Araba Kiti", "2WD Şasi + Arduino UNO + L298N + 4 Kanal Çizgi Sensörü + " + ("4'lü AA" if AA else "18650") + " — blog koduyla uyumlu", "AECIZGIRBT" if AA else "AECIZGIRBT-LI",
              ["Kod pinleri: IN1→D5, IN2→D6, IN3→D9, IN4→D10; OUT1→A0 … OUT4→A3 (S1 en sol).",
               "Sensör kartı Arduino 5V'tan beslenir; problar renkli kablolarla takılır.",
               "Trimpotla ayarlayın: beyazda prob LED'i yanar, siyah bantta söner.",
