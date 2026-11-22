@@ -47,5 +47,96 @@
       "Renkli bağlantı şeması, QR ile 4 modlu hazır kod"
     ],
     "etiketler": "#robotik #arduino #robotkiti #cizgiizleyenrobot #engeldenkacanrobot #kodlama #stem #tubitak #mesleklisesi #atolyeelektronik"
+  },
+  "park-sensoru-proje-kiti-hc-sr04-buzzer-led-arduino-uno-jumper-kablo-hediyeli": {
+    "etiket": "HAZIR PROJE SETİ",
+    "kanca": "Arabaların park sensörü nasıl öter?",
+    "alt": "Ultrasonik sensör mesafeyi ölçer, buzzer yaklaştıkça hızlanır. Cevabı bu kutuda.",
+    "kisa_ad": "Park Sensörü Proje Kiti",
+    "maddeler": [
+      "Arduino Uno + HC-SR04 ultrasonik mesafe sensörü",
+      "Buzzer, 3 LED ve dirençler, breadboard",
+      "Erkek-erkek ve dişi-erkek jumper kablolar",
+      "Renkli bağlantı şeması, QR ile hazır Arduino kodu"
+    ],
+    "etiketler": "#parksensoru #hcsr04 #arduino #arduinoproje #kodlama #stem #tubitak #mesleklisesi #elektrikelektronik #atolyeelektronik"
+  },
+  "radar-ve-akilli-cop-kutusu-proje-kiti-hc-sr04-sg90-servo-arduino-uno-jumper-kablo-hediyeli": {
+    "etiket": "HAZIR PROJE SETİ",
+    "kanca": "Elini yaklaştır, kapak kendiliğinden açılsın.",
+    "alt": "Aynı kutudan iki proje: dönen radar ve akıllı çöp kutusu.",
+    "kisa_ad": "Radar ve Akıllı Çöp Kutusu Kiti",
+    "maddeler": [
+      "Arduino Uno + HC-SR04 mesafe sensörü",
+      "SG90 servo motor ile tarama ve kapak açma",
+      "Breadboard ve jumper kablolar",
+      "Renkli bağlantı şeması, QR ile 2 hazır kod"
+    ],
+    "etiketler": "#radar #akillicopkutusu #servo #arduino #arduinoproje #kodlama #stem #tubitak #mesleklisesi #elektrikelektronik #atolyeelektronik"
+  },
+  "akilli-fan-termostat-proje-kiti-dht11-lcd-role-motor-arduino-uno-jumper-kablo-hediyeli": {
+    "etiket": "HAZIR PROJE SETİ",
+    "kanca": "Oda ısınınca fan kendi kendine çalışsa?",
+    "alt": "DHT11 sıcaklığı ölçer, LCD gösterir, röle fanı açar. Gerçek bir termostat.",
+    "kisa_ad": "Akıllı Fan / Termostat Kiti",
+    "maddeler": [
+      "Arduino Uno + DHT11 sıcaklık-nem sensörü",
+      "16x2 I2C LCD ekran ve röle modülü",
+      "DC motor, pervane ve pil yuvası, breadboard",
+      "Renkli bağlantı şeması, QR ile hazır Arduino kodu"
+    ],
+    "etiketler": "#termostat #dht11 #lcd #role #arduino #arduinoproje #kodlama #stem #tubitak #mesleklisesi #elektrikelektronik #atolyeelektronik"
+  },
+  "gunes-takip-sistemi-proje-kiti-4-ldr-2-sg90-servo-arduino-uno-jumper-kablo-hediyeli": {
+    "etiket": "HAZIR PROJE SETİ",
+    "kanca": "Güneş paneli güneşi nasıl takip eder?",
+    "alt": "4 ışık sensörü ışığı kıyaslar, 2 servo paneli en parlak yöne çevirir.",
+    "kisa_ad": "Güneş Takip Sistemi Kiti",
+    "maddeler": [
+      "Arduino Uno + 4 adet LDR ışık sensörü",
+      "2 adet SG90 servo ile iki eksenli hareket",
+      "Dirençler, breadboard ve jumper kablolar",
+      "Renkli bağlantı şeması, QR ile hazır Arduino kodu"
+    ],
+    "etiketler": "#gunesenerjisi #yenilenebilirenerji #ldr #servo #arduino #arduinoproje #kodlama #stem #tubitak #mesleklisesi #elektrikelektronik #atolyeelektronik"
+  },
+  "bluetooth-ev-otomasyonu-proje-kiti-hc-06-2-role-arduino-uno-jumper-kablo-hediyeli": {
+    "etiket": "HAZIR PROJE SETİ",
+    "kanca": "Lambayı telefondan açıp kapatmak ne kadar zor?",
+    "alt": "HC-06 Bluetooth ve 2 röle modülü ile ilk akıllı ev projen.",
+    "kisa_ad": "Bluetooth Ev Otomasyonu Kiti",
+    "maddeler": [
+      "Arduino Uno + HC-06 Bluetooth modülü",
+      "2 adet röle modülü, 3 LED ve dirençler",
+      "Breadboard ve jumper kablolar",
+      "Renkli bağlantı şeması, QR ile hazır kod ve uygulama anlatımı"
+    ],
+    "etiketler": "#akilliev #evotomasyonu #bluetooth #role #arduino #arduinoproje #kodlama #stem #tubitak #mesleklisesi #elektrikelektronik #atolyeelektronik"
+  },
+  "rfid-kartli-gecis-ve-yoklama-proje-kiti-rc522-lcd-servo-arduino-uno-jumper-kablo-hediyeli": {
+    "etiket": "HAZIR PROJE SETİ",
+    "kanca": "Kartını okut, kapı açılsın, yoklaman alınsın.",
+    "alt": "RC522 kartı tanır, LCD ismi yazar, servo kapıyı açar.",
+    "kisa_ad": "RFID Kartlı Geçiş ve Yoklama Kiti",
+    "maddeler": [
+      "Arduino Uno + RC522 RFID okuyucu, kart ve anahtarlık",
+      "16x2 I2C LCD ekran ve SG90 servo",
+      "Breadboard ve jumper kablolar",
+      "Renkli bağlantı şeması, QR ile hazır Arduino kodu"
+    ],
+    "etiketler": "#rfid #rc522 #yoklama #lcd #arduino #arduinoproje #kodlama #stem #tubitak #mesleklisesi #elektrikelektronik #atolyeelektronik"
+  },
+  "trafik-lambasi-ve-yaya-butonu-proje-kiti-arduino-nano-led-buton-buzzer-jumper-kablo-hediyeli": {
+    "etiket": "HAZIR PROJE SETİ",
+    "kanca": "Yaya butonuna basınca trafik lambasında ne olur?",
+    "alt": "Kırmızı, sarı, yeşil LED, buton ve buzzer ile gerçek bir kavşak.",
+    "kisa_ad": "Trafik Lambası ve Yaya Butonu Kiti",
+    "maddeler": [
+      "Arduino Nano (Type-C)",
+      "Kırmızı, sarı, yeşil LED'ler ve dirençler",
+      "Yaya butonu ve sesli uyarı buzzer'ı, breadboard",
+      "Renkli bağlantı şeması, QR ile hazır Arduino kodu"
+    ],
+    "etiketler": "#trafiklambasi #arduinonano #led #arduino #arduinoproje #kodlama #stem #tubitak #mesleklisesi #elektrikelektronik #atolyeelektronik"
   }
 }
