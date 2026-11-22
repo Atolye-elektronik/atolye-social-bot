@@ -68,11 +68,12 @@ class Sema:
         """Tek bir PİL GRUBU (batarya) simgesi. Kullanıcı 22.11: gerilim yazılmaz, yalnız "PİL GRUBU".
         (etiket/hucre/alt parametreleri geriye uyumluluk için duruyor, çizilmiyor.)"""
         nub = 14
-        self.parts.append(f'<rect x="{x}" y="{y}" width="{w - nub}" height="{h}" rx="14" fill="#fff" stroke="{RENK["koyu"]}" stroke-width="5"/>')
-        self.parts.append(f'<rect x="{x + w - nub - 2}" y="{y + h * 0.3}" width="{nub}" height="{h * 0.4}" rx="4" fill="{RENK["koyu"]}"/>')
-        self.parts.append(f'<text x="{x + (w - nub) / 2}" y="{y + h / 2 + 10}" text-anchor="middle" font-size="{min(28, (w - nub - 40) / 6.6):.0f}" font-weight="800" fill="{RENK["koyu"]}">PİL GRUBU</text>')
-        self.parts.append(f'<text x="{x + 36}" y="{y - 8}" font-size="22" font-weight="700" fill="{RENK["red"]}">+</text>')
-        self.parts.append(f'<text x="{x + w - 36}" y="{y + h + 24}" font-size="22" font-weight="700" fill="{RENK["blk"]}">−</text>')
+        # 22.11 (kullanıcı): çıkıntılı uç gerçek pildeki gibi ARTI (+) tarafında olmalı — ters bağlantıyı önler.
+        self.parts.append(f'<rect x="{x + nub}" y="{y}" width="{w - nub}" height="{h}" rx="14" fill="#fff" stroke="{RENK["koyu"]}" stroke-width="5"/>')
+        self.parts.append(f'<rect x="{x + 2}" y="{y + h * 0.3}" width="{nub}" height="{h * 0.4}" rx="4" fill="{RENK["red"]}"/>')
+        self.parts.append(f'<text x="{x + nub + (w - nub) / 2}" y="{y + h / 2 + 10}" text-anchor="middle" font-size="{min(28, (w - nub - 40) / 6.6):.0f}" font-weight="800" fill="{RENK["koyu"]}">PİL GRUBU</text>')
+        self.parts.append(f'<text x="{x + 2}" y="{y - 8}" font-size="30" font-weight="800" fill="{RENK["red"]}">+</text>')
+        self.parts.append(f'<text x="{x + w - 16}" y="{y + h + 30}" font-size="30" font-weight="800" fill="{RENK["blk"]}">−</text>')
         self.pins[(ad, "+")] = (x + 36, y, "t")
         self.pins[(ad, "-")] = (x + w - 36, y + h, "b")
 
