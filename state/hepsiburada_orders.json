@@ -9,7 +9,7 @@
       "dueDate": "2026-11-23T18:30:00",
       "barcode": "62955470199456",
       "packageNumber": "5547019945",
-      "cargoCompany": "Sürat Kargo",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "İLÇE TARIM MÜDÜRLÜĞÜ CAMİKEBİR SEFERİHİSAR İzmir",
       "recipientName": "DERYA ÖZYAR KARAKOÇ",
       "shippingCountryCode": "TR",
@@ -132,21 +132,151 @@
       }
     },
     {
-      "id": "6b020b52-5046-2905-5e75-e4ec06060606",
+      "id": "6b033a1c-8b55-e391-39d8-d0d406060606",
+      "status": "Open",
+      "customerId": "e21a6974-9527-4b30-b828-6ddcb8bfa152",
+      "orderDate": "2026-11-22T21:53:15",
+      "dueDate": "2026-11-23T18:30:00",
+      "barcode": "62955473721849",
+      "packageNumber": "5547372184",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Yapı Kredi Bankası Çayırova Şb. Yeni mah.  Fatih Cd. No:120 Çayırova/Kocaeli YENİ ÇAYIROVA Kocaeli",
+      "recipientName": "Uğur Peker",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YENİ",
+      "shippingTown": "ÇAYIROVA",
+      "shippingCity": "Kocaeli",
+      "email": "4986237177_5547372184@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Uğur Peker",
+      "billingAddress": "Yapı Kredi Bankası Çayırova Şb. Yeni mah.  Fatih Cd. No:120 Çayırova/Kocaeli YENİ ÇAYIROVA Kocaeli",
+      "billingCity": "Kocaeli",
+      "billingTown": "ÇAYIROVA",
+      "billingDistrict": "YENİ",
+      "billingPostalCode": "41420",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 120.54
+      },
+      "items": [
+        {
+          "lineItemId": "6b033a1c-c106-48bf-3934-a59a06060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 60.27
+          },
+          "vat": 20.09,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 120.54
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 12.76
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 10.63
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 21.26
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 70.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 141.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4986237177",
+          "orderDate": "2026-11-22T21:53:15",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Uğur Peker",
+      "estimatedArrivalDate": "2026-11-27T15:30:00Z",
+      "totalDeci": 2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6b034f3b-aa2e-de78-8fb5-3df506060606",
       "status": "Open",
       "customerId": "24a7fa01-ed68-4fa0-8c9a-c4e4534dbf1c",
       "orderDate": "2026-11-22T00:21:21",
       "dueDate": "2026-11-23T18:30:00",
-      "barcode": "62955470357209",
-      "packageNumber": "5547035720",
-      "cargoCompany": "Sürat Kargo",
+      "barcode": "62755474239985",
+      "packageNumber": "5547423998",
+      "cargoCompany": "hepsiJET",
       "shippingAddressDetail": "Karaçay mah. Samandağ yolu üzeri Kocaoğlu kasabı karşısı Kanadlı Soğutma No:1 Samandağ/Hatay KARAÇAY SAMANDAĞ Hatay",
       "recipientName": "Selim Karadağ",
       "shippingCountryCode": "TR",
       "shippingDistrict": "KARAÇAY",
       "shippingTown": "SAMANDAĞ",
       "shippingCity": "Hatay",
-      "email": "4147857304_5547035720@hepsifatura.com",
+      "email": "4147857304_5547423998@hepsifatura.com",
       "phoneNumber": "",
       "companyName": "Selim Karadağ",
       "billingAddress": "Karaçay mah. Samandağ yolu üzeri Kocaoğlu kasabı karşısı Kanadlı Soğutma No:1 Samandağ/Hatay  KARAÇAY SAMANDAĞ Hatay",
