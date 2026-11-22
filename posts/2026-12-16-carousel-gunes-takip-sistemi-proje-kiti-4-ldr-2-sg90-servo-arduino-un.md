@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: [posts\media\carousel\2026-12-01-carousel-gunes-takip-sistemi-proje-kiti-4-ldr-2-sg90-servo-arduino-un\01-kapak.jpg, posts\media\carousel\2026-12-01-carousel-gunes-takip-sistemi-proje-kiti-4-ldr-2-sg90-servo-arduino-un\02-urun.jpg, posts\media\carousel\2026-12-01-carousel-gunes-takip-sistemi-proje-kiti-4-ldr-2-sg90-servo-arduino-un\03-urun.jpg, posts\media\carousel\2026-12-01-carousel-gunes-takip-sistemi-proje-kiti-4-ldr-2-sg90-servo-arduino-un\04-urun.jpg, posts\media\carousel\2026-12-01-carousel-gunes-takip-sistemi-proje-kiti-4-ldr-2-sg90-servo-arduino-un\05-urun.jpg, posts\media\carousel\2026-12-01-carousel-gunes-takip-sistemi-proje-kiti-4-ldr-2-sg90-servo-arduino-un\06-urun.jpg, posts\media\carousel\2026-12-01-carousel-gunes-takip-sistemi-proje-kiti-4-ldr-2-sg90-servo-arduino-un\07-urun.jpg, posts\media\carousel\2026-12-01-carousel-gunes-takip-sistemi-proje-kiti-4-ldr-2-sg90-servo-arduino-un\08-urun.jpg, posts\media\carousel\2026-12-01-carousel-gunes-takip-sistemi-proje-kiti-4-ldr-2-sg90-servo-arduino-un\09-urun.jpg, posts\media\carousel\2026-12-01-carousel-gunes-takip-sistemi-proje-kiti-4-ldr-2-sg90-servo-arduino-un\10-kapanis.jpg]
-publish_at: 2026-12-01 12:00
+publish_at: 2026-12-16 12:00
 ---
 Arduino'ya nereden başlanır? Cevabı bu kutuda 🛠️
 

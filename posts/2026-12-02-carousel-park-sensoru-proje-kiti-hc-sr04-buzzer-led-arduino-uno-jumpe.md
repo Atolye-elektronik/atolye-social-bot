@@ -1,7 +1,7 @@
 ---
 platforms: [instagram, facebook, threads]
 media: [posts\media\carousel\2026-11-23-carousel-park-sensoru-proje-kiti-hc-sr04-buzzer-led-arduino-uno-jumpe\01-kapak.jpg, posts\media\carousel\2026-11-23-carousel-park-sensoru-proje-kiti-hc-sr04-buzzer-led-arduino-uno-jumpe\02-urun.jpg, posts\media\carousel\2026-11-23-carousel-park-sensoru-proje-kiti-hc-sr04-buzzer-led-arduino-uno-jumpe\03-urun.jpg, posts\media\carousel\2026-11-23-carousel-park-sensoru-proje-kiti-hc-sr04-buzzer-led-arduino-uno-jumpe\04-urun.jpg, posts\media\carousel\2026-11-23-carousel-park-sensoru-proje-kiti-hc-sr04-buzzer-led-arduino-uno-jumpe\05-urun.jpg, posts\media\carousel\2026-11-23-carousel-park-sensoru-proje-kiti-hc-sr04-buzzer-led-arduino-uno-jumpe\06-urun.jpg, posts\media\carousel\2026-11-23-carousel-park-sensoru-proje-kiti-hc-sr04-buzzer-led-arduino-uno-jumpe\07-urun.jpg, posts\media\carousel\2026-11-23-carousel-park-sensoru-proje-kiti-hc-sr04-buzzer-led-arduino-uno-jumpe\08-urun.jpg, posts\media\carousel\2026-11-23-carousel-park-sensoru-proje-kiti-hc-sr04-buzzer-led-arduino-uno-jumpe\09-urun.jpg, posts\media\carousel\2026-11-23-carousel-park-sensoru-proje-kiti-hc-sr04-buzzer-led-arduino-uno-jumpe\10-kapanis.jpg]
-publish_at: 2026-11-23 12:00
+publish_at: 2026-12-02 12:00
 ---
 Arduino uyumlu, taktığın gibi çalışır 🔌
 

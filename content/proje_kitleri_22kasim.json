@@ -3,7 +3,7 @@
  "urunler": [
   {
    "stokKodu": "AEPARKPS",
-   "barkod": "2920000600179",
+   "barkod": "2920000600247",
    "ad": "Park Sensörü Proje Kiti (HC-SR04 + Buzzer + LED + Arduino Uno) - Şemalı ve Kodlu",
    "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak hazır koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>Arabalardaki park sensörünü kendin yap!</strong> HC-SR04 ultrasonik sensör engele olan mesafeyi ölçer; engel yaklaştıkça buzzer sıklaşır, LED'ler yeşilden kırmızıya döner.</p><h3>Pakette Neler Var?</h3><ul>\n<li>Arduino Uno R3 Klon (CH340, USB kablo dahil)</li>\n<li>HC-SR04 Ultrasonik Mesafe Sensörü</li>\n<li>5V Aktif Buzzer</li>\n<li>Yeşil, Mavi ve Kırmızı 5 mm LED</li>\n<li>3 adet 330 Ω direnç</li>\n<li>830 delikli breadboard</li>\n<li>Dişi-Erkek Jumper Kablo (40'lı, 20 cm) — sensörü breadboard'dan bağımsız yerleştirmek için</li>\n<li>Erkek-Erkek Jumper Kablo (40'lı, 20 cm) — breadboard ile Arduino arası</li>\n</ul><p><em>Not: Arduino boş gelir. Bağlantı şeması ve hazır Arduino kodu Türkçe anlatımla verilir.</em></p>",
    "maliyet": 241.07,
@@ -42,7 +42,7 @@
   },
   {
    "stokKodu": "AERADARPS",
-   "barkod": "2920000600186",
+   "barkod": "2920000600254",
    "ad": "Radar ve Akıllı Çöp Kutusu Proje Kiti (HC-SR04 + SG90 Servo + Arduino Uno) - Şemalı ve Kodlu",
    "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak hazır koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>Tek sette 2 proje.</strong> Servo üzerine takılan HC-SR04 sensörüyle 180 derece tarayan bir radar kur, bilgisayar ekranında radar görüntüsünü izle. Aynı parçalarla el yaklaşınca kapağı kendiliğinden açılan akıllı çöp kutusu yap.</p><h3>Pakette Neler Var?</h3><ul>\n<li>Arduino Uno R3 Klon (CH340, USB kablo dahil)</li>\n<li>HC-SR04 Ultrasonik Mesafe Sensörü</li>\n<li>SG90 Mikro Servo Motor</li>\n<li>Mini breadboard (5V/GND dağıtımı)</li>\n<li>Dişi-Erkek Jumper Kablo (40'lı, 20 cm) — HC-SR04 bağlantısı</li>\n<li>Erkek-Erkek Jumper Kablo (40'lı, 20 cm) — servo ve breadboard bağlantıları</li>\n</ul><p><em>Not: Arduino boş gelir. İki projenin bağlantı şeması ve hazır Arduino kodu Türkçe anlatımla verilir. Çöp kutusu gövdesi sete dahil değildir.</em></p>",
    "maliyet": 260.33,
@@ -77,7 +77,9 @@
     "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-06.jpg",
     "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-07.jpg",
     "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-08.jpg"
-   ]
+   ],
+   "barkodTY_HB": "2920000600186",
+   "_not": "TY ve HB ilanlari 2920000600186 ile acildi (o kanallarda cakisma yok); 186 PZ/IDX/N11/PTT'de AEESP32-30'un barkodu"
   },
   {
    "stokKodu": "AEFANPS",
