@@ -1,0 +1,278 @@
+{
+ "_aciklama": "22.11 yeni 7 hazir proje kiti - pazaryeri ana verisi (fiyatlar kar>=250, site+127 <= pazaryeri)",
+ "urunler": [
+  {
+   "stokKodu": "AEPARKPS",
+   "barkod": "2920000600179",
+   "ad": "Park Sensörü Proje Kiti (HC-SR04 + Buzzer + LED + Arduino Uno) - Şemalı ve Kodlu",
+   "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak hazır koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>Arabalardaki park sensörünü kendin yap!</strong> HC-SR04 ultrasonik sensör engele olan mesafeyi ölçer; engel yaklaştıkça buzzer sıklaşır, LED'ler yeşilden kırmızıya döner.</p><h3>Pakette Neler Var?</h3><ul>\n<li>Arduino Uno R3 Klon (CH340, USB kablo dahil)</li>\n<li>HC-SR04 Ultrasonik Mesafe Sensörü</li>\n<li>5V Aktif Buzzer</li>\n<li>Yeşil, Mavi ve Kırmızı 5 mm LED</li>\n<li>3 adet 330 Ω direnç</li>\n<li>830 delikli breadboard</li>\n<li>Dişi-Erkek Jumper Kablo (40'lı, 20 cm) — sensörü breadboard'dan bağımsız yerleştirmek için</li>\n<li>Erkek-Erkek Jumper Kablo (40'lı, 20 cm) — breadboard ile Arduino arası</li>\n</ul><p><em>Not: Arduino boş gelir. Bağlantı şeması ve hazır Arduino kodu Türkçe anlatımla verilir.</em></p>",
+   "maliyet": 241.07,
+   "siteFiyat": 639.0,
+   "fiyat": {
+    "TY": 919,
+    "HB": 879,
+    "N11": 779,
+    "PZ": 779,
+    "IDX": 809,
+    "PTT": 779
+   },
+   "stok": 58,
+   "desi": 1,
+   "gorseller": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-09.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-06.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-07.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-08.jpg"
+   ],
+   "gorsellerSemasiz": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-06.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-07.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEPARKPS-08.jpg"
+   ]
+  },
+  {
+   "stokKodu": "AERADARPS",
+   "barkod": "2920000600186",
+   "ad": "Radar ve Akıllı Çöp Kutusu Proje Kiti (HC-SR04 + SG90 Servo + Arduino Uno) - Şemalı ve Kodlu",
+   "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak hazır koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>Tek sette 2 proje.</strong> Servo üzerine takılan HC-SR04 sensörüyle 180 derece tarayan bir radar kur, bilgisayar ekranında radar görüntüsünü izle. Aynı parçalarla el yaklaşınca kapağı kendiliğinden açılan akıllı çöp kutusu yap.</p><h3>Pakette Neler Var?</h3><ul>\n<li>Arduino Uno R3 Klon (CH340, USB kablo dahil)</li>\n<li>HC-SR04 Ultrasonik Mesafe Sensörü</li>\n<li>SG90 Mikro Servo Motor</li>\n<li>Mini breadboard (5V/GND dağıtımı)</li>\n<li>Dişi-Erkek Jumper Kablo (40'lı, 20 cm) — HC-SR04 bağlantısı</li>\n<li>Erkek-Erkek Jumper Kablo (40'lı, 20 cm) — servo ve breadboard bağlantıları</li>\n</ul><p><em>Not: Arduino boş gelir. İki projenin bağlantı şeması ve hazır Arduino kodu Türkçe anlatımla verilir. Çöp kutusu gövdesi sete dahil değildir.</em></p>",
+   "maliyet": 260.33,
+   "siteFiyat": 669.0,
+   "fiyat": {
+    "TY": 949,
+    "HB": 909,
+    "N11": 809,
+    "PZ": 809,
+    "IDX": 839,
+    "PTT": 809
+   },
+   "stok": 58,
+   "desi": 1,
+   "gorseller": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-09.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-06.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-07.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-08.jpg"
+   ],
+   "gorsellerSemasiz": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-06.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-07.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERADARPS-08.jpg"
+   ]
+  },
+  {
+   "stokKodu": "AEFANPS",
+   "barkod": "2920000600193",
+   "ad": "Akıllı Fan / Termostat Proje Kiti (DHT11 + LCD + Röle + Motor + Arduino Uno) - Şemalı ve Kodlu",
+   "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak hazır koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>Ortam ısınınca fanı kendi açan termostat.</strong> DHT11 sıcaklık ve nemi ölçer, LCD ekranda gösterir; ayarlanan sıcaklık aşılınca röle fanı çalıştırır.</p><h3>Pakette Neler Var?</h3><ul>\n<li>Arduino Uno R3 Klon (CH340, USB kablo dahil)</li>\n<li>DHT11 Sıcaklık ve Nem Sensörü</li>\n<li>16x2 I2C LCD Ekran</li>\n<li>5V Röle Modülü</li>\n<li>3V DC motor + pervane</li>\n<li>2'li AA pil yuvası (fan beslemesi için)</li>\n<li>Mini breadboard (modüllere 5V/GND dağıtımı)</li>\n<li>Dişi-Erkek Jumper Kablo (40'lı, 20 cm) — sensör, LCD ve röle bağlantıları</li>\n<li>Erkek-Erkek Jumper Kablo (40'lı, 20 cm) — breadboard ve fan devresi</li>\n</ul><p><em>Not: Arduino boş gelir. Bağlantı şeması ve hazır Arduino kodu Türkçe anlatımla verilir. Piller dahil değildir.</em></p>",
+   "maliyet": 334.44,
+   "siteFiyat": 759.0,
+   "fiyat": {
+    "TY": 1069,
+    "HB": 1029,
+    "N11": 899,
+    "PZ": 899,
+    "IDX": 939,
+    "PTT": 899
+   },
+   "stok": 58,
+   "desi": 1,
+   "gorseller": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-10.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-06.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-07.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-08.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-09.jpg"
+   ],
+   "gorsellerSemasiz": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-06.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-07.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-08.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEFANPS-09.jpg"
+   ]
+  },
+  {
+   "stokKodu": "AEGUNESPS",
+   "barkod": "2920000600209",
+   "ad": "Güneş Takip Sistemi Proje Kiti (4 LDR + 2 SG90 Servo + Arduino Uno) - Şemalı ve Kodlu",
+   "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak hazır koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>Işığı takip eden iki eksenli düzenek.</strong> Dört LDR ışık sensörü ışığın hangi yönden geldiğini bulur, iki servo motor paneli o yöne çevirir. Yenilenebilir enerji ve TÜBİTAK projeleri için ideal.</p><h3>Pakette Neler Var?</h3><ul>\n<li>Arduino Uno R3 Klon (CH340, USB kablo dahil)</li>\n<li>2 adet SG90 Mikro Servo Motor</li>\n<li>4 adet LDR ışık sensörü</li>\n<li>4 adet 10 kΩ direnç</li>\n<li>830 delikli breadboard</li>\n<li>Dişi-Erkek Jumper Kablo (40'lı, 20 cm) — servo üstündeki LDR'leri breadboard'a uzatmak için</li>\n<li>Erkek-Erkek Jumper Kablo (40'lı, 20 cm) — servo ve breadboard bağlantıları</li>\n</ul><p><em>Not: Arduino boş gelir. Bağlantı şeması ve hazır Arduino kodu Türkçe anlatımla verilir. Güneş paneli sete dahil değildir.</em></p>",
+   "maliyet": 288.93,
+   "siteFiyat": 699.0,
+   "fiyat": {
+    "TY": 999,
+    "HB": 959,
+    "N11": 839,
+    "PZ": 839,
+    "IDX": 879,
+    "PTT": 839
+   },
+   "stok": 39,
+   "desi": 1,
+   "gorseller": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-08.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-06.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-07.jpg"
+   ],
+   "gorsellerSemasiz": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-06.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEGUNESPS-07.jpg"
+   ]
+  },
+  {
+   "stokKodu": "AEBTEVPS",
+   "barkod": "2920000600216",
+   "ad": "Bluetooth Ev Otomasyonu Proje Kiti (HC-06 + 2 Röle + Arduino Uno) - Şemalı ve Kodlu",
+   "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak hazır koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>Telefondan aç-kapa.</strong> HC-06 Bluetooth modülü ve telefon uygulamasıyla iki ayrı röleyi ve LED'leri telefondan kontrol et; akıllı ev mantığını adım adım öğren.</p><h3>Pakette Neler Var?</h3><ul>\n<li>Arduino Uno R3 Klon (CH340, USB kablo dahil)</li>\n<li>HC-06 Bluetooth Modülü</li>\n<li>2 adet 5V Röle Modülü</li>\n<li>Kırmızı, Yeşil ve Mavi 5 mm LED</li>\n<li>3 adet 330 Ω direnç</li>\n<li>830 delikli breadboard</li>\n<li>Dişi-Erkek Jumper Kablo (40'lı, 20 cm) — HC-06 ve röle bağlantıları</li>\n<li>Erkek-Erkek Jumper Kablo (40'lı, 20 cm) — breadboard ile Arduino arası</li>\n</ul><p><em>Not: Arduino boş gelir. Bağlantı şeması ve hazır Arduino kodu Türkçe anlatımla verilir. 220 V şebeke bağlantısı eğitmen gözetiminde yapılmalıdır.</em></p>",
+   "maliyet": 363.87,
+   "siteFiyat": 819.0,
+   "fiyat": {
+    "TY": 1119,
+    "HB": 1079,
+    "N11": 959,
+    "PZ": 959,
+    "IDX": 979,
+    "PTT": 959
+   },
+   "stok": 56,
+   "desi": 1,
+   "gorseller": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-09.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-06.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-07.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-08.jpg"
+   ],
+   "gorsellerSemasiz": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-06.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-07.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AEBTEVPS-08.jpg"
+   ]
+  },
+  {
+   "stokKodu": "AERFIDLCD",
+   "barkod": "2920000600223",
+   "ad": "RFID Kartlı Geçiş ve Yoklama Proje Kiti (RC522 + LCD + Servo + Arduino Uno) - Şemalı ve Kodlu",
+   "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak hazır koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>Kartını okut, adın ekranda görünsün, kapı açılsın.</strong> RC522 okuyucu kayıtlı kartları tanır, LCD ekranda isim yazar, servo kilidi açar; yetkisiz kartta kırmızı LED ve buzzer uyarır. Sınıf yoklaması ve kartlı geçiş projeleri için.</p><h3>Pakette Neler Var?</h3><ul>\n<li>Arduino Uno R3 Klon (CH340, USB kablo dahil)</li>\n<li>RC522 RFID Okuyucu + kart + anahtarlık</li>\n<li>16x2 I2C LCD Ekran</li>\n<li>SG90 Mikro Servo Motor</li>\n<li>5V Aktif Buzzer</li>\n<li>Yeşil ve Kırmızı 5 mm LED</li>\n<li>2 adet 330 Ω direnç</li>\n<li>830 delikli breadboard</li>\n<li>Dişi-Erkek Jumper Kablo (40'lı, 20 cm) — RC522 ve LCD bağlantıları</li>\n<li>Erkek-Erkek Jumper Kablo (40'lı, 20 cm) — servo ve breadboard bağlantıları</li>\n</ul><p><em>Not: Arduino boş gelir. Bağlantı şeması ve hazır Arduino kodu Türkçe anlatımla verilir.</em></p>",
+   "maliyet": 365.08,
+   "siteFiyat": 799.0,
+   "fiyat": {
+    "TY": 1119,
+    "HB": 1079,
+    "N11": 939,
+    "PZ": 939,
+    "IDX": 979,
+    "PTT": 939
+   },
+   "stok": 58,
+   "desi": 1,
+   "gorseller": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-11.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-06.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-07.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-08.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-09.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-10.jpg"
+   ],
+   "gorsellerSemasiz": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-06.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-07.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-08.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-09.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AERFIDLCD-10.jpg"
+   ]
+  },
+  {
+   "stokKodu": "AETRAFIKPS",
+   "barkod": "2920000600230",
+   "ad": "Trafik Lambası ve Yaya Butonu Proje Kiti (Arduino Nano + LED + Buton + Buzzer) - Şemalı ve Kodlu",
+   "aciklama": "<p><strong>Bağlantı şeması ve hazır Arduino kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak hazır koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>Gerçek bir kavşak gibi çalışan trafik lambası.</strong> Araç ışıkları kırmızı-sarı-yeşil döngüsünde yanar; yayaya butona basınca sıra gelir, buzzer görme engelliler için sesli uyarı verir. Kodlamaya başlangıç için ideal ilk proje.</p><h3>Pakette Neler Var?</h3><ul>\n<li>Arduino Nano Klon (Type-C, CH340, USB kablo dahil)</li>\n<li>2 adet Kırmızı, 1 adet Sarı, 2 adet Yeşil 5 mm LED</li>\n<li>Buton (Arduino'nun iç pull-up direnci kullanılır, ek direnç gerekmez)</li>\n<li>5V Aktif Buzzer</li>\n<li>5 adet 330 Ω direnç</li>\n<li>830 delikli breadboard</li>\n<li>Erkek-Erkek Jumper Kablo (40'lı, 20 cm) — tüm bağlantılar breadboard üzerinde</li>\n</ul><p><em>Not: Arduino boş gelir. Bağlantı şeması ve hazır Arduino kodu Türkçe anlatımla verilir.</em></p>",
+   "maliyet": 185.6,
+   "siteFiyat": 579.0,
+   "fiyat": {
+    "TY": 829,
+    "HB": 799,
+    "N11": 719,
+    "PZ": 719,
+    "IDX": 739,
+    "PTT": 719
+   },
+   "stok": 56,
+   "desi": 1,
+   "gorseller": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-07.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-06.jpg"
+   ],
+   "gorsellerSemasiz": [
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-01.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-02.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-03.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-04.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-05.jpg",
+    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/projekit/AETRAFIKPS-06.jpg"
+   ]
+  }
+ ]
+}
