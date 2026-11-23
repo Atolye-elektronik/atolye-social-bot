@@ -11,4 +11,4 @@ for env in (pathlib.Path(r"C:\Users\serdar\Desktop\atolyesocialbotmasaustu\.env"
                 k, v = l.split("=", 1); os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
 sys.path[:0] = [str(KOK / "src"), str(KOK / "src" / "marketplaces")]
 from stok import siparis  # noqa: E402
-siparis.liste(list(siparis.TOPLAYICI), str(pathlib.Path.home() / "Desktop" / "SIPARIS-BUGUN.xlsx"), sadece_bugun=True)
+siparis.liste(list(siparis.TOPLAYICI), str((pathlib.Path(r"D:\Masaustu") if pathlib.Path(r"D:\Masaustu").exists() else pathlib.Path.home() / "Desktop") / "SIPARIS-BUGUN.xlsx"), sadece_bugun=True)
