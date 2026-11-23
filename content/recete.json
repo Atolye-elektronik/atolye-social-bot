@@ -503,10 +503,6 @@
    [
     "AEJK2040",
     1
-   ],
-   [
-    "AEBB170P",
-    1
    ]
   ],
   "AE2WDEKRBT-LI": [
@@ -536,10 +532,6 @@
    ],
    [
     "AEJK2040",
-    1
-   ],
-   [
-    "AEBB170P",
     1
    ]
   ],
@@ -593,10 +585,6 @@
    [
     "AEJK2040DE",
     1
-   ],
-   [
-    "AEBB170P",
-    1
    ]
   ],
   "AEHC06RAK-LI": [
@@ -618,10 +606,6 @@
    ],
    [
     "AEJK2040DE",
-    1
-   ],
-   [
-    "AEBB170P",
     1
    ]
   ],
@@ -645,10 +629,6 @@
    [
     "AEJK2040DE",
     1
-   ],
-   [
-    "AEBB170P",
-    1
    ]
   ],
   "AEIRRAK-LI": [
@@ -670,10 +650,6 @@
    ],
    [
     "AEJK2040DE",
-    1
-   ],
-   [
-    "AEBB170P",
     1
    ]
   ],
@@ -713,10 +689,6 @@
    [
     "AEJK2040",
     1
-   ],
-   [
-    "AEBB170P",
-    1
    ]
   ],
   "AE3IN1ROBOT-LI": [
@@ -754,10 +726,6 @@
    ],
    [
     "AEJK2040",
-    1
-   ],
-   [
-    "AEBB170P",
     1
    ]
   ],
@@ -1381,10 +1349,6 @@
    [
     "AEJK2040",
     1
-   ],
-   [
-    "AEBB170P",
-    1
    ]
   ],
   "AECIZGIRBT-LI": [
@@ -1410,10 +1374,6 @@
    ],
    [
     "AEJK2040",
-    1
-   ],
-   [
-    "AEBB170P",
     1
    ]
   ],
@@ -1475,10 +1435,6 @@
    [
     "AECIZGI4",
     1
-   ],
-   [
-    "AEBB170P",
-    1
    ]
   ],
   "AE4IN1ROBOT-LI": [
@@ -1520,10 +1476,6 @@
    ],
    [
     "AECIZGI4",
-    1
-   ],
-   [
-    "AEBB170P",
     1
    ]
   ],
@@ -2006,6 +1958,16 @@
     "AEBB170P",
     1
    ]
+  ],
+  "AET2WDRBT": [
+   [
+    "AET2WDRBT-P",
+    1
+   ],
+   [
+    "AEBB170P",
+    1
+   ]
   ]
  },
  "parca_olarak_kalan_setler": {
@@ -2017,8 +1979,8 @@
   "AE3-6VMTR": "sari motor + tekerlek ikilisi",
   "AEUNOR3": "Uno + USB kablo",
   "AENANOTC": "Nano + Type-C kablo",
-  "AET2WDRBT": "2WD robot kiti poseti: sasi + 2 sari motor + tekerler + sarhos teker + enkoder + 4'lu AA kutusu + vida — TEK KALEM (kullanici karari 05.09). Serbest sari motor stogu (AE3-6VMTR) ayri sayilir.",
   "AETCS18P": "17 parca takim cantasi - 28.10.2026 kullanici: tekli havya/stand/pompa/tup lehim stoklarindan BAGIMSIZ, stok kendisinde tutulur (eski recete: AETC162, AEYNKSK160, AEPNS180, AEKB1602, AE5X100DT, AE5X100YT, AEKNTKLM, AEZD30C40W, AEHVYSHP, AELHMPMP, AETUPLEHIM, AELEHIMPASTA, AES400IGG, AEIZOLE, AE6X13PLK, AEDT830D, AEBB830P)",
-  "AET4WDRBT": "4WD robot sasisi (2 kat sasi + 4 sari motor + 4 teker + vida) — TEK KALEM, 16.11 Turnafor TRF..10898 'DC MOTOR' x50 @276,90 (22.11 kullanici: 4WD sasi). Shopify DRAFT stok parcasi."
+  "AET4WDRBT": "4WD robot sasisi (2 kat sasi + 4 sari motor + 4 teker + vida) — TEK KALEM, 16.11 Turnafor TRF..10898 'DC MOTOR' x50 @276,90 (22.11 kullanici: 4WD sasi). Shopify DRAFT stok parcasi.",
+  "AET2WDRBT-P": "2WD robot kiti poseti: sasi + 2 sari motor + tekerler + sarhos teker + enkoder + 4'lu AA kutusu + vida — TEK KALEM (kullanici karari 05.09). Serbest sari motor stogu (AE3-6VMTR) ayri sayilir. 23.11: fiziksel poset kodu AET2WDRBT-P oldu (Shopify DRAFT stok parcasi); AET2WDRBT artik set = AET2WDRBT-P + AEBB170P (mini yesil breadboard her 2WD sasi/kitte)."
  }
 }
