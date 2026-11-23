@@ -2,28 +2,28 @@
   "newOrderItems": [],
   "packages": [
     {
-      "id": "6b01fd48-5046-2905-5e69-50db06060606",
+      "id": "6b0445fe-dd52-898d-ca99-4cc806060606",
       "status": "Open",
-      "customerId": "6f07fbdc-ee8b-49d3-a399-6521badc275f",
-      "orderDate": "2026-11-21T23:21:26",
-      "dueDate": "2026-11-23T18:30:00",
-      "barcode": "62955470199456",
-      "packageNumber": "5547019945",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "İLÇE TARIM MÜDÜRLÜĞÜ CAMİKEBİR SEFERİHİSAR İzmir",
-      "recipientName": "DERYA ÖZYAR KARAKOÇ",
+      "customerId": "80d889e5-fcc0-4f49-b6a5-638a375c6752",
+      "orderDate": "2026-11-23T16:56:12",
+      "dueDate": "2026-11-24T18:30:00",
+      "barcode": "62955478545758",
+      "packageNumber": "5547854575",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "düzce merkez beyciler mahallesi 1705. sokak akyuzler sitesi A blok daire 11 BEYCİLER MERKEZ Düzce",
+      "recipientName": "Muhammet emin islekoğlu",
       "shippingCountryCode": "TR",
-      "shippingDistrict": "CAMİKEBİR",
-      "shippingTown": "SEFERİHİSAR",
-      "shippingCity": "İzmir",
-      "email": "4513918195_5547019945@hepsifatura.com",
+      "shippingDistrict": "BEYCİLER",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Düzce",
+      "email": "4538412617_5547854575@hepsifatura.com",
       "phoneNumber": "",
-      "companyName": "DERYA ÖZYAR KARAKOÇ",
-      "billingAddress": "İLÇE TARIM MÜDÜRLÜĞÜ CAMİKEBİR SEFERİHİSAR İzmir",
-      "billingCity": "İzmir",
-      "billingTown": "SEFERİHİSAR",
-      "billingDistrict": "CAMİKEBİR",
-      "billingPostalCode": "35460",
+      "companyName": "Muhammet emin islekoğlu",
+      "billingAddress": "düzce merkez beyciler mahallesi 1705. sokak akyuzler sitesi A blok daire 11 BEYCİLER MERKEZ Düzce",
+      "billingCity": "Düzce",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "BEYCİLER",
+      "billingPostalCode": "81030",
       "billingCountryCode": "TR",
       "taxOffice": null,
       "taxNumber": "",
@@ -32,37 +32,37 @@
       "customsTotalPrice": null,
       "totalPrice": {
         "currency": "TRY",
-        "amount": 358.19
+        "amount": 866.14
       },
       "items": [
         {
-          "lineItemId": "6b01fd47-3021-db7a-da4a-56ad06060606",
-          "listingId": "f889ca5f-05ce-4471-9e67-dd2cbdff23ba",
+          "lineItemId": "6b0445fd-ae39-7c06-da5c-37a306060606",
+          "listingId": "81f7452f-be40-40ff-9d6c-4d9269ca0b1d",
           "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV0000E9EX84",
-          "merchantSku": "AE3-6VMTR",
-          "quantity": 2,
+          "hbSku": "HBCV0000EUUSCD",
+          "merchantSku": "AEENDELK",
+          "quantity": 1,
           "price": {
             "currency": "TRY",
-            "amount": 179.095
+            "amount": 866.14
           },
-          "vat": 59.7,
+          "vat": 144.36,
           "totalPrice": {
             "currency": "TRY",
-            "amount": 358.19
+            "amount": 866.14
           },
           "commission": {
             "currency": "TRY",
-            "amount": 35.82
+            "amount": 183.42
           },
           "commissionRate": 18,
           "unitHBDiscount": {
             "currency": "TRY",
-            "amount": 19.90499
+            "amount": 152.86
           },
           "totalHBDiscount": {
             "currency": "TRY",
-            "amount": 39.80999
+            "amount": 152.86
           },
           "unitMerchantDiscount": {
             "currency": "TRY",
@@ -74,11 +74,11 @@
           },
           "merchantUnitPrice": {
             "currency": "TRY",
-            "amount": 198.99999
+            "amount": 1019
           },
           "merchantTotalPrice": {
             "currency": "TRY",
-            "amount": 397.99999
+            "amount": 1019
           },
           "unitLaborCost": {
             "currency": "TRY",
@@ -90,9 +90,9 @@
           "customizedText03": "",
           "customizedText04": "",
           "properties": [],
-          "productName": "3-6V Redüktörlü Arduino Uyumlu Dc Sarı Motor ve Teker Seti",
-          "orderNumber": "4513918195",
-          "orderDate": "2026-11-21T23:21:26",
+          "productName": "Atölye Elektronik Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi",
+          "orderNumber": "4538412617",
+          "orderDate": "2026-11-23T16:56:12",
           "deliveryType": "Standart Teslimat",
           "customerDelivery": "",
           "pickupTime": null,
@@ -109,7 +109,7 @@
             "amount": 0
           },
           "discountToBeBilledToHB": 0,
-          "productBarcode": "ATEL3-6VMTR01",
+          "productBarcode": "ATELENDELK001",
           "bnplCommissionAmount": {
             "currency": "TRY",
             "amount": 0
@@ -118,274 +118,14 @@
           "isMicroExport": false,
           "releatedLineIndexesWithCampaign": null,
           "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001683844352.jpg",
-          "deci": 1
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754823330.jpg",
+          "deci": 1.1
         }
       ],
       "isCargoChangable": true,
-      "customerName": "DERYA ÖZYAR KARAKOÇ",
-      "estimatedArrivalDate": "2026-11-25T15:30:00Z",
-      "totalDeci": 2,
-      "warehouse": {
-        "shippingModel": "Standard",
-        "shippingAddressLabel": "BIRINCIL"
-      }
-    },
-    {
-      "id": "6b033a1c-8b55-e391-39d8-d0d406060606",
-      "status": "Open",
-      "customerId": "e21a6974-9527-4b30-b828-6ddcb8bfa152",
-      "orderDate": "2026-11-22T21:53:15",
-      "dueDate": "2026-11-23T18:30:00",
-      "barcode": "62955473721849",
-      "packageNumber": "5547372184",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Yapı Kredi Bankası Çayırova Şb. Yeni mah.  Fatih Cd. No:120 Çayırova/Kocaeli YENİ ÇAYIROVA Kocaeli",
-      "recipientName": "Uğur Peker",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "YENİ",
-      "shippingTown": "ÇAYIROVA",
-      "shippingCity": "Kocaeli",
-      "email": "4986237177_5547372184@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Uğur Peker",
-      "billingAddress": "Yapı Kredi Bankası Çayırova Şb. Yeni mah.  Fatih Cd. No:120 Çayırova/Kocaeli YENİ ÇAYIROVA Kocaeli",
-      "billingCity": "Kocaeli",
-      "billingTown": "ÇAYIROVA",
-      "billingDistrict": "YENİ",
-      "billingPostalCode": "41420",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 120.54
-      },
-      "items": [
-        {
-          "lineItemId": "6b033a1c-c106-48bf-3934-a59a06060606",
-          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00006WCA8J",
-          "merchantSku": "AEPY18650",
-          "quantity": 2,
-          "price": {
-            "currency": "TRY",
-            "amount": 60.27
-          },
-          "vat": 20.09,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 120.54
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 12.76
-          },
-          "commissionRate": 18,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 10.63
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 21.26
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 70.9
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 141.8
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
-          "orderNumber": "4986237177",
-          "orderDate": "2026-11-22T21:53:15",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "000RBYL100779",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
-          "deci": 1
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "Uğur Peker",
+      "customerName": "Muhammet emin islekoğlu",
       "estimatedArrivalDate": "2026-11-27T15:30:00Z",
-      "totalDeci": 2,
-      "warehouse": {
-        "shippingModel": "Standard",
-        "shippingAddressLabel": "BIRINCIL"
-      }
-    },
-    {
-      "id": "6b034f3b-aa2e-de78-8fb5-3df506060606",
-      "status": "Open",
-      "customerId": "24a7fa01-ed68-4fa0-8c9a-c4e4534dbf1c",
-      "orderDate": "2026-11-22T00:21:21",
-      "dueDate": "2026-11-23T18:30:00",
-      "barcode": "62755474239985",
-      "packageNumber": "5547423998",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Karaçay mah. Samandağ yolu üzeri Kocaoğlu kasabı karşısı Kanadlı Soğutma No:1 Samandağ/Hatay KARAÇAY SAMANDAĞ Hatay",
-      "recipientName": "Selim Karadağ",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "KARAÇAY",
-      "shippingTown": "SAMANDAĞ",
-      "shippingCity": "Hatay",
-      "email": "4147857304_5547423998@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Selim Karadağ",
-      "billingAddress": "Karaçay mah. Samandağ yolu üzeri Kocaoğlu kasabı karşısı Kanadlı Soğutma No:1 Samandağ/Hatay  KARAÇAY SAMANDAĞ Hatay",
-      "billingCity": "Hatay",
-      "billingTown": "SAMANDAĞ",
-      "billingDistrict": "KARAÇAY",
-      "billingPostalCode": "31800",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 141.8
-      },
-      "items": [
-        {
-          "lineItemId": "6b020b51-b860-68b4-b5f7-a83306060606",
-          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00006WCA8J",
-          "merchantSku": "AEPY18650",
-          "quantity": 2,
-          "price": {
-            "currency": "TRY",
-            "amount": 70.9
-          },
-          "vat": 23.63,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 141.8
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 12.76
-          },
-          "commissionRate": 18,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 70.9
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 141.8
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
-          "orderNumber": "4147857304",
-          "orderDate": "2026-11-22T00:21:21",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "000RBYL100779",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
-          "deci": 1
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "Selim karadağ",
-      "estimatedArrivalDate": "2026-11-27T15:30:00Z",
-      "totalDeci": 2,
+      "totalDeci": 1.1,
       "warehouse": {
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
