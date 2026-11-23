@@ -2858,5 +2858,77 @@
    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/4wd-pz/AET4WDRBT-LI-02.jpg",
    "https://raw.githubusercontent.com/Atolye-elektronik/atolye-social-bot/main/posts/media/urun-foto/4wd-pz/AET4WDRBT-LI-03.jpg"
   ]
+ },
+ {
+  "tyStokKodu": "AEESPEVPS",
+  "stokKodu": "AEESPEVPS-N11",
+  "barkod": "2920000600339",
+  "ad": "ESP32 Wi-Fi Akıllı Ev Kiti (2 Röle + DHT11 + PIR Hareket Sensörü) - Telefondan Kontrol, Jumper Kablo Hediyeli",
+  "aciklama": "<p><strong>Bağlantı şeması ve hazır ESP32 kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak hazır koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>Evini telefondan yönet, uygulama indirmeden!</strong> ESP32 kendi Wi-Fi ağını kurar; telefonla bu ağa bağlanıp tarayıcıda 192.168.4.1 adresini açınca kontrol paneli gelir. İnternet ya da modem gerekmez, okulda ve sınıfta da çalışır.</p><h3>Neler Yapabilirsin?</h3><ul>\n<li>2 röleyle lamba ve fanı telefondan aç-kapat</li>\n<li>Kırmızı, yeşil ve mavi LED'leri tek tek kontrol et</li>\n<li>DHT11 ile sıcaklık ve nemi canlı izle</li>\n<li>PIR hareket sensörüyle alarm kur: hareket olursa buzzer öter, telefonda uyarı çıkar</li>\n</ul><h3>Pakette Neler Var?</h3><ul>\n<li>ESP32 WROOM-32 geliştirme kartı (30 pin, Wi-Fi + Bluetooth, USB-C veri kablosu dahil)</li>\n<li>2 adet 5V tek kanal röle modülü</li>\n<li>DHT11 sıcaklık-nem sensörü</li>\n<li>HC-SR501 PIR hareket sensörü</li>\n<li>5V aktif buzzer</li>\n<li>Kırmızı, yeşil ve mavi 5 mm LED + 3 adet 330 Ω direnç</li>\n<li>830 delikli breadboard</li>\n<li>Dişi-Dişi jumper kablo (40'lı)</li>\n<li>Dişi-Erkek jumper kablo (40'lı)</li>\n<li>A4 renkli bağlantı şeması</li>\n</ul><p><em>Not: ESP32 boş gelir; hazır kod Arduino IDE ile yüklenir. Röle çıkışına 220 V bağlantı yalnız yetişkin/eğitmen gözetiminde yapılmalıdır.</em></p>",
+  "kategoriId": 1132100,
+  "tyKategori": "Robotik Malzeme",
+  "fiyat": 929,
+  "stok": 8,
+  "desi": 1,
+  "kdv": 20,
+  "buybox": false,
+  "tyFiyat": 1119.0,
+  "gorseller": [
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/AEESPEVPS-set.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/AEESPEVPS-kutu-icerigi-v2.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/AEESPEVPS-sema.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/1_org_zoom_03b2a7ef-ef0e-490f-9ba3-4cf9a73bee62.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/role3_be4d996c-b3ca-4448-8fc2-221937dddb59.png?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/dht1_ee25ff19-693b-4675-b33a-62a6cd1cc866.webp?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/pir1.png?format=jpg"
+  ]
+ },
+ {
+  "tyStokKodu": "AEESPHAVAPS",
+  "stokKodu": "AEESPHAVAPS-N11",
+  "barkod": "2920000600346",
+  "ad": "ESP32 Wi-Fi Hava İstasyonu Kiti (DHT11 + 16x2 LCD + LDR) - Telefonda Canlı Grafik, Jumper Kablo Hediyeli",
+  "aciklama": "<p><strong>Bağlantı şeması ve hazır ESP32 kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak hazır koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>Kendi hava istasyonunu kur, ölçümleri telefonundan izle!</strong> Sıcaklık, nem ve ışık seviyesi hem LCD ekranda hem de telefonun tarayıcısında canlı grafikle görünür. ESP32 kendi Wi-Fi ağını kurar; uygulama, internet ya da modem gerekmez.</p><h3>Neler Yapabilirsin?</h3><ul>\n<li>DHT11 ile sıcaklık ve nemi ölç, LCD'de göster</li>\n<li>LDR ile ortamın ışık seviyesini yüzde olarak gör</li>\n<li>Telefonda son 2 dakikanın sıcaklık grafiğini, en düşük ve en yüksek değerleri izle</li>\n<li>Telefondan alarm sıcaklığı belirle: sınır aşılınca buzzer öter</li>\n</ul><h3>Pakette Neler Var?</h3><ul>\n<li>ESP32 WROOM-32 geliştirme kartı (30 pin, Wi-Fi + Bluetooth, USB-C veri kablosu dahil)</li>\n<li>16x2 LCD ekran (I2C modüllü, mavi)</li>\n<li>DHT11 sıcaklık-nem sensörü</li>\n<li>LDR ışık sensörü + 10 kΩ direnç</li>\n<li>5V aktif buzzer</li>\n<li>Mini breadboard (170 delikli)</li>\n<li>Dişi-Dişi jumper kablo (40'lı)</li>\n<li>Dişi-Erkek jumper kablo (40'lı)</li>\n<li>A4 renkli bağlantı şeması</li>\n</ul><p><em>Not: ESP32 boş gelir; hazır kod Arduino IDE ile yüklenir.</em></p>",
+  "kategoriId": 1132100,
+  "tyKategori": "Robotik Malzeme",
+  "fiyat": 919,
+  "stok": 8,
+  "desi": 1,
+  "kdv": 20,
+  "buybox": false,
+  "tyFiyat": 1099.0,
+  "gorseller": [
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/AEESPHAVAPS-set.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/AEESPHAVAPS-kutu-icerigi-v2.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/AEESPHAVAPS-sema.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/1_org_zoom_03b2a7ef-ef0e-490f-9ba3-4cf9a73bee62.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/lcd5.png?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/dht1_ee25ff19-693b-4675-b33a-62a6cd1cc866.webp?format=jpg"
+  ]
+ },
+ {
+  "tyStokKodu": "AEESP4WD-LI",
+  "stokKodu": "AEESP4WD-LI-N11",
+  "barkod": "2920000600353",
+  "ad": "ESP32 Wi-Fi Kontrollü 4WD Robot Araba Kiti - 18650 Pil Yuvalı (L298N + HC-SR04 + SG90) - Jumper Kablo Hediyeli",
+  "aciklama": "<p><strong>Bağlantı şeması ve hazır ESP32 kodu ile gönderilir.</strong> Kutuda A4 renkli bağlantı şeması ve eğitim rehberi bulunur; rehberdeki QR kodu okutarak hazır koda ve adım adım kurulum anlatımına ulaşırsınız.</p><p><strong>Robotunu telefondaki joystick ile sür, uygulama indirmeden!</strong> ESP32 kendi Wi-Fi ağını kurar; telefonla bağlanıp tarayıcıda 192.168.4.1 adresini açınca ekranda joystick çıkar. OTOMATİK modda servo üzerindeki HC-SR04 sağa-sola bakar, engeli görünce boş tarafa döner. 4 motor sayesinde halıda ve eğimde güçlü.</p><h3>Neler Yapabilirsin?</h3><ul>\n<li>Telefonda joystick ile ileri, geri, sağa-sola ve olduğu yerde dönüş</li>\n<li>Parmağın ne kadar ileride, robot o kadar hızlı (PWM hız kontrolü)</li>\n<li>Tek dokunuşla otomatik engelden kaçma moduna geç</li>\n<li>Ekranda engel mesafesini canlı gör; bağlantı koparsa robot kendiliğinden durur</li>\n</ul><h3>Pakette Neler Var?</h3><ul>\n<li>4WD robot gövdesi (şasi, 4 adet redüktörlü motor, 4 tekerlek)</li>\n<li>2'li 18650 Li-Ion pil yuvası</li>\n<li>ESP32 WROOM-32 geliştirme kartı (30 pin, Wi-Fi + Bluetooth, USB-C veri kablosu dahil)</li>\n<li>L298N motor sürücü</li>\n<li>HC-SR04 ultrasonik sensör + SG90 servo</li>\n<li>3 adet 10 kΩ direnç (sensör sinyali için gerilim bölücü)</li>\n<li>Mini breadboard (170 delikli)</li>\n<li>Dişi-Dişi ve Dişi-Erkek jumper kablo (40'lı)</li>\n<li>A4 renkli bağlantı şeması</li>\n</ul><p><em>Not: ESP32 boş gelir; hazır kod Arduino IDE ile yüklenir. 18650 piller dahil değildir.</em></p>",
+  "kategoriId": 1132100,
+  "tyKategori": "Robotik Malzeme",
+  "fiyat": 1369,
+  "stok": 8,
+  "desi": 3,
+  "kdv": 20,
+  "buybox": false,
+  "tyFiyat": 1639.0,
+  "gorseller": [
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/AEESP4WD-LI-set.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/AEESP4WD-LI-kutu-icerigi-v2.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/AEESP4WD-LI-sema.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/4wd-sasi-1.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/1_org_zoom_03b2a7ef-ef0e-490f-9ba3-4cf9a73bee62.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/l298-motor-surucu.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/hcsr04-1_deb9ac56-8716-4c25-b692-45e6b29516ac.jpg?format=jpg",
+   "https://cdn.shopify.com/s/files/1/0801/9692/7717/files/servo2.png?format=jpg"
+  ]
  }
 ]

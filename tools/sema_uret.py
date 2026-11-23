@@ -144,19 +144,27 @@ def filigran():
 # ============================ ŞEMALAR =====================================
 def arduino(s, x=250, y=280, pins_r=(), pins_l=(), pins_t=(("5V", 0.3), ("VIN", 0.52)), pins_b=(("GND", 0.5),), kart="UNO R3"):
     p = [(n, "r", o) for n, o in pins_r] + [(n, "l", o) for n, o in pins_l] + [(n, "t", o) for n, o in pins_t] + [(n, "b", o) for n, o in pins_b]
-    s.kutu("ard", x, y, 300, 380, RENK["teal"], "Arduino", kart, pins=p, font=34, alt_renk="#ffffff")
-    s.parts.append(f'<rect x="{x + 20}" y="{y + 20}" width="56" height="40" rx="6" fill="#cfd8e3"/>')
+    esp = kart.startswith("ESP32")
+    s.kutu("ard", x, y, 300, 380, "#24364f" if esp else RENK["teal"], "ESP32" if esp else "Arduino", kart[6:] if esp else kart, pins=p, font=34, alt_renk="#ffffff")
+    if esp:   # Wi-Fi modülü (metal kapak) + anten
+        s.parts.append(f'<rect x="{x + 95}" y="{y + 18}" width="110" height="62" rx="5" fill="#b9c2cc" stroke="#8a949e" stroke-width="2"/>'
+                       f'<path d="M {x + 110} {y + 30} h 80 v 10 h -80 v 10 h 80" fill="none" stroke="#e0b100" stroke-width="3"/>')
+    else:
+        s.parts.append(f'<rect x="{x + 20}" y="{y + 20}" width="56" height="40" rx="6" fill="#cfd8e3"/>')
 
 
-def l298n(s, x=760, y=270, ins=("IN1", "IN2", "IN3", "IN4"), bes_kullan=False):
+def l298n(s, x=760, y=270, ins=("IN1", "IN2", "IN3", "IN4"), bes_kullan=False, en_jumper=True):
     pins = [("ENA", "l", 0.13)] + [(n, "l", 0.28 + i * 0.13) for i, n in enumerate(ins)] + [("ENB", "l", 0.82),
             ("OUT1", "r", 0.12), ("OUT2", "r", 0.24), ("OUT3", "r", 0.62), ("OUT4", "r", 0.74),
             ("+12V", "b", 0.18), ("GND", "b", 0.5), ("+5V", "b", 0.82)]
     s.kutu("l298", x, y, 280, 320, RENK["kirmizi"], "L298N", "Motor Sürücü", pins=pins, font=30, alt_renk="#ffd5d5")
     s.parts.append(f'<rect x="{x + 105}" y="{y + 50}" width="80" height="70" rx="8" fill="#2b2f36"/><text x="{x + 145}" y="{y + 92}" text-anchor="middle" font-size="14" fill="#fff">L298</text>')
     s.parts.append(f'<rect x="{x + 20}" y="{y + 300}" width="240" height="22" rx="4" fill="#2e7d32"/>')
-    s.etiket(x - 190, y + 28, "JUMPER TAKILI", 170)
-    s.etiket(x - 190, y + 248, "JUMPER TAKILI", 170)
+    if en_jumper:
+        s.etiket(x - 190, y + 28, "JUMPER TAKILI", 170)
+        s.etiket(x - 190, y + 248, "JUMPER TAKILI", 170)
+    else:   # ESP32 hız kontrolü (PWM) için ENA/ENB jumper'ları çıkarılır
+        s.etiket(x + 20, y - 44, "ENA / ENB jumper'ını ÇIKARIN", 240)
     if W4:
         s.etiket(x - 210, y + 298, "5V jumper takılı olmalı", 200)
     else:
@@ -398,17 +406,17 @@ def sema_step():
     return s
 
 
-def guc_hatti(s, v5, gnd, v33=()):
-    """Arduino 5V/3.3V/GND -> modül pinleri (sağ blok)."""
-    ax5 = s.pins[("ard", "5V")][0]; ay = 260
+def guc_hatti(s, v5, gnd, v33=(), v5ad="5V", v33ad="3.3V"):
+    """Arduino 5V/3.3V/GND -> modül pinleri (sağ blok). ESP32 için v5ad="VIN", v33ad="3V3"."""
+    ax5 = s.pins[("ard", v5ad)][0]; ay = 260
     if v5:
         s.tel("red", [(ax5, ay), (ax5, 180), (740, 180)])
-        s.yazi(ax5 + 20, 172, "+5V", RENK["red"], 20, True)
+        s.yazi(ax5 + 20, 172, "+5V" if v5ad == "5V" else "VIN (5V)", RENK["red"], 20, True)
     for m, p in v5:
         x, y, _ = s.pins[(m, p)]
         s.tel("red", [(x, y), (740, y), (740, 180)]); s.dugum(740, 180, "red"); s.dugum(x, y, "red")
     if v33:
-        ax3 = s.pins[("ard", "3.3V")][0]
+        ax3 = s.pins[("ard", v33ad)][0]
         s.tel("org", [(ax3, ay), (ax3, 205), (715, 205)])
         s.yazi(ax3 + 20, 200, "3.3V", RENK["org"], 18, True)
         for m, p in v33:
@@ -498,13 +506,13 @@ def sema_cizgi():
     return s
 
 
-def proje_kiti_oto(baslik, alt, model, notlar, moduller, teller, kart="UNO R3", y0=150, y1=905):
+def proje_kiti_oto(baslik, alt, model, notlar, moduller, teller, kart="UNO R3", y0=150, y1=905, ust=(("5V", 0.3), ("3.3V", 0.52))):
     """proje_kiti gibi; modüller otomatik dikey dizilir, pin aralığı sığacak kadar daralır.
     moduller: [(ad, baslik, alt, pins[...])]; teller: [(renk, ard_pin, (mod, pin))]."""
     s = Sema(baslik, alt, model, notlar)
     n = len(teller)
     pins_r = tuple((ap, 0.1 + 0.85 * (i + 0.5) / n) for i, (_, ap, _) in enumerate(teller))
-    arduino(s, x=200, y=260, pins_r=pins_r, pins_t=(("5V", 0.3), ("3.3V", 0.52)), pins_b=(("GND", 0.5),), kart=kart)
+    arduino(s, x=200, y=260, pins_r=pins_r, pins_t=ust, pins_b=(("GND", 0.5),), kart=kart)
     toplam_pin = sum(len(m[3]) for m in moduller)
     bosluk = 18
     adim = min(36, (y1 - y0 - bosluk * (len(moduller) - 1) - 40 * len(moduller)) / toplam_pin)
@@ -602,13 +610,108 @@ def sema_trafik():
     return s
 
 
+# ---------------- ESP32 Wi-Fi setleri (23.11) ----------------
+ESP_UST = (("VIN", 0.3), ("3V3", 0.52))
+
+
+def sema_esp_ev():
+    s = proje_kiti_oto("ESP32 Wi-Fi Akıllı Ev Kiti", "ESP32 + 2 Röle + DHT11 + PIR + Buzzer + 3 LED — telefondan, uygulamasız kontrol", "AEESPEVPS",
+                       ["Röle 1 IN→G26, Röle 2 IN→G27; DHT11 DATA→G4; PIR OUT→G34.", "Buzzer (+)→G25. LED'ler 330 Ω ile: kırmızı G18, yeşil G19, mavi G21.",
+                        "Röle ve PIR VIN'den (USB 5V), DHT11 3V3'ten beslenir.", "Telefon: 'AtolyeEv' ağına bağlan (şifre 12345678), tarayıcıda 192.168.4.1.",
+                        "Röle çıkışına 220 V bağlantı yalnız eğitmen gözetiminde."],
+                       [("r1", "Röle 1", "Lamba", ["VCC", "IN", "GND"]), ("r2", "Röle 2", "Fan", ["VCC", "IN", "GND"]),
+                        ("dht", "DHT11", "Sıcaklık-Nem", ["VCC", "DATA", "GND"]), ("pir", "HC-SR501", "Hareket (PIR)", ["VCC", "OUT", "GND"]),
+                        ("buz", "Buzzer", "Aktif", ["+", "−"]), ("led", "LED'ler", "330 Ω ile seri", ["KIRMIZI", "YEŞİL", "MAVİ", "GND"])],
+                       [("pnk", "G26", ("r1", "IN")), ("pur", "G27", ("r2", "IN")), ("org", "G4", ("dht", "DATA")), ("cyan", "G34", ("pir", "OUT")),
+                        ("brn", "G25", ("buz", "+")), ("red", "G18", ("led", "KIRMIZI")), ("grn", "G19", ("led", "YEŞİL")), ("blu", "G21", ("led", "MAVİ"))],
+                       kart="ESP32 DevKit · 30 pin", ust=ESP_UST)
+    guc_hatti(s, [("r1", "VCC"), ("r2", "VCC"), ("pir", "VCC")], [("r1", "GND"), ("r2", "GND"), ("dht", "GND"), ("pir", "GND"), ("buz", "−"), ("led", "GND")],
+              v33=[("dht", "VCC")], v5ad="VIN", v33ad="3V3")
+    return s
+
+
+def sema_esp_hava():
+    s = proje_kiti_oto("ESP32 Wi-Fi Hava İstasyonu Kiti", "ESP32 + DHT11 + 16x2 LCD (I2C) + LDR + Buzzer — ölçümler LCD'de ve telefonda", "AEESPHAVAPS",
+                       ["DHT11 DATA→G4; LCD SDA→G21, SCL→G22; Buzzer (+)→G25.", "LDR gerilim bölücü: 3V3→LDR→G34→10 kΩ→GND (orta nokta G34).",
+                        "LCD VIN'den (5V), DHT11 ve LDR 3V3'ten beslenir.", "LCD adresi 0x27 değilse 0x3F deneyin; yazı soluksa arkadaki mavi trimpotu çevirin.",
+                        "Telefon: 'AtolyeHava' ağına bağlan (şifre 12345678), tarayıcıda 192.168.4.1."],
+                       [("dht", "DHT11", "Sıcaklık-Nem", ["VCC", "DATA", "GND"]), ("lcd", "16x2 LCD", "I2C Modüllü", ["GND", "VCC", "SDA", "SCL"]),
+                        ("ldr", "LDR + 10 kΩ", "Işık (gerilim bölücü)", ["3V3", "ORTA", "GND"]), ("buz", "Buzzer", "Sıcaklık alarmı", ["+", "−"])],
+                       [("org", "G4", ("dht", "DATA")), ("blu", "G21", ("lcd", "SDA")), ("grn", "G22", ("lcd", "SCL")), ("cyan", "G34", ("ldr", "ORTA")), ("pnk", "G25", ("buz", "+"))],
+                       kart="ESP32 DevKit · 30 pin", ust=ESP_UST)
+    guc_hatti(s, [("lcd", "VCC")], [("dht", "GND"), ("lcd", "GND"), ("ldr", "GND"), ("buz", "−")], v33=[("dht", "VCC"), ("ldr", "3V3")], v5ad="VIN", v33ad="3V3")
+    return s
+
+
+def sema_esp_robot():
+    global W4
+    W4 = True
+    try:
+        s = Sema("ESP32 Wi-Fi Kontrollü 4WD Robot Kiti", "4WD Şasi + ESP32 + L298N + HC-SR04 + SG90 + Pil Grubu — telefonda joystick, otomatik engelden kaçma", "AEESP4WD-LI",
+                 ["L298N: ENA→G14, IN1→G27, IN2→G26, IN3→G25, IN4→G33, ENB→G32 (ENA/ENB jumper'ı çıkarılır).",
+                  "HC-SR04: TRIG→G5; ECHO 5V verir → 10 kΩ + 2×10 kΩ bölücüyle G18'e.",
+                  "Servo sinyal (turuncu)→G13.",
+                  "Pil + → L298N +12V. L298N 5V çıkışı → ESP32 VIN, HC-SR04 ve servo (5V jumper takılı).",
+                  "Telefon: 'AtolyeRobot' ağı (şifre 12345678) → 192.168.4.1.",
+                  "Kod yüklerken pil şalterini kapatın; GND'ler ortak."])
+        X = ARD_X
+        L298_Y = 270
+        sag = []
+        for n, inn in (("G14", "ENA"), ("G27", "IN1"), ("G26", "IN2"), ("G25", "IN3"), ("G33", "IN4"), ("G32", "ENB")):
+            o = {"ENA": 0.13, "IN1": 0.28, "IN2": 0.41, "IN3": 0.54, "IN4": 0.67, "ENB": 0.82}[inn]
+            sag.append((n, (L298_Y + 320 * o - 280) / 380))
+        arduino(s, x=X, y=280, pins_r=tuple(sag), pins_l=(("G5", 0.3), ("G18", 0.46), ("G13", 0.7)), pins_t=(("VIN", 0.5),), pins_b=(("GND", 0.5),), kart="ESP32 DevKit · 30 pin")
+        l298n(s, x=L298_X, y=L298_Y, bes_kullan=True, en_jumper=False)
+        s.parts.pop()   # "(sensör beslemesi)" yazısı +5V etiketine biniyor: aşağı al
+        s.yazi(L298_X + 300, L298_Y + 370, "+5V → ESP32 + sensörler", RENK["red"], 15, True, "middle")
+        motorlar(s, x=L298_X + 430)
+        renk = {"ENA": "ylw", "IN1": "org", "IN2": "grn", "IN3": "blu", "IN4": "pur", "ENB": "brn"}
+        for (n, _), inn in zip(sag, ("ENA", "IN1", "IN2", "IN3", "IN4", "ENB")):
+            s.bagla(renk[inn], ("ard", n), ("l298", inn), via=[])
+        s.bagla("red", ("l298", "OUT1"), ("mA", ""), via=[]); s.bagla("blk", ("l298", "OUT2"), ("mA", " "), via=[])
+        s.bagla("red", ("l298", "OUT3"), ("mB", ""), via=[]); s.bagla("blk", ("l298", "OUT4"), ("mB", " "), via=[])
+        for ana, ikinci in (("mA", "mA2"), ("mB", "mB2")):
+            for pin, r, dx in (("", "red", -22), (" ", "blk", -10)):
+                ax, ay, _ = s.pins[(ana, pin)]; bx, by, _ = s.pins[(ikinci, pin)]
+                s.tel(r, [(ax, ay), (ax + dx, ay), (ax + dx, by), (bx, by)]); s.dugum(bx, by, r); s.dugum(ax + dx, ay, r)
+        # modüller (solda)
+        s.kutu("sr", 30, 300, 190, 150, RENK["lacivert"], "HC-SR04", "Ultrasonik", pins=(("VCC", "t", 0.3), ("GND", "t", 0.75), ("TRIG", "r", 0.42), ("ECHO", "r", 0.72)), font=22, hiza="sol")
+        s.kutu("sv", 30, 540, 190, 120, RENK["lacivert"], "SG90", "Servo", pins=(("SIG", "r", 0.4), ("5V", "b", 0.3), ("GND", "b", 0.75)), font=24, hiza="sol")
+        g5 = s.pins[("ard", "G5")][1]; g18 = s.pins[("ard", "G18")][1]; g13 = s.pins[("ard", "G13")][1]
+        s.bagla("ylw", ("sr", "TRIG"), ("ard", "G5"), via=[(255, 363), (255, g5)])
+        s.bagla("cyan", ("sr", "ECHO"), ("ard", "G18"), via=[(240, 408), (240, g18)])
+        s.etiket(30, 468, "ECHO: 10k + 2×10k bölücü", 222)
+        s.bagla("pur", ("sv", "SIG"), ("ard", "G13"), via=[(255, 588), (255, g13)])
+        # pil
+        s.pil("pil", 540, 770, 280, 100)
+        px, py, _ = s.pins[("pil", "+")]
+        s.tel("red", [(px, py), (px, 720), (L298_X + 50, 720), (L298_X + 50, 590)]); s.dugum(L298_X + 50, 590, "red")
+        s.yazi(592, 711, "Pil + → L298N +12V", RENK["red"], 16, True)
+        # 5V hattı: L298N +5V → ESP32 VIN, HC-SR04 VCC, servo 5V
+        vx = L298_X + 229.6
+        s.tel("red", [(vx, 590), (vx, 690), (12, 690), (12, 215), (X + 150, 215), (X + 150, 280)]); s.dugum(X + 150, 280, "red")
+        s.yazi(X + 170, 207, "L298N 5V çıkışı → ESP32 VIN · HC-SR04 · Servo", RENK["red"], 17, True)
+        hx, hy, _ = s.pins[("sr", "VCC")]; s.tel("red", [(hx, hy), (hx, 215)]); s.dugum(hx, 215, "red")
+        vx2, vy2, _ = s.pins[("sv", "5V")]; s.tel("red", [(vx2, vy2), (vx2, 690)]); s.dugum(vx2, 690, "red")
+        # GND
+        nx, ny, _ = s.pins[("pil", "-")]
+        s.tel("blk", [(nx, ny), (nx, 905), (30, 905)]); s.tel("blk", [(nx, 905), (L298_X + 140, 905), (L298_X + 140, 590)]); s.dugum(L298_X + 140, 590, "blk")
+        s.tel("blk", [(X + 150, 660), (X + 150, 905)]); s.dugum(X + 150, 905, "blk"); s.dugum(L298_X + 140, 905, "blk")
+        gx, gy, _ = s.pins[("sr", "GND")]; s.tel("blk", [(gx, gy), (gx, 250), (270, 250), (270, 905)]); s.dugum(270, 905, "blk")
+        sx, sy, _ = s.pins[("sv", "GND")]; s.tel("blk", [(sx, sy), (sx, 905)]); s.dugum(sx, 905, "blk")
+        s.yazi(40, 935, "GND", RENK["baslik"], 22, True); s.yazi(850, 945, "ORTAK GND HATTI", RENK["baslik"], 19, True, "middle")
+    finally:
+        W4 = False
+    return s
+
+
 SEMALAR = {
     "ir-robot": sema_ir, "cizgi-robot": sema_cizgi,
     "bluetooth-robot": sema_bt, "engelden-kacan-robot": sema_engel, "3u1-robot": sema_3u1, "4u1-robot": lambda: sema_3u1(dort=True),
     "dht11-lcd-kiti": sema_dht, "rtc-lcd-kiti": sema_rtc, "pir-alarm-kiti": sema_alarm,
     "rfid-kilit-kiti": sema_rfid, "step-motor-kiti": sema_step,
     "park-sensoru-kiti": sema_park, "radar-cop-kutusu-kiti": sema_radar, "akilli-fan-kiti": sema_fan,
-    "gunes-takip-kiti": sema_gunes, "bluetooth-ev-kiti": sema_btev, "rfid-yoklama-kiti": sema_rfidlcd, "trafik-lambasi-kiti": sema_trafik,
+    "gunes-takip-kiti": sema_gunes, "esp32-akilli-ev-kiti": sema_esp_ev, "esp32-hava-istasyonu-kiti": sema_esp_hava, "esp32-wifi-robot-kiti": sema_esp_robot, "bluetooth-ev-kiti": sema_btev, "rfid-yoklama-kiti": sema_rfidlcd, "trafik-lambasi-kiti": sema_trafik,
     "mini-vantilator-seti": sema_vantilator, "fen-deney-seti": sema_fen, "temel-devre-seti": sema_temel,
 }
 
