@@ -318,7 +318,7 @@ def kare(
 
     # Başlık — kartın altında, en fazla üç satır
     f_baslik = _bold(64)
-    satirlar = _sar(d, baslik.upper(), f_baslik, W - 160, maxsatir=3)
+    satirlar = _sar(d, baslik.replace("i", "İ").replace("ı", "I").upper(), f_baslik, W - 160, maxsatir=3)
     y = kart_y + kart_boy + 90
     for satir in satirlar:
         gen = d.textlength(satir, font=f_baslik)

@@ -138,5 +138,83 @@
       "Renkli bağlantı şeması, QR ile hazır Arduino kodu"
     ],
     "etiketler": "#trafiklambasi #arduinonano #led #arduino #arduinoproje #kodlama #stem #tubitak #mesleklisesi #elektrikelektronik #atolyeelektronik"
+  },
+  "4wd-cizgi-izleyen-robot-araba-kiti-18650-pil-yuvali-arduino-motor-surucu-4-kanal-sensor-jumper-kablo-hediyeli": {
+    "etiket": "ROBOT PROJESİ",
+    "kanca": "4 tekerden çekişli robot siyah çizgiyi nasıl takip eder?",
+    "alt": "4 kanal sensör çizgiyi okur, 4 motor yola tutunur.",
+    "kisa_ad": "4WD Çizgi İzleyen Robot Kiti",
+    "maddeler": [
+      "4WD şasi: 4 motor, 4 teker, 18650 pil yuvası",
+      "Arduino Uno + L298N motor sürücü",
+      "4 kanal çizgi izleme sensörü + mini breadboard",
+      "Renkli bağlantı şeması, QR ile hazır Arduino kodu"
+    ],
+    "etiketler": "#cizgiizleyenrobot #robotik #arduino #robotkiti #4wd #kodlama #stem #tubitak #mesleklisesi #atolyeelektronik"
+  },
+  "4wd-servolu-engelden-kacan-robot-araba-kiti-18650-pil-yuvali-arduino-hc-sr04-sg90-jumper-kablo-hediyeli": {
+    "etiket": "ROBOT PROJESİ",
+    "kanca": "Engel görünce duran değil, yolunu bulan 4 çeker robot.",
+    "alt": "HC-SR04 sağa sola bakar, en açık yöne döner.",
+    "kisa_ad": "4WD Engelden Kaçan Robot Kiti",
+    "maddeler": [
+      "4WD şasi: 4 motor, 4 teker, 18650 pil yuvası",
+      "Arduino Uno + L298N motor sürücü",
+      "HC-SR04 + SG90 servo, mini breadboard",
+      "Renkli bağlantı şeması, QR ile hazır Arduino kodu"
+    ],
+    "etiketler": "#engeldenkacanrobot #robotik #arduino #robotkiti #4wd #kodlama #stem #tubitak #mesleklisesi #atolyeelektronik"
+  },
+  "4wd-ir-kumandali-robot-araba-kiti-18650-pil-yuvali-arduino-motor-surucu-kumanda-jumper-kablo-hediyeli": {
+    "etiket": "ROBOT PROJESİ",
+    "kanca": "Kumandayla 4 çeker robot sürmek ister misin?",
+    "alt": "17 tuşlu IR kumanda, 4 motor, tek kutu.",
+    "kisa_ad": "4WD IR Kumandalı Robot Kiti",
+    "maddeler": [
+      "4WD şasi: 4 motor, 4 teker, 18650 pil yuvası",
+      "Arduino Uno + L298N motor sürücü",
+      "IR alıcı + 17 tuşlu kumanda, mini breadboard",
+      "Renkli bağlantı şeması, QR ile hazır Arduino kodu"
+    ],
+    "etiketler": "#irkumanda #robotik #arduino #robotkiti #4wd #kodlama #stem #tubitak #mesleklisesi #atolyeelektronik"
+  },
+  "4wd-bluetooth-kontrollu-robot-araba-kiti-18650-pil-yuvali-arduino-hc-06-motor-surucu-jumper-kablo-hediyeli": {
+    "etiket": "ROBOT PROJESİ",
+    "kanca": "Telefonunla 4 çeker robot sür.",
+    "alt": "HC-06 Bluetooth ve Android uygulamasıyla kablosuz kontrol.",
+    "kisa_ad": "4WD Bluetooth Robot Kiti",
+    "maddeler": [
+      "4WD şasi: 4 motor, 4 teker, 18650 pil yuvası",
+      "Arduino Uno + L298N motor sürücü",
+      "HC-06 Bluetooth modülü + mini breadboard",
+      "Renkli bağlantı şeması, QR ile hazır Arduino kodu"
+    ],
+    "etiketler": "#bluetooth #robotik #arduino #robotkiti #4wd #kodlama #stem #tubitak #mesleklisesi #atolyeelektronik"
+  },
+  "4wd-3u-1-arada-robot-araba-kiti-18650-pil-yuvali-bluetooth-ir-kumanda-engelden-kacan-jumper-kablo-hediyeli": {
+    "etiket": "ROBOT PROJESİ",
+    "kanca": "Tek 4 çeker gövde, 3 farklı robot.",
+    "alt": "Telefonla sür, kumandayla sür ya da engellerden kendi kaçsın.",
+    "kisa_ad": "4WD 3'ü 1 Arada Robot Kiti",
+    "maddeler": [
+      "4WD şasi: 4 motor, 4 teker, 18650 pil yuvası",
+      "Arduino Uno + L298N + HC-06 Bluetooth",
+      "IR kumanda + HC-SR04 + SG90 servo",
+      "Mini breadboard, şema, QR ile tek kodda 3 mod"
+    ],
+    "etiketler": "#robotyarismasi #robotik #arduino #robotkiti #4wd #kodlama #stem #tubitak #mesleklisesi #atolyeelektronik"
+  },
+  "4wd-4u-1-arada-robot-araba-kiti-18650-pil-yuvali-bluetooth-ir-engelden-kacan-cizgi-izleyen-jumper-kablo-hediyeli": {
+    "etiket": "ROBOT PROJESİ",
+    "kanca": "4 çeker, 4 görev, tek kod.",
+    "alt": "Bluetooth, kumanda, engelden kaçma ve çizgi izleme aynı robotta.",
+    "kisa_ad": "4WD 4'ü 1 Arada Robot Kiti",
+    "maddeler": [
+      "4WD şasi: 4 motor, 4 teker, 18650 pil yuvası",
+      "Arduino Uno + L298N + HC-06 + IR kumanda",
+      "HC-SR04 + servo + 4 kanal çizgi sensörü",
+      "Mini breadboard, şema, QR ile tek kodda 4 mod"
+    ],
+    "etiketler": "#robotyarismasi #robotik #arduino #robotkiti #4wd #kodlama #stem #tubitak #mesleklisesi #atolyeelektronik"
   }
 }
