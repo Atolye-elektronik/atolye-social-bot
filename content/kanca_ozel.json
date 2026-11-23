@@ -216,5 +216,44 @@
       "Mini breadboard, şema, QR ile tek kodda 4 mod"
     ],
     "etiketler": "#robotyarismasi #robotik #arduino #robotkiti #4wd #kodlama #stem #tubitak #mesleklisesi #atolyeelektronik"
+  },
+  "esp32-wifi-akilli-ev-kiti-role-dht11-pir-telefondan-kontrol": {
+    "etiket": "ESP32 PROJESİ",
+    "kanca": "Evini telefondan yönet, uygulama indirmeden.",
+    "alt": "Lamba, fan, LED, sıcaklık ve hareket alarmı tek ekranda.",
+    "kisa_ad": "ESP32 Wi-Fi Akıllı Ev Kiti",
+    "maddeler": [
+      "ESP32 kendi Wi-Fi ağını kurar: internet gerekmez",
+      "2 röle + 3 LED telefondan kontrol",
+      "DHT11 sıcaklık-nem + PIR hareket alarmı",
+      "Renkli bağlantı şeması, QR ile hazır kod"
+    ],
+    "etiketler": "#esp32 #akıllıev #iot #arduino #kodlama #stem #tubitak #mesleklisesi #robotik #atolyeelektronik"
+  },
+  "esp32-wifi-hava-istasyonu-kiti-dht11-lcd-ldr": {
+    "etiket": "ESP32 PROJESİ",
+    "kanca": "Odanın havasını telefonundan izle.",
+    "alt": "Sıcaklık, nem ve ışık: LCD'de ve telefonda canlı grafik.",
+    "kisa_ad": "ESP32 Wi-Fi Hava İstasyonu Kiti",
+    "maddeler": [
+      "ESP32 + DHT11 + 16x2 LCD + LDR",
+      "Telefonda son 2 dakikanın grafiği",
+      "Sınır aşılınca buzzer öter",
+      "Renkli bağlantı şeması, QR ile hazır kod"
+    ],
+    "etiketler": "#esp32 #havaistasyonu #iot #arduino #kodlama #stem #tubitak #mesleklisesi #fen #atolyeelektronik"
+  },
+  "esp32-wifi-kontrollu-4wd-robot-araba-kiti-18650-pil-yuvali": {
+    "etiket": "ROBOT PROJESİ",
+    "kanca": "Robotunu telefondaki joystick ile sür.",
+    "alt": "Wi-Fi ile kontrol, tek dokunuşla engelden kaçma modu.",
+    "kisa_ad": "ESP32 Wi-Fi 4WD Robot Kiti",
+    "maddeler": [
+      "4WD şasi: 4 motor, 18650 pil yuvası",
+      "ESP32 + L298N + HC-SR04 + SG90 servo",
+      "Uygulama yok: tarayıcıda joystick",
+      "Renkli bağlantı şeması, QR ile hazır kod"
+    ],
+    "etiketler": "#esp32 #robotik #wifi #robotkiti #4wd #arduino #kodlama #stem #tubitak #atolyeelektronik"
   }
 }
