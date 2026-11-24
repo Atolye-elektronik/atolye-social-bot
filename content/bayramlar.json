@@ -1,8 +1,6 @@
 {
   "_aciklama": "Resmi bayram ve anma gunleri. 'tur' alani TON belirler: kutlama -> 'Kutlu olsun', anma -> 'Saygiyla aniyoruz'. 10 Kasim ve 15 Temmuz KUTLANMAZ, anilir. Hicbirinde fiyat, urun, indirim kodu veya satis cagrisi YOK.",
-
   "_kural": "Bayram gorsellerinde satis yapilmaz. Marka adi ve logo yeter. Anma gunlerinde hashtag de kullanilmaz.",
-
   "gunler": [
     {
       "slug": "23-nisan",
@@ -66,6 +64,15 @@
       "tur": "anma",
       "metin": "Mustafa Kemal Atatürk'ü, aramızdan ayrılışının yıl dönümünde saygı, sevgi ve özlemle anıyoruz.",
       "etiketler": ""
+    },
+    {
+      "slug": "24-kasim",
+      "tarih": "11-24",
+      "ad": "Öğretmenler Günü",
+      "kisa": "24 KASIM",
+      "tur": "kutlama",
+      "metin": "24 Kasım Öğretmenler Günü kutlu olsun.\n\nAtölyede, laboratuvarda ve sınıfta gençlere üretmeyi, denemeyi ve hata yapmaktan korkmamayı öğreten tüm öğretmenlerimize emekleri için teşekkür ediyoruz. Başöğretmenimiz Mustafa Kemal Atatürk'ü saygıyla anıyoruz.",
+      "etiketler": "#24KasımÖğretmenlerGünü #ÖğretmenlerGünü #Öğretmen"
     }
   ]
 }
