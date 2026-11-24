@@ -28,7 +28,10 @@ HOST = os.environ["SMTP_HOST"]
 
 def coz(m, h):
     p = decode_header(m.get(h, "") or "")
-    return " ".join(x.decode(c or "utf-8", "replace") if isinstance(x, bytes) else x for x, c in p)
+    s = " ".join(x.decode(c or "utf-8", "replace") if isinstance(x, bytes) else x for x, c in p)
+    # 24.11.2026: katlanmis (CR/LF iceren) konu basligi EmailMessage'i cokertiyordu;
+    # 22.11'den beri 7 ileti bu yuzden aktarilamadi.
+    return " ".join(s.split())
 
 import argparse
 ap = argparse.ArgumentParser()
