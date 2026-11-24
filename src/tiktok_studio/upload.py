@@ -133,6 +133,9 @@ def _saat_sec(kok, sayfa, ne_zaman) -> bool:
     alan.click()
     bekle(1.5)
 
+    if ilk_gorunen(kok, [selectors.YENI_SAAT_PANELI], timeout=2000) is not None:
+        return _saat_sec_yeni(kok, sayfa, ne_zaman)
+
     for sutun, deger in ((selectors.SAAT_SUTUNU, ne_zaman.strftime("%H")),
                          (selectors.DAKIKA_SUTUNU, ne_zaman.strftime("%M"))):
         secenek = kok.locator(f"{sutun}:text-is('{deger}')").first
@@ -162,6 +165,52 @@ def _saat_sec(kok, sayfa, ne_zaman) -> bool:
     return True
 
 
+def _saat_sec_yeni(kok, sayfa, ne_zaman) -> bool:
+    """24.11.2026 TimePicker: "Hours HH" ve "Minutes MM" seçenek düğmeleri."""
+    for sutun, deger in (("Hours", ne_zaman.strftime("%H")), ("Minutes", ne_zaman.strftime("%M"))):
+        kalip = selectors.YENI_SAAT_SECENEGI.format(sutun=sutun, deger=deger)
+        try:
+            secenek = kok.locator(kalip).first
+            secenek.scroll_into_view_if_needed(timeout=5000)
+            secenek.click(timeout=5000)
+        except Exception:  # noqa: BLE001 - sanal kaydirma: JS ile tikla
+            try:
+                kok.evaluate("(s) => { const e = document.querySelector(s); if (e) e.click(); }", kalip)
+            except Exception:  # noqa: BLE001
+                return False
+        bekle(0.6)
+    try:
+        sayfa.keyboard.press("Escape")
+    except Exception:  # noqa: BLE001
+        pass
+    bekle(0.5)
+    return True
+
+
+def _tarih_sec_yeni(kok, ne_zaman) -> bool:
+    """24.11.2026 DatePicker: gün düğmesi aria-label "25 Kasım 2026 Çarşamba"."""
+    etiket = f"{ne_zaman.day} {AYLAR_TR_BUYUK[ne_zaman.month - 1]} {ne_zaman.year}"
+    kalip = selectors.YENI_TAKVIM_GUNU.format(etiket=etiket)
+    for _ in range(3):
+        hucre = kok.locator(kalip).first
+        try:
+            hucre.click(timeout=3000)
+            bekle(0.8)
+            return True
+        except Exception:  # noqa: BLE001 - hedef ay gorunmuyor, ileri git
+            try:
+                kok.locator(selectors.YENI_TAKVIM_ILERI).first.click(timeout=3000)
+                bekle(0.8)
+            except Exception:  # noqa: BLE001
+                return False
+    return False
+
+
+AYLAR_TR_BUYUK = (
+    "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+    "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık",
+)
+
 AYLAR_TR = (
     "ocak", "şubat", "mart", "nisan", "mayıs", "haziran",
     "temmuz", "ağustos", "eylül", "ekim", "kasım", "aralık",
@@ -178,6 +227,9 @@ def _tarih_sec(kok, sayfa, ne_zaman) -> bool:
     alan = gorunmesini_bekle(kok, selectors.TARIH_ALANI, "tarih alanı", sayfa=sayfa)
     alan.click()
     bekle(1.5)
+
+    if ilk_gorunen(kok, [".DatePicker__panel"], timeout=2000) is not None:
+        return _tarih_sec_yeni(kok, ne_zaman)
 
     hedef_ay = AYLAR_TR[ne_zaman.month - 1]
     for _ in range(12):

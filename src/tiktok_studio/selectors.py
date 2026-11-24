@@ -101,7 +101,11 @@ ZAMANLA_ANAHTARI = [
 
 # 20.08.2026: alanlar salt-okunur oldu; tiklayinca panel aciliyor.
 # Sirali: .scheduled-picker icindeki 1. input saat, 2. input tarih.
+# 24.11.2026: input'lar kalkti; tarih/saat artik role=combobox Picker tetikleyicisi
+# (aria-label "Select date"/"Select time", deger .Picker__value icinde).
 TARIH_ALANI = [
+    "[role='combobox'][aria-label='Select date']",
+    ".scheduled-picker .Picker__trigger >> nth=0",
     ".scheduled-picker input.TUXTextInputCore-input >> nth=1",
     ".scheduled-picker input >> nth=1",
     "[class*='date-picker'] input",
@@ -110,6 +114,8 @@ TARIH_ALANI = [
 ]
 
 SAAT_ALANI = [
+    "[role='combobox'][aria-label='Select time']",
+    ".scheduled-picker .Picker__trigger >> nth=1",
     ".scheduled-picker input.TUXTextInputCore-input >> nth=0",
     ".scheduled-picker input >> nth=0",
     "[class*='time-picker'] input",
@@ -128,6 +134,14 @@ TAKVIM_GUNU = [
     "[class*='calendar'] span:text-is('{deger}')",
     "[class*='day']:text-is('{deger}')",
 ]
+
+# 24.11.2026 arayuzu: DatePicker gun dugmesi aria-label "25 Kasım 2026 Çarşamba",
+# ileri ok aria-label "Next month"; saat paneli TimePicker, secenekler
+# aria-label "Hours 20" / "Minutes 05".
+YENI_TAKVIM_GUNU = ".DatePicker__day[aria-label^='{etiket}']:not([disabled])"
+YENI_TAKVIM_ILERI = ".DatePicker__header button[aria-label='Next month']"
+YENI_SAAT_SECENEGI = ".TimePicker__item[aria-label='{sutun} {deger}']"
+YENI_SAAT_PANELI = ".TimePicker__panel"
 
 # Takvim paneli ve ay gezinme (23.08.2026 arayuzu)
 TAKVIM_PANELI = ".calendar-wrapper"
