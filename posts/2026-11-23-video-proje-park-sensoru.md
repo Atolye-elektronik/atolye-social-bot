@@ -2,6 +2,7 @@
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/video-proje/park-sensoru.mp4
 publish_at: 2026-11-23 12:00
+tiktok_at: 2026-12-10 12:00
 youtube_title: Arduino Park Sensoru Projesi
 ---
 Arabaların park sensörü nasıl öter? 🔌

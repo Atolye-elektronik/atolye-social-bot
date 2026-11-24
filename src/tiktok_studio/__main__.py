@@ -47,13 +47,14 @@ def zamanla(gun: int, maks: int) -> int:
             continue
         if state.already_published(durum, post.slug, PLATFORM):
             continue
-        if post.publish_at is None:
+        zaman = post.tiktok_at
+        if zaman is None:
             print(f"⏭️  {post.slug} — publish_at yok, zamanlanamaz (main.py paylaşır)")
             continue
-        if not (simdi + upload.EN_ERKEN <= post.publish_at <= sinir):
+        if not (simdi + upload.EN_ERKEN <= zaman <= sinir):
             continue
         # Anma gunlerine (10 Kasim, 15 Temmuz) urun videosu zamanlanmaz (01.11.2026).
-        if "-bayram-" not in post.slug and _anma_tarihi(post.publish_at):
+        if "-bayram-" not in post.slug and _anma_tarihi(zaman):
             print(f"🕯️  {post.slug} — anma gününe denk geliyor, zamanlanmadı")
             continue
         if not post.is_video:
@@ -68,10 +69,11 @@ def zamanla(gun: int, maks: int) -> int:
     print(f"{len(aday)} post bulundu, en fazla {maks} tanesi zamanlanacak.\n")
 
     hata = 0
+    aday.sort(key=lambda p: p.tiktok_at)
     for post in aday[:maks]:
-        print(f"→ {post.slug} → {post.publish_at:%Y-%m-%d %H:%M}")
+        print(f"→ {post.slug} → {post.tiktok_at:%Y-%m-%d %H:%M}")
         try:
-            sonuc = upload.studio_paylas(post.tiktok_caption, post.tiktok_media, post.publish_at)
+            sonuc = upload.studio_paylas(post.tiktok_caption, post.tiktok_media, post.tiktok_at)
             state.mark_published(durum, post.slug, PLATFORM, str(sonuc))
             print(f"  ✅ {sonuc}")
         except (OturumDustu, StudioError) as exc:
@@ -95,7 +97,7 @@ def tek_post(slug: str, hemen: bool) -> int:
         print(f"{slug} bir video değil — TikTok video istiyor.")
         return 1
 
-    ne_zaman = None if hemen else hedef.publish_at
+    ne_zaman = None if hemen else hedef.tiktok_at
     try:
         sonuc = upload.studio_paylas(hedef.tiktok_caption, hedef.tiktok_media, ne_zaman)
     except (OturumDustu, StudioError) as exc:

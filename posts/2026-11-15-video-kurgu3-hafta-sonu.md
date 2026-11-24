@@ -2,6 +2,7 @@
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu3-hafta-sonu.mp4
 publish_at: 2026-11-15 20:00
+tiktok_at: 2026-11-28 12:00
 youtube_title: Hafta Sonu Bos mu - Bir Proje Yap
 ---
 Hafta sonu boş mu? Bir proje yap 🚗

@@ -2,6 +2,7 @@
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/slayt3-robot-3u1.mp4
 publish_at: 2026-11-05 20:00
+tiktok_at: 2026-11-25 18:00
 youtube_title: 3u 1 Arada Robot Kiti Icindekiler
 ---
 3 robot, 1 kit 🤖

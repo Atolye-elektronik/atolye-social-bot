@@ -56,6 +56,16 @@ class Post:
             return False
         return self.media.lower().endswith((".mp4", ".mov", ".m4v"))
 
+    @property
+    def tiktok_at(self) -> dt.datetime | None:
+        """TikTok'a ozel paylasim saati (front matter `tiktok_at`), yoksa publish_at.
+
+        TikTok zamanlayicisi kacirdigi videolari (05-24.11.2026 arizasi) IG/YT'deki
+        tarihlerini bozmadan ileri bir tarihe yaymak icin eklendi.
+        """
+        ham = self.extra.get("tiktok_at")
+        return parse_datetime(ham) if ham else self.publish_at
+
     def is_due(self, now: dt.datetime | None = None) -> bool:
         if self.publish_at is None:
             return True

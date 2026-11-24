@@ -2,6 +2,7 @@
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/slayt3-rfid-kiti.mp4
 publish_at: 2026-11-01 20:00
+tiktok_at: 2026-12-02 12:00
 youtube_title: RFID Akilli Kilit Kiti Icindekiler
 ---
 Kartlı kilit projesi: kutuda ne var? 🔐

@@ -2,6 +2,7 @@
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu-sicaklik-nem-25sn.mp4
 publish_at: 2026-11-08 20:00
+tiktok_at: 2026-11-27 12:00
 youtube_title: Arduino ile Sicaklik ve Nem Olcer - DHT11 + LCD
 ---
 Kendi dijital termometreni yap! 🌡️

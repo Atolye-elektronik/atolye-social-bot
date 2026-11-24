@@ -2,6 +2,7 @@
 platforms: [instagram, tiktok_studio, youtube]
 media: posts/media/kurgu3-robot-parcalari.mp4
 publish_at: 2026-11-11 20:00
+tiktok_at: 2026-12-05 12:00
 youtube_title: Robot Yapmak Icin 3 Parca
 ---
 Robot yapmak için 3 parça 🛠️
