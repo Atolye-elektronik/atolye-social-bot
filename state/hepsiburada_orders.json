@@ -1,4 +1,135 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6b060b34-2e40-1aa3-44dd-002306060606",
+      "status": "Open",
+      "customerId": "ade99fc0-d929-470e-884d-7205a6abb5d5",
+      "orderDate": "2026-11-25T01:09:55",
+      "dueDate": "2026-11-25T18:30:00",
+      "barcode": "62955485693497",
+      "packageNumber": "5548569349",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "İsmetpaşa mahallesi 44 sokak kayranlı apartmanı no 37 kat 4 daire 11 İSMETPAŞA DİKİLİ İzmir",
+      "recipientName": "Orçun Kozak",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "İSMETPAŞA",
+      "shippingTown": "DİKİLİ",
+      "shippingCity": "İzmir",
+      "email": "4870016765_5548569349@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Orçun Kozak",
+      "billingAddress": "İsmetpaşa mahallesi 44 sokak kayranlı apartmanı no 37 kat 4 daire 11 İSMETPAŞA DİKİLİ İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "DİKİLİ",
+      "billingDistrict": "İSMETPAŞA",
+      "billingPostalCode": "35980",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 2503.19999
+      },
+      "items": [
+        {
+          "lineItemId": "6b060b33-640a-9cfa-ee73-911a06060606",
+          "listingId": "9dabd470-f0eb-4677-b862-d8f24b98fb65",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000E9OWRF",
+          "merchantSku": "AETCS18P",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 2503.19999
+          },
+          "vat": 417.2,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 2503.19999
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 563.22
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 625.79999
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 625.79999
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 3128.99999
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 3128.99999
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Meslek Lisesi Takım Çantası Seti - 17 Parça Full Set",
+          "orderNumber": "4870016765",
+          "orderDate": "2026-11-25T01:09:55",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELTCS18P001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002829904606.jpg",
+          "deci": 4.7
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Orçun Kozak",
+      "estimatedArrivalDate": "2026-11-27T15:30:00Z",
+      "totalDeci": 4.7,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
