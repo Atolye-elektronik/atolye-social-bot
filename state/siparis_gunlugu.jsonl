@@ -1360,3 +1360,4 @@
 {"an": "2026-11-25T12:42", "kanal": "hepsiburada", "no": "4139987254", "iade": {"AEACDMMR": 1}, "durum": "CancelledByCustomer", "kuru": false}
 {"an": "2026-11-25T13:27", "kanal": "hepsiburada", "no": "4532115552", "kod": "AEACDMMR", "adet": 1, "dusum": {"AEACDMMR": 1}, "kuru": false}
 {"an": "2026-11-25T14:23", "kanal": "hepsiburada", "no": "4114310764", "kod": "AE16X2LCD", "adet": 1, "dusum": {"AE16X2LCD": 1}, "kuru": false}
+{"an": "2026-11-25T14:38", "kanal": "n11", "no": "248365146426", "kod": "AELM2596", "adet": 1, "dusum": {"AELM2596": 1}, "kuru": false}
