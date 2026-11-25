@@ -562,6 +562,222 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6b06b6f7-2e40-1aa3-44b6-ee8c06060606",
+      "status": "Open",
+      "customerId": "0235aee9-7c0d-4bda-8d7e-3fd7477e4e05",
+      "orderDate": "2026-11-25T13:22:45",
+      "dueDate": "2026-11-25T18:30:00",
+      "barcode": "62955487626073",
+      "packageNumber": "5548762607",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Alidede Sk. No 1  b blok kat 3 daire 16 kadikoy istanbul KOŞUYOLU KADIKÖY İstanbul",
+      "recipientName": "tuncay yucel",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "KOŞUYOLU",
+      "shippingTown": "KADIKÖY",
+      "shippingCity": "İstanbul",
+      "email": "4202779399_5548762607@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "tuncay yucel",
+      "billingAddress": "Alidede Sk. No 1/b daire 16 kadikoy istanbul KOŞUYOLU KADIKÖY İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "KADIKÖY",
+      "billingDistrict": "KOŞUYOLU",
+      "billingPostalCode": "34718",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 1171.3
+      },
+      "items": [
+        {
+          "lineItemId": "6b06b6f6-4854-73a5-237d-e78706060606",
+          "listingId": "07ec0d9b-2a64-4cb0-92cb-d5c3036a1d41",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUVVDX",
+          "merchantSku": "AETMLELKDS",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 305.14999
+          },
+          "vat": 50.86,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 305.14999
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 64.62
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 53.85
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 53.85
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 359
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 359
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Temel Elektronik Deney Seti",
+          "orderNumber": "4202779399",
+          "orderDate": "2026-11-25T13:22:45",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELTMLELKDS1",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754943110.jpg",
+          "deci": 1.1
+        },
+        {
+          "lineItemId": "6b06b6f6-4854-73a5-237d-e78806060606",
+          "listingId": "81f7452f-be40-40ff-9d6c-4d9269ca0b1d",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000EUUSCD",
+          "merchantSku": "AEENDELK",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 866.15
+          },
+          "vat": 144.36,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 866.15
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 183.42
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 152.85
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 152.85
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 1019
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 1019
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi",
+          "orderNumber": "4202779399",
+          "orderDate": "2026-11-25T13:22:45",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ATELENDELK001",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754823330.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Tuncay Yücel",
+      "estimatedArrivalDate": "2026-11-30T15:30:00Z",
+      "totalDeci": 2.2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
