@@ -2,806 +2,28 @@
   "newOrderItems": [],
   "packages": [
     {
-      "id": "6b060b34-2e40-1aa3-44dd-002306060606",
+      "id": "6b06ee4d-7b20-8d84-204c-d52106060606",
       "status": "Open",
-      "customerId": "ade99fc0-d929-470e-884d-7205a6abb5d5",
-      "orderDate": "2026-11-25T01:09:55",
-      "dueDate": "2026-11-25T18:30:00",
-      "barcode": "62955485693497",
-      "packageNumber": "5548569349",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "İsmetpaşa mahallesi 44 sokak kayranlı apartmanı no 37 kat 4 daire 11 İSMETPAŞA DİKİLİ İzmir",
-      "recipientName": "Orçun Kozak",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "İSMETPAŞA",
-      "shippingTown": "DİKİLİ",
-      "shippingCity": "İzmir",
-      "email": "4870016765_5548569349@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Orçun Kozak",
-      "billingAddress": "İsmetpaşa mahallesi 44 sokak kayranlı apartmanı no 37 kat 4 daire 11 İSMETPAŞA DİKİLİ İzmir",
-      "billingCity": "İzmir",
-      "billingTown": "DİKİLİ",
-      "billingDistrict": "İSMETPAŞA",
-      "billingPostalCode": "35980",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 2503.19999
-      },
-      "items": [
-        {
-          "lineItemId": "6b060b33-640a-9cfa-ee73-911a06060606",
-          "listingId": "9dabd470-f0eb-4677-b862-d8f24b98fb65",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV0000E9OWRF",
-          "merchantSku": "AETCS18P",
-          "quantity": 1,
-          "price": {
-            "currency": "TRY",
-            "amount": 2503.19999
-          },
-          "vat": 417.2,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 2503.19999
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 563.22
-          },
-          "commissionRate": 18,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 625.79999
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 625.79999
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 3128.99999
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 3128.99999
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Meslek Lisesi Takım Çantası Seti - 17 Parça Full Set",
-          "orderNumber": "4870016765",
-          "orderDate": "2026-11-25T01:09:55",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "ATELTCS18P001",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002829904606.jpg",
-          "deci": 4.7
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "Orçun Kozak",
-      "estimatedArrivalDate": "2026-11-27T15:30:00Z",
-      "totalDeci": 4.7,
-      "warehouse": {
-        "shippingModel": "Standard",
-        "shippingAddressLabel": "BIRINCIL"
-      }
-    },
-    {
-      "id": "6b068988-af23-47ee-6ae7-740d06060606",
-      "status": "Open",
-      "customerId": "25d71a14-8b95-46c7-98c6-727f8bc7ca51",
-      "orderDate": "2026-11-25T10:08:52",
-      "dueDate": "2026-11-25T18:30:00",
-      "barcode": "62955486686148",
-      "packageNumber": "5548668614",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "2151. Cadde No: 5/A (PTT Binası 5. Kat) MUSTAFA KEMAL ÇANKAYA Ankara",
-      "recipientName": "Umut Sayan",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "MUSTAFA KEMAL",
-      "shippingTown": "ÇANKAYA",
-      "shippingCity": "Ankara",
-      "email": "4713442741_5548668614@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Umut Sayan",
-      "billingAddress": "2151. Cadde No: 5/A (PTT Binası 5. Kat) MUSTAFA KEMAL ÇANKAYA Ankara",
-      "billingCity": "Ankara",
-      "billingTown": "ÇANKAYA",
-      "billingDistrict": "MUSTAFA KEMAL",
-      "billingPostalCode": "06530",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 230.86
-      },
-      "items": [
-        {
-          "lineItemId": "6b068986-7531-6df7-47e4-d65906060606",
-          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00006WCA8J",
-          "merchantSku": "AEPY18650",
-          "quantity": 2,
-          "price": {
-            "currency": "TRY",
-            "amount": 60.26
-          },
-          "vat": 20.09,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 120.52
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 12.76
-          },
-          "commissionRate": 18,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 10.64
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 21.28
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 70.9
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 141.8
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
-          "orderNumber": "4713442741",
-          "orderDate": "2026-11-25T10:08:52",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "000RBYL100779",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
-          "deci": 1
-        },
-        {
-          "lineItemId": "6b068986-7531-6df7-47e4-d65a06060606",
-          "listingId": "969eda22-a6ee-4e2d-8a57-458996739c62",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00006WCA8L",
-          "merchantSku": "AEHB18650PY3",
-          "quantity": 2,
-          "price": {
-            "currency": "TRY",
-            "amount": 55.17
-          },
-          "vat": 18.39,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 110.34
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 11.68
-          },
-          "commissionRate": 18,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 9.72999
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 19.45999
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 64.89999
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 129.79999
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Roboyol Store 18650 Pil Yuvası Kablolu Tutucu 3.7V 1'li Tekli Pil Kutusu Özellikli",
-          "orderNumber": "4713442741",
-          "orderDate": "2026-11-25T10:08:52",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "000RBYL100780",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568559.jpg",
-          "deci": 0.5
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "Umut Sayan",
-      "estimatedArrivalDate": "2026-12-01T15:30:00Z",
-      "totalDeci": 3,
-      "warehouse": {
-        "shippingModel": "Standard",
-        "shippingAddressLabel": "BIRINCIL"
-      }
-    },
-    {
-      "id": "6b06972f-e279-7fb4-ddf6-21d706060606",
-      "status": "Open",
-      "customerId": "1b9e03b6-818e-4aa0-bdbb-d93fe345fab4",
-      "orderDate": "2026-11-25T11:06:59",
-      "dueDate": "2026-11-25T18:30:00",
-      "barcode": "62955486980734",
-      "packageNumber": "5548698073",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Kelle İbrahim Caddesi No 43 Beykoz Belediyesi Yazı İşleri Müdürlüğü GÜMÜŞSUYU BEYKOZ İstanbul",
-      "recipientName": "Alihan Bozan",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "GÜMÜŞSUYU",
-      "shippingTown": "BEYKOZ",
-      "shippingCity": "İstanbul",
-      "email": "4003344814_5548698073@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "Büşra Bozan",
-      "billingAddress": "Uyanık caddesi Selçuk sokak Murat apt no 6/12 kat 2 d 30 AYDINEVLER MALTEPE İstanbul",
-      "billingCity": "İstanbul",
-      "billingTown": "MALTEPE",
-      "billingDistrict": "AYDINEVLER",
-      "billingPostalCode": "34854",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 230.88
-      },
-      "items": [
-        {
-          "lineItemId": "6b069727-610e-c4e0-e6e8-d7db06060606",
-          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00006WCA8J",
-          "merchantSku": "AEPY18650",
-          "quantity": 2,
-          "price": {
-            "currency": "TRY",
-            "amount": 60.27
-          },
-          "vat": 20.09,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 120.54
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 12.76
-          },
-          "commissionRate": 18,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 10.63
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 21.26
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 70.9
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 141.8
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
-          "orderNumber": "4003344814",
-          "orderDate": "2026-11-25T11:06:59",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "000RBYL100779",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
-          "deci": 1
-        },
-        {
-          "lineItemId": "6b069727-610e-c4e0-e6e8-d7dc06060606",
-          "listingId": "969eda22-a6ee-4e2d-8a57-458996739c62",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00006WCA8L",
-          "merchantSku": "AEHB18650PY3",
-          "quantity": 2,
-          "price": {
-            "currency": "TRY",
-            "amount": 55.17
-          },
-          "vat": 18.39,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 110.34
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 11.68
-          },
-          "commissionRate": 18,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 9.72999
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 19.45999
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 64.89999
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 129.79999
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Roboyol Store 18650 Pil Yuvası Kablolu Tutucu 3.7V 1'li Tekli Pil Kutusu Özellikli",
-          "orderNumber": "4003344814",
-          "orderDate": "2026-11-25T11:06:59",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "000RBYL100780",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568559.jpg",
-          "deci": 0.5
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "ALİHAN BOZAN",
-      "estimatedArrivalDate": "2026-11-30T15:30:00Z",
-      "totalDeci": 3,
-      "warehouse": {
-        "shippingModel": "Standard",
-        "shippingAddressLabel": "BIRINCIL"
-      }
-    },
-    {
-      "id": "6b06b6f7-2e40-1aa3-44b6-ee8c06060606",
-      "status": "Open",
-      "customerId": "0235aee9-7c0d-4bda-8d7e-3fd7477e4e05",
-      "orderDate": "2026-11-25T13:22:45",
-      "dueDate": "2026-11-25T18:30:00",
-      "barcode": "62955487626073",
-      "packageNumber": "5548762607",
-      "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Alidede Sk. No 1  b blok kat 3 daire 16 kadikoy istanbul KOŞUYOLU KADIKÖY İstanbul",
-      "recipientName": "tuncay yucel",
-      "shippingCountryCode": "TR",
-      "shippingDistrict": "KOŞUYOLU",
-      "shippingTown": "KADIKÖY",
-      "shippingCity": "İstanbul",
-      "email": "4202779399_5548762607@hepsifatura.com",
-      "phoneNumber": "",
-      "companyName": "tuncay yucel",
-      "billingAddress": "Alidede Sk. No 1/b daire 16 kadikoy istanbul KOŞUYOLU KADIKÖY İstanbul",
-      "billingCity": "İstanbul",
-      "billingTown": "KADIKÖY",
-      "billingDistrict": "KOŞUYOLU",
-      "billingPostalCode": "34718",
-      "billingCountryCode": "TR",
-      "taxOffice": null,
-      "taxNumber": "",
-      "identityNo": "11111111111",
-      "shippingTotalPrice": null,
-      "customsTotalPrice": null,
-      "totalPrice": {
-        "currency": "TRY",
-        "amount": 1171.3
-      },
-      "items": [
-        {
-          "lineItemId": "6b06b6f6-4854-73a5-237d-e78706060606",
-          "listingId": "07ec0d9b-2a64-4cb0-92cb-d5c3036a1d41",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV0000EUVVDX",
-          "merchantSku": "AETMLELKDS",
-          "quantity": 1,
-          "price": {
-            "currency": "TRY",
-            "amount": 305.14999
-          },
-          "vat": 50.86,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 305.14999
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 64.62
-          },
-          "commissionRate": 18,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 53.85
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 53.85
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 359
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 359
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Atölye Elektronik Temel Elektronik Deney Seti",
-          "orderNumber": "4202779399",
-          "orderDate": "2026-11-25T13:22:45",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "ATELTMLELKDS1",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754943110.jpg",
-          "deci": 1.1
-        },
-        {
-          "lineItemId": "6b06b6f6-4854-73a5-237d-e78806060606",
-          "listingId": "81f7452f-be40-40ff-9d6c-4d9269ca0b1d",
-          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV0000EUUSCD",
-          "merchantSku": "AEENDELK",
-          "quantity": 1,
-          "price": {
-            "currency": "TRY",
-            "amount": 866.15
-          },
-          "vat": 144.36,
-          "totalPrice": {
-            "currency": "TRY",
-            "amount": 866.15
-          },
-          "commission": {
-            "currency": "TRY",
-            "amount": 183.42
-          },
-          "commissionRate": 18,
-          "unitHBDiscount": {
-            "currency": "TRY",
-            "amount": 152.85
-          },
-          "totalHBDiscount": {
-            "currency": "TRY",
-            "amount": 152.85
-          },
-          "unitMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "totalMerchantDiscount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "merchantUnitPrice": {
-            "currency": "TRY",
-            "amount": 1019
-          },
-          "merchantTotalPrice": {
-            "currency": "TRY",
-            "amount": 1019
-          },
-          "unitLaborCost": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "cargoPaymentInfo": "Seller",
-          "customizedText01": "",
-          "customizedText02": "",
-          "customizedText03": "",
-          "customizedText04": "",
-          "properties": [],
-          "productName": "Atölye Elektronik Endüstriyel Elektronik Eğitim Seti - Meslek Lisesi 11. Sınıf Dersi",
-          "orderNumber": "4202779399",
-          "orderDate": "2026-11-25T13:22:45",
-          "deliveryType": "Standart Teslimat",
-          "customerDelivery": "",
-          "pickupTime": null,
-          "gtip": "",
-          "weight": 0,
-          "vatRate": 20,
-          "warehouse": {
-            "shippingModel": "Standard",
-            "shippingAddressLabel": "BIRINCIL"
-          },
-          "deptorDifferenceAmount": 0,
-          "purchasePrice": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "discountToBeBilledToHB": 0,
-          "productBarcode": "ATELENDELK001",
-          "bnplCommissionAmount": {
-            "currency": "TRY",
-            "amount": 0
-          },
-          "creationReason": "OrderCreated",
-          "isMicroExport": false,
-          "releatedLineIndexesWithCampaign": null,
-          "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110001754823330.jpg",
-          "deci": 1.1
-        }
-      ],
-      "isCargoChangable": true,
-      "customerName": "Tuncay Yücel",
-      "estimatedArrivalDate": "2026-11-30T15:30:00Z",
-      "totalDeci": 2.2,
-      "warehouse": {
-        "shippingModel": "Standard",
-        "shippingAddressLabel": "BIRINCIL"
-      }
-    },
-    {
-      "id": "6b06e1f1-6d53-bfdd-e6ca-358606060606",
-      "status": "Open",
-      "customerId": "0de7771c-99a9-4bb0-a0d1-d9ad8d2c0baf",
-      "orderDate": "2026-11-25T16:26:08",
+      "customerId": "709bf4c3-0e5e-4911-b51b-3e052d46f721",
+      "orderDate": "2026-11-25T17:18:52",
       "dueDate": "2026-11-26T18:30:00",
-      "barcode": "62955488453067",
-      "packageNumber": "5548845306",
+      "barcode": "62955488658750",
+      "packageNumber": "5548865875",
       "cargoCompany": "hepsiJET",
-      "shippingAddressDetail": "Fatih Sultan Mehmet mahallesi Alev sokak no 13 Sarıyer İstanbul FATİH SULTAN MEHMET SARIYER İstanbul",
-      "recipientName": "Hüseyin Aygün",
+      "shippingAddressDetail": "Easy Point Esnaf - Yeşil Market Fevzi Çakmak-FEVZİ ÇAKMAK MAH. BAŞGİL SOK NO:12/B FEVZİ ÇAKMAK BAHÇELİEVLER İSTANBUL",
+      "recipientName": "Abdül Settar Şanlıer",
       "shippingCountryCode": "TR",
-      "shippingDistrict": "FATİH SULTAN MEHMET",
-      "shippingTown": "SARIYER",
+      "shippingDistrict": "FEVZİ ÇAKMAK",
+      "shippingTown": "BAHÇELİEVLER",
       "shippingCity": "İstanbul",
-      "email": "4532115552_5548845306@hepsifatura.com",
+      "email": "4114310764_5548865875@hepsifatura.com",
       "phoneNumber": "",
-      "companyName": "Hüseyin Aygün",
-      "billingAddress": "Fatih Sultan Mehmet mahallesi Alev sokak no 13 Sarıyer İstanbul  FATİH SULTAN MEHMET SARIYER İstanbul",
+      "companyName": "Abdül Settar Şanlıer",
+      "billingAddress": "İstanbul /Bahçelievler /Zafer Mahallesi/Cevher Sokak No:6 Daire:10 ZAFER BAHÇELİEVLER İstanbul",
       "billingCity": "İstanbul",
-      "billingTown": "SARIYER",
-      "billingDistrict": "FATİH SULTAN MEHMET",
-      "billingPostalCode": "34470",
+      "billingTown": "BAHÇELİEVLER",
+      "billingDistrict": "ZAFER",
+      "billingPostalCode": "34197",
       "billingCountryCode": "TR",
       "taxOffice": null,
       "taxNumber": "",
@@ -810,37 +32,37 @@
       "customsTotalPrice": null,
       "totalPrice": {
         "currency": "TRY",
-        "amount": 209
+        "amount": 242.25
       },
       "items": [
         {
-          "lineItemId": "6b06e1f0-a65b-c788-61cb-371206060606",
-          "listingId": "d9f1dcb0-a496-42a5-ae17-38ee8b01661f",
+          "lineItemId": "6b06ee4c-2e56-0bab-3cc5-227706060606",
+          "listingId": "f5f659b8-af1a-4b31-b735-c4ea981ca045",
           "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
-          "hbSku": "HBCV00000PLEY2",
-          "merchantSku": "AEACDMMR2",
+          "hbSku": "HBCV00003LJ2GF",
+          "merchantSku": "AE16X2LCD-BB",
           "quantity": 1,
           "price": {
             "currency": "TRY",
-            "amount": 209
+            "amount": 242.25
           },
-          "vat": 34.83,
+          "vat": 40.38,
           "totalPrice": {
             "currency": "TRY",
-            "amount": 209
+            "amount": 242.25
           },
           "commission": {
             "currency": "TRY",
-            "amount": 37.61999
+            "amount": 51.3
           },
           "commissionRate": 18,
           "unitHBDiscount": {
             "currency": "TRY",
-            "amount": 0
+            "amount": 42.75
           },
           "totalHBDiscount": {
             "currency": "TRY",
-            "amount": 0
+            "amount": 42.75
           },
           "unitMerchantDiscount": {
             "currency": "TRY",
@@ -852,11 +74,11 @@
           },
           "merchantUnitPrice": {
             "currency": "TRY",
-            "amount": 209
+            "amount": 285
           },
           "merchantTotalPrice": {
             "currency": "TRY",
-            "amount": 209
+            "amount": 285
           },
           "unitLaborCost": {
             "currency": "TRY",
@@ -868,13 +90,13 @@
           "customizedText03": "",
           "customizedText04": "",
           "properties": [],
-          "productName": "Cnl Ac 220V 2000W Motor Hız Kontrol Kartı Dimmer",
-          "orderNumber": "4532115552",
-          "orderDate": "2026-11-25T16:26:08",
+          "productName": "Roba Iıc I2C Seri 1602A 2X16 Mavi Karakter LCD Modül Display Ekran 5V Beyaz Arka Işık 16X2",
+          "orderNumber": "4114310764",
+          "orderDate": "2026-11-25T17:18:52",
           "deliveryType": "Standart Teslimat",
           "customerDelivery": "",
           "pickupTime": null,
-          "gtip": "950300870000",
+          "gtip": "",
           "weight": 0,
           "vatRate": 20,
           "warehouse": {
@@ -887,7 +109,7 @@
             "amount": 0
           },
           "discountToBeBilledToHB": 0,
-          "productBarcode": "0000000CNL576",
+          "productBarcode": "ROBALEIS11146",
           "bnplCommissionAmount": {
             "currency": "TRY",
             "amount": 0
@@ -896,14 +118,14 @@
           "isMicroExport": false,
           "releatedLineIndexesWithCampaign": null,
           "parentItemIndex": 0,
-          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/121/{size}/110000071106017.jpg",
-          "deci": 1
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/345/{size}/110000353081500.jpg",
+          "deci": 1.1
         }
       ],
       "isCargoChangable": true,
-      "customerName": "Hüseyin Aygün",
+      "customerName": "Abdül Settar Şanlıer",
       "estimatedArrivalDate": "2026-12-01T15:30:00Z",
-      "totalDeci": 1,
+      "totalDeci": 1.1,
       "warehouse": {
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
