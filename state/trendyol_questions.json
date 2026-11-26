@@ -1,22 +1,7 @@
 {
-  "content": [
-    {
-      "creationDate": 1795709627498,
-      "customerId": 202086460,
-      "id": 469872774,
-      "imageUrl": "https://cdn.dsmcdn.com//ty2034/prod/QC_ENRICHMENT/20261125/22/a38af232-afb6-3500-a7ba-f8b80c390a3b/1_org_zoom.jpg",
-      "productName": "Arduino 2WD Servolu Engelden Kaçan Robot Araba Kiti - Li-on 18650 Pil Yuvalı Set",
-      "public": false,
-      "showUserName": false,
-      "status": "WAITING_FOR_ANSWER",
-      "text": "Abi sorun çıkartmaz her şeyi tam geri kırık çıkmaz değil mi kablosu olan bozuk gelmesin yanıma su falan",
-      "userName": "",
-      "webUrl": "https://www.trendyol.com/ty/ty-p-1186879717?merchantId=1258869",
-      "productMainId": "AE2WDEKRBT-LI"
-    }
-  ],
+  "content": [],
   "page": 0,
   "size": 50,
-  "totalElements": 1,
-  "totalPages": 1
+  "totalElements": 0,
+  "totalPages": 0
 }
