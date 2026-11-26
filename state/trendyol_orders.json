@@ -1,6 +1,198 @@
 [
   {
     "shipmentAddress": {
+      "id": 10139152662,
+      "firstName": "Zeynep",
+      "lastName": "Çelik",
+      "company": "",
+      "address1": "Düzce Merkez şehit bayram gökmen mahallesi 252. Sokak no 18 necla pekolcay öğrenci yurdu ",
+      "address2": "",
+      "city": "Düzce",
+      "cityCode": 81,
+      "district": "Merkez",
+      "districtId": 407,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "81000",
+      "countryCode": "TR",
+      "neighborhoodId": 20287,
+      "neighborhood": "Şehit Bayram Gökmen Mah",
+      "phone": null,
+      "fullAddress": "Düzce Merkez şehit bayram gökmen mahallesi 252. Sokak no 18 necla pekolcay öğrenci yurdu     Merkez Düzce",
+      "fullName": "Zeynep Çelik"
+    },
+    "orderNumber": "11873700133",
+    "paymentMethod": "Kredi Kartı",
+    "orderCountryCode": "TR",
+    "grossAmount": 1889.0,
+    "packageGrossAmount": 1889.0,
+    "totalDiscount": 136.45,
+    "packageSellerDiscount": 136.45,
+    "totalTyDiscount": 0.0,
+    "packageTyDiscount": 0.0,
+    "packageTotalDiscount": 136.45,
+    "discountDisplays": [
+      {
+        "displayName": "Trendyol Plus'a Özel Fiyat",
+        "discountAmount": 94.45
+      },
+      {
+        "displayName": "Atölye Elektronik - Ürüne Özel Kupon 🏷️",
+        "discountAmount": 42
+      }
+    ],
+    "taxNumber": null,
+    "invoiceAddress": {
+      "id": 10139152661,
+      "firstName": "Zeynep",
+      "lastName": "Çelik",
+      "company": "",
+      "address1": "Düzce Merkez şehit bayram gökmen mahallesi 252. Sokak no 18 necla pekolcay öğrenci yurdu ",
+      "address2": "",
+      "city": "Düzce",
+      "cityCode": 81,
+      "district": "Merkez",
+      "districtId": 407,
+      "countyId": 0,
+      "countyName": "",
+      "shortAddress": "",
+      "stateName": "",
+      "addressLines": {
+        "addressLine1": "",
+        "addressLine2": ""
+      },
+      "postalCode": "81000",
+      "sector": "",
+      "countryCode": "TR",
+      "neighborhoodId": 20287,
+      "neighborhood": "Şehit Bayram Gökmen Mah",
+      "phone": null,
+      "fullAddress": "Düzce Merkez şehit bayram gökmen mahallesi 252. Sokak no 18 necla pekolcay öğrenci yurdu     Merkez Düzce",
+      "fullName": "Zeynep Çelik"
+    },
+    "customerFirstName": "Zeynep",
+    "customerEmail": "pf+9jjjmron@trendyolmail.com",
+    "customerId": 121199599,
+    "supplierId": 0,
+    "customerLastName": "Çelik",
+    "id": 4386904925,
+    "channelId": 1,
+    "shipmentPackageId": 4386904925,
+    "cargoTrackingNumber": 7330039488613287,
+    "sellerDeliveryMethod": "",
+    "sellerOtpCode": "",
+    "cargoProviderName": "Trendyol Express Marketplace",
+    "lines": [
+      {
+        "quantity": 1,
+        "salesCampaignId": 61,
+        "productSize": "Tek Ebat",
+        "merchantSku": "AEARISES88",
+        "sku": "ATELARISES881",
+        "stockCode": "AEARISES88",
+        "productName": "Arduino İleri Seviye Kutulu Eğitim Seti - 88 Parça | Türkçe Proje Kitabı + Örnek Kod AEARISES88, one size",
+        "productCode": 1622753242,
+        "contentId": 1622753242,
+        "merchantId": 1258869,
+        "sellerId": 1258869,
+        "amount": 1889.0,
+        "lineGrossAmount": 1889.0,
+        "discount": 136.45,
+        "lineTotalDiscount": 136.45,
+        "lineSellerDiscount": 136.45,
+        "tyDiscount": 0.0,
+        "lineTyDiscount": 0.0,
+        "discountDetails": [
+          {
+            "lineItemId": "7168290359",
+            "lineItemPrice": 1752.55,
+            "lineItemDiscount": 136.45,
+            "lineItemSellerDiscount": 136.45,
+            "lineItemTyDiscount": 0.0
+          }
+        ],
+        "currencyCode": "TRY",
+        "id": 6277036122,
+        "lineId": 6277036122,
+        "vatBaseAmount": 20.0,
+        "vatRate": 20.0,
+        "barcode": "ATELARISES881",
+        "orderLineItemStatusName": "Picking",
+        "price": 1752.55,
+        "lineUnitPrice": 1752.55,
+        "fastDeliveryOptions": [
+          {
+            "type": "SameDayShipping"
+          },
+          {
+            "type": "FastDelivery"
+          }
+        ],
+        "productCategoryId": 4391,
+        "commission": 20,
+        "businessUnit": "Hobby",
+        "defectiveClaimListingInsight": ""
+      }
+    ],
+    "orderDate": 1795701306253,
+    "identityNumber": "11111111111",
+    "currencyCode": "TRY",
+    "packageHistories": [
+      {
+        "createdDate": 1795690507686,
+        "status": "Awaiting"
+      },
+      {
+        "createdDate": 1795690512079,
+        "status": "Created"
+      },
+      {
+        "createdDate": 1795690550461,
+        "status": "Picking"
+      }
+    ],
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
+    "deliveryType": "normal",
+    "timeSlotId": 0,
+    "estimatedDeliveryStartDate": 1795726740000,
+    "estimatedDeliveryEndDate": 1796072340000,
+    "totalPrice": 1752.55,
+    "packageTotalPrice": 1752.55,
+    "deliveryAddressType": "Shipment",
+    "agreedDeliveryDate": 1795726740000,
+    "fastDelivery": true,
+    "originShipmentDate": 1795690507683,
+    "lastModifiedDate": 1795690568741,
+    "commercial": false,
+    "fastDeliveryType": "SameDayShipping",
+    "deliveredByService": false,
+    "warehouseId": 8012721,
+    "invoiceStatus": "NotInvoiced",
+    "invoiceNumber": "",
+    "micro": false,
+    "giftBoxRequested": false,
+    "3pByTrendyol": false,
+    "containsDangerousProduct": false,
+    "boxQuantity": 0,
+    "deci": 0,
+    "width": null,
+    "length": null,
+    "height": null,
+    "isCod": false,
+    "createdBy": "order-creation",
+    "originPackageIds": null,
+    "shipmentNumber": 11119707059,
+    "is4P": false
+  },
+  {
+    "shipmentAddress": {
       "id": 10138670412,
       "firstName": "Emirhan",
       "lastName": "mercan",
@@ -80,10 +272,10 @@
     "id": 4386681616,
     "channelId": 1,
     "shipmentPackageId": 4386681616,
-    "cargoTrackingNumber": 7270039486247711,
+    "cargoTrackingNumber": 7330039487634689,
     "sellerDeliveryMethod": "",
     "sellerOtpCode": "",
-    "cargoProviderName": "Sürat Kargo Marketplace",
+    "cargoProviderName": "Trendyol Express Marketplace",
     "lines": [
       {
         "quantity": 1,
@@ -120,7 +312,7 @@
         "vatBaseAmount": 20.0,
         "vatRate": 20.0,
         "barcode": "AE2WDEKRBT-LI",
-        "orderLineItemStatusName": "ReadyToShip",
+        "orderLineItemStatusName": "Picking",
         "price": 1146.0,
         "lineUnitPrice": 1146.0,
         "fastDeliveryOptions": [
@@ -148,10 +340,14 @@
       {
         "createdDate": 1795686816146,
         "status": "Created"
+      },
+      {
+        "createdDate": 1795688986713,
+        "status": "Picking"
       }
     ],
-    "shipmentPackageStatus": "ReadyToShip",
-    "status": "Created",
+    "shipmentPackageStatus": "Picking",
+    "status": "Picking",
     "deliveryType": "normal",
     "timeSlotId": 0,
     "estimatedDeliveryStartDate": 1795726740000,
@@ -162,7 +358,7 @@
     "agreedDeliveryDate": 1795726740000,
     "fastDelivery": true,
     "originShipmentDate": 1795686812907,
-    "lastModifiedDate": 1795686816146,
+    "lastModifiedDate": 1795688995963,
     "commercial": false,
     "fastDeliveryType": "SameDayShipping",
     "deliveredByService": false,
