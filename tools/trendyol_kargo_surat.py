@@ -20,13 +20,13 @@ import tools.trendyol_termin as tt
 
 tt.SURE = 0
 
-def topla():
+def topla(hepsi=False):
     hedef = []
     for _, urun in tc.iter_all_products(size=100):
         if urun.get("archived"):
             continue
         for v in (urun.get("variants") or []):
-            if v.get("archived") or v.get("onSale") is False:
+            if v.get("archived") or (v.get("onSale") is False and not hepsi):
                 continue
             cps = v.get("cargoProviders") or urun.get("cargoProviders") or []
             if "SURATMP" not in cps:
@@ -37,8 +37,9 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--uygula", action="store_true")
     ap.add_argument("--adet", type=int, default=0)
+    ap.add_argument("--hepsi", action="store_true", help="satista olmayanlar dahil (26.11)")
     a = ap.parse_args()
-    hedef = topla()
+    hedef = topla(a.hepsi)
     print(f"Surat olmayan varyant: {len(hedef)}")
     if a.adet:
         hedef = hedef[: a.adet]
@@ -47,6 +48,10 @@ def main() -> int:
         p = tt.payload_kur(urun, v)
         # cargoCompanyId tek basina islemiyor; cargoProviders alani sart (12.09 denendi)
         p["cargoProviders"] = ["SURATMP"]
+        if not p.get("dimensionalWeight"):
+            # ortak barkod (-BB) ilanlarinda desi bos geliyor; kucuk moduller 1 desi (26.11)
+            p["dimensionalWeight"] = 1
+            print(f"   desi bos -> 1: {p.get('stockCode')}")
         eksik = [k for k in ("barcode","title","productMainId","brandId","categoryId","stockCode","dimensionalWeight","description","vatRate") if not p.get(k)]
         if not p["images"]:
             eksik.append("images")

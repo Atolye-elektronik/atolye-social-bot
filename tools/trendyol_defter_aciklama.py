@@ -61,6 +61,7 @@ def payload_kur(urun: dict, varyant: dict, aciklama: str) -> dict:
         "currencyType": "TRY",
         "vatRate": varyant.get("vatRate"),
         "cargoCompanyId": 9,
+        "cargoProviders": ["SURATMP"],  # KURAL 26.11: TY tum urunler Surat
         "images": [{"url": g.get("url")} for g in (urun.get("images") or []) if g.get("url")],
         "attributes": [
             {"attributeId": a["attributeId"], "attributeValueId": a["attributeValueId"]}

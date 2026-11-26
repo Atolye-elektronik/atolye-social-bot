@@ -122,7 +122,7 @@ def payload_kur(cfg):
             "listPrice": float(u["fiyat"]),
             "salePrice": float(u["fiyat"]),
             "vatRate": 20,
-            "cargoProviders": [cfg.get("kargoKodu", "SURATMP")],
+            "cargoProviders": ["SURATMP"],  # KURAL 26.11: TY tum urunler Surat (siparis bolunmesin)
             "images": [{"url": g} for g in u["gorseller"][:8]],
             "attributes": [
                 {"attributeId": a["attributeId"], **({"attributeValueId": a["attributeValueId"]} if "attributeValueId" in a else {"customAttributeValue": a["customAttributeValue"]})}
