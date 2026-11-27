@@ -1382,3 +1382,5 @@
 {"an": "2026-11-27T07:43", "kanal": "hepsiburada", "no": "4202375281", "kod": "AEPY18650", "adet": 2, "dusum": {"AEPY18650": 2}, "kuru": false}
 {"an": "2026-11-27T08:22", "kanal": "trendyol", "no": "11877473067", "kod": "AEPY18650-2", "adet": 1, "dusum": {"AEPY18650": 2}, "kuru": false}
 {"an": "2026-11-27T16:53", "kanal": "shopify", "no": "#1091", "kod": "AE4WD4IN1-LI", "adet": 1, "dusum": {"AET4WDRBT": 1, "AEPY18650": 1, "AEUNOR3": 1, "AEL298N": 1, "AEHC06BT": 1, "AEIRKMND": 1, "AEHCSR04": 1, "AESG90": 1, "AEJK2040DE": 1, "AEJK2040": 1, "AECIZGI4": 1, "AEBB170P": 1}, "kuru": false}
+{"an": "2026-11-27T17:08", "kanal": "shopify", "no": "#1092", "kod": "AECIZGIRBT-LI", "adet": 4, "dusum": {"AET2WDRBT-P": 4, "AEBB170P": 4, "AEPY18650": 4, "AECIZGI4": 4, "AEUNOR3": 4, "AEL298N": 4, "AEJK2040DE": 4, "AEJK2040": 4}, "kuru": false}
+{"an": "2026-11-27T17:08", "kanal": "hepsiburada", "no": "4492177523", "kod": "AEBZZR5V-6", "adet": 1, "dusum": {"AEBZZR5V": 6}, "kuru": false}
