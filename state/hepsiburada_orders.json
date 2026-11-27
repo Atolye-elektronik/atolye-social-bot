@@ -1,4 +1,135 @@
 {
   "newOrderItems": [],
-  "packages": []
+  "packages": [
+    {
+      "id": "6b09b86f-bd19-6bf1-eb7e-588206060606",
+      "status": "Open",
+      "customerId": "7bb9b8df-b272-48a2-bb65-63f6e1ab8abd",
+      "orderDate": "2026-11-27T20:05:50",
+      "dueDate": "2026-11-30T18:30:00",
+      "barcode": "62755501226568",
+      "packageNumber": "5550122656",
+      "cargoCompany": "hepsiJET",
+      "shippingAddressDetail": "Şehit Gürol CAD uyar sokak Adakent sitesi D blok\nDaire 4 Çanakkale merkez  BARBAROS MERKEZ Çanakkale",
+      "recipientName": "Tamer Gülnihal",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "BARBAROS",
+      "shippingTown": "MERKEZ",
+      "shippingCity": "Çanakkale",
+      "email": "4492177523_5550122656@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Tamer Gülnihal",
+      "billingAddress": "İsmetpaşa mahallesi Demircioğlu Cd no trend optik 13/b Çanakkale merkez İSMETPAŞA MERKEZ Çanakkale",
+      "billingCity": "Çanakkale",
+      "billingTown": "MERKEZ",
+      "billingDistrict": "İSMETPAŞA",
+      "billingPostalCode": "17010",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 159
+      },
+      "items": [
+        {
+          "lineItemId": "6b09b86e-2055-e2a7-0c9d-0be806060606",
+          "listingId": "fe348248-9339-4d7a-9d4f-5bc36da765d6",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000L4N4AM",
+          "merchantSku": "AEBZZR5V-6",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 159
+          },
+          "vat": 26.5,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 159
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 28.62
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 159
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 159
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik 5V Aktif Buzzer 6'lı Paket Arduino Uyumlu Sesli Uyarı Elemanı",
+          "orderNumber": "4492177523",
+          "orderDate": "2026-11-27T20:05:50",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2901880000617",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002444525588.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Tamer Gülnihal",
+      "estimatedArrivalDate": "2026-12-03T16:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    }
+  ]
 }
