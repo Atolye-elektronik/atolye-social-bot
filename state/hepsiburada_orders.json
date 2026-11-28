@@ -260,6 +260,266 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6b0a8e82-c914-d1f0-8fea-7baa06060606",
+      "status": "Open",
+      "customerId": "0eb2db87-a290-4df6-8a78-cf184cb31439",
+      "orderDate": "2026-11-28T11:19:13",
+      "dueDate": "2026-11-30T18:30:00",
+      "barcode": "62955505207903",
+      "packageNumber": "5550520790",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "2304 sk No: 3 Güneş 1 Sitesi B Blok Kat 8 Daire 16 Efeler Aydın  MİMAR SİNAN EFELER Aydın",
+      "recipientName": "Mesut Kavaklı",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "MİMAR SİNAN",
+      "shippingTown": "EFELER",
+      "shippingCity": "Aydın",
+      "email": "4026029287_5550520790@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Mesut Kavaklı",
+      "billingAddress": "2304 sk No: 3 Güneş 1 Sitesi B Blok Kat 8 Daire 16 Efeler Aydın  MİMAR SİNAN EFELER Aydın",
+      "billingCity": "Aydın",
+      "billingTown": "EFELER",
+      "billingDistrict": "MİMAR SİNAN",
+      "billingPostalCode": "09100",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 129.8
+      },
+      "items": [
+        {
+          "lineItemId": "6b0a8e82-624d-5ba6-5451-764c06060606",
+          "listingId": "969eda22-a6ee-4e2d-8a57-458996739c62",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8L",
+          "merchantSku": "AEHB18650PY3",
+          "quantity": 2,
+          "price": {
+            "currency": "TRY",
+            "amount": 64.9
+          },
+          "vat": 21.63,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 129.8
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 11.68
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 64.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 129.8
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 18650 Pil Yuvası Kablolu Tutucu 3.7V 1'li Tekli Pil Kutusu Özellikli",
+          "orderNumber": "4026029287",
+          "orderDate": "2026-11-28T11:19:13",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100780",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568559.jpg",
+          "deci": 0.5
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "MESUT KAVAKLI",
+      "estimatedArrivalDate": "2026-12-02T15:30:00Z",
+      "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6b0a9542-9f47-4ccb-b58b-352606060606",
+      "status": "Open",
+      "customerId": "6b2c3eb0-acf0-4723-b188-4ebbb4d2bc64",
+      "orderDate": "2026-11-28T11:48:00",
+      "dueDate": "2026-11-30T18:30:00",
+      "barcode": "62955505377202",
+      "packageNumber": "5550537720",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Kiler sokak, no:9, daire:13 çelik10 apartmanı YUKARI ZAFERİYE KEŞAN Edirne",
+      "recipientName": "berivan Bora Şimşek",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "YUKARI ZAFERİYE",
+      "shippingTown": "KEŞAN",
+      "shippingCity": "Edirne",
+      "email": "4807034131_5550537720@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Baha Cem Şimşek",
+      "billingAddress": "No40 d4 FEVZİ ÇAKMAK BAĞCILAR İstanbul",
+      "billingCity": "İstanbul",
+      "billingTown": "BAĞCILAR",
+      "billingDistrict": "FEVZİ ÇAKMAK",
+      "billingPostalCode": "",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 190.29
+      },
+      "items": [
+        {
+          "lineItemId": "6b0a9541-6543-8572-0ecd-69b806060606",
+          "listingId": "ac1e7d35-2a60-427b-bbc4-18b7a8f9989e",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV0000IDZL4W",
+          "merchantSku": "AEMYNK",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 190.29
+          },
+          "vat": 31.72,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 190.29
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 50.22
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 88.71
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 88.71
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 279
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 279
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Atölye Elektronik Mini Yankeski - Dip Yankeski, Elektronikçi Tipi Hassas Kesim (Tekli)",
+          "orderNumber": "4807034131",
+          "orderDate": "2026-11-28T11:48:00",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "2920000600070",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110002112601412.jpg",
+          "deci": 0.2
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Baha Cem Şimşek",
+      "estimatedArrivalDate": "2026-12-03T15:30:00Z",
+      "totalDeci": 0.2,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
