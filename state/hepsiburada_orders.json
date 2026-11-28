@@ -9,7 +9,7 @@
       "dueDate": "2026-11-30T18:30:00",
       "barcode": "62755501226568",
       "packageNumber": "5550122656",
-      "cargoCompany": "hepsiJET",
+      "cargoCompany": "Sürat Kargo",
       "shippingAddressDetail": "Şehit Gürol CAD uyar sokak Adakent sitesi D blok\nDaire 4 Çanakkale merkez  BARBAROS MERKEZ Çanakkale",
       "recipientName": "Tamer Gülnihal",
       "shippingCountryCode": "TR",
@@ -126,6 +126,136 @@
       "customerName": "Tamer Gülnihal",
       "estimatedArrivalDate": "2026-12-03T16:30:00Z",
       "totalDeci": 1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
+    },
+    {
+      "id": "6b0a6eb8-d312-6d2c-a739-bba306060606",
+      "status": "Open",
+      "customerId": "cc1d111e-245e-4959-bb7b-6b99a0ee3e2e",
+      "orderDate": "2026-11-28T09:03:33",
+      "dueDate": "2026-11-30T18:30:00",
+      "barcode": "62955504398280",
+      "packageNumber": "5550439828",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Mustafa kemal atatürk caddesi no46 d9 koyundere/menemen GAZİ MENEMEN İzmir",
+      "recipientName": "Engin Paslı",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "GAZİ",
+      "shippingTown": "MENEMEN",
+      "shippingCity": "İzmir",
+      "email": "4839275127_5550439828@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Engin Paslı",
+      "billingAddress": "7503/1 sokak no2 d18 koyundere ULUS MENEMEN İzmir",
+      "billingCity": "İzmir",
+      "billingTown": "MENEMEN",
+      "billingDistrict": "ULUS",
+      "billingPostalCode": "35660",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 170.16
+      },
+      "items": [
+        {
+          "lineItemId": "6b0a6eb6-b442-334c-0aea-d11e06060606",
+          "listingId": "295e165b-b32a-42ac-8a80-212a6067b22c",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00006WCA8J",
+          "merchantSku": "AEPY18650",
+          "quantity": 3,
+          "price": {
+            "currency": "TRY",
+            "amount": 56.72
+          },
+          "vat": 28.36,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 170.16
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 12.76
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 14.18
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 42.54
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 70.9
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 212.7
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roboyol Store 2'li 18650 Pil Yuvası Kablolu Tutucu 7.4V Pil Şarj Kutusu Yüksek Performans",
+          "orderNumber": "4839275127",
+          "orderDate": "2026-11-28T09:03:33",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "000RBYL100779",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/777/{size}/110000761568554.jpg",
+          "deci": 1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "engin paslı",
+      "estimatedArrivalDate": "2026-12-02T15:30:00Z",
+      "totalDeci": 3,
       "warehouse": {
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
