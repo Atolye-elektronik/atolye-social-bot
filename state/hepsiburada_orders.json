@@ -260,6 +260,136 @@
         "shippingModel": "Standard",
         "shippingAddressLabel": "BIRINCIL"
       }
+    },
+    {
+      "id": "6b0b291b-3e24-e1f6-33d4-930f06060606",
+      "status": "Open",
+      "customerId": "e87d73f9-4b07-4128-b32f-fd0542a34409",
+      "orderDate": "2026-11-28T22:18:50",
+      "dueDate": "2026-11-30T18:30:00",
+      "barcode": "62955508160649",
+      "packageNumber": "5550816064",
+      "cargoCompany": "Sürat Kargo",
+      "shippingAddressDetail": "Ankara Sincan Atatürk mahallesi Güven sokak Dilara Apartmanı 12/6 ATATÜRK SİNCAN Ankara",
+      "recipientName": "Neffel Furkan",
+      "shippingCountryCode": "TR",
+      "shippingDistrict": "ATATÜRK",
+      "shippingTown": "SİNCAN",
+      "shippingCity": "Ankara",
+      "email": "4193838364_5550816064@hepsifatura.com",
+      "phoneNumber": "",
+      "companyName": "Neffel Furkan",
+      "billingAddress": "Ankara Sincan Atatürk mahallesi Güven sokak Dilara Apartmanı 12/6 ATATÜRK SİNCAN Ankara",
+      "billingCity": "Ankara",
+      "billingTown": "SİNCAN",
+      "billingDistrict": "ATATÜRK",
+      "billingPostalCode": "06930",
+      "billingCountryCode": "TR",
+      "taxOffice": null,
+      "taxNumber": "",
+      "identityNo": "11111111111",
+      "shippingTotalPrice": null,
+      "customsTotalPrice": null,
+      "totalPrice": {
+        "currency": "TRY",
+        "amount": 228
+      },
+      "items": [
+        {
+          "lineItemId": "6b0b291a-640a-9cfa-ee63-c7dc06060606",
+          "listingId": "f5f659b8-af1a-4b31-b735-c4ea981ca045",
+          "merchantId": "4875c06a-5c75-4456-bb96-eb12f74e64ba",
+          "hbSku": "HBCV00003LJ2GF",
+          "merchantSku": "AE16X2LCD-BB",
+          "quantity": 1,
+          "price": {
+            "currency": "TRY",
+            "amount": 228
+          },
+          "vat": 38,
+          "totalPrice": {
+            "currency": "TRY",
+            "amount": 228
+          },
+          "commission": {
+            "currency": "TRY",
+            "amount": 51.3
+          },
+          "commissionRate": 18,
+          "unitHBDiscount": {
+            "currency": "TRY",
+            "amount": 57
+          },
+          "totalHBDiscount": {
+            "currency": "TRY",
+            "amount": 57
+          },
+          "unitMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "totalMerchantDiscount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "merchantUnitPrice": {
+            "currency": "TRY",
+            "amount": 285
+          },
+          "merchantTotalPrice": {
+            "currency": "TRY",
+            "amount": 285
+          },
+          "unitLaborCost": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "cargoPaymentInfo": "Seller",
+          "customizedText01": "",
+          "customizedText02": "",
+          "customizedText03": "",
+          "customizedText04": "",
+          "properties": [],
+          "productName": "Roba Iıc I2C Seri 1602A 2X16 Mavi Karakter LCD Modül Display Ekran 5V Beyaz Arka Işık 16X2",
+          "orderNumber": "4193838364",
+          "orderDate": "2026-11-28T22:18:50",
+          "deliveryType": "Standart Teslimat",
+          "customerDelivery": "",
+          "pickupTime": null,
+          "gtip": "",
+          "weight": 0,
+          "vatRate": 20,
+          "warehouse": {
+            "shippingModel": "Standard",
+            "shippingAddressLabel": "BIRINCIL"
+          },
+          "deptorDifferenceAmount": 0,
+          "purchasePrice": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "discountToBeBilledToHB": 0,
+          "productBarcode": "ROBALEIS11146",
+          "bnplCommissionAmount": {
+            "currency": "TRY",
+            "amount": 0
+          },
+          "creationReason": "OrderCreated",
+          "isMicroExport": false,
+          "releatedLineIndexesWithCampaign": null,
+          "parentItemIndex": 0,
+          "productImageUrlFormat": "https://productimages.hepsiburada.net/s/345/{size}/110000353081500.jpg",
+          "deci": 1.1
+        }
+      ],
+      "isCargoChangable": true,
+      "customerName": "Neffel FURKAN",
+      "estimatedArrivalDate": "2026-12-04T15:30:00Z",
+      "totalDeci": 1.1,
+      "warehouse": {
+        "shippingModel": "Standard",
+        "shippingAddressLabel": "BIRINCIL"
+      }
     }
   ]
 }
